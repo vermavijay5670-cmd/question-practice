@@ -1,0 +1,309 @@
+// Question schema:
+// { id, type: 'mcq'|'assertion-reason'|'statement', question, options[4], correctIndex, explanation, difficulty }
+//
+// Chapters below marked with real sample sets are the launch set. Every other chapter
+// exists in the app with an empty state until you supply the chapter PDF, or ask Claude
+// to generate a practice set for it.
+
+import { BIOLOGICAL_CLASSIFICATION } from './banks/biologicalClassification';
+import { LIVING_WORLD } from './banks/livingWorld';
+import { RESPIRATION_PLANTS } from './banks/respirationPlants';
+import { PHOTOSYNTHESIS } from './banks/photosynthesis';
+import { ECOSYSTEM } from './banks/ecosystem';
+import { EVOLUTION } from './banks/evolution';
+import { BIOTECH_PRINCIPLES } from './banks/biotechPrinciples';
+import { BIOTECH_APPLICATIONS } from './banks/biotechApplications';
+
+export const QUESTION_BANK = {
+  'biological-classification': BIOLOGICAL_CLASSIFICATION,
+  'living-world': LIVING_WORLD,
+  'respiration-plants': RESPIRATION_PLANTS,
+  photosynthesis: PHOTOSYNTHESIS,
+  ecosystem: ECOSYSTEM,
+  evolution: EVOLUTION,
+  'biotech-principles': BIOTECH_PRINCIPLES,
+  'biotech-applications': BIOTECH_APPLICATIONS,
+  'cell-unit-of-life': [
+    {
+      id: 'cell-1',
+      type: 'mcq',
+      question: 'Which cell organelle is correctly described as the "powerhouse of the cell" and possesses its own circular DNA?',
+      options: ['Golgi apparatus', 'Mitochondria', 'Lysosome', 'Peroxisome'],
+      correctIndex: 1,
+      explanation: 'Mitochondria carry out oxidative phosphorylation to generate ATP and contain their own circular DNA, ribosomes (70S), and can self-replicate — evidence supporting the endosymbiotic theory.',
+      difficulty: 'easy',
+    },
+    {
+      id: 'cell-2',
+      type: 'assertion-reason',
+      question: 'Assertion (A): Plant cells do not have centrioles. Reason (R): Centrioles are required for spindle fibre formation during cell division in all eukaryotes.',
+      options: [
+        'Both A and R are true, and R is the correct explanation of A',
+        'Both A and R are true, but R is NOT the correct explanation of A',
+        'A is true, but R is false',
+        'A is false, but R is true',
+      ],
+      correctIndex: 2,
+      explanation: 'Most plant cells indeed lack centrioles (A is true), but spindle formation still occurs in plants without them via microtubule organizing centers — so centrioles are not universally required (R is false).',
+      difficulty: 'medium',
+    },
+    {
+      id: 'cell-3',
+      type: 'mcq',
+      question: 'The fluid mosaic model of the plasma membrane was proposed by:',
+      options: ['Robertson', 'Singer and Nicolson', 'Overton', 'Danielli and Davson'],
+      correctIndex: 1,
+      explanation: 'Singer and Nicolson (1972) proposed the fluid mosaic model, describing the membrane as a mosaic of proteins embedded in or attached to a fluid phospholipid bilayer.',
+      difficulty: 'easy',
+    },
+    {
+      id: 'cell-4',
+      type: 'mcq',
+      question: 'Which of the following is NOT a function of the smooth endoplasmic reticulum (SER)?',
+      options: ['Lipid synthesis', 'Steroidal hormone synthesis', 'Protein glycosylation', 'Detoxification of drugs'],
+      correctIndex: 2,
+      explanation: 'Protein glycosylation begins in the rough ER (RER) and is completed in the Golgi apparatus. SER is associated with lipid/steroid synthesis and detoxification, not protein glycosylation.',
+      difficulty: 'medium',
+    },
+    {
+      id: 'cell-5',
+      type: 'statement',
+      question: 'How many of the following are correctly matched?\n(i) Ribosomes — Protein synthesis\n(ii) Lysosomes — Intracellular digestion\n(iii) Peroxisomes — Photosynthesis\n(iv) Vacuole — Osmoregulation in plant cells',
+      options: ['One', 'Two', 'Three', 'All four'],
+      correctIndex: 2,
+      explanation: 'Statements (i), (ii), and (iv) are correct. Peroxisomes are involved in oxidative reactions producing H2O2, not photosynthesis (that occurs in chloroplasts) — so (iii) is incorrect, giving three correct matches.',
+      difficulty: 'medium',
+    },
+    {
+      id: 'cell-6',
+      type: 'mcq',
+      question: 'Which statement about prokaryotic cells is correct?',
+      options: [
+        'They possess a membrane-bound nucleus',
+        'Their ribosomes are of 80S type',
+        'The genetic material is not enclosed within a nuclear envelope',
+        'They contain mitochondria for aerobic respiration',
+      ],
+      correctIndex: 2,
+      explanation: 'Prokaryotes lack a nuclear membrane, so DNA lies free in the cytoplasm (nucleoid region). Their ribosomes are 70S, and they lack membrane-bound organelles like mitochondria.',
+      difficulty: 'easy',
+    },
+  ],
+
+  biomolecules: [
+    {
+      id: 'biomol-1',
+      type: 'mcq',
+      question: 'Which of the following is a reducing sugar?',
+      options: ['Sucrose', 'Glucose', 'Starch', 'Cellulose'],
+      correctIndex: 1,
+      explanation: 'Glucose has a free aldehyde group that can reduce Fehling\'s/Tollens\' reagent, making it a reducing sugar. Sucrose is a non-reducing disaccharide since both anomeric carbons are involved in the glycosidic bond.',
+      difficulty: 'easy',
+    },
+    {
+      id: 'biomol-2',
+      type: 'mcq',
+      question: 'The peptide bond formed between two amino acids is best described as:',
+      options: [
+        'An ionic bond between R groups',
+        'A covalent bond formed by dehydration (loss of water)',
+        'A hydrogen bond between amino groups',
+        'A disulfide bond between cysteine residues',
+      ],
+      correctIndex: 1,
+      explanation: 'A peptide bond forms via a condensation (dehydration) reaction between the carboxyl group of one amino acid and the amino group of another, releasing a water molecule.',
+      difficulty: 'easy',
+    },
+    {
+      id: 'biomol-3',
+      type: 'assertion-reason',
+      question: 'Assertion (A): Enzymes lower the activation energy of a reaction. Reason (R): Enzymes alter the equilibrium constant of the reaction they catalyse.',
+      options: [
+        'Both A and R are true, and R is the correct explanation of A',
+        'Both A and R are true, but R is NOT the correct explanation of A',
+        'A is true, but R is false',
+        'A is false, but R is true',
+      ],
+      correctIndex: 2,
+      explanation: 'Enzymes speed up reactions by lowering activation energy (A is true), but they do NOT change the equilibrium constant or the free energy difference between reactants and products (R is false).',
+      difficulty: 'medium',
+    },
+    {
+      id: 'biomol-4',
+      type: 'mcq',
+      question: 'Which secondary structure of proteins is stabilised primarily by hydrogen bonds between the C=O and N-H groups of the peptide backbone?',
+      options: ['Alpha helix', 'Quaternary structure', 'Primary structure', 'Prosthetic group binding'],
+      correctIndex: 0,
+      explanation: 'The alpha helix is a coiled secondary structure stabilised by regular intramolecular hydrogen bonding between backbone C=O and N-H groups, typically every 4th residue.',
+      difficulty: 'medium',
+    },
+    {
+      id: 'biomol-5',
+      type: 'mcq',
+      question: 'Km (Michaelis constant) of an enzyme indicates:',
+      options: [
+        'The maximum velocity of the reaction',
+        'The substrate concentration at which reaction velocity is half of Vmax',
+        'The total amount of enzyme present',
+        'The optimum pH for enzyme activity',
+      ],
+      correctIndex: 1,
+      explanation: 'Km is the substrate concentration at which the reaction velocity reaches half of Vmax. A lower Km indicates higher enzyme-substrate affinity.',
+      difficulty: 'hard',
+    },
+    {
+      id: 'biomol-6',
+      type: 'mcq',
+      question: 'Which of these is NOT a nitrogenous base found in RNA?',
+      options: ['Adenine', 'Uracil', 'Thymine', 'Cytosine'],
+      correctIndex: 2,
+      explanation: 'Thymine is found in DNA, not RNA. RNA contains uracil in place of thymine, pairing with adenine.',
+      difficulty: 'easy',
+    },
+  ],
+
+  'human-reproduction': [
+    {
+      id: 'hrep-1',
+      type: 'mcq',
+      question: 'Spermatogenesis is regulated by which hormone secreted from the anterior pituitary that acts on Sertoli cells?',
+      options: ['LH', 'FSH', 'Oxytocin', 'Testosterone'],
+      correctIndex: 1,
+      explanation: 'FSH acts on Sertoli cells to stimulate spermiogenesis and secretion of factors that support spermatogenesis, while LH acts on Leydig cells to stimulate testosterone synthesis.',
+      difficulty: 'medium',
+    },
+    {
+      id: 'hrep-2',
+      type: 'mcq',
+      question: 'Fertilisation in humans normally occurs in the:',
+      options: ['Uterus', 'Ampullary-isthmic junction of the fallopian tube', 'Cervix', 'Ovary'],
+      correctIndex: 1,
+      explanation: 'Fertilisation typically occurs at the ampullary-isthmic junction of the fallopian tube (oviduct), where the sperm meets the secondary oocyte.',
+      difficulty: 'medium',
+    },
+    {
+      id: 'hrep-3',
+      type: 'assertion-reason',
+      question: 'Assertion (A): The zona pellucida undergoes changes immediately after fertilisation. Reason (R): This prevents entry of additional sperm into the ovum, ensuring monospermy.',
+      options: [
+        'Both A and R are true, and R is the correct explanation of A',
+        'Both A and R are true, but R is NOT the correct explanation of A',
+        'A is true, but R is false',
+        'A is false, but R is true',
+      ],
+      correctIndex: 0,
+      explanation: 'The cortical reaction releases enzymes that harden the zona pellucida immediately after fertilisation, blocking polyspermy — R correctly explains A.',
+      difficulty: 'medium',
+    },
+    {
+      id: 'hrep-4',
+      type: 'mcq',
+      question: 'The inner cell mass of the blastocyst eventually develops into the:',
+      options: ['Placenta', 'Embryo', 'Umbilical cord', 'Amnion only'],
+      correctIndex: 1,
+      explanation: 'The inner cell mass (embryoblast) differentiates to form the embryo, while the outer trophoblast layer contributes to placenta formation.',
+      difficulty: 'easy',
+    },
+    {
+      id: 'hrep-5',
+      type: 'mcq',
+      question: 'Which hormone is primarily responsible for maintaining the corpus luteum during early pregnancy, forming the basis of urine pregnancy tests?',
+      options: ['Estrogen', 'Progesterone', 'hCG (human Chorionic Gonadotropin)', 'Prolactin'],
+      correctIndex: 2,
+      explanation: 'hCG, secreted by the developing blastocyst/placenta, maintains the corpus luteum so it continues progesterone secretion; its presence in urine is the basis of pregnancy tests.',
+      difficulty: 'easy',
+    },
+    {
+      id: 'hrep-6',
+      type: 'statement',
+      question: 'How many of the following are functions of the placenta?\n(i) Gas exchange between mother and foetus\n(ii) Removal of waste from foetal blood\n(iii) Secretion of hCG, hPL, estrogens and progesterone\n(iv) Producing sperm for the foetus',
+      options: ['One', 'Two', 'Three', 'Four'],
+      correctIndex: 2,
+      explanation: 'Statements (i), (ii), and (iii) correctly describe placental functions. (iv) is meaningless/incorrect — the placenta does not produce sperm.',
+      difficulty: 'easy',
+    },
+  ],
+
+  'inheritance-variation': [
+    {
+      id: 'inherit-1',
+      type: 'mcq',
+      question: 'In a dihybrid cross between two heterozygous individuals (RrYy x RrYy), what is the phenotypic ratio in the F2 generation, assuming independent assortment?',
+      options: ['3:1', '1:2:1', '9:3:3:1', '1:1:1:1'],
+      correctIndex: 2,
+      explanation: 'For two independently assorting genes, the classic dihybrid F2 phenotypic ratio is 9:3:3:1 (both dominant : one dominant one recessive : other combination : both recessive), as demonstrated by Mendel.',
+      difficulty: 'easy',
+    },
+    {
+      id: 'inherit-2',
+      type: 'mcq',
+      question: 'A colour-blind father and a homozygous normal mother will have:',
+      options: [
+        'All colour-blind sons',
+        'All daughters who are carriers, no colour-blind children',
+        'All colour-blind daughters',
+        'Half of sons colour-blind',
+      ],
+      correctIndex: 1,
+      explanation: 'Colour blindness is X-linked recessive. The father contributes his X (carrying the allele) to daughters (making them carriers, phenotypically normal) and Y to sons (who get their X from mother, who is homozygous normal) — so no child is colour-blind.',
+      difficulty: 'medium',
+    },
+    {
+      id: 'inherit-3',
+      type: 'mcq',
+      question: 'Which of the following best describes co-dominance, as seen in the ABO blood group system?',
+      options: [
+        'One allele completely masks the other',
+        'Both alleles express themselves fully and independently in the heterozygote',
+        'The heterozygote shows a blended intermediate phenotype',
+        'One allele is lethal in the homozygous state',
+      ],
+      correctIndex: 1,
+      explanation: 'In co-dominance (e.g., IA and IB alleles), both alleles are expressed fully and simultaneously in the heterozygote (IAIB gives AB blood group), unlike blending (incomplete dominance).',
+      difficulty: 'medium',
+    },
+    {
+      id: 'inherit-4',
+      type: 'assertion-reason',
+      question: 'Assertion (A): Linked genes do not show independent assortment. Reason (R): Genes located far apart on the same chromosome show a higher frequency of recombination than genes located close together.',
+      options: [
+        'Both A and R are true, and R is the correct explanation of A',
+        'Both A and R are true, but R is NOT the correct explanation of A',
+        'A is true, but R is false',
+        'A is false, but R is true',
+      ],
+      correctIndex: 1,
+      explanation: 'Both statements are independently true: linked genes on the same chromosome tend to be inherited together (A), and recombination frequency increases with distance between genes (R) — but R explains recombination frequency, not directly why linked genes fail to assort independently, so it is not the correct explanation of A.',
+      difficulty: 'hard',
+    },
+    {
+      id: 'inherit-5',
+      type: 'mcq',
+      question: 'A cross showing a 1:1 phenotypic ratio in the progeny is an example of:',
+      options: ['A monohybrid F2 cross', 'A test cross', 'A dihybrid F2 cross', 'Self-pollination of F1'],
+      correctIndex: 1,
+      explanation: 'A test cross (heterozygote x homozygous recessive) produces offspring in a 1:1 ratio, used to determine the genotype of an individual showing the dominant phenotype.',
+      difficulty: 'easy',
+    },
+    {
+      id: 'inherit-6',
+      type: 'mcq',
+      question: 'Down syndrome is caused by:',
+      options: [
+        'Deletion of a part of chromosome 21',
+        'Trisomy of chromosome 21',
+        'Monosomy of the X chromosome',
+        'Trisomy of chromosome 18',
+      ],
+      correctIndex: 1,
+      explanation: 'Down syndrome results from trisomy 21 — the presence of an extra copy (three copies) of chromosome 21, typically due to non-disjunction during meiosis.',
+      difficulty: 'easy',
+    },
+  ],
+
+
+};
+
+export function getChapterQuestions(chapterId) {
+  return QUESTION_BANK[chapterId] || [];
+}
