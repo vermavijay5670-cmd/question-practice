@@ -13,6 +13,8 @@ import { ECOSYSTEM } from './banks/ecosystem';
 import { EVOLUTION } from './banks/evolution';
 import { BIOTECH_PRINCIPLES } from './banks/biotechPrinciples';
 import { BIOTECH_APPLICATIONS } from './banks/biotechApplications';
+import { CELL_UNIT_OF_LIFE } from './banks/cellUnitOfLife';
+import { CELL_CYCLE_DIVISION } from './banks/cellCycleDivision';
 
 export const QUESTION_BANK = {
   'biological-classification': BIOLOGICAL_CLASSIFICATION,
@@ -23,73 +25,8 @@ export const QUESTION_BANK = {
   evolution: EVOLUTION,
   'biotech-principles': BIOTECH_PRINCIPLES,
   'biotech-applications': BIOTECH_APPLICATIONS,
-  'cell-unit-of-life': [
-    {
-      id: 'cell-1',
-      type: 'mcq',
-      question: 'Which cell organelle is correctly described as the "powerhouse of the cell" and possesses its own circular DNA?',
-      options: ['Golgi apparatus', 'Mitochondria', 'Lysosome', 'Peroxisome'],
-      correctIndex: 1,
-      explanation: 'Mitochondria carry out oxidative phosphorylation to generate ATP and contain their own circular DNA, ribosomes (70S), and can self-replicate — evidence supporting the endosymbiotic theory.',
-      difficulty: 'easy',
-    },
-    {
-      id: 'cell-2',
-      type: 'assertion-reason',
-      question: 'Assertion (A): Plant cells do not have centrioles. Reason (R): Centrioles are required for spindle fibre formation during cell division in all eukaryotes.',
-      options: [
-        'Both A and R are true, and R is the correct explanation of A',
-        'Both A and R are true, but R is NOT the correct explanation of A',
-        'A is true, but R is false',
-        'A is false, but R is true',
-      ],
-      correctIndex: 2,
-      explanation: 'Most plant cells indeed lack centrioles (A is true), but spindle formation still occurs in plants without them via microtubule organizing centers — so centrioles are not universally required (R is false).',
-      difficulty: 'medium',
-    },
-    {
-      id: 'cell-3',
-      type: 'mcq',
-      question: 'The fluid mosaic model of the plasma membrane was proposed by:',
-      options: ['Robertson', 'Singer and Nicolson', 'Overton', 'Danielli and Davson'],
-      correctIndex: 1,
-      explanation: 'Singer and Nicolson (1972) proposed the fluid mosaic model, describing the membrane as a mosaic of proteins embedded in or attached to a fluid phospholipid bilayer.',
-      difficulty: 'easy',
-    },
-    {
-      id: 'cell-4',
-      type: 'mcq',
-      question: 'Which of the following is NOT a function of the smooth endoplasmic reticulum (SER)?',
-      options: ['Lipid synthesis', 'Steroidal hormone synthesis', 'Protein glycosylation', 'Detoxification of drugs'],
-      correctIndex: 2,
-      explanation: 'Protein glycosylation begins in the rough ER (RER) and is completed in the Golgi apparatus. SER is associated with lipid/steroid synthesis and detoxification, not protein glycosylation.',
-      difficulty: 'medium',
-    },
-    {
-      id: 'cell-5',
-      type: 'statement',
-      question: 'How many of the following are correctly matched?\n(i) Ribosomes — Protein synthesis\n(ii) Lysosomes — Intracellular digestion\n(iii) Peroxisomes — Photosynthesis\n(iv) Vacuole — Osmoregulation in plant cells',
-      options: ['One', 'Two', 'Three', 'All four'],
-      correctIndex: 2,
-      explanation: 'Statements (i), (ii), and (iv) are correct. Peroxisomes are involved in oxidative reactions producing H2O2, not photosynthesis (that occurs in chloroplasts) — so (iii) is incorrect, giving three correct matches.',
-      difficulty: 'medium',
-    },
-    {
-      id: 'cell-6',
-      type: 'mcq',
-      question: 'Which statement about prokaryotic cells is correct?',
-      options: [
-        'They possess a membrane-bound nucleus',
-        'Their ribosomes are of 80S type',
-        'The genetic material is not enclosed within a nuclear envelope',
-        'They contain mitochondria for aerobic respiration',
-      ],
-      correctIndex: 2,
-      explanation: 'Prokaryotes lack a nuclear membrane, so DNA lies free in the cytoplasm (nucleoid region). Their ribosomes are 70S, and they lack membrane-bound organelles like mitochondria.',
-      difficulty: 'easy',
-    },
-  ],
-
+  'cell-unit-of-life': CELL_UNIT_OF_LIFE,
+  'cell-cycle-division': CELL_CYCLE_DIVISION,
   biomolecules: [
     {
       id: 'biomol-1',
