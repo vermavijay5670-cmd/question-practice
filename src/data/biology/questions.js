@@ -15,6 +15,8 @@ import { BIOTECH_PRINCIPLES } from './banks/biotechPrinciples';
 import { BIOTECH_APPLICATIONS } from './banks/biotechApplications';
 import { CELL_UNIT_OF_LIFE } from './banks/cellUnitOfLife';
 import { CELL_CYCLE_DIVISION } from './banks/cellCycleDivision';
+import { ANIMAL_KINGDOM } from './banks/animalKingdom';
+import { BIODIVERSITY_CONSERVATION } from './banks/biodiversityConservation';
 
 export const QUESTION_BANK = {
   'biological-classification': BIOLOGICAL_CLASSIFICATION,
@@ -27,6 +29,8 @@ export const QUESTION_BANK = {
   'biotech-applications': BIOTECH_APPLICATIONS,
   'cell-unit-of-life': CELL_UNIT_OF_LIFE,
   'cell-cycle-division': CELL_CYCLE_DIVISION,
+  'animal-kingdom': ANIMAL_KINGDOM,
+  'biodiversity-conservation': BIODIVERSITY_CONSERVATION,
   biomolecules: [
     {
       id: 'biomol-1',
