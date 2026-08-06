@@ -12,6 +12,7 @@ export const CLASS_11 = [
   { id: 'photosynthesis', name: 'Photosynthesis in Higher Plants' },
   { id: 'respiration-plants', name: 'Respiration in Plants' },
   { id: 'plant-growth-development', name: 'Plant Growth and Development' },
+  { id: 'locomotion-movement', name: 'Locomotion and Movement' },
 ];
 
 export const CLASS_12 = [

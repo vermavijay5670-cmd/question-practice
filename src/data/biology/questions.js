@@ -17,6 +17,10 @@ import { CELL_UNIT_OF_LIFE } from './banks/cellUnitOfLife';
 import { CELL_CYCLE_DIVISION } from './banks/cellCycleDivision';
 import { ANIMAL_KINGDOM } from './banks/animalKingdom';
 import { BIODIVERSITY_CONSERVATION } from './banks/biodiversityConservation';
+import { PLANT_KINGDOM } from './banks/plantKingdom';
+import { HUMAN_REPRODUCTION } from './banks/humanReproduction';
+import { REPRODUCTIVE_HEALTH } from './banks/reproductiveHealth';
+import { LOCOMOTION_MOVEMENT } from './banks/locomotionMovement';
 
 export const QUESTION_BANK = {
   'biological-classification': BIOLOGICAL_CLASSIFICATION,
@@ -31,6 +35,10 @@ export const QUESTION_BANK = {
   'cell-cycle-division': CELL_CYCLE_DIVISION,
   'animal-kingdom': ANIMAL_KINGDOM,
   'biodiversity-conservation': BIODIVERSITY_CONSERVATION,
+  'plant-kingdom': PLANT_KINGDOM,
+  'human-reproduction': HUMAN_REPRODUCTION,
+  'reproductive-health': REPRODUCTIVE_HEALTH,
+  'locomotion-movement': LOCOMOTION_MOVEMENT,
   biomolecules: [
     {
       id: 'biomol-1',
@@ -99,68 +107,6 @@ export const QUESTION_BANK = {
       options: ['Adenine', 'Uracil', 'Thymine', 'Cytosine'],
       correctIndex: 2,
       explanation: 'Thymine is found in DNA, not RNA. RNA contains uracil in place of thymine, pairing with adenine.',
-      difficulty: 'easy',
-    },
-  ],
-
-  'human-reproduction': [
-    {
-      id: 'hrep-1',
-      type: 'mcq',
-      question: 'Spermatogenesis is regulated by which hormone secreted from the anterior pituitary that acts on Sertoli cells?',
-      options: ['LH', 'FSH', 'Oxytocin', 'Testosterone'],
-      correctIndex: 1,
-      explanation: 'FSH acts on Sertoli cells to stimulate spermiogenesis and secretion of factors that support spermatogenesis, while LH acts on Leydig cells to stimulate testosterone synthesis.',
-      difficulty: 'medium',
-    },
-    {
-      id: 'hrep-2',
-      type: 'mcq',
-      question: 'Fertilisation in humans normally occurs in the:',
-      options: ['Uterus', 'Ampullary-isthmic junction of the fallopian tube', 'Cervix', 'Ovary'],
-      correctIndex: 1,
-      explanation: 'Fertilisation typically occurs at the ampullary-isthmic junction of the fallopian tube (oviduct), where the sperm meets the secondary oocyte.',
-      difficulty: 'medium',
-    },
-    {
-      id: 'hrep-3',
-      type: 'assertion-reason',
-      question: 'Assertion (A): The zona pellucida undergoes changes immediately after fertilisation. Reason (R): This prevents entry of additional sperm into the ovum, ensuring monospermy.',
-      options: [
-        'Both A and R are true, and R is the correct explanation of A',
-        'Both A and R are true, but R is NOT the correct explanation of A',
-        'A is true, but R is false',
-        'A is false, but R is true',
-      ],
-      correctIndex: 0,
-      explanation: 'The cortical reaction releases enzymes that harden the zona pellucida immediately after fertilisation, blocking polyspermy — R correctly explains A.',
-      difficulty: 'medium',
-    },
-    {
-      id: 'hrep-4',
-      type: 'mcq',
-      question: 'The inner cell mass of the blastocyst eventually develops into the:',
-      options: ['Placenta', 'Embryo', 'Umbilical cord', 'Amnion only'],
-      correctIndex: 1,
-      explanation: 'The inner cell mass (embryoblast) differentiates to form the embryo, while the outer trophoblast layer contributes to placenta formation.',
-      difficulty: 'easy',
-    },
-    {
-      id: 'hrep-5',
-      type: 'mcq',
-      question: 'Which hormone is primarily responsible for maintaining the corpus luteum during early pregnancy, forming the basis of urine pregnancy tests?',
-      options: ['Estrogen', 'Progesterone', 'hCG (human Chorionic Gonadotropin)', 'Prolactin'],
-      correctIndex: 2,
-      explanation: 'hCG, secreted by the developing blastocyst/placenta, maintains the corpus luteum so it continues progesterone secretion; its presence in urine is the basis of pregnancy tests.',
-      difficulty: 'easy',
-    },
-    {
-      id: 'hrep-6',
-      type: 'statement',
-      question: 'How many of the following are functions of the placenta?\n(i) Gas exchange between mother and foetus\n(ii) Removal of waste from foetal blood\n(iii) Secretion of hCG, hPL, estrogens and progesterone\n(iv) Producing sperm for the foetus',
-      options: ['One', 'Two', 'Three', 'Four'],
-      correctIndex: 2,
-      explanation: 'Statements (i), (ii), and (iii) correctly describe placental functions. (iv) is meaningless/incorrect — the placenta does not produce sperm.',
       difficulty: 'easy',
     },
   ],
