@@ -23,6 +23,7 @@ import { REPRODUCTIVE_HEALTH } from './banks/reproductiveHealth';
 import { LOCOMOTION_MOVEMENT } from './banks/locomotionMovement';
 import { BREATHING_EXCHANGE_GASES } from './banks/breathingExchangeGases';
 import { BODY_FLUIDS_CIRCULATION } from './banks/BodyFluidsCirculation';
+import { EXCRETORY_PRODUCTS_ELIMINATION } from './banks/excretoryProductsElimination';
 
 export const QUESTION_BANK = {
   'biological-classification': BIOLOGICAL_CLASSIFICATION,
@@ -43,6 +44,7 @@ export const QUESTION_BANK = {
   'locomotion-movement': LOCOMOTION_MOVEMENT,
   'breathing-exchange-gases': BREATHING_EXCHANGE_GASES,
   'body-fluids-circulation': BODY_FLUIDS_CIRCULATION,
+  'excretory-products-elimination': EXCRETORY_PRODUCTS_ELIMINATION,
 
   biomolecules: [
     {

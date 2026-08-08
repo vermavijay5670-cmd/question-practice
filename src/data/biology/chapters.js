@@ -15,6 +15,7 @@ export const CLASS_11 = [
   { id: 'locomotion-movement', name: 'Locomotion and Movement' },
   { id: 'breathing-exchange-gases', name: 'Breathing and Exchange of Gases' },
   { id: 'body-fluids-circulation', name: 'Body Fluids and Circulation' },
+  { id: 'excretory-products-elimination', name: 'Excretory Products and their Elimination' },
 ];
 
 export const CLASS_12 = [
