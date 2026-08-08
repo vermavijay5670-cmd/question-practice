@@ -13,6 +13,7 @@ export const CLASS_11 = [
   { id: 'respiration-plants', name: 'Respiration in Plants' },
   { id: 'plant-growth-development', name: 'Plant Growth and Development' },
   { id: 'locomotion-movement', name: 'Locomotion and Movement' },
+  { id: 'breathing-exchange-gases', name: 'Breathing and Exchange of Gases' },
 ];
 
 export const CLASS_12 = [

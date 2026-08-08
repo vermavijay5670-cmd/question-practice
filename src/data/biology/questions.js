@@ -21,6 +21,7 @@ import { PLANT_KINGDOM } from './banks/plantKingdom';
 import { HUMAN_REPRODUCTION } from './banks/humanReproduction';
 import { REPRODUCTIVE_HEALTH } from './banks/reproductiveHealth';
 import { LOCOMOTION_MOVEMENT } from './banks/locomotionMovement';
+import { BREATHING_EXCHANGE_GASES } from './banks/breathingExchangeGases';
 
 export const QUESTION_BANK = {
   'biological-classification': BIOLOGICAL_CLASSIFICATION,
@@ -39,6 +40,7 @@ export const QUESTION_BANK = {
   'human-reproduction': HUMAN_REPRODUCTION,
   'reproductive-health': REPRODUCTIVE_HEALTH,
   'locomotion-movement': LOCOMOTION_MOVEMENT,
+  'breathing-exchange-gases': BREATHING_EXCHANGE_GASES,
   biomolecules: [
     {
       id: 'biomol-1',
