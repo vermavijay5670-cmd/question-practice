@@ -14,6 +14,10 @@ export const CLASS_11 = [
   { id: 'plant-growth-development', name: 'Plant Growth and Development' },
   { id: 'locomotion-movement', name: 'Locomotion and Movement' },
   { id: 'breathing-exchange-gases', name: 'Breathing and Exchange of Gases' },
+  { id: 'body-fluids-circulation', name: 'Body Fluids and Circulation' },
+  { id: 'excretory-product-elimination', name: 'Excretory Product and their Elimination' },
+  { id: 'Neural-control-cordination', name: 'Neural Control and Coordination' },
+  { id: 'chemical-coordination-integration', name: 'Chemical Coordination and Integration' },
 ];
 
 export const CLASS_12 = [
