@@ -16,6 +16,7 @@ export const CLASS_11 = [
   { id: 'breathing-exchange-gases', name: 'Breathing and Exchange of Gases' },
   { id: 'body-fluids-circulation', name: 'Body Fluids and Circulation' },
   { id: 'excretory-products-elimination', name: 'Excretory Products and their Elimination' },
+  { id: 'neural-control-coordination', name: 'Neural Control and Coordination'},
 ];
 
 export const CLASS_12 = [
