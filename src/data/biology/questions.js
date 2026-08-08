@@ -49,6 +49,7 @@ export const QUESTION_BANK = {
   'excretory-product-elimination': EXCRETORY_PRODUCT_ELIMINATION,
   'neural-control-coordination': NEURAL_CONTROL_COORDINATION,
   'chemical-coordination-integration': CHEMICAL_COORDINATION_INTEGRATION,
+   }
   biomolecules: [
     {
       id: 'biomol-1',
