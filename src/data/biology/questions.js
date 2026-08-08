@@ -22,10 +22,7 @@ import { HUMAN_REPRODUCTION } from './banks/humanReproduction';
 import { REPRODUCTIVE_HEALTH } from './banks/reproductiveHealth';
 import { LOCOMOTION_MOVEMENT } from './banks/locomotionMovement';
 import { BREATHING_EXCHANGE_GASES } from './banks/breathingExchangeGases';
-import { BODY_FLUIDS_CIRCULATION } from './banks/bodyFluidsCirculation';
-import { EXCRETORY_PRODUCT_ELIMINATION } from './banks/excretoryProducteElimination';
-import { NEURAL_CONTROL_COORDINATION } from './banks/neuralControlCoordination';
-import { CHEMICAL_COORDINATION_INTEGRATION } from './banks/chemicalCoordinationIntegration';
+import { BODY_FLUIDS_CIRCULATION } from './banks/BodyFluidsCirculation';
 
 export const QUESTION_BANK = {
   'biological-classification': BIOLOGICAL_CLASSIFICATION,
@@ -46,9 +43,7 @@ export const QUESTION_BANK = {
   'locomotion-movement': LOCOMOTION_MOVEMENT,
   'breathing-exchange-gases': BREATHING_EXCHANGE_GASES,
   'body-fluids-circulation': BODY_FLUIDS_CIRCULATION,
-  'excretory-product-elimination': EXCRETORY_PRODUCT_ELIMINATION,
-  'neural-control-coordination': NEURAL_CONTROL_COORDINATION,
-  'chemical-coordination-integration': CHEMICAL_COORDINATION_INTEGRATION,
+
   biomolecules: [
     {
       id: 'biomol-1',
