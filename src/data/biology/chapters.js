@@ -17,6 +17,7 @@ export const CLASS_11 = [
   { id: 'body-fluids-circulation', name: 'Body Fluids and Circulation' },
   { id: 'excretory-products-elimination', name: 'Excretory Products and their Elimination' },
   { id: 'neural-control-coordination', name: 'Neural Control and Coordination'},
+  { id: 'chemical-coordination-integration', name: 'Chemical Coordination and Integration'},
 ];
 
 export const CLASS_12 = [

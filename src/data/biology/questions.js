@@ -25,6 +25,7 @@ import { BREATHING_EXCHANGE_GASES } from './banks/breathingExchangeGases';
 import { BODY_FLUIDS_CIRCULATION } from './banks/BodyFluidsCirculation';
 import { EXCRETORY_PRODUCTS_ELIMINATION } from './banks/excretoryProductsElimination';
 import { NEURAL_CONTROL_COORDINATION } from './banks/neuralControlCoordination';
+import { CHEMICAL_COORDINATION_INTEGRATION } from './banks/chemicalCoordinationIntegration';
 
 export const QUESTION_BANK = {
   'biological-classification': BIOLOGICAL_CLASSIFICATION,
@@ -47,7 +48,7 @@ export const QUESTION_BANK = {
   'body-fluids-circulation': BODY_FLUIDS_CIRCULATION,
   'excretory-products-elimination': EXCRETORY_PRODUCTS_ELIMINATION,
   'neural-control-coordination': NEURAL_CONTROL_COORDINATION,
-
+  'chemical-coordination-integration': CHEMICAL_COORDINATION_INTEGRATION,
   biomolecules: [
     {
       id: 'biomol-1',
