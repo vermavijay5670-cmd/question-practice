@@ -4,7 +4,7 @@
 // counter-current mechanism, regulation (ADH/RAAS/ANF), micturition, and
 // disorders of the excretory system.
 
-export const EXCRETORY_PRODUCTS = [
+export const EXCRETORY_PRODUCTS_ELIMINATION = [
   // ---- MCQ ----
   { id: 'ep-1', type: 'mcq', question: 'The process of removing metabolic nitrogenous waste products from the body is called:', options: ['Digestion', 'Excretion', 'Respiration', 'Circulation'], correctIndex: 1, explanation: 'Excretion is the removal of nitrogenous and other metabolic wastes from the body.', difficulty: 'easy' },
   { id: 'ep-2', type: 'mcq', question: 'Organisms that excrete nitrogenous waste primarily as ammonia are called:', options: ['Ureotelic', 'Uricotelic', 'Ammonotelic', 'Aminotelic'], correctIndex: 2, explanation: 'Ammonotelic organisms (like many aquatic animals) excrete ammonia directly, as it readily dissolves in surrounding water.', difficulty: 'medium' },
