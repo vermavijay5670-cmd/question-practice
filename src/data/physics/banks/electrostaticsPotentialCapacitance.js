@@ -1,0 +1,3 @@
+export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
+
+]
