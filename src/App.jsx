@@ -50,7 +50,7 @@ export default function App() {
               path="/chemistry" element={<ChemistryHome/>} />
               <Route
                 path="/chemistry/chapter/:chapterID"
-                element={<ChemistryChapterPractices />}
+                element={<ChemistryChapterPractice />}
             />
 
           </Routes>

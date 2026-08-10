@@ -88,7 +88,7 @@ export default function Home() {
       </div>
 
       <p className="home-footer-note">
-        Biology is live with sample chapter sets. Chemistry and Physics open up next —
+        Biology, Physics and Chemistry all is live with sample chapter sets. —
         each gets its own subject-specific practice experience, not a reskin of this one.
       </p>
     </main>
