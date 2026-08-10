@@ -29,7 +29,7 @@ export const SUBJECTS = [
     id: 'physics',
     label: 'Physics',
     tagline: 'Forces, fields, and the maths between',
-    status: 'coming-soon',
+    status: 'live',
     path: '/physics',
     theme: {
       deep: 'var(--phy-deep)',

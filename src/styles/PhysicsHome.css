@@ -1,0 +1,561 @@
+/* =========================================================
+   PHYSICS HOME
+   ========================================================= */
+
+.physics-home {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      ellipse at top left,
+      rgba(79, 168, 216, 0.18),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at bottom right,
+      rgba(230, 87, 122, 0.08),
+      transparent 50%
+    ),
+    var(--void);
+
+  padding: 4vh 5vw 8vh;
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   Subtle Physics Grid
+   --------------------------------------------------------- */
+
+.physics-home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(79, 168, 216, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(79, 168, 216, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 42px 42px;
+
+  pointer-events: none;
+  mask-image: linear-gradient(
+    to bottom,
+    black,
+    transparent 90%
+  );
+}
+
+
+/* ---------------------------------------------------------
+   Top Section
+   --------------------------------------------------------- */
+
+.physics-top {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+
+  flex-wrap: wrap;
+}
+
+
+/* ---------------------------------------------------------
+   Back Button
+   --------------------------------------------------------- */
+
+.physics-top .back-link {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+
+  color: var(--ink-dim);
+
+  border: 1px solid var(--line);
+
+  padding: 0.4rem 0.8rem;
+
+  border-radius: 999px;
+
+  display: inline-block;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.physics-top .back-link:hover {
+  border-color: var(--phy-bright);
+  color: var(--phy-bright);
+
+  background: rgba(79, 168, 216, 0.06);
+}
+
+
+/* ---------------------------------------------------------
+   Title
+   --------------------------------------------------------- */
+
+.physics-title-block {
+  position: relative;
+}
+
+.physics-title-block h1 {
+  font-family: var(--font-display);
+
+  font-size: clamp(
+    1.9rem,
+    4vw,
+    2.6rem
+  );
+
+  margin: 0.3rem 0 0.2rem;
+
+  letter-spacing: -0.02em;
+}
+
+.physics-title-block .eyebrow {
+  font-family: var(--font-mono);
+
+  font-size: 0.7rem;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+  color: var(--phy-bright);
+}
+
+
+/* ---------------------------------------------------------
+   Physics Actions
+   --------------------------------------------------------- */
+
+.physics-actions {
+  display: flex;
+
+  gap: 0.75rem;
+
+  flex-wrap: wrap;
+}
+
+
+/* ---------------------------------------------------------
+   Buttons
+   --------------------------------------------------------- */
+
+.physics-actions .pill-btn {
+  font-family: var(--font-mono);
+
+  font-size: 0.78rem;
+
+  padding: 0.55rem 1rem;
+
+  border-radius: 999px;
+
+  border: 1px solid var(--phy-mid);
+
+  color: var(--ink);
+
+  background: rgba(79, 168, 216, 0.06);
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 0.4rem;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.physics-actions .pill-btn:hover {
+  border-color: var(--phy-bright);
+
+  background: rgba(79, 168, 216, 0.14);
+
+  transform: translateY(-1px);
+}
+
+
+/* Primary Physics button */
+
+.physics-actions .pill-btn.primary {
+  background: var(--phy-bright);
+
+  color: var(--void);
+
+  border-color: var(--phy-bright);
+
+  font-weight: 600;
+}
+
+.physics-actions .pill-btn.primary:hover {
+  background: var(--phy-accent);
+
+  border-color: var(--phy-accent);
+
+  color: white;
+}
+
+
+/* ---------------------------------------------------------
+   Statistics
+   --------------------------------------------------------- */
+
+.physics-stats-strip {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+
+  gap: 2.5rem;
+
+  margin-bottom: 2.5rem;
+
+  flex-wrap: wrap;
+
+  font-family: var(--font-mono);
+}
+
+.physics-stat {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.15rem;
+}
+
+.physics-stat .num {
+  font-size: 1.6rem;
+
+  color: var(--phy-bright);
+
+  text-shadow:
+    0 0 16px rgba(79, 168, 216, 0.25);
+}
+
+.physics-stat .label {
+  font-size: 0.7rem;
+
+  color: var(--ink-dim);
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
+
+/* ---------------------------------------------------------
+   Class Sections
+   --------------------------------------------------------- */
+
+.physics-class-section {
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: 2.5rem;
+}
+
+
+/* ---------------------------------------------------------
+   Class Heading
+   --------------------------------------------------------- */
+
+.physics-class-heading {
+  font-family: var(--font-mono);
+
+  font-size: 0.78rem;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+
+  color: var(--phy-accent);
+
+  margin-bottom: 0.9rem;
+
+  padding-bottom: 0.5rem;
+
+  border-bottom: 1px solid var(--line);
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.6rem;
+}
+
+.physics-class-heading::before {
+  content: "∿";
+
+  color: var(--phy-bright);
+
+  font-size: 1rem;
+}
+
+
+/* ---------------------------------------------------------
+   Chapter Grid
+   --------------------------------------------------------- */
+
+.physics-chapter-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(260px, 1fr)
+    );
+
+  gap: 1rem;
+}
+
+
+/* ---------------------------------------------------------
+   Chapter Card
+   --------------------------------------------------------- */
+
+.physics-chapter-card {
+  position: relative;
+
+  border: 1px solid var(--line);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(35, 81, 127, 0.10),
+      var(--surface)
+    );
+
+  border-radius: 14px;
+
+  padding: 1.1rem 1.2rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.6rem;
+
+  overflow: hidden;
+
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+
+/* Physics decorative corner */
+
+.physics-chapter-card::after {
+  content: "↗";
+
+  position: absolute;
+
+  right: 12px;
+  top: 8px;
+
+  font-family: var(--font-mono);
+
+  font-size: 1rem;
+
+  color: rgba(79, 168, 216, 0.20);
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+/* Hover */
+
+.physics-chapter-card:hover {
+  border-color: var(--phy-bright);
+
+  transform:
+    translateY(-4px);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(35, 81, 127, 0.20),
+      var(--surface)
+    );
+
+  box-shadow:
+    0 10px 30px
+    rgba(0, 0, 0, 0.18),
+
+    0 0 20px
+    rgba(79, 168, 216, 0.08);
+}
+
+.physics-chapter-card:hover::after {
+  color: var(--phy-bright);
+
+  transform:
+    translate(2px, -2px);
+}
+
+
+/* ---------------------------------------------------------
+   Chapter Name
+   --------------------------------------------------------- */
+
+.physics-chapter-card .name {
+  font-family: var(--font-display);
+
+  font-size: 1.05rem;
+
+  line-height: 1.3;
+
+  padding-right: 1.2rem;
+}
+
+
+/* ---------------------------------------------------------
+   Meta Row
+   --------------------------------------------------------- */
+
+.physics-chapter-card .meta-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  font-family: var(--font-mono);
+
+  font-size: 0.72rem;
+
+  color: var(--ink-dim);
+}
+
+
+/* ---------------------------------------------------------
+   Progress Bar
+   --------------------------------------------------------- */
+
+.physics-progress-track {
+  height: 4px;
+
+  background: var(--surface-2);
+
+  border-radius: 999px;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.physics-progress-fill {
+  height: 100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--phy-mid),
+      var(--phy-bright)
+    );
+
+  border-radius: 999px;
+
+  transition:
+    width 0.4s ease;
+
+  box-shadow:
+    0 0 10px
+    rgba(79, 168, 216, 0.30);
+}
+
+
+/* ---------------------------------------------------------
+   Empty Chapter
+   --------------------------------------------------------- */
+
+.physics-chapter-card .empty-tag {
+  font-size: 0.72rem;
+
+  color: var(--ink-dim);
+
+  font-style: italic;
+
+  line-height: 1.5;
+}
+
+
+/* ---------------------------------------------------------
+   Mobile
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+  .physics-home {
+    padding:
+      3vh 4vw 7vh;
+  }
+
+  .physics-top {
+    margin-bottom: 2rem;
+  }
+
+  .physics-actions {
+    width: 100%;
+  }
+
+  .physics-actions .pill-btn {
+    flex: 1;
+
+    justify-content: center;
+  }
+
+  .physics-stats-strip {
+    gap: 1.5rem;
+  }
+
+  .physics-chapter-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .physics-chapter-card {
+    padding: 1rem;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   Reduced Motion
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .physics-chapter-card,
+  .physics-chapter-card::after,
+  .physics-actions .pill-btn {
+    transition: none;
+  }
+
+}
