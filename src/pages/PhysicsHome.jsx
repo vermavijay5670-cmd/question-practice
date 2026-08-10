@@ -90,6 +90,19 @@ export default function PhysicsHome() {
 
   </div>
 
-</main>
+      <section className="class-section">
+        <div className="class-heading">Class 11</div>
+        <div className="chapter-grid">
+          {CLASS_11.map((c) => <ChapterCard key={c.id} chapter={c} />)}
+        </div>
+      </section>
+
+      <section className="class-section">
+        <div className="class-heading">Class 12</div>
+        <div className="chapter-grid">
+          {CLASS_12.map((c) => <ChapterCard key={c.id} chapter={c} />)}
+        </div>
+      </section>
+    </main>
   );
 }
