@@ -1,6 +1,6 @@
 import { UNIT_DIMENSIONS } from './banks/unitDimensions';
 import { MOTION_STRAIGHT_LINE } from './banks/motionStraightLine';
-import { ELECTRIC_POTENTIAL_CAPACITANCE } from './banks/electricpotentialCapacitance';
+import { ELECTRIC_POTENTIAL_CAPACITANCE } from './banks/electricPotentialCapacitance';
 
 export const QUESTION_BANK = {
     'unit-dimensions': UNIT_DIMENSIONS,
