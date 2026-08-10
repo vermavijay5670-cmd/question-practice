@@ -4,7 +4,7 @@ import { ProgressProvider } from './context/ProgressContext';
 import Home from './pages/Home';
 import BiologyHome from './pages/BiologyHome';
 import PhysicsHome from './pages/PhysicsHome';
-import ChemistryHome from '.pages/ChemistryHome';
+import ChemistryHome from './pages/ChemistryHome';
 
 import ChapterPractice from './pages/ChapterPractice';
 import PhysicsChapterPractice from './pages/PhysicsChapterPractice';
