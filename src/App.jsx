@@ -4,13 +4,14 @@ import { ProgressProvider } from './context/ProgressContext';
 import Home from './pages/Home';
 import BiologyHome from './pages/BiologyHome';
 import PhysicsHome from './pages/PhysicsHome';
+import ChemistryHome from '.pages/ChemistryHome';
 
 import ChapterPractice from './pages/ChapterPractice';
 import PhysicsChapterPractice from './pages/PhysicsChapterPractice';
+import ChemistryChapterPractice from './pages/ChemistryChapterPractice';
 
 import MockTest from './pages/MockTest';
 import MistakeBank from './pages/MistakeBank';
-import ComingSoon from './pages/ComingSoon';
 
 export default function App() {
   return (
@@ -46,8 +47,10 @@ export default function App() {
 
             {/* CHEMISTRY */}
             <Route
-              path="/chemistry"
-              element={<ComingSoon subject="Chemistry" />}
+              path="/chemistry" element={<ChemistryHome/>} />
+              <Route
+                path="/chemistry/chapter/:chapterID"
+                element={<ChemistryChapterPractices />}
             />
 
           </Routes>

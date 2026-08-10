@@ -1,0 +1,1003 @@
+/* =========================================================
+   CHEMISTRY HOME
+   ========================================================= */
+
+.chem-home {
+  min-height: 100vh;
+
+  padding: 4vh 5vw 8vh;
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      ellipse at 15% 10%,
+      rgba(166, 91, 255, 0.16),
+      transparent 48%
+    ),
+    radial-gradient(
+      ellipse at 85% 20%,
+      rgba(54, 211, 153, 0.10),
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse at 50% 100%,
+      rgba(255, 183, 77, 0.07),
+      transparent 50%
+    ),
+    var(--void);
+}
+
+
+/* =========================================================
+   BACKGROUND MOLECULAR GRID
+   ========================================================= */
+
+.chem-home::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(166, 91, 255, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(166, 91, 255, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 44px 44px;
+
+  pointer-events: none;
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      black 0%,
+      rgba(0, 0, 0, 0.65) 50%,
+      transparent 100%
+    );
+}
+
+
+/* =========================================================
+   DECORATIVE MOLECULE
+   ========================================================= */
+
+.chem-home::after {
+  content: "⚛";
+
+  position: absolute;
+
+  top: 70px;
+  right: 6vw;
+
+  font-size: 9rem;
+
+  color: rgba(166, 91, 255, 0.035);
+
+  pointer-events: none;
+
+  transform: rotate(-12deg);
+}
+
+
+/* =========================================================
+   TOP SECTION
+   ========================================================= */
+
+.chem-top {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 2rem;
+
+  margin-bottom: 2.5rem;
+
+  flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.chem-title-block {
+  position: relative;
+}
+
+
+.chem-title-block .back-link {
+  display: inline-block;
+
+  margin-bottom: 0.8rem;
+
+  padding: 0.4rem 0.8rem;
+
+  border: 1px solid var(--line);
+
+  border-radius: 999px;
+
+  color: var(--ink-dim);
+
+  font-family: var(--font-mono);
+
+  font-size: 0.75rem;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.chem-title-block .back-link:hover {
+  color: var(--ink);
+
+  border-color: rgba(166, 91, 255, 0.65);
+
+  background:
+    rgba(166, 91, 255, 0.07);
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.chem-title-block .eyebrow {
+  color: #A65BFF;
+
+  font-family: var(--font-mono);
+
+  font-size: 0.7rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+
+  margin-bottom: 0.35rem;
+}
+
+
+.chem-title-block .eyebrow::before {
+  content: "●";
+
+  margin-right: 0.5rem;
+
+  color: #36D399;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+   ========================================================= */
+
+.chem-title-block h1 {
+  margin: 0;
+
+  font-family: var(--font-display);
+
+  font-size: clamp(
+    2rem,
+    4vw,
+    2.8rem
+  );
+
+  line-height: 1.05;
+
+  letter-spacing: -0.025em;
+}
+
+
+.chem-subtitle {
+  margin: 0.6rem 0 0;
+
+  color: var(--ink-dim);
+
+  font-family: var(--font-mono);
+
+  font-size: 0.75rem;
+
+  letter-spacing: 0.03em;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+   ========================================================= */
+
+.chem-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.7rem;
+
+  flex-wrap: wrap;
+}
+
+
+.chem-actions .pill-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 0.4rem;
+
+  padding: 0.55rem 1rem;
+
+  border-radius: 999px;
+
+  border: 1px solid var(--line);
+
+  background:
+    rgba(255, 255, 255, 0.025);
+
+  color: var(--ink);
+
+  font-family: var(--font-mono);
+
+  font-size: 0.75rem;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.chem-actions .pill-btn:hover {
+  transform: translateY(-2px);
+
+  border-color: #A65BFF;
+
+  background:
+    rgba(166, 91, 255, 0.09);
+
+  box-shadow:
+    0 5px 20px
+    rgba(166, 91, 255, 0.08);
+}
+
+
+/* PRIMARY BUTTON */
+
+.chem-actions .pill-btn.primary {
+  color: white;
+
+  border-color: #A65BFF;
+
+  background:
+    linear-gradient(
+      135deg,
+      #A65BFF,
+      #7040C0
+    );
+
+  box-shadow:
+    0 5px 20px
+    rgba(166, 91, 255, 0.18);
+}
+
+
+.chem-actions .pill-btn.primary:hover {
+  border-color: #36D399;
+
+  background:
+    linear-gradient(
+      135deg,
+      #36D399,
+      #239B70
+    );
+
+  box-shadow:
+    0 5px 20px
+    rgba(54, 211, 153, 0.16);
+}
+
+
+/* =========================================================
+   STATISTICS
+   ========================================================= */
+
+.chem-stats-strip {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 3rem;
+
+  margin-bottom: 2.8rem;
+
+  padding: 1.1rem 1.3rem;
+
+  border: 1px solid var(--line);
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      100deg,
+      rgba(166, 91, 255, 0.055),
+      rgba(54, 211, 153, 0.025),
+      transparent
+    );
+
+  flex-wrap: wrap;
+}
+
+
+.chem-stat {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.15rem;
+}
+
+
+.chem-stat .num {
+  color: #A65BFF;
+
+  font-family: var(--font-mono);
+
+  font-size: 1.55rem;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  text-shadow:
+    0 0 18px
+    rgba(166, 91, 255, 0.25);
+}
+
+
+.chem-stat:nth-child(2) .num {
+  color: #36D399;
+
+  text-shadow:
+    0 0 18px
+    rgba(54, 211, 153, 0.20);
+}
+
+
+.chem-stat:nth-child(3) .num {
+  color: #FFB74D;
+
+  text-shadow:
+    0 0 18px
+    rgba(255, 183, 77, 0.20);
+}
+
+
+.chem-stat .label {
+  color: var(--ink-dim);
+
+  font-family: var(--font-mono);
+
+  font-size: 0.65rem;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CLASS SECTION
+   ========================================================= */
+
+.chem-class-section {
+  position: relative;
+  z-index: 2;
+
+  margin-bottom: 3rem;
+}
+
+
+/* =========================================================
+   CLASS HEADING
+   ========================================================= */
+
+.chem-class-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+
+  color: var(--ink);
+
+  font-family: var(--font-mono);
+
+  font-size: 0.8rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+}
+
+
+.chem-class-heading::before {
+  content: "⚗";
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 28px;
+
+  height: 28px;
+
+  border-radius: 8px;
+
+  color: #A65BFF;
+
+  background:
+    rgba(166, 91, 255, 0.08);
+
+  border: 1px solid
+    rgba(166, 91, 255, 0.18);
+
+  font-size: 0.9rem;
+}
+
+
+.chem-heading-line {
+  color: var(--ink-dim);
+
+  font-size: 0.62rem;
+
+  font-weight: 400;
+
+  letter-spacing: 0.06em;
+
+  text-transform: none;
+}
+
+
+/* =========================================================
+   CHAPTER GRID
+   ========================================================= */
+
+.chem-chapter-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(260px, 1fr)
+    );
+
+  gap: 0.9rem;
+}
+
+
+/* =========================================================
+   CHAPTER CARD
+   ========================================================= */
+
+.chem-chapter-card {
+  position: relative;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 0.9rem;
+
+  min-height: 110px;
+
+  padding: 1rem;
+
+  border: 1px solid var(--line);
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(166, 91, 255, 0.045),
+      var(--surface)
+    );
+
+  color: var(--ink);
+
+  text-decoration: none;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+
+/* Glow line */
+
+.chem-chapter-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 2px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #A65BFF,
+      #36D399
+    );
+
+  opacity: 0.3;
+
+  transition:
+    opacity 0.22s ease;
+}
+
+
+.chem-chapter-card:hover {
+  transform:
+    translateY(-4px);
+
+  border-color:
+    rgba(166, 91, 255, 0.55);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(166, 91, 255, 0.10),
+      var(--surface)
+    );
+
+  box-shadow:
+    0 12px 32px
+    rgba(0, 0, 0, 0.18),
+
+    0 0 24px
+    rgba(166, 91, 255, 0.06);
+}
+
+
+.chem-chapter-card:hover::before {
+  opacity: 1;
+}
+
+
+/* =========================================================
+   CHAPTER NUMBER
+   ========================================================= */
+
+.chem-card-number {
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 34px;
+
+  height: 34px;
+
+  border-radius: 9px;
+
+  border: 1px solid
+    rgba(166, 91, 255, 0.20);
+
+  background:
+    rgba(166, 91, 255, 0.07);
+
+  color: #A65BFF;
+
+  font-family: var(--font-mono);
+
+  font-size: 0.72rem;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.chem-card-content {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+.chem-chapter-card .name {
+  padding-right: 1.5rem;
+
+  margin-bottom: 0.8rem;
+
+  color: var(--ink);
+
+  font-family: var(--font-display);
+
+  font-size: 0.98rem;
+
+  font-weight: 500;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   PROGRESS TRACK
+   ========================================================= */
+
+.chem-chapter-card .progress-track {
+  width: 100%;
+
+  height: 4px;
+
+  margin-bottom: 0.5rem;
+
+  border-radius: 999px;
+
+  background:
+    var(--surface-2);
+
+  overflow: hidden;
+}
+
+
+.chem-chapter-card .progress-fill {
+  height: 100%;
+
+  min-width: 0;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #A65BFF,
+      #36D399
+    );
+
+  box-shadow:
+    0 0 9px
+    rgba(166, 91, 255, 0.25);
+
+  transition:
+    width 0.35s ease;
+}
+
+
+/* =========================================================
+   META ROW
+   ========================================================= */
+
+.chem-chapter-card .meta-row {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 0.8rem;
+
+  color: var(--ink-dim);
+
+  font-family: var(--font-mono);
+
+  font-size: 0.62rem;
+}
+
+
+/* =========================================================
+   ARROW
+   ========================================================= */
+
+.chem-arrow {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  color:
+    rgba(166, 91, 255, 0.30);
+
+  font-family: var(--font-mono);
+
+  font-size: 0.9rem;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.chem-chapter-card:hover .chem-arrow {
+  color: #A65BFF;
+
+  transform:
+    translate(2px, -2px);
+}
+
+
+/* =========================================================
+   EMPTY / COMING SOON CARD
+   ========================================================= */
+
+.chem-empty-card {
+  cursor: default;
+
+  opacity: 0.65;
+
+  background:
+    rgba(255, 255, 255, 0.015);
+}
+
+
+.chem-empty-card:hover {
+  transform: none;
+
+  border-color: var(--line);
+
+  box-shadow: none;
+}
+
+
+.chem-empty-card::before {
+  background:
+    var(--line);
+
+  opacity: 0.5;
+}
+
+
+.chem-empty-card .name {
+  color: var(--ink-dim);
+
+  margin-bottom: 0.35rem;
+}
+
+
+.empty-tag {
+  color: var(--ink-dim);
+
+  font-family: var(--font-mono);
+
+  font-size: 0.62rem;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   STATUS LABEL
+   ========================================================= */
+
+.chem-status {
+  position: absolute;
+
+  right: 12px;
+  bottom: 10px;
+
+  padding: 0.18rem 0.45rem;
+
+  border-radius: 999px;
+
+  border: 1px solid
+    rgba(255, 183, 77, 0.18);
+
+  background:
+    rgba(255, 183, 77, 0.06);
+
+  color: #FFB74D;
+
+  font-family: var(--font-mono);
+
+  font-size: 0.52rem;
+
+  letter-spacing: 0.08em;
+}
+
+
+/* =========================================================
+   PHYSICAL / INORGANIC / ORGANIC VISUAL ACCENTS
+   ========================================================= */
+
+.chem-class-section:nth-of-type(1)
+.chem-class-heading::before {
+  color: #A65BFF;
+}
+
+
+.chem-class-section:nth-of-type(2)
+.chem-class-heading::before {
+  color: #36D399;
+}
+
+
+/* =========================================================
+   HOVER FORMULA DETAIL
+   ========================================================= */
+
+.chem-chapter-card:hover .name::after {
+  content: "  •";
+
+  color: #36D399;
+
+  font-family: var(--font-mono);
+
+  font-size: 0.7rem;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .chem-home {
+    padding:
+      3vh 4vw 7vh;
+  }
+
+
+  .chem-top {
+    margin-bottom: 2rem;
+  }
+
+
+  .chem-actions {
+    width: 100%;
+  }
+
+
+  .chem-actions .pill-btn {
+    flex: 1;
+  }
+
+
+  .chem-stats-strip {
+    gap: 1.7rem;
+
+    padding: 1rem;
+  }
+
+
+  .chem-chapter-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .chem-home::after {
+    font-size: 6rem;
+
+    top: 110px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .chem-title-block h1 {
+    font-size: 1.8rem;
+  }
+
+
+  .chem-subtitle {
+    font-size: 0.68rem;
+  }
+
+
+  .chem-actions {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+
+  .chem-actions .pill-btn {
+    width: 100%;
+  }
+
+
+  .chem-stats-strip {
+    display: grid;
+
+    grid-template-columns:
+      repeat(3, 1fr);
+
+    gap: 0.8rem;
+  }
+
+
+  .chem-stat .num {
+    font-size: 1.2rem;
+  }
+
+
+  .chem-stat .label {
+    font-size: 0.5rem;
+
+    line-height: 1.3;
+  }
+
+
+  .chem-class-heading {
+    flex-wrap: wrap;
+  }
+
+
+  .chem-heading-line {
+    width: 100%;
+  }
+
+
+  .chem-chapter-card {
+    min-height: 100px;
+
+    padding: 0.85rem;
+  }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .chem-chapter-card,
+  .chem-actions .pill-btn,
+  .chem-arrow,
+  .chem-chapter-card .progress-fill {
+    transition: none;
+  }
+
+}

@@ -16,7 +16,7 @@ export const SUBJECTS = [
     id: 'chemistry',
     label: 'Chemistry',
     tagline: 'Reactions, mechanisms, structure',
-    status: 'coming-soon',
+    status: 'live',
     path: '/chemistry',
     theme: {
       deep: 'var(--chem-deep)',
