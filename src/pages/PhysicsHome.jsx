@@ -43,38 +43,53 @@ export default function PhysicsHome() {
   const chaptersLive = [...CLASS_11, ...CLASS_12].filter(c => getChapterQuestions(c.id).length > 0).length;
 
   return (
-    <main className="phy-home">
-      <div className="phy-top">
-        <div className="phy-title-block">
-          <Link to="/" className="back-link">← All subjects</Link>
-          <div className="eyebrow">Physics</div>
-          <h1>Chapter-wise practice</h1>
-        </div>
-        <div className="phy-actions">
-          <Link to="/physics/mock" className="pill-btn primary">Mock test</Link>
-          <Link to="/physics/mistakes" className="pill-btn">Mistake bank ({mistakeCount})</Link>
-        </div>
-      </div>
+    <main className="physics-home">
 
-      <div className="phy-stats-strip">
-        <div className="phy-stat"><span className="num">{totalSeen}</span><span className="label">Questions attempted</span></div>
-        <div className="phy-stat"><span className="num">{accuracy}%</span><span className="label">Accuracy</span></div>
-        <div className="phy-stat"><span className="num">{chaptersLive}/{CLASS_11.length + CLASS_12.length}</span><span className="label">Chapters live</span></div>
-      </div>
+  <div className="physics-top">
 
-      <section className="class-section">
-        <div className="class-heading">Class 11</div>
-        <div className="chapter-grid">
-          {CLASS_11.map((c) => <ChapterCard key={c.id} chapter={c} />)}
-        </div>
-      </section>
+    <div className="physics-title-block">
+      <Link to="/" className="back-link">
+        ← All subjects
+      </Link>
 
-      <section className="class-section">
-        <div className="class-heading">Class 12</div>
-        <div className="chapter-grid">
-          {CLASS_12.map((c) => <ChapterCard key={c.id} chapter={c} />)}
-        </div>
-      </section>
-    </main>
+      <div className="eyebrow">Physics</div>
+
+      <h1>Chapter-wise practice</h1>
+    </div>
+
+    <div className="physics-actions">
+      <Link to="/physics/mock" className="pill-btn primary">
+        Mock test
+      </Link>
+
+      <Link to="/physics/mistakes" className="pill-btn">
+        Mistake bank ({mistakeCount})
+      </Link>
+    </div>
+
+  </div>
+
+  <div className="physics-stats-strip">
+
+    <div className="physics-stat">
+      <span className="num">{totalSeen}</span>
+      <span className="label">Questions attempted</span>
+    </div>
+
+    <div className="physics-stat">
+      <span className="num">{accuracy}%</span>
+      <span className="label">Accuracy</span>
+    </div>
+
+    <div className="physics-stat">
+      <span className="num">
+        {chaptersLive}/{CLASS_11.length + CLASS_12.length}
+      </span>
+      <span className="label">Chapters live</span>
+    </div>
+
+  </div>
+
+</main>
   );
 }
