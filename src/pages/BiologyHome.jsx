@@ -1,7 +1,18 @@
 import { Link } from 'react-router-dom';
-import { CLASS_11, CLASS_12 } from '../data/biology/chapters';
-import { getChapterQuestions } from '../data/biology/questions';
-import { useProgress } from '../context/ProgressContext';
+
+import {
+  CLASS_11,
+  CLASS_12,
+} from '../data/biology/chapters';
+
+import {
+  getChapterQuestions,
+} from '../data/biology/questions';
+
+import {
+  useProgress,
+} from '../context/ProgressContext';
+
 import '../styles/BiologyHome.css';
 
 function ChapterCard({ chapter }) {
@@ -24,39 +35,25 @@ function ChapterCard({ chapter }) {
       )
     : 0;
 
-
   return (
     <div className="chapter-card">
-
-      {/* =========================================
-          CHAPTER NAME
-          ========================================= */}
 
       <div className="name">
         {chapter.name}
       </div>
 
-
-      {/* =========================================
-          QUESTION PROGRESS
-          ========================================= */}
-
       {total > 0 ? (
         <>
           <div className="progress-track">
-
             <div
               className="progress-fill"
               style={{
                 width: `${pct}%`,
               }}
             />
-
           </div>
 
-
           <div className="meta-row">
-
             <span>
               {total} questions
             </span>
@@ -65,37 +62,48 @@ function ChapterCard({ chapter }) {
               {attempt?.correct || 0}/
               {seen || 0} correct so far
             </span>
-
           </div>
         </>
       ) : (
         <div className="empty-tag">
-          No questions yet — send the chapter PDF,
-          or add a question bank.
+          No questions yet — add the chapter
+          question bank.
         </div>
       )}
 
+      {/* Study resources */}
 
-      {/* =========================================
-          VISIT STUDY MATERIAL
-          ========================================= */}
+      {chapter.resources && (
+        <div className="chapter-resources">
 
-      {chapter.link && (
-        <a
-          href={chapter.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="chapter-resource-link"
-          onClick={(e) => e.stopPropagation()}
-        >
-          ↗ Visit Study Material
-        </a>
+          {chapter.resources.Shortnotes && (
+            <a
+              href={chapter.resources.Shortnotes}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="chapter-resource-link"
+              onClick={(e) => e.stopPropagation()}
+            >
+              ↗ Short Notes
+            </a>
+          )}
+
+          {chapter.resources.FlashCards && (
+            <a
+              href={chapter.resources.FlashCards}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="chapter-resource-link"
+              onClick={(e) => e.stopPropagation()}
+            >
+              ↗ FlashCards
+            </a>
+          )}
+
+        </div>
       )}
 
-
-      {/* =========================================
-          PRACTICE QUESTIONS
-          ========================================= */}
+      {/* Practice */}
 
       {total > 0 && (
         <Link
