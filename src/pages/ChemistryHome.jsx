@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { CLASS_11, CLASS_12 } from '../data/chemistry/chapters';
 import { getChapterQuestions } from '../data/chemistry/questions';
 import { useProgress } from '../context/ProgressContext';
+import { RESOURCES } from '../data/resources';
 import '../styles/ChemistryHome.css';
 
 function ChapterCard({ chapter }) {
@@ -17,6 +18,8 @@ function ChapterCard({ chapter }) {
   const pct = total
     ? Math.min(100, Math.round((seen / total) * 100))
     : 0;
+  const resources =
+  RESOURCES.chemistry[chapter.id];
 
   /*
    * If no questions have been added yet,
@@ -74,20 +77,52 @@ function ChapterCard({ chapter }) {
         </div>
 
         <div className="meta-row">
-          <span>
-            {total} questions
-          </span>
+  <span>
+    {total} questions
+  </span>
 
-          <span>
-            {attempt?.correct || 0}/{seen || 0} correct
-          </span>
-        </div>
+  <span>
+    {attempt?.correct || 0}/{seen || 0} correct
+  </span>
+</div>
 
-      </div>
+{/* STUDY RESOURCES */}
 
-      <div className="chem-arrow">
-        →
-      </div>
+{resources && (
+  <div className="chapter-resources">
+
+    {resources.shortnotes && (
+      <a
+        href={resources.shortnotes}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="resource-button"
+        onClick={(e) => e.stopPropagation()}
+      >
+        ↗ Short Notes
+      </a>
+    )}
+
+    {resources.flashcards && (
+      <a
+        href={resources.flashcards}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="resource-button"
+        onClick={(e) => e.stopPropagation()}
+      >
+        ↗ FlashCards
+      </a>
+    )}
+
+  </div>
+)}
+
+</div>
+
+<div className="chem-arrow">
+  →
+</div>
 
     </Link>
   );

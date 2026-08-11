@@ -14,22 +14,14 @@ import {
   useProgress,
 } from '../context/ProgressContext';
 
+import { RESOURCES } from '../data/resources';
+
 import '../styles/BiologyHome.css';
 
 
 /* =========================================================
    BIOLOGY RESOURCE LINKS
-   ========================================================= */
-
-const BIOLOGY_RESOURCES = {
-  'breathing-exchange-gases': {
-    shortnotes:
-      'https://notebook.google.com/notebook/7d11822a-2997-4e81-b094-6de042470478/artifact/20ea724c-b7db-49f7-868b-3ebb7161c8c3?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
-
-    flashcards:
-      'https://notebook.google.com/notebook/7d11822a-2997-4e81-b094-6de042470478/artifact/edeba718-2188-49f9-869e-24a14161720b?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
-  },
-};
+   =========================================================
 
 
 /* =========================================================
@@ -56,7 +48,7 @@ function ChapterCard({ chapter }) {
     : 0;
 
   const resources =
-    BIOLOGY_RESOURCES[chapter.id];
+  RESOURCES.biology[chapter.id];
 
   return (
     <article

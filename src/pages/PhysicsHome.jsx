@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { CLASS_11, CLASS_12 } from '../data/physics/chapters';
 import { getChapterQuestions } from '../data/physics/questions';
 import { useProgress } from '../context/ProgressContext';
+import { RESOURCES } from '../data/resources';
 import '../styles/PhysicsHome.css';
 
 function ChapterCard({ chapter }) {
@@ -11,6 +12,8 @@ function ChapterCard({ chapter }) {
   const total = questions.length;
   const seen = attempt?.seen || 0;
   const pct = total ? Math.min(100, Math.round((seen / total) * 100)) : 0;
+  const resources =
+  RESOURCES.physics[chapter.id];
 
   if (total === 0) {
     return (
@@ -29,6 +32,35 @@ function ChapterCard({ chapter }) {
         <span>{total} questions</span>
         <span>{attempt?.correct || 0}/{seen || 0} correct so far</span>
       </div>
+      {resources && (
+  <div className="chapter-resources">
+
+    {resources.shortnotes && (
+      <a
+        href={resources.shortnotes}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="resource-button"
+        onClick={(e) => e.stopPropagation()}
+      >
+        ↗ Short Notes
+      </a>
+    )}
+
+    {resources.flashcards && (
+      <a
+        href={resources.flashcards}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="resource-button"
+        onClick={(e) => e.stopPropagation()}
+      >
+        ↗ FlashCards
+      </a>
+    )}
+
+  </div>
+)}
     </Link>
   );
 }
