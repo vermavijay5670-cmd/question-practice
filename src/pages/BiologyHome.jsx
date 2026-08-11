@@ -1,3 +1,9 @@
+import { Link } from 'react-router-dom';
+import { CLASS_11, CLASS_12 } from '../data/biology/chapters';
+import { getChapterQuestions } from '../data/biology/questions';
+import { useProgress } from '../context/ProgressContext';
+import '../styles/BiologyHome.css';
+
 function ChapterCard({ chapter }) {
   const { state } = useProgress();
 
