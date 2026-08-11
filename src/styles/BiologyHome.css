@@ -1,233 +1,475 @@
-.bio-home {
+/* ============================================================
+   BIOLOGY HOME
+   ============================================================ */
+
+.biology-home {
+  width: 100%;
   min-height: 100vh;
-  background:
-    radial-gradient(ellipse at top left, rgba(63,107,73,0.25), transparent 60%),
-    var(--void);
-  padding: 4vh 5vw 8vh;
+
+  padding: 2rem 2rem 5rem;
+
+  box-sizing: border-box;
 }
 
-.bio-top {
+
+/* ============================================================
+   SECTION
+   ============================================================ */
+
+.biology-section {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+
+/* ============================================================
+   SECTION TITLE
+   ============================================================ */
+
+.section-title {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 2.5rem;
-  flex-wrap: wrap;
-}
-
-.back-link {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--ink-dim);
-  border: 1px solid var(--line);
-  padding: 0.4rem 0.8rem;
-  border-radius: 999px;
-}
-.back-link:hover { border-color: var(--bio-bright); color: var(--bio-bright); }
-
-.bio-title-block h1 {
-  font-family: var(--font-display);
-  font-size: clamp(1.9rem, 4vw, 2.6rem);
-  margin: 0.3rem 0 0.2rem;
-}
-
-.bio-title-block .eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--bio-bright);
-}
-
-.bio-actions {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.pill-btn {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  padding: 0.55rem 1rem;
-  border-radius: 999px;
-  border: 1px solid var(--bio-mid);
-  color: var(--ink);
-  background: rgba(127,176,105,0.08);
-  display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-}
-.pill-btn:hover { border-color: var(--bio-bright); background: rgba(127,176,105,0.16); }
-.pill-btn.primary { background: var(--bio-bright); color: var(--void); border-color: var(--bio-bright); font-weight: 600; }
 
-.bio-stats-strip {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 2.5rem;
-  flex-wrap: wrap;
-  font-family: var(--font-mono);
-}
-.bio-stat { display: flex; flex-direction: column; gap: 0.15rem; }
-.bio-stat .num { font-size: 1.6rem; color: var(--bio-bright); }
-.bio-stat .label { font-size: 0.7rem; color: var(--ink-dim); text-transform: uppercase; letter-spacing: 0.08em; }
+  width: 100%;
 
-.class-section { margin-bottom: 2.5rem; }
-.class-heading {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--bio-accent);
-  margin-bottom: 0.9rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--line);
+  margin-bottom: 1.25rem;
+
+  padding-bottom: 0.75rem;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
 }
 
-.chapter-grid {
+
+.section-title span {
+  color: #d8b4fe;
+
+  font-family: var(--font-mono, monospace);
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.16em;
+}
+
+
+/* ============================================================
+   CHAPTER GRID
+   ============================================================ */
+
+.chapters-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1rem;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 1.25rem;
+
+  width: 100%;
 }
+
+
+/* ============================================================
+   CHAPTER CARD
+   ============================================================ */
 
 .chapter-card {
-  border: 1px solid var(--line);
-  background: var(--surface);
-  border-radius: 14px;
-  padding: 1.1rem 1.2rem;
+  position: relative;
+
   display: flex;
+
   flex-direction: column;
-  gap: 0.6rem;
-  transition: border-color 0.2s ease, transform 0.2s ease;
-}
-.chapter-card:hover { border-color: var(--bio-mid); transform: translateY(-2px); }
 
-.chapter-card .name {
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  line-height: 1.3;
+  min-height: 170px;
+
+  padding: 1.25rem;
+
+  box-sizing: border-box;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(25, 22, 35, 0.92),
+      rgba(14, 18, 20, 0.9)
+    );
+
+  overflow: hidden;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.chapter-card .meta-row {
+
+.chapter-card:hover {
+  transform:
+    translateY(-3px);
+
+  border-color:
+    rgba(127, 176, 105, 0.35);
+
+  box-shadow:
+    0 12px 35px
+    rgba(0, 0, 0, 0.25);
+}
+
+
+/* ============================================================
+   CHAPTER HEADER
+   ============================================================ */
+
+.chapter-card-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--ink-dim);
+
+  align-items: flex-start;
+
+  gap: 0.8rem;
+
+  margin-bottom: 1rem;
 }
+
+
+.chapter-dot {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 42px;
+  height: 42px;
+
+  border:
+    1px solid rgba(167, 96, 255, 0.3);
+
+  border-radius: 12px;
+
+  color: #a760ff;
+
+  font-size: 1.2rem;
+
+  background:
+    rgba(94, 39, 153, 0.08);
+}
+
+
+.name {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-family:
+    Georgia,
+    'Times New Roman',
+    serif;
+
+  font-size: 1.05rem;
+
+  line-height: 1.25;
+}
+
+
+/* ============================================================
+   PROGRESS BAR
+   ============================================================ */
 
 .progress-track {
-  height: 4px;
-  background: var(--surface-2);
-  border-radius: 999px;
+  width: 100%;
+
+  height: 5px;
+
+  margin-top: auto;
+
   overflow: hidden;
-}
-.progress-fill { height: 100%; background: var(--bio-bright); }
 
-.chapter-card .empty-tag {
-  font-size: 0.72rem;
-  color: var(--ink-dim);
-  font-style: italic;
+  border-radius: 999px;
+
+  background:
+    rgba(255, 255, 255, 0.08);
 }
 
 
-/* =========================================================
-   CHAPTER RESOURCE LINK
-   ========================================================= */
+.progress-fill {
+  height: 100%;
 
-.chapter-resource-link {
+  border-radius: inherit;
+
+  background:
+    linear-gradient(
+      90deg,
+      #a760ff,
+      #36d399
+    );
+
+  transition:
+    width 0.4s ease;
+}
+
+
+/* ============================================================
+   META ROW
+   ============================================================ */
+
+.meta-row {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 0.5rem;
+
+  margin-top: 0.55rem;
+
+  color:
+    rgba(255, 255, 255, 0.55);
+
+  font-family:
+    var(--font-mono, monospace);
+
+  font-size: 0.65rem;
+}
+
+
+/* ============================================================
+   EMPTY CHAPTER
+   ============================================================ */
+
+.empty-tag {
+  margin-top: auto;
+
+  max-width: 90%;
+
+  color:
+    rgba(255, 255, 255, 0.4);
+
+  font-family:
+    var(--font-mono, monospace);
+
+  font-size: 0.68rem;
+
+  line-height: 1.6;
+}
+
+
+.chapter-card-empty {
+  opacity: 0.65;
+}
+
+
+/* ============================================================
+   RESOURCE BUTTONS
+   ============================================================ */
+
+.chapter-resources {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+
+  margin-top: 0.9rem;
+}
+
+
+.resource-button {
   display: inline-flex;
 
   align-items: center;
 
-  width: fit-content;
+  gap: 0.35rem;
 
-  margin-top: 0.15rem;
+  padding:
+    0.38rem 0.62rem;
 
-  padding: 0.35rem 0.65rem;
-
-  border: 1px solid
-    rgba(127, 176, 105, 0.35);
+  border:
+    1px solid rgba(127, 176, 105, 0.3);
 
   border-radius: 999px;
 
   background:
     rgba(127, 176, 105, 0.07);
 
-  color: var(--bio-bright);
+  color:
+    #9bcf83;
 
-  font-family: var(--font-mono);
+  font-family:
+    var(--font-mono, monospace);
 
-  font-size: 0.65rem;
+  font-size: 0.62rem;
 
   text-decoration: none;
+
+  white-space: nowrap;
 
   transition:
     background 0.2s ease,
     border-color 0.2s ease,
-    transform 0.2s ease,
-    color 0.2s ease;
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 
-.chapter-resource-link:hover {
+.resource-button:hover {
+  color: #ffffff;
+
   background:
     rgba(127, 176, 105, 0.16);
 
   border-color:
-    var(--bio-bright);
-
-  color: var(--ink);
+    rgba(127, 176, 105, 0.7);
 
   transform:
     translateY(-1px);
 }
 
 
-/* =========================================================
-   PRACTICE QUESTIONS LINK
-   ========================================================= */
+.resource-icon {
+  font-size: 0.75rem;
+}
 
-.chapter-practice-link {
-  display: inline-flex;
+
+/* ============================================================
+   PRACTICE BUTTON
+   ============================================================ */
+
+.practice-button {
+  display: flex;
 
   align-items: center;
+  justify-content: space-between;
 
-  width: fit-content;
+  width: 100%;
 
-  margin-top: 0.15rem;
+  margin-top: 0.8rem;
 
-  color: var(--ink-dim);
+  padding-top: 0.65rem;
 
-  font-family: var(--font-mono);
+  border-top:
+    1px solid rgba(255, 255, 255, 0.06);
+
+  color:
+    rgba(255, 255, 255, 0.58);
+
+  font-family:
+    var(--font-mono, monospace);
 
   font-size: 0.65rem;
 
   text-decoration: none;
 
   transition:
-    color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.practice-button:hover {
+  color:
+    #a760ff;
+}
+
+
+.practice-button span {
+  font-size: 0.9rem;
+
+  transition:
     transform 0.2s ease;
 }
 
 
-.chapter-practice-link:hover {
-  color: var(--bio-bright);
-
+.practice-button:hover span {
   transform:
-    translateX(2px);
+    translateX(3px);
 }
 
 
-/* =========================================================
-   MOBILE
-   ========================================================= */
+/* ============================================================
+   COMING SOON
+   ============================================================ */
 
-@media (max-width: 480px) {
+.coming-soon {
+  align-self: flex-end;
 
-  .chapter-resource-link,
-  .chapter-practice-link {
-    font-size: 0.6rem;
+  margin-top: auto;
+
+  padding:
+    0.25rem 0.55rem;
+
+  border:
+    1px solid rgba(180, 130, 50, 0.25);
+
+  border-radius: 999px;
+
+  color:
+    rgba(220, 160, 40, 0.8);
+
+  font-family:
+    var(--font-mono, monospace);
+
+  font-size: 0.58rem;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1200px) {
+
+  .chapters-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 850px) {
+
+  .biology-home {
+    padding:
+      1.5rem 1rem 4rem;
+  }
+
+  .chapters-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .biology-home {
+    padding:
+      1.25rem 0.75rem 3rem;
+  }
+
+  .chapters-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .chapter-card {
+    min-height: 155px;
+
+    padding: 1rem;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .resource-button {
+    font-size: 0.58rem;
   }
 
 }
