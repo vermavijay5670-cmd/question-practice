@@ -14,7 +14,7 @@ export const CLASS_11 = [
     { id: 'thermodynamics', name: 'Thermodynamics'},
     { id: 'kinetic-theory', name: 'Kinetics Theory'},
     { id: 'oscillations', name: 'Oscillations'},
-    { id: 'waves' name: 'Waves'},
+    { id: 'waves', name: 'Waves'},
 ];
 
 export const CLASS_12 = [
