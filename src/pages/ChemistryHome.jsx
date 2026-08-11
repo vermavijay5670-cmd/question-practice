@@ -239,73 +239,21 @@ export default function ChemistryHome() {
       </div>
 
 
-      {/* =================================================
-          CLASS 11
-          ================================================= */}
-
-      <section className="chem-class-section">
-
-        <div className="chem-class-heading">
-          <span>
-            Class 11
-          </span>
-
-          <span className="chem-heading-line">
-            Physical · Inorganic · Organic
-          </span>
+      <section className="class-section">
+        <div className="class-heading">Class 11</div>
+        <div className="chapter-grid">
+          {CLASS_11.map((c) => <ChapterCard key={c.id} chapter={c} />)}
         </div>
-
-
-        <div className="chem-chapter-grid">
-
-          {CLASS_11.map(
-            chapter => (
-              <ChapterCard
-                key={chapter.id}
-                chapter={chapter}
-              />
-            )
-          )}
-
-        </div>
-
       </section>
 
-
-      {/* =================================================
-          CLASS 12
-          ================================================= */}
-
-      <section className="chem-class-section">
-
-        <div className="chem-class-heading">
-          <span>
-            Class 12
-          </span>
-
-          <span className="chem-heading-line">
-            Physical · Inorganic · Organic
-          </span>
+      <section className="class-section">
+        <div className="class-heading">Class 12</div>
+        <div className="chapter-grid">
+          {CLASS_12.map((c) => <ChapterCard key={c.id} chapter={c} />)}
         </div>
-
-
-        <div className="chem-chapter-grid">
-
-          {CLASS_12.map(
-            chapter => (
-              <ChapterCard
-                key={chapter.id}
-                chapter={chapter}
-              />
-            )
-          )}
-
-        </div>
-
       </section>
 
     </main>
 
   );
 }
-```

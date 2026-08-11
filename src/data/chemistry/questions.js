@@ -10,9 +10,9 @@ export const QUESTION_BANK = {
     'electrochemistry': ELECTROCHEMISTRY,
 
 
-    'basics-of-chemistry': [
+    'solutions': [
     {
-      id: 'boc',
+      id: 'Sol.1',
       type: 'mcq',
       question: 'numbers of fundamental units:',
       options: [
