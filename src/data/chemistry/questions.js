@@ -4,32 +4,12 @@ import { SOLUTIONS } from './banks/solutions';
 import { ELECTROCHEMISTRY } from './banks/electrochemistry';
 
 export const QUESTION_BANK = {
-    'some-basics-chemistry': SOME_BASICS_CHEMISTRY,
-    'structure-atom': STRUCTURE_ATOM,
-    'solutions': SOLUTIONS,
-    'electrochemistry': ELECTROCHEMISTRY,
-
-
-    'solutions': [
-    {
-      id: 'Sol.1',
-      type: 'mcq',
-      question: 'numbers of fundamental units:',
-      options: [
-        '5',
-        '6',
-        '7',
-        '8',
-      ],
-      correctIndex: 2,
-      explanation: 'Length(L), Time(S), Mass(KG), Temperature(K), Current(A), Amount of substance(mol), Luminous intensity(Cd).',
-      difficulty: 'medium',
-    },
-  ],
+  'some-basics-chemistry': SOME_BASICS_CHEMISTRY,
+  'structure-atom': STRUCTURE_ATOM,
+  'solutions': SOLUTIONS,
+  'electrochemistry': ELECTROCHEMISTRY,
 };
 
-
-
-export function getChapterQuestions(chapterId){
-    return QUESTION_BANK[chapterId] || [];
+export function getChapterQuestions(chapterId) {
+  return QUESTION_BANK[chapterId] || [];
 }

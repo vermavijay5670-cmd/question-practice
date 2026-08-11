@@ -17,7 +17,7 @@ import MistakeBank from './pages/MistakeBank';
 
 import ComingSoon from './pages/ComingSoon';
 
-import './styles/index.css';
+import './index.css';
 
 
 export default function App() {
