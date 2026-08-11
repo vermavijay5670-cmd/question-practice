@@ -17,75 +17,48 @@ import {
 import '../styles/BiologyHome.css';
 
 
-/*
-|--------------------------------------------------------------------------
-| BIOLOGY RESOURCE LINKS
-|--------------------------------------------------------------------------
-| Add links here using the chapter ID.
-|
-| Currently added:
-| Breathing and Exchange of Gases
-|
-*/
+/* =========================================================
+   BIOLOGY RESOURCE LINKS
+   ========================================================= */
 
 const BIOLOGY_RESOURCES = {
-
   'breathing-exchange-gases': {
-
     shortnotes:
       'https://notebook.google.com/notebook/7d11822a-2997-4e81-b094-6de042470478/artifact/20ea724c-b7db-49f7-868b-3ebb7161c8c3?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
 
     flashcards:
       'https://notebook.google.com/notebook/7d11822a-2997-4e81-b094-6de042470478/artifact/edeba718-2188-49f9-869e-24a14161720b?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
-
   },
-
 };
 
 
-/*
-|--------------------------------------------------------------------------
-| CHAPTER CARD
-|--------------------------------------------------------------------------
-*/
+/* =========================================================
+   CHAPTER CARD
+   ========================================================= */
 
 function ChapterCard({ chapter }) {
-
   const { state } = useProgress();
 
-  const questions =
-    getChapterQuestions(chapter.id);
+  const questions = getChapterQuestions(chapter.id);
 
   const attempt =
     state.attempts.biology?.[chapter.id];
 
-  const total =
-    questions.length;
+  const total = questions.length;
 
-  const seen =
-    attempt?.seen || 0;
+  const seen = attempt?.seen || 0;
 
-  const pct =
-    total > 0
-      ? Math.min(
-          100,
-          Math.round((seen / total) * 100)
-        )
-      : 0;
-
-
-  /*
-  |--------------------------------------------------------------------------
-  | RESOURCE LINKS
-  |--------------------------------------------------------------------------
-  */
+  const pct = total
+    ? Math.min(
+        100,
+        Math.round((seen / total) * 100)
+      )
+    : 0;
 
   const resources =
     BIOLOGY_RESOURCES[chapter.id];
 
-
   return (
-
     <article
       className={`chapter-card ${
         total === 0
@@ -94,9 +67,7 @@ function ChapterCard({ chapter }) {
       }`}
     >
 
-      {/* =====================================================
-          CHAPTER NAME
-          ===================================================== */}
+      {/* Chapter title */}
 
       <div className="chapter-card-header">
 
@@ -111,14 +82,10 @@ function ChapterCard({ chapter }) {
       </div>
 
 
-      {/* =====================================================
-          PROGRESS
-          ===================================================== */}
+      {/* Progress */}
 
       {total > 0 ? (
-
         <>
-
           <div className="progress-track">
 
             <div
@@ -129,7 +96,6 @@ function ChapterCard({ chapter }) {
             />
 
           </div>
-
 
           <div className="meta-row">
 
@@ -143,173 +109,292 @@ function ChapterCard({ chapter }) {
             </span>
 
           </div>
-
         </>
-
       ) : (
-
         <div className="empty-tag">
-
           No questions yet — add the chapter
           question bank.
-
         </div>
-
       )}
 
 
-      {/* =====================================================
-          RESOURCE BUTTONS
-          ===================================================== */}
+      {/* Study resources */}
 
       {resources && (
-
         <div className="chapter-resources">
 
           {resources.shortnotes && (
-
             <a
               href={resources.shortnotes}
               target="_blank"
               rel="noopener noreferrer"
               className="resource-button"
-              onClick={(event) =>
-                event.stopPropagation()
-              }
             >
-
-              <span className="resource-icon">
-                ↗
-              </span>
-
-              Short Notes
-
+              ↗ Short Notes
             </a>
-
           )}
 
-
           {resources.flashcards && (
-
             <a
               href={resources.flashcards}
               target="_blank"
               rel="noopener noreferrer"
               className="resource-button"
-              onClick={(event) =>
-                event.stopPropagation()
-              }
             >
-
-              <span className="resource-icon">
-                ↗
-              </span>
-
-              FlashCards
-
+              ↗ FlashCards
             </a>
-
           )}
 
         </div>
-
       )}
 
 
-      {/* =====================================================
-          PRACTICE QUESTIONS
-          ===================================================== */}
+      {/* Practice */}
 
       {total > 0 && (
-
         <Link
           to={`/biology/chapter/${chapter.id}`}
           className="practice-button"
         >
-
-          Practice Questions
+          <span>
+            Practice Questions
+          </span>
 
           <span>
             →
           </span>
-
         </Link>
-
       )}
 
-
-      {/* =====================================================
-          COMING SOON
-          ===================================================== */}
-
       {total === 0 && (
-
         <span className="coming-soon">
           SOON
         </span>
-
       )}
 
     </article>
-
   );
 }
 
 
-/*
-|--------------------------------------------------------------------------
-| CHAPTER SECTION
-|--------------------------------------------------------------------------
-*/
+/* =========================================================
+   CHAPTER SECTION
+   ========================================================= */
 
 function ChapterSection({
   title,
   chapters,
 }) {
-
   return (
-
     <section className="biology-section">
 
       <div className="section-title">
-
         <span>
           {title}
         </span>
-
       </div>
-
 
       <div className="chapters-grid">
 
         {chapters.map((chapter) => (
-
           <ChapterCard
             key={chapter.id}
             chapter={chapter}
           />
-
         ))}
 
       </div>
 
     </section>
-
   );
 }
 
 
-/*
-|--------------------------------------------------------------------------
-| BIOLOGY HOME
-|--------------------------------------------------------------------------
-*/
+/* =========================================================
+   BIOLOGY HOME
+   ========================================================= */
 
 export default function BiologyHome() {
 
-  return (
+  const { state } = useProgress();
 
+  /*
+   * Calculate Biology statistics
+   */
+
+  const allChapters = [
+    ...CLASS_11,
+    ...CLASS_12,
+  ];
+
+  let questionsAttempted = 0;
+
+  let correctAnswers = 0;
+
+  allChapters.forEach((chapter) => {
+
+    const attempt =
+      state.attempts.biology?.[chapter.id];
+
+    if (attempt) {
+
+      questionsAttempted +=
+        attempt.seen || 0;
+
+      correctAnswers +=
+        attempt.correct || 0;
+    }
+
+  });
+
+
+  const accuracy =
+    questionsAttempted > 0
+      ? Math.round(
+          (correctAnswers /
+            questionsAttempted) *
+            100
+        )
+      : 0;
+
+
+  /*
+   * Chapters which currently have questions
+   */
+
+  const chaptersLive =
+    allChapters.filter(
+      (chapter) =>
+        getChapterQuestions(
+          chapter.id
+        ).length > 0
+    ).length;
+
+
+  return (
     <main className="biology-home">
+
+      {/* =====================================================
+          HEADER
+          ===================================================== */}
+
+      <header className="biology-header">
+
+        <div className="biology-header-top">
+
+          {/* Back */}
+
+          <Link
+            to="/"
+            className="back-button"
+          >
+            ← All subjects
+          </Link>
+
+
+          {/* Header actions */}
+
+          <div className="header-actions">
+
+            <Link
+              to="/biology/mock-test"
+              className="mock-test-button"
+            >
+              Mock test
+            </Link>
+
+            <Link
+              to="/biology/mistake-bank"
+              className="mistake-button"
+            >
+              Mistake bank (
+              {state.mistakes?.biology?.length || 0}
+              )
+            </Link>
+
+          </div>
+
+        </div>
+
+
+        {/* Subject label */}
+
+        <div className="subject-label">
+          <span className="subject-dot">
+            •
+          </span>
+
+          BIOLOGY
+        </div>
+
+
+        {/* Main title */}
+
+        <h1 className="biology-title">
+          Chapter-wise practice
+        </h1>
+
+
+        {/* Subtitle */}
+
+        <p className="biology-subtitle">
+          Concepts, diagrams, processes
+        </p>
+
+
+        {/* =================================================
+            STATISTICS PANEL
+            ================================================= */}
+
+        <div className="biology-stats">
+
+          <div className="stat-item">
+
+            <div className="stat-value">
+              {questionsAttempted}
+            </div>
+
+            <div className="stat-label">
+              QUESTIONS ATTEMPTED
+            </div>
+
+          </div>
+
+
+          <div className="stat-item">
+
+            <div className="stat-value accuracy">
+              {accuracy}%
+            </div>
+
+            <div className="stat-label">
+              ACCURACY
+            </div>
+
+          </div>
+
+
+          <div className="stat-item">
+
+            <div className="stat-value">
+              {chaptersLive}/
+              {allChapters.length}
+            </div>
+
+            <div className="stat-label">
+              CHAPTERS LIVE
+            </div>
+
+          </div>
+
+        </div>
+
+      </header>
+
+
+      {/* =====================================================
+          CHAPTERS
+          ===================================================== */}
 
       <ChapterSection
         title="CLASS 11"
@@ -323,6 +408,5 @@ export default function BiologyHome() {
       />
 
     </main>
-
   );
 }
