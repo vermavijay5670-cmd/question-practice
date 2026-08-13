@@ -26,6 +26,7 @@ import { BODY_FLUIDS_CIRCULATION } from './banks/BodyFluidsCirculation';
 import { EXCRETORY_PRODUCTS_ELIMINATION } from './banks/excretoryProductsElimination';
 import { NEURAL_CONTROL_COORDINATION } from './banks/neuralControlCoordination';
 import { CHEMICAL_COORDINATION_INTEGRATION } from './banks/chemicalCoordinationIntegration';
+import { MORPHOLOGY_FLOWERING_PLANTS } from './banks/morphologyFloweringPlant';
 
 export const QUESTION_BANK = {
   'biological-classification': BIOLOGICAL_CLASSIFICATION,
@@ -49,6 +50,8 @@ export const QUESTION_BANK = {
   'excretory-products-elimination': EXCRETORY_PRODUCTS_ELIMINATION,
   'neural-control-coordination': NEURAL_CONTROL_COORDINATION,
   'chemical-coordination-integration': CHEMICAL_COORDINATION_INTEGRATION,
+  'morphology-flowering-plants': MORPHOLOGY_FLOWERING_PLANTS,
+  
   biomolecules: [
     {
       id: 'biomol-1',
