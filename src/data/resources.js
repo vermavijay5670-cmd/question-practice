@@ -53,6 +53,14 @@ export const RESOURCES = {
       shortnotes: 'https://notebook.google.com/notebook/494b4eda-def6-4127-92b8-ebf8e5faf1aa/artifact/c4684bdb-fc94-40d7-b9db-6a2e009d902e?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
       flashcards: '',
      },
+     'morphology-flowering-plants': {
+      shortnotes: 'https://notebook.google.com/notebook/260dabd1-1141-4eb0-a557-14e82d5b5ebb/artifact/3d835591-9a6a-49bb-ae2e-6e7a199fabbe?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+      flashcards: 'https://notebook.google.com/notebook/260dabd1-1141-4eb0-a557-14e82d5b5ebb/artifact/caf2f629-24c2-4d12-a3d8-01b05fadc6ea?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'anatomy-flowering-plants': {
+      shortnotes: 'https://notebook.google.com/notebook/625dacca-c765-4aea-b928-de0a7b44bbda/artifact/0bf98e4c-44c3-4159-ac27-c03ff6690ddd?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+      flashcards: 'https://notebook.google.com/notebook/625dacca-c765-4aea-b928-de0a7b44bbda/artifact/9cc8bddc-b44c-43e1-866c-a325b3dafc90?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
     
 
   },
