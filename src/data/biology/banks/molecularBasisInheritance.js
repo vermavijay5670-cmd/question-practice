@@ -1,0 +1,693 @@
+// molecular-basis-of-inheritance.js
+// Chapter: Molecular Basis of Inheritance
+// Sub-topics: DNA Structure & Packaging, DNA Replication, Transcription,
+//             Genetic Code & Translation, Gene Regulation (Lac Operon) & Applications (HGP, DNA Fingerprinting)
+// Types: 'mcq' (single correct), 'assertion-reason', 'matching', 'statement', 'count-correct'
+//
+// Schema:
+// {
+//   id: string,
+//   topic: 'dna-structure' | 'replication' | 'transcription' | 'translation' | 'regulation',
+//   type: 'mcq' | 'assertion-reason' | 'matching' | 'statement' | 'count-correct',
+//   question: string,
+//   options: string[],
+//   correctIndex: number,
+//   explanation: string,
+//   difficulty: 'easy' | 'medium' | 'hard'
+// }
+
+const AR_OPTIONS = [
+  'Both A and R are true, and R is the correct explanation of A',
+  'Both A and R are true, but R is NOT the correct explanation of A',
+  'A is true, but R is false',
+  'A is false, but R is true',
+  'Both A and R are false'
+];
+
+
+const dnaStructureQuestions = [
+// ============================================================
+// SECTION 1: DNA STRUCTURE & PACKAGING — ~55 questions
+// ============================================================
+
+  // --- Search for genetic material (1-10) ---
+  { id: 's1', topic: 'dna-structure', type: 'mcq', question: 'Griffith\'s experiment on Streptococcus pneumoniae, in which heat-killed virulent (S) bacteria transformed live avirulent (R) bacteria into virulent ones, demonstrated the phenomenon of', options: ['Conjugation', 'Transformation', 'Transduction', 'Translation'], correctIndex: 1, explanation: 'Griffith\'s experiment demonstrated bacterial transformation, showing that some "transforming principle" from dead S bacteria could change R bacteria into virulent S bacteria.', difficulty: 'easy' },
+  { id: 's2', topic: 'dna-structure', type: 'mcq', question: 'The biochemical identity of Griffith\'s "transforming principle" as DNA was established by', options: ['Hershey and Chase', 'Avery, MacLeod, and McCarty', 'Watson and Crick', 'Meselson and Stahl'], correctIndex: 1, explanation: 'Avery, MacLeod, and McCarty purified biochemicals from heat-killed S cells and showed that DNA alone was responsible for transformation.', difficulty: 'medium' },
+  { id: 's3', topic: 'dna-structure', type: 'mcq', question: 'In their experiment, Avery, MacLeod, and McCarty showed that transformation still occurred when proteins and RNA were digested, but was stopped when', options: ['Lipids were digested', 'DNA was digested by DNase', 'Carbohydrates were digested', 'Water was removed'], correctIndex: 1, explanation: 'Digestion of DNA by DNase abolished transformation, confirming DNA (and not protein or RNA) as the transforming principle.', difficulty: 'medium' },
+  { id: 's4', topic: 'dna-structure', type: 'mcq', question: 'The Hershey-Chase experiment used radioactively labelled bacteriophages to establish that', options: ['RNA is the genetic material', 'DNA, not protein, is the genetic material that enters bacterial cells during infection', 'Proteins are the genetic material', 'Both DNA and protein enter the bacterial cell equally'], correctIndex: 1, explanation: 'By labelling phage DNA with 32P and protein with 35S, Hershey and Chase showed that only DNA entered the bacterium, confirming DNA as the genetic material.', difficulty: 'medium' },
+  { id: 's5', topic: 'dna-structure', type: 'mcq', question: 'In the Hershey-Chase experiment, phage protein coats were labelled with', options: ['Radioactive phosphorus (32P)', 'Radioactive sulphur (35S)', 'Radioactive carbon (14C)', 'Radioactive nitrogen (15N)'], correctIndex: 1, explanation: 'Protein coats, which contain sulphur but not phosphorus, were labelled with 35S in the Hershey-Chase experiment.', difficulty: 'medium' },
+  { id: 's6', topic: 'dna-structure', type: 'mcq', question: 'In the Hershey-Chase experiment, phage DNA was labelled with', options: ['35S', '32P', '14C', '3H'], correctIndex: 1, explanation: 'DNA, which contains phosphorus but not sulphur, was labelled with 32P in this experiment.', difficulty: 'medium' },
+  { id: 's7', topic: 'dna-structure', type: 'assertion-reason', question: 'Assertion (A): After blending and centrifugation in the Hershey-Chase experiment, most of the radioactivity was found in the pellet (bacterial cells) with 32P and in the supernatant with 35S.\nReason (R): Only DNA (containing phosphorus) entered the bacterial cells, while the protein coat (containing sulphur) remained outside.', options: AR_OPTIONS, correctIndex: 0, explanation: 'Since only phage DNA enters the bacterial cell during infection, the 32P-labelled DNA co-sedimented with bacteria (pellet), while 35S-labelled protein remained in the supernatant — directly explaining the assertion.', difficulty: 'medium' },
+  { id: 's8', topic: 'dna-structure', type: 'mcq', question: 'Which criteria must a molecule fulfil to act as genetic material? Among the following, which is NOT typically required?', options: ['Ability to replicate', 'Chemical and structural stability', 'Ability to undergo mutation for evolution', 'Ability to change its structure with each cell division'], correctIndex: 3, explanation: 'Genetic material should be relatively stable across generations, not constantly change structure; the other three are recognised requirements.', difficulty: 'medium' },
+  { id: 's9', topic: 'dna-structure', type: 'mcq', question: 'Compared to RNA, DNA is chemically more stable primarily because', options: ['DNA lacks the 2\'-OH group present in RNA, making it less reactive', 'DNA contains uracil instead of thymine', 'DNA is single-stranded', 'DNA cannot form hydrogen bonds'], correctIndex: 0, explanation: 'The absence of a reactive 2\'-OH group in deoxyribose (compared to ribose in RNA) makes DNA chemically more stable.', difficulty: 'medium' },
+  { id: 's10', topic: 'dna-structure', type: 'mcq', question: 'Among RNA viruses, an important reason RNA can still function as genetic material despite lower stability is that', options: ['RNA never mutates', 'RNA viruses have a very high mutation rate contributing to rapid evolution', 'RNA is chemically identical to DNA', 'RNA viruses lack genetic material altogether'], correctIndex: 1, explanation: 'RNA\'s relative instability contributes to a higher mutation rate in RNA viruses, aiding their rapid evolution, even though DNA is generally the preferred genetic material for stability.', difficulty: 'hard' },
+
+  // --- Nucleotide/nucleoside chemistry (11-20) ---
+  { id: 's11', topic: 'dna-structure', type: 'mcq', question: 'A nucleotide is composed of', options: ['Only a nitrogenous base and a sugar', 'A nitrogenous base, a pentose sugar, and a phosphate group', 'Only a phosphate group', 'Two nitrogenous bases joined together'], correctIndex: 1, explanation: 'A nucleotide consists of a nitrogenous base, a pentose sugar, and a phosphate group linked together.', difficulty: 'easy' },
+  { id: 's12', topic: 'dna-structure', type: 'mcq', question: 'A nucleoside differs from a nucleotide in that a nucleoside', options: ['Lacks the phosphate group', 'Lacks the nitrogenous base', 'Lacks the sugar', 'Contains two phosphate groups'], correctIndex: 0, explanation: 'A nucleoside is composed of only a nitrogenous base linked to a sugar, lacking the phosphate group found in a nucleotide.', difficulty: 'easy' },
+  { id: 's13', topic: 'dna-structure', type: 'mcq', question: 'The purine bases found in nucleic acids are', options: ['Cytosine and thymine', 'Adenine and guanine', 'Uracil and cytosine', 'Thymine and guanine'], correctIndex: 1, explanation: 'Adenine and guanine are the two purine bases; cytosine, thymine, and uracil are pyrimidines.', difficulty: 'easy' },
+  { id: 's14', topic: 'dna-structure', type: 'mcq', question: 'The pyrimidine bases found in DNA are', options: ['Adenine and guanine', 'Cytosine and thymine', 'Cytosine and uracil', 'Adenine and thymine'], correctIndex: 1, explanation: 'Cytosine and thymine are the pyrimidine bases present in DNA (uracil replaces thymine in RNA).', difficulty: 'easy' },
+  { id: 's15', topic: 'dna-structure', type: 'mcq', question: 'In RNA, the pyrimidine base that replaces thymine (found in DNA) is', options: ['Cytosine', 'Uracil', 'Guanine', 'Adenine'], correctIndex: 1, explanation: 'Uracil replaces thymine in RNA, pairing with adenine during transcription and translation.', difficulty: 'easy' },
+  { id: 's16', topic: 'dna-structure', type: 'mcq', question: 'Two nucleotides are linked together in a polynucleotide chain through a', options: ['Hydrogen bond', 'Phosphodiester bond between the 3\'-OH of one sugar and the 5\'-phosphate of the next', 'Peptide bond', 'Glycosidic bond only, with no phosphate involvement'], correctIndex: 1, explanation: 'Adjacent nucleotides are linked by a phosphodiester bond connecting the 3\'-OH of one sugar to the 5\'-phosphate of the next.', difficulty: 'medium' },
+  { id: 's17', topic: 'dna-structure', type: 'mcq', question: 'The linkage between the nitrogenous base and the pentose sugar within a nucleoside is termed a', options: ['Phosphodiester bond', 'N-glycosidic bond', 'Peptide bond', 'Hydrogen bond'], correctIndex: 1, explanation: 'The base is attached to the sugar through an N-glycosidic bond.', difficulty: 'medium' },
+  { id: 's18', topic: 'dna-structure', type: 'mcq', question: 'The sugar present in DNA nucleotides is', options: ['Ribose', 'Deoxyribose', 'Glucose', 'Fructose'], correctIndex: 1, explanation: 'DNA contains deoxyribose sugar, lacking a hydroxyl group at the 2\' carbon compared to ribose in RNA.', difficulty: 'easy' },
+  { id: 's19', topic: 'dna-structure', type: 'mcq', question: 'A polynucleotide chain has directionality because the phosphate group is linked at the 5\' end of the sugar of one nucleotide and the', options: ['3\'-OH of the sugar of the adjacent nucleotide', '2\'-OH of the same sugar', 'Nitrogenous base of the next nucleotide directly', '5\'-OH of the same sugar'], correctIndex: 0, explanation: 'Directionality (5\'→3\') arises because each phosphodiester bond links the 5\' phosphate of one nucleotide to the 3\'-OH of the next.', difficulty: 'medium' },
+  { id: 's20', topic: 'dna-structure', type: 'mcq', question: 'Charged phosphate groups in the DNA backbone give the molecule', options: ['A neutral charge overall', 'An overall negative charge', 'A positive charge', 'No charge at physiological pH'], correctIndex: 1, explanation: 'The phosphate groups in the DNA backbone are negatively charged, giving DNA an overall negative charge, important for its interaction with basic histone proteins.', difficulty: 'medium' },
+
+  // --- Watson-Crick double helix model (21-38) ---
+  { id: 's21', topic: 'dna-structure', type: 'mcq', question: 'The double helix model of DNA structure was proposed by', options: ['Avery, MacLeod, and McCarty', 'James Watson and Francis Crick', 'Meselson and Stahl', 'Hershey and Chase'], correctIndex: 1, explanation: 'Watson and Crick proposed the double helix model of DNA structure in 1953, based partly on Rosalind Franklin\'s X-ray diffraction data.', difficulty: 'easy' },
+  { id: 's22', topic: 'dna-structure', type: 'mcq', question: 'According to the Watson-Crick model, DNA consists of', options: ['A single polynucleotide chain', 'Two polynucleotide chains coiled in a right-handed double helix', 'Three polynucleotide chains', 'Two chains that are parallel (running in the same direction)'], correctIndex: 1, explanation: 'DNA is composed of two polynucleotide chains coiled around a common axis in a right-handed double helix.', difficulty: 'easy' },
+  { id: 's23', topic: 'dna-structure', type: 'mcq', question: 'The two polynucleotide chains of DNA are described as antiparallel, meaning', options: ['They run parallel in the same 5\'→3\' direction', 'One chain runs 5\'→3\' while the other runs 3\'→5\', in opposite orientation', 'They are not connected at all', 'They twist independently without pairing'], correctIndex: 1, explanation: 'The two DNA strands run in opposite directions — one 5\'→3\' and the other 3\'→5\' — a feature called antiparallel orientation.', difficulty: 'medium' },
+  { id: 's24', topic: 'dna-structure', type: 'mcq', question: 'In the DNA double helix, the sugar-phosphate backbones are located', options: ['On the outside, while the nitrogenous bases project inward', 'On the inside, while the sugar-phosphate is on the outside of the bases', 'Both on the same side', 'Randomly distributed throughout'], correctIndex: 0, explanation: 'The negatively charged, hydrophilic sugar-phosphate backbone lies on the outside, while the hydrophobic nitrogenous bases are stacked in the interior.', difficulty: 'medium' },
+  { id: 's25', topic: 'dna-structure', type: 'mcq', question: 'Complementary base pairing in DNA occurs such that adenine always pairs with', options: ['Guanine', 'Cytosine', 'Thymine', 'Another adenine'], correctIndex: 2, explanation: 'Adenine pairs specifically with thymine via two hydrogen bonds, following the base pairing rules.', difficulty: 'easy' },
+  { id: 's26', topic: 'dna-structure', type: 'mcq', question: 'Complementary base pairing in DNA occurs such that guanine always pairs with', options: ['Adenine', 'Cytosine', 'Thymine', 'Uracil'], correctIndex: 1, explanation: 'Guanine pairs specifically with cytosine via three hydrogen bonds.', difficulty: 'easy' },
+  { id: 's27', topic: 'dna-structure', type: 'mcq', question: 'The number of hydrogen bonds formed between adenine and thymine is', options: ['One', 'Two', 'Three', 'Four'], correctIndex: 1, explanation: 'Adenine and thymine are joined by two hydrogen bonds.', difficulty: 'medium' },
+  { id: 's28', topic: 'dna-structure', type: 'mcq', question: 'The number of hydrogen bonds formed between guanine and cytosine is', options: ['One', 'Two', 'Three', 'Four'], correctIndex: 2, explanation: 'Guanine and cytosine are joined by three hydrogen bonds, making G-C pairs more stable than A-T pairs.', difficulty: 'medium' },
+  { id: 's29', topic: 'dna-structure', type: 'mcq', question: 'The two chains of the DNA double helix are held together by', options: ['Peptide bonds between bases', 'Hydrogen bonds between complementary base pairs, and base stacking', 'Only ionic bonds between sugars', 'Covalent bonds between phosphate groups of opposite strands'], correctIndex: 1, explanation: 'The two DNA strands are held together by hydrogen bonds between complementary bases and by stacking interactions between adjacent base pairs.', difficulty: 'medium' },
+  { id: 's30', topic: 'dna-structure', type: 'mcq', question: 'According to the Watson-Crick model, the diameter of the DNA double helix is approximately', options: ['10 Å', '20 Å', '34 Å', '3.4 Å'], correctIndex: 1, explanation: 'The DNA double helix has a diameter of approximately 20 Å (2 nm).', difficulty: 'hard' },
+  { id: 's31', topic: 'dna-structure', type: 'mcq', question: 'One complete turn of the DNA helix spans a distance of approximately', options: ['0.34 nm', '3.4 nm', '34 nm', '20 nm'], correctIndex: 1, explanation: 'One complete turn of the helix has a pitch (length) of about 3.4 nm.', difficulty: 'hard' },
+  { id: 's32', topic: 'dna-structure', type: 'mcq', question: 'The number of base pairs present per turn of the DNA double helix is approximately', options: ['5', '10', '20', '34'], correctIndex: 1, explanation: 'Each turn of the double helix contains approximately 10 base pairs.', difficulty: 'medium' },
+  { id: 's33', topic: 'dna-structure', type: 'mcq', question: 'The distance between two successive (adjacent) base pairs along the DNA helix axis is approximately', options: ['3.4 nm', '0.34 nm', '20 nm', '2 nm'], correctIndex: 1, explanation: 'Adjacent base pairs are separated by about 0.34 nm along the helix axis.', difficulty: 'hard' },
+  { id: 's34', topic: 'dna-structure', type: 'mcq', question: 'Chargaff\'s rule, which states that the amount of adenine equals the amount of thymine, and the amount of guanine equals the amount of cytosine, provided important support for', options: ['The identification of DNA as the genetic material', 'The complementary base pairing proposed in the Watson-Crick model', 'The lac operon model', 'The wobble hypothesis'], correctIndex: 1, explanation: 'Chargaff\'s equivalence rule (A=T, G=C) provided key evidence supporting the specific complementary base pairing in the double helix model.', difficulty: 'medium' },
+  { id: 's35', topic: 'dna-structure', type: 'mcq', question: 'X-ray diffraction data crucial to the discovery of the DNA double helix structure was generated by', options: ['Erwin Chargaff', 'Rosalind Franklin and Maurice Wilkins', 'Frederick Griffith', 'Barbara McClintock'], correctIndex: 1, explanation: 'X-ray diffraction studies by Rosalind Franklin and Maurice Wilkins provided critical structural data used by Watson and Crick.', difficulty: 'medium' },
+  { id: 's36', topic: 'dna-structure', type: 'assertion-reason', question: 'Assertion (A): The DNA double helix is a relatively stable structure.\nReason (R): Base stacking interactions between adjacent base pairs, along with hydrogen bonding, contribute to the stability of the helix.', options: AR_OPTIONS, correctIndex: 0, explanation: 'Both stacking interactions and hydrogen bonding together confer stability to the double helix, directly explaining the assertion.', difficulty: 'medium' },
+  { id: 's37', topic: 'dna-structure', type: 'mcq', question: 'Because A pairs specifically with T and G pairs specifically with C, if one strand of DNA has the sequence 5\'-ATGC-3\', the complementary strand would read', options: ['5\'-TACG-3\'', '5\'-GCAT-3\'', '3\'-TACG-5\'', 'Both b and c are equivalent representations'], correctIndex: 3, explanation: 'The complementary antiparallel strand is 3\'-TACG-5\', which is the same as writing 5\'-GCAT-3\'; both notations describe the same strand.', difficulty: 'hard' },
+  { id: 's38', topic: 'dna-structure', type: 'statement', question: 'Consider the following statements about the DNA double helix:\n1. The two strands are antiparallel.\n2. G-C pairs are held by three hydrogen bonds, making them more stable than A-T pairs.\n3. The sugar-phosphate backbone lies on the interior, with bases on the outside.\nWhich of the statements given above are correct?', options: ['1 and 2 only', '2 and 3 only', '1 and 3 only', '1, 2 and 3'], correctIndex: 0, explanation: 'Statements 1 and 2 are correct; the sugar-phosphate backbone is actually on the outside with bases stacked inside, so statement 3 is incorrect.', difficulty: 'medium' },
+
+  // --- DNA packaging (39-55) ---
+  { id: 's39', topic: 'dna-structure', type: 'mcq', question: 'The length of DNA in a typical human cell, if stretched out, is estimated to be around', options: ['A few micrometres', 'About 2.2 metres', 'A few nanometres', '1 kilometre'], correctIndex: 1, explanation: 'Human cells contain an enormous length of DNA (about 2.2 metres total) that must be tightly packaged to fit within the nucleus.', difficulty: 'medium' },
+  { id: 's40', topic: 'dna-structure', type: 'mcq', question: 'In prokaryotes such as E. coli, the negatively charged DNA is packaged with the help of positively charged proteins collectively referred to as', options: ['Histones', 'HU (histone-like) proteins forming a nucleoid', 'Ribosomal proteins', 'Repressor proteins only'], correctIndex: 1, explanation: 'In bacteria, DNA is held in a large loop-like structure by positively charged proteins, forming a nucleoid, without true histones as found in eukaryotes.', difficulty: 'medium' },
+  { id: 's41', topic: 'dna-structure', type: 'mcq', question: 'In eukaryotes, the basic proteins that help package DNA due to their positive charge are called', options: ['Histones', 'Enzymes', 'Antibodies', 'Chaperones'], correctIndex: 0, explanation: 'Histones are positively charged (basic) proteins around which DNA is packaged in eukaryotic cells.', difficulty: 'easy' },
+  { id: 's42', topic: 'dna-structure', type: 'mcq', question: 'Histones are rich in the basic amino acids', options: ['Glycine and alanine', 'Lysine and arginine', 'Serine and threonine', 'Aspartate and glutamate'], correctIndex: 1, explanation: 'Histones are rich in positively charged basic amino acids like lysine and arginine, which allow them to bind the negatively charged DNA.', difficulty: 'medium' },
+  { id: 's43', topic: 'dna-structure', type: 'mcq', question: 'Histones are organised to form a unit of eight molecules known as a', options: ['Nucleosome', 'Histone octamer', 'Chromomere', 'Kinetochore'], correctIndex: 1, explanation: 'Eight histone molecules together form a histone octamer, around which DNA is wrapped to form the nucleosome.', difficulty: 'medium' },
+  { id: 's44', topic: 'dna-structure', type: 'mcq', question: 'The histone octamer is composed of two molecules each of the core histones', options: ['H1, H2A, H2B, H3', 'H2A, H2B, H3, H4', 'H1, H3, H4, and H2A only', 'H2B, H3, H4, and H1'], correctIndex: 1, explanation: 'The histone octamer core is made of two molecules each of H2A, H2B, H3, and H4.', difficulty: 'medium' },
+  { id: 's45', topic: 'dna-structure', type: 'mcq', question: 'The repeating unit of chromatin, consisting of DNA wrapped around a histone octamer, is called a', options: ['Chromomere', 'Nucleosome', 'Nucleolus', 'Centromere'], correctIndex: 1, explanation: 'The nucleosome is the fundamental repeating structural unit of chromatin, consisting of DNA wound around a histone octamer.', difficulty: 'easy' },
+  { id: 's46', topic: 'dna-structure', type: 'mcq', question: 'The typical length of DNA wrapped around one histone octamer to form a nucleosome is approximately', options: ['10 base pairs', '200 base pairs', '2000 base pairs', '20 base pairs'], correctIndex: 1, explanation: 'About 200 base pairs of DNA are wrapped around one histone octamer to form a nucleosome.', difficulty: 'medium' },
+  { id: 's47', topic: 'dna-structure', type: 'mcq', question: 'Histone H1 is significant in chromatin structure because it', options: ['Forms part of the core octamer', 'Is a linker histone that binds to the DNA between two adjacent nucleosomes', 'Is not related to chromatin at all', 'Only found in prokaryotes'], correctIndex: 1, explanation: 'H1 is a linker histone that binds to DNA between nucleosomes, helping in further compaction into higher-order chromatin structure.', difficulty: 'medium' },
+  { id: 's48', topic: 'dna-structure', type: 'mcq', question: 'Nucleosomes packaged along with DNA give chromatin, under the electron microscope, the appearance of', options: ['A smooth, uniform rod', '"Beads-on-a-string" structure', 'A perfectly straight line with no beads', 'A branching tree shape'], correctIndex: 1, explanation: 'Under the electron microscope, nucleosomes with intervening DNA give chromatin a "beads-on-a-string" appearance.', difficulty: 'medium' },
+  { id: 's49', topic: 'dna-structure', type: 'mcq', question: 'The densely packed, transcriptionally inactive form of chromatin is called', options: ['Euchromatin', 'Heterochromatin', 'Nucleosome', 'Nucleoid'], correctIndex: 1, explanation: 'Heterochromatin is the tightly packed, darkly stained form of chromatin, which is transcriptionally inactive.', difficulty: 'easy' },
+  { id: 's50', topic: 'dna-structure', type: 'mcq', question: 'The loosely packed, transcriptionally active form of chromatin is called', options: ['Heterochromatin', 'Euchromatin', 'Nucleolus', 'Nucleoid'], correctIndex: 1, explanation: 'Euchromatin is loosely packed and stains lightly, and is generally associated with active gene transcription.', difficulty: 'easy' },
+  { id: 's51', topic: 'dna-structure', type: 'assertion-reason', question: 'Assertion (A): Heterochromatin appears darkly stained in a nucleus, whereas euchromatin appears lighter.\nReason (R): Heterochromatin is more densely packed than euchromatin.', options: AR_OPTIONS, correctIndex: 0, explanation: 'The denser packaging of heterochromatin directly explains why it takes up more stain and appears darker than the loosely packed euchromatin, correctly supporting the assertion.', difficulty: 'medium' },
+  { id: 's52', topic: 'dna-structure', type: 'mcq', question: 'Extensive coiling and folding of chromatin at metaphase results in the highly condensed structures known as', options: ['Nucleosomes', 'Chromosomes', 'Ribosomes', 'Nucleoli'], correctIndex: 1, explanation: 'The highest order of DNA packaging, achieved through extensive coiling of chromatin, results in the formation of visible chromosomes during cell division.', difficulty: 'easy' },
+  { id: 's53', topic: 'dna-structure', type: 'count-correct', question: 'How many of the following statements about DNA packaging are correct?\n(i) DNA is negatively charged and histones are positively charged.\n(ii) A nucleosome contains DNA wrapped around a histone octamer.\n(iii) Heterochromatin is more loosely packed than euchromatin.\n(iv) H1 histone acts as a linker between nucleosomes.', options: ['One', 'Two', 'Three', 'Four'], correctIndex: 2, explanation: 'Statements (i), (ii), and (iv) are correct; heterochromatin is actually more densely (not loosely) packed than euchromatin, so (iii) is incorrect.', difficulty: 'medium' },
+  { id: 's54', topic: 'dna-structure', type: 'matching', question: 'Match the term in Column I with its description in Column II.\nColumn I: A. Nucleosome, B. Heterochromatin, C. Euchromatin, D. Histone octamer\nColumn II: (i) Loosely packed, transcriptionally active chromatin, (ii) Eight histone molecules forming a core, (iii) DNA wrapped around histone core, (iv) Densely packed, transcriptionally inactive chromatin', options: ['A-iii, B-iv, C-i, D-ii', 'A-ii, B-i, C-iv, D-iii', 'A-i, B-ii, C-iii, D-iv', 'A-iv, B-iii, C-ii, D-i'], correctIndex: 0, explanation: 'Nucleosome = DNA wrapped around histone core; heterochromatin = densely packed/inactive; euchromatin = loosely packed/active; histone octamer = eight histone molecules.', difficulty: 'medium' },
+  { id: 's55', topic: 'dna-structure', type: 'mcq', question: 'The overall purpose of the hierarchical packaging of DNA (nucleosome → chromatin fibre → chromosome) is to', options: ['Prevent DNA replication', 'Allow the very long DNA molecule to be compactly organised within the small nucleus', 'Add extra nitrogenous bases to DNA', 'Convert DNA into RNA'], correctIndex: 1, explanation: 'Hierarchical packaging allows the enormously long DNA molecule to be efficiently compacted to fit within the confines of the cell nucleus.', difficulty: 'medium' },
+
+// ============================================================
+// SECTION 2: DNA REPLICATION — ~40 questions
+// ============================================================
+
+  { id: 'r1', topic: 'replication', type: 'mcq', question: 'DNA replication is the process by which', options: ['RNA is synthesised from a DNA template', 'A DNA molecule makes an identical copy of itself', 'Proteins are synthesised from mRNA', 'DNA is broken down into nucleotides'], correctIndex: 1, explanation: 'DNA replication is the process of copying a DNA molecule to produce two identical daughter DNA molecules.', difficulty: 'easy' },
+  { id: 'r2', topic: 'replication', type: 'mcq', question: 'The structural feature of DNA that immediately suggested a mechanism for its replication was', options: ['Its double-stranded, helical structure with complementary base pairing', 'Its negative charge', 'Its presence in chromosomes', 'Its resistance to enzymatic digestion'], correctIndex: 0, explanation: 'The complementary base pairing rule in the double helix directly suggested that each strand could act as a template for synthesising a new complementary strand.', difficulty: 'medium' },
+  { id: 'r3', topic: 'replication', type: 'mcq', question: 'The model of DNA replication in which each of the two strands of the parent molecule acts as a template for synthesis of a new complementary strand, with the daughter molecules each having one parental and one new strand, is called', options: ['Conservative replication', 'Semiconservative replication', 'Dispersive replication', 'Non-conservative replication'], correctIndex: 1, explanation: 'Semiconservative replication describes the process where each daughter DNA molecule retains one parental strand and one newly synthesised strand.', difficulty: 'easy' },
+  { id: 'r4', topic: 'replication', type: 'mcq', question: 'The classic experiment that provided definitive proof of semiconservative DNA replication was performed by', options: ['Hershey and Chase', 'Meselson and Stahl, using E. coli', 'Griffith', 'Avery, MacLeod, and McCarty'], correctIndex: 1, explanation: 'Meselson and Stahl\'s experiment on E. coli, using heavy and light nitrogen isotopes, confirmed the semiconservative mode of DNA replication.', difficulty: 'medium' },
+  { id: 'r5', topic: 'replication', type: 'mcq', question: 'In the Meselson-Stahl experiment, E. coli cells were initially grown in a medium containing', options: ['15N (heavy isotope of nitrogen)', '14N (light isotope of nitrogen)', 'Radioactive phosphorus', 'Radioactive sulphur'], correctIndex: 0, explanation: 'E. coli was first grown for several generations in medium with 15NH4Cl to label all DNA with the heavy nitrogen isotope.', difficulty: 'medium' },
+  { id: 'r6', topic: 'replication', type: 'mcq', question: 'In the Meselson-Stahl experiment, the labelled bacterial cells were shifted to a medium containing 14N, and DNA density was analysed after successive generations using', options: ['Southern blotting', 'Caesium chloride (CsCl) density gradient centrifugation', 'PCR amplification', 'X-ray crystallography'], correctIndex: 1, explanation: 'DNA extracted after each generation was analysed by CsCl density gradient centrifugation to distinguish DNA of different densities.', difficulty: 'medium' },
+  { id: 'r7', topic: 'replication', type: 'mcq', question: 'After one generation of growth in 14N medium, the DNA in the Meselson-Stahl experiment formed', options: ['A single band of pure heavy (15N/15N) density', 'A single band of hybrid (15N/14N) density', 'A single band of pure light (14N/14N) density', 'Two separate bands of pure heavy and pure light density'], correctIndex: 1, explanation: 'After one generation, all DNA showed an intermediate (hybrid) density, consistent with each daughter molecule containing one heavy and one light strand.', difficulty: 'medium' },
+  { id: 'r8', topic: 'replication', type: 'mcq', question: 'After two generations of growth in 14N medium, the DNA in the Meselson-Stahl experiment formed', options: ['A single band of hybrid density only', 'Equal amounts of hybrid density DNA and light density DNA', 'Only pure heavy DNA', 'No detectable DNA'], correctIndex: 1, explanation: 'After the second generation, both hybrid and light DNA bands were observed in equal proportions, confirming semiconservative replication.', difficulty: 'medium' },
+  { id: 'r9', topic: 'replication', type: 'mcq', question: 'A similar experiment confirming semiconservative replication of DNA in eukaryotic cells (using root tips of Vicia faba and radioactive labelling) was performed by', options: ['Taylor et al.', 'Nirenberg', 'Khorana', 'Jacob and Monod'], correctIndex: 0, explanation: 'J. Herbert Taylor and colleagues confirmed semiconservative replication in eukaryotes using radioactively labelled Vicia faba (broad bean) root tips.', difficulty: 'hard' },
+  { id: 'r10', topic: 'replication', type: 'assertion-reason', question: 'Assertion (A): The Meselson-Stahl experiment is often described as one of the most elegant experiments in biology.\nReason (R): The experiment provided clear, unambiguous evidence directly distinguishing between the semiconservative, conservative, and dispersive models of DNA replication.', options: AR_OPTIONS, correctIndex: 0, explanation: 'The clean and unambiguous discrimination between the three replication models directly justifies why this experiment is considered so elegant.', difficulty: 'medium' },
+  { id: 'r11', topic: 'replication', type: 'mcq', question: 'The enzyme primarily responsible for catalysing the polymerisation of new DNA strands during replication is', options: ['RNA polymerase', 'DNA polymerase', 'DNA ligase', 'Helicase'], correctIndex: 1, explanation: 'DNA polymerase catalyses the synthesis of new DNA strands by adding nucleotides complementary to the template strand.', difficulty: 'easy' },
+  { id: 'r12', topic: 'replication', type: 'mcq', question: 'DNA polymerase can add new nucleotides only in the', options: ['3\'→5\' direction', '5\'→3\' direction', 'Both directions equally', 'Any direction, randomly'], correctIndex: 1, explanation: 'DNA polymerases synthesise new DNA strands only in the 5\'→3\' direction.', difficulty: 'medium' },
+  { id: 'r13', topic: 'replication', type: 'mcq', question: 'Because DNA polymerase synthesises only in the 5\'→3\' direction, and the two parental strands are antiparallel, one new strand is synthesised continuously (the leading strand) while the other is synthesised in short fragments called', options: ['Nucleosomes', 'Okazaki fragments', 'Restriction fragments', 'Introns'], correctIndex: 1, explanation: 'The lagging strand is synthesised discontinuously in short stretches called Okazaki fragments, later joined together.', difficulty: 'medium' },
+  { id: 'r14', topic: 'replication', type: 'mcq', question: 'The enzyme responsible for joining the Okazaki fragments together to form a continuous lagging strand is', options: ['DNA polymerase', 'DNA ligase', 'Helicase', 'Topoisomerase'], correctIndex: 1, explanation: 'DNA ligase seals the nicks between adjacent Okazaki fragments, forming a continuous strand.', difficulty: 'medium' },
+  { id: 'r15', topic: 'replication', type: 'mcq', question: 'The enzyme that unwinds the DNA double helix, separating the two parental strands ahead of the replication fork, is', options: ['DNA ligase', 'Helicase', 'Primase', 'DNA polymerase'], correctIndex: 1, explanation: 'Helicase unwinds the DNA double helix by breaking hydrogen bonds between complementary bases at the replication fork.', difficulty: 'medium' },
+  { id: 'r16', topic: 'replication', type: 'mcq', question: 'The Y-shaped structure formed at the point where the two strands of the DNA double helix are being unwound and separated during replication is called the', options: ['Replication fork', 'Origin of replication', 'Replication bubble tail', 'Okazaki junction'], correctIndex: 0, explanation: 'The replication fork is the Y-shaped region formed at the site of active DNA unwinding and synthesis.', difficulty: 'easy' },
+  { id: 'r17', topic: 'replication', type: 'mcq', question: 'DNA replication begins at a specific sequence on the DNA molecule known as the', options: ['Terminator', 'Origin of replication (ori)', 'Promoter', 'Operator'], correctIndex: 1, explanation: 'Replication starts at a defined sequence called the origin of replication.', difficulty: 'easy' },
+  { id: 'r18', topic: 'replication', type: 'mcq', question: 'Because DNA polymerase cannot initiate synthesis on a completely bare template, replication requires a short stretch of RNA laid down first, called a', options: ['Primer', 'Terminator', 'Operator', 'Adapter'], correctIndex: 0, explanation: 'An RNA primer, synthesised by the enzyme primase, is needed to provide a free 3\'-OH group for DNA polymerase to extend.', difficulty: 'medium' },
+  { id: 'r19', topic: 'replication', type: 'mcq', question: 'The enzyme responsible for synthesising the short RNA primer needed to initiate DNA replication is', options: ['DNA polymerase', 'Primase', 'Ligase', 'Topoisomerase'], correctIndex: 1, explanation: 'Primase synthesises the RNA primer required to start DNA synthesis.', difficulty: 'medium' },
+  { id: 'r20', topic: 'replication', type: 'mcq', question: 'The enzyme that relieves the topological strain (supercoiling) created ahead of the replication fork as DNA unwinds is', options: ['DNA polymerase', 'Topoisomerase (DNA gyrase in bacteria)', 'Ligase', 'Primase'], correctIndex: 1, explanation: 'Topoisomerase (DNA gyrase in bacteria) relieves the supercoiling stress generated ahead of the advancing replication fork.', difficulty: 'hard' },
+  { id: 'r21', topic: 'replication', type: 'mcq', question: 'The strand synthesised continuously in the 5\'→3\' direction, in the same direction as the movement of the replication fork, is called the', options: ['Lagging strand', 'Leading strand', 'Template strand only', 'Primer strand'], correctIndex: 1, explanation: 'The leading strand is synthesised continuously in the 5\'→3\' direction, in the same direction as fork movement.', difficulty: 'easy' };
+  { id: 'r22', topic: 'replication', type: 'mcq', question: 'The strand synthesised discontinuously, in short Okazaki fragments, in the direction opposite to the movement of the replication fork, is called the', options: ['Leading strand', 'Lagging strand', 'Coding strand', 'Template strand exclusively'], correctIndex: 1, explanation: 'The lagging strand is synthesised discontinuously because its overall direction of synthesis is opposite to fork movement.', difficulty: 'easy' },
+  { id: 'r23', topic: 'replication', type: 'mcq', question: 'The RNA primers used during replication are eventually', options: ['Retained permanently in the final DNA molecule', 'Removed and replaced with DNA nucleotides, then sealed by ligase', 'Converted into proteins', 'Left as gaps in the mature DNA'], correctIndex: 1, explanation: 'RNA primers are removed, the gaps filled with DNA nucleotides, and the fragments joined by DNA ligase.', difficulty: 'medium' },
+  { id: 'r24', topic: 'replication', type: 'mcq', question: 'DNA replication requires a set of enzymes collectively called the', options: ['Replisome (replication machinery)', 'Ribosome complex', 'Spliceosome', 'Operon complex'], correctIndex: 0, explanation: 'The complete set of enzymes and proteins required for DNA replication is collectively referred to as the replisome.', difficulty: 'medium' },
+  { id: 'r25', topic: 'replication', type: 'mcq', question: 'DNA replication in eukaryotic cells occurs during which phase of the cell cycle?', options: ['G1 phase', 'S (synthesis) phase', 'G2 phase', 'M (mitotic) phase'], correctIndex: 1, explanation: 'DNA replication occurs during the S (synthesis) phase of the eukaryotic cell cycle.', difficulty: 'easy' },
+  { id: 'r26', topic: 'replication', type: 'assertion-reason', question: 'Assertion (A): Eukaryotic chromosomes typically have multiple origins of replication.\nReason (R): The large size of eukaryotic DNA molecules means that a single origin would take too long to replicate the entire chromosome within the time available in the S phase.', options: AR_OPTIONS, correctIndex: 0, explanation: 'The need to replicate long DNA molecules within a limited time window directly explains the presence of multiple replication origins, correctly supporting the assertion.', difficulty: 'hard' },
+  { id: 'r27', topic: 'replication', type: 'mcq', question: 'DNA polymerase enzymes possess a proofreading function that helps to', options: ['Speed up transcription', 'Correct errors in base pairing during replication, ensuring high fidelity', 'Repair damaged proteins', 'Add extra bases deliberately to increase mutation rate'], correctIndex: 1, explanation: 'DNA polymerase\'s proofreading activity corrects mismatches during synthesis, contributing to the high fidelity of DNA replication.', difficulty: 'medium' },
+  { id: 'r28', topic: 'replication', type: 'mcq', question: 'The high fidelity of DNA replication (very low error rate) is significant because it', options: ['Prevents any mutations from ever arising', 'Ensures that genetic information is transmitted accurately to progeny cells and generations', 'Prevents DNA from being copied at all', 'Is irrelevant to evolution'], correctIndex: 1, explanation: 'High replication fidelity ensures accurate transmission of genetic information, which is essential for the stable inheritance of traits across generations.', difficulty: 'medium' },
+  { id: 'r29', topic: 'replication', type: 'mcq', question: 'In bacteria such as E. coli, which typically have a single circular chromosome, replication generally proceeds', options: ['Only unidirectionally from the origin', 'Bidirectionally from a single origin, forming two replication forks moving in opposite directions', 'Without any defined origin', 'Only during cell death'], correctIndex: 1, explanation: 'Bacterial DNA replication is generally bidirectional, with two replication forks moving away from a single origin in opposite directions.', difficulty: 'hard' },
+  { id: 'r30', topic: 'replication', type: 'mcq', question: 'The overall in vivo process of DNA duplication is termed replication, as distinct from PCR (polymerase chain reaction), which is', options: ['An identical process occurring only in living cells', 'An in vitro technique to artificially amplify DNA outside a living cell', 'A process that destroys DNA', 'Unrelated to DNA polymerase'], correctIndex: 1, explanation: 'PCR is an in vitro (test-tube) technique that mimics some aspects of natural replication to amplify specific DNA sequences outside living cells.', difficulty: 'medium' },
+  { id: 'r31', topic: 'replication', type: 'statement', question: 'Consider the following statements about DNA replication:\n1. DNA polymerase synthesises new strands only in the 5\'→3\' direction.\n2. The leading strand is synthesised discontinuously.\n3. Okazaki fragments are joined together by DNA ligase.\nWhich of the statements given above are correct?', options: ['1 and 2 only', '1 and 3 only', '2 and 3 only', '1, 2 and 3'], correctIndex: 1, explanation: 'Statements 1 and 3 are correct; the leading strand is synthesised continuously, not discontinuously, so statement 2 is incorrect.', difficulty: 'medium' },
+  { id: 'r32', topic: 'replication', type: 'count-correct', question: 'How many of the following enzymes are involved in DNA replication?\n(i) Helicase\n(ii) Primase\n(iii) DNA ligase\n(iv) RNA polymerase (for mRNA synthesis)\n(v) DNA polymerase', options: ['Two', 'Three', 'Four', 'Five'], correctIndex: 2, explanation: 'Helicase, primase, DNA ligase, and DNA polymerase are all directly involved in replication; RNA polymerase for mRNA synthesis is involved in transcription, not DNA replication (though primase does synthesise RNA primers).', difficulty: 'hard' },
+  { id: 'r33', topic: 'replication', type: 'matching', question: 'Match the enzyme in Column I with its function in Column II.\nColumn I: A. Helicase, B. DNA ligase, C. Primase, D. Topoisomerase\nColumn II: (i) Relieves supercoiling ahead of the fork, (ii) Synthesises RNA primer, (iii) Unwinds the double helix, (iv) Joins Okazaki fragments', options: ['A-iii, B-iv, C-ii, D-i', 'A-i, B-ii, C-iii, D-iv', 'A-iv, B-iii, C-i, D-ii', 'A-iii, B-i, C-iv, D-ii'], correctIndex: 0, explanation: 'Helicase = unwinds helix; DNA ligase = joins Okazaki fragments; primase = synthesises RNA primer; topoisomerase = relieves supercoiling.', difficulty: 'medium' },
+  { id: 'r34', topic: 'replication', type: 'mcq', question: 'A replication bubble, seen especially in eukaryotic chromosomes with multiple origins, is formed because', options: ['DNA synthesis proceeds bidirectionally from each origin, creating a bubble-like appearance under the microscope', 'The DNA breaks into fragments permanently', 'Only one strand is ever replicated', 'Nucleosomes prevent bubble formation entirely'], correctIndex: 0, explanation: 'Bidirectional replication from each origin produces expanding "bubbles" that can be visualised under the electron microscope.', difficulty: 'hard' },
+  { id: 'r35', topic: 'replication', type: 'mcq', question: 'Which of the following best explains why DNA replication is described as "semiconservative" rather than "conservative"?', options: ['Because the entire parental molecule remains intact in one daughter cell only', 'Because each daughter molecule retains exactly one original (parental) strand and gains one newly synthesised strand', 'Because DNA is destroyed and remade from scratch each time', 'Because only RNA is conserved during replication'], correctIndex: 1, explanation: 'Semiconservative replication means each daughter DNA molecule is a hybrid, containing one old (parental) strand and one newly made strand.', difficulty: 'medium' },
+  { id: 'r36', topic: 'replication', type: 'mcq',
+  question: 'DNA replication is termed a template-dependent process because',
+  options: ['It can proceed without any existing DNA present', 'The nucleotide sequence of the new strand is directed by the sequence of the existing (parental) strand', 'It only occurs in the absence of enzymes', 'The new strand is completely random in sequence'],
+  correctIndex: 1,
+  explanation: 'Since the new strand\'s sequence is dictated by pairing rules with the existing template strand, replication is described as template-dependent.',
+  difficulty: 'medium'
+};
+  { id: 'r37', topic: 'replication', type: 'assertion-reason', question: 'Assertion (A): DNA replication requires a large supply of deoxyribonucleoside triphosphates (dNTPs).\nReason (R): dNTPs serve as both the substrate for polymerisation and provide the energy needed for bond formation through cleavage of their phosphate groups.', options: AR_OPTIONS, correctIndex: 0, explanation: 'dNTPs supply the raw material and drive the reaction energetically as their high-energy phosphate bonds are cleaved during nucleotide addition, correctly supporting the assertion.', difficulty: 'hard' },
+  { id: 'r38', topic: 'replication', type: 'mcq', question: 'A key reason DNA replication must occur with extremely high fidelity is that', options: ['Errors would only affect a single cell and never be inherited', 'Errors (mutations) introduced during replication can be passed on to daughter cells and, in germ cells, to offspring', 'DNA polymerase has no proofreading ability at all', 'Fidelity has no relevance to evolution or disease'], correctIndex: 1, explanation: 'Because replication errors can be inherited by daughter cells (and offspring, if in germ cells), high fidelity during replication is critical.', difficulty: 'medium' },
+  { id: 'r39', topic: 'replication', type: 'mcq', question: 'The overall process by which the genetic information encoded in DNA is faithfully passed from a cell to its daughter cells during cell division depends fundamentally on', options: ['Transcription alone', 'Translation alone', 'Accurate semiconservative DNA replication', 'The lac operon mechanism'], correctIndex: 2, explanation: 'Accurate, semiconservative replication of DNA is the fundamental basis by which genetic information is faithfully transmitted during cell division.', difficulty: 'medium' },
+  { id: 'r40', topic: 'replication', type: 'count-correct', question: 'How many of the following statements about DNA replication are correct?\n(i) Replication is semiconservative.\n(ii) DNA polymerase can initiate synthesis without any primer.\n(iii) The leading strand requires only one primer, while the lagging strand requires multiple primers.\n(iv) Replication occurs during the S phase of the cell cycle in eukaryotes.', options: ['One', 'Two', 'Three', 'Four'], correctIndex: 2, explanation: 'Statements (i), (iii), and (iv) are correct; DNA polymerase cannot initiate synthesis without a primer, so statement (ii) is incorrect.', difficulty: 'hard' },
+// ============================================================
+// SECTION 3: TRANSCRIPTION — ~40 questions
+// ============================================================
+
+  { id: 't1', topic: 'transcription', type: 'mcq', question: 'Transcription is defined as the process of', options: ['Copying DNA to form new DNA', 'Synthesis of an RNA molecule using a DNA strand as a template', 'Synthesis of protein from mRNA', 'Splitting of DNA strands permanently'], correctIndex: 1, explanation: 'Transcription is the process by which genetic information in DNA is copied into a complementary RNA molecule.', difficulty: 'easy' },
+  { id: 't2', topic: 'transcription', type: 'mcq', question: 'The enzyme that catalyses transcription is', options: ['DNA polymerase', 'RNA polymerase', 'DNA ligase', 'Reverse transcriptase'], correctIndex: 1, explanation: 'RNA polymerase catalyses the synthesis of RNA from a DNA template during transcription.', difficulty: 'easy' },
+  { id: 't3', topic: 'transcription', type: 'mcq', question: 'A "transcription unit" in DNA is defined by three components: a promoter, the structural gene, and a', options: ['Terminator', 'Operator', 'Origin', 'Enhancer only'], correctIndex: 0, explanation: 'A transcription unit consists of a promoter, structural gene(s), and a terminator sequence.', difficulty: 'medium' },
+  { id: 't4', topic: 'transcription', type: 'mcq', question: 'The promoter region of a transcription unit is located', options: ['Downstream of the structural gene', 'Upstream of the structural gene, towards the 5\' end of the coding strand', 'Inside the structural gene itself', 'At a random location, unrelated to the gene'], correctIndex: 1, explanation: 'The promoter lies upstream of the structural gene and provides the binding site for RNA polymerase to initiate transcription.', difficulty: 'medium' },
+  { id: 't5', topic: 'transcription', type: 'mcq', question: 'The DNA strand that is actually used by RNA polymerase as a template for RNA synthesis is called the', options: ['Coding (sense) strand', 'Template (antisense) strand', 'Leading strand', 'Lagging strand'], correctIndex: 1, explanation: 'The template (or antisense) strand serves as the physical template read by RNA polymerase.', difficulty: 'medium' },
+  { id: 't6', topic: 'transcription', type: 'mcq', question: 'The DNA strand that has the same sequence as the RNA transcript (with thymine instead of uracil) is called the', options: ['Template strand', 'Coding (sense) strand', 'Lagging strand', 'Antisense strand'], correctIndex: 1, explanation: 'The coding (sense) strand has the same base sequence as the resulting RNA transcript, differing only in that T replaces U.', difficulty: 'medium' },
+  { id: 't7', topic: 'transcription', type: 'mcq', question: 'RNA polymerase reads the template DNA strand in the', options: ['5\'→3\' direction', '3\'→5\' direction', 'Both directions simultaneously', 'A direction that varies randomly'], correctIndex: 1, explanation: 'RNA polymerase reads the template strand in the 3\'→5\' direction while synthesising the new RNA in the 5\'→3\' direction.', difficulty: 'medium' },
+  { id: 't8', topic: 'transcription', type: 'mcq', question: 'The newly synthesised RNA molecule is polymerised in the', options: ['3\'→5\' direction', '5\'→3\' direction', 'A direction that alternates', 'Same direction regardless of the template'], correctIndex: 1, explanation: 'Like DNA polymerase, RNA polymerase synthesises new RNA strands only in the 5\'→3\' direction.', difficulty: 'medium' },
+  { id: 't9', topic: 'transcription', type: 'mcq', question: 'A key difference between DNA replication and transcription is that transcription is', options: ['Conservative, copying the whole genome', 'Selective (only a specific portion of DNA/one gene is transcribed at a time), and only one of the two strands is used as template for a given gene', 'Semiconservative like replication', 'Carried out by DNA polymerase, exactly as in replication'], correctIndex: 1, explanation: 'Unlike replication, which copies the entire genome, transcription selectively copies specific genes, and only one strand (the template) is used for a given gene.', difficulty: 'medium' },
+  {
+  id: 't10', topic: 'transcription', type: 'mcq',
+  question: 'Unlike DNA polymerase, RNA polymerase does not generally require',
+  options: ['A DNA template', 'A primer to initiate synthesis', 'Nucleotide triphosphates as substrates', 'A promoter sequence for correct initiation'],
+  correctIndex: 1,
+  explanation: 'RNA polymerase, unlike DNA polymerase, does not require a primer to initiate synthesis; it can begin RNA synthesis de novo.',
+  difficulty: 'medium'
+};
+
+  { id: 't11', topic: 'transcription', type: 'mcq', question: 'In bacteria such as E. coli, transcription of all types of RNA (mRNA, tRNA, and rRNA) is carried out by', options: ['Three distinct RNA polymerases', 'A single type of RNA polymerase', 'Only DNA polymerase', 'Ribosomes directly'], correctIndex: 1, explanation: 'Prokaryotes use a single RNA polymerase enzyme to transcribe all classes of RNA.', difficulty: 'medium' },
+  { id: 't12', topic: 'transcription', type: 'mcq', question: 'In eukaryotes, the transcription of different classes of RNA is carried out by different RNA polymerases. Which RNA polymerase is responsible for transcribing most ribosomal RNA (rRNA)?', options: ['RNA polymerase I', 'RNA polymerase II', 'RNA polymerase III', 'RNA polymerase IV'], correctIndex: 0, explanation: 'RNA polymerase I is located in the nucleolus and transcribes most rRNA genes (28S, 18S, 5.8S rRNA).', difficulty: 'hard' },
+  { id: 't13', topic: 'transcription', type: 'mcq', question: 'In eukaryotes, RNA polymerase II is responsible for transcribing', options: ['tRNA and 5S rRNA', 'The precursor of mRNA, known as heterogeneous nuclear RNA (hnRNA)', 'Only ribosomal proteins', 'Only mitochondrial DNA'], correctIndex: 1, explanation: 'RNA polymerase II transcribes protein-coding genes, producing hnRNA, the precursor that is processed into mature mRNA.', difficulty: 'hard' },
+  { id: 't14', topic: 'transcription', type: 'mcq', question: 'In eukaryotes, RNA polymerase III is responsible for transcribing', options: ['hnRNA (mRNA precursor)', 'tRNA, 5S rRNA, and small nuclear RNAs', 'Most rRNA genes', 'Only proteins directly'], correctIndex: 1, explanation: 'RNA polymerase III transcribes small RNA molecules including tRNA, 5S rRNA, and snRNAs.', difficulty: 'hard' },
+  { id: 't15', topic: 'transcription', type: 'matching', question: 'Match the eukaryotic RNA polymerase in Column I with its transcript in Column II.\nColumn I: A. RNA polymerase I, B. RNA polymerase II, C. RNA polymerase III\nColumn II: (i) tRNA and 5S rRNA, (ii) Most rRNA, (iii) hnRNA (mRNA precursor)', options: ['A-ii, B-iii, C-i', 'A-i, B-ii, C-iii', 'A-iii, B-i, C-ii', 'A-ii, B-i, C-iii'], correctIndex: 0, explanation: 'RNA Pol I = rRNA; RNA Pol II = hnRNA/mRNA precursor; RNA Pol III = tRNA and 5S rRNA.', difficulty: 'medium' },
+  {
+      id: 't16', topic: 'transcription', type: 'mcq',
+  question: 'In prokaryotes, because there is no nuclear membrane separating transcription from translation, mRNA is generally',
+  options: ['Extensively processed before being used, similar to eukaryotic mRNA', 'Used directly for translation without significant processing', 'Never translated at all', 'Converted first into DNA'],
+  correctIndex: 1,
+  explanation: 'Since transcription and translation are coupled in prokaryotes (no nuclear envelope), mRNA does not require extensive processing before being translated.',
+  difficulty: 'medium'
+};
+
+  { id: 't17', topic: 'transcription', type: 'mcq', question: 'In eukaryotes, the primary transcript synthesised by RNA polymerase II, known as heterogeneous nuclear RNA (hnRNA), must undergo processing that includes', options: ['Only translation into protein', 'Splicing, capping, and tailing', 'Only DNA replication', 'Conversion to tRNA'], correctIndex: 1, explanation: 'hnRNA undergoes three main processing steps: splicing (removal of introns), capping at the 5\' end, and tailing at the 3\' end, before becoming mature mRNA.', difficulty: 'medium' },
+  { id: 't18', topic: 'transcription', type: 'mcq', question: 'The process by which non-coding sequences (introns) are removed and coding sequences (exons) are joined together in hnRNA is called', options: ['Capping', 'Splicing', 'Tailing', 'Termination'], correctIndex: 1, explanation: 'Splicing removes intervening non-coding sequences (introns) from hnRNA and joins the coding sequences (exons) together.', difficulty: 'medium' },
+  { id: 't19', topic: 'transcription', type: 'mcq', question: 'The regions of a eukaryotic gene that are retained in the mature mRNA and code for protein are called', options: ['Introns', 'Exons', 'Promoters', 'Operators'], correctIndex: 1, explanation: 'Exons are the expressed sequences retained in the mature mRNA after splicing.', difficulty: 'easy' },
+  { id: 't20', topic: 'transcription', type: 'mcq', question: 'The intervening, non-coding sequences of a eukaryotic gene that are removed during RNA splicing are called', options: ['Exons', 'Introns', 'Codons', 'Anticodons'], correctIndex: 1, explanation: 'Introns are the non-coding intervening sequences removed from hnRNA during splicing.', difficulty: 'easy' },
+  { id: 't21', topic: 'transcription', type: 'mcq', question: 'Capping of hnRNA at its 5\' end involves the addition of an unusual nucleotide, namely', options: ['A methylated guanosine triphosphate cap', 'A poly-A tail', 'A hydrogen-bonded guanine only', 'A ribosomal subunit'], correctIndex: 0, explanation: 'The 5\' capping process adds a methylated guanosine triphosphate (GTP) cap to the hnRNA.', difficulty: 'medium' },
+  { id: 't22', topic: 'transcription', type: 'mcq', question: 'Tailing at the 3\' end of hnRNA involves the addition of a stretch of', options: ['Adenylate residues, forming a poly-A tail', 'Guanine residues only', 'Thymine residues', 'Uracil residues in a long chain'], correctIndex: 0, explanation: 'Tailing adds a poly-A tail (a string of adenylate residues) to the 3\' end of the transcript.', difficulty: 'medium' },
+  { id: 't23', topic: 'transcription', type: 'assertion-reason', question: 'Assertion (A): The 5\' cap and poly-A tail added during mRNA processing are important for the stability and translation of the mature mRNA.\nReason (R): Capping and tailing protect the mRNA from degradation and assist in ribosome binding during translation.', options: AR_OPTIONS, correctIndex: 0, explanation: 'The protective and translation-facilitating role of the cap and poly-A tail directly explains their importance for stability and translation, correctly supporting the assertion.', difficulty: 'medium' },
+  { id: 't24', topic: 'transcription', type: 'mcq', question: 'Termination of transcription occurs when RNA polymerase encounters a specific DNA sequence known as the', options: ['Promoter', 'Terminator', 'Operator', 'Origin'], correctIndex: 1, explanation: 'The terminator sequence signals RNA polymerase to stop transcription and release the newly synthesised RNA.', difficulty: 'medium' },
+  { id: 't25', topic: 'transcription', type: 'mcq', question: 'Which of the following statements correctly summarises the overall central dogma of molecular biology as it relates to transcription?', options: ['Protein → RNA → DNA', 'DNA → RNA → Protein', 'RNA → Protein → DNA', 'DNA → Protein → RNA'], correctIndex: 1, explanation: 'The central dogma describes the general flow of genetic information: DNA is transcribed into RNA, which is translated into protein.', difficulty: 'easy' },
+  { id: 't26', topic: 'transcription', type: 'mcq', question: 'The overall structure of a transcription unit, when drawn as a linear diagram, is generally arranged as', options: ['Terminator — Structural gene — Promoter', 'Promoter — Structural gene — Terminator', 'Structural gene — Promoter — Terminator', 'Promoter — Terminator — Structural gene'], correctIndex: 1, explanation: 'A transcription unit is conventionally represented in the order: Promoter, then Structural gene, then Terminator.', difficulty: 'medium' },
+  { id: 't27', topic: 'transcription', type: 'mcq', question: 'RNA polymerase, in order to bind correctly to the promoter and initiate transcription in eukaryotes, often requires assistance from additional proteins called', options: ['Transcription factors', 'Ribosomal proteins', 'Histone proteins only', 'Restriction enzymes'], correctIndex: 0, explanation: 'Eukaryotic RNA polymerases typically require transcription factors to bind properly to the promoter and initiate transcription.', difficulty: 'medium' },
+  { id: 't28', topic: 'transcription', type: 'statement', question: 'Consider the following statements about transcription:\n1. Only one of the two DNA strands acts as a template for a given gene.\n2. RNA polymerase requires a primer to begin synthesis, just like DNA polymerase.\n3. In eukaryotes, hnRNA is processed by splicing, capping, and tailing.\nWhich of the statements given above are correct?', options: ['1 and 2 only', '1 and 3 only', '2 and 3 only', '1, 2 and 3'], correctIndex: 1, explanation: 'Statements 1 and 3 are correct; RNA polymerase does not require a primer, unlike DNA polymerase, so statement 2 is incorrect.', difficulty: 'medium' },
+  { id: 't29', topic: 'transcription', type: 'count-correct', question: 'How many of the following are steps involved in the processing of hnRNA into mature mRNA in eukaryotes?\n(i) Splicing\n(ii) Capping\n(iii) Tailing\n(iv) DNA replication', options: ['One', 'Two', 'Three', 'Four'], correctIndex: 2, explanation: 'Splicing, capping, and tailing are the three main mRNA processing steps; DNA replication is unrelated to RNA processing.', difficulty: 'medium' },
+  { id: 't30', topic: 'transcription', type: 'mcq', question: 'A key reason that mRNA processing (splicing, capping, tailing) is unnecessary in bacteria is that', options: ['Bacteria lack RNA polymerase', 'Bacterial genes generally lack introns, and mRNA is used directly for translation without a nuclear membrane barrier', 'Bacteria have no ribosomes', 'Bacterial DNA has no promoter'], correctIndex: 1, explanation: 'Since bacterial genes are generally intron-free and transcription/translation are coupled without a nuclear membrane, extensive mRNA processing is unnecessary.', difficulty: 'hard' },
+  { id: 't31', topic: 'transcription', type: 'mcq', question: 'Transcription is said to be asymmetric because', options: ['Both DNA strands are copied simultaneously for every gene', 'Only a selected segment of DNA and only one of the two strands is used as a template', 'RNA polymerase synthesises DNA, not RNA', 'It happens only once per cell cycle regardless of gene number'], correctIndex: 1, explanation: 'Transcription is asymmetric because only a specific stretch of DNA and only one of its two strands function as the template for a given RNA molecule.', difficulty: 'medium' },
+  {
+  id: 't32', topic: 'transcription', type: 'mcq',
+  question: 'A significant difference between transcription and DNA replication regarding the extent of the process is that transcription',
+  options: ['Copies the entire genome, just like replication', 'Is selective, copying only specific genes needed at a given time, rather than the entire genome', 'Only occurs once in the lifetime of a cell', 'Copies both DNA strands fully for every gene'],
+  correctIndex: 1,
+  explanation: 'Unlike replication, which duplicates the entire genome, transcription selectively transcribes only the genes required at a particular time.',
+  difficulty: 'medium'
+};
+
+transcriptionQuestions.push(
+  { id: 't33', topic: 'transcription', type: 'mcq', question: 'Which enzyme complex is generally larger and more complex in eukaryotes than in prokaryotes, reflecting the need to interact with chromatin and multiple regulatory proteins?', options: ('DNA ligase, options: []'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+transcriptionQuestions[transcriptionQuestions.length - 1] = {
+  id: 't33', topic: 'transcription', type: 'mcq',
+  question: 'Which enzyme complex is generally larger and more complex in eukaryotes than in prokaryotes, reflecting the need to interact with chromatin and multiple regulatory proteins?',
+  options: ['DNA ligase', 'RNA polymerase', 'DNA gyrase', 'Restriction endonuclease'],
+  correctIndex: 1,
+  explanation: 'Eukaryotic RNA polymerases are larger, more complex enzymes requiring numerous accessory transcription factors, unlike the simpler single RNA polymerase of prokaryotes.',
+  difficulty: 'hard'
+};
+
+transcriptionQuestions.push(
+  { id: 't34', topic: 'transcription', type: 'mcq', question: 'The template strand for transcription is read by RNA polymerase, and the resulting RNA transcript is therefore', options: ['Identical in sequence to the template strand', 'Complementary and antiparallel to the template strand', 'Unrelated in sequence to either DNA strand', 'Identical to the coding strand in polarity but with random bases'], correctIndex: 1, explanation: 'The RNA transcript is synthesised as a complementary and antiparallel copy of the template DNA strand.', difficulty: 'medium' },
+  { id: 't35', topic: 'transcription', type: 'mcq', question: 'The direction of RNA synthesis relative to the coding strand of DNA is such that the RNA sequence corresponds to the coding strand, except that', options: ['Every base is different', 'Uracil replaces thymine', 'Adenine replaces guanine', 'The RNA is read 3\'→5\' while the coding strand is 5\'→3\''], correctIndex: 1, explanation: 'The RNA transcript matches the coding strand base-for-base, except thymine is replaced by uracil in RNA.', difficulty: 'medium' },
+  { id: 't36', topic: 'transcription', type: 'mcq', question: 'Which of the following statements about eukaryotic transcription and prokaryotic transcription is correct?', options: ('Both use the same single RNA polymerase, options: []'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+transcriptionQuestions[transcriptionQuestions.length - 1] = {
+  id: 't36', topic: 'transcription', type: 'mcq',
+  question: 'Which of the following statements correctly distinguishes eukaryotic transcription from prokaryotic transcription?',
+  options: ['Both use exactly the same single RNA polymerase enzyme', 'Eukaryotes use three different RNA polymerases, whereas prokaryotes use only one', 'Prokaryotes always process their mRNA extensively before translation', 'Eukaryotic transcription never requires a promoter sequence'],
+  correctIndex: 1,
+  explanation: 'Eukaryotes have three distinct RNA polymerases (I, II, III) for different RNA classes, unlike the single RNA polymerase used in prokaryotes.',
+  difficulty: 'medium'
+};
+
+transcriptionQuestions.push(
+  { id: 't37', topic: 'transcription', type: 'mcq', question: 'The final, fully processed mRNA, ready for export from the nucleus and translation in the cytoplasm, is termed the', options: ['hnRNA', 'Mature mRNA', 'Pre-mRNA only', 'Template strand'], correctIndex: 1, explanation: 'After splicing, capping, and tailing, hnRNA becomes mature mRNA, ready for export and translation.', difficulty: 'easy' },
+  { id: 't38', topic: 'transcription', type: 'assertion-reason', question: 'Assertion (A): Alternative splicing can allow a single gene to give rise to more than one type of protein.\nReason (R): Different combinations of exons can be joined together during the splicing of hnRNA transcribed from the same gene.', options: AR_OPTIONS, correctIndex: 0, explanation: 'Because different exon combinations can be spliced together from the same primary transcript, this directly explains how a single gene can yield multiple protein products, correctly supporting the assertion.', difficulty: 'hard' },
+  { id: 't39', topic: 'transcription', type: 'mcq', question: 'Compared to DNA replication, which occurs once per cell cycle for the entire genome, transcription of a given gene may occur', options: ['Only once in the lifetime of the organism', 'Multiple times, as needed, to produce many copies of RNA from the same gene', 'Never more than once per cell', 'Only during the S phase of the cell cycle'], correctIndex: 1, explanation: 'Unlike the once-per-cycle replication of the whole genome, a given gene can be transcribed repeatedly to produce multiple RNA copies as required by the cell.', difficulty: 'medium' },
+  { id: 't40', topic: 'transcription', type: 'mcq', question: 'The overall significance of transcription in gene expression is that it', options: ['Directly produces functional protein without further steps', 'Serves as the crucial first step in converting genetic information stored in DNA into a form (RNA) that can direct protein synthesis', 'Replaces the need for DNA replication', 'Occurs only in non-dividing cells'], correctIndex: 1, explanation: 'Transcription is the essential first step in gene expression, converting the DNA-encoded genetic information into RNA, which can then direct protein synthesis.', difficulty: 'medium' }
+);
+
+// ============================================================
+// SECTION 4: GENETIC CODE & TRANSLATION — ~45 questions
+// ============================================================
+
+
+  { id: 'tr1', topic: 'translation', type: 'mcq', question: 'The genetic code refers to the relationship between the sequence of', options: ('Amino acids in a protein and nucleotides in tRNA'.split(',')), correctIndex: 0, explanation: '', difficulty: 'easy' },
+translationQuestions[translationQuestions.length - 1] = {
+  id: 'tr1', topic: 'translation', type: 'mcq',
+  question: 'The genetic code refers to the relationship between the sequence of',
+  options: ['Nucleotide bases in mRNA and the sequence of amino acids in the polypeptide it encodes', 'Amino acids in tRNA and nucleotides in DNA', 'Ribosomal proteins and rRNA only', 'Introns and exons in hnRNA'],
+  correctIndex: 0,
+  explanation: 'The genetic code describes the correspondence between nucleotide triplets in mRNA and the specific amino acids they specify during translation.',
+  difficulty: 'easy'
+};
+
+translationQuestions.push(
+  { id: 'tr2', topic: 'translation', type: 'mcq', question: 'The genetic code is described as a "triplet code" because', options: ['Each amino acid is specified by a single nucleotide', 'A sequence of three nucleotides (a codon) specifies one amino acid', 'Four nucleotides are needed to specify each amino acid', 'The code repeats every three genes'], correctIndex: 1, explanation: 'A set of three consecutive nucleotides, called a codon, specifies a single amino acid, hence "triplet code."', difficulty: 'easy' },
+  { id: 'tr3', topic: 'translation', type: 'mcq', question: 'The total number of possible codons formed by combinations of the four nitrogenous bases taken three at a time is', options: ['20', '61', '64', '4'], correctIndex: 2, explanation: 'With 4 bases taken 3 at a time (4^3), there are 64 possible codons.', difficulty: 'medium' },
+  { id: 'tr4', topic: 'translation', type: 'mcq', question: 'Of the 64 possible codons, how many actually code for specific amino acids (sense codons)?', options: ['64', '61', '20', '3'], correctIndex: 1, explanation: 'Out of 64 codons, 61 code for amino acids (sense codons), while the remaining 3 are stop codons.', difficulty: 'medium' },
+  { id: 'tr5', topic: 'translation', type: 'mcq', question: 'The three codons that do not code for any amino acid and instead signal the end of translation are collectively called', options: ['Start codons', 'Stop (nonsense) codons', 'Anticodons', 'Silent codons'], correctIndex: 1, explanation: 'UAA, UAG, and UGA are the three stop (nonsense) codons that terminate translation without coding for an amino acid.', difficulty: 'medium' },
+  { id: 'tr6', topic: 'translation', type: 'mcq', question: 'The codon that functions as the universal start codon, also coding for the amino acid methionine, is', options: ['UAA', 'AUG', 'UGA', 'UAG'], correctIndex: 1, explanation: 'AUG is the universal start codon, also coding for methionine, and typically marks the beginning of translation.', difficulty: 'easy' },
+  { id: 'tr7', topic: 'translation', type: 'mcq', question: 'The genetic code is described as "degenerate" because', options: ('Every amino acid is coded for by exactly one codon'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+translationQuestions[translationQuestions.length - 1] = {
+  id: 'tr7', topic: 'translation', type: 'mcq',
+  question: 'The genetic code is described as "degenerate" because',
+  options: ['Every amino acid is coded for by exactly one unique codon', 'Some amino acids are coded for by more than one codon', 'The code changes randomly from cell to cell', 'It cannot specify all 20 amino acids'],
+  correctIndex: 1,
+  explanation: 'Degeneracy refers to the fact that most amino acids are specified by more than one codon (except methionine and tryptophan, which have only one each).',
+  difficulty: 'medium'
+};
+
+translationQuestions.push(
+  { id: 'tr8', topic: 'translation', type: 'mcq', question: 'Among the 20 standard amino acids, which are coded for by only a single codon each (non-degenerate)?', options: ['Alanine and glycine', 'Methionine and tryptophan', 'Leucine and serine', 'Arginine and lysine'], correctIndex: 1, explanation: 'Methionine (AUG) and tryptophan (UGG) are each coded for by only a single codon, making them exceptions to degeneracy.', difficulty: 'hard' },
+  { id: 'tr9', topic: 'translation', type: 'mcq', question: 'The genetic code is termed "unambiguous" because', options: ('Each codon can code for multiple different amino acids'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+translationQuestions[translationQuestions.length - 1] = {
+  id: 'tr9', topic: 'translation', type: 'mcq',
+  question: 'The genetic code is termed "unambiguous" because',
+  options: ['A single codon can code for multiple different amino acids depending on context', 'Each codon codes for only one specific amino acid, with no ambiguity', 'The code is different in every organism', 'Codons overlap with each other'],
+  correctIndex: 1,
+  explanation: 'Unambiguity means each specific codon codes for only one particular amino acid, with no room for ambiguity.',
+  difficulty: 'medium'
+};
+
+translationQuestions.push(
+  { id: 'tr10', topic: 'translation', type: 'mcq', question: 'The genetic code is described as "non-overlapping and comma-less" because', options: ('Codons share bases with adjacent codons, and there are gaps between them'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+translationQuestions[translationQuestions.length - 1] = {
+  id: 'tr10', topic: 'translation', type: 'mcq',
+  question: 'The genetic code is described as "non-overlapping and comma-less" because',
+  options: ['Codons share bases with adjacent codons, and there are gaps between them', 'The mRNA is read in a continuous stretch of triplets with no shared bases and no punctuation between codons', 'Every third base is skipped during reading', 'It refers only to codons found in introns'],
+  correctIndex: 1,
+  explanation: 'Non-overlapping and comma-less means the mRNA is read continuously, codon after codon, without shared bases or gaps between successive codons.',
+  difficulty: 'medium'
+};
+
+translationQuestions.push(
+  { id: 'tr11', topic: 'translation', type: 'mcq', question: 'The genetic code is described as "universal" because', options: ['It applies exclusively to a single species of bacteria', 'The same codon generally specifies the same amino acid across nearly all organisms, from bacteria to humans', 'Every organism has a completely unique genetic code', 'It only applies to viruses'], correctIndex: 1, explanation: 'The near-universal nature of the genetic code, where the same codons specify the same amino acids across diverse organisms, is strong evidence for the shared evolutionary origin of life.', difficulty: 'medium' },
+  { id: 'tr12', topic: 'translation', type: 'mcq', question: 'A notable exception to the universality of the genetic code is found in', options: ('Nuclear genes of all eukaryotes'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
+);
+translationQuestions[translationQuestions.length - 1] = {
+  id: 'tr12', topic: 'translation', type: 'mcq',
+  question: 'A notable exception to the near-universality of the genetic code is found in',
+  options: ['Nuclear genes of most eukaryotes', 'Mitochondrial genomes, where a few codons are read differently than the standard code', 'The lac operon of E. coli', 'Ribosomal RNA genes exclusively'],
+  correctIndex: 1,
+  explanation: 'Mitochondrial (and some other organellar) genomes show minor deviations from the standard genetic code for a few codons.',
+  difficulty: 'hard'
+};
+
+translationQuestions.push(
+  { id: 'tr13', topic: 'translation', type: 'mcq', question: 'Which scientist(s) played a key role in deciphering the genetic code by using synthetic RNA molecules (like poly-U) in cell-free systems?', options: ['Watson and Crick', 'Marshall Nirenberg and Har Gobind Khorana', 'Meselson and Stahl', 'Griffith and Avery'], correctIndex: 1, explanation: 'Nirenberg (using synthetic RNAs like poly-U) and Khorana (chemically synthesising defined RNA sequences) were central figures in deciphering the genetic code.', difficulty: 'medium' },
+  { id: 'tr14', topic: 'translation', type: 'mcq', question: 'The first codon to be deciphered, using a synthetic poly-U RNA (UUUUUU...) that directed synthesis of a polyphenylalanine chain, was found to code for', options: ['Methionine', 'Phenylalanine', 'Tryptophan', 'Glycine'], correctIndex: 1, explanation: 'Nirenberg\'s experiment showed that the codon UUU codes for phenylalanine, the first codon to be deciphered.', difficulty: 'medium' },
+  { id: 'tr15', topic: 'translation', type: 'mcq', question: 'The enzyme polynucleotide phosphorylase, useful in synthesising RNA with a defined and known sequence for genetic code studies, was characterised by', options: ('James Watson'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
+);
+translationQuestions[translationQuestions.length - 1] = {
+  id: 'tr15', topic: 'translation', type: 'mcq',
+  question: 'The enzyme polynucleotide phosphorylase, useful in polymerising RNA with a defined, known sequence for genetic code studies, was characterised by',
+  options: ['James Watson', 'Severo Ochoa', 'Francis Crick', 'Frederick Griffith'],
+  correctIndex: 1,
+  explanation: 'Severo Ochoa characterised polynucleotide phosphorylase, an enzyme important in synthesising RNA molecules with known/defined sequences.',
+  difficulty: 'hard'
+};
+
+translationQuestions.push(
+  { id: 'tr16', topic: 'translation', type: 'mcq', question: 'The "wobble hypothesis" helps explain', options: ('Why the start codon always codes for methionine'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
+);
+translationQuestions[translationQuestions.length - 1] = {
+  id: 'tr16', topic: 'translation', type: 'mcq',
+  question: 'The "wobble hypothesis" helps explain',
+  options: ['Why the start codon always codes for methionine', 'How a single tRNA can recognise more than one codon due to flexible pairing at the third codon position', 'Why proteins fold into their tertiary structure', 'Why introns are removed during splicing'],
+  correctIndex: 1,
+  explanation: 'The wobble hypothesis accounts for the degeneracy of the genetic code by explaining how non-standard base pairing at the third position of the codon allows a single tRNA to recognise multiple codons.',
+  difficulty: 'hard'
+};
+
+translationQuestions.push(
+  { id: 'tr17', topic: 'translation', type: 'mcq', question: 'tRNA molecules are often described as "adaptor molecules" because they', options: ('Convert DNA directly into protein'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+translationQuestions[translationQuestions.length - 1] = {
+  id: 'tr17', topic: 'translation', type: 'mcq',
+  question: 'tRNA molecules are often described as "adaptor molecules" because they',
+  options: ['Convert DNA directly into protein', 'Read the codon on mRNA via their anticodon and deliver the corresponding specific amino acid', 'Replace mRNA in translation entirely', 'Are responsible for DNA replication'],
+  correctIndex: 1,
+  explanation: 'tRNA acts as an adaptor, reading mRNA codons through complementary anticodon pairing while carrying the corresponding amino acid.',
+  difficulty: 'medium'
+};
+
+translationQuestions.push(
+  { id: 'tr18', topic: 'translation', type: 'mcq', question: 'The characteristic secondary structure of tRNA, when drawn in two dimensions, resembles a', options: ['Straight line', 'Cloverleaf', 'Double helix only', 'Perfect circle'], correctIndex: 1, explanation: 'tRNA folds into a characteristic cloverleaf structure due to intramolecular base pairing.', difficulty: 'medium' },
+  { id: 'tr19', topic: 'translation', type: 'mcq', question: 'The three-nucleotide sequence on tRNA that base-pairs with the codon on mRNA is called the', options: ['Codon', 'Anticodon', 'Cap', 'Poly-A tail'], correctIndex: 1, explanation: 'The anticodon on tRNA base-pairs with the complementary codon on mRNA during translation.', difficulty: 'easy' },
+  { id: 'tr20', topic: 'translation', type: 'mcq', question: 'The 3\' end of a tRNA molecule, where the amino acid is attached, characteristically ends in the sequence', options: ('AUG'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
+);
+translationQuestions[translationQuestions.length - 1] = {
+  id: 'tr20', topic: 'translation', type: 'mcq',
+  question: 'The 3\' end of a tRNA molecule, where the amino acid is attached, characteristically ends in the sequence',
+  options: ['AUG', 'CCA', 'UAA', 'GGG'],
+  correctIndex: 1,
+  explanation: 'The tRNA 3\' terminal CCA sequence is the site where the corresponding amino acid is covalently attached.',
+  difficulty: 'hard'
+};
+
+translationQuestions.push(
+  { id: 'tr21', topic: 'translation', type: 'mcq', question: 'The process by which a specific amino acid is attached to its corresponding tRNA is termed', options: ['Aminoacylation (charging of tRNA)', 'Splicing', 'Transformation', 'Replication'], correctIndex: 0, explanation: 'Aminoacylation, catalysed by aminoacyl-tRNA synthetases, is the process of attaching an amino acid to its specific tRNA.', difficulty: 'medium' },
+  { id: 'tr22', topic: 'translation', type: 'mcq', question: 'Translation is defined as', options: ('The synthesis of RNA from a DNA template'.split(',')), correctIndex: 0, explanation: '', difficulty: 'easy' },
+);
+translationQuestions[translationQuestions.length - 1] = {
+  id: 'tr22', topic: 'translation', type: 'mcq',
+  question: 'Translation is defined as the process of',
+  options: ['Synthesis of RNA from a DNA template', 'Polymerisation of amino acids to form a polypeptide, directed by the mRNA sequence', 'Replication of DNA', 'Splicing of hnRNA'],
+  correctIndex: 1,
+  explanation: 'Translation is the process of building a polypeptide chain based on the codon sequence carried by mRNA.',
+  difficulty: 'easy'
+};
+
+translationQuestions.push(
+  { id: 'tr23', topic: 'translation', type: 'mcq', question: 'The site of protein synthesis (translation) in the cell is the', options: ['Nucleus', 'Ribosome', 'Golgi apparatus', 'Lysosome'], correctIndex: 1, explanation: 'The ribosome is the cellular machine on which translation of mRNA into protein takes place.', difficulty: 'easy' },
+  { id: 'tr24', topic: 'translation', type: 'mcq', question: 'Bacterial (prokaryotic) ribosomes are described as', options: ['80S, composed of 60S and 40S subunits', '70S, composed of 50S and 30S subunits', '50S only', '60S only'], correctIndex: 1, explanation: 'Prokaryotic ribosomes are 70S, composed of a large 50S subunit and a small 30S subunit.', difficulty: 'medium' },
+  { id: 'tr25', topic: 'translation', type: 'mcq', question: 'Eukaryotic ribosomes are described as', options: ['70S, composed of 50S and 30S subunits', '80S, composed of 60S and 40S subunits', '60S only', '50S and 40S subunits only'], correctIndex: 1, explanation: 'Eukaryotic ribosomes are 80S, composed of a large 60S subunit and a small 40S subunit.', difficulty: 'medium' },
+  { id: 'tr26', topic: 'translation', type: 'mcq', question: 'The first step of translation, in which the components (ribosomal subunits, initiator tRNA, and mRNA) assemble at the start codon, is termed', options: ['Elongation', 'Initiation', 'Termination', 'Splicing'], correctIndex: 1, explanation: 'Initiation involves the assembly of ribosomal subunits, initiator tRNA, and mRNA at the start codon to begin translation.', difficulty: 'easy' },
+  { id: 'tr27', topic: 'translation', type: 'mcq', question: 'The stage of translation in which successive amino acids are added and peptide bonds are formed, extending the growing polypeptide chain, is called', options: ['Initiation', 'Elongation', 'Termination', 'Capping'], correctIndex: 1, explanation: 'Elongation is the phase in which the polypeptide chain is extended through sequential addition of amino acids.', difficulty: 'easy' },
+  { id: 'tr28', topic: 'translation', type: 'mcq', question: 'Translation ends (termination) when the ribosome encounters a', options: ['Start codon', 'Stop codon, recognised by release factors', 'Promoter', 'Origin of replication'], correctIndex: 1, explanation: 'Translation terminates when the ribosome reaches a stop codon, which is recognised by release factors, releasing the completed polypeptide.', difficulty: 'medium' },
+  { id: 'tr29', topic: 'translation', type: 'mcq', question: 'The bond formed between adjacent amino acids during elongation of the polypeptide chain is called a', options: ['Phosphodiester bond', 'Peptide bond', 'Hydrogen bond', 'Glycosidic bond'], correctIndex: 1, explanation: 'Amino acids are linked together by peptide bonds during translation, forming the polypeptide chain.', difficulty: 'easy' },
+  { id: 'tr30', topic: 'translation', type: 'mcq', question: 'The synthesis of a polypeptide chain proceeds from the', options: ('C-terminus to the N-terminus'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+translationQuestions[translationQuestions.length - 1] = {
+  id: 'tr30', topic: 'translation', type: 'mcq',
+  question: 'The synthesis of a polypeptide chain proceeds from the',
+  options: ['C-terminus to the N-terminus', 'N-terminus to the C-terminus', 'Middle outward in both directions', 'It has no defined direction'],
+  correctIndex: 1,
+  explanation: 'Protein synthesis proceeds from the amino (N) terminus to the carboxyl (C) terminus of the polypeptide.',
+  difficulty: 'medium'
+};
+
+translationQuestions.push(
+  { id: 'tr31', topic: 'translation', type: 'assertion-reason', question: 'Assertion (A): The mRNA sequence AUG GCU UAA would produce a very short dipeptide during translation.\nReason (R): AUG signals the start codon coding for methionine, GCU codes for alanine, and UAA is a stop codon terminating translation immediately after.', options: AR_OPTIONS, correctIndex: 0, explanation: 'Since AUG initiates translation (coding for Met), GCU adds alanine, and UAA immediately terminates translation, the resulting short chain (Met-Ala) is correctly explained by the reason.', difficulty: 'hard' },
+  { id: 'tr32', topic: 'translation', type: 'mcq', question: 'The relatively large size of ribosomal RNA and proteins forming the ribosome subunits primarily serves to', options: ['Replicate DNA', 'Provide the physical machinery and catalytic activity needed to link amino acids during translation', 'Transcribe genes', 'Store genetic information permanently'], correctIndex: 1, explanation: 'The ribosome, composed of rRNA and protein, functions as the physical and catalytic machine that carries out translation.', difficulty: 'medium' },
+  { id: 'tr33', topic: 'translation', type: 'statement', question: 'Consider the following statements about the genetic code:\n1. The genetic code is a triplet code.\n2. All 20 amino acids are coded for by exactly one codon each.\n3. Three codons act as stop signals and do not code for any amino acid.\nWhich of the statements given above are correct?', options: ['1 and 2 only', '1 and 3 only', '2 and 3 only', '1, 2 and 3'], correctIndex: 1, explanation: 'Statements 1 and 3 are correct; most amino acids are coded by more than one codon (degeneracy), so statement 2 is incorrect.', difficulty: 'medium' },
+  { id: 'tr34', topic: 'translation', type: 'count-correct', question: 'How many of the following are true properties of the standard genetic code?\n(i) Triplet\n(ii) Degenerate\n(iii) Ambiguous\n(iv) Nearly universal\n(v) Non-overlapping', options: ['Two', 'Three', 'Four', 'Five'], correctIndex: 2, explanation: 'Triplet, degenerate, nearly universal, and non-overlapping are true properties; the code is unambiguous, not ambiguous, so (iii) is incorrect.', difficulty: 'hard' },
+  { id: 'tr35', topic: 'translation', type: 'matching', question: 'Match the term in Column I with its description in Column II.\nColumn I: A. Codon, B. Anticodon, C. Start codon, D. Stop codon\nColumn II: (i) UAA/UAG/UGA, (ii) AUG, (iii) Triplet on mRNA specifying an amino acid, (iv) Triplet on tRNA pairing with mRNA', options: ['A-iii, B-iv, C-ii, D-i', 'A-i, B-ii, C-iii, D-iv', 'A-iv, B-iii, C-i, D-ii', 'A-iii, B-i, C-iv, D-ii'], correctIndex: 0, explanation: 'Codon = triplet on mRNA; anticodon = triplet on tRNA; start codon = AUG; stop codon = UAA/UAG/UGA.', difficulty: 'medium' },
+  { id: 'tr36', topic: 'translation', type: 'mcq', question: 'In prokaryotes, the initiator tRNA typically carries a modified form of methionine known as', options: ['Formyl-methionine (fMet)', 'Formyl-glycine', 'Formyl-alanine', 'Formyl-tryptophan'], correctIndex: 0, explanation: 'In bacteria, translation initiation typically begins with formyl-methionine (fMet), a modified form of methionine.', difficulty: 'hard' },
+  { id: 'tr37', topic: 'translation', type: 'mcq', question: 'The mRNA site where the ribosome first binds in prokaryotes, upstream of the start codon, helping to correctly position the ribosome, is called the', options: ['Kozak sequence', 'Shine-Dalgarno sequence', 'TATA box', 'Poly-A signal'], correctIndex: 1, explanation: 'The Shine-Dalgarno sequence in prokaryotic mRNA helps position the ribosome correctly at the start codon.', difficulty: 'hard' },
+  { id: 'tr38', topic: 'translation', type: 'mcq', question: 'The overall energy cost of translation (in terms of ATP/GTP usage) reflects the fact that protein synthesis is', options: ['An energy-free process', 'An energetically expensive process, requiring significant cellular energy investment', 'Only performed occasionally by cells', 'Independent of any nucleotide triphosphates'], correctIndex: 1, explanation: 'Translation is energetically costly, requiring ATP and GTP at multiple steps including tRNA charging, initiation, elongation, and translocation.', difficulty: 'medium' },
+  { id: 'tr39', topic: 'translation', type: 'mcq', question: 'Polyribosomes (polysomes) refer to', options: ['A single ribosome translating very slowly', 'Multiple ribosomes simultaneously translating the same mRNA molecule', 'Ribosomes found only in prokaryotes', 'Non-functional, degraded ribosomes'], correctIndex: 1, explanation: 'Polysomes are clusters of multiple ribosomes translating a single mRNA simultaneously, increasing the efficiency of protein synthesis.', difficulty: 'medium' },
+  { id: 'tr40', topic: 'translation', type: 'assertion-reason', question: 'Assertion (A): A single mRNA molecule can be translated by many ribosomes at once, forming a polysome.\nReason (R): Once the initiation region of the mRNA is vacated by one ribosome, another ribosome can bind and begin translation, allowing multiple simultaneous translations.', options: AR_OPTIONS, correctIndex: 0, explanation: 'The ability of successive ribosomes to bind the initiation site after it is vacated directly explains how polysomes form, correctly supporting the assertion.', difficulty: 'hard' },
+  { id: 'tr41', topic: 'translation', type: 'mcq', question: 'Which of the following correctly reflects the overall flow of genetic information described by the central dogma, including translation?', options: ['Protein → RNA → DNA', 'DNA → RNA → Protein', 'RNA → DNA → Protein', 'Protein → DNA → RNA'], correctIndex: 1, explanation: 'The central dogma states that genetic information generally flows from DNA to RNA to protein.', difficulty: 'easy' },
+  { id: 'tr42', topic: 'translation', type: 'mcq', question: 'A change (mutation) in the DNA sequence that alters a codon but still results in the same amino acid being incorporated (due to code degeneracy) is called a', options: ['Missense mutation', 'Silent mutation', 'Nonsense mutation', 'Frameshift mutation'], correctIndex: 1, explanation: 'A silent mutation changes the codon sequence but, due to the degenerate nature of the genetic code, does not change the encoded amino acid.', difficulty: 'medium' },
+  { id: 'tr43', topic: 'translation', type: 'mcq', question: 'A mutation that changes a sense codon into one of the three stop codons, prematurely terminating translation, is called a', options: ['Silent mutation', 'Missense mutation', 'Nonsense mutation', 'Neutral mutation'], correctIndex: 2, explanation: 'A nonsense mutation converts a codon specifying an amino acid into a stop codon, causing premature termination of translation.', difficulty: 'medium' },
+  { id: 'tr44', topic: 'translation', type: 'count-correct', question: 'How many of the following are correctly matched with translation terminology?\n(i) Initiation — assembly of ribosome at start codon\n(ii) Elongation — sequential addition of amino acids\n(iii) Termination — recognition of stop codon by release factors\n(iv) Polysome — a single ribosome working alone', options: ['One', 'Two', 'Three', 'Four'], correctIndex: 2, explanation: 'Statements (i), (ii), and (iii) are correctly matched; a polysome refers to multiple ribosomes on one mRNA, not a single ribosome working alone, so (iv) is incorrect.', difficulty: 'medium' },
+  { id: 'tr45', topic: 'translation', type: 'mcq', question: 'The overall biological importance of the genetic code being nearly universal across organisms is that it', options: ['Prevents genetic engineering entirely', 'Allows genes from one organism to be expressed correctly when transferred into another (as in recombinant DNA technology)', 'Ensures that all organisms have identical proteins', 'Prevents any evolution of new proteins'], correctIndex: 1, explanation: 'The near-universality of the genetic code allows genes to be transferred and correctly expressed across different species, forming the basis of recombinant DNA technology.', difficulty: 'medium' },
+
+// ============================================================
+// SECTION 5: GENE REGULATION (LAC OPERON) & APPLICATIONS — ~40 questions
+// ============================================================
+
+  { id: 're1', topic: 'regulation', type: 'mcq', question: 'Regulation of gene expression can occur at multiple levels; which of the following is generally considered the most common level of regulation?', options: ('Transcriptional level'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're1', topic: 'regulation', type: 'mcq',
+  question: 'Regulation of gene expression can occur at multiple levels; which of the following is generally considered the most common level at which regulation occurs?',
+  options: ['Transcriptional level (initiation of transcription)', 'Only at the level of protein degradation', 'Only at the level of DNA replication', 'Only after the protein is completely synthesised'],
+  correctIndex: 0,
+  explanation: 'Transcriptional regulation, particularly at the initiation stage, is generally the most common and significant level of gene expression regulation.',
+  difficulty: 'medium'
+};
+
+regulationQuestions.push(
+  { id: 're2', topic: 'regulation', type: 'mcq', question: 'Besides the transcriptional level, gene expression can also be regulated at the levels of', options: ['Only during meiosis', 'RNA processing, transport of RNA, and translation', 'Only in dead cells', 'Only during DNA repair'], correctIndex: 1, explanation: 'Gene expression can be regulated at multiple stages: transcription, RNA processing, RNA transport, and translation.', difficulty: 'medium' },
+  { id: 're3', topic: 'regulation', type: 'mcq', question: 'The lac operon, a classic model of gene regulation in bacteria, was proposed by', options: ('Watson and Crick'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're3', topic: 'regulation', type: 'mcq',
+  question: 'The lac operon, a classic model of gene regulation in bacteria, was proposed by',
+  options: ['Watson and Crick', 'Francois Jacob and Jacques Monod', 'Meselson and Stahl', 'Griffith and Avery'],
+  correctIndex: 1,
+  explanation: 'Francois Jacob and Jacques Monod proposed the operon model of gene regulation, using the lac operon of E. coli as their example.',
+  difficulty: 'medium'
+};
+
+regulationQuestions.push(
+  { id: 're4', topic: 'regulation', type: 'mcq', question: 'The lac operon of E. coli controls the metabolism of', options: ['Glucose only', 'Lactose', 'Amino acids', 'Fatty acids'], correctIndex: 1, explanation: 'The lac operon regulates genes needed for lactose metabolism in E. coli.', difficulty: 'easy' },
+  { id: 're5', topic: 'regulation', type: 'mcq', question: 'An operon is defined as a cluster of', options: ('Unrelated genes located on different chromosomes'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're5', topic: 'regulation', type: 'mcq',
+  question: 'An operon is defined as a cluster of',
+  options: ['Unrelated genes located on different chromosomes', 'Structural genes controlled by a common promoter and operator, transcribed together as a single unit', 'Only regulatory proteins with no genes involved', 'Ribosomal RNA genes exclusively'],
+  correctIndex: 1,
+  explanation: 'An operon is a functional unit of DNA containing a set of structural genes under the control of a single promoter and operator, transcribed together.',
+  difficulty: 'medium'
+};
+
+regulationQuestions.push(
+  { id: 're6', topic: 'regulation', type: 'mcq', question: 'The lac operon consists of one regulatory gene (lacI) and how many structural genes?', options: ['One', 'Two', 'Three (lacZ, lacY, lacA)', 'Five'], correctIndex: 2, explanation: 'The lac operon has three structural genes: lacZ, lacY, and lacA, in addition to the regulatory gene lacI.', difficulty: 'medium' },
+  { id: 're7', topic: 'regulation', type: 'mcq', question: 'The lacZ gene of the lac operon codes for the enzyme', options: ('Permease'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're7', topic: 'regulation', type: 'mcq',
+  question: 'The lacZ gene of the lac operon codes for the enzyme',
+  options: ['Permease', 'Beta-galactosidase, which hydrolyses lactose into glucose and galactose', 'Transacetylase only', 'DNA polymerase'],
+  correctIndex: 1,
+  explanation: 'lacZ encodes beta-galactosidase, the enzyme responsible for hydrolysing lactose into glucose and galactose.',
+  difficulty: 'medium'
+};
+
+regulationQuestions.push(
+  { id: 're8', topic: 'regulation', type: 'mcq', question: 'The lacY gene of the lac operon codes for', options: ['Beta-galactosidase', 'Permease, which increases permeability of the cell to lactose', 'Transacetylase', 'The lac repressor'], correctIndex: 1, explanation: 'lacY codes for permease, a membrane protein that increases lactose uptake into the cell.', difficulty: 'medium' },
+  { id: 're9', topic: 'regulation', type: 'mcq', question: 'The lacA gene of the lac operon codes for', options: ['Beta-galactosidase', 'Permease', 'Transacetylase', 'DNA ligase'], correctIndex: 2, explanation: 'lacA encodes transacetylase, which transfers an acetyl group to certain beta-galactosides.', difficulty: 'medium' },
+  { id: 're10', topic: 'regulation', type: 'mcq', question: 'The lacI gene, though technically outside the lac operon\'s own operator-controlled unit, is important because it codes for the', options: ('Structural enzymes needed for lactose metabolism'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're10', topic: 'regulation', type: 'mcq',
+  question: 'The lacI gene is important because it codes for the',
+  options: ['Structural enzymes directly needed for lactose metabolism', 'Repressor protein that regulates transcription of the operon\'s structural genes', 'RNA polymerase', 'DNA gyrase'],
+  correctIndex: 1,
+  explanation: 'lacI encodes the lac repressor protein, which regulates the transcription of the lac operon\'s structural genes.',
+  difficulty: 'medium'
+};
+
+regulationQuestions.push(
+  { id: 're11', topic: 'regulation', type: 'mcq', question: 'In the absence of lactose, the lac repressor protein', options: ('Binds to the promoter, allowing transcription'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're11', topic: 'regulation', type: 'mcq',
+  question: 'In the absence of lactose, the lac repressor protein',
+  options: ['Binds to the promoter, blocking RNA polymerase directly', 'Binds to the operator, preventing RNA polymerase from transcribing the structural genes', 'Is degraded and has no effect', 'Activates transcription of the structural genes'],
+  correctIndex: 1,
+  explanation: 'In the absence of lactose, the active repressor binds to the operator region, blocking transcription of the structural genes by preventing RNA polymerase from proceeding.',
+  difficulty: 'medium'
+};
+
+regulationQuestions.push(
+  { id: 're12', topic: 'regulation', type: 'mcq', question: 'When lactose is present in the medium, a derivative of lactose called allolactose acts as an inducer by', options: ('Binding to the promoter and blocking RNA polymerase'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're12', topic: 'regulation', type: 'mcq',
+  question: 'When lactose is present in the medium, a derivative of lactose called allolactose acts as an inducer by',
+  options: ['Binding to the promoter and blocking RNA polymerase', 'Binding to the repressor protein, changing its shape and preventing it from binding to the operator', 'Directly synthesising beta-galactosidase', 'Destroying RNA polymerase'],
+  correctIndex: 1,
+  explanation: 'Allolactose (the inducer) binds to the repressor, altering its conformation so it can no longer bind the operator, thereby allowing transcription of the structural genes.',
+  difficulty: 'medium'
+};
+
+regulationQuestions.push(
+  { id: 're13', topic: 'regulation', type: 'mcq', question: 'When the lac repressor is inactivated by the inducer, RNA polymerase can then', options: ('Bind to the operator and stop transcription'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're13', topic: 'regulation', type: 'mcq',
+  question: 'When the lac repressor is inactivated by the inducer, RNA polymerase is then able to',
+  options: ['Bind to the operator and stop transcription', 'Bind to the promoter and transcribe the structural genes (lacZ, lacY, lacA) as a single polycistronic mRNA', 'Only transcribe lacI', 'Cause the operon to be permanently deleted'],
+  correctIndex: 1,
+  explanation: 'With the repressor inactivated, RNA polymerase can transcribe the operon\'s structural genes together, producing a single polycistronic mRNA.',
+  difficulty: 'medium'
+};
+
+regulationQuestions.push(
+  { id: 're14', topic: 'regulation', type: 'mcq', question: 'The single mRNA molecule produced from the lac operon, which codes for all three structural genes together, is termed', options: ['Monocistronic', 'Polycistronic', 'Non-coding RNA', 'tRNA'], correctIndex: 1, explanation: 'Because the lac operon\'s structural genes are transcribed together into a single mRNA encoding multiple proteins, this mRNA is termed polycistronic.', difficulty: 'medium' },
+  { id: 're15', topic: 'regulation', type: 'assertion-reason', question: 'Assertion (A): The lac operon is described as an example of "inducible" gene expression.\nReason (R): Transcription of the lac operon\'s structural genes is switched on only in the presence of an inducer (lactose/allolactose).', options: AR_OPTIONS, correctIndex: 0, explanation: 'Since the operon\'s genes are transcribed only when the inducer is present, this directly supports why it is classified as an inducible system.', difficulty: 'medium' },
+  { id: 're16', topic: 'regulation', type: 'mcq', question: 'The lac operator is a specific DNA sequence located', options: ('Far away from the structural genes, on a different chromosome'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're16', topic: 'regulation', type: 'mcq',
+  question: 'The lac operator is a specific DNA sequence located',
+  options: ['Far away from the structural genes, on a different chromosome', 'Adjacent to the structural genes, where the repressor protein binds to regulate their transcription', 'Only inside the lacZ gene itself, unrelated to regulation', 'Within the ribosome'],
+  correctIndex: 1,
+  explanation: 'The operator is located near the structural genes and serves as the binding site for the repressor protein, controlling their transcription.',
+  difficulty: 'medium'
+};
+
+regulationQuestions.push(
+  { id: 're17', topic: 'regulation', type: 'statement', question: 'Consider the following statements about the lac operon:\n1. lacZ codes for beta-galactosidase.\n2. The repressor protein is coded for by lacI.\n3. In the presence of lactose, the repressor binds tightly to the operator, blocking transcription.\nWhich of the statements given above are correct?', options: ['1 and 2 only', '2 and 3 only', '1 and 3 only', '1, 2 and 3'], correctIndex: 0, explanation: 'Statements 1 and 2 are correct; in the presence of lactose (via allolactose), the repressor is inactivated and does NOT bind the operator, so statement 3 is incorrect.', difficulty: 'medium' },
+  { id: 're18', topic: 'regulation', type: 'count-correct', question: 'How many of the following genes are considered structural genes of the lac operon?\n(i) lacZ\n(ii) lacY\n(iii) lacA\n(iv) lacI', options: ['One', 'Two', 'Three', 'Four'], correctIndex: 2, explanation: 'lacZ, lacY, and lacA are the three structural genes; lacI is the regulatory gene coding for the repressor, not a structural gene.', difficulty: 'medium' },
+  { id: 're19', topic: 'regulation', type: 'matching', question: 'Match the lac operon component in Column I with its function in Column II.\nColumn I: A. lacZ, B. lacY, C. lacA, D. lacI\nColumn II: (i) Codes for permease, (ii) Codes for repressor protein, (iii) Codes for beta-galactosidase, (iv) Codes for transacetylase', options: ['A-iii, B-i, C-iv, D-ii', 'A-i, B-ii, C-iii, D-iv', 'A-ii, B-iii, C-i, D-iv', 'A-iii, B-iv, C-i, D-ii'], correctIndex: 0, explanation: 'lacZ = beta-galactosidase; lacY = permease; lacA = transacetylase; lacI = repressor protein.', difficulty: 'medium' },
+  { id: 're20', topic: 'regulation', type: 'mcq', question: 'The Human Genome Project (HGP) was an international, collaborative effort aimed primarily at', options: ('Sequencing the genome of E. coli only'.split(',')), correctIndex: 0, explanation: '', difficulty: 'easy' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're20', topic: 'regulation', type: 'mcq',
+  question: 'The Human Genome Project (HGP) was an international, collaborative effort aimed primarily at',
+  options: ['Sequencing the genome of E. coli only', 'Determining the complete sequence of base pairs in human DNA and identifying all human genes', 'Cloning human beings', 'Only studying the lac operon'],
+  correctIndex: 1,
+  explanation: 'HGP was a massive international project aimed at determining the complete sequence of human DNA and identifying all the genes it contains.',
+  difficulty: 'easy'
+};
+
+regulationQuestions.push(
+  { id: 're21', topic: 'regulation', type: 'mcq', question: 'The Human Genome Project was formally completed in the year', options: ['1990', '2000', '2003', '2010'], correctIndex: 2, explanation: 'The Human Genome Project, launched in 1990, was declared essentially complete in 2003.', difficulty: 'medium' },
+  { id: 're22', topic: 'regulation', type: 'mcq', question: 'The estimated total size of the human genome, in terms of base pairs, is approximately', options: ['3 million base pairs', '3 billion base pairs (3.3 x 10^9 bp)', '30 base pairs', '300 base pairs'], correctIndex: 1, explanation: 'The human genome is estimated to contain approximately 3.3 billion (3164.7 million) base pairs.', difficulty: 'medium' },
+  { id: 're23', topic: 'regulation', type: 'mcq', question: 'One of the surprising findings of the Human Genome Project was that the total number of protein-coding genes in the human genome is approximately', options: ('100,000, as originally predicted'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're23', topic: 'regulation', type: 'mcq',
+  question: 'One of the surprising findings of the Human Genome Project was that the total number of protein-coding genes in the human genome is approximately',
+  options: ['Much higher than originally predicted, over 100,000', 'Only around 30,000, far fewer than originally predicted', 'Exactly 46, matching the chromosome number', 'Zero, as humans have no protein-coding genes'],
+  correctIndex: 1,
+  explanation: 'Contrary to earlier expectations of well over 100,000 genes, HGP found the human genome contains a much smaller number, approximately 30,000 protein-coding genes.', 
+  difficulty: 'medium'
+};
+
+regulationQuestions.push(
+  { id: 're24', topic: 'regulation', type: 'mcq', question: 'According to HGP findings, the proportion of the human genome that actually codes for proteins is estimated to be only about', options: ['98%', '50%', 'Around 2%', '100%'], correctIndex: 2, explanation: 'A striking HGP finding was that only about 2% of the human genome codes for proteins, with the rest being non-coding sequences.', difficulty: 'medium' },
+  { id: 're25', topic: 'regulation', type: 'mcq', question: 'According to HGP findings, most of the human genome consists of', options: ('Unique, non-repetitive sequences only'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're25', topic: 'regulation', type: 'mcq',
+  question: 'According to HGP findings, a large portion of the human genome consists of',
+  options: ['Unique, non-repetitive sequences only', 'Repetitive sequences that do not code for proteins', 'Only mitochondrial DNA', 'Only ribosomal RNA genes'],
+  correctIndex: 1,
+  explanation: 'A significant proportion of the human genome consists of repetitive DNA sequences that do not code for proteins.',
+  difficulty: 'medium'
+};
+
+regulationQuestions.push(
+  { id: 're26', topic: 'regulation', type: 'mcq', question: 'The technique used to sequence the human genome by amplifying overlapping DNA fragments through cloning in host organisms like bacteria and yeast, followed by sequencing, is known as the', options: ('Whole genome shotgun approach only'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're26', topic: 'regulation', type: 'mcq',
+  question: 'One of the two main strategies used to sequence the human genome, involving cloning DNA fragments in host organisms like bacteria and yeast before sequencing, is known as',
+  options: ['Whole genome shotgun sequencing exclusively', 'Clone-by-clone (hierarchical) sequencing', 'Southern blotting', 'Northern blotting'],
+  correctIndex: 1,
+  explanation: 'The clone-by-clone (hierarchical) approach involved cloning DNA fragments in host vectors before sequencing, one of the main strategies used during HGP.',
+  difficulty: 'hard'
+};
+
+regulationQuestions.push(
+  { id: 're27', topic: 'regulation', type: 'mcq', question: 'HGP found that among human chromosomes, the one with the largest number of genes is chromosome', options: ['Y chromosome', 'Chromosome 1', 'Chromosome 21', 'Chromosome 13'], correctIndex: 1, explanation: 'Chromosome 1 has the largest number of genes (about 2968), according to HGP findings.', difficulty: 'hard' },
+  { id: 're28', topic: 'regulation', type: 'mcq', question: 'HGP found that the human chromosome with the fewest genes is the', options: ('Chromosome 1'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're28', topic: 'regulation', type: 'mcq',
+  question: 'HGP found that the human chromosome with the fewest genes is the',
+  options: ['Chromosome 1', 'Y chromosome', 'Chromosome 2', 'Chromosome 21'],
+  correctIndex: 1,
+  explanation: 'The Y chromosome has the fewest genes (around 231) among human chromosomes, according to HGP findings.',
+  difficulty: 'hard'
+};
+
+regulationQuestions.push(
+  { id: 're29', topic: 'regulation', type: 'mcq', question: 'One important application of the Human Genome Project findings is in', options: ('Preventing all human reproduction'.split(',')), correctIndex: 0, explanation: '', difficulty: 'easy' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're29', topic: 'regulation', type: 'mcq',
+  question: 'One important application of the Human Genome Project findings is in',
+  options: ['Preventing all human reproduction', 'Understanding the genetic basis of diseases and potentially improving diagnosis and treatment', 'Eliminating the need for medical research entirely', 'Only cataloguing animal genomes'],
+  correctIndex: 1,
+  explanation: 'HGP findings have significant applications in understanding disease genetics, potentially improving diagnosis, treatment, and personalised medicine.',
+  difficulty: 'easy'
+};
+
+regulationQuestions.push(
+  { id: 're30', topic: 'regulation', type: 'mcq', question: 'DNA fingerprinting is a technique used to', options: ('Sequence an entire genome from scratch'.split(',')), correctIndex: 0, explanation: '', difficulty: 'easy' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're30', topic: 'regulation', type: 'mcq',
+  question: 'DNA fingerprinting is a technique used to',
+  options: ['Sequence an entire genome from scratch', 'Identify individuals based on unique differences (polymorphisms) in specific regions of their DNA', 'Directly translate mRNA into protein', 'Replace the need for the polymerase chain reaction entirely'],
+  correctIndex: 1,
+  explanation: 'DNA fingerprinting identifies individuals by analysing polymorphic (variable) DNA sequences unique to each person.',
+  difficulty: 'easy'
+};
+
+regulationQuestions.push(
+  { id: 're31', topic: 'regulation', type: 'mcq', question: 'The technique of DNA fingerprinting was originally developed by', options: ['Francis Crick', 'Alec Jeffreys', 'Har Gobind Khorana', 'Barbara McClintock'], correctIndex: 1, explanation: 'Alec Jeffreys developed the technique of DNA fingerprinting.', difficulty: 'medium' },
+  { id: 're32', topic: 'regulation', type: 'mcq', question: 'DNA fingerprinting relies on detecting variability in the number of short, tandemly repeated DNA sequences, technically known as', options: ('Restriction sites'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're32', topic: 'regulation', type: 'mcq',
+  question: 'DNA fingerprinting relies on detecting variability in the number of short, tandemly repeated DNA sequences, technically known as',
+  options: ['Restriction sites', 'Variable Number of Tandem Repeats (VNTRs)', 'Codons', 'Promoter elements'],
+  correctIndex: 1,
+  explanation: 'VNTRs (variable number of tandem repeats), also called satellite DNA, show high individual variability and form the basis of DNA fingerprinting.',
+  difficulty: 'medium'
+};
+
+regulationQuestions.push(
+  { id: 're33', topic: 'regulation', type: 'mcq', question: 'Satellite DNA, which shows a distinct peak separate from the bulk of genomic DNA during density gradient centrifugation, is typically found in which chromosomal region?', options: ('Euchromatin'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're33', topic: 'regulation', type: 'mcq',
+  question: 'Satellite DNA, which shows a distinct peak separate from the bulk of genomic DNA during density gradient centrifugation, is typically found in which chromosomal region?',
+  options: ['Euchromatin', 'Heterochromatin', 'The origin of replication exclusively', 'The promoter region only'],
+  correctIndex: 1,
+  explanation: 'Satellite DNA, associated with repetitive sequences, is mainly located in heterochromatic regions of the chromosome.',
+  difficulty: 'hard'
+};
+
+regulationQuestions.push(
+  { id: 're34', topic: 'regulation', type: 'mcq', question: 'The steps of DNA fingerprinting typically include isolation of DNA, digestion by restriction enzymes, separation of fragments by gel electrophoresis, and transfer to a synthetic membrane by', options: ('PCR amplification only'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're34', topic: 'regulation', type: 'mcq',
+  question: 'The steps of DNA fingerprinting typically include isolation of DNA, digestion by restriction enzymes, separation of fragments by gel electrophoresis, and transfer to a synthetic membrane through a technique known as',
+  options: ['PCR amplification only', 'Southern blotting', 'Vernalization', 'Aminoacylation'],
+  correctIndex: 1,
+  explanation: 'Southern blotting is used to transfer separated DNA fragments to a synthetic membrane before hybridisation with a labelled probe.',
+  difficulty: 'hard'
+};
+
+regulationQuestions.push(
+  { id: 're35', topic: 'regulation', type: 'mcq', question: 'After Southern blotting, the membrane-bound DNA fragments are hybridised with a labelled VNTR probe, and the resulting bands are visualised using', options: ('Light microscopy'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're35', topic: 'regulation', type: 'mcq',
+  question: 'After Southern blotting, the membrane-bound DNA fragments are hybridised with a labelled VNTR probe, and the resulting bands are visualised using',
+  options: ['Light microscopy', 'Autoradiography (when the probe is radioactively labelled)', 'Mass spectrometry', 'Flame photometry'],
+  correctIndex: 1,
+  explanation: 'Autoradiography detects the hybridised, radioactively labelled probe bound to specific DNA fragments, producing the characteristic banding pattern.',
+  difficulty: 'hard'
+};
+
+regulationQuestions.push(
+  { id: 're36', topic: 'regulation', type: 'mcq', question: 'DNA fingerprinting is widely used in forensic science for identifying', options: ('Only bacterial species'.split(',')), correctIndex: 0, explanation: '', difficulty: 'easy' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're36', topic: 'regulation', type: 'mcq',
+  question: 'DNA fingerprinting is widely used in forensic science for identifying',
+  options: ['Only bacterial species present in soil', 'Suspects, victims, and for paternity testing based on unique individual DNA patterns', 'Only plant hybrids', 'Only viral genomes'],
+  correctIndex: 1,
+  explanation: 'DNA fingerprinting has extensive applications in forensic science, criminal investigation, and paternity testing due to its ability to uniquely identify individuals.',
+  difficulty: 'easy'
+};
+
+regulationQuestions.push(
+  { id: 're37', topic: 'regulation', type: 'assertion-reason', question: 'Assertion (A): DNA fingerprinting can be used to establish biological parentage.\nReason (R): A child inherits half of the VNTR pattern from each biological parent, making the fingerprint pattern shared partially with both parents.', options: AR_OPTIONS, correctIndex: 0, explanation: 'Since VNTR patterns are inherited from both parents, this direct inheritance pattern explains why DNA fingerprinting is effective for parentage testing, correctly supporting the assertion.', difficulty: 'hard' },
+  { id: 're38', topic: 'regulation', type: 'statement', question: 'Consider the following statements about the Human Genome Project and DNA fingerprinting:\n1. HGP found that only a small percentage of the human genome codes for protein.\n2. DNA fingerprinting relies on satellite DNA/VNTR polymorphisms.\n3. HGP found more protein-coding genes than originally predicted.\nWhich of the statements given above are correct?', options: ['1 and 2 only', '2 and 3 only', '1 and 3 only', '1, 2 and 3'], correctIndex: 0, explanation: 'Statements 1 and 2 are correct; HGP actually found fewer protein-coding genes than originally predicted, so statement 3 is incorrect.', difficulty: 'medium' },
+  { id: 're39', topic: 'regulation', type: 'count-correct', question: 'How many of the following are correct steps/features of DNA fingerprinting?\n(i) Isolation of DNA\n(ii) Digestion with restriction enzymes\n(iii) Separation of fragments by gel electrophoresis\n(iv) Hybridisation with a labelled VNTR probe\n(v) Direct translation of DNA into protein', options: ['Two', 'Three', 'Four', 'Five'], correctIndex: 2, explanation: 'DNA isolation, restriction digestion, electrophoresis, and probe hybridisation are correct steps of DNA fingerprinting; direct translation of DNA into protein is not part of the technique (and is not biologically accurate).', difficulty: 'medium' },
+  { id: 're40', topic: 'regulation', type: 'mcq', question: 'Overall, gene regulation mechanisms like the lac operon, together with genome-scale projects like HGP and techniques like DNA fingerprinting, illustrate the broader theme that', options: ('Molecular biology has no practical applications'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
+);
+regulationQuestions[regulationQuestions.length - 1] = {
+  id: 're40', topic: 'regulation', type: 'mcq',
+  question: 'Overall, gene regulation mechanisms like the lac operon, together with genome-scale projects like HGP and techniques like DNA fingerprinting, illustrate the broader theme that',
+  options: ['Molecular biology has no practical applications', 'Understanding the molecular basis of inheritance has significant applications in medicine, agriculture, and forensic science', 'Genes are entirely static and unregulated', 'DNA structure is irrelevant to gene function'],
+  correctIndex: 1,
+  explanation: 'The study of molecular genetics — from gene regulation to genome sequencing and DNA-based identification — has wide-ranging practical applications across medicine, agriculture, and forensics.',
+  difficulty: 'medium'
+};
+];

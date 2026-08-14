@@ -34,6 +34,7 @@ import { STRUCTURAL_ORGANISATION_ANIMALS } from './banks/structuralOrganisationA
 import { PLANT_GROWTH_DEVELOPMENT } from './banks/plantGrowthDevelopment';
 import { SEXUAL_REPRODUCTION_PLANTS} from './banks/sexualReproductionPlants';
 import { PRINCIPLE_INHERITANCE_VARIATION } from './banks/principleInheritanceVariation';
+import { MOLECULAR_BASIS_INHERITANCE } from './banks/molecularBasisInheritance';
  
 export const QUESTION_BANK = {
   'biological-classification': BIOLOGICAL_CLASSIFICATION,
@@ -65,6 +66,7 @@ export const QUESTION_BANK = {
   'plant-growth-development': PLANT_GROWTH_DEVELOPMENT,
   'sexual-reproduction-plants': SEXUAL_REPRODUCTION_PLANTS,
   'principle-inheritance-variation': PRINCIPLE_INHERITANCE_VARIATION,
+  'molecular-basis-inheritance': MOLECULAR_BASIS_INHERITANCE,
 
   biomol: [
     {
