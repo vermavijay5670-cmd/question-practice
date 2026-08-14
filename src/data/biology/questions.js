@@ -27,7 +27,10 @@ import { EXCRETORY_PRODUCTS_ELIMINATION } from './banks/excretoryProductsElimina
 import { NEURAL_CONTROL_COORDINATION } from './banks/neuralControlCoordination';
 import { CHEMICAL_COORDINATION_INTEGRATION } from './banks/chemicalCoordinationIntegration';
 import { MORPHOLOGY_FLOWERING_PLANTS } from './banks/morphologyFloweringPlant';
-
+import { ANATOMY_FLOWERING_PLANTS } from './banks/anatomyFloweringPlants';
+import { BIOMOLECULES } from './banks/biomolecules';
+import { MICROBES_HUMAN_WELFARE } from './banks/microbesHumanWelfare';
+ 
 export const QUESTION_BANK = {
   'biological-classification': BIOLOGICAL_CLASSIFICATION,
   'living-world': LIVING_WORLD,
@@ -51,8 +54,11 @@ export const QUESTION_BANK = {
   'neural-control-coordination': NEURAL_CONTROL_COORDINATION,
   'chemical-coordination-integration': CHEMICAL_COORDINATION_INTEGRATION,
   'morphology-flowering-plants': MORPHOLOGY_FLOWERING_PLANTS,
+  'anatomy-flowering-plants': ANATOMY_FLOWERING_PLANTS,
+  'biomolecules': BIOMOLECULES,
+  'microbes-human-welfare': MICROBES_HUMAN_WELFARE,
   
-  biomolecules: [
+  biomol: [
     {
       id: 'biomol-1',
       type: 'mcq',
