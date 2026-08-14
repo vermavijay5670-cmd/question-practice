@@ -33,7 +33,7 @@ import { MICROBES_HUMAN_WELFARE } from './banks/microbesHumanWelfare';
 import { STRUCTURAL_ORGANISATION_ANIMALS } from './banks/structuralOrganisationAnimals';
 import { PLANT_GROWTH_DEVELOPMENT } from './banks/plantGrowthDevelopment';
 import { SEXUAL_REPRODUCTION_PLANTS} from './banks/sexualReproductionPlants';
-import { PRINCIPLE_INHERITENCE_VARIATION } from './banks/principleInheritanceVariation';
+import { PRINCIPLE_INHERITANCE_VARIATION } from './banks/principleInheritanceVariation';
  
 export const QUESTION_BANK = {
   'biological-classification': BIOLOGICAL_CLASSIFICATION,
@@ -64,7 +64,7 @@ export const QUESTION_BANK = {
   'structural-organisation-animals': STRUCTURAL_ORGANISATION_ANIMALS,
   'plant-growth-development': PLANT_GROWTH_DEVELOPMENT,
   'sexual-reproduction-plants': SEXUAL_REPRODUCTION_PLANTS,
-  'principle-inheritance-variation': PRINCIPLE_INHERITENCE_VARIATION,
+  'principle-inheritance-variation': PRINCIPLE_INHERITANCE_VARIATION,
 
   biomol: [
     {
