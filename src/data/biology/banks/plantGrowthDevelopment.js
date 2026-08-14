@@ -1,26 +1,6 @@
-// plant-growth-development.js
-// Chapter: Plant Growth and Development
-// Sub-topics: Growth, Differentiation/Dedifferentiation/Redifferentiation & Development,
-//             Plant Growth Regulators (Auxin, Gibberellins, Cytokinins, Ethylene, ABA),
-//             Photoperiodism and Vernalization
-// Types: 'mcq' (single correct), 'assertion-reason', 'matching', 'statement', 'count-correct'
-//
-// Schema:
-// {
-//   id: string,
-//   topic: 'growth' | 'differentiation' | 'hormones' | 'photoperiodism',
-//   type: 'mcq' | 'assertion-reason' | 'matching' | 'statement' | 'count-correct',
-//   question: string,
-//   options: string[],
-//   correctIndex: number,
-//   explanation: string,
-//   difficulty: 'easy' | 'medium' | 'hard'
-// }
-
-
 export const PLANT_GROWTH_DEVELOPMENT = [
 // ============================================================
-// SECTION 1: GROWTH — ~55 questions
+// SECTION 1: GROWTH
 // ============================================================
 
   { id: 'g1', topic: 'growth', type: 'mcq', question: 'Growth in plants is best defined as', options: ['A reversible process that can be undone', 'An irreversible permanent increase in size of an organ or its parts, or of an entire organism', 'Only an increase in cell number', 'Only an increase in dry weight'], correctIndex: 1, explanation: 'Growth is an irreversible, permanent increase in size of an organ, its parts, or the whole organism.', difficulty: 'easy' },
@@ -80,7 +60,7 @@ export const PLANT_GROWTH_DEVELOPMENT = [
   { id: 'g55', topic: 'growth', type: 'mcq', question: 'The primary growth of a plant, contributing to increase in length, is due to the activity of', options: ['Apical and intercalary meristems', 'Only lateral meristems', 'Only cork cambium', 'Only vascular cambium'], correctIndex: 0, explanation: 'Primary growth, which increases the length of roots and shoots, results from apical meristem activity and, in some plants, intercalary meristems.', difficulty: 'medium' },
 
 // ============================================================
-// SECTION 2: DIFFERENTIATION, DEDIFFERENTIATION, REDIFFERENTIATION, DEVELOPMENT — ~40 questions
+// SECTION 2: DIFFERENTIATION, DEDIFFERENTIATION, REDIFFERENTIATION, DEVELOPMENT 
 // ============================================================
 
   { id: 'd1', topic: 'differentiation', type: 'mcq', question: 'Differentiation in plants refers to the process by which', options: ['Cells lose water permanently', 'Cells derived from meristems undergo structural and functional changes to perform specific functions', 'Cells revert back to a meristematic state', 'Cells die and are shed'], correctIndex: 1, explanation: 'Differentiation is the process by which cells derived from root/shoot apical meristems and cambium mature to perform specific functions.', difficulty: 'easy' },
@@ -125,7 +105,7 @@ export const PLANT_GROWTH_DEVELOPMENT = [
   { id: 'd40', topic: 'differentiation', type: 'mcq', question: 'The overall developmental sequence in a plant, from a fertilised egg to a mature organism, is generally best described as', options: ['A random, unregulated sequence of events', 'A well-coordinated, regulated series of events involving growth, differentiation, and dedifferentiation/redifferentiation as needed', 'A process confined to the embryo alone', 'A process independent of both intrinsic and extrinsic factors'], correctIndex: 1, explanation: 'Plant development is a coordinated, tightly regulated sequence of growth and differentiation (with dedifferentiation/redifferentiation events as required), influenced by intrinsic and extrinsic factors.', difficulty: 'medium' },
 
 // ============================================================
-// SECTION 3: PLANT GROWTH REGULATORS — ~80 questions
+// SECTION 3: PLANT GROWTH REGULATORS 
 // ============================================================
 
   // --- General PGR concepts (1-5) ---
@@ -221,7 +201,7 @@ export const PLANT_GROWTH_DEVELOPMENT = [
   { id: 'h80', topic: 'hormones', type: 'matching', question: 'Match the plant hormone in Column I with its most characteristic effect in Column II.\nColumn I: A. Auxin, B. Gibberellin, C. Cytokinin, D. Ethylene, E. ABA\nColumn II: (i) Fruit ripening, (ii) Stomatal closure under stress, (iii) Apical dominance, (iv) Delay of leaf senescence, (v) Bolting in rosette plants', options: ['A-iii, B-v, C-iv, D-i, E-ii', 'A-i, B-ii, C-iii, D-iv, E-v', 'A-v, B-iii, C-ii, D-i, E-iv', 'A-iii, B-i, C-v, D-ii, E-iv'], correctIndex: 0, explanation: 'Auxin = apical dominance; gibberellin = bolting; cytokinin = delays senescence; ethylene = fruit ripening; ABA = stomatal closure under stress.', difficulty: 'medium' },
 
 // ============================================================
-// SECTION 4: PHOTOPERIODISM AND VERNALIZATION — ~40 questions
+// SECTION 4: PHOTOPERIODISM AND VERNALIZATION 
 // ============================================================
 
   { id: 'p1', topic: 'photoperiodism', type: 'mcq', question: 'Photoperiodism refers to the response of plants to', options: ['Soil pH', 'The relative length of day and night (photoperiod)', 'Wind speed', 'Atmospheric CO2 concentration alone'], correctIndex: 1, explanation: 'Photoperiodism is the physiological response of plants to the relative lengths of day and night.', difficulty: 'easy' },

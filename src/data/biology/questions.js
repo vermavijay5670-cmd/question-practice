@@ -33,7 +33,7 @@ import { MICROBES_HUMAN_WELFARE } from './banks/microbesHumanWelfare';
 import { STRUCTURAL_ORGANISATION_ANIMALS } from './banks/structuralOrganisationAnimals';
 import { PLANT_GROWTH_DEVELOPMENT } from './banks/plantGrowthDevelopment';
 import { SEXUAL_REPRODUCTION_PLANTS} from './banks/sexualReproductionPlants';
-import { PRINCIPLE_INHERITENCE_VARIATION } from './banks/principleInheritenceVariation';
+import { PRINCIPLE_INHERITENCE_VARIATION } from './banks/principleInheritanceVariation';
  
 export const QUESTION_BANK = {
   'biological-classification': BIOLOGICAL_CLASSIFICATION,

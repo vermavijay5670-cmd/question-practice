@@ -1,26 +1,8 @@
-// questions.js
-// Structural Organisation in Animals — Question Bank
-// Topics: Tissue (Animal Tissues), Frog (Rana tigrina), Cockroach (Periplaneta americana)
-// Types: 'mcq' (single correct), 'assertion-reason', 'matching', 'statement', 'count-correct'
-//
-// Schema:
-// {
-//   id: string,
-//   topic: 'tissue' | 'frog' | 'cockroach',
-//   type: 'mcq' | 'assertion-reason' | 'matching' | 'statement' | 'count-correct',
-//   question: string,
-//   options: string[],
-//   correctIndex: number,
-//   explanation: string,
-//   difficulty: 'easy' | 'medium' | 'hard'
-// }
-
-
+export const STRUCTURAL_ORGANISATION_ANIMALS = [
 // ============================================================
 // SECTION 1: TISSUE (Animal Tissues) — ~78 questions
 // ============================================================
 
-export const STRUCTURAL_ORGANISATION_ANIMALS = [
   // --- Epithelial tissue: general (1-8) ---
   { id: 't1', topic: 'tissue', type: 'mcq', question: 'Epithelial tissue cells are held together by which of the following?', options: ['Large amounts of intercellular matrix', 'Little intercellular matrix, cells packed tightly', 'Only collagen fibres', 'Blood plasma'], correctIndex: 1, explanation: 'Epithelial cells are tightly packed with very little intercellular matrix between them.', difficulty: 'easy' },
   { id: 't2', topic: 'tissue', type: 'mcq', question: 'Which of the following is NOT a general function of epithelial tissue?', options: ['Protection', 'Secretion', 'Contraction and movement', 'Absorption'], correctIndex: 2, explanation: 'Contraction and movement is the function of muscular tissue, not epithelial tissue.', difficulty: 'easy' },
