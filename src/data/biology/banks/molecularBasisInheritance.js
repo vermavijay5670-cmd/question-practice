@@ -1,29 +1,3 @@
-// molecular-basis-of-inheritance.js
-// Chapter: Molecular Basis of Inheritance
-// Sub-topics: DNA Structure & Packaging, DNA Replication, Transcription,
-//             Genetic Code & Translation, Gene Regulation (Lac Operon) & Applications (HGP, DNA Fingerprinting)
-// Types: 'mcq' (single correct), 'assertion-reason', 'matching', 'statement', 'count-correct'
-//
-// Schema:
-// {
-//   id: string,
-//   topic: 'dna-structure' | 'replication' | 'transcription' | 'translation' | 'regulation',
-//   type: 'mcq' | 'assertion-reason' | 'matching' | 'statement' | 'count-correct',
-//   question: string,
-//   options: string[],
-//   correctIndex: number,
-//   explanation: string,
-//   difficulty: 'easy' | 'medium' | 'hard'
-// }
-
-const AR_OPTIONS = [
-  'Both A and R are true, and R is the correct explanation of A',
-  'Both A and R are true, but R is NOT the correct explanation of A',
-  'A is true, but R is false',
-  'A is false, but R is true',
-  'Both A and R are false'
-];
-
 
 export const MOLECULAR_BASIS_INHERITANCE = [
 // ============================================================
