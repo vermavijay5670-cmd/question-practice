@@ -1,5 +1,3 @@
-
-
 export const PRINCIPLE_INHERITENCE_VARIATION = [
   // ============ MENDEL'S EXPERIMENTS AND TERMINOLOGY ============
   { id: 'piv-1', type: 'mcq', question: 'Gregor Johann Mendel conducted his classic hybridisation experiments primarily on which plant?', options: ['Drosophila melanogaster', 'Garden pea (Pisum sativum)', 'Mirabilis jalapa', 'Maize'], correctIndex: 1, explanation: 'Mendel conducted extensive hybridisation experiments on garden pea (Pisum sativum) between 1856 and 1863, laying the foundation of genetics.', difficulty: 'easy' },
