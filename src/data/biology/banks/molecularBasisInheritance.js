@@ -163,7 +163,7 @@ const dnaStructureQuestions = [
   correctIndex: 1,
   explanation: 'RNA polymerase, unlike DNA polymerase, does not require a primer to initiate synthesis; it can begin RNA synthesis de novo.',
   difficulty: 'medium'
-};
+},
 
   { id: 't11', topic: 'transcription', type: 'mcq', question: 'In bacteria such as E. coli, transcription of all types of RNA (mRNA, tRNA, and rRNA) is carried out by', options: ['Three distinct RNA polymerases', 'A single type of RNA polymerase', 'Only DNA polymerase', 'Ribosomes directly'], correctIndex: 1, explanation: 'Prokaryotes use a single RNA polymerase enzyme to transcribe all classes of RNA.', difficulty: 'medium' },
   { id: 't12', topic: 'transcription', type: 'mcq', question: 'In eukaryotes, the transcription of different classes of RNA is carried out by different RNA polymerases. Which RNA polymerase is responsible for transcribing most ribosomal RNA (rRNA)?', options: ['RNA polymerase I', 'RNA polymerase II', 'RNA polymerase III', 'RNA polymerase IV'], correctIndex: 0, explanation: 'RNA polymerase I is located in the nucleolus and transcribes most rRNA genes (28S, 18S, 5.8S rRNA).', difficulty: 'hard' },
@@ -177,7 +177,7 @@ const dnaStructureQuestions = [
   correctIndex: 1,
   explanation: 'Since transcription and translation are coupled in prokaryotes (no nuclear envelope), mRNA does not require extensive processing before being translated.',
   difficulty: 'medium'
-};
+},
 
   { id: 't17', topic: 'transcription', type: 'mcq', question: 'In eukaryotes, the primary transcript synthesised by RNA polymerase II, known as heterogeneous nuclear RNA (hnRNA), must undergo processing that includes', options: ['Only translation into protein', 'Splicing, capping, and tailing', 'Only DNA replication', 'Conversion to tRNA'], correctIndex: 1, explanation: 'hnRNA undergoes three main processing steps: splicing (removal of introns), capping at the 5\' end, and tailing at the 3\' end, before becoming mature mRNA.', difficulty: 'medium' },
   { id: 't18', topic: 'transcription', type: 'mcq', question: 'The process by which non-coding sequences (introns) are removed and coding sequences (exons) are joined together in hnRNA is called', options: ['Capping', 'Splicing', 'Tailing', 'Termination'], correctIndex: 1, explanation: 'Splicing removes intervening non-coding sequences (introns) from hnRNA and joins the coding sequences (exons) together.', difficulty: 'medium' },
@@ -201,177 +201,129 @@ const dnaStructureQuestions = [
   correctIndex: 1,
   explanation: 'Unlike replication, which duplicates the entire genome, transcription selectively transcribes only the genes required at a particular time.',
   difficulty: 'medium'
-};
-
-transcriptionQuestions.push(
-  { id: 't33', topic: 'transcription', type: 'mcq', question: 'Which enzyme complex is generally larger and more complex in eukaryotes than in prokaryotes, reflecting the need to interact with chromatin and multiple regulatory proteins?', options: ('DNA ligase, options: []'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-transcriptionQuestions[transcriptionQuestions.length - 1] = {
+},
+{
   id: 't33', topic: 'transcription', type: 'mcq',
   question: 'Which enzyme complex is generally larger and more complex in eukaryotes than in prokaryotes, reflecting the need to interact with chromatin and multiple regulatory proteins?',
   options: ['DNA ligase', 'RNA polymerase', 'DNA gyrase', 'Restriction endonuclease'],
   correctIndex: 1,
   explanation: 'Eukaryotic RNA polymerases are larger, more complex enzymes requiring numerous accessory transcription factors, unlike the simpler single RNA polymerase of prokaryotes.',
   difficulty: 'hard'
-};
+},
 
-transcriptionQuestions.push(
   { id: 't34', topic: 'transcription', type: 'mcq', question: 'The template strand for transcription is read by RNA polymerase, and the resulting RNA transcript is therefore', options: ['Identical in sequence to the template strand', 'Complementary and antiparallel to the template strand', 'Unrelated in sequence to either DNA strand', 'Identical to the coding strand in polarity but with random bases'], correctIndex: 1, explanation: 'The RNA transcript is synthesised as a complementary and antiparallel copy of the template DNA strand.', difficulty: 'medium' },
   { id: 't35', topic: 'transcription', type: 'mcq', question: 'The direction of RNA synthesis relative to the coding strand of DNA is such that the RNA sequence corresponds to the coding strand, except that', options: ['Every base is different', 'Uracil replaces thymine', 'Adenine replaces guanine', 'The RNA is read 3\'→5\' while the coding strand is 5\'→3\''], correctIndex: 1, explanation: 'The RNA transcript matches the coding strand base-for-base, except thymine is replaced by uracil in RNA.', difficulty: 'medium' },
-  { id: 't36', topic: 'transcription', type: 'mcq', question: 'Which of the following statements about eukaryotic transcription and prokaryotic transcription is correct?', options: ('Both use the same single RNA polymerase, options: []'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-transcriptionQuestions[transcriptionQuestions.length - 1] = {
+  {
   id: 't36', topic: 'transcription', type: 'mcq',
   question: 'Which of the following statements correctly distinguishes eukaryotic transcription from prokaryotic transcription?',
   options: ['Both use exactly the same single RNA polymerase enzyme', 'Eukaryotes use three different RNA polymerases, whereas prokaryotes use only one', 'Prokaryotes always process their mRNA extensively before translation', 'Eukaryotic transcription never requires a promoter sequence'],
   correctIndex: 1,
   explanation: 'Eukaryotes have three distinct RNA polymerases (I, II, III) for different RNA classes, unlike the single RNA polymerase used in prokaryotes.',
   difficulty: 'medium'
-};
+},
 
-transcriptionQuestions.push(
   { id: 't37', topic: 'transcription', type: 'mcq', question: 'The final, fully processed mRNA, ready for export from the nucleus and translation in the cytoplasm, is termed the', options: ['hnRNA', 'Mature mRNA', 'Pre-mRNA only', 'Template strand'], correctIndex: 1, explanation: 'After splicing, capping, and tailing, hnRNA becomes mature mRNA, ready for export and translation.', difficulty: 'easy' },
   { id: 't38', topic: 'transcription', type: 'assertion-reason', question: 'Assertion (A): Alternative splicing can allow a single gene to give rise to more than one type of protein.\nReason (R): Different combinations of exons can be joined together during the splicing of hnRNA transcribed from the same gene.', options: AR_OPTIONS, correctIndex: 0, explanation: 'Because different exon combinations can be spliced together from the same primary transcript, this directly explains how a single gene can yield multiple protein products, correctly supporting the assertion.', difficulty: 'hard' },
   { id: 't39', topic: 'transcription', type: 'mcq', question: 'Compared to DNA replication, which occurs once per cell cycle for the entire genome, transcription of a given gene may occur', options: ['Only once in the lifetime of the organism', 'Multiple times, as needed, to produce many copies of RNA from the same gene', 'Never more than once per cell', 'Only during the S phase of the cell cycle'], correctIndex: 1, explanation: 'Unlike the once-per-cycle replication of the whole genome, a given gene can be transcribed repeatedly to produce multiple RNA copies as required by the cell.', difficulty: 'medium' },
-  { id: 't40', topic: 'transcription', type: 'mcq', question: 'The overall significance of transcription in gene expression is that it', options: ['Directly produces functional protein without further steps', 'Serves as the crucial first step in converting genetic information stored in DNA into a form (RNA) that can direct protein synthesis', 'Replaces the need for DNA replication', 'Occurs only in non-dividing cells'], correctIndex: 1, explanation: 'Transcription is the essential first step in gene expression, converting the DNA-encoded genetic information into RNA, which can then direct protein synthesis.', difficulty: 'medium' }
-);
+  { id: 't40', topic: 'transcription', type: 'mcq', question: 'The overall significance of transcription in gene expression is that it', options: ['Directly produces functional protein without further steps', 'Serves as the crucial first step in converting genetic information stored in DNA into a form (RNA) that can direct protein synthesis', 'Replaces the need for DNA replication', 'Occurs only in non-dividing cells'], correctIndex: 1, explanation: 'Transcription is the essential first step in gene expression, converting the DNA-encoded genetic information into RNA, which can then direct protein synthesis.', difficulty: 'medium' },
 
 // ============================================================
 // SECTION 4: GENETIC CODE & TRANSLATION — ~45 questions
 // ============================================================
-
-
-  { id: 'tr1', topic: 'translation', type: 'mcq', question: 'The genetic code refers to the relationship between the sequence of', options: ('Amino acids in a protein and nucleotides in tRNA'.split(',')), correctIndex: 0, explanation: '', difficulty: 'easy' },
-translationQuestions[translationQuestions.length - 1] = {
+ {
   id: 'tr1', topic: 'translation', type: 'mcq',
   question: 'The genetic code refers to the relationship between the sequence of',
   options: ['Nucleotide bases in mRNA and the sequence of amino acids in the polypeptide it encodes', 'Amino acids in tRNA and nucleotides in DNA', 'Ribosomal proteins and rRNA only', 'Introns and exons in hnRNA'],
   correctIndex: 0,
   explanation: 'The genetic code describes the correspondence between nucleotide triplets in mRNA and the specific amino acids they specify during translation.',
   difficulty: 'easy'
-};
+},
 
-translationQuestions.push(
   { id: 'tr2', topic: 'translation', type: 'mcq', question: 'The genetic code is described as a "triplet code" because', options: ['Each amino acid is specified by a single nucleotide', 'A sequence of three nucleotides (a codon) specifies one amino acid', 'Four nucleotides are needed to specify each amino acid', 'The code repeats every three genes'], correctIndex: 1, explanation: 'A set of three consecutive nucleotides, called a codon, specifies a single amino acid, hence "triplet code."', difficulty: 'easy' },
   { id: 'tr3', topic: 'translation', type: 'mcq', question: 'The total number of possible codons formed by combinations of the four nitrogenous bases taken three at a time is', options: ['20', '61', '64', '4'], correctIndex: 2, explanation: 'With 4 bases taken 3 at a time (4^3), there are 64 possible codons.', difficulty: 'medium' },
   { id: 'tr4', topic: 'translation', type: 'mcq', question: 'Of the 64 possible codons, how many actually code for specific amino acids (sense codons)?', options: ['64', '61', '20', '3'], correctIndex: 1, explanation: 'Out of 64 codons, 61 code for amino acids (sense codons), while the remaining 3 are stop codons.', difficulty: 'medium' },
   { id: 'tr5', topic: 'translation', type: 'mcq', question: 'The three codons that do not code for any amino acid and instead signal the end of translation are collectively called', options: ['Start codons', 'Stop (nonsense) codons', 'Anticodons', 'Silent codons'], correctIndex: 1, explanation: 'UAA, UAG, and UGA are the three stop (nonsense) codons that terminate translation without coding for an amino acid.', difficulty: 'medium' },
   { id: 'tr6', topic: 'translation', type: 'mcq', question: 'The codon that functions as the universal start codon, also coding for the amino acid methionine, is', options: ['UAA', 'AUG', 'UGA', 'UAG'], correctIndex: 1, explanation: 'AUG is the universal start codon, also coding for methionine, and typically marks the beginning of translation.', difficulty: 'easy' },
-  { id: 'tr7', topic: 'translation', type: 'mcq', question: 'The genetic code is described as "degenerate" because', options: ('Every amino acid is coded for by exactly one codon'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-translationQuestions[translationQuestions.length - 1] = {
+  { 
   id: 'tr7', topic: 'translation', type: 'mcq',
   question: 'The genetic code is described as "degenerate" because',
   options: ['Every amino acid is coded for by exactly one unique codon', 'Some amino acids are coded for by more than one codon', 'The code changes randomly from cell to cell', 'It cannot specify all 20 amino acids'],
   correctIndex: 1,
   explanation: 'Degeneracy refers to the fact that most amino acids are specified by more than one codon (except methionine and tryptophan, which have only one each).',
   difficulty: 'medium'
-};
+},
 
-translationQuestions.push(
   { id: 'tr8', topic: 'translation', type: 'mcq', question: 'Among the 20 standard amino acids, which are coded for by only a single codon each (non-degenerate)?', options: ['Alanine and glycine', 'Methionine and tryptophan', 'Leucine and serine', 'Arginine and lysine'], correctIndex: 1, explanation: 'Methionine (AUG) and tryptophan (UGG) are each coded for by only a single codon, making them exceptions to degeneracy.', difficulty: 'hard' },
-  { id: 'tr9', topic: 'translation', type: 'mcq', question: 'The genetic code is termed "unambiguous" because', options: ('Each codon can code for multiple different amino acids'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-translationQuestions[translationQuestions.length - 1] = {
+  { 
   id: 'tr9', topic: 'translation', type: 'mcq',
   question: 'The genetic code is termed "unambiguous" because',
   options: ['A single codon can code for multiple different amino acids depending on context', 'Each codon codes for only one specific amino acid, with no ambiguity', 'The code is different in every organism', 'Codons overlap with each other'],
   correctIndex: 1,
   explanation: 'Unambiguity means each specific codon codes for only one particular amino acid, with no room for ambiguity.',
   difficulty: 'medium'
-};
-
-translationQuestions.push(
-  { id: 'tr10', topic: 'translation', type: 'mcq', question: 'The genetic code is described as "non-overlapping and comma-less" because', options: ('Codons share bases with adjacent codons, and there are gaps between them'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-translationQuestions[translationQuestions.length - 1] = {
+},
+{
   id: 'tr10', topic: 'translation', type: 'mcq',
   question: 'The genetic code is described as "non-overlapping and comma-less" because',
   options: ['Codons share bases with adjacent codons, and there are gaps between them', 'The mRNA is read in a continuous stretch of triplets with no shared bases and no punctuation between codons', 'Every third base is skipped during reading', 'It refers only to codons found in introns'],
   correctIndex: 1,
   explanation: 'Non-overlapping and comma-less means the mRNA is read continuously, codon after codon, without shared bases or gaps between successive codons.',
   difficulty: 'medium'
-};
-
-translationQuestions.push(
+},
   { id: 'tr11', topic: 'translation', type: 'mcq', question: 'The genetic code is described as "universal" because', options: ['It applies exclusively to a single species of bacteria', 'The same codon generally specifies the same amino acid across nearly all organisms, from bacteria to humans', 'Every organism has a completely unique genetic code', 'It only applies to viruses'], correctIndex: 1, explanation: 'The near-universal nature of the genetic code, where the same codons specify the same amino acids across diverse organisms, is strong evidence for the shared evolutionary origin of life.', difficulty: 'medium' },
-  { id: 'tr12', topic: 'translation', type: 'mcq', question: 'A notable exception to the universality of the genetic code is found in', options: ('Nuclear genes of all eukaryotes'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
-);
-translationQuestions[translationQuestions.length - 1] = {
+  { 
   id: 'tr12', topic: 'translation', type: 'mcq',
   question: 'A notable exception to the near-universality of the genetic code is found in',
   options: ['Nuclear genes of most eukaryotes', 'Mitochondrial genomes, where a few codons are read differently than the standard code', 'The lac operon of E. coli', 'Ribosomal RNA genes exclusively'],
   correctIndex: 1,
   explanation: 'Mitochondrial (and some other organellar) genomes show minor deviations from the standard genetic code for a few codons.',
   difficulty: 'hard'
-};
-
-translationQuestions.push(
+},
   { id: 'tr13', topic: 'translation', type: 'mcq', question: 'Which scientist(s) played a key role in deciphering the genetic code by using synthetic RNA molecules (like poly-U) in cell-free systems?', options: ['Watson and Crick', 'Marshall Nirenberg and Har Gobind Khorana', 'Meselson and Stahl', 'Griffith and Avery'], correctIndex: 1, explanation: 'Nirenberg (using synthetic RNAs like poly-U) and Khorana (chemically synthesising defined RNA sequences) were central figures in deciphering the genetic code.', difficulty: 'medium' },
   { id: 'tr14', topic: 'translation', type: 'mcq', question: 'The first codon to be deciphered, using a synthetic poly-U RNA (UUUUUU...) that directed synthesis of a polyphenylalanine chain, was found to code for', options: ['Methionine', 'Phenylalanine', 'Tryptophan', 'Glycine'], correctIndex: 1, explanation: 'Nirenberg\'s experiment showed that the codon UUU codes for phenylalanine, the first codon to be deciphered.', difficulty: 'medium' },
-  { id: 'tr15', topic: 'translation', type: 'mcq', question: 'The enzyme polynucleotide phosphorylase, useful in synthesising RNA with a defined and known sequence for genetic code studies, was characterised by', options: ('James Watson'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
-);
-translationQuestions[translationQuestions.length - 1] = {
+  { 
   id: 'tr15', topic: 'translation', type: 'mcq',
   question: 'The enzyme polynucleotide phosphorylase, useful in polymerising RNA with a defined, known sequence for genetic code studies, was characterised by',
   options: ['James Watson', 'Severo Ochoa', 'Francis Crick', 'Frederick Griffith'],
   correctIndex: 1,
   explanation: 'Severo Ochoa characterised polynucleotide phosphorylase, an enzyme important in synthesising RNA molecules with known/defined sequences.',
   difficulty: 'hard'
-};
-
-translationQuestions.push(
-  { id: 'tr16', topic: 'translation', type: 'mcq', question: 'The "wobble hypothesis" helps explain', options: ('Why the start codon always codes for methionine'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
-);
-translationQuestions[translationQuestions.length - 1] = {
+},
+{
   id: 'tr16', topic: 'translation', type: 'mcq',
   question: 'The "wobble hypothesis" helps explain',
   options: ['Why the start codon always codes for methionine', 'How a single tRNA can recognise more than one codon due to flexible pairing at the third codon position', 'Why proteins fold into their tertiary structure', 'Why introns are removed during splicing'],
   correctIndex: 1,
   explanation: 'The wobble hypothesis accounts for the degeneracy of the genetic code by explaining how non-standard base pairing at the third position of the codon allows a single tRNA to recognise multiple codons.',
   difficulty: 'hard'
-};
-
-translationQuestions.push(
-  { id: 'tr17', topic: 'translation', type: 'mcq', question: 'tRNA molecules are often described as "adaptor molecules" because they', options: ('Convert DNA directly into protein'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-translationQuestions[translationQuestions.length - 1] = {
+},
+{
   id: 'tr17', topic: 'translation', type: 'mcq',
   question: 'tRNA molecules are often described as "adaptor molecules" because they',
   options: ['Convert DNA directly into protein', 'Read the codon on mRNA via their anticodon and deliver the corresponding specific amino acid', 'Replace mRNA in translation entirely', 'Are responsible for DNA replication'],
   correctIndex: 1,
   explanation: 'tRNA acts as an adaptor, reading mRNA codons through complementary anticodon pairing while carrying the corresponding amino acid.',
   difficulty: 'medium'
-};
-
-translationQuestions.push(
+},
   { id: 'tr18', topic: 'translation', type: 'mcq', question: 'The characteristic secondary structure of tRNA, when drawn in two dimensions, resembles a', options: ['Straight line', 'Cloverleaf', 'Double helix only', 'Perfect circle'], correctIndex: 1, explanation: 'tRNA folds into a characteristic cloverleaf structure due to intramolecular base pairing.', difficulty: 'medium' },
   { id: 'tr19', topic: 'translation', type: 'mcq', question: 'The three-nucleotide sequence on tRNA that base-pairs with the codon on mRNA is called the', options: ['Codon', 'Anticodon', 'Cap', 'Poly-A tail'], correctIndex: 1, explanation: 'The anticodon on tRNA base-pairs with the complementary codon on mRNA during translation.', difficulty: 'easy' },
-  { id: 'tr20', topic: 'translation', type: 'mcq', question: 'The 3\' end of a tRNA molecule, where the amino acid is attached, characteristically ends in the sequence', options: ('AUG'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
-);
-translationQuestions[translationQuestions.length - 1] = {
+  { 
   id: 'tr20', topic: 'translation', type: 'mcq',
   question: 'The 3\' end of a tRNA molecule, where the amino acid is attached, characteristically ends in the sequence',
   options: ['AUG', 'CCA', 'UAA', 'GGG'],
   correctIndex: 1,
   explanation: 'The tRNA 3\' terminal CCA sequence is the site where the corresponding amino acid is covalently attached.',
   difficulty: 'hard'
-};
-
-translationQuestions.push(
+},
   { id: 'tr21', topic: 'translation', type: 'mcq', question: 'The process by which a specific amino acid is attached to its corresponding tRNA is termed', options: ['Aminoacylation (charging of tRNA)', 'Splicing', 'Transformation', 'Replication'], correctIndex: 0, explanation: 'Aminoacylation, catalysed by aminoacyl-tRNA synthetases, is the process of attaching an amino acid to its specific tRNA.', difficulty: 'medium' },
-  { id: 'tr22', topic: 'translation', type: 'mcq', question: 'Translation is defined as', options: ('The synthesis of RNA from a DNA template'.split(',')), correctIndex: 0, explanation: '', difficulty: 'easy' },
-);
-translationQuestions[translationQuestions.length - 1] = {
+  {
   id: 'tr22', topic: 'translation', type: 'mcq',
   question: 'Translation is defined as the process of',
   options: ['Synthesis of RNA from a DNA template', 'Polymerisation of amino acids to form a polypeptide, directed by the mRNA sequence', 'Replication of DNA', 'Splicing of hnRNA'],
   correctIndex: 1,
   explanation: 'Translation is the process of building a polypeptide chain based on the codon sequence carried by mRNA.',
   difficulty: 'easy'
-};
-
-translationQuestions.push(
+},
   { id: 'tr23', topic: 'translation', type: 'mcq', question: 'The site of protein synthesis (translation) in the cell is the', options: ['Nucleus', 'Ribosome', 'Golgi apparatus', 'Lysosome'], correctIndex: 1, explanation: 'The ribosome is the cellular machine on which translation of mRNA into protein takes place.', difficulty: 'easy' },
   { id: 'tr24', topic: 'translation', type: 'mcq', question: 'Bacterial (prokaryotic) ribosomes are described as', options: ['80S, composed of 60S and 40S subunits', '70S, composed of 50S and 30S subunits', '50S only', '60S only'], correctIndex: 1, explanation: 'Prokaryotic ribosomes are 70S, composed of a large 50S subunit and a small 30S subunit.', difficulty: 'medium' },
   { id: 'tr25', topic: 'translation', type: 'mcq', question: 'Eukaryotic ribosomes are described as', options: ['70S, composed of 50S and 30S subunits', '80S, composed of 60S and 40S subunits', '60S only', '50S and 40S subunits only'], correctIndex: 1, explanation: 'Eukaryotic ribosomes are 80S, composed of a large 60S subunit and a small 40S subunit.', difficulty: 'medium' },
@@ -379,18 +331,14 @@ translationQuestions.push(
   { id: 'tr27', topic: 'translation', type: 'mcq', question: 'The stage of translation in which successive amino acids are added and peptide bonds are formed, extending the growing polypeptide chain, is called', options: ['Initiation', 'Elongation', 'Termination', 'Capping'], correctIndex: 1, explanation: 'Elongation is the phase in which the polypeptide chain is extended through sequential addition of amino acids.', difficulty: 'easy' },
   { id: 'tr28', topic: 'translation', type: 'mcq', question: 'Translation ends (termination) when the ribosome encounters a', options: ['Start codon', 'Stop codon, recognised by release factors', 'Promoter', 'Origin of replication'], correctIndex: 1, explanation: 'Translation terminates when the ribosome reaches a stop codon, which is recognised by release factors, releasing the completed polypeptide.', difficulty: 'medium' },
   { id: 'tr29', topic: 'translation', type: 'mcq', question: 'The bond formed between adjacent amino acids during elongation of the polypeptide chain is called a', options: ['Phosphodiester bond', 'Peptide bond', 'Hydrogen bond', 'Glycosidic bond'], correctIndex: 1, explanation: 'Amino acids are linked together by peptide bonds during translation, forming the polypeptide chain.', difficulty: 'easy' },
-  { id: 'tr30', topic: 'translation', type: 'mcq', question: 'The synthesis of a polypeptide chain proceeds from the', options: ('C-terminus to the N-terminus'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-translationQuestions[translationQuestions.length - 1] = {
+  { 
   id: 'tr30', topic: 'translation', type: 'mcq',
   question: 'The synthesis of a polypeptide chain proceeds from the',
   options: ['C-terminus to the N-terminus', 'N-terminus to the C-terminus', 'Middle outward in both directions', 'It has no defined direction'],
   correctIndex: 1,
   explanation: 'Protein synthesis proceeds from the amino (N) terminus to the carboxyl (C) terminus of the polypeptide.',
   difficulty: 'medium'
-};
-
-translationQuestions.push(
+},
   { id: 'tr31', topic: 'translation', type: 'assertion-reason', question: 'Assertion (A): The mRNA sequence AUG GCU UAA would produce a very short dipeptide during translation.\nReason (R): AUG signals the start codon coding for methionine, GCU codes for alanine, and UAA is a stop codon terminating translation immediately after.', options: AR_OPTIONS, correctIndex: 0, explanation: 'Since AUG initiates translation (coding for Met), GCU adds alanine, and UAA immediately terminates translation, the resulting short chain (Met-Ala) is correctly explained by the reason.', difficulty: 'hard' },
   { id: 'tr32', topic: 'translation', type: 'mcq', question: 'The relatively large size of ribosomal RNA and proteins forming the ribosome subunits primarily serves to', options: ['Replicate DNA', 'Provide the physical machinery and catalytic activity needed to link amino acids during translation', 'Transcribe genes', 'Store genetic information permanently'], correctIndex: 1, explanation: 'The ribosome, composed of rRNA and protein, functions as the physical and catalytic machine that carries out translation.', difficulty: 'medium' },
   { id: 'tr33', topic: 'translation', type: 'statement', question: 'Consider the following statements about the genetic code:\n1. The genetic code is a triplet code.\n2. All 20 amino acids are coded for by exactly one codon each.\n3. Three codons act as stop signals and do not code for any amino acid.\nWhich of the statements given above are correct?', options: ['1 and 2 only', '1 and 3 only', '2 and 3 only', '1, 2 and 3'], correctIndex: 1, explanation: 'Statements 1 and 3 are correct; most amino acids are coded by more than one codon (degeneracy), so statement 2 is incorrect.', difficulty: 'medium' },
@@ -411,283 +359,199 @@ translationQuestions.push(
 // SECTION 5: GENE REGULATION (LAC OPERON) & APPLICATIONS — ~40 questions
 // ============================================================
 
-  { id: 're1', topic: 'regulation', type: 'mcq', question: 'Regulation of gene expression can occur at multiple levels; which of the following is generally considered the most common level of regulation?', options: ('Transcriptional level'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-regulationQuestions[regulationQuestions.length - 1] = {
+  {
   id: 're1', topic: 'regulation', type: 'mcq',
   question: 'Regulation of gene expression can occur at multiple levels; which of the following is generally considered the most common level at which regulation occurs?',
   options: ['Transcriptional level (initiation of transcription)', 'Only at the level of protein degradation', 'Only at the level of DNA replication', 'Only after the protein is completely synthesised'],
   correctIndex: 0,
   explanation: 'Transcriptional regulation, particularly at the initiation stage, is generally the most common and significant level of gene expression regulation.',
   difficulty: 'medium'
-};
-
-regulationQuestions.push(
+},
   { id: 're2', topic: 'regulation', type: 'mcq', question: 'Besides the transcriptional level, gene expression can also be regulated at the levels of', options: ['Only during meiosis', 'RNA processing, transport of RNA, and translation', 'Only in dead cells', 'Only during DNA repair'], correctIndex: 1, explanation: 'Gene expression can be regulated at multiple stages: transcription, RNA processing, RNA transport, and translation.', difficulty: 'medium' },
-  { id: 're3', topic: 'regulation', type: 'mcq', question: 'The lac operon, a classic model of gene regulation in bacteria, was proposed by', options: ('Watson and Crick'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+  {
   id: 're3', topic: 'regulation', type: 'mcq',
   question: 'The lac operon, a classic model of gene regulation in bacteria, was proposed by',
   options: ['Watson and Crick', 'Francois Jacob and Jacques Monod', 'Meselson and Stahl', 'Griffith and Avery'],
   correctIndex: 1,
   explanation: 'Francois Jacob and Jacques Monod proposed the operon model of gene regulation, using the lac operon of E. coli as their example.',
   difficulty: 'medium'
-};
-
-regulationQuestions.push(
+},
   { id: 're4', topic: 'regulation', type: 'mcq', question: 'The lac operon of E. coli controls the metabolism of', options: ['Glucose only', 'Lactose', 'Amino acids', 'Fatty acids'], correctIndex: 1, explanation: 'The lac operon regulates genes needed for lactose metabolism in E. coli.', difficulty: 'easy' },
-  { id: 're5', topic: 'regulation', type: 'mcq', question: 'An operon is defined as a cluster of', options: ('Unrelated genes located on different chromosomes'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+  { 
   id: 're5', topic: 'regulation', type: 'mcq',
   question: 'An operon is defined as a cluster of',
   options: ['Unrelated genes located on different chromosomes', 'Structural genes controlled by a common promoter and operator, transcribed together as a single unit', 'Only regulatory proteins with no genes involved', 'Ribosomal RNA genes exclusively'],
   correctIndex: 1,
   explanation: 'An operon is a functional unit of DNA containing a set of structural genes under the control of a single promoter and operator, transcribed together.',
   difficulty: 'medium'
-};
-
-regulationQuestions.push(
+},
   { id: 're6', topic: 'regulation', type: 'mcq', question: 'The lac operon consists of one regulatory gene (lacI) and how many structural genes?', options: ['One', 'Two', 'Three (lacZ, lacY, lacA)', 'Five'], correctIndex: 2, explanation: 'The lac operon has three structural genes: lacZ, lacY, and lacA, in addition to the regulatory gene lacI.', difficulty: 'medium' },
-  { id: 're7', topic: 'regulation', type: 'mcq', question: 'The lacZ gene of the lac operon codes for the enzyme', options: ('Permease'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+  {
   id: 're7', topic: 'regulation', type: 'mcq',
   question: 'The lacZ gene of the lac operon codes for the enzyme',
   options: ['Permease', 'Beta-galactosidase, which hydrolyses lactose into glucose and galactose', 'Transacetylase only', 'DNA polymerase'],
   correctIndex: 1,
   explanation: 'lacZ encodes beta-galactosidase, the enzyme responsible for hydrolysing lactose into glucose and galactose.',
   difficulty: 'medium'
-};
-
-regulationQuestions.push(
+},
   { id: 're8', topic: 'regulation', type: 'mcq', question: 'The lacY gene of the lac operon codes for', options: ['Beta-galactosidase', 'Permease, which increases permeability of the cell to lactose', 'Transacetylase', 'The lac repressor'], correctIndex: 1, explanation: 'lacY codes for permease, a membrane protein that increases lactose uptake into the cell.', difficulty: 'medium' },
   { id: 're9', topic: 'regulation', type: 'mcq', question: 'The lacA gene of the lac operon codes for', options: ['Beta-galactosidase', 'Permease', 'Transacetylase', 'DNA ligase'], correctIndex: 2, explanation: 'lacA encodes transacetylase, which transfers an acetyl group to certain beta-galactosides.', difficulty: 'medium' },
-  { id: 're10', topic: 'regulation', type: 'mcq', question: 'The lacI gene, though technically outside the lac operon\'s own operator-controlled unit, is important because it codes for the', options: ('Structural enzymes needed for lactose metabolism'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+  { 
   id: 're10', topic: 'regulation', type: 'mcq',
   question: 'The lacI gene is important because it codes for the',
   options: ['Structural enzymes directly needed for lactose metabolism', 'Repressor protein that regulates transcription of the operon\'s structural genes', 'RNA polymerase', 'DNA gyrase'],
   correctIndex: 1,
   explanation: 'lacI encodes the lac repressor protein, which regulates the transcription of the lac operon\'s structural genes.',
   difficulty: 'medium'
-};
-
-regulationQuestions.push(
-  { id: 're11', topic: 'regulation', type: 'mcq', question: 'In the absence of lactose, the lac repressor protein', options: ('Binds to the promoter, allowing transcription'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+},
+{
   id: 're11', topic: 'regulation', type: 'mcq',
   question: 'In the absence of lactose, the lac repressor protein',
   options: ['Binds to the promoter, blocking RNA polymerase directly', 'Binds to the operator, preventing RNA polymerase from transcribing the structural genes', 'Is degraded and has no effect', 'Activates transcription of the structural genes'],
   correctIndex: 1,
   explanation: 'In the absence of lactose, the active repressor binds to the operator region, blocking transcription of the structural genes by preventing RNA polymerase from proceeding.',
   difficulty: 'medium'
-};
-
-regulationQuestions.push(
-  { id: 're12', topic: 'regulation', type: 'mcq', question: 'When lactose is present in the medium, a derivative of lactose called allolactose acts as an inducer by', options: ('Binding to the promoter and blocking RNA polymerase'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+},
+{
   id: 're12', topic: 'regulation', type: 'mcq',
   question: 'When lactose is present in the medium, a derivative of lactose called allolactose acts as an inducer by',
   options: ['Binding to the promoter and blocking RNA polymerase', 'Binding to the repressor protein, changing its shape and preventing it from binding to the operator', 'Directly synthesising beta-galactosidase', 'Destroying RNA polymerase'],
   correctIndex: 1,
   explanation: 'Allolactose (the inducer) binds to the repressor, altering its conformation so it can no longer bind the operator, thereby allowing transcription of the structural genes.',
   difficulty: 'medium'
-};
-
-regulationQuestions.push(
-  { id: 're13', topic: 'regulation', type: 'mcq', question: 'When the lac repressor is inactivated by the inducer, RNA polymerase can then', options: ('Bind to the operator and stop transcription'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+},
+ {
   id: 're13', topic: 'regulation', type: 'mcq',
   question: 'When the lac repressor is inactivated by the inducer, RNA polymerase is then able to',
   options: ['Bind to the operator and stop transcription', 'Bind to the promoter and transcribe the structural genes (lacZ, lacY, lacA) as a single polycistronic mRNA', 'Only transcribe lacI', 'Cause the operon to be permanently deleted'],
   correctIndex: 1,
   explanation: 'With the repressor inactivated, RNA polymerase can transcribe the operon\'s structural genes together, producing a single polycistronic mRNA.',
   difficulty: 'medium'
-};
-
-regulationQuestions.push(
+},
   { id: 're14', topic: 'regulation', type: 'mcq', question: 'The single mRNA molecule produced from the lac operon, which codes for all three structural genes together, is termed', options: ['Monocistronic', 'Polycistronic', 'Non-coding RNA', 'tRNA'], correctIndex: 1, explanation: 'Because the lac operon\'s structural genes are transcribed together into a single mRNA encoding multiple proteins, this mRNA is termed polycistronic.', difficulty: 'medium' },
   { id: 're15', topic: 'regulation', type: 'assertion-reason', question: 'Assertion (A): The lac operon is described as an example of "inducible" gene expression.\nReason (R): Transcription of the lac operon\'s structural genes is switched on only in the presence of an inducer (lactose/allolactose).', options: AR_OPTIONS, correctIndex: 0, explanation: 'Since the operon\'s genes are transcribed only when the inducer is present, this directly supports why it is classified as an inducible system.', difficulty: 'medium' },
-  { id: 're16', topic: 'regulation', type: 'mcq', question: 'The lac operator is a specific DNA sequence located', options: ('Far away from the structural genes, on a different chromosome'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+  {
   id: 're16', topic: 'regulation', type: 'mcq',
   question: 'The lac operator is a specific DNA sequence located',
   options: ['Far away from the structural genes, on a different chromosome', 'Adjacent to the structural genes, where the repressor protein binds to regulate their transcription', 'Only inside the lacZ gene itself, unrelated to regulation', 'Within the ribosome'],
   correctIndex: 1,
   explanation: 'The operator is located near the structural genes and serves as the binding site for the repressor protein, controlling their transcription.',
   difficulty: 'medium'
-};
-
-regulationQuestions.push(
+},
   { id: 're17', topic: 'regulation', type: 'statement', question: 'Consider the following statements about the lac operon:\n1. lacZ codes for beta-galactosidase.\n2. The repressor protein is coded for by lacI.\n3. In the presence of lactose, the repressor binds tightly to the operator, blocking transcription.\nWhich of the statements given above are correct?', options: ['1 and 2 only', '2 and 3 only', '1 and 3 only', '1, 2 and 3'], correctIndex: 0, explanation: 'Statements 1 and 2 are correct; in the presence of lactose (via allolactose), the repressor is inactivated and does NOT bind the operator, so statement 3 is incorrect.', difficulty: 'medium' },
   { id: 're18', topic: 'regulation', type: 'count-correct', question: 'How many of the following genes are considered structural genes of the lac operon?\n(i) lacZ\n(ii) lacY\n(iii) lacA\n(iv) lacI', options: ['One', 'Two', 'Three', 'Four'], correctIndex: 2, explanation: 'lacZ, lacY, and lacA are the three structural genes; lacI is the regulatory gene coding for the repressor, not a structural gene.', difficulty: 'medium' },
   { id: 're19', topic: 'regulation', type: 'matching', question: 'Match the lac operon component in Column I with its function in Column II.\nColumn I: A. lacZ, B. lacY, C. lacA, D. lacI\nColumn II: (i) Codes for permease, (ii) Codes for repressor protein, (iii) Codes for beta-galactosidase, (iv) Codes for transacetylase', options: ['A-iii, B-i, C-iv, D-ii', 'A-i, B-ii, C-iii, D-iv', 'A-ii, B-iii, C-i, D-iv', 'A-iii, B-iv, C-i, D-ii'], correctIndex: 0, explanation: 'lacZ = beta-galactosidase; lacY = permease; lacA = transacetylase; lacI = repressor protein.', difficulty: 'medium' },
-  { id: 're20', topic: 'regulation', type: 'mcq', question: 'The Human Genome Project (HGP) was an international, collaborative effort aimed primarily at', options: ('Sequencing the genome of E. coli only'.split(',')), correctIndex: 0, explanation: '', difficulty: 'easy' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+  {
   id: 're20', topic: 'regulation', type: 'mcq',
   question: 'The Human Genome Project (HGP) was an international, collaborative effort aimed primarily at',
   options: ['Sequencing the genome of E. coli only', 'Determining the complete sequence of base pairs in human DNA and identifying all human genes', 'Cloning human beings', 'Only studying the lac operon'],
   correctIndex: 1,
   explanation: 'HGP was a massive international project aimed at determining the complete sequence of human DNA and identifying all the genes it contains.',
   difficulty: 'easy'
-};
-
-regulationQuestions.push(
+},
   { id: 're21', topic: 'regulation', type: 'mcq', question: 'The Human Genome Project was formally completed in the year', options: ['1990', '2000', '2003', '2010'], correctIndex: 2, explanation: 'The Human Genome Project, launched in 1990, was declared essentially complete in 2003.', difficulty: 'medium' },
   { id: 're22', topic: 'regulation', type: 'mcq', question: 'The estimated total size of the human genome, in terms of base pairs, is approximately', options: ['3 million base pairs', '3 billion base pairs (3.3 x 10^9 bp)', '30 base pairs', '300 base pairs'], correctIndex: 1, explanation: 'The human genome is estimated to contain approximately 3.3 billion (3164.7 million) base pairs.', difficulty: 'medium' },
-  { id: 're23', topic: 'regulation', type: 'mcq', question: 'One of the surprising findings of the Human Genome Project was that the total number of protein-coding genes in the human genome is approximately', options: ('100,000, as originally predicted'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+  {
   id: 're23', topic: 'regulation', type: 'mcq',
   question: 'One of the surprising findings of the Human Genome Project was that the total number of protein-coding genes in the human genome is approximately',
   options: ['Much higher than originally predicted, over 100,000', 'Only around 30,000, far fewer than originally predicted', 'Exactly 46, matching the chromosome number', 'Zero, as humans have no protein-coding genes'],
   correctIndex: 1,
   explanation: 'Contrary to earlier expectations of well over 100,000 genes, HGP found the human genome contains a much smaller number, approximately 30,000 protein-coding genes.', 
   difficulty: 'medium'
-};
+},
 
-regulationQuestions.push(
   { id: 're24', topic: 'regulation', type: 'mcq', question: 'According to HGP findings, the proportion of the human genome that actually codes for proteins is estimated to be only about', options: ['98%', '50%', 'Around 2%', '100%'], correctIndex: 2, explanation: 'A striking HGP finding was that only about 2% of the human genome codes for proteins, with the rest being non-coding sequences.', difficulty: 'medium' },
-  { id: 're25', topic: 'regulation', type: 'mcq', question: 'According to HGP findings, most of the human genome consists of', options: ('Unique, non-repetitive sequences only'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+  {
   id: 're25', topic: 'regulation', type: 'mcq',
   question: 'According to HGP findings, a large portion of the human genome consists of',
   options: ['Unique, non-repetitive sequences only', 'Repetitive sequences that do not code for proteins', 'Only mitochondrial DNA', 'Only ribosomal RNA genes'],
   correctIndex: 1,
   explanation: 'A significant proportion of the human genome consists of repetitive DNA sequences that do not code for proteins.',
   difficulty: 'medium'
-};
-
-regulationQuestions.push(
-  { id: 're26', topic: 'regulation', type: 'mcq', question: 'The technique used to sequence the human genome by amplifying overlapping DNA fragments through cloning in host organisms like bacteria and yeast, followed by sequencing, is known as the', options: ('Whole genome shotgun approach only'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+},
+{
   id: 're26', topic: 'regulation', type: 'mcq',
   question: 'One of the two main strategies used to sequence the human genome, involving cloning DNA fragments in host organisms like bacteria and yeast before sequencing, is known as',
   options: ['Whole genome shotgun sequencing exclusively', 'Clone-by-clone (hierarchical) sequencing', 'Southern blotting', 'Northern blotting'],
   correctIndex: 1,
   explanation: 'The clone-by-clone (hierarchical) approach involved cloning DNA fragments in host vectors before sequencing, one of the main strategies used during HGP.',
   difficulty: 'hard'
-};
-
-regulationQuestions.push(
+},
   { id: 're27', topic: 'regulation', type: 'mcq', question: 'HGP found that among human chromosomes, the one with the largest number of genes is chromosome', options: ['Y chromosome', 'Chromosome 1', 'Chromosome 21', 'Chromosome 13'], correctIndex: 1, explanation: 'Chromosome 1 has the largest number of genes (about 2968), according to HGP findings.', difficulty: 'hard' },
-  { id: 're28', topic: 'regulation', type: 'mcq', question: 'HGP found that the human chromosome with the fewest genes is the', options: ('Chromosome 1'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+{
   id: 're28', topic: 'regulation', type: 'mcq',
   question: 'HGP found that the human chromosome with the fewest genes is the',
   options: ['Chromosome 1', 'Y chromosome', 'Chromosome 2', 'Chromosome 21'],
   correctIndex: 1,
   explanation: 'The Y chromosome has the fewest genes (around 231) among human chromosomes, according to HGP findings.',
   difficulty: 'hard'
-};
-
-regulationQuestions.push(
-  { id: 're29', topic: 'regulation', type: 'mcq', question: 'One important application of the Human Genome Project findings is in', options: ('Preventing all human reproduction'.split(',')), correctIndex: 0, explanation: '', difficulty: 'easy' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+},
+{
   id: 're29', topic: 'regulation', type: 'mcq',
   question: 'One important application of the Human Genome Project findings is in',
   options: ['Preventing all human reproduction', 'Understanding the genetic basis of diseases and potentially improving diagnosis and treatment', 'Eliminating the need for medical research entirely', 'Only cataloguing animal genomes'],
   correctIndex: 1,
   explanation: 'HGP findings have significant applications in understanding disease genetics, potentially improving diagnosis, treatment, and personalised medicine.',
   difficulty: 'easy'
-};
-
-regulationQuestions.push(
-  { id: 're30', topic: 'regulation', type: 'mcq', question: 'DNA fingerprinting is a technique used to', options: ('Sequence an entire genome from scratch'.split(',')), correctIndex: 0, explanation: '', difficulty: 'easy' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+},
+{
   id: 're30', topic: 'regulation', type: 'mcq',
   question: 'DNA fingerprinting is a technique used to',
   options: ['Sequence an entire genome from scratch', 'Identify individuals based on unique differences (polymorphisms) in specific regions of their DNA', 'Directly translate mRNA into protein', 'Replace the need for the polymerase chain reaction entirely'],
   correctIndex: 1,
   explanation: 'DNA fingerprinting identifies individuals by analysing polymorphic (variable) DNA sequences unique to each person.',
   difficulty: 'easy'
-};
-
-regulationQuestions.push(
+},
   { id: 're31', topic: 'regulation', type: 'mcq', question: 'The technique of DNA fingerprinting was originally developed by', options: ['Francis Crick', 'Alec Jeffreys', 'Har Gobind Khorana', 'Barbara McClintock'], correctIndex: 1, explanation: 'Alec Jeffreys developed the technique of DNA fingerprinting.', difficulty: 'medium' },
-  { id: 're32', topic: 'regulation', type: 'mcq', question: 'DNA fingerprinting relies on detecting variability in the number of short, tandemly repeated DNA sequences, technically known as', options: ('Restriction sites'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+  {
   id: 're32', topic: 'regulation', type: 'mcq',
   question: 'DNA fingerprinting relies on detecting variability in the number of short, tandemly repeated DNA sequences, technically known as',
   options: ['Restriction sites', 'Variable Number of Tandem Repeats (VNTRs)', 'Codons', 'Promoter elements'],
   correctIndex: 1,
   explanation: 'VNTRs (variable number of tandem repeats), also called satellite DNA, show high individual variability and form the basis of DNA fingerprinting.',
   difficulty: 'medium'
-};
-
-regulationQuestions.push(
-  { id: 're33', topic: 'regulation', type: 'mcq', question: 'Satellite DNA, which shows a distinct peak separate from the bulk of genomic DNA during density gradient centrifugation, is typically found in which chromosomal region?', options: ('Euchromatin'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+},
+{
   id: 're33', topic: 'regulation', type: 'mcq',
   question: 'Satellite DNA, which shows a distinct peak separate from the bulk of genomic DNA during density gradient centrifugation, is typically found in which chromosomal region?',
   options: ['Euchromatin', 'Heterochromatin', 'The origin of replication exclusively', 'The promoter region only'],
   correctIndex: 1,
   explanation: 'Satellite DNA, associated with repetitive sequences, is mainly located in heterochromatic regions of the chromosome.',
   difficulty: 'hard'
-};
-
-regulationQuestions.push(
-  { id: 're34', topic: 'regulation', type: 'mcq', question: 'The steps of DNA fingerprinting typically include isolation of DNA, digestion by restriction enzymes, separation of fragments by gel electrophoresis, and transfer to a synthetic membrane by', options: ('PCR amplification only'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+},
+{
   id: 're34', topic: 'regulation', type: 'mcq',
   question: 'The steps of DNA fingerprinting typically include isolation of DNA, digestion by restriction enzymes, separation of fragments by gel electrophoresis, and transfer to a synthetic membrane through a technique known as',
   options: ['PCR amplification only', 'Southern blotting', 'Vernalization', 'Aminoacylation'],
   correctIndex: 1,
   explanation: 'Southern blotting is used to transfer separated DNA fragments to a synthetic membrane before hybridisation with a labelled probe.',
   difficulty: 'hard'
-};
-
-regulationQuestions.push(
-  { id: 're35', topic: 'regulation', type: 'mcq', question: 'After Southern blotting, the membrane-bound DNA fragments are hybridised with a labelled VNTR probe, and the resulting bands are visualised using', options: ('Light microscopy'.split(',')), correctIndex: 0, explanation: '', difficulty: 'hard' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+},
+{
   id: 're35', topic: 'regulation', type: 'mcq',
   question: 'After Southern blotting, the membrane-bound DNA fragments are hybridised with a labelled VNTR probe, and the resulting bands are visualised using',
   options: ['Light microscopy', 'Autoradiography (when the probe is radioactively labelled)', 'Mass spectrometry', 'Flame photometry'],
   correctIndex: 1,
   explanation: 'Autoradiography detects the hybridised, radioactively labelled probe bound to specific DNA fragments, producing the characteristic banding pattern.',
   difficulty: 'hard'
-};
-
-regulationQuestions.push(
-  { id: 're36', topic: 'regulation', type: 'mcq', question: 'DNA fingerprinting is widely used in forensic science for identifying', options: ('Only bacterial species'.split(',')), correctIndex: 0, explanation: '', difficulty: 'easy' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+},
+{
   id: 're36', topic: 'regulation', type: 'mcq',
   question: 'DNA fingerprinting is widely used in forensic science for identifying',
   options: ['Only bacterial species present in soil', 'Suspects, victims, and for paternity testing based on unique individual DNA patterns', 'Only plant hybrids', 'Only viral genomes'],
   correctIndex: 1,
   explanation: 'DNA fingerprinting has extensive applications in forensic science, criminal investigation, and paternity testing due to its ability to uniquely identify individuals.',
   difficulty: 'easy'
-};
-
-regulationQuestions.push(
+},
   { id: 're37', topic: 'regulation', type: 'assertion-reason', question: 'Assertion (A): DNA fingerprinting can be used to establish biological parentage.\nReason (R): A child inherits half of the VNTR pattern from each biological parent, making the fingerprint pattern shared partially with both parents.', options: AR_OPTIONS, correctIndex: 0, explanation: 'Since VNTR patterns are inherited from both parents, this direct inheritance pattern explains why DNA fingerprinting is effective for parentage testing, correctly supporting the assertion.', difficulty: 'hard' },
   { id: 're38', topic: 'regulation', type: 'statement', question: 'Consider the following statements about the Human Genome Project and DNA fingerprinting:\n1. HGP found that only a small percentage of the human genome codes for protein.\n2. DNA fingerprinting relies on satellite DNA/VNTR polymorphisms.\n3. HGP found more protein-coding genes than originally predicted.\nWhich of the statements given above are correct?', options: ['1 and 2 only', '2 and 3 only', '1 and 3 only', '1, 2 and 3'], correctIndex: 0, explanation: 'Statements 1 and 2 are correct; HGP actually found fewer protein-coding genes than originally predicted, so statement 3 is incorrect.', difficulty: 'medium' },
   { id: 're39', topic: 'regulation', type: 'count-correct', question: 'How many of the following are correct steps/features of DNA fingerprinting?\n(i) Isolation of DNA\n(ii) Digestion with restriction enzymes\n(iii) Separation of fragments by gel electrophoresis\n(iv) Hybridisation with a labelled VNTR probe\n(v) Direct translation of DNA into protein', options: ['Two', 'Three', 'Four', 'Five'], correctIndex: 2, explanation: 'DNA isolation, restriction digestion, electrophoresis, and probe hybridisation are correct steps of DNA fingerprinting; direct translation of DNA into protein is not part of the technique (and is not biologically accurate).', difficulty: 'medium' },
-  { id: 're40', topic: 'regulation', type: 'mcq', question: 'Overall, gene regulation mechanisms like the lac operon, together with genome-scale projects like HGP and techniques like DNA fingerprinting, illustrate the broader theme that', options: ('Molecular biology has no practical applications'.split(',')), correctIndex: 0, explanation: '', difficulty: 'medium' },
-);
-regulationQuestions[regulationQuestions.length - 1] = {
+  {
   id: 're40', topic: 'regulation', type: 'mcq',
   question: 'Overall, gene regulation mechanisms like the lac operon, together with genome-scale projects like HGP and techniques like DNA fingerprinting, illustrate the broader theme that',
   options: ['Molecular biology has no practical applications', 'Understanding the molecular basis of inheritance has significant applications in medicine, agriculture, and forensic science', 'Genes are entirely static and unregulated', 'DNA structure is irrelevant to gene function'],
   correctIndex: 1,
   explanation: 'The study of molecular genetics — from gene regulation to genome sequencing and DNA-based identification — has wide-ranging practical applications across medicine, agriculture, and forensics.',
   difficulty: 'medium'
-};
+},
 ];
