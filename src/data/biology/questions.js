@@ -30,6 +30,10 @@ import { MORPHOLOGY_FLOWERING_PLANTS } from './banks/morphologyFloweringPlant';
 import { ANATOMY_FLOWERING_PLANTS } from './banks/anatomyFloweringPlants';
 import { BIOMOLECULES } from './banks/biomolecules';
 import { MICROBES_HUMAN_WELFARE } from './banks/microbesHumanWelfare';
+import { STRUCTURAL_ORGANISATION_ANIMALS } from './banks/structuralOrganisationAnimals';
+import { PLANT_GROWTH_DEVELOPMENT } from './banks/plantGrowthDevelopment';
+import { SEXUAL_REPRODUCTION_PLANTS} from './banks/sexualReproductionPlants';
+import { PRINCIPLE_INHERITENCE_VARIATION } from './banks/principleInheritenceVariation';
  
 export const QUESTION_BANK = {
   'biological-classification': BIOLOGICAL_CLASSIFICATION,
@@ -57,7 +61,11 @@ export const QUESTION_BANK = {
   'anatomy-flowering-plants': ANATOMY_FLOWERING_PLANTS,
   'biomolecules': BIOMOLECULES,
   'microbes-human-welfare': MICROBES_HUMAN_WELFARE,
-  
+  'structural-organisation-animals': STRUCTURAL_ORGANISATION_ANIMALS,
+  'plant-growth-development': PLANT_GROWTH_DEVELOPMENT,
+  'sexual-reproduction-plants': SEXUAL_REPRODUCTION_PLANTS,
+  'principle-inheritance-variation': PRINCIPLE_INHERITENCE_VARIATION,
+
   biomol: [
     {
       id: 'biomol-1',
