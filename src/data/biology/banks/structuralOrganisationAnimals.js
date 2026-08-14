@@ -15,13 +15,6 @@
 //   difficulty: 'easy' | 'medium' | 'hard'
 // }
 
-const AR_OPTIONS = [
-  'Both A and R are true, and R is the correct explanation of A',
-  'Both A and R are true, but R is NOT the correct explanation of A',
-  'A is true, but R is false',
-  'A is false, but R is true',
-  'Both A and R are false'
-];
 
 // ============================================================
 // SECTION 1: TISSUE (Animal Tissues) — ~78 questions
@@ -127,13 +120,11 @@ export const STRUCTURAL_ORGANISATION_ANIMALS = [
   { id: 't76', topic: 'tissue', type: 'mcq', question: 'Dendrites of a neuron primarily function to', options: ['Carry impulses away from the cell body', 'Receive and carry impulses towards the cell body', 'Store fat globules', 'Form the myelin sheath'], correctIndex: 1, explanation: 'Dendrites receive impulses and conduct them towards the cell body.', difficulty: 'easy' },
   { id: 't77', topic: 'tissue', type: 'mcq', question: 'The axon of a neuron mainly functions to', options: ['Receive impulses from other neurons', 'Transmit impulses away from the cell body', 'Store the nucleus', 'Produce hormones'], correctIndex: 1, explanation: 'The axon is a single long process that transmits nerve impulses away from the cell body.', difficulty: 'easy' },
   { id: 't78', topic: 'tissue', type: 'count-correct', question: 'How many of the following statements about neural tissue are correct?\n(i) Neurons are highly excitable cells.\n(ii) Neural tissue has abundant intercellular matrix like connective tissue.\n(iii) A synapse allows communication between two neurons.\n(iv) Neuroglial cells support and protect neurons.', options: ['One', 'Two', 'Three', 'Four'], correctIndex: 2, explanation: 'Statements (i), (iii), and (iv) are correct; neural tissue, unlike connective tissue, does not have abundant intercellular matrix.', difficulty: 'medium' },
-];
 
 // ============================================================
 // SECTION 2: FROG (Rana tigrina) — ~78 questions
 // ============================================================
 
-const frogQuestions = [
   // --- Habitat, habits, external morphology (1-12) ---
   { id: 'f1', topic: 'frog', type: 'mcq', question: 'Rana tigrina, the common Indian frog, is described as an animal that lives', options: ['Only in water throughout life', 'Only on land throughout life', 'Amphibiously — both in water and on land', 'Only in trees'], correctIndex: 2, explanation: 'Frogs are amphibians and can live both in freshwater and on land.', difficulty: 'easy' },
   { id: 'f2', topic: 'frog', type: 'mcq', question: 'Frogs are cold-blooded (poikilothermous) animals, meaning', options: ['Their body temperature stays constant', 'Their body temperature changes with the surrounding environment', 'They cannot survive in cold weather at all', 'They generate their own body heat like mammals'], correctIndex: 1, explanation: 'Poikilothermous animals like frogs lack an internal mechanism to regulate body temperature, which varies with the environment.', difficulty: 'easy' },
@@ -229,13 +220,11 @@ const frogQuestions = [
   { id: 'f76', topic: 'frog', type: 'mcq', question: 'Male frogs use their vocal sac chiefly to', options: ['Filter food particles', 'Amplify croaking sounds to attract females', 'Store excess water', 'Aid in digestion'], correctIndex: 1, explanation: 'The vocal sac in male frogs amplifies sound during croaking, largely used to attract females during the breeding season.', difficulty: 'medium' },
   { id: 'f77', topic: 'frog', type: 'count-correct', question: 'How many of the following endocrine glands are present in the frog?\n(i) Pituitary\n(ii) Thyroid\n(iii) Pancreas (islets)\n(iv) Adrenal\n(v) Malpighian tubules', options: ['Two', 'Three', 'Four', 'Five'], correctIndex: 2, explanation: 'Pituitary, thyroid, pancreas (islets), and adrenal glands are endocrine glands in the frog; Malpighian tubules are insect excretory structures, not endocrine glands.', difficulty: 'medium' },
   { id: 'f78', topic: 'frog', type: 'matching', question: 'Match the frog gland/organ in Column I with its main role in Column II.\nColumn I: A. Pituitary gland, B. Thyroid gland, C. Vocal sac\nColumn II: (i) Amplifies sound for mating calls, (ii) Master gland regulating other endocrine glands, (iii) Regulates metamorphosis', options: ['A-ii, B-iii, C-i', 'A-i, B-ii, C-iii', 'A-iii, B-i, C-ii', 'A-ii, B-i, C-iii'], correctIndex: 0, explanation: 'Pituitary = master gland; thyroid = regulates metamorphosis; vocal sac = amplifies mating calls.', difficulty: 'medium' },
-];
 
 // ============================================================
 // SECTION 3: COCKROACH (Periplaneta americana) — ~78 questions
 // ============================================================
 
-const cockroachQuestions = [
   // --- Habitat and external morphology (1-14) ---
   { id: 'c1', topic: 'cockroach', type: 'mcq', question: 'Periplaneta americana, the common cockroach, is mainly a', options: ['Diurnal insect active in daylight', 'Nocturnal insect that hides in dark crevices during the day', 'Fully aquatic insect', 'Insect found only in cold climates'], correctIndex: 1, explanation: 'Cockroaches are nocturnal, hiding in dark cracks and crevices during the day and becoming active at night.', difficulty: 'easy' },
   { id: 'c2', topic: 'cockroach', type: 'mcq', question: 'The cockroach body is externally divided into', options: ['Head and trunk only', 'Head, thorax, and abdomen', 'Head, neck, thorax, and tail', 'A single continuous segment'], correctIndex: 1, explanation: 'The cockroach body, like other insects, is divided into head, thorax, and abdomen.', difficulty: 'easy' },
