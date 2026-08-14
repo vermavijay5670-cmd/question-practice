@@ -25,7 +25,7 @@ const AR_OPTIONS = [
 ];
 
 
-const dnaStructureQuestions = [
+export const MOLECULAR_BASIS_INHERITANCE = [
 // ============================================================
 // SECTION 1: DNA STRUCTURE & PACKAGING — ~55 questions
 // ============================================================
