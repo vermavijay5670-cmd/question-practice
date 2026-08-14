@@ -24,7 +24,7 @@ export const CLASS_12 = [
   { id: 'sexual-reproduction-plants', name: 'Sexual Reproduction in Flowering Plants' },
   { id: 'human-reproduction', name: 'Human Reproduction' },
   { id: 'reproductive-health', name: 'Reproductive Health' },
-  { id: 'inheritance-variation', name: 'Principles of Inheritance and Variation' },
+  { id: 'principle-inheritance-variation', name: 'Principles of Inheritance and Variation' },
   { id: 'molecular-basis-inheritance', name: 'Molecular Basis of Inheritance' },
   { id: 'evolution', name: 'Evolution' },
   { id: 'human-health-disease', name: 'Human Health and Disease' },
