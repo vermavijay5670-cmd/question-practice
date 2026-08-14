@@ -1,9 +1,8 @@
-
-export const MOLECULAR_BASIS_INHERITANCE = [
 // ============================================================
 // SECTION 1: DNA STRUCTURE & PACKAGING — ~55 questions
 // ============================================================
 
+export const MOLECULAR_BASIS_INHERITANCE = [
   // --- Search for genetic material (1-10) ---
   { id: 's1', topic: 'dna-structure', type: 'mcq', question: 'Griffith\'s experiment on Streptococcus pneumoniae, in which heat-killed virulent (S) bacteria transformed live avirulent (R) bacteria into virulent ones, demonstrated the phenomenon of', options: ['Conjugation', 'Transformation', 'Transduction', 'Translation'], correctIndex: 1, explanation: 'Griffith\'s experiment demonstrated bacterial transformation, showing that some "transforming principle" from dead S bacteria could change R bacteria into virulent S bacteria.', difficulty: 'easy' },
   { id: 's2', topic: 'dna-structure', type: 'mcq', question: 'The biochemical identity of Griffith\'s "transforming principle" as DNA was established by', options: ['Hershey and Chase', 'Avery, MacLeod, and McCarty', 'Watson and Crick', 'Meselson and Stahl'], correctIndex: 1, explanation: 'Avery, MacLeod, and McCarty purified biochemicals from heat-killed S cells and showed that DNA alone was responsible for transformation.', difficulty: 'medium' },
