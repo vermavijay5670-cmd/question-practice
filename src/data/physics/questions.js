@@ -8,22 +8,7 @@ export const QUESTION_BANK = {
     'electrostatics-potential-capacitance': ELECTROSTATICS_POTENTIAL_CAPACITANCE,
 
 
-    'unit-dimensions': [
-    {
-      id: 'ud',
-      type: 'mcq',
-      question: 'unit of time is:',
-      options: [
-        's',
-        'm',
-        'kg',
-        'a',
-      ],
-      correctIndex: 0,
-      explanation: 'unit of time is second.',
-      difficulty: 'easy',
-    },
-  ],
+    
 };
 
 
