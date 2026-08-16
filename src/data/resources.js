@@ -191,7 +191,7 @@ export const RESOURCES = {
        shortnotes: 'YOUR LINK',
        flashcards: 'YOUR LINK',
      },
-     'thermodynamics': {
+     'mechanical-properties-fluids': {
        shortnotes: 'YOUR LINK',
        flashcards: 'YOUR LINK',
      },
