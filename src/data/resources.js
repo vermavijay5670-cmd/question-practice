@@ -143,9 +143,43 @@ export const RESOURCES = {
   chemistry: {
 
     'some-basics-chemistry': {
-        shortnotes: 'YOUR LINK',
+        shortnotes: 'https://notebook.google.com/notebook/f754b325-8065-4fa4-beea-cdc3f3aaae53/artifact/bec410b9-aeb8-4824-858e-f3a848cb29d6?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
         flashcards: 'https://notebook.google.com/notebook/f754b325-8065-4fa4-beea-cdc3f3aaae53/artifact/34730ff7-e969-4c64-bcee-e26a06782677?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
+    'structure-atom': {
+      shortnotes: 'https://notebook.google.com/notebook/722944b2-7749-4de8-9a32-37ee5d430a6e/artifact/4d41c26f-dbaa-483d-ae44-0773bd4feb0c?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+      flashcards: 'https://notebook.google.com/notebook/722944b2-7749-4de8-9a32-37ee5d430a6e/artifact/3c161448-caa7-431a-8891-e004299606bc?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'periodic-table': {
+      shortnotes: 'https://notebook.google.com/notebook/ff533c05-5331-4a19-af8d-796b4a1e3b1e/artifact/81baf84c-913d-496c-974c-7894f973e70c?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+      flashcards: 'https://notebook.google.com/notebook/ff533c05-5331-4a19-af8d-796b4a1e3b1e/artifact/153b1a07-9b48-4625-8e18-641ef12a405d?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'chemical-bonding-molecular-structure': {
+      shortnotes: '',
+      flashcards: 'https://notebook.google.com/notebook/f50611ef-149a-4ff1-8d04-a64ca2b662f3/artifact/0b3e6600-54f3-416c-9cea-871effcca70d?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'thermodynamics': {
+      shortnotes: '',
+      flashcards: 'https://notebook.google.com/notebook/3fa60767-013b-4a85-95c8-97457bc2d216/artifact/b0bf37a6-b800-482f-869b-9aaa93b52d47?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'equilibrium': {
+      shortnotes: '',
+      flashcards: 'https://notebook.google.com/notebook/8ad1d1f0-0b2c-41d8-9896-fafb7a135bfe/artifact/476cafa3-92d6-48a8-8dfc-a011f9e18005?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'redox-reactions': {
+      shortnotes: '',
+      flashcards: 'https://notebook.google.com/notebook/8e677bc2-dc03-42c7-a0a0-1ac1dab54ad1/artifact/0f800adf-f4d0-4ce5-8181-7345fed5c5b6?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'organic-chem-basic-principles-techniques': {
+      shortnotes: '',
+      flashcards: 'https://notebook.google.com/notebook/4b9bb7d3-33e4-40db-b18a-c524ac6e4114/artifact/4a58c001-6d1d-4a0f-b13f-071d185fbb9e?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'hydrocarbons': {
+      shortnotes: '',
+      flashcards: 'https://notebook.google.com/notebook/efcfa089-f70a-432a-a090-a992ecdbfadf/artifact/e594ad86-904f-4c55-acf6-b6c022b922b6?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+
+
 
   },
 
@@ -157,7 +191,6 @@ export const RESOURCES = {
        flashcards: 'https://notebook.google.com/notebook/0d7525ff-0861-4735-ae5b-87cb24208a32/artifact/dae10c04-56b7-4310-bcd2-303aaf1ced3d?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      
-
 
   },
 
