@@ -191,6 +191,10 @@ export const RESOURCES = {
        shortnotes: 'YOUR LINK',
        flashcards: 'YOUR LINK',
      },
+     'thermodynamics': {
+       shortnotes: 'YOUR LINK',
+       flashcards: 'YOUR LINK',
+     },
      
 
   },
