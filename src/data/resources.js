@@ -187,6 +187,10 @@ export const RESOURCES = {
        shortnotes: 'YOUR LINK',
        flashcards: 'https://notebook.google.com/notebook/0d7525ff-0861-4735-ae5b-87cb24208a32/artifact/dae10c04-56b7-4310-bcd2-303aaf1ced3d?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
+     'motion-straight-line': {
+       shortnotes: 'YOUR LINK',
+       flashcards: 'YOUR LINK',
+     },
      
 
   },
