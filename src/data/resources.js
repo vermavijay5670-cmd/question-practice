@@ -217,7 +217,7 @@ export const RESOURCES = {
      },
      'mechanical-properties-fluids': {
        shortnotes: 'YOUR LINK',
-       flashcards: 'https://notebook.google.com/notebook/b89e3e57-ce2b-4953-9387-9de456a8ba70/artifact/464b7f8f-4ba4-4132-a580-1f7a425ebf36?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_,
+       flashcards: 'https://notebook.google.com/notebook/b89e3e57-ce2b-4953-9387-9de456a8ba70/artifact/464b7f8f-4ba4-4132-a580-1f7a425ebf36?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'thermal-properties-matter': {
        shortnotes: '',
