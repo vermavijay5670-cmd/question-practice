@@ -184,18 +184,61 @@ export const RESOURCES = {
   physics: {
 
      'unit-dimensions': {
-       shortnotes: 'YOUR LINK',
+       shortnotes: 'https://notebook.google.com/notebook/0d7525ff-0861-4735-ae5b-87cb24208a32/artifact/499e56da-cea6-4678-a114-5fcb74ada1aa?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/0d7525ff-0861-4735-ae5b-87cb24208a32/artifact/dae10c04-56b7-4310-bcd2-303aaf1ced3d?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'motion-straight-line': {
-       shortnotes: 'YOUR LINK',
-       flashcards: 'YOUR LINK',
+       shortnotes: 'https://notebook.google.com/notebook/ec32a07a-a643-4f2d-b87a-9c59d699c1dc/artifact/6c6ba13c-5c81-469e-b2c5-dfe189f49b70?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: 'https://notebook.google.com/notebook/ec32a07a-a643-4f2d-b87a-9c59d699c1dc/artifact/b847bf63-11a3-45d1-99ee-46eec85b9a1c?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'motion-plane': {
+       shortnotes: 'https://notebook.google.com/notebook/d299b6c4-4ca8-4f75-be34-3bea206f663b/artifact/6f6df017-1b55-45e7-8fe3-b7c987da9c39?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: 'https://notebook.google.com/notebook/d299b6c4-4ca8-4f75-be34-3bea206f663b/artifact/a973632e-42b0-4389-9c7e-0a5c3f6fd39d?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'laws-motion': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/b4f27650-81de-4704-939c-1164a9fbc673/artifact/c82a09b5-c6ca-4dd6-9365-ab423cf0e839?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'work-energy-power': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/647f93ec-061b-45ec-8b46-7e3bb80ea688/artifact/a0abd7e8-b6b9-4119-be37-7f35e1109f5c?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'system-particles-rotational-motion': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/edbde055-a852-4a90-b2a9-677bf48658db/artifact/edca3c22-8880-4a3b-a509-85499e23bb75?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'gravitation': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/8f952f49-0910-48bb-90e4-8a59fa4bcba7/artifact/193d40b9-13c6-4b42-90f9-0ac2576bc405?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'mechanical-properties-solids': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/8aba5542-c9de-4c8b-a697-fa2459ebfbd0/artifact/d1ede18a-8efb-456c-af37-8e5aea88612b?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'mechanical-properties-fluids': {
        shortnotes: 'YOUR LINK',
-       flashcards: 'YOUR LINK',
+       flashcards: 'https://notebook.google.com/notebook/b89e3e57-ce2b-4953-9387-9de456a8ba70/artifact/464b7f8f-4ba4-4132-a580-1f7a425ebf36?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_,
      },
-     
+     'thermal-properties-matter': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/a7cc00f1-24b5-4cf0-a88b-b8a66f46f48b/artifact/06ebb542-077a-4492-9bf5-3aeb62dcfa04?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'thermodynamics': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/caebf2b4-2a15-4a2c-abfb-a679a3e07db1/artifact/18bff8f2-5406-44eb-9cb4-a87375c3e4c2?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'kinetic-theory': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/6af68bba-4392-43cd-b898-5db37d8e45d6/artifact/5f226d4f-2a39-453b-a5fa-0beddae7ad87?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'oscillations': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/efa31033-2083-4b91-9e41-a0d3c274ae46/artifact/8f4bc3df-8f30-41c5-85da-a2adcd0c298c?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'waves': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/81829122-dcaf-4fbe-a01f-82b5b1785de7/artifact/c00b8357-f4fe-4861-bfb1-0f4539a8620b?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
 
   },
 
