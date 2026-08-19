@@ -8,7 +8,8 @@ import { THERMODYNAMICS } from './banks/thermodynamics';
 import { EQUILIBRIUM } from './banks/equilibrium';
 import { REDOX_REACTIONS } from './banks/redoxreactions';
 import { ORGANIC_CHEM_PRINCIPLES_TECHNIQUES } from './banks/organicChemBasicsPrinciplesTechniques';
-
+import { ELEMENTS_PERIODIC_PROPERTIES } from './banks/periodictable';
+import { HYDROCARBONS } from './banks/hydrocarbons';
 
 export const QUESTION_BANK = {
   'some-basics-chemistry': SOME_BASICS_CHEMISTRY,
@@ -21,6 +22,8 @@ export const QUESTION_BANK = {
   'equilibrium': EQUILIBRIUM,
   'redox-reactions': REDOX_REACTIONS,
   'organic-chem-basic-principles-techniques': ORGANIC_CHEM_PRINCIPLES_TECHNIQUES,
+  'periodic-table': ELEMENTS_PERIODIC_PROPERTIES,
+  'hydrocarbons': HYDROCARBONS,
 
 };
 
