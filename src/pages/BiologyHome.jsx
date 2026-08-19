@@ -289,18 +289,18 @@ export default function BiologyHome() {
           <div className="header-actions">
 
             <Link
-              to="/biology/mock-test"
+              to="/biology/mock"
               className="mock-test-button"
             >
               Mock test
             </Link>
 
             <Link
-              to="/biology/mistake-bank"
+              to="/biology/mistakes"
               className="mistake-button"
             >
               Mistake bank (
-              {state.mistakes?.biology?.length || 0}
+              {Object.keys(state.mistakes?.biology || {}).length}
               )
             </Link>
 
