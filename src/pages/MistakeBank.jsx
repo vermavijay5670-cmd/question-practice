@@ -1,23 +1,32 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useProgress } from '../context/ProgressContext';
-import { ALL_CHAPTERS } from '../data/biology/chapters';
+import { ALL_CHAPTERS as BIO_CHAPTERS } from '../data/biology/chapters';
+import { ALL_CHAPTERS as PHYSICS_CHAPTERS } from '../data/physics/chapters';
+import { ALL_CHAPTERS as CHEM_CHAPTERS } from '../data/chemistry/chapters';
 import QuizEngine from '../components/practice/QuizEngine';
 import '../styles/Practice.css';
 
-export default function MistakeBank() {
+const SUBJECT_DATA = {
+  biology: { chapters: BIO_CHAPTERS, label: 'Biology', backTo: '/biology' },
+  physics: { chapters: PHYSICS_CHAPTERS, label: 'Physics', backTo: '/physics' },
+  chemistry: { chapters: CHEM_CHAPTERS, label: 'Chemistry', backTo: '/chemistry' },
+};
+
+export default function MistakeBank({ subject = 'biology' }) {
+  const { chapters, label, backTo } = SUBJECT_DATA[subject];
   const { state } = useProgress();
-  const mistakes = Object.values(state.mistakes.biology || {});
+  const mistakes = Object.values(state.mistakes[subject] || {});
   const [reviewing, setReviewing] = useState(false);
 
   if (reviewing && mistakes.length) {
     return (
       <QuizEngine
-        subject="biology"
+        subject={subject}
         chapterId="mistake-review"
         title="Mistake review"
         questions={mistakes}
-        backTo="/biology/mistakes"
+        backTo={`${backTo}/mistakes`}
         backLabel="Mistake bank"
       />
     );
@@ -26,7 +35,7 @@ export default function MistakeBank() {
   return (
     <main className="practice">
       <div className="practice-shell">
-        <Link to="/biology" className="back-link">← Biology chapters</Link>
+        <Link to={backTo} className="back-link">← {label} chapters</Link>
         <div className="summary-card" style={{ marginTop: '1.5rem' }}>
           <div className="q-type-tag">Mistake bank</div>
           <div className="summary-score">{mistakes.length}</div>
@@ -41,7 +50,7 @@ export default function MistakeBank() {
         {mistakes.length > 0 && (
           <div style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
             {mistakes.map(m => {
-              const chapter = ALL_CHAPTERS.find(c => c.id === m.chapterId);
+              const chapter = chapters.find(c => c.id === m.chapterId);
               return (
                 <div key={m.id} className="chapter-card" style={{ background: 'var(--surface)' }}>
                   <div className="name" style={{ fontSize: '0.95rem' }}>{chapter?.name || m.chapterId}</div>

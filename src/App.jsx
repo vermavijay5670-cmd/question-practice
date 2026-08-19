@@ -58,12 +58,12 @@ export default function App() {
 
             <Route
               path="/biology/mock"
-              element={<MockTest />}
+              element={<MockTest subject="biology" />}
             />
 
             <Route
               path="/biology/mistakes"
-              element={<MistakeBank />}
+              element={<MistakeBank subject="biology" />}
             />
 
 
