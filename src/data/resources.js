@@ -153,11 +153,11 @@ export const RESOURCES = {
        flashcards: 'https://notebook.google.com/notebook/ff533c05-5331-4a19-af8d-796b4a1e3b1e/artifact/153b1a07-9b48-4625-8e18-641ef12a405d?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'chemical-bonding-molecular-structure': {
-       shortnotes: ' ',
+       shortnotes: 'https://notebook.google.com/notebook/f50611ef-149a-4ff1-8d04-a64ca2b662f3/artifact/fba2813d-182c-461e-abaf-7bcd610610eb?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/f50611ef-149a-4ff1-8d04-a64ca2b662f3/artifact/0b3e6600-54f3-416c-9cea-871effcca70d?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'thermodynamics': {
-       shortnotes: ' ',
+       shortnotes: 'https://notebook.google.com/notebook/3fa60767-013b-4a85-95c8-97457bc2d216/artifact/de3fad4b-8506-4db5-8969-b980cbbb8bb3?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/3fa60767-013b-4a85-95c8-97457bc2d216/artifact/b0bf37a6-b800-482f-869b-9aaa93b52d47?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'equilibrium': {
