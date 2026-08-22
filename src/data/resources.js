@@ -197,7 +197,6 @@ export const RESOURCES = {
        flashcards: 'https://notebook.google.com/notebook/ab23a52c-854d-4e2e-9274-4273c8223d41/artifact/04b418e9-a855-4dad-b837-98025000df85?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      
-     }
   },
 
 
