@@ -258,6 +258,39 @@ export const RESOURCES = {
        shortnotes: '',
        flashcards: 'https://notebook.google.com/notebook/81829122-dcaf-4fbe-a01f-82b5b1785de7/artifact/c00b8357-f4fe-4861-bfb1-0f4539a8620b?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
+     'electric-charge-fields': {
+       shortnotes: 'https://notebook.google.com/notebook/a38e174b-b0e7-4313-aba3-55f502703a1a/artifact/513d7c63-77c5-4987-a945-41b6aa3d87dc?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: 'https://notebook.google.com/notebook/0c6191f9-1df1-40e9-a777-818113d6ed8e/artifact/69a4ac15-fbbb-4cbe-92d2-6baa3f823892?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'electrostatics-potential-capacitance': {
+       shortnotes: 'https://notebook.google.com/notebook/90037d89-e41c-4575-9b10-b1358196296e/artifact/bc6603d4-f35e-451a-89f0-28ea6a04871e?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: 'https://notebook.google.com/notebook/6edcbfd3-7615-46c1-be12-83962e79c62b/artifact/279da9f0-d10a-4f47-8942-d548da2e2ca0?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'current-electricity': {
+       shortnotes: 'https://notebook.google.com/notebook/b600a2d4-2e00-45da-a855-cf1c6d343d90/artifact/d2e51a4d-b264-417e-a214-3aea2c55cbc6?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: 'https://notebook.google.com/notebook/ea6548c0-ca4b-4e21-8b47-202c3c9bf37b/artifact/1ee6de8a-682f-400c-a559-46f4714d8430?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'moving-charges-magnetism': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/fda6c281-cb32-4cb1-b9d1-070da9a204c1/artifact/1d1aaf38-6ea0-412d-a51b-3a4bb1426645?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'magnetism-matters': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/909908bf-f196-472b-b5fe-eebaeeb57e8e/artifact/94d6b3d7-3f68-4802-aed0-9518a8c85a9f?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'electromagnetic-induction': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/a3a8abe7-8c3d-4a4c-b825-e3d59aa15ba8/artifact/04018f14-1c4c-4c82-a106-ea9194460a81?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'alternating-current': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/38788d25-9e8d-4809-baa2-235e4518cc77/artifact/9fdced62-c57b-40da-99cd-fefa378d1302?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'electromagnetic-waves': {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/5bcbf400-63ec-45f7-9e7c-95a930eaf053/artifact/332c133c-3cb3-47e1-9d5d-8f70e85a4203?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+
 
   },
 
