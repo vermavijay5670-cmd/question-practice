@@ -6,12 +6,7 @@ const ProgressContext = createContext(null);
 function loadState() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) {
-      const saved = JSON.parse(raw);
-      // Attempts are intentionally session-only. Older saved attempts are
-      // ignored so every new visit starts with a fresh test state.
-      return { attempts: {}, mistakes: saved.mistakes || {}, bookmarks: saved.bookmarks || {} };
-    }
+    if (raw) return JSON.parse(raw);
   } catch (e) { /* ignore corrupt storage */ }
   return { attempts: {}, mistakes: {}, bookmarks: {} };
 }
@@ -24,11 +19,7 @@ export function ProgressProvider({ children }) {
   const [state, setState] = useState(loadState);
 
   useEffect(() => {
-    // Do not persist attempts/session scores. Questions attempted in a test
-    // should never be carried into the next visit or browser refresh.
-    const { attempts, ...persistentState } = state;
-    void attempts;
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(persistentState));
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   }, [state]);
 
   const recordAnswer = useCallback((subject, chapterId, question, isCorrect) => {
