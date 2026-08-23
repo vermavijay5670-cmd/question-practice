@@ -39,45 +39,81 @@
 
 .q-nav-arrow {
   flex: 0 0 auto;
-  width: 42px;
-  height: 42px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 1.5px solid var(--line);
   background: var(--surface);
   color: var(--ink);
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: border-color 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, 0 8px 16px -8px rgba(0,0,0,0.6);
+  transition: border-color 0.15s ease, background 0.15s ease, opacity 0.15s ease, transform 0.1s ease;
 }
-.q-nav-arrow:hover:not(:disabled) { border-color: var(--bio-mid); }
+.q-nav-arrow:hover:not(:disabled) { border-color: var(--bio-mid); transform: translateY(-1px); }
+.q-nav-arrow:active:not(:disabled) { transform: translateY(0); }
 .q-nav-arrow:disabled { opacity: 0.3; cursor: default; }
 .q-nav-arrow.finish {
   background: var(--bio-bright);
   border-color: var(--bio-bright);
   color: var(--void);
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 .q-nav-arrow.finish:disabled { opacity: 0.35; }
 
 @media (max-width: 520px) {
   .q-nav-row { gap: 0.5rem; }
-  .q-nav-arrow { width: 34px; height: 34px; font-size: 1.1rem; }
+  .q-nav-arrow { width: 46px; height: 46px; font-size: 1.4rem; }
   .q-card { padding: 1.4rem 1.1rem; }
 }
 
 .q-card {
+  position: relative;
   flex: 1;
   min-width: 0;
   background: var(--bio-paper);
   color: #1c2419;
-  border-radius: 16px;
+  border-radius: 14px 17px 15px 16px;
   padding: 2rem;
   font-family: var(--font-body);
+  transform: rotate(-0.3deg);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.6) inset,
+    0 -22px 34px -26px rgba(28,36,25,0.4) inset,
+    2px 2px 0 rgba(28,36,25,0.05) inset,
+    0 16px 28px -14px rgba(10,12,11,0.5),
+    0 3px 0 rgba(10,12,11,0.12);
 }
+/* grainy paper fibre noise */
+.q-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+}
+/* fold crease + scratch marks + soft vignette, evoking a worn, folded sheet */
+.q-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    linear-gradient(101deg, transparent 47.5%, rgba(28,36,25,0.1) 48.3%, rgba(255,255,255,0.45) 49%, rgba(28,36,25,0.06) 49.7%, transparent 51%),
+    linear-gradient(15deg, transparent 88%, rgba(28,36,25,0.09) 89%, transparent 90.5%),
+    linear-gradient(160deg, transparent 30%, rgba(28,36,25,0.05) 31%, transparent 32%),
+    radial-gradient(ellipse at 12% 8%, rgba(255,255,255,0.5), transparent 45%),
+    radial-gradient(ellipse at 100% 100%, rgba(28,36,25,0.16), transparent 55%);
+}
+.q-card > * { position: relative; z-index: 1; }
 
 .q-type-tag {
   font-family: var(--font-mono);
@@ -143,15 +179,81 @@
 .bookmark-btn.active { color: var(--bio-accent); border-color: var(--bio-accent); }
 
 .summary-card {
-  background: var(--surface);
+  position: relative;
+  background:
+    linear-gradient(155deg, rgba(255,255,255,0.05), transparent 40%),
+    linear-gradient(160deg, var(--surface-2) 0%, var(--surface) 65%, #0d0f0e 100%);
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: 20px;
   padding: 2.5rem 2rem;
   text-align: center;
+  overflow: hidden;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.08) inset,
+    0 -1px 0 rgba(0,0,0,0.5) inset,
+    1px 0 0 rgba(255,255,255,0.03) inset,
+    -1px 0 0 rgba(0,0,0,0.35) inset,
+    0 26px 44px -22px rgba(0,0,0,0.65),
+    0 3px 0 rgba(0,0,0,0.3);
 }
+/* grainy noise film over the panel, like brushed / pressed material */
+.summary-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.1;
+  mix-blend-mode: overlay;
+}
+/* soft sheen catching the top-left edge, like light on a beveled panel */
+.summary-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 20% -10%, rgba(255,255,255,0.12), transparent 55%),
+    radial-gradient(ellipse at 105% 115%, rgba(0,0,0,0.5), transparent 55%);
+}
+.summary-card > * { position: relative; z-index: 1; }
+
 .summary-score {
   font-family: var(--font-display);
   font-size: 3rem;
   color: var(--bio-bright);
 }
 .summary-actions { display: flex; gap: 0.75rem; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap; }
+
+/* Base styles for buttons/links used across setup & summary screens — these had
+   no shared definition before, so they'd render as plain unstyled browser buttons. */
+.back-link {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-dim);
+}
+.back-link:hover { color: var(--ink); }
+
+.pill-btn {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  padding: 0.65rem 1.2rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  transition: border-color 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+}
+.pill-btn:hover:not(:disabled) { border-color: var(--bio-mid); }
+.pill-btn:disabled { opacity: 0.35; cursor: default; }
+.pill-btn.primary {
+  background: var(--bio-bright);
+  color: var(--void);
+  border-color: var(--bio-bright);
+  font-weight: 600;
+}
+.pill-btn.primary:hover:not(:disabled) { filter: brightness(1.06); }
