@@ -31,7 +31,47 @@
 }
 .practice-track-fill { height: 100%; background: var(--bio-bright); transition: width 0.3s ease; }
 
+.q-nav-row {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.q-nav-arrow {
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 1.3rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+}
+.q-nav-arrow:hover:not(:disabled) { border-color: var(--bio-mid); }
+.q-nav-arrow:disabled { opacity: 0.3; cursor: default; }
+.q-nav-arrow.finish {
+  background: var(--bio-bright);
+  border-color: var(--bio-bright);
+  color: var(--void);
+  font-size: 1.1rem;
+}
+.q-nav-arrow.finish:disabled { opacity: 0.35; }
+
+@media (max-width: 520px) {
+  .q-nav-row { gap: 0.5rem; }
+  .q-nav-arrow { width: 34px; height: 34px; font-size: 1.1rem; }
+  .q-card { padding: 1.4rem 1.1rem; }
+}
+
 .q-card {
+  flex: 1;
+  min-width: 0;
   background: var(--bio-paper);
   color: #1c2419;
   border-radius: 16px;
@@ -101,18 +141,6 @@
   background: transparent;
 }
 .bookmark-btn.active { color: var(--bio-accent); border-color: var(--bio-accent); }
-
-.next-btn {
-  font-family: var(--font-mono);
-  font-weight: 600;
-  font-size: 0.85rem;
-  background: var(--bio-bright);
-  color: var(--void);
-  border: none;
-  padding: 0.7rem 1.4rem;
-  border-radius: 999px;
-}
-.next-btn:disabled { opacity: 0.35; }
 
 .summary-card {
   background: var(--surface);

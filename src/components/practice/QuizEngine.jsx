@@ -17,45 +17,93 @@ function formatTime(totalSeconds) {
   return `${m}:${s.toString().padStart(2, '0')}`;
 }
 
+// Checks a saved session against the current question set — if the chapter's
+// questions changed (or it's a freshly shuffled mock test), the old session
+// no longer lines up and should be ignored rather than resumed into garbage.
+function sessionMatches(session, questions) {
+  if (!session || !Array.isArray(session.answers)) return false;
+  if (session.questionIds?.length !== questions.length) return false;
+  for (let i = 0; i < questions.length; i++) {
+    if (session.questionIds[i] !== questions[i].id) return false;
+  }
+  return true;
+}
+
 export default function QuizEngine({ subject, chapterId, title, questions, backTo, backLabel }) {
-  const { recordAnswer, recordSessionScore, toggleBookmark, state } = useProgress();
+  const { recordAnswer, recordSessionScore, toggleBookmark, state, getSession, saveSession, clearSession } = useProgress();
+
+  // Look up any in-progress attempt for this exact chapter + question set once, on mount.
+  const savedSession = useMemo(() => {
+    const s = getSession(subject, chapterId);
+    return sessionMatches(s, questions) ? s : null;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // 'setup' lets you optionally set a timer before starting — there is no default
-  // time limit unless you choose one here.
-  const [phase, setPhase] = useState('setup');
+  // time limit unless you choose one here. Resuming a saved session skips setup.
+  const [phase, setPhase] = useState(savedSession?.phase === 'active' ? 'active' : 'setup');
   const [customMinutes, setCustomMinutes] = useState('');
-  const [timerTotalSeconds, setTimerTotalSeconds] = useState(null);
-  const [remainingSeconds, setRemainingSeconds] = useState(null);
+  const [timerTotalSeconds, setTimerTotalSeconds] = useState(savedSession?.timerTotalSeconds ?? null);
+  const [timerEndAt, setTimerEndAt] = useState(savedSession?.timerEndAt ?? null);
+  const [tick, setTick] = useState(0); // forces a re-render each second so the countdown display updates
 
-  const [index, setIndex] = useState(0);
-  const [selected, setSelected] = useState(null);
-  const [score, setScore] = useState(0);
-  const [skippedCount, setSkippedCount] = useState(0);
+  const [index, setIndex] = useState(() => {
+    if (!savedSession) return 0;
+    return Math.min(savedSession.index, questions.length - 1);
+  });
+  // answers[i] is null (untouched), { type: 'answered', selected, correct }, or { type: 'skipped' }
+  const [answers, setAnswers] = useState(() => savedSession?.answers ?? Array(questions.length).fill(null));
   const finishedRef = useRef(false);
+  const scoreRef = useRef(0);
 
   const current = questions[index];
   const bookmarks = state.bookmarks[subject] || {};
   const isBookmarked = current && !!bookmarks[current.id];
 
+  const currentAnswer = answers[index] || null;
+  const answered = currentAnswer !== null;
+  const selectedIndex = currentAnswer?.type === 'answered' ? currentAnswer.selected : null;
+
+  const score = useMemo(
+    () => answers.reduce((n, a) => n + (a?.type === 'answered' && a.correct ? 1 : 0), 0),
+    [answers]
+  );
+  const skippedCount = useMemo(() => answers.filter(a => a?.type === 'skipped').length, [answers]);
+  scoreRef.current = score;
+
+  const remainingSeconds = timerEndAt !== null ? Math.max(0, Math.ceil((timerEndAt - Date.now()) / 1000)) : null;
   const pct = useMemo(() => Math.round((index / questions.length) * 100), [index, questions.length]);
 
-  // Countdown — only runs when a timer was actually set, and auto-finishes at zero.
+  // Persist progress (question index, per-question answers, timer) as it changes,
+  // so reloading or navigating away and back resumes exactly where you left off.
   useEffect(() => {
-    if (phase !== 'active' || timerTotalSeconds === null) return undefined;
-    const tick = setInterval(() => {
-      setRemainingSeconds((prev) => {
-        if (prev === null) return prev;
-        if (prev <= 1) {
-          clearInterval(tick);
-          if (!finishedRef.current) finishSession();
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
-    return () => clearInterval(tick);
+    if (phase !== 'active') return;
+    saveSession(subject, chapterId, {
+      questionIds: questions.map(q => q.id),
+      index,
+      answers,
+      phase,
+      timerTotalSeconds,
+      timerEndAt,
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase, timerTotalSeconds]);
+  }, [phase, index, answers, timerTotalSeconds, timerEndAt]);
+
+  // Countdown — only runs when a timer was actually set, and auto-finishes at zero.
+  // Uses a fixed end timestamp rather than a decrementing counter so it survives reloads correctly.
+  useEffect(() => {
+    if (phase !== 'active' || timerEndAt === null) return undefined;
+    const iv = setInterval(() => {
+      if (Date.now() >= timerEndAt) {
+        clearInterval(iv);
+        if (!finishedRef.current) finishSession();
+      } else {
+        setTick(t => t + 1);
+      }
+    }, 1000);
+    return () => clearInterval(iv);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, timerEndAt]);
 
   if (!questions.length) {
     return (
@@ -71,53 +119,63 @@ export default function QuizEngine({ subject, chapterId, title, questions, backT
   function startWithTimer(minutes) {
     if (minutes) {
       setTimerTotalSeconds(minutes * 60);
-      setRemainingSeconds(minutes * 60);
+      setTimerEndAt(Date.now() + minutes * 60 * 1000);
     } else {
       setTimerTotalSeconds(null);
-      setRemainingSeconds(null);
+      setTimerEndAt(null);
     }
     setPhase('active');
   }
 
   function finishSession() {
     finishedRef.current = true;
-    recordSessionScore(subject, chapterId, score, questions.length);
+    recordSessionScore(subject, chapterId, scoreRef.current, questions.length);
+    clearSession(subject, chapterId);
     setPhase('finished');
   }
 
   function handleSelect(i) {
-    if (selected !== null) return;
-    setSelected(i);
+    if (answered) return;
     const correct = i === current.correctIndex;
-    if (correct) setScore(s => s + 1);
+    setAnswers(prev => {
+      const next = [...prev];
+      next[index] = { type: 'answered', selected: i, correct };
+      return next;
+    });
     recordAnswer(subject, current.chapterId || chapterId, current, correct);
   }
 
-  function goToNextOrFinish() {
+  function goToNext() {
     if (index + 1 >= questions.length) {
       finishSession();
     } else {
       setIndex(i => i + 1);
-      setSelected(null);
     }
   }
 
+  function goToPrev() {
+    setIndex(i => Math.max(0, i - 1));
+  }
+
   function handleSkip() {
-    if (selected !== null) return;
-    setSkippedCount(c => c + 1);
+    if (answered) return;
+    setAnswers(prev => {
+      const next = [...prev];
+      next[index] = { type: 'skipped' };
+      return next;
+    });
     recordAnswer(subject, current.chapterId || chapterId, current, false);
-    goToNextOrFinish();
+    goToNext();
   }
 
   function handleRetry() {
     finishedRef.current = false;
+    clearSession(subject, chapterId);
     setIndex(0);
-    setSelected(null);
-    setScore(0);
-    setSkippedCount(0);
+    setAnswers(Array(questions.length).fill(null));
     setPhase('setup');
     setTimerTotalSeconds(null);
-    setRemainingSeconds(null);
+    setTimerEndAt(null);
   }
 
   if (phase === 'setup') {
@@ -181,6 +239,8 @@ export default function QuizEngine({ subject, chapterId, title, questions, backT
     );
   }
 
+  const isLast = index + 1 >= questions.length;
+
   return (
     <main className="practice">
       <div className="practice-shell">
@@ -193,26 +253,48 @@ export default function QuizEngine({ subject, chapterId, title, questions, backT
         </div>
         <div className="practice-track"><div className="practice-track-fill" style={{ width: `${pct}%` }} /></div>
 
-        <div className="q-card">
-          <span className="q-type-tag">{TYPE_LABEL[current.type] || current.type} · {current.difficulty}</span>
-          <div className="q-text">{current.question}</div>
-          <div className="q-options">
-            {current.options.map((opt, i) => {
-              let cls = 'q-option';
-              if (selected !== null) {
-                if (i === current.correctIndex) cls += ' correct';
-                else if (i === selected) cls += ' incorrect';
-              }
-              return (
-                <button key={i} className={cls} disabled={selected !== null} onClick={() => handleSelect(i)}>
-                  {opt}
-                </button>
-              );
-            })}
+        <div className="q-nav-row">
+          <button
+            type="button"
+            className="q-nav-arrow"
+            aria-label="Previous question"
+            disabled={index === 0}
+            onClick={goToPrev}
+          >
+            ‹
+          </button>
+
+          <div className="q-card">
+            <span className="q-type-tag">{TYPE_LABEL[current.type] || current.type} · {current.difficulty}</span>
+            <div className="q-text">{current.question}</div>
+            <div className="q-options">
+              {current.options.map((opt, i) => {
+                let cls = 'q-option';
+                if (answered) {
+                  if (i === current.correctIndex) cls += ' correct';
+                  else if (i === selectedIndex) cls += ' incorrect';
+                }
+                return (
+                  <button key={i} className={cls} disabled={answered} onClick={() => handleSelect(i)}>
+                    {opt}
+                  </button>
+                );
+              })}
+            </div>
+            {answered && (
+              <div className="explanation-box">{current.explanation}</div>
+            )}
           </div>
-          {selected !== null && (
-            <div className="explanation-box">{current.explanation}</div>
-          )}
+
+          <button
+            type="button"
+            className={`q-nav-arrow${isLast ? ' finish' : ''}`}
+            aria-label={isLast ? 'Finish' : 'Next question'}
+            disabled={!answered}
+            onClick={goToNext}
+          >
+            {isLast ? '✓' : '›'}
+          </button>
         </div>
 
         <div className="practice-controls">
@@ -222,14 +304,9 @@ export default function QuizEngine({ subject, chapterId, title, questions, backT
           >
             {isBookmarked ? '★ Bookmarked' : '☆ Bookmark'}
           </button>
-          <div style={{ display: 'flex', gap: '0.6rem' }}>
-            {selected === null && (
-              <button className="bookmark-btn" onClick={handleSkip}>Skip</button>
-            )}
-            <button className="next-btn" disabled={selected === null} onClick={goToNextOrFinish}>
-              {index + 1 >= questions.length ? 'Finish' : 'Next question'}
-            </button>
-          </div>
+          {!answered && (
+            <button className="bookmark-btn" onClick={handleSkip}>Skip</button>
+          )}
         </div>
       </div>
     </main>
