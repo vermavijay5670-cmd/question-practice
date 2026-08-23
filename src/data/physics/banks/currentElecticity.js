@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export const CURRENT_ELECTRICITY = [
   // ==================== MCQ (70) ====================
   {

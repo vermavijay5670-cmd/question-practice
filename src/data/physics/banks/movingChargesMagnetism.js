@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export const MOVING_CHARGES_MAGNETISM = [
   // ==================== MCQ (70) ====================
   {

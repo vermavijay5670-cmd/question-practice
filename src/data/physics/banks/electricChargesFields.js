@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export const ELECTRIC_CHARGES_FIELDS = [
   // ==================== MCQ (70) ====================
   {

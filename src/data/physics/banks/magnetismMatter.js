@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export const MAGNETISM_MATTER = [
   // ==================== MCQ (70) ====================
   {
