@@ -84,7 +84,7 @@ export const RESOURCES = {
       flashcards: 'https://notebook.google.com/notebook/1d7976ed-da9c-4215-b73f-291d89254725/artifact/7f7a9dd5-e0ee-4eaa-bf00-ddbcd8816106?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'sexual-reproduction-plants': {
-      shortnotes: '',
+      shortnotes: 'https://notebook.google.com/notebook/feb3dd57-bf18-4e78-b7aa-b8818cb06c8b/artifact/0fbbad43-f9e1-4e81-bf53-9b8cf330057f?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
       flashcards: 'https://notebook.google.com/notebook/feb3dd57-bf18-4e78-b7aa-b8818cb06c8b/artifact/13fff00f-21e8-4f01-8b48-cc2eec9cb5d3?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'human-reproduction': {
@@ -189,12 +189,32 @@ export const RESOURCES = {
        flashcards: 'https://notebook.google.com/notebook/03e7c865-3e4f-4197-bdee-06d876628f23/artifact/4faede5f-db8a-4f96-9489-d11c85a5d025?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'd-f-elements': {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/d10ab6b7-c64d-44e1-bb9a-de3a3f954751/artifact/5a254476-d297-47f8-acb9-eb230b1860ea?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/d10ab6b7-c64d-44e1-bb9a-de3a3f954751/artifact/0a24bc1c-01b6-4d4e-aeea-1b20d175d2db?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'coordination-compounds': {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/ab23a52c-854d-4e2e-9274-4273c8223d41/artifact/cfef4334-251f-4b1e-a4bc-4ab3f5e1230c?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/ab23a52c-854d-4e2e-9274-4273c8223d41/artifact/04b418e9-a855-4dad-b837-98025000df85?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'haloalkanes-haloarenes': {
+       shortnotes: 'https://notebook.google.com/notebook/7660d93a-de8e-4ea4-af77-e97637eb3ed4/artifact/31139b51-70cf-4da2-a197-5bcea859d7d7?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: 'https://notebook.google.com/notebook/7660d93a-de8e-4ea4-af77-e97637eb3ed4/artifact/3cf10d34-d8c0-445c-ae9c-e3830d8a0e3e?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'alcohols-phenols-ethers': {
+       shortnotes: 'https://notebook.google.com/notebook/bc9662a0-e368-4d32-8ddd-f84e9205ed56/artifact/e37fb4d3-548e-4921-913d-9aefcacd720d?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: 'https://notebook.google.com/notebook/bc9662a0-e368-4d32-8ddd-f84e9205ed56/artifact/ec65d9c4-1262-43a5-ad38-83e577bbdd7b?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'aldehydes-ketones-carboxylicacids': {
+       shortnotes: 'https://notebook.google.com/notebook/14423813-5d0d-45b4-8b9f-4488ac8694bf/artifact/d8270964-f6c0-44db-8e73-234faa31e22b?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: 'https://notebook.google.com/notebook/14423813-5d0d-45b4-8b9f-4488ac8694bf/artifact/5c849ad4-e45c-4eac-8d90-30b3c5ccdbcf?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'amines': {
+       shortnotes: 'https://notebook.google.com/notebook/8df746ae-3660-489e-affd-4bbafaf08cc9/artifact/a4e86f40-cb28-432e-ab10-9f63d3e0ba16?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: 'https://notebook.google.com/notebook/8df746ae-3660-489e-affd-4bbafaf08cc9/artifact/de1f98d7-6ef0-4134-8685-ece4c19b2e98?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+     },
+     'biomolecules' : {
+       shortnotes: '',
+       flashcards: 'https://notebook.google.com/notebook/e6a8920c-d449-4b90-b194-a96b310702b9/artifact/948d5a70-956f-4dfa-84d5-a27b4ccddced?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      
   },
@@ -271,15 +291,15 @@ export const RESOURCES = {
        flashcards: 'https://notebook.google.com/notebook/ea6548c0-ca4b-4e21-8b47-202c3c9bf37b/artifact/1ee6de8a-682f-400c-a559-46f4714d8430?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'moving-charges-magnetism': {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/e4a3b0b8-3179-404b-b80e-680010097d8a/artifact/c964281f-8842-4210-a7d2-016ac296d5e6?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/fda6c281-cb32-4cb1-b9d1-070da9a204c1/artifact/1d1aaf38-6ea0-412d-a51b-3a4bb1426645?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'magnetism-matters': {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/7e6197bd-92c1-42dc-84b3-e734a51801dc/artifact/d4b9c8d9-3ae1-479f-acc4-4b3d10d5ece1?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/909908bf-f196-472b-b5fe-eebaeeb57e8e/artifact/94d6b3d7-3f68-4802-aed0-9518a8c85a9f?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'electromagnetic-induction': {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/c1ef1b0f-cf02-46ce-a5b2-bd2e407e5b3c/artifact/ca027b26-1512-48f2-b8fb-1fc3e8698735?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/a3a8abe7-8c3d-4a4c-b825-e3d59aa15ba8/artifact/04018f14-1c4c-4c82-a106-ea9194460a81?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'alternating-current': {
@@ -290,6 +310,11 @@ export const RESOURCES = {
        shortnotes: '',
        flashcards: 'https://notebook.google.com/notebook/5bcbf400-63ec-45f7-9e7c-95a930eaf053/artifact/332c133c-3cb3-47e1-9d5d-8f70e85a4203?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
+     'ray-optics-optical-instruments': {
+       shortnotes: '',
+       flashcards: '',
+     },
+
 
 
   },

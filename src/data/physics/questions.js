@@ -17,6 +17,15 @@ import { ELECTRIC_CHARGES_FIELDS } from './banks/electricChargesFields';
 import { CURRENT_ELECTRICITY } from './banks/currentElecticity';
 import { MOVING_CHARGES_MAGNETISM } from './banks/movingChargesMagnetism';
 import { MAGNETISM_MATTER } from './banks/magnetismMatter';
+import { ELECTROMAGNETIC_INDUCTION } from './banks/electromagneticInduction';
+import { ALTERNATING_CURRENT } from './banks/alternatingCurrent';
+import { ELECTROMAGNETIC_WAVES } from './banks/electromagneticWaves';
+import { RAY_OPTICS_OPTICAL_INSTRUMENTS } from './banks/rayOptics';
+import { WAVE_OPTICS } from './banks/waveOptics';
+import { DUAL_NATURE_RADIATION_MATTER } from './banks/dualNatureradiation';
+import { ATOMS } from './banks/atoms';
+import { NUCLEI } from './banks/nuclei';
+import { SEMICONDUCTORS_DEVICES } from './banks/semiconductorDevices';
 
 export const QUESTION_BANK = {
     'unit-dimensions': UNIT_DIMENSIONS,
@@ -38,6 +47,15 @@ export const QUESTION_BANK = {
     'current-electricity': CURRENT_ELECTRICITY,
     'moving-charges-magnetism': MOVING_CHARGES_MAGNETISM,
     'magnetism-matters': MAGNETISM_MATTER,
+    'electromagnetic-induction': ELECTROMAGNETIC_INDUCTION,
+    'alternating-current': ALTERNATING_CURRENT,
+    'electromagnetic-waves': ELECTROMAGNETIC_WAVES,
+    'ray-optics-optical-instruments': RAY_OPTICS_OPTICAL_INSTRUMENTS,
+    'wave-optics': WAVE_OPTICS,
+    'dual-nature-radiations-matter': DUAL_NATURE_RADIATION_MATTER,
+    'atoms': ATOMS,
+    'nuclei': NUCLEI,
+    'semiconductor-electronics': SEMICONDUCTORS_DEVICES,
 
 
     
