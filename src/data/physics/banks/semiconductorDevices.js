@@ -1,3 +1,3 @@
-export const questions = [
+export const SEMICONDUCTORS_DEVICES = [
 
 ];
