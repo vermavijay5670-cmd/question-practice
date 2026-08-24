@@ -1,3 +1,3 @@
-export const questions = [
+export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
 
 ];
