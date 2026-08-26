@@ -259,15 +259,15 @@ export const RESOURCES = {
        flashcards: 'https://notebook.google.com/notebook/b89e3e57-ce2b-4953-9387-9de456a8ba70/artifact/464b7f8f-4ba4-4132-a580-1f7a425ebf36?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'thermal-properties-matter': {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/a7cc00f1-24b5-4cf0-a88b-b8a66f46f48b/artifact/38629667-0784-4586-84c9-9442085919a0?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/a7cc00f1-24b5-4cf0-a88b-b8a66f46f48b/artifact/06ebb542-077a-4492-9bf5-3aeb62dcfa04?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'thermodynamics': {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/caebf2b4-2a15-4a2c-abfb-a679a3e07db1/artifact/31e065df-4d38-42a4-afbf-4f188e506f7d?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/caebf2b4-2a15-4a2c-abfb-a679a3e07db1/artifact/18bff8f2-5406-44eb-9cb4-a87375c3e4c2?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'kinetic-theory': {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/6af68bba-4392-43cd-b898-5db37d8e45d6/artifact/8e2d4c36-9074-45e7-94e5-fe1bdd3d98ec?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/6af68bba-4392-43cd-b898-5db37d8e45d6/artifact/5f226d4f-2a39-453b-a5fa-0beddae7ad87?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'oscillations': {
@@ -303,17 +303,38 @@ export const RESOURCES = {
        flashcards: 'https://notebook.google.com/notebook/a3a8abe7-8c3d-4a4c-b825-e3d59aa15ba8/artifact/04018f14-1c4c-4c82-a106-ea9194460a81?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'alternating-current': {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/8f740c7b-6939-428f-a061-f366011571df/artifact/76e80c0d-02bc-49d3-b6ef-455511d82895?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/38788d25-9e8d-4809-baa2-235e4518cc77/artifact/9fdced62-c57b-40da-99cd-fefa378d1302?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'electromagnetic-waves': {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/77aa2903-3f0d-4ac7-a425-0c008fec9736/artifact/f3008ef2-1175-4ce0-930d-760ffd738e25?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/5bcbf400-63ec-45f7-9e7c-95a930eaf053/artifact/332c133c-3cb3-47e1-9d5d-8f70e85a4203?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'ray-optics-optical-instruments': {
+       shortnotes: 'https://notebook.google.com/notebook/7ee9293b-faab-4322-9ccd-8b1371fa6a64/artifact/266b16ae-4cba-4468-a708-6ad871403792?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: '',
+     },
+     'wave-optics': {
+       shortnotes: 'https://notebook.google.com/notebook/2969444d-addb-4891-a09a-cf6737f50bfc/artifact/32ef4142-1780-4b07-bacb-f2d74e2a7097?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: '',
+     },
+     'dual-nature-radiations-matter': {
+       shortnotes: 'https://notebook.google.com/notebook/0bd48ba3-9c2e-465b-a8b1-14fb2c3a946c/artifact/e2f5c1d8-bdbe-4526-b915-31c13df9a9c0?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: '',
+     },
+     'atoms': {
+       shortnotes: 'https://notebook.google.com/notebook/d7fa3791-34f8-4126-9e65-b339f69d1e5e/artifact/a6779629-1583-4c3d-a830-a84b63473d45?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: '',
+     },
+     'nuclei': {
        shortnotes: '',
        flashcards: '',
      },
+     'semiconductor-electronics': {
+       shortnotes: '',
+       flashcards: '',
+     },
+  
 
 
 
