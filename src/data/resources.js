@@ -88,19 +88,19 @@ export const RESOURCES = {
       flashcards: 'https://notebook.google.com/notebook/feb3dd57-bf18-4e78-b7aa-b8818cb06c8b/artifact/13fff00f-21e8-4f01-8b48-cc2eec9cb5d3?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'human-reproduction': {
-      shortnotes: '',
+      shortnotes: 'https://notebook.google.com/notebook/2fff335b-0659-4411-9e81-1ee8409bc3ab/artifact/616ea724-3525-45ae-80ff-0bfaea3ed8e2?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
       flashcards: 'https://notebook.google.com/notebook/2fff335b-0659-4411-9e81-1ee8409bc3ab/artifact/cf337212-f188-45df-bddc-fbc4560c0907?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'reproductive-health': {
-      shortnotes: '',
+      shortnotes: 'https://notebook.google.com/notebook/055de232-7f17-4047-87c7-7f8acca2204c/artifact/5acca970-560f-4928-b97a-799047874ec7?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
       flashcards: 'https://notebook.google.com/notebook/055de232-7f17-4047-87c7-7f8acca2204c/artifact/dd36a1c5-2451-4c7f-b689-84defc1b3772?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'principle-inheritance-variation': {
-      shortnotes: '',
+      shortnotes: 'https://notebook.google.com/notebook/236dd0b2-2a08-45f4-b2e3-23e7c9231023/artifact/6ac3e220-dc75-4c4c-8cf7-c8e324a0b2d1?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
       flashcards: 'https://notebook.google.com/notebook/236dd0b2-2a08-45f4-b2e3-23e7c9231023/artifact/e67f344a-6b9c-40d6-8482-83089aa4a0b9?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'molecular-basis-inheritance': {
-      shortnotes: '',
+      shortnotes: 'https://notebook.google.com/notebook/add868eb-8d40-436c-98d6-54aec457ffb1/artifact/6f8733af-9acd-45bb-afff-4789dbee7dc2?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
       flashcards: 'https://notebook.google.com/notebook/add868eb-8d40-436c-98d6-54aec457ffb1/artifact/69bda461-ed71-4974-9a56-453a265b981c?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'evolution': {
@@ -108,31 +108,31 @@ export const RESOURCES = {
       flashcards: 'https://notebook.google.com/notebook/5db0f82c-6d6c-4af3-8b4f-3e2cda72306b/artifact/50f8245f-1e7d-44f2-ad09-fd89488634d5?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'human-health-disease': {
-      shortnotes: '',
+      shortnotes: 'https://notebook.google.com/notebook/08b3b393-092a-4297-8672-f3df5fe97e4c/artifact/43072776-a268-4ce3-b8c3-13968d00ed1e?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
       flashcards: 'https://notebook.google.com/notebook/3effde73-1ed3-4cad-8dc9-b80510439bd2/artifact/929d771e-0597-4832-8f14-c46fd3386ddf?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'microbes-human-welfare': {
-      shortnotes: '',
+      shortnotes: 'https://notebook.google.com/notebook/9726991b-245b-408b-a8a0-1b0119b9eb81/artifact/200912ea-5d9e-4e8f-841f-c7a36a3c0b6f?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
       flashcards: 'https://notebook.google.com/notebook/b9e17be2-33df-429d-8945-801a8f72d81f/artifact/b25ae2e2-1780-446a-a659-4043d5f9ca27?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'biotech-principles': {
-      shortnotes: '',
+      shortnotes: 'https://notebook.google.com/notebook/0b3557b6-2d96-498b-b44d-d5ae7a8f1351/artifact/bd769c69-74e5-446b-95ff-6a281753c314?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
       flashcards: 'https://notebook.google.com/notebook/0b00c206-2373-4448-9946-512e0e59a2fd/artifact/e4a89a49-3886-4e2d-b9c3-03192777b79b?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'biotech-applications': {
-      shortnotes: '',
+      shortnotes: 'https://notebook.google.com/notebook/e2679980-1a18-490f-aef2-7bad98ab40b2/artifact/65a06f3f-f43b-4525-92d9-9d8158b02562?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
       flashcards: 'https://notebook.google.com/notebook/d161477c-4abd-4ca3-a0b1-1cb502318379/artifact/ee965537-85da-43a3-88cd-650906cb1d82?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'organisms-populations': {
-      shortnotes: '',
+      shortnotes: 'https://notebook.google.com/notebook/be4e66fc-f279-461b-9b1a-05c97b628f8a/artifact/aa80837d-a22d-4e5b-98e2-70bf34dd0cf2?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
       flashcards: 'https://notebook.google.com/notebook/531f703c-a173-449a-8aa8-d4d71c18b074/artifact/40c1fb77-65a5-42ca-a6b4-6d4cf12f7f2e?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'ecosystem': {
-      shortnotes: '',
+      shortnotes: 'https://notebook.google.com/notebook/621300d4-b83a-4908-8c95-2c4b4262091f/artifact/753a0e3f-262c-43b6-96c8-078a37a3e955?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
       flashcards: 'https://notebook.google.com/notebook/1b379345-43e4-4153-b6ba-9574be7cb176/artifact/f9fb2172-8505-425f-a281-e21c2eee67ee?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'biodiversity-conservation': {
-      shortnotes: '',
+      shortnotes: 'https://notebook.google.com/notebook/5ac3004f-b7ed-4ccd-bf36-407e74f77be1/artifact/880ea62d-5eed-4948-a9c9-151560617c47?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
       flashcards: 'https://notebook.google.com/notebook/f58384f4-581e-4f57-abe0-2fcf8331b60a/artifact/302499cd-b570-4a56-9f00-41f0708c3d1b?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
   },
