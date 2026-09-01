@@ -57,7 +57,7 @@ export const RESOURCES = {
      },
      'body-fluids-circulation': {
       shortnotes: 'https://notebook.google.com/notebook/494b4eda-def6-4127-92b8-ebf8e5faf1aa/artifact/c4684bdb-fc94-40d7-b9db-6a2e009d902e?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
-      flashcards: '',
+      flashcards: 'https://notebook.google.com/notebook/494b4eda-def6-4127-92b8-ebf8e5faf1aa/artifact/80fdf761-0452-44d2-8b85-1bf0b80e964c?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'morphology-flowering-plants': {
       shortnotes: 'https://notebook.google.com/notebook/260dabd1-1141-4eb0-a557-14e82d5b5ebb/artifact/3d835591-9a6a-49bb-ae2e-6e7a199fabbe?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
@@ -104,7 +104,7 @@ export const RESOURCES = {
       flashcards: 'https://notebook.google.com/notebook/add868eb-8d40-436c-98d6-54aec457ffb1/artifact/69bda461-ed71-4974-9a56-453a265b981c?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'evolution': {
-      shortnotes: '',
+      shortnotes: 'https://notebook.google.com/notebook/3eef575c-460f-4e70-b9fc-d63de22fe5a6/artifact/b470eb2d-4f74-44d0-8e8f-bd9b53881252?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
       flashcards: 'https://notebook.google.com/notebook/5db0f82c-6d6c-4af3-8b4f-3e2cda72306b/artifact/50f8245f-1e7d-44f2-ad09-fd89488634d5?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
     },
     'human-health-disease': {
@@ -169,11 +169,11 @@ export const RESOURCES = {
        flashcards: 'https://notebook.google.com/notebook/8e677bc2-dc03-42c7-a0a0-1ac1dab54ad1/artifact/0f800adf-f4d0-4ce5-8181-7345fed5c5b6?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'organic-chem-basic-principles-techniques': {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/4b9bb7d3-33e4-40db-b18a-c524ac6e4114/artifact/754fcdf7-782e-47f8-9780-9ae987ce6166?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/4b9bb7d3-33e4-40db-b18a-c524ac6e4114/artifact/4a58c001-6d1d-4a0f-b13f-071d185fbb9e?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'hydrocarbons': {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/808632ba-48c9-4a49-99e8-4bda7c298f65/artifact/417f2c86-c95a-4a0a-97e7-1429b916ec2f?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/efcfa089-f70a-432a-a090-a992ecdbfadf/artifact/e594ad86-904f-4c55-acf6-b6c022b922b6?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'solutions': {
@@ -213,7 +213,7 @@ export const RESOURCES = {
        flashcards: 'https://notebook.google.com/notebook/8df746ae-3660-489e-affd-4bbafaf08cc9/artifact/de1f98d7-6ef0-4134-8685-ece4c19b2e98?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'biomolecules' : {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/e6a8920c-d449-4b90-b194-a96b310702b9/artifact/a3a45fac-a27e-4831-b9b0-860547b669e5?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/e6a8920c-d449-4b90-b194-a96b310702b9/artifact/948d5a70-956f-4dfa-84d5-a27b4ccddced?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      
@@ -271,11 +271,11 @@ export const RESOURCES = {
        flashcards: 'https://notebook.google.com/notebook/6af68bba-4392-43cd-b898-5db37d8e45d6/artifact/5f226d4f-2a39-453b-a5fa-0beddae7ad87?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'oscillations': {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/efa31033-2083-4b91-9e41-a0d3c274ae46/artifact/362f67f5-1f00-4cb8-8214-5aea7cc0b5c9?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/efa31033-2083-4b91-9e41-a0d3c274ae46/artifact/8f4bc3df-8f30-41c5-85da-a2adcd0c298c?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'waves': {
-       shortnotes: '',
+       shortnotes: 'https://notebook.google.com/notebook/81829122-dcaf-4fbe-a01f-82b5b1785de7/artifact/f0f57d8f-6b0a-4ef0-95ac-66f24f3ed5ea?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
        flashcards: 'https://notebook.google.com/notebook/81829122-dcaf-4fbe-a01f-82b5b1785de7/artifact/c00b8357-f4fe-4861-bfb1-0f4539a8620b?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'electric-charge-fields': {
@@ -312,15 +312,15 @@ export const RESOURCES = {
      },
      'ray-optics-optical-instruments': {
        shortnotes: 'https://notebook.google.com/notebook/7ee9293b-faab-4322-9ccd-8b1371fa6a64/artifact/266b16ae-4cba-4468-a708-6ad871403792?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
-       flashcards: '',
+       flashcards: 'https://notebook.google.com/notebook/bca1054a-5215-4f37-820c-accc19a82ec8/artifact/d93e3105-898b-40f8-9448-f3707b88796c?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'wave-optics': {
        shortnotes: 'https://notebook.google.com/notebook/2969444d-addb-4891-a09a-cf6737f50bfc/artifact/32ef4142-1780-4b07-bacb-f2d74e2a7097?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
-       flashcards: '',
+       flashcards: 'https://notebook.google.com/notebook/1d74b7b5-57ac-4206-8c01-cd12d4cb72bc/artifact/daef429d-d10e-4168-bbeb-d3b2205b0ee7?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'dual-nature-radiations-matter': {
        shortnotes: 'https://notebook.google.com/notebook/0bd48ba3-9c2e-465b-a8b1-14fb2c3a946c/artifact/e2f5c1d8-bdbe-4526-b915-31c13df9a9c0?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
-       flashcards: '',
+       flashcards: 'https://notebook.google.com/notebook/3e537eb4-706f-4294-bd4b-b7103f876cd2/artifact/dbdf90d0-2949-4036-a039-eaf9f8fb10c2?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'atoms': {
        shortnotes: 'https://notebook.google.com/notebook/d7fa3791-34f8-4126-9e65-b339f69d1e5e/artifact/a6779629-1583-4c3d-a830-a84b63473d45?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
