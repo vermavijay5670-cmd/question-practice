@@ -324,15 +324,15 @@ export const RESOURCES = {
      },
      'atoms': {
        shortnotes: 'https://notebook.google.com/notebook/d7fa3791-34f8-4126-9e65-b339f69d1e5e/artifact/a6779629-1583-4c3d-a830-a84b63473d45?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
-       flashcards: '',
+       flashcards: 'https://notebook.google.com/notebook/cfab679c-a32e-44d5-9d0d-bc0f77cf92e6/artifact/4cf11da5-a952-4c3d-8470-fba1c1797d68?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'nuclei': {
-       shortnotes: '',
-       flashcards: '',
+       shortnotes: 'https://notebook.google.com/notebook/538b3220-36a1-413a-a60c-2a6c260d6311/artifact/feedcf64-c96c-4b5c-b85e-051d48267b16?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: 'https://notebook.google.com/notebook/84ece802-193c-4942-af25-b9e49e513864/artifact/ee1d0c20-5c53-408c-8a03-da0d8ec96f53?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
      'semiconductor-electronics': {
-       shortnotes: '',
-       flashcards: '',
+       shortnotes: 'https://notebook.google.com/notebook/66b89cc9-0bea-4638-806d-c67ebd9a94b9/artifact/9d5ccbbb-fa82-4c0f-8004-98c3a7867f52?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
+       flashcards: 'https://notebook.google.com/notebook/317e4b8e-6f8f-49c0-8d17-82090dc5dd89/artifact/4bd54ce0-801c-418d-a57b-f0f1f305447f?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_',
      },
   
 
