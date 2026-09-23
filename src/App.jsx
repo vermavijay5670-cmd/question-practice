@@ -14,6 +14,7 @@ import ChemistryChapterPractice from './pages/ChemistryChapterPractice';
 
 import MockTest from './pages/MockTest';
 import MistakeBank from './pages/MistakeBank';
+import Bookmarks from './pages/Bookmarks';
 
 import ComingSoon from './pages/ComingSoon';
 
@@ -66,6 +67,11 @@ export default function App() {
               element={<MistakeBank subject="biology" />}
             />
 
+            <Route
+              path="/biology/bookmarks"
+              element={<Bookmarks subject="biology" />}
+            />
+
 
             {/* =================================================
                 PHYSICS
@@ -89,6 +95,11 @@ export default function App() {
             <Route
               path="/physics/mistakes"
               element={<MistakeBank subject="physics" />}
+            />
+
+            <Route
+              path="/physics/bookmarks"
+              element={<Bookmarks subject="physics" />}
             />
 
 
@@ -116,6 +127,11 @@ export default function App() {
               element={<MistakeBank subject="chemistry" />}
             />
 
+            <Route
+              path="/chemistry/bookmarks"
+              element={<Bookmarks subject="chemistry" />}
+            />
+
 
             {/* =================================================
                 FALLBACK
@@ -138,4 +154,3 @@ export default function App() {
 
   );
 }
-

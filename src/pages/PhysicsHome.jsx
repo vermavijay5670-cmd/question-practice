@@ -69,6 +69,7 @@ export default function PhysicsHome() {
   const { state } = useProgress();
   const attempts = state.attempts.physics || {};
   const mistakeCount = Object.keys(state.mistakes.physics || {}).length;
+  const bookmarkCount = Object.keys(state.bookmarks.physics || {}).length;
   const totalSeen = Object.values(attempts).reduce((s, a) => s + (a.seen || 0), 0);
   const totalCorrect = Object.values(attempts).reduce((s, a) => s + (a.correct || 0), 0);
   const accuracy = totalSeen ? Math.round((totalCorrect / totalSeen) * 100) : 0;
@@ -96,6 +97,10 @@ export default function PhysicsHome() {
 
       <Link to="/physics/mistakes" className="pill-btn">
         Mistake bank ({mistakeCount})
+      </Link>
+
+      <Link to="/physics/bookmarks" className="pill-btn">
+        Bookmarks ({bookmarkCount})
       </Link>
     </div>
 

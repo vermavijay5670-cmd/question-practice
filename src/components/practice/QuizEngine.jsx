@@ -218,6 +218,7 @@ export default function QuizEngine({ subject, chapterId, title, questions, backT
   }
 
   if (phase === 'finished') {
+    const markedInSession = questions.filter(q => bookmarks[q.id]);
     return (
       <main className="practice">
         <div className="practice-shell">
@@ -232,6 +233,11 @@ export default function QuizEngine({ subject, chapterId, title, questions, backT
             <div className="summary-actions">
               <Link to={backTo} className="pill-btn primary">{backLabel}</Link>
               <button className="pill-btn" onClick={handleRetry}>Retry this set</button>
+              {markedInSession.length > 0 && (
+                <Link to={`/${subject}/bookmarks`} className="pill-btn">
+                  ★ Review marked ({markedInSession.length})
+                </Link>
+              )}
             </div>
           </div>
         </div>

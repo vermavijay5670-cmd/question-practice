@@ -141,6 +141,11 @@ export default function ChemistryHome() {
       state.mistakes.chemistry || {}
     ).length;
 
+  const bookmarkCount =
+    Object.keys(
+      state.bookmarks.chemistry || {}
+    ).length;
+
   const totalSeen =
     Object.values(attempts)
       .reduce(
@@ -226,6 +231,13 @@ export default function ChemistryHome() {
             className="pill-btn"
           >
             Mistake bank ({mistakeCount})
+          </Link>
+
+          <Link
+            to="/chemistry/bookmarks"
+            className="pill-btn"
+          >
+            Bookmarks ({bookmarkCount})
           </Link>
 
         </div>

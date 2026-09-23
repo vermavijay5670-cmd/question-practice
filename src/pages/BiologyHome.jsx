@@ -304,6 +304,15 @@ export default function BiologyHome() {
               )
             </Link>
 
+            <Link
+              to="/biology/bookmarks"
+              className="mistake-button"
+            >
+              Bookmarks (
+              {Object.keys(state.bookmarks?.biology || {}).length}
+              )
+            </Link>
+
           </div>
 
         </div>
