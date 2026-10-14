@@ -9,6 +9,7 @@
 // To add a chapter: create banks/<file>.js exporting the array, then add a line to LOADERS.
 
 import { QUESTION_COUNTS } from './counts';
+import { balanceOptions } from '../balanceOptions';
 
 export const LOADERS = {
   'unit-dimensions': () => import('./banks/unitDimensions').then(m => m.UNIT_DIMENSIONS),
@@ -48,7 +49,7 @@ export function getChapterQuestions(chapterId) {
   const load = LOADERS[chapterId];
   if (!load) return Promise.resolve([]);
   if (!cache[chapterId]) {
-    cache[chapterId] = load().catch((err) => {
+    cache[chapterId] = load().then(qs => balanceOptions(qs, chapterId)).catch((err) => {
       delete cache[chapterId]; // allow a retry after a failed chunk download
       throw err;
     });

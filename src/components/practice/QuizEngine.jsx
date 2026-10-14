@@ -11,6 +11,10 @@ const TYPE_LABEL = {
 
 const TIMER_PRESETS = [5, 10, 15, 20, 30];
 
+// Bump when the order of options can change, so saved in-progress sessions (which store
+// the selected option index) from an older layout aren't resumed against the new one.
+const SESSION_VERSION = 2;
+
 function formatTime(totalSeconds) {
   const m = Math.floor(totalSeconds / 60);
   const s = totalSeconds % 60;
@@ -21,7 +25,7 @@ function formatTime(totalSeconds) {
 // questions changed (or it's a freshly shuffled mock test), the old session
 // no longer lines up and should be ignored rather than resumed into garbage.
 function sessionMatches(session, questions) {
-  if (!session || !Array.isArray(session.answers)) return false;
+  if (!session || session.v !== SESSION_VERSION || !Array.isArray(session.answers)) return false;
   if (session.questionIds?.length !== questions.length) return false;
   for (let i = 0; i < questions.length; i++) {
     if (session.questionIds[i] !== questions[i].id) return false;
@@ -30,7 +34,7 @@ function sessionMatches(session, questions) {
 }
 
 export default function QuizEngine({ subject, chapterId, title, questions, backTo, backLabel }) {
-  const { recordAnswer, recordSessionScore, toggleBookmark, state, getSession, saveSession, clearSession } = useProgress();
+  const { recordAnswer, recordSkip, recordSessionScore, toggleBookmark, state, getSession, saveSession, clearSession } = useProgress();
 
   // Look up any in-progress attempt for this exact chapter + question set once, on mount.
   const savedSession = useMemo(() => {
@@ -45,7 +49,7 @@ export default function QuizEngine({ subject, chapterId, title, questions, backT
   const [customMinutes, setCustomMinutes] = useState('');
   const [timerTotalSeconds, setTimerTotalSeconds] = useState(savedSession?.timerTotalSeconds ?? null);
   const [timerEndAt, setTimerEndAt] = useState(savedSession?.timerEndAt ?? null);
-  const [tick, setTick] = useState(0); // forces a re-render each second so the countdown display updates
+  const [, setTick] = useState(0); // forces a re-render each second so the countdown display updates
 
   const [index, setIndex] = useState(() => {
     if (!savedSession) return 0;
@@ -61,7 +65,8 @@ export default function QuizEngine({ subject, chapterId, title, questions, backT
   const isBookmarked = current && !!bookmarks[current.id];
 
   const currentAnswer = answers[index] || null;
-  const answered = currentAnswer !== null;
+  // A skipped question is NOT answered — it can be revisited and answered later.
+  const answered = currentAnswer?.type === 'answered';
   const selectedIndex = currentAnswer?.type === 'answered' ? currentAnswer.selected : null;
 
   const score = useMemo(
@@ -79,6 +84,7 @@ export default function QuizEngine({ subject, chapterId, title, questions, backT
   useEffect(() => {
     if (phase !== 'active') return;
     saveSession(subject, chapterId, {
+      v: SESSION_VERSION,
       questionIds: questions.map(q => q.id),
       index,
       answers,
@@ -159,12 +165,14 @@ export default function QuizEngine({ subject, chapterId, title, questions, backT
 
   function handleSkip() {
     if (answered) return;
-    setAnswers(prev => {
-      const next = [...prev];
-      next[index] = { type: 'skipped' };
-      return next;
-    });
-    recordAnswer(subject, current.chapterId || chapterId, current, false);
+    if (currentAnswer?.type !== 'skipped') {
+      setAnswers(prev => {
+        const next = [...prev];
+        next[index] = { type: 'skipped' };
+        return next;
+      });
+      recordSkip(subject, current.chapterId || chapterId, current);
+    }
     goToNext();
   }
 

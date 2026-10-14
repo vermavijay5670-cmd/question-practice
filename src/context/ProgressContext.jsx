@@ -43,6 +43,18 @@ export function ProgressProvider({ children }) {
     });
   }, []);
 
+  // Skipping files the question in the mistake bank but doesn't count as an attempt,
+  // so answering it later from the same session isn't double-counted.
+  const recordSkip = useCallback((subject, chapterId, question) => {
+    setState(prev => {
+      if (prev.mistakes?.[subject]?.[question.id]) return prev;
+      const next = structuredClone(prev);
+      next.mistakes[subject] ??= {};
+      next.mistakes[subject][question.id] = { ...question, chapterId };
+      return next;
+    });
+  }, []);
+
   const recordSessionScore = useCallback((subject, chapterId, correct, total) => {
     setState(prev => {
       const next = structuredClone(prev);
@@ -80,6 +92,7 @@ export function ProgressProvider({ children }) {
       next.attempts[subject] = {};
       next.mistakes[subject] = {};
       next.bookmarks[subject] = {};
+      if (next.sessions) next.sessions[subject] = {};
       return next;
     });
   }, []);
@@ -112,6 +125,7 @@ export function ProgressProvider({ children }) {
   const value = {
     state,
     recordAnswer,
+    recordSkip,
     recordSessionScore,
     toggleBookmark,
     clearMistake,

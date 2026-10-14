@@ -17,17 +17,19 @@ export default function MistakeBank({ subject = 'biology' }) {
   const { chapters, label, backTo } = SUBJECT_DATA[subject];
   const { state } = useProgress();
   const mistakes = Object.values(state.mistakes[subject] || {});
-  const [reviewing, setReviewing] = useState(false);
+  // Snapshot taken when review starts. The live list shrinks every time a question is
+  // answered correctly (it leaves the bank), which would shift the quiz under the user.
+  const [reviewQueue, setReviewQueue] = useState(null);
 
-  if (reviewing && mistakes.length) {
+  if (reviewQueue && reviewQueue.length) {
     return (
       <QuizEngine
         subject={subject}
         chapterId="mistake-review"
         title="Mistake review"
-        questions={mistakes}
-        backTo={`${backTo}/mistakes`}
-        backLabel="Mistake bank"
+        questions={reviewQueue}
+        backTo={backTo}
+        backLabel={`${label} chapters`}
       />
     );
   }
@@ -42,7 +44,7 @@ export default function MistakeBank({ subject = 'biology' }) {
           <p>{mistakes.length ? 'Question(s) you got wrong, waiting for a rematch.' : 'Nothing here yet — mistakes you make in practice or mock tests land here automatically.'}</p>
           {mistakes.length > 0 && (
             <div className="summary-actions">
-              <button className="pill-btn primary" onClick={() => setReviewing(true)}>Review all</button>
+              <button className="pill-btn primary" onClick={() => setReviewQueue(mistakes)}>Review all</button>
             </div>
           )}
         </div>
