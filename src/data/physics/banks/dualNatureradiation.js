@@ -4,8 +4,8 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     id: 'dualnature-1',
     type: 'mcq',
     question: 'The minimum energy required to just liberate an electron from the surface of a metal, overcoming the attractive forces holding it inside, is called the',
-    options: ['ionisation energy', 'work function of the metal', 'binding energy of the nucleus', 'threshold energy of the photon'],
-    correctIndex: 1,
+    options: ['binding energy of the nucleus', 'ionisation energy', 'threshold energy of the photon', 'work function of the metal'],
+    correctIndex: 3,
     explanation: 'The work function is defined as the minimum energy needed to free an electron from the surface of a given metal, and it varies from one metal to another.',
     difficulty: 'easy'
   },
@@ -13,8 +13,8 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     id: 'dualnature-2',
     type: 'mcq',
     question: 'Electron emission that occurs when a metal is heated to a sufficiently high temperature, supplying enough thermal energy to free electrons, is called',
-    options: ['photoelectric emission', 'field emission', 'thermionic emission', 'chemical emission'],
-    correctIndex: 2,
+    options: ['field emission', 'photoelectric emission', 'chemical emission', 'thermionic emission'],
+    correctIndex: 3,
     explanation: 'Thermionic emission is the process by which electrons are emitted from a heated metal surface, as used in vacuum tube filaments.',
     difficulty: 'easy'
   },
@@ -22,8 +22,8 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     id: 'dualnature-3',
     type: 'mcq',
     question: 'Electron emission caused by applying a very strong electric field to a metal surface is called',
-    options: ['thermionic emission', 'field emission', 'photoelectric emission', 'secondary emission'],
-    correctIndex: 1,
+    options: ['thermionic emission', 'secondary emission', 'photoelectric emission', 'field emission'],
+    correctIndex: 3,
     explanation: 'Field emission occurs when a sufficiently strong external electric field is applied to a metal surface, pulling electrons out of the metal.',
     difficulty: 'easy'
   },
@@ -41,12 +41,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'In an experimental study of the photoelectric effect using a photocell, increasing the intensity of incident light (while keeping its frequency constant, above the threshold) generally causes the',
     options: [
+      'maximum kinetic energy of photoelectrons to increase',
       'stopping potential to increase',
-      'saturation photocurrent to increase, since more photons strike the surface per unit time, releasing more photoelectrons',
       'threshold frequency to change',
-      'maximum kinetic energy of photoelectrons to increase'
+      'saturation photocurrent to increase, since more photons strike the surface per unit time, releasing more photoelectrons'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'At a fixed frequency, increasing the light intensity increases the number of incident photons per unit time, which increases the number of photoelectrons emitted and hence the saturation photocurrent, without affecting the stopping potential.',
     difficulty: 'medium'
   },
@@ -56,11 +56,11 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     question: 'In a photoelectric experiment, the stopping potential is defined as the',
     options: [
       'potential at which the photocurrent becomes maximum',
-      'minimum negative (retarding) potential applied to the collector that reduces the photocurrent to exactly zero',
+      'potential required to heat the emitter plate',
       'potential that increases the photocurrent indefinitely',
-      'potential required to heat the emitter plate'
+      'minimum negative (retarding) potential applied to the collector that reduces the photocurrent to exactly zero'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The stopping potential is the minimum retarding potential needed to just stop even the most energetic photoelectrons from reaching the collector, reducing the photocurrent to zero.',
     difficulty: 'medium'
   },
@@ -70,11 +70,11 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     question: 'For a fixed frequency of incident light (above the threshold frequency), the stopping potential in a photoelectric experiment is found to be',
     options: [
       'dependent on the intensity of the incident light',
-      'independent of the intensity of the incident light, depending instead only on the frequency',
+      'dependent on the material of the collector plate only',
       'always exactly equal to zero',
-      'dependent on the material of the collector plate only'
+      'independent of the intensity of the incident light, depending instead only on the frequency'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Experimentally, the stopping potential at a fixed frequency is found to be independent of the intensity of the incident light, a key observation that classical wave theory could not explain.',
     difficulty: 'medium'
   },
@@ -84,11 +84,11 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     question: 'As the frequency of the incident light is increased (above the threshold frequency) in a photoelectric experiment, the stopping potential is observed to',
     options: [
       'decrease linearly',
-      'increase linearly with frequency',
+      'increase, then suddenly drop to zero',
       'remain completely constant, regardless of frequency',
-      'increase, then suddenly drop to zero'
+      'increase linearly with frequency'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The stopping potential increases linearly with the frequency of the incident light, once the frequency exceeds the threshold value for that particular metal.',
     difficulty: 'medium'
   },
@@ -97,12 +97,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'The threshold frequency in the photoelectric effect is defined as the',
     options: [
-      'maximum frequency of light that can cause photoelectric emission',
-      'minimum frequency of incident radiation below which no photoelectric emission occurs, regardless of the intensity of light',
       'frequency at which the stopping potential becomes exactly zero for every metal',
-      'frequency of the emitted photoelectrons themselves'
+      'frequency of the emitted photoelectrons themselves',
+      'maximum frequency of light that can cause photoelectric emission',
+      'minimum frequency of incident radiation below which no photoelectric emission occurs, regardless of the intensity of light'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The threshold frequency is the minimum frequency of incident light required to cause photoelectric emission from a given metal; below this frequency, no electrons are emitted, no matter how intense the light is.',
     difficulty: 'medium'
   },
@@ -125,12 +125,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'One key experimental observation that classical wave theory of light failed to explain about the photoelectric effect was the',
     options: [
-      'existence of a threshold frequency below which no emission occurs, regardless of intensity',
-      'fact that light travels in straight lines',
       'fact that light can be reflected and refracted',
-      'fact that light has a finite speed'
+      'fact that light travels in straight lines',
+      'fact that light has a finite speed',
+      'existence of a threshold frequency below which no emission occurs, regardless of intensity'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Classical wave theory predicted that photoelectric emission should occur at any frequency, given sufficient intensity or exposure time, which directly contradicts the observed existence of a threshold frequency.',
     difficulty: 'medium'
   },
@@ -153,12 +153,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'A third major failure of classical wave theory regarding the photoelectric effect was its inability to explain why',
     options: [
-      'the maximum kinetic energy of photoelectrons depends on the frequency of light, not on its intensity',
-      'light can be polarised',
       'light exhibits interference and diffraction',
-      'light travels through a vacuum'
+      'light can be polarised',
+      'light travels through a vacuum',
+      'the maximum kinetic energy of photoelectrons depends on the frequency of light, not on its intensity'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Wave theory predicted that increasing intensity should increase the kinetic energy of emitted electrons, but experiments showed that the maximum kinetic energy of photoelectrons depends only on the frequency of light, not its intensity — a fact wave theory could not account for.',
     difficulty: 'medium'
   },
@@ -166,8 +166,8 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     id: 'dualnature-14',
     type: 'mcq',
     question: 'According to Einstein\'s explanation, light consists of discrete packets of energy called photons, each carrying an energy given by',
-    options: ['E = mc²', 'E = hν, where h is Planck\'s constant and ν is the frequency of the light', 'E = qV', 'E = (1/2)mv²'],
-    correctIndex: 1,
+    options: ['E = mc²', 'E = qV', 'E = (1/2)mv²', 'E = hν, where h is Planck\'s constant and ν is the frequency of the light'],
+    correctIndex: 3,
     explanation: 'Einstein proposed that light energy is quantised into photons, each with energy E = hν, proportional to the frequency of the light.',
     difficulty: 'easy'
   },
@@ -176,12 +176,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'Einstein\'s photoelectric equation is written as',
     options: [
+      'hν = φ0 / Kmax',
       'hν = φ0 + Kmax, where φ0 is the work function and Kmax is the maximum kinetic energy of the emitted photoelectron',
       'hν = φ0 - Kmax',
-      'hν = φ0 × Kmax',
-      'hν = φ0 / Kmax'
+      'hν = φ0 × Kmax'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Einstein\'s photoelectric equation, hν = φ0 + Kmax, states that the energy of an absorbed photon is used partly to overcome the work function of the metal and partly to give the electron its maximum kinetic energy.',
     difficulty: 'medium'
   },
@@ -189,8 +189,8 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     id: 'dualnature-16',
     type: 'mcq',
     question: 'According to Einstein\'s photoelectric equation, the threshold frequency (ν0) of a metal is related to its work function (φ0) by',
-    options: ['ν0 = φ0 × h', 'ν0 = φ0/h', 'ν0 = h/φ0', 'ν0 = φ0 + h'],
-    correctIndex: 1,
+    options: ['ν0 = φ0 + h', 'ν0 = h/φ0', 'ν0 = φ0 × h', 'ν0 = φ0/h'],
+    correctIndex: 3,
     explanation: 'Since photoelectric emission just barely occurs when hν0 = φ0 (with Kmax = 0), the threshold frequency is given by ν0 = φ0/h.',
     difficulty: 'medium'
   },
@@ -199,12 +199,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'Einstein\'s photon model explains the instantaneous nature of photoelectric emission because',
     options: [
-      'a photon interacts with a single electron in a one-to-one collision, transferring its energy immediately, with no need for gradual energy accumulation',
       'photons take a very long time to reach the metal surface',
+      'a photon interacts with a single electron in a one-to-one collision, transferring its energy immediately, with no need for gradual energy accumulation',
       'photons cannot interact with electrons at all',
       'multiple photons must accumulate on a single electron over an extended period before emission can occur'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Since a single photon delivers its entire energy to a single electron in an essentially instantaneous interaction, there is no need for the electron to gradually accumulate energy over time, explaining the observed instantaneous emission.',
     difficulty: 'medium'
   },
@@ -226,8 +226,8 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     id: 'dualnature-19',
     type: 'mcq',
     question: 'Combining Einstein\'s photoelectric equation with the relation eV0 = Kmax (where V0 is the stopping potential) gives a linear relationship between stopping potential and frequency, with a slope equal to',
-    options: ['e/h', 'h/e, a universal constant, the same for all metals', 'φ0/e', 'h × e'],
-    correctIndex: 1,
+    options: ['φ0/e', 'h × e', 'e/h', 'h/e, a universal constant, the same for all metals'],
+    correctIndex: 3,
     explanation: 'Rearranging Einstein\'s equation gives V0 = (h/e)ν - φ0/e, a straight line when V0 is plotted against ν, with a slope of h/e that is the same universal value for every metal.',
     difficulty: 'medium'
   },
@@ -236,10 +236,10 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'While the slope of the stopping potential versus frequency graph is the same universal value (h/e) for all metals, the x-intercept (threshold frequency) of this graph',
     options: [
-      'is also identical for all metals, regardless of their composition',
+      'depends on the intensity of light used in the experiment',
       'differs from metal to metal, since it depends on the work function of that particular metal',
-      'is always exactly zero for every metal',
-      'depends on the intensity of light used in the experiment'
+      'is also identical for all metals, regardless of their composition',
+      'is always exactly zero for every metal'
     ],
     correctIndex: 1,
     explanation: 'Since the threshold frequency is given by ν0 = φ0/h, and the work function φ0 varies between different metals, the x-intercept of the V0 versus ν graph differs from metal to metal.',
@@ -250,12 +250,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'Millikan\'s precise experimental verification of Einstein\'s photoelectric equation provided an important independent method for determining the value of',
     options: [
-      'the speed of light',
-      'Planck\'s constant, from the slope of the stopping potential versus frequency graph',
+      'the mass of the photon',
       'the charge of the electron only',
-      'the mass of the photon'
+      'the speed of light',
+      'Planck\'s constant, from the slope of the stopping potential versus frequency graph'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'By measuring the slope (h/e) of the stopping potential versus frequency graph and using the known value of the electron charge, Millikan\'s experiments provided an accurate independent determination of Planck\'s constant.',
     difficulty: 'medium'
   },
@@ -263,7 +263,7 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     id: 'dualnature-22',
     type: 'mcq',
     question: 'The momentum of a photon of frequency ν (and wavelength λ) is given by',
-    options: ['p = hν only, with no relation to wavelength', 'p = hν/c = h/λ', 'p = mc²/ν', 'p = h × c × λ'],
+    options: ['p = mc²/ν', 'p = hν/c = h/λ', 'p = h × c × λ', 'p = hν only, with no relation to wavelength'],
     correctIndex: 1,
     explanation: 'A photon\'s momentum is given by p = hν/c = h/λ, connecting its particle-like momentum to its wave-like frequency and wavelength.',
     difficulty: 'medium'
@@ -287,12 +287,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'The intensity of a beam of light, in terms of the photon picture, corresponds to the',
     options: [
-      'energy carried by a single photon only',
-      'number of photons crossing a unit area per unit time, multiplied by the energy of each individual photon',
+      'speed at which photons travel',
       'frequency of the photons alone, with no relation to photon number',
-      'speed at which photons travel'
+      'energy carried by a single photon only',
+      'number of photons crossing a unit area per unit time, multiplied by the energy of each individual photon'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Intensity is related to the total energy delivered per unit area per unit time, which depends on both the number of photons arriving (photon flux) and the energy carried by each photon.',
     difficulty: 'medium'
   },
@@ -301,10 +301,10 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'In a photon-electron collision (such as in the photoelectric effect or Compton scattering), the interaction obeys',
     options: [
-      'no conservation laws at all',
+      'conservation of momentum only, with energy being irrelevant',
       'conservation of both total energy and total momentum, treating the photon as a particle-like entity in the collision',
-      'conservation of energy only, with momentum being irrelevant',
-      'conservation of momentum only, with energy being irrelevant'
+      'no conservation laws at all',
+      'conservation of energy only, with momentum being irrelevant'
     ],
     correctIndex: 1,
     explanation: 'In such photon-particle interactions, both total energy and total momentum are conserved, consistent with treating the photon as a particle with definite energy and momentum.',
@@ -315,12 +315,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'The de Broglie hypothesis proposed that',
     options: [
-      'only electromagnetic radiation exhibits wave-particle duality',
-      'all matter, not just radiation, has an associated wave nature, with a wavelength related to its momentum',
       'matter particles have no momentum at all',
-      'only massless particles can exhibit wave-like behaviour'
+      'only massless particles can exhibit wave-like behaviour',
+      'only electromagnetic radiation exhibits wave-particle duality',
+      'all matter, not just radiation, has an associated wave nature, with a wavelength related to its momentum'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'De Broglie extended the concept of wave-particle duality to matter, proposing that particles of matter also have an associated wavelength, just as photons of light do.',
     difficulty: 'easy'
   },
@@ -328,7 +328,7 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     id: 'dualnature-27',
     type: 'mcq',
     question: 'The de Broglie wavelength (λ) of a particle with momentum p is given by',
-    options: ['λ = h × p', 'λ = h/p', 'λ = p/h', 'λ = h + p'],
+    options: ['λ = h × p', 'λ = h/p', 'λ = h + p', 'λ = p/h'],
     correctIndex: 1,
     explanation: 'De Broglie proposed that a particle with momentum p has an associated wavelength given by λ = h/p, analogous to the relationship between photon momentum and wavelength.',
     difficulty: 'easy'
@@ -338,12 +338,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'For macroscopic objects (such as a moving ball or car), the de Broglie wavelength is generally',
     options: [
+      'undefined, since de Broglie waves apply only to subatomic particles',
       'extremely large and easily observable in everyday life',
-      'extremely small, far too tiny to be detected or to produce any observable wave effects',
       'exactly equal to the object\'s physical size',
-      'undefined, since de Broglie waves apply only to subatomic particles'
+      'extremely small, far too tiny to be detected or to produce any observable wave effects'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since de Broglie wavelength is inversely proportional to momentum, and macroscopic objects have very large momenta, their associated wavelengths are extraordinarily small and have no observable consequences.',
     difficulty: 'medium'
   },
@@ -352,10 +352,10 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'For microscopic particles such as electrons accelerated through typical laboratory potentials, the de Broglie wavelength is',
     options: [
-      'still far too small to ever be significant or measurable',
+      'infinite, since electrons have negligible mass',
       'comparable to the spacing between atoms in a crystal, making wave effects like diffraction observable',
-      'always exactly equal to the wavelength of visible light',
-      'infinite, since electrons have negligible mass'
+      'still far too small to ever be significant or measurable',
+      'always exactly equal to the wavelength of visible light'
     ],
     correctIndex: 1,
     explanation: 'Electrons accelerated through typical potentials have de Broglie wavelengths comparable to interatomic spacings in crystals, making diffraction effects (as in the Davisson-Germer experiment) experimentally observable.',
@@ -366,12 +366,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'The de Broglie wavelength of an electron accelerated through a potential difference V (non-relativistically) can be expressed as',
     options: [
-      'λ = h/√(2meV)',
       'λ = h × √(2meV)',
+      'λ = h × meV',
       'λ = h/(meV)',
-      'λ = h × meV'
+      'λ = h/√(2meV)'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'For an electron of mass m and charge e accelerated through potential V, the kinetic energy eV = p²/2m gives p = √(2meV), so the de Broglie wavelength is λ = h/√(2meV).',
     difficulty: 'medium'
   },
@@ -380,12 +380,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'The Davisson-Germer experiment provided direct experimental confirmation of',
     options: [
-      'the photoelectric effect',
-      'the wave nature of electrons (matter waves), by observing a diffraction pattern when electrons were scattered from a nickel crystal',
       'the particle nature of light',
-      'the existence of the electron\'s electric charge'
+      'the existence of the electron\'s electric charge',
+      'the photoelectric effect',
+      'the wave nature of electrons (matter waves), by observing a diffraction pattern when electrons were scattered from a nickel crystal'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The Davisson-Germer experiment observed a diffraction pattern in electrons scattered from a nickel crystal, matching the wavelength predicted by de Broglie\'s hypothesis and confirming the wave nature of matter.',
     difficulty: 'medium'
   },
@@ -394,9 +394,9 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'In the Davisson-Germer experiment, the observed diffraction pattern of electrons scattered from the nickel crystal was found to be consistent with',
     options: [
-      'random scattering, with no discernible pattern at all',
-      'the de Broglie wavelength calculated from the momentum of the incident electrons',
       'the electron having zero momentum',
+      'the de Broglie wavelength calculated from the momentum of the incident electrons',
+      'random scattering, with no discernible pattern at all',
       'the electrons behaving as if they had no wave properties whatsoever'
     ],
     correctIndex: 1,
@@ -408,12 +408,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'The electron microscope achieves a much higher resolving power than an optical microscope mainly because',
     options: [
+      'electrons have a larger mass than photons',
       'electrons travel faster than light',
-      'the de Broglie wavelength of accelerated electrons can be made much shorter than the wavelength of visible light, allowing finer detail to be resolved',
       'electron microscopes use no lenses at all',
-      'electrons have a larger mass than photons'
+      'the de Broglie wavelength of accelerated electrons can be made much shorter than the wavelength of visible light, allowing finer detail to be resolved'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since resolving power improves with shorter wavelength, and the de Broglie wavelength of fast electrons can be made much shorter than that of visible light, electron microscopes achieve significantly higher resolving power than optical microscopes.',
     difficulty: 'medium'
   },
@@ -421,7 +421,7 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     id: 'dualnature-34',
     type: 'mcq',
     question: 'Hertz\'s early observations, made while studying electromagnetic waves, noted that emission of electric sparks was enhanced when the negative electrode of a spark gap was illuminated with',
-    options: ['infrared light', 'ultraviolet light', 'red light', 'radio waves'],
+    options: ['infrared light', 'ultraviolet light', 'radio waves', 'red light'],
     correctIndex: 1,
     explanation: 'Hertz observed that emission of sparks across a gap was facilitated when ultraviolet light was incident on the negative electrode, an early observation that later contributed to the discovery of the photoelectric effect.',
     difficulty: 'medium'
@@ -431,10 +431,10 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'Hallwachs and Lenard\'s early studies of the photoelectric effect found that a negatively charged zinc plate, when illuminated with ultraviolet light,',
     options: [
-      'became more negatively charged',
+      'spontaneously became magnetised',
       'lost its negative charge, while a positively charged plate showed no such loss',
       'remained completely unaffected in every way',
-      'spontaneously became magnetised'
+      'became more negatively charged'
     ],
     correctIndex: 1,
     explanation: 'Hallwachs observed that a negatively charged zinc plate lost its charge when exposed to ultraviolet light (due to photoelectric emission of electrons), while a positively charged plate did not show this effect (since the emitted electrons were attracted back).',
@@ -460,11 +460,11 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     question: 'For a given metal surface, if the intensity of incident light (above the threshold frequency) is doubled while keeping the frequency fixed, the maximum kinetic energy of the emitted photoelectrons will',
     options: [
       'double as well',
-      'remain unchanged, since Kmax depends only on frequency, not intensity',
+      'become infinite',
       'become zero',
-      'become infinite'
+      'remain unchanged, since Kmax depends only on frequency, not intensity'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'According to Einstein\'s photoelectric equation, the maximum kinetic energy of photoelectrons depends only on the frequency of light (and the work function), so doubling the intensity at a fixed frequency does not change Kmax.',
     difficulty: 'medium'
   },
@@ -487,12 +487,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'The work function of different metals typically ranges over values of the order of',
     options: [
-      'a few electron volts (eV)',
+      'exactly zero for all metals',
       'a few million electron volts (MeV)',
       'a few joules',
-      'exactly zero for all metals'
+      'a few electron volts (eV)'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Work functions of common metals are typically of the order of a few electron volts, a convenient unit for atomic-scale energies.',
     difficulty: 'medium'
   },
@@ -503,8 +503,8 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     options: [
       'a curve that bends sharply near zero frequency, with no linear region',
       'a straight line, with slope h and y-intercept -φ0 (equivalently, x-intercept at the threshold frequency ν0)',
-      'a horizontal line, independent of frequency',
-      'a graph that cannot be plotted at all'
+      'a graph that cannot be plotted at all',
+      'a horizontal line, independent of frequency'
     ],
     correctIndex: 1,
     explanation: 'Since Kmax = hν - φ0, plotting Kmax against ν gives a straight line with slope h (Planck\'s constant) and y-intercept -φ0, crossing the x-axis at the threshold frequency.',
@@ -515,12 +515,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'The photoelectric effect, along with related phenomena such as the Compton effect, provides strong evidence for the',
     options: [
-      'purely wave nature of light, with no particle characteristics at all',
-      'particle (quantum) nature of light, in which it behaves as a stream of photons carrying discrete energy and momentum',
       'complete absence of any energy in light',
-      'idea that light cannot interact with matter at all'
+      'purely wave nature of light, with no particle characteristics at all',
+      'idea that light cannot interact with matter at all',
+      'particle (quantum) nature of light, in which it behaves as a stream of photons carrying discrete energy and momentum'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The photoelectric effect (and related quantum phenomena) provided crucial early evidence for the particle (photon) nature of light, complementing its well-established wave nature seen in interference and diffraction.',
     difficulty: 'medium'
   },
@@ -543,12 +543,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'The number of photoelectrons emitted per second from a metal surface (for light above the threshold frequency) is directly proportional to the',
     options: [
-      'frequency of the incident light',
-      'intensity of the incident light, since intensity determines the rate at which photons strike the surface',
       'work function of the metal',
-      'stopping potential applied'
+      'frequency of the incident light',
+      'stopping potential applied',
+      'intensity of the incident light, since intensity determines the rate at which photons strike the surface'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since intensity corresponds to the number of photons striking the surface per unit time, and each absorbed photon (above threshold) can eject one electron, the rate of photoelectron emission is directly proportional to the light\'s intensity.',
     difficulty: 'medium'
   },
@@ -570,8 +570,8 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     id: 'dualnature-45',
     type: 'mcq',
     question: 'If a photon\'s frequency is doubled, its energy will',
-    options: ['halve', 'double, since photon energy is directly proportional to frequency (E = hν)', 'remain unchanged', 'become exactly zero'],
-    correctIndex: 1,
+    options: ['become exactly zero', 'halve', 'double, since photon energy is directly proportional to frequency (E = hν)', 'remain unchanged'],
+    correctIndex: 2,
     explanation: 'Since photon energy is given by E = hν, doubling the frequency directly doubles the photon\'s energy.',
     difficulty: 'easy'
   },
@@ -580,12 +580,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'If a photon\'s wavelength is doubled, its momentum will',
     options: [
-      'double',
-      'halve, since photon momentum p = h/λ is inversely proportional to wavelength',
+      'become infinite',
       'remain exactly the same',
-      'become infinite'
+      'halve, since photon momentum p = h/λ is inversely proportional to wavelength',
+      'double'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Since photon momentum is p = h/λ, doubling the wavelength halves the momentum.',
     difficulty: 'medium'
   },
@@ -595,11 +595,11 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     question: 'If the momentum of a moving particle is increased, its de Broglie wavelength will generally',
     options: [
       'increase, since wavelength is directly proportional to momentum',
-      'decrease, since de Broglie wavelength λ = h/p is inversely proportional to momentum',
       'remain exactly the same, unaffected by momentum',
-      'become infinite'
+      'become infinite',
+      'decrease, since de Broglie wavelength λ = h/p is inversely proportional to momentum'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since λ = h/p, an increase in momentum results in a corresponding decrease in the associated de Broglie wavelength.',
     difficulty: 'medium'
   },
@@ -608,12 +608,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'An electron and a proton, both moving with the same speed, will have de Broglie wavelengths related such that',
     options: [
+      'both will have exactly identical de Broglie wavelengths, regardless of mass',
       'the electron, having a smaller mass (and hence smaller momentum at the same speed), will have a longer de Broglie wavelength than the proton',
       'the proton will have a longer de Broglie wavelength than the electron',
-      'both will have exactly identical de Broglie wavelengths, regardless of mass',
       'de Broglie wavelength has no relationship to mass at all'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Since momentum p = mv, and the electron has a much smaller mass than the proton at the same speed, its momentum is smaller, giving it a correspondingly longer de Broglie wavelength (λ = h/p).',
     difficulty: 'medium'
   },
@@ -622,12 +622,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'The concept that light can behave as a wave in some experiments (such as interference and diffraction) and as a stream of particles (photons) in others (such as the photoelectric effect) is best described as',
     options: [
-      'a contradiction that has never been resolved',
-      'wave-particle duality, a fundamental and well-established feature of quantum phenomena',
       'evidence that light does not actually exist',
-      'proof that classical physics fully explains all optical phenomena'
+      'a contradiction that has never been resolved',
+      'proof that classical physics fully explains all optical phenomena',
+      'wave-particle duality, a fundamental and well-established feature of quantum phenomena'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Wave-particle duality is the well-established quantum mechanical principle that light (and matter) exhibits both wave-like and particle-like behaviour, depending on the type of experiment or observation.',
     difficulty: 'medium'
   },
@@ -636,12 +636,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'In the photon picture, the energy carried by each individual photon of a monochromatic beam of light is',
     options: [
-      'the same for every photon in the beam, determined solely by the frequency of the light',
       'different for each photon, varying randomly',
-      'dependent on the total intensity of the beam',
-      'dependent on the distance the photon has already travelled'
+      'dependent on the distance the photon has already travelled',
+      'the same for every photon in the beam, determined solely by the frequency of the light',
+      'dependent on the total intensity of the beam'
     ],
-    correctIndex: 0,
+    correctIndex: 2,
     explanation: 'For a monochromatic (single-frequency) beam of light, every photon carries exactly the same energy, hν, determined solely by that fixed frequency.',
     difficulty: 'medium'
   },
@@ -650,9 +650,9 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'Increasing the intensity of a monochromatic light beam incident on a photosensitive surface (frequency held fixed, above threshold) corresponds, in the photon picture, to',
     options: [
-      'increasing the energy of each individual photon',
-      'increasing the number of photons per unit time striking the surface, while the energy of each photon remains unchanged',
       'decreasing the number of photons per unit time',
+      'increasing the number of photons per unit time striking the surface, while the energy of each photon remains unchanged',
+      'increasing the energy of each individual photon',
       'converting photons into electrons directly'
     ],
     correctIndex: 1,
@@ -664,12 +664,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'The relationship p = h/λ, connecting momentum and wavelength, is significant because it',
     options: [
-      'applies only to photons, and has no relevance to matter particles',
-      'applies universally to both photons and material particles, forming the basis of de Broglie\'s matter-wave hypothesis',
       'was disproved by later experiments',
-      'shows that momentum and wavelength are completely unrelated concepts'
+      'shows that momentum and wavelength are completely unrelated concepts',
+      'applies only to photons, and has no relevance to matter particles',
+      'applies universally to both photons and material particles, forming the basis of de Broglie\'s matter-wave hypothesis'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'De Broglie extended the photon relation p = h/λ to matter particles as well, proposing that any particle with momentum p has an associated wavelength λ = h/p, a universal relationship central to quantum mechanics.',
     difficulty: 'medium'
   },
@@ -677,8 +677,8 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     id: 'dualnature-53',
     type: 'mcq',
     question: 'The Davisson-Germer experiment used which type of crystal to scatter electrons and observe diffraction effects?',
-    options: ['sodium chloride crystal', 'nickel crystal', 'diamond crystal', 'quartz crystal'],
-    correctIndex: 1,
+    options: ['sodium chloride crystal', 'quartz crystal', 'nickel crystal', 'diamond crystal'],
+    correctIndex: 2,
     explanation: 'The Davisson-Germer experiment scattered a beam of electrons from the surface of a nickel crystal, observing a diffraction pattern consistent with the predicted de Broglie wavelength.',
     difficulty: 'medium'
   },
@@ -687,10 +687,10 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'Prior to the experimental confirmation by Davisson and Germer, de Broglie\'s hypothesis of matter waves was',
     options: [
-      'already fully proven experimentally by earlier researchers',
+      'identical to Einstein\'s photoelectric equation, with no new content',
       'a purely theoretical proposal, initially without direct experimental confirmation',
-      'universally rejected by the entire scientific community, with no interest at all',
-      'identical to Einstein\'s photoelectric equation, with no new content'
+      'already fully proven experimentally by earlier researchers',
+      'universally rejected by the entire scientific community, with no interest at all'
     ],
     correctIndex: 1,
     explanation: 'De Broglie\'s hypothesis was initially a theoretical proposal based on the symmetry between wave and particle descriptions of radiation and matter, later confirmed experimentally by the Davisson-Germer diffraction experiment.',
@@ -701,12 +701,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'The wave nature of fast-moving electrons is exploited practically in the design of the',
     options: [
-      'ordinary optical microscope',
-      'electron microscope, which achieves much higher resolving power than an optical microscope',
       'radio telescope',
-      'photocell'
+      'photocell',
+      'ordinary optical microscope',
+      'electron microscope, which achieves much higher resolving power than an optical microscope'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The electron microscope exploits the short de Broglie wavelength of fast-moving electrons to achieve significantly higher resolving power than is possible with visible light in an optical microscope.',
     difficulty: 'medium'
   },
@@ -715,12 +715,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'A key reason electron microscopes can resolve much finer details than optical microscopes is that',
     options: [
-      'electrons are heavier than photons, giving them more energy',
-      'resolving power improves as the wavelength used decreases, and accelerated electrons can have de Broglie wavelengths far shorter than that of visible light',
       'electron microscopes use no wave-like radiation at all',
-      'optical microscopes cannot use any lenses'
+      'optical microscopes cannot use any lenses',
+      'resolving power improves as the wavelength used decreases, and accelerated electrons can have de Broglie wavelengths far shorter than that of visible light',
+      'electrons are heavier than photons, giving them more energy'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Since resolving power is inversely related to the wavelength used for imaging, and electron de Broglie wavelengths can be made far shorter than visible light wavelengths, electron microscopes can resolve much finer structural details.',
     difficulty: 'medium'
   },
@@ -729,10 +729,10 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'In Einstein\'s photoelectric equation, if the frequency of incident light is exactly equal to the threshold frequency, then the maximum kinetic energy of the emitted photoelectron is',
     options: [
-      'at its maximum possible value',
+      'infinite',
       'exactly zero, since all the photon energy is used to just overcome the work function',
-      'negative',
-      'infinite'
+      'at its maximum possible value',
+      'negative'
     ],
     correctIndex: 1,
     explanation: 'At the threshold frequency, hν = φ0 exactly, so all the photon\'s energy is used to just barely free the electron, leaving no excess energy for kinetic energy, giving Kmax = 0.',
@@ -743,10 +743,10 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'A metal with a higher work function will generally have',
     options: [
-      'a lower threshold frequency than a metal with a smaller work function',
+      'no threshold frequency at all',
       'a higher threshold frequency than a metal with a smaller work function, since ν0 = φ0/h',
-      'exactly the same threshold frequency as any other metal',
-      'no threshold frequency at all'
+      'a lower threshold frequency than a metal with a smaller work function',
+      'exactly the same threshold frequency as any other metal'
     ],
     correctIndex: 1,
     explanation: 'Since threshold frequency is directly proportional to work function (ν0 = φ0/h), a metal with a higher work function will require a higher frequency of light to initiate photoelectric emission.',
@@ -757,12 +757,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'Increasing the accelerating potential difference through which an electron is accelerated will generally cause its de Broglie wavelength to',
     options: [
-      'increase, since higher potential gives the electron more energy',
-      'decrease, since a higher accelerating potential gives the electron greater momentum, and de Broglie wavelength is inversely proportional to momentum',
       'remain completely unchanged',
-      'become infinite'
+      'become infinite',
+      'increase, since higher potential gives the electron more energy',
+      'decrease, since a higher accelerating potential gives the electron greater momentum, and de Broglie wavelength is inversely proportional to momentum'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A higher accelerating potential increases the electron\'s kinetic energy and momentum, and since λ = h/p, this results in a shorter de Broglie wavelength.',
     difficulty: 'medium'
   },
@@ -785,12 +785,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'In a photoelectric experiment, if the collector plate is made increasingly positive relative to the emitter, the photocurrent generally',
     options: [
+      'remains exactly zero at all times',
       'decreases continuously without limit',
       'increases initially and then reaches a constant maximum (saturation) value, as essentially all emitted photoelectrons are collected',
-      'remains exactly zero at all times',
       'oscillates randomly with no clear pattern'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'As the collector potential becomes more positive, an increasing fraction of emitted photoelectrons are collected, and the photocurrent rises until it reaches a saturation value once essentially all emitted electrons are being collected.',
     difficulty: 'medium'
   },
@@ -799,12 +799,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'The energy of a photon of visible light is typically of the order of',
     options: [
-      'a few electron volts',
+      'exactly zero',
       'several million electron volts',
-      'a few joules',
-      'exactly zero'
+      'a few electron volts',
+      'a few joules'
     ],
-    correctIndex: 0,
+    correctIndex: 2,
     explanation: 'Photons of visible light typically carry energies of the order of a few electron volts, consistent with typical atomic and work function energy scales.',
     difficulty: 'medium'
   },
@@ -812,8 +812,8 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     id: 'dualnature-63',
     type: 'mcq',
     question: 'The relation between the energy (E) and momentum (p) of a photon can be written as',
-    options: ['E = pc, where c is the speed of light', 'E = p/c', 'E = p²c', 'E = p + c'],
-    correctIndex: 0,
+    options: ['E = p/c', 'E = p + c', 'E = p²c', 'E = pc, where c is the speed of light'],
+    correctIndex: 3,
     explanation: 'Since a photon has E = hν and p = hν/c, combining these gives E = pc, the characteristic energy-momentum relationship for a massless particle like the photon.',
     difficulty: 'medium'
   },
@@ -821,8 +821,8 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     id: 'dualnature-64',
     type: 'mcq',
     question: 'Which of the following is NOT a valid method of causing electron emission from a metal surface, as discussed in this chapter?',
-    options: ['thermionic emission (heating)', 'field emission (strong electric field)', 'photoelectric emission (light)', 'gravitational emission (applying a gravitational field)'],
-    correctIndex: 3,
+    options: ['field emission (strong electric field)', 'gravitational emission (applying a gravitational field)', 'photoelectric emission (light)', 'thermionic emission (heating)'],
+    correctIndex: 1,
     explanation: 'Thermionic, field, and photoelectric emission are the three standard mechanisms of electron emission discussed; "gravitational emission" is not a recognised or valid mechanism for causing electron emission.',
     difficulty: 'easy'
   },
@@ -832,9 +832,9 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     question: 'The value of Planck\'s constant, as determined from photoelectric experiments (via the slope of the stopping potential versus frequency graph), is found to be',
     options: [
       'a universal constant, the same regardless of which metal is used as the photosensitive surface',
-      'different for every metal tested',
       'dependent on the intensity of light used in the experiment',
-      'zero for all metals'
+      'zero for all metals',
+      'different for every metal tested'
     ],
     correctIndex: 0,
     explanation: 'Since the slope of the V0 versus ν graph is h/e for every metal tested, Planck\'s constant, as determined this way, is confirmed to be a universal constant, independent of the metal used.',
@@ -845,10 +845,10 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'If light of frequency just above the threshold frequency is used in a photoelectric experiment, the maximum kinetic energy of the emitted photoelectrons will be',
     options: [
-      'very large',
-      'very small, close to zero, since hν is only slightly greater than φ0',
       'exactly equal to the photon energy',
-      'negative'
+      'very small, close to zero, since hν is only slightly greater than φ0',
+      'negative',
+      'very large'
     ],
     correctIndex: 1,
     explanation: 'When the frequency is just above threshold, hν exceeds φ0 by only a small amount, so the resulting maximum kinetic energy (Kmax = hν - φ0) is correspondingly small.',
@@ -859,12 +859,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'Which of the following combinations correctly represents Einstein\'s photoelectric equation in terms of stopping potential (V0)?',
     options: [
-      'eV0 = hν - φ0',
       'eV0 = hν + φ0',
       'eV0 = hν × φ0',
-      'eV0 = φ0 - hν'
+      'eV0 = φ0 - hν',
+      'eV0 = hν - φ0'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Since eV0 = Kmax, and Kmax = hν - φ0 from Einstein\'s equation, the stopping potential relationship becomes eV0 = hν - φ0.',
     difficulty: 'medium'
   },
@@ -873,12 +873,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'Compton scattering, a phenomenon related to the particle nature of light, involves the scattering of photons by',
     options: [
-      'other photons only, with no interaction with matter',
-      'free (or loosely bound) electrons, with an accompanying shift in the photon\'s wavelength, consistent with photon-particle collision dynamics',
       'the atomic nucleus exclusively',
-      'gravitational fields only'
+      'gravitational fields only',
+      'free (or loosely bound) electrons, with an accompanying shift in the photon\'s wavelength, consistent with photon-particle collision dynamics',
+      'other photons only, with no interaction with matter'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Compton scattering involves the collision of photons with (typically loosely bound) electrons, resulting in a change in the photon\'s wavelength, further supporting the particle-like behaviour of light in such interactions.',
     difficulty: 'medium'
   },
@@ -887,10 +887,10 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'The dual nature of radiation, as established through phenomena like interference/diffraction (wave-like) and the photoelectric effect/Compton scattering (particle-like), is best understood within the framework of',
     options: [
-      'classical Newtonian mechanics alone',
+      'no coherent theoretical framework; the two behaviours remain permanently unexplained',
       'quantum mechanics, which reconciles the seemingly contradictory wave and particle behaviours',
       'general relativity alone',
-      'no coherent theoretical framework; the two behaviours remain permanently unexplained'
+      'classical Newtonian mechanics alone'
     ],
     correctIndex: 1,
     explanation: 'Quantum mechanics provides the theoretical framework that reconciles and unifies the wave-like and particle-like behaviours of both radiation and matter, resolving the apparent contradiction.',
@@ -901,12 +901,12 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     type: 'mcq',
     question: 'Overall, the chapter on the dual nature of radiation and matter, as emphasised in NCERT, centres on understanding',
     options: [
-      'the photoelectric effect and Einstein\'s photon explanation, the particle-like properties of light (energy and momentum of photons), and the wave-like properties of matter (de Broglie hypothesis, confirmed by the Davisson-Germer experiment)',
-      'only the classical wave theory of light, with no reference to particle behaviour at all',
       'only Newtonian mechanics, with no quantum concepts discussed',
-      'topics entirely unrelated to the nature of light or matter'
+      'topics entirely unrelated to the nature of light or matter',
+      'the photoelectric effect and Einstein\'s photon explanation, the particle-like properties of light (energy and momentum of photons), and the wave-like properties of matter (de Broglie hypothesis, confirmed by the Davisson-Germer experiment)',
+      'only the classical wave theory of light, with no reference to particle behaviour at all'
     ],
-    correctIndex: 0,
+    correctIndex: 2,
     explanation: 'This chapter builds a coherent picture connecting the photoelectric effect and photon concept (particle nature of radiation) with the de Broglie hypothesis and its experimental confirmation (wave nature of matter), establishing the foundation of wave-particle duality.',
     difficulty: 'medium'
   },
@@ -1937,4 +1937,3 @@ export const DUAL_NATURE_RADIATION_MATTER = [
     difficulty: 'medium'
   }
 ];
-

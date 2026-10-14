@@ -5,12 +5,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'According to Werner\'s theory, the primary valency of a metal in a coordination compound corresponds to its',
     options: [
-      'coordination number',
-      'oxidation state, and is satisfied by ionisable (negative) ions',
       'atomic number',
-      'molecular mass'
+      'coordination number',
+      'molecular mass',
+      'oxidation state, and is satisfied by ionisable (negative) ions'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Werner proposed that primary valency is ionisable and corresponds to the oxidation state of the metal, satisfied typically by negative ions.',
     difficulty: 'medium'
   },
@@ -19,12 +19,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'According to Werner\'s theory, the secondary valency of a metal in a coordination compound',
     options: [
-      'is ionisable and corresponds to oxidation state',
-      'is non-ionisable, corresponds to the coordination number, and has a fixed spatial arrangement in space',
       'is always equal to the primary valency',
-      'has no relation to the geometry of the complex'
+      'has no relation to the geometry of the complex',
+      'is ionisable and corresponds to oxidation state',
+      'is non-ionisable, corresponds to the coordination number, and has a fixed spatial arrangement in space'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Secondary valency, as proposed by Werner, is non-ionisable, corresponds to the coordination number of the metal, and is directed in space, giving the complex its characteristic geometry.',
     difficulty: 'medium'
   },
@@ -34,11 +34,11 @@ export const COORDINATION_COMPOUNDS = [
     question: 'A key experimental difference between a double salt and a coordination compound is that, in aqueous solution, a double salt',
     options: [
       'retains its complex ion identity, unlike a coordination compound',
-      'dissociates completely into its constituent simple ions, each of which can be detected by usual chemical tests',
       'never dissolves in water at all',
-      'behaves identically to a coordination compound in every respect'
+      'behaves identically to a coordination compound in every respect',
+      'dissociates completely into its constituent simple ions, each of which can be detected by usual chemical tests'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Double salts, such as Mohr\'s salt or potash alum, dissociate completely into their constituent simple ions in solution, and each ion can be individually detected, unlike the complex ions of coordination compounds.',
     difficulty: 'medium'
   },
@@ -48,11 +48,11 @@ export const COORDINATION_COMPOUNDS = [
     question: 'Potassium ferrocyanide, K4[Fe(CN)6], does NOT give the usual chemical test for Fe2+ or free CN- ions in solution because',
     options: [
       'it does not actually contain iron or cyanide at all',
-      'the complex ion [Fe(CN)6]4- retains its identity in solution and does not dissociate into free Fe2+ and CN- ions',
       'it is not soluble in water',
-      'iron and cyanide react to form a completely different compound upon dissolution'
+      'iron and cyanide react to form a completely different compound upon dissolution',
+      'the complex ion [Fe(CN)6]4- retains its identity in solution and does not dissociate into free Fe2+ and CN- ions'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The complex ion [Fe(CN)6]4- is a coordination entity that remains intact in solution, so the individual Fe2+ and CN- ions are not present as free ions and cannot be detected by standard tests.',
     difficulty: 'medium'
   },
@@ -62,11 +62,11 @@ export const COORDINATION_COMPOUNDS = [
     question: 'A ligand is best described as',
     options: [
       'the central metal atom or ion in a coordination compound',
-      'an ion or molecule that can donate a pair of electrons to the central metal atom/ion, forming a coordinate bond',
       'a counter ion balancing the charge of the complex',
-      'the overall coordination compound itself'
+      'the overall coordination compound itself',
+      'an ion or molecule that can donate a pair of electrons to the central metal atom/ion, forming a coordinate bond'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A ligand is an ion or molecule capable of donating a lone pair of electrons to the central metal atom or ion, forming a coordinate (dative) bond within the coordination entity.',
     difficulty: 'easy'
   },
@@ -75,12 +75,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'The coordination number of a metal in a coordination entity is defined as the',
     options: [
+      'number of counter ions present outside the coordination sphere',
       'total number of electrons in the metal atom',
-      'number of ligand donor atoms directly bonded to the central metal atom/ion via coordinate bonds',
       'oxidation state of the metal',
-      'number of counter ions present outside the coordination sphere'
+      'number of ligand donor atoms directly bonded to the central metal atom/ion via coordinate bonds'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Coordination number refers to the number of sigma bonds (donor atoms of ligands) directly bonded to the central metal atom or ion.',
     difficulty: 'easy'
   },
@@ -88,8 +88,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-7',
     type: 'mcq',
     question: 'A ligand that can bind to the central metal atom through only one donor atom is called a',
-    options: ['bidentate ligand', 'polydentate ligand', 'unidentate (monodentate) ligand', 'ambidentate ligand'],
-    correctIndex: 2,
+    options: ['polydentate ligand', 'bidentate ligand', 'ambidentate ligand', 'unidentate (monodentate) ligand'],
+    correctIndex: 3,
     explanation: 'A unidentate (or monodentate) ligand has only one donor atom available to bind to the central metal atom.',
     difficulty: 'easy'
   },
@@ -97,7 +97,7 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-8',
     type: 'mcq',
     question: 'A ligand that has two donor atoms and can simultaneously bind to the same metal atom through both, forming a ring, is called a',
-    options: ['unidentate ligand', 'bidentate (chelating) ligand', 'ambidentate ligand', 'counter ligand'],
+    options: ['counter ligand', 'bidentate (chelating) ligand', 'unidentate ligand', 'ambidentate ligand'],
     correctIndex: 1,
     explanation: 'A bidentate ligand has two donor atoms that can bind simultaneously to a single metal centre, forming a ring structure; such ligands are also called chelating ligands.',
     difficulty: 'easy'
@@ -107,12 +107,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'An ambidentate ligand is one that',
     options: [
-      'can bind to the metal through two different donor atoms, but only one at a time',
       'always binds through exactly two atoms simultaneously',
+      'is always negatively charged and monodentate',
       'has no donor atoms at all',
-      'is always negatively charged and monodentate'
+      'can bind to the metal through two different donor atoms, but only one at a time'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'An ambidentate ligand possesses two different potential donor atoms but can coordinate to the metal through only one of them at a given time, giving rise to linkage isomerism.',
     difficulty: 'medium'
   },
@@ -130,12 +130,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'The thiocyanate ion, SCN-, is another classic example of an ambidentate ligand, since it can bind to the metal through',
     options: [
-      'the sulphur atom (thiocyanato-S) or the nitrogen atom (thiocyanato-N/isothiocyanato)',
       'only the carbon atom, never through sulphur or nitrogen',
       'exactly two atoms simultaneously, always',
-      'oxygen atoms only'
+      'oxygen atoms only',
+      'the sulphur atom (thiocyanato-S) or the nitrogen atom (thiocyanato-N/isothiocyanato)'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The thiocyanate ion can coordinate through either its sulphur atom or its nitrogen atom, making it a classic ambidentate ligand.',
     difficulty: 'medium'
   },
@@ -143,8 +143,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-12',
     type: 'mcq',
     question: 'A polydentate ligand that has six donor atoms and can occupy all six coordination positions of an octahedral metal centre is',
-    options: ['ammonia', 'ethylenediamine', 'ethylenediaminetetraacetate (EDTA4-)', 'chloride ion'],
-    correctIndex: 2,
+    options: ['ethylenediamine', 'ethylenediaminetetraacetate (EDTA4-)', 'chloride ion', 'ammonia'],
+    correctIndex: 1,
     explanation: 'EDTA4- (ethylenediaminetetraacetate) is a hexadentate ligand, possessing six donor atoms (two nitrogen and four oxygen atoms) capable of occupying all six coordination positions of an octahedral metal ion.',
     difficulty: 'medium'
   },
@@ -155,8 +155,8 @@ export const COORDINATION_COMPOUNDS = [
     options: [
       'less stable than a similar complex formed with unidentate ligands',
       'more stable than a similar complex formed with unidentate ligands, a phenomenon known as the chelate effect',
-      'exactly equal in stability to a comparable non-chelate complex',
-      'unrelated to overall complex stability'
+      'unrelated to overall complex stability',
+      'exactly equal in stability to a comparable non-chelate complex'
     ],
     correctIndex: 1,
     explanation: 'Chelate complexes are generally more stable than analogous complexes formed with comparable unidentate ligands, an effect known as the chelate effect.',
@@ -167,12 +167,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'A homoleptic complex is one in which',
     options: [
-      'the metal is bound to more than one kind of ligand',
-      'the metal is bound to only one kind of ligand throughout',
+      'the complex has no defined coordination number',
       'there are no ligands present at all',
-      'the complex has no defined coordination number'
+      'the metal is bound to more than one kind of ligand',
+      'the metal is bound to only one kind of ligand throughout'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A homoleptic complex has the central metal bound to only a single type of ligand, e.g. [Co(NH3)6]3+.',
     difficulty: 'easy'
   },
@@ -181,12 +181,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'A heteroleptic complex is one in which',
     options: [
-      'the metal is bound to more than one kind of ligand',
-      'the metal is bound to only one kind of ligand',
       'the complex ion has no charge',
-      'there is no central metal atom present'
+      'the metal is bound to more than one kind of ligand',
+      'there is no central metal atom present',
+      'the metal is bound to only one kind of ligand'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'A heteroleptic complex has the central metal bound to two or more different kinds of ligands, e.g. [Co(NH3)4Cl2]+.',
     difficulty: 'easy'
   },
@@ -195,12 +195,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'According to IUPAC nomenclature rules, within the name of a coordination compound, the names of ligands are arranged in',
     options: [
-      'increasing order of their charge',
-      'alphabetical order, regardless of the number of each ligand present or their charge',
       'decreasing order of molecular mass',
-      'the order in which they were historically discovered'
+      'the order in which they were historically discovered',
+      'increasing order of their charge',
+      'alphabetical order, regardless of the number of each ligand present or their charge'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'IUPAC rules specify that ligand names within a coordination compound name are listed in alphabetical order, ignoring any multiplying prefixes and regardless of the ligand\'s charge.',
     difficulty: 'medium'
   },
@@ -208,8 +208,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-17',
     type: 'mcq',
     question: 'According to IUPAC nomenclature, names of anionic ligands typically end with the suffix',
-    options: ['-ium', '-ate', '-o', '-yl'],
-    correctIndex: 2,
+    options: ['-yl', '-ate', '-ium', '-o'],
+    correctIndex: 3,
     explanation: 'Anionic ligand names conventionally end in "-o", such as chloro (Cl-), cyano (CN-), and oxalato (C2O4^2-).',
     difficulty: 'medium'
   },
@@ -217,7 +217,7 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-18',
     type: 'mcq',
     question: 'In IUPAC nomenclature, the neutral ligand H2O is named as',
-    options: ['hydroxo', 'aqua', 'water', 'oxo'],
+    options: ['oxo', 'aqua', 'hydroxo', 'water'],
     correctIndex: 1,
     explanation: 'The neutral ligand water is given the special name "aqua" in coordination compound nomenclature.',
     difficulty: 'easy'
@@ -226,8 +226,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-19',
     type: 'mcq',
     question: 'In IUPAC nomenclature, the neutral ligand NH3 is named as',
-    options: ['ammonium', 'amine', 'ammine', 'nitrido'],
-    correctIndex: 2,
+    options: ['ammonium', 'nitrido', 'amine', 'ammine'],
+    correctIndex: 3,
     explanation: 'The neutral ligand ammonia is named "ammine" (with a double m) in coordination nomenclature, distinct from the organic term "amine".',
     difficulty: 'easy'
   },
@@ -235,7 +235,7 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-20',
     type: 'mcq',
     question: 'In IUPAC nomenclature, the neutral ligand CO is named as',
-    options: ['carbonate', 'carbonyl', 'oxocarbon', 'carbonido'],
+    options: ['oxocarbon', 'carbonyl', 'carbonido', 'carbonate'],
     correctIndex: 1,
     explanation: 'The neutral ligand carbon monoxide is named "carbonyl" when acting as a ligand in coordination compounds.',
     difficulty: 'easy'
@@ -245,10 +245,10 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'For simple monodentate ligands, the number of each ligand present in a complex is indicated using the prefixes',
     options: [
-      'bis, tris, tetrakis',
+      'mono, dual, triple',
       'di, tri, tetra, penta, hexa',
       'sub, super, hyper',
-      'mono, dual, triple'
+      'bis, tris, tetrakis'
     ],
     correctIndex: 1,
     explanation: 'Simple monodentate ligands use the standard multiplying prefixes di, tri, tetra, and so on to indicate their number in the complex.',
@@ -259,12 +259,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'When naming a complex containing multiple polydentate or complex-named ligands (such as ethylenediamine), the prefixes used to indicate their number are',
     options: [
+      'no prefix is ever used for such ligands',
       'di, tri, tetra',
-      'bis, tris, tetrakis, with the ligand name enclosed in parentheses',
       'mono, sub, hyper',
-      'no prefix is ever used for such ligands'
+      'bis, tris, tetrakis, with the ligand name enclosed in parentheses'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'To avoid ambiguity, ligands whose names already contain prefixes like "di" (such as ethylenediamine) use "bis", "tris", "tetrakis" instead, with the ligand name enclosed in parentheses.',
     difficulty: 'medium'
   },
@@ -273,9 +273,9 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'In the IUPAC name of a coordination compound, the oxidation state of the central metal atom is indicated by',
     options: [
-      'a superscript immediately before the metal name',
-      'a Roman numeral placed in parentheses immediately after the name of the metal',
       'a subscript after the ligand name',
+      'a Roman numeral placed in parentheses immediately after the name of the metal',
+      'a superscript immediately before the metal name',
       'the oxidation state is never indicated in the name'
     ],
     correctIndex: 1,
@@ -288,11 +288,11 @@ export const COORDINATION_COMPOUNDS = [
     question: 'If the overall complex ion is an anion, the name of the central metal typically',
     options: [
       'remains completely unchanged',
-      'is modified with the suffix "-ate" added to the metal name (or its Latin root)',
       'is dropped entirely from the name',
-      'is replaced with the ligand name'
+      'is replaced with the ligand name',
+      'is modified with the suffix "-ate" added to the metal name (or its Latin root)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'When the complex ion carries an overall negative charge, the metal name is modified by adding the suffix "-ate" (e.g., ferrate for iron, cobaltate for cobalt).',
     difficulty: 'medium'
   },
@@ -300,7 +300,7 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-25',
     type: 'mcq',
     question: 'The correct IUPAC name for the complex ion [Fe(CN)6]4- is',
-    options: ['hexacyanoiron(II) ion', 'hexacyanoferrate(II) ion', 'hexacyanidoferrium ion', 'ironhexacyanide(II) ion'],
+    options: ['ironhexacyanide(II) ion', 'hexacyanoferrate(II) ion', 'hexacyanidoferrium ion', 'hexacyanoiron(II) ion'],
     correctIndex: 1,
     explanation: 'Since the complex is an anion, the metal name "ferrate" (derived from the Latin "ferrum") is used, with the oxidation state (+2) shown in Roman numerals: hexacyanoferrate(II) ion.',
     difficulty: 'hard'
@@ -309,8 +309,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-26',
     type: 'mcq',
     question: 'In writing the formula of a coordination compound, the coordination entity (complex ion or molecule) is enclosed within',
-    options: ['curly braces { }', 'square brackets [ ]', 'parentheses ( )', 'angle brackets < >'],
-    correctIndex: 1,
+    options: ['curly braces { }', 'parentheses ( )', 'angle brackets < >', 'square brackets [ ]'],
+    correctIndex: 3,
     explanation: 'By convention, the entire coordination entity, including the central metal and its directly bonded ligands, is enclosed within square brackets in the formula.',
     difficulty: 'easy'
   },
@@ -327,7 +327,7 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-28',
     type: 'mcq',
     question: 'The pair [Co(NH3)5(NO2)]2+ and [Co(NH3)5(ONO)]2+ is a classic example of which type of isomerism?',
-    options: ['Ionisation isomerism', 'Linkage isomerism', 'Coordination isomerism', 'Geometrical isomerism'],
+    options: ['Coordination isomerism', 'Linkage isomerism', 'Geometrical isomerism', 'Ionisation isomerism'],
     correctIndex: 1,
     explanation: 'These two complexes differ only in whether the ambidentate nitrite ligand is bound through nitrogen (nitro) or oxygen (nitrito), a classic example of linkage isomerism.',
     difficulty: 'medium'
@@ -337,12 +337,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'Ionisation isomerism in coordination compounds arises when',
     options: [
-      'a counter ion outside the coordination sphere and a ligand inside the coordination sphere are interchanged, giving different ions in solution',
-      'two complexes have entirely different molecular formulas',
       'a ligand simply changes its donor atom',
-      'water molecules move between being coordinated and being water of crystallisation'
+      'two complexes have entirely different molecular formulas',
+      'water molecules move between being coordinated and being water of crystallisation',
+      'a counter ion outside the coordination sphere and a ligand inside the coordination sphere are interchanged, giving different ions in solution'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Ionisation isomers have the same overall molecular formula but differ in which ion (a ligand or a counter ion) is inside versus outside the coordination sphere, producing different ions upon dissociation in water.',
     difficulty: 'medium'
   },
@@ -350,8 +350,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-30',
     type: 'mcq',
     question: 'The pair [Co(NH3)5Br]SO4 and [Co(NH3)5SO4]Br is a classic example of which type of isomerism?',
-    options: ['Linkage isomerism', 'Coordination isomerism', 'Ionisation isomerism', 'Optical isomerism'],
-    correctIndex: 2,
+    options: ['Optical isomerism', 'Ionisation isomerism', 'Linkage isomerism', 'Coordination isomerism'],
+    correctIndex: 1,
     explanation: 'In this pair, the bromide and sulphate groups exchange positions between being a ligand (inside the coordination sphere) and a counter ion (outside), giving different ions in solution — this is ionisation isomerism.',
     difficulty: 'medium'
   },
@@ -373,8 +373,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-32',
     type: 'mcq',
     question: 'The set [Cr(H2O)6]Cl3, [Cr(H2O)5Cl]Cl2.H2O, and [Cr(H2O)4Cl2]Cl.2H2O is a classic illustration of',
-    options: ['linkage isomerism', 'hydrate (solvate) isomerism', 'geometrical isomerism', 'optical isomerism'],
-    correctIndex: 1,
+    options: ['linkage isomerism', 'optical isomerism', 'geometrical isomerism', 'hydrate (solvate) isomerism'],
+    correctIndex: 3,
     explanation: 'These three complexes have the same overall formula but differ in how many water molecules are coordinated directly to chromium versus present as water of crystallisation, a classic example of hydrate isomerism.',
     difficulty: 'medium'
   },
@@ -383,12 +383,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'Coordination isomerism occurs in compounds containing both a complex cation and a complex anion, and arises from',
     options: [
+      'the presence of water of crystallisation',
       'a different distribution of ligands between the cationic and anionic complexes',
       'a change in the ambidentate ligand\'s point of attachment',
-      'the exchange of a counter ion with a coordinated ligand',
-      'the presence of water of crystallisation'
+      'the exchange of a counter ion with a coordinated ligand'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Coordination isomerism arises in compounds with both a complex cation and complex anion, when the distribution of ligands between the two complex ions differs between isomers, such as [Co(NH3)6][Cr(CN)6] and [Cr(NH3)6][Co(CN)6].',
     difficulty: 'medium'
   },
@@ -396,8 +396,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-34',
     type: 'mcq',
     question: 'Geometrical (cis-trans) isomerism is commonly observed in square planar complexes with the general formula',
-    options: ['MA4', 'MA2B2', 'MABCD only', 'MA6'],
-    correctIndex: 1,
+    options: ['MA6', 'MA4', 'MABCD only', 'MA2B2'],
+    correctIndex: 3,
     explanation: 'Square planar complexes of the type MA2B2 (two pairs of different ligands) show cis (adjacent) and trans (opposite) geometrical isomers.',
     difficulty: 'medium'
   },
@@ -419,8 +419,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-36',
     type: 'mcq',
     question: 'For an octahedral complex of the general formula MA3B3, the two geometrical isomers possible are called',
-    options: ['cis and trans', 'facial (fac) and meridional (mer)', 'left and right', 'axial and equatorial only'],
-    correctIndex: 1,
+    options: ['cis and trans', 'left and right', 'axial and equatorial only', 'facial (fac) and meridional (mer)'],
+    correctIndex: 3,
     explanation: 'Octahedral complexes of type MA3B3 exhibit facial (fac, where the three identical ligands occupy one triangular face) and meridional (mer, where the three identical ligands lie in a plane through the metal) isomers.',
     difficulty: 'medium'
   },
@@ -442,7 +442,7 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-38',
     type: 'mcq',
     question: 'The octahedral complex [Co(en)3]3+, with three bidentate ethylenediamine ligands, is a well-known example that shows',
-    options: ['linkage isomerism only', 'optical isomerism, existing as a pair of non-superimposable mirror-image enantiomers', 'no isomerism at all', 'ionisation isomerism only'],
+    options: ['ionisation isomerism only', 'optical isomerism, existing as a pair of non-superimposable mirror-image enantiomers', 'no isomerism at all', 'linkage isomerism only'],
     correctIndex: 1,
     explanation: '[Co(en)3]3+ is chiral and exists as a pair of optical isomers (enantiomers) that are non-superimposable mirror images of one another.',
     difficulty: 'medium'
@@ -466,12 +466,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'According to Valence Bond Theory (VBT), the geometry of a coordination complex is explained on the basis of',
     options: [
+      'the melting point of the compound',
       'purely electrostatic interactions between the metal and ligands',
-      'the type of hybridisation adopted by the central metal atom/ion',
       'the number of counter ions present',
-      'the melting point of the compound'
+      'the type of hybridisation adopted by the central metal atom/ion'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Valence Bond Theory attributes the geometry of a coordination complex to the specific type of hybrid orbitals (such as sp3, sp3d2, or d2sp3) adopted by the central metal atom or ion.',
     difficulty: 'medium'
   },
@@ -482,8 +482,8 @@ export const COORDINATION_COMPOUNDS = [
     options: [
       'weak field ligands and a high spin arrangement',
       'strong field ligands and a low spin arrangement',
-      'no ligands at all',
-      'a tetrahedral geometry instead of octahedral'
+      'a tetrahedral geometry instead of octahedral',
+      'no ligands at all'
     ],
     correctIndex: 1,
     explanation: 'Complexes using inner (n-1)d orbitals in a d2sp3 hybridisation are typically formed with strong field ligands and result in a low spin arrangement (fewer unpaired electrons, since pairing is favoured).',
@@ -495,11 +495,11 @@ export const COORDINATION_COMPOUNDS = [
     question: 'According to VBT, an octahedral complex formed using outer nd orbitals, giving an sp3d2 hybridisation, is generally associated with',
     options: [
       'strong field ligands and a low spin arrangement',
-      'weak field ligands and a high spin arrangement',
+      'exclusively negative oxidation states',
       'square planar geometry instead of octahedral',
-      'exclusively negative oxidation states'
+      'weak field ligands and a high spin arrangement'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Complexes using outer nd orbitals in an sp3d2 hybridisation are typically formed with weak field ligands, resulting in a high spin arrangement (more unpaired electrons retained, following Hund\'s rule).',
     difficulty: 'hard'
   },
@@ -522,9 +522,9 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'Crystal Field Theory (CFT) treats the interaction between the central metal ion and the surrounding ligands as being purely',
     options: [
-      'covalent in nature',
-      'electrostatic (ionic) in nature, with ligands treated as point charges or dipoles',
       'metallic in nature',
+      'electrostatic (ionic) in nature, with ligands treated as point charges or dipoles',
+      'covalent in nature',
       'nuclear in nature'
     ],
     correctIndex: 1,
@@ -536,12 +536,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'In an octahedral crystal field, the five d orbitals of the metal ion split into two sets: a lower-energy set and a higher-energy set, called respectively',
     options: [
-      't2g (lower) and eg (higher)',
       'eg (lower) and t2g (higher)',
-      'e (lower) and t2 (higher)',
-      't2 (lower) and e (higher)'
+      't2g (lower) and eg (higher)',
+      't2 (lower) and e (higher)',
+      'e (lower) and t2 (higher)'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'In an octahedral crystal field, the d orbitals split into a lower-energy triply degenerate t2g set (dxy, dyz, dxz) and a higher-energy doubly degenerate eg set (dz2, dx2-y2).',
     difficulty: 'medium'
   },
@@ -549,8 +549,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-46',
     type: 'mcq',
     question: 'The energy difference between the t2g and eg sets of d orbitals in an octahedral crystal field is called',
-    options: ['pairing energy', 'crystal field stabilisation energy only', 'crystal field splitting energy, Δo (or 10Dq)', 'hydration energy'],
-    correctIndex: 2,
+    options: ['crystal field stabilisation energy only', 'hydration energy', 'pairing energy', 'crystal field splitting energy, Δo (or 10Dq)'],
+    correctIndex: 3,
     explanation: 'This energy gap between the split d orbital sets is called the crystal field splitting energy, commonly denoted Δo (or 10Dq) for an octahedral field.',
     difficulty: 'medium'
   },
@@ -559,12 +559,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'In a tetrahedral crystal field, the splitting pattern of the d orbitals compared to an octahedral field is',
     options: [
-      'identical in every way, with no difference at all',
-      'reversed in energy order (e set lower, t2 set higher), and generally smaller in magnitude',
       'reversed in energy order, but larger in magnitude than octahedral splitting',
-      'not applicable, since d orbitals never split in a tetrahedral field'
+      'not applicable, since d orbitals never split in a tetrahedral field',
+      'identical in every way, with no difference at all',
+      'reversed in energy order (e set lower, t2 set higher), and generally smaller in magnitude'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'In a tetrahedral field, the splitting pattern is reversed compared to octahedral (e set at lower energy, t2 set at higher energy), and the overall splitting magnitude (Δt) is smaller than the corresponding octahedral splitting (Δo).',
     difficulty: 'hard'
   },
@@ -573,10 +573,10 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'Because the crystal field splitting in a tetrahedral field (Δt) is generally quite small compared to typical pairing energies, tetrahedral complexes are almost always',
     options: [
-      'low spin complexes',
+      'unstable and do not exist',
       'high spin complexes',
       'completely diamagnetic, regardless of the metal',
-      'unstable and do not exist'
+      'low spin complexes'
     ],
     correctIndex: 1,
     explanation: 'Since Δt is usually too small to overcome the pairing energy, electrons tend to remain unpaired as much as possible (following Hund\'s rule), making tetrahedral complexes generally high spin.',
@@ -587,10 +587,10 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'A "strong field" ligand, as described in Crystal Field Theory, is one that',
     options: [
-      'causes a small crystal field splitting, favouring a high spin configuration',
-      'causes a large crystal field splitting, often exceeding the pairing energy and favouring a low spin configuration',
       'never interacts with the metal d orbitals at all',
-      'always forms a tetrahedral complex'
+      'causes a large crystal field splitting, often exceeding the pairing energy and favouring a low spin configuration',
+      'always forms a tetrahedral complex',
+      'causes a small crystal field splitting, favouring a high spin configuration'
     ],
     correctIndex: 1,
     explanation: 'A strong field ligand produces a large crystal field splitting (Δo), which, if greater than the pairing energy, favours electron pairing in the lower-energy orbitals, giving a low spin complex.',
@@ -601,12 +601,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'In the spectrochemical series, ligands are arranged in order of',
     options: [
+      'their solubility in water',
       'their molecular mass',
-      'increasing crystal field splitting ability (field strength)',
       'their colour when free (uncoordinated)',
-      'their solubility in water'
+      'increasing crystal field splitting ability (field strength)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The spectrochemical series ranks ligands according to their ability to cause crystal field splitting, from weak field ligands to strong field ligands.',
     difficulty: 'medium'
   },
@@ -614,8 +614,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-51',
     type: 'mcq',
     question: 'In the approximate spectrochemical series, which of the following is generally regarded as a weak field ligand, causing relatively small crystal field splitting?',
-    options: ['CN- (cyanide)', 'CO (carbonyl)', 'I- (iodide)', 'en (ethylenediamine)'],
-    correctIndex: 2,
+    options: ['CO (carbonyl)', 'I- (iodide)', 'en (ethylenediamine)', 'CN- (cyanide)'],
+    correctIndex: 1,
     explanation: 'Iodide is towards the weak end of the spectrochemical series, causing relatively small crystal field splitting compared to strong field ligands like CN- and CO.',
     difficulty: 'medium'
   },
@@ -623,8 +623,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-52',
     type: 'mcq',
     question: 'In the approximate spectrochemical series, which of the following is generally regarded as a strong field ligand, causing large crystal field splitting and favouring low spin complexes?',
-    options: ['I- (iodide)', 'F- (fluoride)', 'CN- (cyanide)', 'H2O (aqua)'],
-    correctIndex: 2,
+    options: ['F- (fluoride)', 'H2O (aqua)', 'I- (iodide)', 'CN- (cyanide)'],
+    correctIndex: 3,
     explanation: 'Cyanide (CN-) is one of the strongest field ligands in the spectrochemical series, causing large crystal field splitting and typically favouring low spin complexes.',
     difficulty: 'medium'
   },
@@ -633,10 +633,10 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'Crystal Field Theory successfully explains the colour of coordination compounds primarily on the basis of',
     options: [
-      'the mass of the metal ion',
-      'd-d electronic transitions between the split d orbital sets, which absorb visible light of an energy roughly equal to the crystal field splitting',
       'the total number of ligands present, regardless of their identity',
-      'the boiling point of the ligands'
+      'd-d electronic transitions between the split d orbital sets, which absorb visible light of an energy roughly equal to the crystal field splitting',
+      'the boiling point of the ligands',
+      'the mass of the metal ion'
     ],
     correctIndex: 1,
     explanation: 'Colour arises from d-d transitions, where an electron absorbs visible light of energy equal to the crystal field splitting energy to move from the lower-energy to the higher-energy set of d orbitals.',
@@ -648,11 +648,11 @@ export const COORDINATION_COMPOUNDS = [
     question: 'A coordination complex with a d0 or d10 metal ion configuration is generally',
     options: [
       'intensely coloured, due to strong d-d transitions',
-      'colourless, since no d-d transition is possible with no or fully filled d electrons',
       'always paramagnetic',
-      'unstable and does not exist'
+      'unstable and does not exist',
+      'colourless, since no d-d transition is possible with no or fully filled d electrons'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'With either no d electrons (d0) or a completely filled d subshell (d10), there are no possible d-d transitions, so such complexes are typically colourless.',
     difficulty: 'medium'
   },
@@ -660,8 +660,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-55',
     type: 'mcq',
     question: 'The complex ion [Sc(H2O)6]3+ is colourless because scandium in the +3 state has the electronic configuration',
-    options: ['d1', 'd5', 'd0, with no d electrons present', 'd10'],
-    correctIndex: 2,
+    options: ['d5', 'd1', 'd10', 'd0, with no d electrons present'],
+    correctIndex: 3,
     explanation: 'Sc3+ has a d0 configuration, meaning no d electrons are present at all, so no d-d transition is possible, making the complex colourless.',
     difficulty: 'medium'
   },
@@ -684,10 +684,10 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'In metal carbonyl complexes, the bonding between the metal and CO ligand is best described as',
     options: [
-      'a purely ionic bond with no covalent character',
-      'synergic bonding, involving both sigma donation from CO to the metal and pi back-donation from the metal to CO',
       'a bond formed only through hydrogen bonding',
-      'no bonding at all; CO is merely physically adsorbed'
+      'synergic bonding, involving both sigma donation from CO to the metal and pi back-donation from the metal to CO',
+      'no bonding at all; CO is merely physically adsorbed',
+      'a purely ionic bond with no covalent character'
     ],
     correctIndex: 1,
     explanation: 'Metal carbonyls exhibit synergic bonding: CO donates a lone pair to the metal via a sigma bond, while the metal simultaneously back-donates electron density from filled d orbitals into the empty π* antibonding orbital of CO, strengthening the overall bond.',
@@ -698,12 +698,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'As a consequence of synergic (M→L back-donation) bonding in metal carbonyls, compared to free CO, the metal-carbon bond generally',
     options: [
+      'breaks apart entirely',
       'weakens, while the C-O bond strengthens',
-      'strengthens, while the C-O bond weakens, since electron density is added to the antibonding orbital of CO',
       'remains completely unaffected',
-      'breaks apart entirely'
+      'strengthens, while the C-O bond weakens, since electron density is added to the antibonding orbital of CO'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Back-donation from the metal into the antibonding π* orbital of CO strengthens the metal-carbon bond (increasing its bond order) while correspondingly weakening the C-O bond, compared to free carbon monoxide.',
     difficulty: 'hard'
   },
@@ -712,12 +712,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'The stability of a coordination compound in solution is quantitatively described by its',
     options: [
-      'melting point',
-      'stability constant (formation constant)',
       'molecular mass',
-      'boiling point'
+      'boiling point',
+      'melting point',
+      'stability constant (formation constant)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The stability constant (or formation constant) is the equilibrium constant that quantifies the extent to which a coordination complex forms in solution, and higher values indicate greater stability.',
     difficulty: 'medium'
   },
@@ -726,10 +726,10 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'Coordination compounds play an important role in the extraction of silver and gold, which are typically leached from their ores using',
     options: [
-      'concentrated sulphuric acid',
+      'water alone',
       'a cyanide solution, forming soluble complexes such as [Ag(CN)2]- and [Au(CN)2]-',
-      'concentrated hydrochloric acid',
-      'water alone'
+      'concentrated sulphuric acid',
+      'concentrated hydrochloric acid'
     ],
     correctIndex: 1,
     explanation: 'Silver and gold ores are commonly treated with cyanide solutions, which form soluble dicyanoargentate(I) and dicyanoaurate(I) complexes, allowing the precious metals to be extracted.',
@@ -748,8 +748,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-62',
     type: 'mcq',
     question: 'Haemoglobin, the oxygen-carrying protein in blood, contains a coordination complex of which metal?',
-    options: ['Magnesium', 'Iron', 'Cobalt', 'Zinc'],
-    correctIndex: 1,
+    options: ['Zinc', 'Cobalt', 'Magnesium', 'Iron'],
+    correctIndex: 3,
     explanation: 'Haemoglobin contains an iron(II)-porphyrin complex that reversibly binds oxygen molecules for transport in the blood.',
     difficulty: 'easy'
   },
@@ -757,7 +757,7 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-63',
     type: 'mcq',
     question: 'Chlorophyll, the pigment essential for photosynthesis in plants, contains a coordination complex of which metal?',
-    options: ['Iron', 'Magnesium', 'Cobalt', 'Copper'],
+    options: ['Copper', 'Magnesium', 'Cobalt', 'Iron'],
     correctIndex: 1,
     explanation: 'Chlorophyll contains a magnesium-porphyrin complex, essential for capturing light energy during photosynthesis.',
     difficulty: 'easy'
@@ -766,8 +766,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-64',
     type: 'mcq',
     question: 'Vitamin B12 (cobalamin) contains a coordination complex of which metal?',
-    options: ['Iron', 'Magnesium', 'Cobalt', 'Zinc'],
-    correctIndex: 2,
+    options: ['Magnesium', 'Iron', 'Zinc', 'Cobalt'],
+    correctIndex: 3,
     explanation: 'Vitamin B12 (cobalamin) contains a coordination complex of cobalt and plays a crucial role in various metabolic processes.',
     difficulty: 'medium'
   },
@@ -775,8 +775,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-65',
     type: 'mcq',
     question: 'EDTA (ethylenediaminetetraacetic acid) is used clinically as a chelating agent to treat',
-    options: ['iron deficiency', 'lead poisoning, by forming a stable, soluble complex with Pb2+ ions that can be excreted', 'vitamin B12 deficiency', 'calcium deficiency'],
-    correctIndex: 1,
+    options: ['vitamin B12 deficiency', 'calcium deficiency', 'iron deficiency', 'lead poisoning, by forming a stable, soluble complex with Pb2+ ions that can be excreted'],
+    correctIndex: 3,
     explanation: 'EDTA is administered in cases of lead poisoning as it forms a stable, water-soluble chelate complex with Pb2+ ions, facilitating their excretion from the body.',
     difficulty: 'medium'
   },
@@ -784,8 +784,8 @@ export const COORDINATION_COMPOUNDS = [
     id: 'coord-66',
     type: 'mcq',
     question: 'The ligand dimethylglyoxime (DMG) is used in analytical chemistry for the qualitative and quantitative detection of',
-    options: ['iron', 'nickel, forming a characteristic bright red/pink precipitate', 'sodium', 'chlorine'],
-    correctIndex: 1,
+    options: ['nickel, forming a characteristic bright red/pink precipitate', 'iron', 'sodium', 'chlorine'],
+    correctIndex: 0,
     explanation: 'DMG selectively forms a distinctive bright red (pink) chelate precipitate with nickel(II) ions, making it a valuable reagent for the gravimetric estimation of nickel.',
     difficulty: 'medium'
   },
@@ -803,12 +803,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'Wilkinson\'s catalyst, [RhCl(PPh3)3], is an important coordination compound used industrially as a catalyst for',
     options: [
-      'sulphuric acid manufacture',
       'the hydrogenation of alkenes',
+      'the decomposition of hydrogen peroxide',
       'the manufacture of ammonia',
-      'the decomposition of hydrogen peroxide'
+      'sulphuric acid manufacture'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'Wilkinson\'s catalyst, a rhodium complex, is widely used as a homogeneous catalyst for the hydrogenation of alkenes.',
     difficulty: 'medium'
   },
@@ -817,12 +817,12 @@ export const COORDINATION_COMPOUNDS = [
     type: 'mcq',
     question: 'Complexes of silver and gold are used in electroplating processes because',
     options: [
+      'they have no relevance to electroplating whatsoever',
       'they release the metal ions too quickly, causing rough deposition',
       'they help maintain a low, controlled concentration of free metal ions, allowing for a smooth, uniform metal deposit',
-      'they prevent any metal deposition from occurring at all',
-      'they have no relevance to electroplating whatsoever'
+      'they prevent any metal deposition from occurring at all'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'By keeping the concentration of free metal ions low and controlled, complexation allows for a more uniform and smooth deposition of metal during electroplating.',
     difficulty: 'medium'
   },

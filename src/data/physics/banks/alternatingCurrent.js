@@ -6,11 +6,11 @@ export const ALTERNATING_CURRENT = [
     question: 'An alternating current (AC) is one whose magnitude',
     options: [
       'remains constant with time',
-      'changes periodically with time, reversing direction at regular intervals',
+      'is always zero',
       'increases indefinitely with time',
-      'is always zero'
+      'changes periodically with time, reversing direction at regular intervals'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'An alternating current periodically changes both its magnitude and direction with time, typically following a sinusoidal pattern, unlike direct current (DC) which flows in one direction only.',
     difficulty: 'easy'
   },
@@ -19,12 +19,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'A sinusoidal AC voltage can be represented as V(t) = V0 sin(ωt), where V0 represents',
     options: [
-      'the average value of the voltage',
-      'the peak (maximum) value of the voltage',
       'the RMS value of the voltage',
-      'the frequency of the voltage'
+      'the average value of the voltage',
+      'the frequency of the voltage',
+      'the peak (maximum) value of the voltage'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'V0 is the amplitude or peak value of the sinusoidal voltage, representing the maximum magnitude reached during each cycle.',
     difficulty: 'easy'
   },
@@ -32,8 +32,8 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-3',
     type: 'mcq',
     question: 'The angular frequency ω of an AC supply is related to its frequency f by',
-    options: ['ω = f', 'ω = 2πf', 'ω = f/2π', 'ω = πf'],
-    correctIndex: 1,
+    options: ['ω = f/2π', 'ω = πf', 'ω = f', 'ω = 2πf'],
+    correctIndex: 3,
     explanation: 'Angular frequency is related to ordinary frequency by ω = 2πf, where f is measured in hertz (cycles per second) and ω in radians per second.',
     difficulty: 'easy'
   },
@@ -42,12 +42,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'The average value of a pure sinusoidal AC current over one complete cycle is',
     options: [
+      'always positive',
       'equal to its peak value',
-      'zero, since the positive and negative half-cycles exactly cancel out',
       'equal to its RMS value',
-      'always positive'
+      'zero, since the positive and negative half-cycles exactly cancel out'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Over one full cycle, a symmetric sinusoidal AC current spends equal time and area above and below zero, so the positive and negative contributions exactly cancel, giving zero average value.',
     difficulty: 'medium'
   },
@@ -55,8 +55,8 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-5',
     type: 'mcq',
     question: 'The average value of a sinusoidal AC current, when taken over just one half-cycle, is',
-    options: ['zero', 'equal to the peak value', 'approximately 0.637 times the peak value (2I0/π)', 'equal to the RMS value exactly'],
-    correctIndex: 2,
+    options: ['zero', 'equal to the RMS value exactly', 'equal to the peak value', 'approximately 0.637 times the peak value (2I0/π)'],
+    correctIndex: 3,
     explanation: 'Over half a cycle (where the current does not change sign), the average value works out to (2/π)I0 ≈ 0.637 I0, a standard NCERT result distinct from both the peak and RMS values.',
     difficulty: 'medium'
   },
@@ -66,11 +66,11 @@ export const ALTERNATING_CURRENT = [
     question: 'The RMS (root mean square) value of an AC current is defined as',
     options: [
       'the arithmetic mean of the current over one cycle',
-      'the value of steady direct current that would produce the same heating effect (same average power dissipation) in a resistor as the given alternating current',
+      'always equal to zero for any AC waveform',
       'the peak value of the current',
-      'always equal to zero for any AC waveform'
+      'the value of steady direct current that would produce the same heating effect (same average power dissipation) in a resistor as the given alternating current'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'RMS value is defined based on equivalent heating effect: it is the value of DC current that would dissipate the same average power in a resistor as the actual AC current does over a complete cycle.',
     difficulty: 'medium'
   },
@@ -78,8 +78,8 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-7',
     type: 'mcq',
     question: 'For a sinusoidal AC current with peak value I0, the RMS value is given by',
-    options: ['Irms = I0', 'Irms = I0/√2', 'Irms = I0/2', 'Irms = 2I0/π'],
-    correctIndex: 1,
+    options: ['Irms = 2I0/π', 'Irms = I0/2', 'Irms = I0', 'Irms = I0/√2'],
+    correctIndex: 3,
     explanation: 'For a sinusoidal waveform, the RMS value is Irms = I0/√2 ≈ 0.707 I0, derived by taking the square root of the average of the squared current over one cycle.',
     difficulty: 'medium'
   },
@@ -89,11 +89,11 @@ export const ALTERNATING_CURRENT = [
     question: 'The reason RMS values (rather than peak or average values) are commonly used to specify AC voltage and current ratings (like household "230V AC") is that',
     options: [
       'RMS values are always larger than peak values',
-      'RMS values directly relate to the power dissipated, making them practically meaningful for rating devices and comparing AC to equivalent DC',
+      'peak and average values cannot be measured at all',
       'RMS values are easier to calculate than any other value',
-      'peak and average values cannot be measured at all'
+      'RMS values directly relate to the power dissipated, making them practically meaningful for rating devices and comparing AC to equivalent DC'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since RMS current/voltage directly determines the power dissipated (P = Irms²R), it provides a practically meaningful and directly comparable measure to DC ratings, which is why AC devices are typically rated using RMS values.',
     difficulty: 'medium'
   },
@@ -103,11 +103,11 @@ export const ALTERNATING_CURRENT = [
     question: 'A hot-wire ammeter (or similarly, most standard AC ammeters/voltmeters) measures',
     options: [
       'the peak value of the AC current',
-      'the RMS value of the AC current, based on its heating effect',
       'the average value of the AC current',
-      'the frequency of the AC current'
+      'the frequency of the AC current',
+      'the RMS value of the AC current, based on its heating effect'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Because their operation relies on the heating effect of current (which depends on the mean square value), hot-wire and most standard AC measuring instruments are calibrated to directly display RMS values.',
     difficulty: 'medium'
   },
@@ -116,12 +116,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'In a purely resistive AC circuit, the current and the applied voltage are',
     options: [
-      'always 90° out of phase',
-      'always in phase with each other (zero phase difference)',
+      'unrelated in phase',
       'always 180° out of phase',
-      'unrelated in phase'
+      'always 90° out of phase',
+      'always in phase with each other (zero phase difference)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'In a purely resistive circuit, current and voltage reach their maximum, zero, and minimum values simultaneously — they are exactly in phase, with a phase difference of zero.',
     difficulty: 'easy'
   },
@@ -130,10 +130,10 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'In a purely inductive AC circuit (ideal inductor, no resistance), the current',
     options: [
-      'leads the voltage by 90°',
-      'lags behind the voltage by 90°',
       'is in phase with the voltage',
-      'is 180° out of phase with the voltage'
+      'lags behind the voltage by 90°',
+      'is 180° out of phase with the voltage',
+      'leads the voltage by 90°'
     ],
     correctIndex: 1,
     explanation: 'In a purely inductive circuit, the current lags the applied voltage by a phase angle of 90° (π/2 radians), a standard and frequently tested NCERT result.',
@@ -144,12 +144,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'In a purely capacitive AC circuit (ideal capacitor, no resistance), the current',
     options: [
+      'is 180° out of phase with the voltage',
       'lags behind the voltage by 90°',
-      'leads the voltage by 90°',
       'is in phase with the voltage',
-      'is 180° out of phase with the voltage'
+      'leads the voltage by 90°'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'In a purely capacitive circuit, the current leads the applied voltage by a phase angle of 90° (π/2 radians), opposite to the inductive case.',
     difficulty: 'medium'
   },
@@ -158,12 +158,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'A useful mnemonic for remembering the phase relationships in AC circuits is "CIVIL," which stands for',
     options: [
-      'in a Capacitor, I (current) leads V; in an inductor (L), V leads I',
-      'current always leads voltage in every circuit',
       'voltage always leads current in every circuit',
-      'this mnemonic is unrelated to phase relationships'
+      'in a Capacitor, I (current) leads V; in an inductor (L), V leads I',
+      'this mnemonic is unrelated to phase relationships',
+      'current always leads voltage in every circuit'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'CIVIL is a standard mnemonic: in a Capacitive circuit, I (current) leads V (voltage); in an inductive (L) circuit, V leads I — helping students remember which quantity leads in each type of reactive circuit.',
     difficulty: 'medium'
   },
@@ -171,7 +171,7 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-14',
     type: 'mcq',
     question: 'Inductive reactance (XL) of an inductor in an AC circuit is given by',
-    options: ['XL = L/ω', 'XL = ωL', 'XL = ω/L', 'XL = ω²L'],
+    options: ['XL = ω²L', 'XL = ωL', 'XL = L/ω', 'XL = ω/L'],
     correctIndex: 1,
     explanation: 'Inductive reactance is XL = ωL, representing the effective opposition an inductor offers to the flow of alternating current, increasing with both inductance and frequency.',
     difficulty: 'medium'
@@ -181,12 +181,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'As the frequency of the AC supply increases, the inductive reactance of a given inductor',
     options: [
-      'decreases',
-      'increases, since XL = ωL is directly proportional to frequency',
       'remains constant',
-      'becomes zero'
+      'decreases',
+      'becomes zero',
+      'increases, since XL = ωL is directly proportional to frequency'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since XL = ωL = 2πfL, inductive reactance increases directly with frequency; an inductor offers progressively more opposition to higher-frequency AC.',
     difficulty: 'medium'
   },
@@ -194,7 +194,7 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-16',
     type: 'mcq',
     question: 'Capacitive reactance (XC) of a capacitor in an AC circuit is given by',
-    options: ['XC = ωC', 'XC = 1/(ωC)', 'XC = ω/C', 'XC = C/ω'],
+    options: ['XC = ω/C', 'XC = 1/(ωC)', 'XC = ωC', 'XC = C/ω'],
     correctIndex: 1,
     explanation: 'Capacitive reactance is XC = 1/(ωC), representing the effective opposition a capacitor offers to AC current flow, which decreases as frequency (or capacitance) increases.',
     difficulty: 'medium'
@@ -232,12 +232,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'For a steady (DC, ω = 0) source connected to an inductor in steady state, the inductive reactance becomes',
     options: [
-      'infinite, blocking all current',
-      'zero, offering no opposition (in the ideal, resistanceless case) once steady state is reached',
+      'undefined',
       'equal to the capacitive reactance',
-      'undefined'
+      'infinite, blocking all current',
+      'zero, offering no opposition (in the ideal, resistanceless case) once steady state is reached'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'As ω → 0 (DC), XL = ωL → 0, consistent with the fact that an ideal (resistanceless) inductor offers no opposition to steady DC current once a constant current is established.',
     difficulty: 'medium'
   },
@@ -245,8 +245,8 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-20',
     type: 'mcq',
     question: 'In an AC circuit containing resistance R, inductive reactance XL, and capacitive reactance XC in series, the total opposition to current flow is called',
-    options: ['resistance', 'reactance', 'impedance (Z)', 'conductance'],
-    correctIndex: 2,
+    options: ['reactance', 'impedance (Z)', 'resistance', 'conductance'],
+    correctIndex: 1,
     explanation: 'Impedance (Z) is the total, combined opposition offered by a series AC circuit (comprising resistance and net reactance) to the flow of alternating current.',
     difficulty: 'easy'
   },
@@ -256,11 +256,11 @@ export const ALTERNATING_CURRENT = [
     question: 'For a series LCR circuit, the impedance Z is given by',
     options: [
       'Z = R + XL + XC (simple algebraic sum)',
-      'Z = √(R² + (XL - XC)²)',
       'Z = R × XL × XC',
-      'Z = R²  + XL² + XC²'
+      'Z = R²  + XL² + XC²',
+      'Z = √(R² + (XL - XC)²)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since resistance and net reactance act like perpendicular components in a phasor diagram, impedance combines them via Z = √(R² + (XL - XC)²), not simple algebraic addition.',
     difficulty: 'medium'
   },
@@ -271,8 +271,8 @@ export const ALTERNATING_CURRENT = [
     options: [
       'purely resistive, with current in phase with voltage',
       'predominantly inductive, with current lagging behind the voltage',
-      'predominantly capacitive, with current leading the voltage',
-      'an open circuit with no current flow'
+      'an open circuit with no current flow',
+      'predominantly capacitive, with current leading the voltage'
     ],
     correctIndex: 1,
     explanation: 'When XL exceeds XC, the net reactance is inductive in nature, so the circuit as a whole behaves predominantly inductively, with the current lagging behind the applied voltage.',
@@ -283,12 +283,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'In a series LCR circuit, if XC > XL, the overall circuit behaves as',
     options: [
+      'having infinite impedance',
       'predominantly inductive',
-      'predominantly capacitive, with current leading the voltage',
       'purely resistive',
-      'having infinite impedance'
+      'predominantly capacitive, with current leading the voltage'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'When XC exceeds XL, the net reactance is capacitive in nature, so the circuit behaves predominantly capacitively, with current leading the applied voltage.',
     difficulty: 'medium'
   },
@@ -297,12 +297,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'Resonance in a series LCR circuit occurs at the frequency where',
     options: [
-      'resistance R becomes zero',
-      'the inductive reactance equals the capacitive reactance (XL = XC), making the net reactance zero',
       'the capacitive reactance becomes infinite',
-      'the inductive reactance becomes zero'
+      'resistance R becomes zero',
+      'the inductive reactance becomes zero',
+      'the inductive reactance equals the capacitive reactance (XL = XC), making the net reactance zero'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Resonance occurs at the specific angular frequency where XL = XC, causing the net reactance to cancel out and the impedance to reduce to its minimum possible value (equal to R alone).',
     difficulty: 'medium'
   },
@@ -311,10 +311,10 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'At resonance in a series LCR circuit, the impedance of the circuit is',
     options: [
-      'at its maximum possible value',
-      'at its minimum possible value, equal to R alone',
       'infinite',
-      'zero'
+      'at its minimum possible value, equal to R alone',
+      'zero',
+      'at its maximum possible value'
     ],
     correctIndex: 1,
     explanation: 'At resonance, since XL = XC cancels out the net reactance, impedance Z = √(R² + 0²) = R, its minimum possible value for the given circuit.',
@@ -325,10 +325,10 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'At resonance in a series LCR circuit, the current in the circuit is',
     options: [
-      'at its minimum possible value',
+      'independent of the applied voltage',
       'at its maximum possible value, for a given applied voltage',
       'always zero',
-      'independent of the applied voltage'
+      'at its minimum possible value'
     ],
     correctIndex: 1,
     explanation: 'Since impedance is minimized at resonance, and current I = V/Z, the current reaches its maximum possible value at the resonant frequency, for a fixed applied voltage.',
@@ -338,8 +338,8 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-27',
     type: 'mcq',
     question: 'At resonance in a series LCR circuit, the phase difference between current and applied voltage is',
-    options: ['90°', '180°', 'zero (current and voltage are exactly in phase)', 'undefined'],
-    correctIndex: 2,
+    options: ['180°', 'undefined', '90°', 'zero (current and voltage are exactly in phase)'],
+    correctIndex: 3,
     explanation: 'At resonance, since the net reactance is zero, the circuit behaves as if it were purely resistive, so current and voltage are exactly in phase (zero phase difference).',
     difficulty: 'medium'
   },
@@ -347,8 +347,8 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-28',
     type: 'mcq',
     question: 'The resonant angular frequency ω0 of a series LCR circuit is given by',
-    options: ['ω0 = 1/√(LC)', 'ω0 = √(LC)', 'ω0 = LC', 'ω0 = L/C'],
-    correctIndex: 0,
+    options: ['ω0 = LC', 'ω0 = √(LC)', 'ω0 = L/C', 'ω0 = 1/√(LC)'],
+    correctIndex: 3,
     explanation: 'Setting XL = XC (ωL = 1/(ωC)) and solving for ω gives the resonant angular frequency ω0 = 1/√(LC), a fundamental standard result.',
     difficulty: 'medium'
   },
@@ -357,12 +357,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'The resonant frequency of an LCR circuit is independent of',
     options: [
-      'the inductance L',
-      'the capacitance C',
+      'both L and C',
       'the resistance R (in the idealized formula ω0 = 1/√(LC))',
-      'both L and C'
+      'the capacitance C',
+      'the inductance L'
     ],
-    correctIndex: 2,
+    correctIndex: 1,
     explanation: 'The formula ω0 = 1/√(LC) shows the resonant frequency depends only on L and C, not on R; resistance affects the sharpness (Q-factor) of resonance but not the resonant frequency itself in this idealized treatment.',
     difficulty: 'hard'
   },
@@ -371,12 +371,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'A series LCR circuit at resonance is sometimes called an "acceptor circuit" because it',
     options: [
-      'rejects all frequencies equally',
-      'allows (accepts) maximum current to flow specifically at its resonant frequency, effectively selecting/passing that frequency while offering higher impedance to others',
       'blocks all AC signals entirely',
-      'only works with DC signals'
+      'only works with DC signals',
+      'rejects all frequencies equally',
+      'allows (accepts) maximum current to flow specifically at its resonant frequency, effectively selecting/passing that frequency while offering higher impedance to others'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since current is maximum at resonance and falls off at other frequencies, a series resonant circuit effectively "accepts" (allows through with least opposition) signals at its resonant frequency, useful for applications like tuning radio receivers.',
     difficulty: 'medium'
   },
@@ -384,7 +384,7 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-31',
     type: 'mcq',
     question: 'The average power dissipated in a pure resistor connected to an AC source is given by',
-    options: ['P = I0V0', 'P = Irms Vrms = Irms²R', 'P = 2 Irms Vrms', 'P = I0V0/4'],
+    options: ['P = I0V0', 'P = Irms Vrms = Irms²R', 'P = I0V0/4', 'P = 2 Irms Vrms'],
     correctIndex: 1,
     explanation: 'Since current and voltage are in phase in a purely resistive circuit, average power is simply P = IrmsVrms = Irms²R, directly analogous to the DC power formula but using RMS values.',
     difficulty: 'medium'
@@ -409,11 +409,11 @@ export const ALTERNATING_CURRENT = [
     question: 'The average power in a general AC circuit (with resistance and reactance both present) is given by',
     options: [
       'P = IrmsVrms, regardless of phase difference',
-      'P = IrmsVrms cosφ, where φ is the phase difference between current and voltage',
       'P = IrmsVrms sinφ',
-      'P is always zero unless the circuit is purely resistive'
+      'P is always zero unless the circuit is purely resistive',
+      'P = IrmsVrms cosφ, where φ is the phase difference between current and voltage'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The general formula for average power in an AC circuit is P = IrmsVrms cosφ, where cosφ is called the power factor, accounting for the phase relationship between current and voltage.',
     difficulty: 'medium'
   },
@@ -421,8 +421,8 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-34',
     type: 'mcq',
     question: 'The term cosφ in the average power formula (P = IrmsVrms cosφ) is called the',
-    options: ['reactance factor', 'power factor', 'impedance factor', 'quality factor'],
-    correctIndex: 1,
+    options: ['reactance factor', 'quality factor', 'impedance factor', 'power factor'],
+    correctIndex: 3,
     explanation: 'cosφ is known as the power factor of an AC circuit, representing the fraction of the apparent power (IrmsVrms) that is actually converted into real, dissipated power.',
     difficulty: 'easy'
   },
@@ -430,7 +430,7 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-35',
     type: 'mcq',
     question: 'For a purely resistive AC circuit, the power factor (cosφ) is',
-    options: ['zero', '1 (unity), since current and voltage are in phase', '-1', 'undefined'],
+    options: ['undefined', '1 (unity), since current and voltage are in phase', '-1', 'zero'],
     correctIndex: 1,
     explanation: 'Since φ = 0° for a purely resistive circuit, cosφ = cos(0°) = 1, meaning all the apparent power is actually dissipated as real power.',
     difficulty: 'easy'
@@ -448,8 +448,8 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-37',
     type: 'mcq',
     question: 'The power dissipated in a purely reactive AC element (like an ideal inductor or capacitor) is sometimes called',
-    options: ['real power', 'wattful power', 'wattless current or wattless power, since no net energy is dissipated despite current flowing', 'DC power'],
-    correctIndex: 2,
+    options: ['wattful power', 'DC power', 'real power', 'wattless current or wattless power, since no net energy is dissipated despite current flowing'],
+    correctIndex: 3,
     explanation: 'Since a pure inductor or capacitor dissipates zero net power despite carrying a non-zero current, this scenario is often described using the term "wattless current," reflecting that current flows without any accompanying real power dissipation.',
     difficulty: 'medium'
   },
@@ -459,11 +459,11 @@ export const ALTERNATING_CURRENT = [
     question: 'A low power factor in an AC circuit (e.g., due to a highly inductive load) is generally undesirable in power distribution because it',
     options: [
       'increases efficiency of power delivery',
-      'means a larger current is needed to deliver the same real (useful) power, increasing transmission losses (I²R) in the wires',
+      'always improves voltage regulation',
       'has no practical consequences',
-      'always improves voltage regulation'
+      'means a larger current is needed to deliver the same real (useful) power, increasing transmission losses (I²R) in the wires'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'For a fixed real power requirement, a low power factor requires a proportionally larger current (since P = IV cosφ), which increases resistive losses in transmission lines, making low power factor undesirable from an efficiency standpoint.',
     difficulty: 'medium'
   },
@@ -500,10 +500,10 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'In a phasor diagram for a series LCR circuit, the voltage across the resistor is drawn',
     options: [
-      'perpendicular to the current phasor',
+      'at 45° to the current phasor',
       'along (parallel to) the current phasor, since voltage and current are in phase across a pure resistor',
-      'always opposite in direction to the current phasor',
-      'at 45° to the current phasor'
+      'perpendicular to the current phasor',
+      'always opposite in direction to the current phasor'
     ],
     correctIndex: 1,
     explanation: 'Since voltage and current are in phase for the resistive component, the resistor\'s voltage phasor is drawn parallel to (along the same direction as) the current phasor.',
@@ -515,11 +515,11 @@ export const ALTERNATING_CURRENT = [
     question: 'In a phasor diagram for a series LCR circuit, the voltage across the inductor is drawn',
     options: [
       'in phase with the current',
-      '90° ahead of the current phasor (leading), consistent with voltage leading current in a pure inductor',
       '90° behind the current phasor',
-      '180° from the current phasor'
+      '180° from the current phasor',
+      '90° ahead of the current phasor (leading), consistent with voltage leading current in a pure inductor'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since voltage leads current by 90° in a pure inductor, the inductor voltage phasor is drawn 90° ahead of (rotated counterclockwise relative to) the current phasor.',
     difficulty: 'hard'
   },
@@ -528,10 +528,10 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'In a phasor diagram for a series LCR circuit, the voltage across the capacitor is drawn',
     options: [
-      '90° ahead of the current phasor',
+      '180° from the current phasor',
       '90° behind the current phasor, consistent with current leading voltage in a pure capacitor',
       'in phase with the current',
-      '180° from the current phasor'
+      '90° ahead of the current phasor'
     ],
     correctIndex: 1,
     explanation: 'Since current leads voltage by 90° in a pure capacitor (equivalently, voltage lags current by 90°), the capacitor voltage phasor is drawn 90° behind the current phasor.',
@@ -556,12 +556,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'In a series LCR AC circuit, the applied voltage V is related to the individual component voltages (VR, VL, VC) by',
     options: [
-      'V = VR + VL + VC (simple algebraic sum)',
-      'V = √(VR² + (VL - VC)²), since VR is in phase with current while VL and VC are perpendicular to it (and opposite to each other)',
+      'V is unrelated to the individual component voltages',
       'V = VR × VL × VC',
-      'V is unrelated to the individual component voltages'
+      'V = VR + VL + VC (simple algebraic sum)',
+      'V = √(VR² + (VL - VC)²), since VR is in phase with current while VL and VC are perpendicular to it (and opposite to each other)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since the voltages across R, L, and C have different phase relationships to the current, they must be combined using phasor (vector) addition, giving V = √(VR² + (VL - VC)²), not simple algebraic addition.',
     difficulty: 'medium'
   },
@@ -569,7 +569,7 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-46',
     type: 'mcq',
     question: 'A transformer, used to step up or step down AC voltage, works on the principle of',
-    options: ['self-induction only', 'mutual induction between primary and secondary windings', 'resistive heating', 'the Hall effect'],
+    options: ['the Hall effect', 'mutual induction between primary and secondary windings', 'self-induction only', 'resistive heating'],
     correctIndex: 1,
     explanation: 'A transformer transfers energy from its primary to secondary coil via mutual induction, exploiting the changing flux caused by the alternating current in the primary.',
     difficulty: 'easy'
@@ -579,12 +579,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'For an ideal transformer (100% efficient, no losses), the relationship between primary/secondary voltages (Vp, Vs), currents (Ip, Is), and turns (Np, Ns) is given by',
     options: [
-      'Vs/Vp = Is/Ip = Np/Ns',
-      'Vs/Vp = Ns/Np = Ip/Is',
       'Vs × Vp = Ns × Np',
-      'These quantities are all unrelated to each other'
+      'These quantities are all unrelated to each other',
+      'Vs/Vp = Is/Ip = Np/Ns',
+      'Vs/Vp = Ns/Np = Ip/Is'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'For an ideal transformer, voltage ratio equals turns ratio (Vs/Vp = Ns/Np), and by power conservation (input power = output power), current ratio is inversely related to turns ratio (Ip/Is = Ns/Np), giving the combined relation Vs/Vp = Ns/Np = Ip/Is.',
     difficulty: 'medium'
   },
@@ -593,12 +593,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'Real transformers experience energy losses due to several factors, including',
     options: [
-      'flux leakage, resistance of the windings (copper losses), eddy currents in the core, and hysteresis losses in the core material',
       'only the color of the wire used',
       'only the shape of the primary coil',
-      'transformers experience absolutely no losses under any real conditions'
+      'transformers experience absolutely no losses under any real conditions',
+      'flux leakage, resistance of the windings (copper losses), eddy currents in the core, and hysteresis losses in the core material'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Real (non-ideal) transformers experience several types of losses: flux leakage (not all flux links both coils), copper losses (I²R heating in the windings), eddy current losses in the core, and hysteresis losses due to repeated magnetization/demagnetization of the core.',
     difficulty: 'medium'
   },
@@ -609,8 +609,8 @@ export const ALTERNATING_CURRENT = [
     options: [
       'power to be transmitted at low voltage and high current, minimizing wire cost',
       'power to be stepped up to high voltage (and correspondingly low current) for transmission, minimizing I²R losses in the transmission lines, then stepped back down for safe local use',
-      'AC to be converted permanently into DC',
-      'the generation of power without any need for a power plant'
+      'the generation of power without any need for a power plant',
+      'AC to be converted permanently into DC'
     ],
     correctIndex: 1,
     explanation: 'Transmitting power at high voltage and correspondingly low current (using step-up transformers) significantly reduces I²R resistive losses in the long transmission lines; step-down transformers then reduce the voltage to safer levels for local distribution and use.',
@@ -621,12 +621,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'An LC oscillation (in an ideal circuit with only an inductor and a capacitor, no resistance) refers to',
     options: [
-      'a circuit that carries a steady, constant current',
-      'the periodic exchange of energy between the electric field of the capacitor and the magnetic field of the inductor, causing the charge/current to oscillate',
       'a circuit that never carries any current',
-      'a purely resistive phenomenon'
+      'a circuit that carries a steady, constant current',
+      'a purely resistive phenomenon',
+      'the periodic exchange of energy between the electric field of the capacitor and the magnetic field of the inductor, causing the charge/current to oscillate'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'In an ideal LC circuit, energy oscillates back and forth between the capacitor\'s electric field and the inductor\'s magnetic field, causing the charge and current in the circuit to oscillate sinusoidally with time, analogous to a mechanical simple harmonic oscillator.',
     difficulty: 'medium'
   },
@@ -634,8 +634,8 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-51',
     type: 'mcq',
     question: 'The natural (angular) frequency of oscillation of an ideal LC circuit is',
-    options: ['ω = LC', 'ω = 1/√(LC)', 'ω = √(LC)', 'ω = L/C'],
-    correctIndex: 1,
+    options: ['ω = √(LC)', 'ω = L/C', 'ω = 1/√(LC)', 'ω = LC'],
+    correctIndex: 2,
     explanation: 'The natural oscillation frequency of an ideal LC circuit is ω = 1/√(LC), the same expression as the resonant frequency of a driven series LCR circuit, reflecting the shared underlying physics.',
     difficulty: 'medium'
   },
@@ -644,10 +644,10 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'The LC oscillation is analogous to which mechanical system?',
     options: [
-      'a block sliding on a frictionless surface at constant velocity',
-      'a simple harmonic oscillator, such as a mass attached to a spring, where energy oscillates between kinetic and potential forms',
       'a freely falling object under gravity',
-      'a rigid body in uniform circular motion'
+      'a simple harmonic oscillator, such as a mass attached to a spring, where energy oscillates between kinetic and potential forms',
+      'a rigid body in uniform circular motion',
+      'a block sliding on a frictionless surface at constant velocity'
     ],
     correctIndex: 1,
     explanation: 'The LC circuit is a classic analogy for a mass-spring simple harmonic oscillator: charge (or current) in the LC circuit behaves like displacement (or velocity) in the mechanical system, with energy oscillating between the capacitor\'s electric field (analogous to spring potential energy) and the inductor\'s magnetic field (analogous to kinetic energy).',
@@ -658,12 +658,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'In a real (non-ideal) LC circuit that includes some resistance, the oscillations of charge and current will',
     options: [
-      'continue forever without any change',
-      'gradually die out (damped oscillations) as energy is dissipated as heat in the resistance',
+      'stop instantly at the very first cycle',
       'grow in amplitude indefinitely',
-      'stop instantly at the very first cycle'
+      'gradually die out (damped oscillations) as energy is dissipated as heat in the resistance',
+      'continue forever without any change'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Since real circuits always have some resistance, energy is continuously dissipated as heat, causing the oscillation amplitude to gradually decrease over time — this is called a damped oscillation, analogous to a mechanical oscillator with friction.',
     difficulty: 'medium'
   },
@@ -700,10 +700,10 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'A capacitor blocks DC but allows AC to pass through (in the sense of an effective current flowing in the external circuit, via charging/discharging) because',
     options: [
-      'a capacitor is fundamentally a conductor at all frequencies',
+      'this description applies only to inductors, not capacitors',
       'for AC, the capacitor continuously charges and discharges as the voltage alternates, allowing an effective alternating current in the circuit, while for steady DC, it charges up fully and then blocks further current entirely',
-      'capacitors have no physical basis for blocking any current',
-      'this description applies only to inductors, not capacitors'
+      'a capacitor is fundamentally a conductor at all frequencies',
+      'capacitors have no physical basis for blocking any current'
     ],
     correctIndex: 1,
     explanation: 'Under AC, the continuously alternating voltage causes the capacitor to repeatedly charge and discharge, allowing an effective current to flow in the external circuit; under steady DC, once fully charged, no further current can flow, effectively blocking it.',
@@ -714,12 +714,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'An inductor tends to block sudden/high-frequency changes in current but allows steady DC to pass (in ideal, resistanceless case) because',
     options: [
-      'inductive reactance XL = ωL increases with frequency, so it strongly opposes rapidly changing (high-frequency) currents while offering zero opposition at ω = 0 (DC)',
-      'inductors behave identically at all frequencies',
       'inductors physically prevent any current from flowing ever',
-      'this description applies only to resistors'
+      'inductors behave identically at all frequencies',
+      'this description applies only to resistors',
+      'inductive reactance XL = ωL increases with frequency, so it strongly opposes rapidly changing (high-frequency) currents while offering zero opposition at ω = 0 (DC)'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Since XL increases with frequency, an inductor increasingly opposes higher-frequency (rapidly changing) AC currents, while offering no opposition (XL = 0) to steady DC in the ideal, resistanceless case.',
     difficulty: 'medium'
   },
@@ -727,8 +727,8 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-58',
     type: 'mcq',
     question: 'The impedance of a purely resistive AC circuit is',
-    options: ['zero', 'equal to R alone, independent of frequency', 'equal to XL alone', 'infinite'],
-    correctIndex: 1,
+    options: ['zero', 'equal to XL alone', 'equal to R alone, independent of frequency', 'infinite'],
+    correctIndex: 2,
     explanation: 'A purely resistive circuit has no reactive component, so its impedance is simply Z = R, and this value does not change with the frequency of the AC supply.',
     difficulty: 'easy'
   },
@@ -745,8 +745,8 @@ export const ALTERNATING_CURRENT = [
     id: 'alternating-current-60',
     type: 'mcq',
     question: 'For an AC circuit containing only a capacitor (no resistance), the impedance equals',
-    options: ['R', 'XL only', 'XC only', 'zero, always'],
-    correctIndex: 2,
+    options: ['zero, always', 'XL only', 'R', 'XC only'],
+    correctIndex: 3,
     explanation: 'In a purely capacitive circuit (R = 0), the impedance reduces to just the capacitive reactance, Z = XC = 1/(ωC).',
     difficulty: 'medium'
   },
@@ -755,10 +755,10 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'The quality factor (Q-factor) of a series LCR resonant circuit is a measure of',
     options: [
-      'the resistance of the circuit alone',
-      'the sharpness (selectivity) of the resonance — how narrow and pronounced the current peak is around the resonant frequency',
       'the total power consumed by the circuit',
-      'the number of turns in the inductor'
+      'the sharpness (selectivity) of the resonance — how narrow and pronounced the current peak is around the resonant frequency',
+      'the number of turns in the inductor',
+      'the resistance of the circuit alone'
     ],
     correctIndex: 1,
     explanation: 'The Q-factor quantifies the sharpness of resonance: a high Q-factor means a narrow, sharply peaked resonance curve (highly selective circuit), while a low Q-factor means a broad, less selective resonance.',
@@ -770,11 +770,11 @@ export const ALTERNATING_CURRENT = [
     question: 'A series LCR circuit with a smaller resistance R (all else being equal) generally has a resonance curve that is',
     options: [
       'broader and less sharply peaked',
-      'sharper (narrower) and more pronounced, i.e., a higher Q-factor',
+      'no longer capable of showing resonance at all',
       'exactly the same regardless of R',
-      'no longer capable of showing resonance at all'
+      'sharper (narrower) and more pronounced, i.e., a higher Q-factor'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since the Q-factor is inversely related to resistance (Q ∝ 1/R, roughly), a smaller resistance produces a sharper, more sharply peaked resonance curve around the resonant frequency.',
     difficulty: 'hard'
   },
@@ -784,11 +784,11 @@ export const ALTERNATING_CURRENT = [
     question: 'A key practical application of a sharply resonant (high Q-factor) LCR circuit is',
     options: [
       'heating a room uniformly',
+      'measuring the mass of an object',
       'tuning a radio or television receiver to select one specific broadcast frequency while rejecting others',
-      'generating steady DC current',
-      'measuring the mass of an object'
+      'generating steady DC current'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A high-Q resonant LCR circuit is used in radio/TV tuning circuits, allowing the receiver to selectively respond strongly to signals at one particular frequency (the desired station) while largely rejecting signals at other frequencies.',
     difficulty: 'medium'
   },
@@ -797,12 +797,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'The AC generator (alternator) is a practical application of',
     options: [
-      'electromagnetic induction, converting mechanical rotational energy into an alternating EMF',
       'purely electrostatic principles with no relation to induction',
-      'thermal expansion',
-      'the photoelectric effect'
+      'electromagnetic induction, converting mechanical rotational energy into an alternating EMF',
+      'the photoelectric effect',
+      'thermal expansion'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'An AC generator produces alternating current by rotating a coil in a magnetic field (or a magnetic field around a coil), directly applying the principle of electromagnetic induction covered in the earlier chapter.',
     difficulty: 'easy'
   },
@@ -811,12 +811,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'For an AC circuit driven at exactly the resonant frequency, if resistance R is very small (approaching zero), the current at resonance would',
     options: [
-      'remain finite and small',
-      'become extremely large (approaching infinity in the idealized limit of zero resistance), since I = V/Z = V/R at resonance',
+      'be unaffected by the value of R',
       'become exactly zero',
-      'be unaffected by the value of R'
+      'remain finite and small',
+      'become extremely large (approaching infinity in the idealized limit of zero resistance), since I = V/Z = V/R at resonance'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since at resonance Z = R, a very small R would allow the current I = V/R to become extremely large for a fixed applied voltage V, approaching infinity in the idealized limit of R → 0.',
     difficulty: 'hard'
   },
@@ -825,12 +825,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'An LCR circuit connected to an AC source, when analysed using phasors, treats the applied voltage and current as',
     options: [
-      'static, unchanging quantities with no time dependence',
-      'rotating vectors (phasors) whose magnitude represents amplitude and whose angular position (relative to a reference) represents phase, rotating at the angular frequency ω',
       'quantities with no phase relationship to each other',
-      'purely scalar quantities with no directional or rotational representation'
+      'purely scalar quantities with no directional or rotational representation',
+      'rotating vectors (phasors) whose magnitude represents amplitude and whose angular position (relative to a reference) represents phase, rotating at the angular frequency ω',
+      'static, unchanging quantities with no time dependence'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'In phasor analysis, sinusoidally-varying quantities are represented as vectors rotating at angular frequency ω, with the projection onto a fixed axis giving the instantaneous value, and relative angles between phasors representing phase differences.',
     difficulty: 'medium'
   },
@@ -840,11 +840,11 @@ export const ALTERNATING_CURRENT = [
     question: 'The "apparent power" in an AC circuit refers to',
     options: [
       'the actual power dissipated as heat, always equal to real power',
-      'the product IrmsVrms, without accounting for the phase difference (power factor) between current and voltage',
       'the power factor itself',
+      'the product IrmsVrms, without accounting for the phase difference (power factor) between current and voltage',
       'the power at resonance only'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Apparent power is simply the product of RMS voltage and RMS current (IrmsVrms), without the cosφ (power factor) correction; the actual (real, dissipated) power is apparent power multiplied by the power factor.',
     difficulty: 'medium'
   },
@@ -855,8 +855,8 @@ export const ALTERNATING_CURRENT = [
     options: [
       'Real power = Apparent power always, with no distinction',
       'Real power = Apparent power × power factor (cosφ)',
-      'Real power = Apparent power / power factor',
-      'Real power is unrelated to apparent power'
+      'Real power is unrelated to apparent power',
+      'Real power = Apparent power / power factor'
     ],
     correctIndex: 1,
     explanation: 'Real (average, dissipated) power equals apparent power multiplied by the power factor: P = (IrmsVrms) × cosφ, capturing the fact that only part of the apparent power is actually useful/dissipated when there is a phase difference.',
@@ -868,11 +868,11 @@ export const ALTERNATING_CURRENT = [
     question: 'A wattmeter used to measure power in AC circuits is designed to directly account for',
     options: [
       'only the peak voltage',
-      'the actual (real) power, incorporating the phase difference between current and voltage via the power factor',
       'only the frequency of the AC supply',
-      'the resistance of the circuit alone, ignoring current entirely'
+      'the resistance of the circuit alone, ignoring current entirely',
+      'the actual (real) power, incorporating the phase difference between current and voltage via the power factor'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Unlike a simple product of voltmeter and ammeter readings (which would give apparent power), a wattmeter is specifically designed to measure the true (real) power, inherently accounting for the phase relationship (power factor) between current and voltage.',
     difficulty: 'medium'
   },
@@ -881,12 +881,12 @@ export const ALTERNATING_CURRENT = [
     type: 'mcq',
     question: 'A "wattless current" describes a scenario where',
     options: [
+      'the voltage in the circuit is exactly zero',
       'the current is exactly zero at all times',
-      'a non-zero current flows in the circuit, but the average power dissipated is zero, as in a purely reactive (inductive/capacitive) circuit',
       'the current has no unit of measurement',
-      'the voltage in the circuit is exactly zero'
+      'a non-zero current flows in the circuit, but the average power dissipated is zero, as in a purely reactive (inductive/capacitive) circuit'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A wattless current refers to the situation (as in a purely inductive or capacitive AC circuit) where current does flow, but because it is 90° out of phase with the voltage, the average power dissipated over a cycle is exactly zero.',
     difficulty: 'medium'
   },

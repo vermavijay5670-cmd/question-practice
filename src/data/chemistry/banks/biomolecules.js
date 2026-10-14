@@ -4,8 +4,8 @@ export const BIOMOLECULES = [
     id: 'biomol-1',
     type: 'mcq',
     question: 'Carbohydrates that cannot be further hydrolysed into simpler polyhydroxy compounds are called',
-    options: ['oligosaccharides', 'monosaccharides', 'polysaccharides', 'disaccharides'],
-    correctIndex: 1,
+    options: ['disaccharides', 'oligosaccharides', 'polysaccharides', 'monosaccharides'],
+    correctIndex: 3,
     explanation: 'Monosaccharides are the simplest carbohydrates, such as glucose and fructose, that cannot be broken down further by hydrolysis into simpler sugar units.',
     difficulty: 'easy'
   },
@@ -13,8 +13,8 @@ export const BIOMOLECULES = [
     id: 'biomol-2',
     type: 'mcq',
     question: 'Carbohydrates that, on hydrolysis, give two to ten monosaccharide units linked together are classified as',
-    options: ['monosaccharides', 'oligosaccharides', 'proteins', 'nucleic acids'],
-    correctIndex: 1,
+    options: ['monosaccharides', 'proteins', 'nucleic acids', 'oligosaccharides'],
+    correctIndex: 3,
     explanation: 'Oligosaccharides yield between two and ten monosaccharide units upon hydrolysis; the most common and biologically important oligosaccharides are the disaccharides.',
     difficulty: 'easy'
   },
@@ -22,8 +22,8 @@ export const BIOMOLECULES = [
     id: 'biomol-3',
     type: 'mcq',
     question: 'A carbohydrate that contains a free aldehyde or ketone group, allowing it to reduce Tollens\' or Fehling\'s reagent, is called a',
-    options: ['non-reducing sugar', 'reducing sugar', 'polysaccharide only', 'zwitterion'],
-    correctIndex: 1,
+    options: ['zwitterion', 'polysaccharide only', 'non-reducing sugar', 'reducing sugar'],
+    correctIndex: 3,
     explanation: 'A reducing sugar has a free (or readily accessible) aldehyde or ketone group capable of reducing mild oxidising agents such as Tollens\' or Fehling\'s reagent.',
     difficulty: 'medium'
   },
@@ -33,11 +33,11 @@ export const BIOMOLECULES = [
     question: 'All monosaccharides, including ketoses such as fructose, are classified as reducing sugars mainly because',
     options: [
       'they never have any carbonyl group at all',
-      'even a ketose can tautomerise under the basic reaction conditions to a structure containing an oxidisable group',
+      'monosaccharides are incapable of any chemical reaction',
       'monosaccharides always exist exclusively in their open-chain aldehyde form',
-      'monosaccharides are incapable of any chemical reaction'
+      'even a ketose can tautomerise under the basic reaction conditions to a structure containing an oxidisable group'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Under the basic conditions of tests like Fehling\'s or Tollens\', a ketose such as fructose can tautomerise to give a structure capable of reducing the reagent, so all monosaccharides are classified as reducing sugars.',
     difficulty: 'medium'
   },
@@ -73,8 +73,8 @@ export const BIOMOLECULES = [
     id: 'biomol-7',
     type: 'mcq',
     question: 'The open-chain structure of glucose is established, in part, by its reaction with hydroxylamine to form an oxime, which confirms the presence of a',
-    options: ['carboxylic acid group', 'carbonyl (aldehyde) group', 'ether linkage', 'ester linkage'],
-    correctIndex: 1,
+    options: ['carboxylic acid group', 'ester linkage', 'ether linkage', 'carbonyl (aldehyde) group'],
+    correctIndex: 3,
     explanation: 'The formation of an oxime with hydroxylamine is a classic test confirming the presence of a carbonyl group, supporting the open-chain aldehyde structure of glucose.',
     difficulty: 'medium'
   },
@@ -82,8 +82,8 @@ export const BIOMOLECULES = [
     id: 'biomol-8',
     type: 'mcq',
     question: 'Acetylation of glucose with acetic anhydride gives glucose pentaacetate, a result that confirms the presence of',
-    options: ['five hydroxyl groups in the glucose molecule', 'a single carboxylic acid group', 'no oxygen atoms in glucose', 'a benzene ring in glucose'],
-    correctIndex: 0,
+    options: ['no oxygen atoms in glucose', 'five hydroxyl groups in the glucose molecule', 'a benzene ring in glucose', 'a single carboxylic acid group'],
+    correctIndex: 1,
     explanation: 'The formation of a pentaacetate derivative indicates that glucose contains five hydroxyl (-OH) groups, each of which is acetylated.',
     difficulty: 'medium'
   },
@@ -92,12 +92,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Oxidation of glucose with a mild oxidising agent such as bromine water gives gluconic acid, a six-carbon monocarboxylic acid, indicating that',
     options: [
-      'only the aldehyde group of glucose is oxidised, while the primary alcohol group remains unaffected',
-      'both the aldehyde and primary alcohol groups are oxidised',
       'glucose has no oxidisable functional group at all',
-      'glucose contains an aromatic ring'
+      'both the aldehyde and primary alcohol groups are oxidised',
+      'glucose contains an aromatic ring',
+      'only the aldehyde group of glucose is oxidised, while the primary alcohol group remains unaffected'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Bromine water is a mild oxidant that selectively oxidises the aldehyde group of glucose to a carboxylic acid, without affecting the primary alcohol group, giving gluconic acid.',
     difficulty: 'medium'
   },
@@ -106,12 +106,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Oxidation of glucose with a stronger oxidising agent such as concentrated nitric acid gives saccharic acid (glucaric acid), a dicarboxylic acid, which shows that',
     options: [
+      'glucose contains only one oxidisable group',
       'nitric acid oxidises both the terminal aldehyde group and the terminal primary alcohol group to carboxylic acid groups',
       'nitric acid has no effect on glucose whatsoever',
-      'glucose contains only one oxidisable group',
       'glucose is not a six-carbon compound'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Concentrated nitric acid is a stronger oxidant that oxidises both the aldehyde group and the terminal -CH2OH group of glucose to carboxylic acid groups, giving the dicarboxylic saccharic acid and confirming the positions of these terminal groups on a straight six-carbon chain.',
     difficulty: 'hard'
   },
@@ -133,8 +133,8 @@ export const BIOMOLECULES = [
     id: 'biomol-12',
     type: 'mcq',
     question: 'The predominant cyclic form of glucose in solution is a six-membered ring, formed by reaction between the -OH group at C5 and the aldehyde group at C1, and is known as the',
-    options: ['furanose form', 'pyranose form', 'aromatic form', 'zwitterionic form'],
-    correctIndex: 1,
+    options: ['zwitterionic form', 'aromatic form', 'furanose form', 'pyranose form'],
+    correctIndex: 3,
     explanation: 'Glucose predominantly adopts a six-membered ring structure called the pyranose form, formed by the intramolecular reaction between the C5 hydroxyl group and the C1 aldehyde.',
     difficulty: 'medium'
   },
@@ -151,8 +151,8 @@ export const BIOMOLECULES = [
     id: 'biomol-14',
     type: 'mcq',
     question: 'In the cyclic form of glucose, the new stereocentre created at C1 (the carbon originally bearing the aldehyde group) is called the',
-    options: ['chiral centre only', 'anomeric carbon', 'quaternary carbon', 'terminal carbon'],
-    correctIndex: 1,
+    options: ['terminal carbon', 'quaternary carbon', 'chiral centre only', 'anomeric carbon'],
+    correctIndex: 3,
     explanation: 'The carbon at which the new stereocentre is generated upon ring closure (C1 in glucose) is called the anomeric carbon.',
     difficulty: 'medium'
   },
@@ -174,7 +174,7 @@ export const BIOMOLECULES = [
     id: 'biomol-16',
     type: 'mcq',
     question: 'The spontaneous change in specific rotation observed when a pure sample of either the alpha or beta anomer of glucose is dissolved in water, as the solution reaches an equilibrium mixture of both anomers, is called',
-    options: ['racemisation', 'mutarotation', 'denaturation', 'saponification'],
+    options: ['denaturation', 'mutarotation', 'racemisation', 'saponification'],
     correctIndex: 1,
     explanation: 'Mutarotation refers to the gradual change in optical rotation observed as a pure anomer of glucose equilibrates (via the open-chain form) with the other anomer in solution.',
     difficulty: 'medium'
@@ -183,7 +183,7 @@ export const BIOMOLECULES = [
     id: 'biomol-17',
     type: 'mcq',
     question: 'Sucrose, upon hydrolysis, gives one molecule each of',
-    options: ['glucose and galactose', 'glucose and fructose', 'two molecules of glucose', 'fructose and galactose'],
+    options: ['fructose and galactose', 'glucose and fructose', 'glucose and galactose', 'two molecules of glucose'],
     correctIndex: 1,
     explanation: 'Hydrolysis of sucrose gives an equimolar mixture of glucose and fructose.',
     difficulty: 'easy'
@@ -192,8 +192,8 @@ export const BIOMOLECULES = [
     id: 'biomol-18',
     type: 'mcq',
     question: 'Maltose, upon hydrolysis, gives',
-    options: ['two molecules of glucose, linked in the intact disaccharide by an alpha-1,4-glycosidic bond', 'glucose and fructose', 'glucose and galactose', 'a single molecule of glucose'],
-    correctIndex: 0,
+    options: ['glucose and galactose', 'a single molecule of glucose', 'glucose and fructose', 'two molecules of glucose, linked in the intact disaccharide by an alpha-1,4-glycosidic bond'],
+    correctIndex: 3,
     explanation: 'Maltose is composed of two glucose units joined by an alpha-1,4-glycosidic linkage, and hydrolysis releases two glucose molecules.',
     difficulty: 'medium'
   },
@@ -201,7 +201,7 @@ export const BIOMOLECULES = [
     id: 'biomol-19',
     type: 'mcq',
     question: 'Lactose, upon hydrolysis, gives one molecule each of',
-    options: ['glucose and fructose', 'galactose and glucose', 'two molecules of fructose', 'galactose and fructose'],
+    options: ['galactose and fructose', 'galactose and glucose', 'two molecules of fructose', 'glucose and fructose'],
     correctIndex: 1,
     explanation: 'Lactose (milk sugar) is composed of galactose and glucose joined by a beta-1,4-glycosidic linkage, and hydrolysis releases these two monosaccharides.',
     difficulty: 'medium'
@@ -211,12 +211,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Starch, an important storage polysaccharide in plants, is composed of two structural components, namely',
     options: [
-      'amylose (linear) and amylopectin (branched)',
-      'cellulose and glycogen',
       'ribose and deoxyribose',
-      'glucose and galactose only, in a 1:1 disaccharide'
+      'cellulose and glycogen',
+      'glucose and galactose only, in a 1:1 disaccharide',
+      'amylose (linear) and amylopectin (branched)'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Starch consists of two components: amylose, a linear polymer of glucose, and amylopectin, a highly branched polymer of glucose.',
     difficulty: 'medium'
   },
@@ -225,12 +225,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Amylose, the linear component of starch, is composed of glucose units linked by',
     options: [
-      'alpha-1,4-glycosidic bonds, forming a helical/coiled structure',
       'beta-1,4-glycosidic bonds',
+      'peptide bonds',
       'alpha-1,6-glycosidic bonds exclusively',
-      'peptide bonds'
+      'alpha-1,4-glycosidic bonds, forming a helical/coiled structure'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Amylose consists of glucose units connected via alpha-1,4-glycosidic linkages, which allow the chain to adopt a characteristic helical structure.',
     difficulty: 'medium'
   },
@@ -252,7 +252,7 @@ export const BIOMOLECULES = [
     id: 'biomol-23',
     type: 'mcq',
     question: 'Cellulose, a structural polysaccharide found in plant cell walls, is composed of glucose units linked by',
-    options: ['alpha-1,4-glycosidic bonds', 'beta-1,4-glycosidic bonds', 'alpha-1,6-glycosidic bonds', 'peptide bonds'],
+    options: ['alpha-1,6-glycosidic bonds', 'beta-1,4-glycosidic bonds', 'alpha-1,4-glycosidic bonds', 'peptide bonds'],
     correctIndex: 1,
     explanation: 'Cellulose consists of glucose units joined by beta-1,4-glycosidic linkages, giving it a linear, rigid structure suited to its structural role in plant cell walls.',
     difficulty: 'medium'
@@ -262,12 +262,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Humans cannot digest cellulose mainly because',
     options: [
-      'cellulose is not made of glucose units',
-      'the human digestive system lacks the enzyme needed to hydrolyse the beta-1,4-glycosidic linkage',
       'cellulose is toxic to humans',
-      'cellulose does not exist in any food source'
+      'cellulose does not exist in any food source',
+      'cellulose is not made of glucose units',
+      'the human digestive system lacks the enzyme needed to hydrolyse the beta-1,4-glycosidic linkage'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since humans lack the enzyme capable of hydrolysing beta-1,4-glycosidic bonds, cellulose passes through the digestive system largely undigested, unlike starch (alpha-1,4-linked), which is digestible.',
     difficulty: 'medium'
   },
@@ -276,9 +276,9 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Glycogen, often referred to as "animal starch", is a highly branched polysaccharide that serves as',
     options: [
-      'the primary structural component of animal connective tissue',
-      'the storage form of glucose in animals, analogous to starch in plants',
       'a component of nucleic acids',
+      'the storage form of glucose in animals, analogous to starch in plants',
+      'the primary structural component of animal connective tissue',
       'a type of protein'
     ],
     correctIndex: 1,
@@ -291,11 +291,11 @@ export const BIOMOLECULES = [
     question: 'An alpha-amino acid is defined as an amino acid in which',
     options: [
       'the amino group and carboxyl group are attached to different, distant carbon atoms',
-      'both the amino group and the carboxyl group are attached to the same (alpha) carbon atom',
       'no carboxyl group is present at all',
-      'no amino group is present at all'
+      'no amino group is present at all',
+      'both the amino group and the carboxyl group are attached to the same (alpha) carbon atom'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'In an alpha-amino acid, both the amino group and the carboxyl group are attached to the same carbon atom, designated the alpha-carbon.',
     difficulty: 'easy'
   },
@@ -303,8 +303,8 @@ export const BIOMOLECULES = [
     id: 'biomol-27',
     type: 'mcq',
     question: 'Amino acids that cannot be synthesised by the human body and must be obtained through the diet are called',
-    options: ['non-essential amino acids', 'essential amino acids', 'zwitterionic amino acids', 'acidic amino acids'],
-    correctIndex: 1,
+    options: ['acidic amino acids', 'zwitterionic amino acids', 'non-essential amino acids', 'essential amino acids'],
+    correctIndex: 3,
     explanation: 'Essential amino acids cannot be synthesised by the body in sufficient quantities and must therefore be supplied through the diet.',
     difficulty: 'easy'
   },
@@ -313,10 +313,10 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'In the solid state and in aqueous solution, amino acids exist predominantly as',
     options: [
-      'neutral, fully uncharged molecules',
-      'zwitterions (dipolar ions), with a protonated amino group (-NH3+) and a deprotonated carboxyl group (-COO-)',
       'purely cationic species with no negative charge anywhere',
-      'purely anionic species with no positive charge anywhere'
+      'zwitterions (dipolar ions), with a protonated amino group (-NH3+) and a deprotonated carboxyl group (-COO-)',
+      'purely anionic species with no positive charge anywhere',
+      'neutral, fully uncharged molecules'
     ],
     correctIndex: 1,
     explanation: 'Amino acids exist predominantly as zwitterions, in which an internal proton transfer generates a positively charged ammonium group and a negatively charged carboxylate group, while the overall molecule can remain net neutral.',
@@ -327,12 +327,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'The zwitterionic nature of amino acids helps explain their',
     options: [
-      'unusually low melting points and poor solubility in water',
-      'relatively high melting points and salt-like solubility behaviour',
+      'lack of any acidic or basic character',
       'complete inability to dissolve in any solvent',
-      'lack of any acidic or basic character'
+      'unusually low melting points and poor solubility in water',
+      'relatively high melting points and salt-like solubility behaviour'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since zwitterions behave somewhat like ionic (salt-like) species, amino acids typically show relatively high melting points and solubility characteristics similar to ionic compounds.',
     difficulty: 'medium'
   },
@@ -341,9 +341,9 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'A peptide bond is formed between two amino acids through',
     options: [
-      'a glycosidic linkage between two hydroxyl groups',
-      'an amide linkage formed between the -COOH group of one amino acid and the -NH2 group of another, with loss of a water molecule',
       'an ester linkage between two carboxyl groups',
+      'an amide linkage formed between the -COOH group of one amino acid and the -NH2 group of another, with loss of a water molecule',
+      'a glycosidic linkage between two hydroxyl groups',
       'a disulfide linkage between two thiol groups'
     ],
     correctIndex: 1,
@@ -356,11 +356,11 @@ export const BIOMOLECULES = [
     question: 'The primary structure of a protein refers to',
     options: [
       'the overall three-dimensional folding of the protein',
-      'the specific linear sequence of amino acids in the polypeptide chain',
+      'the type of secondary structure (alpha-helix or beta-sheet) present',
       'the arrangement of multiple polypeptide subunits',
-      'the type of secondary structure (alpha-helix or beta-sheet) present'
+      'the specific linear sequence of amino acids in the polypeptide chain'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Primary structure refers simply to the sequence in which amino acids are linked together in the polypeptide chain.',
     difficulty: 'easy'
   },
@@ -369,10 +369,10 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'The secondary structure of a protein refers to the',
     options: [
-      'linear sequence of amino acids',
-      'regular, repeating local folding patterns, such as the alpha-helix and beta-pleated sheet',
       'assembly of multiple polypeptide chains into a functional complex',
-      'chemical composition of the amino acid side chains only'
+      'regular, repeating local folding patterns, such as the alpha-helix and beta-pleated sheet',
+      'chemical composition of the amino acid side chains only',
+      'linear sequence of amino acids'
     ],
     correctIndex: 1,
     explanation: 'Secondary structure describes regular, repeating local structural motifs within a polypeptide chain, most notably the alpha-helix and beta-pleated sheet.',
@@ -383,12 +383,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'The alpha-helix, a common protein secondary structure, is a right-handed coiled/spiral arrangement stabilised primarily by',
     options: [
-      'disulfide bonds between distant cysteine residues',
-      'intramolecular hydrogen bonds between the C=O and N-H groups of the peptide backbone',
       'ionic bonds between charged side chains',
-      'covalent bonds between adjacent amino acids other than the peptide bond'
+      'covalent bonds between adjacent amino acids other than the peptide bond',
+      'disulfide bonds between distant cysteine residues',
+      'intramolecular hydrogen bonds between the C=O and N-H groups of the peptide backbone'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The alpha-helix is stabilised by a regular, repeating pattern of intramolecular hydrogen bonds between the carbonyl oxygen and amide hydrogen of the peptide backbone, spaced along the helix.',
     difficulty: 'medium'
   },
@@ -397,10 +397,10 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'The beta-pleated sheet, another common protein secondary structure, is typically stabilised by',
     options: [
-      'intramolecular hydrogen bonds within a single, tightly coiled chain',
-      'intermolecular (or interchain) hydrogen bonds between adjacent, extended polypeptide strands arranged side by side',
       'ionic interactions exclusively',
-      'no hydrogen bonding of any kind'
+      'intermolecular (or interchain) hydrogen bonds between adjacent, extended polypeptide strands arranged side by side',
+      'no hydrogen bonding of any kind',
+      'intramolecular hydrogen bonds within a single, tightly coiled chain'
     ],
     correctIndex: 1,
     explanation: 'The beta-pleated sheet involves extended polypeptide strands lying alongside one another, held together by hydrogen bonds formed between adjacent strands (interchain, or between distant regions of a single folded chain).',
@@ -411,12 +411,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'The tertiary structure of a protein refers to the',
     options: [
+      'exclusive presence of alpha-helices with no other structural motifs',
       'overall three-dimensional folding of a single polypeptide chain, giving it its specific compact shape',
       'sequence of amino acids only',
-      'arrangement of multiple separate polypeptide chains',
-      'exclusive presence of alpha-helices with no other structural motifs'
+      'arrangement of multiple separate polypeptide chains'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Tertiary structure describes the overall three-dimensional shape adopted by a single polypeptide chain as it folds into its functional (often globular) conformation.',
     difficulty: 'medium'
   },
@@ -425,12 +425,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'The quaternary structure of a protein refers to',
     options: [
-      'the sequence of amino acids in a chain',
-      'the spatial arrangement of two or more polypeptide subunits into a single functional protein complex',
       'a type of secondary structure motif',
-      'the process by which a protein is denatured'
+      'the process by which a protein is denatured',
+      'the sequence of amino acids in a chain',
+      'the spatial arrangement of two or more polypeptide subunits into a single functional protein complex'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Quaternary structure describes how multiple individual polypeptide subunits assemble together to form a single, functional multi-subunit protein, such as haemoglobin.',
     difficulty: 'medium'
   },
@@ -439,9 +439,9 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Denaturation of a protein refers to the',
     options: [
-      'breaking of the peptide bonds that form the primary structure',
-      'loss of the native secondary and tertiary structure (and associated biological activity), while the primary structure (amino acid sequence) remains intact',
       'complete destruction of all covalent bonds in the molecule',
+      'loss of the native secondary and tertiary structure (and associated biological activity), while the primary structure (amino acid sequence) remains intact',
+      'breaking of the peptide bonds that form the primary structure',
       'process by which an amino acid becomes a zwitterion'
     ],
     correctIndex: 1,
@@ -453,12 +453,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'The coagulation of egg white upon boiling is a classic example of',
     options: [
+      'mutarotation',
       'protein synthesis',
-      'protein denaturation, caused by heat disrupting the native protein structure',
       'a glycosidic bond formation reaction',
-      'mutarotation'
+      'protein denaturation, caused by heat disrupting the native protein structure'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Heating disrupts the weak intramolecular interactions maintaining egg albumin\'s native structure, causing it to denature and coagulate, a well-known example of heat-induced denaturation.',
     difficulty: 'easy'
   },
@@ -467,10 +467,10 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Fibrous proteins, such as keratin and collagen, are generally characterised by',
     options: [
-      'a compact, spherical shape and good water solubility',
-      'elongated, thread-like polypeptide chains lying roughly parallel to one another, and generally poor water solubility',
       'a complete absence of any secondary structure',
-      'being composed entirely of carbohydrate, not protein'
+      'elongated, thread-like polypeptide chains lying roughly parallel to one another, and generally poor water solubility',
+      'being composed entirely of carbohydrate, not protein',
+      'a compact, spherical shape and good water solubility'
     ],
     correctIndex: 1,
     explanation: 'Fibrous proteins consist of elongated, parallel polypeptide chains, held together by hydrogen and disulfide bonds, and are generally insoluble in water, in contrast to globular proteins.',
@@ -481,12 +481,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Globular proteins, such as insulin and albumins, are generally characterised by',
     options: [
-      'a compact, roughly spherical shape formed by extensive chain folding, and generally good water solubility',
       'elongated, thread-like chains with no folding at all',
       'complete insolubility in any solvent',
-      'the complete absence of any amino acid sequence'
+      'the complete absence of any amino acid sequence',
+      'a compact, roughly spherical shape formed by extensive chain folding, and generally good water solubility'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Globular proteins fold into compact, roughly spherical shapes and are generally soluble in water, distinguishing them from fibrous proteins.',
     difficulty: 'medium'
   },
@@ -495,12 +495,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Enzymes are best described as',
     options: [
+      'a type of carbohydrate',
       'inorganic catalysts with no relationship to proteins',
-      'biological catalysts, most of which are proteins, that increase the rate of biochemical reactions',
       'substances that always slow down biochemical reactions',
-      'a type of carbohydrate'
+      'biological catalysts, most of which are proteins, that increase the rate of biochemical reactions'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Enzymes are biological catalysts, predominantly proteins, that dramatically increase the rate of specific biochemical reactions without being consumed in the process.',
     difficulty: 'easy'
   },
@@ -509,10 +509,10 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'A key characteristic feature of enzymes is their',
     options: [
-      'complete lack of specificity, catalysing any and all reactions equally',
+      'exclusive occurrence outside of living organisms',
       'high specificity for a particular substrate or type of reaction',
-      'inability to increase reaction rate at all',
-      'exclusive occurrence outside of living organisms'
+      'complete lack of specificity, catalysing any and all reactions equally',
+      'inability to increase reaction rate at all'
     ],
     correctIndex: 1,
     explanation: 'Enzymes are highly specific, typically catalysing only one particular reaction or a narrow range of closely related substrates, often described using models such as the lock-and-key or induced-fit model.',
@@ -523,12 +523,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Vitamins are broadly classified into two categories, fat-soluble and water-soluble, based mainly on their',
     options: [
-      'atomic composition, with fat-soluble vitamins containing no carbon',
-      'solubility behaviour, which correlates with whether the body stores them or requires regular dietary intake',
+      'ability to act as enzymes',
       'colour when isolated in pure form',
-      'ability to act as enzymes'
+      'atomic composition, with fat-soluble vitamins containing no carbon',
+      'solubility behaviour, which correlates with whether the body stores them or requires regular dietary intake'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Vitamins are classified as fat-soluble or water-soluble based on their solubility properties, which in turn relates to whether the body can store them (fat-soluble, in liver and fatty tissue) or must obtain them regularly through diet (water-soluble, generally not stored, with excess excreted in urine).',
     difficulty: 'medium'
   },
@@ -536,8 +536,8 @@ export const BIOMOLECULES = [
     id: 'biomol-44',
     type: 'mcq',
     question: 'Which of the following is classified as a fat-soluble vitamin?',
-    options: ['Vitamin C', 'Vitamin B1', 'Vitamin A', 'Vitamin B12'],
-    correctIndex: 2,
+    options: ['Vitamin B12', 'Vitamin A', 'Vitamin C', 'Vitamin B1'],
+    correctIndex: 1,
     explanation: 'Vitamin A, along with vitamins D, E, and K, is a fat-soluble vitamin, stored in the body\'s liver and adipose tissue.',
     difficulty: 'easy'
   },
@@ -545,7 +545,7 @@ export const BIOMOLECULES = [
     id: 'biomol-45',
     type: 'mcq',
     question: 'Which of the following is classified as a water-soluble vitamin?',
-    options: ['Vitamin A', 'Vitamin D', 'Vitamin K', 'Vitamin C'],
+    options: ['Vitamin K', 'Vitamin A', 'Vitamin D', 'Vitamin C'],
     correctIndex: 3,
     explanation: 'Vitamin C, along with the B-complex vitamins, is water-soluble; excess amounts are generally not stored and are excreted in the urine.',
     difficulty: 'easy'
@@ -554,7 +554,7 @@ export const BIOMOLECULES = [
     id: 'biomol-46',
     type: 'mcq',
     question: 'Deficiency of vitamin A in the diet is classically associated with',
-    options: ['scurvy', 'night blindness (and xerophthalmia)', 'beriberi', 'rickets'],
+    options: ['beriberi', 'night blindness (and xerophthalmia)', 'scurvy', 'rickets'],
     correctIndex: 1,
     explanation: 'Vitamin A deficiency is classically associated with night blindness and, in more severe cases, xerophthalmia (dryness and damage to the cornea).',
     difficulty: 'medium'
@@ -563,7 +563,7 @@ export const BIOMOLECULES = [
     id: 'biomol-47',
     type: 'mcq',
     question: 'Deficiency of vitamin B1 (thiamine) is classically associated with the disease',
-    options: ['scurvy', 'beriberi', 'rickets', 'pernicious anaemia'],
+    options: ['rickets', 'beriberi', 'scurvy', 'pernicious anaemia'],
     correctIndex: 1,
     explanation: 'A deficiency of thiamine (vitamin B1) leads to beriberi, a disease affecting the nervous and cardiovascular systems.',
     difficulty: 'medium'
@@ -572,8 +572,8 @@ export const BIOMOLECULES = [
     id: 'biomol-48',
     type: 'mcq',
     question: 'Deficiency of vitamin C (ascorbic acid) is classically associated with the disease',
-    options: ['beriberi', 'rickets', 'scurvy', 'night blindness'],
-    correctIndex: 2,
+    options: ['beriberi', 'rickets', 'night blindness', 'scurvy'],
+    correctIndex: 3,
     explanation: 'A deficiency of vitamin C leads to scurvy, characterised by bleeding gums and poor wound healing.',
     difficulty: 'easy'
   },
@@ -581,8 +581,8 @@ export const BIOMOLECULES = [
     id: 'biomol-49',
     type: 'mcq',
     question: 'Deficiency of vitamin D is classically associated with',
-    options: ['rickets in children (and osteomalacia in adults)', 'scurvy', 'beriberi', 'night blindness'],
-    correctIndex: 0,
+    options: ['scurvy', 'night blindness', 'beriberi', 'rickets in children (and osteomalacia in adults)'],
+    correctIndex: 3,
     explanation: 'A deficiency of vitamin D leads to rickets in children (soft, weak bones) and osteomalacia in adults, both related to impaired calcium metabolism/bone mineralisation.',
     difficulty: 'medium'
   },
@@ -591,10 +591,10 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Deficiency of vitamin K is classically associated with',
     options: [
-      'night blindness',
-      'increased blood clotting time, due to its essential role in the blood clotting process',
       'scurvy',
-      'rickets'
+      'increased blood clotting time, due to its essential role in the blood clotting process',
+      'rickets',
+      'night blindness'
     ],
     correctIndex: 1,
     explanation: 'Vitamin K is essential for proper blood clotting, and its deficiency leads to increased clotting time, potentially causing excessive bleeding.',
@@ -604,8 +604,8 @@ export const BIOMOLECULES = [
     id: 'biomol-51',
     type: 'mcq',
     question: 'Deficiency of vitamin B12 (cobalamin) is classically associated with',
-    options: ['pernicious anaemia', 'scurvy', 'beriberi', 'rickets'],
-    correctIndex: 0,
+    options: ['rickets', 'scurvy', 'beriberi', 'pernicious anaemia'],
+    correctIndex: 3,
     explanation: 'A deficiency of vitamin B12 leads to pernicious anaemia, a condition affecting red blood cell production.',
     difficulty: 'medium'
   },
@@ -613,8 +613,8 @@ export const BIOMOLECULES = [
     id: 'biomol-52',
     type: 'mcq',
     question: 'Nucleic acids, such as DNA and RNA, are polymers built from repeating units called',
-    options: ['amino acids', 'monosaccharides', 'nucleotides', 'fatty acids'],
-    correctIndex: 2,
+    options: ['monosaccharides', 'nucleotides', 'amino acids', 'fatty acids'],
+    correctIndex: 1,
     explanation: 'Nucleic acids are polymers of nucleotides, each composed of a nitrogenous base, a pentose sugar, and a phosphate group.',
     difficulty: 'easy'
   },
@@ -623,12 +623,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'A nucleoside differs from a nucleotide in that a nucleoside',
     options: [
-      'contains a phosphate group, while a nucleotide does not',
       'lacks the phosphate group, consisting only of the nitrogenous base and the pentose sugar',
+      'is a much larger polymer than a nucleotide',
       'contains no nitrogenous base at all',
-      'is a much larger polymer than a nucleotide'
+      'contains a phosphate group, while a nucleotide does not'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'A nucleoside is composed of a nitrogenous base linked to a pentose sugar, without the phosphate group that is present in a full nucleotide.',
     difficulty: 'medium'
   },
@@ -636,8 +636,8 @@ export const BIOMOLECULES = [
     id: 'biomol-54',
     type: 'mcq',
     question: 'The pentose sugar present in DNA is',
-    options: ['ribose', '2-deoxyribose, lacking a hydroxyl group at the 2\' position', 'fructose', 'galactose'],
-    correctIndex: 1,
+    options: ['2-deoxyribose, lacking a hydroxyl group at the 2\' position', 'fructose', 'ribose', 'galactose'],
+    correctIndex: 0,
     explanation: 'DNA contains 2-deoxyribose, which lacks the hydroxyl group at the 2\' carbon that is present in the ribose found in RNA.',
     difficulty: 'medium'
   },
@@ -645,8 +645,8 @@ export const BIOMOLECULES = [
     id: 'biomol-55',
     type: 'mcq',
     question: 'The pentose sugar present in RNA is',
-    options: ['2-deoxyribose', 'ribose, which retains a hydroxyl group at the 2\' position', 'glucose', 'fructose'],
-    correctIndex: 1,
+    options: ['2-deoxyribose', 'glucose', 'fructose', 'ribose, which retains a hydroxyl group at the 2\' position'],
+    correctIndex: 3,
     explanation: 'RNA contains ribose, which has a hydroxyl group at the 2\' carbon, distinguishing it from the deoxyribose found in DNA.',
     difficulty: 'medium'
   },
@@ -654,7 +654,7 @@ export const BIOMOLECULES = [
     id: 'biomol-56',
     type: 'mcq',
     question: 'The nitrogenous bases adenine and guanine belong to the class of compounds known as',
-    options: ['pyrimidines', 'purines', 'pentoses', 'amino acids'],
+    options: ['amino acids', 'purines', 'pyrimidines', 'pentoses'],
     correctIndex: 1,
     explanation: 'Adenine and guanine are purine bases, characterised by a fused double-ring structure.',
     difficulty: 'medium'
@@ -663,8 +663,8 @@ export const BIOMOLECULES = [
     id: 'biomol-57',
     type: 'mcq',
     question: 'The nitrogenous bases cytosine, thymine, and uracil belong to the class of compounds known as',
-    options: ['purines', 'pyrimidines, characterised by a single-ring structure', 'monosaccharides', 'fatty acids'],
-    correctIndex: 1,
+    options: ['monosaccharides', 'purines', 'pyrimidines, characterised by a single-ring structure', 'fatty acids'],
+    correctIndex: 2,
     explanation: 'Cytosine, thymine, and uracil are pyrimidine bases, characterised by a single-ring structure, in contrast to the fused double-ring purines.',
     difficulty: 'medium'
   },
@@ -690,8 +690,8 @@ export const BIOMOLECULES = [
     id: 'biomol-60',
     type: 'mcq',
     question: 'In the Watson-Crick double helix model of DNA, adenine specifically pairs with',
-    options: ['guanine, via three hydrogen bonds', 'cytosine, via two hydrogen bonds', 'thymine, via two hydrogen bonds', 'uracil, via three hydrogen bonds'],
-    correctIndex: 2,
+    options: ['uracil, via three hydrogen bonds', 'guanine, via three hydrogen bonds', 'cytosine, via two hydrogen bonds', 'thymine, via two hydrogen bonds'],
+    correctIndex: 3,
     explanation: 'In DNA, adenine pairs specifically with thymine through two hydrogen bonds, a key feature of the complementary base pairing central to the double helix structure.',
     difficulty: 'medium'
   },
@@ -699,8 +699,8 @@ export const BIOMOLECULES = [
     id: 'biomol-61',
     type: 'mcq',
     question: 'In the Watson-Crick double helix model of DNA, guanine specifically pairs with',
-    options: ['adenine, via two hydrogen bonds', 'thymine, via two hydrogen bonds', 'cytosine, via three hydrogen bonds', 'uracil, via three hydrogen bonds'],
-    correctIndex: 2,
+    options: ['cytosine, via three hydrogen bonds', 'adenine, via two hydrogen bonds', 'uracil, via three hydrogen bonds', 'thymine, via two hydrogen bonds'],
+    correctIndex: 0,
     explanation: 'Guanine pairs specifically with cytosine through three hydrogen bonds, another key feature of the complementary base pairing in DNA.',
     difficulty: 'medium'
   },
@@ -710,11 +710,11 @@ export const BIOMOLECULES = [
     question: 'The two strands of the DNA double helix are described as running',
     options: [
       'parallel to each other, in the same 5\' to 3\' direction',
+      'in no particular consistent direction at all',
       'antiparallel to each other, with one strand running 5\' to 3\' and the other running 3\' to 5\'',
-      'perpendicular to each other',
-      'in no particular consistent direction at all'
+      'perpendicular to each other'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'The two strands of the DNA double helix are antiparallel, running in opposite directions relative to each other, an essential structural feature of the double helix.',
     difficulty: 'medium'
   },
@@ -723,10 +723,10 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'The sugar-phosphate backbone of a DNA (or RNA) strand is held together by',
     options: [
-      'peptide bonds',
-      'phosphodiester linkages between the 3\' and 5\' carbons of adjacent sugar units',
       'glycosidic bonds between adjacent nitrogenous bases',
-      'hydrogen bonds only'
+      'phosphodiester linkages between the 3\' and 5\' carbons of adjacent sugar units',
+      'hydrogen bonds only',
+      'peptide bonds'
     ],
     correctIndex: 1,
     explanation: 'The backbone of a nucleic acid strand is formed by phosphodiester bonds, which link the 3\' carbon of one sugar to the 5\' carbon of the next sugar via a phosphate group.',
@@ -737,12 +737,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'The functional role of DNA in the cell is primarily to',
     options: [
-      'act as a structural component of the cell membrane',
       'store and transmit genetic information, which is replicated and passed on during cell division',
       'directly catalyse metabolic reactions as an enzyme',
-      'act as an energy storage molecule, like glycogen'
+      'act as an energy storage molecule, like glycogen',
+      'act as a structural component of the cell membrane'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'DNA serves as the primary repository of genetic information, which is faithfully replicated and passed on to daughter cells during cell division.',
     difficulty: 'easy'
   },
@@ -751,12 +751,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Messenger RNA (mRNA) functions to',
     options: [
-      'carry the genetic code from DNA to the ribosome for protein synthesis',
+      'store long-term genetic information in place of DNA',
       'form the structural and catalytic core of the ribosome',
-      'carry amino acids to the ribosome during translation',
-      'store long-term genetic information in place of DNA'
+      'carry the genetic code from DNA to the ribosome for protein synthesis',
+      'carry amino acids to the ribosome during translation'
     ],
-    correctIndex: 0,
+    correctIndex: 2,
     explanation: 'mRNA carries the genetic information transcribed from DNA to the ribosome, where it serves as the template for protein synthesis.',
     difficulty: 'medium'
   },
@@ -765,10 +765,10 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Transfer RNA (tRNA) functions to',
     options: [
-      'carry the genetic code from DNA to the ribosome',
+      'store the complete genetic blueprint of the organism',
       'carry specific amino acids to the ribosome during translation, matching them to the corresponding codon on mRNA',
       'form the structural framework of the entire ribosome',
-      'store the complete genetic blueprint of the organism'
+      'carry the genetic code from DNA to the ribosome'
     ],
     correctIndex: 1,
     explanation: 'tRNA molecules recognise specific codons on the mRNA and deliver the corresponding amino acids to the ribosome during the process of translation (protein synthesis).',
@@ -779,12 +779,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Ribosomal RNA (rRNA) functions as',
     options: [
+      'a molecule with no role in protein synthesis at all',
       'a molecule that stores long-term genetic information exclusively',
-      'a structural and catalytic component of the ribosome, the site of protein synthesis',
       'a molecule that carries amino acids to the ribosome',
-      'a molecule with no role in protein synthesis at all'
+      'a structural and catalytic component of the ribosome, the site of protein synthesis'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'rRNA forms an integral structural and catalytic part of the ribosome, the cellular machinery responsible for protein synthesis.',
     difficulty: 'medium'
   },
@@ -793,12 +793,12 @@ export const BIOMOLECULES = [
     type: 'mcq',
     question: 'Hormones are best described as',
     options: [
-      'structural components of cell membranes only',
       'chemical messengers secreted by endocrine glands that regulate various physiological processes',
       'a type of nucleic acid',
+      'structural components of cell membranes only',
       'compounds with no biological role at all'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'Hormones are chemical messengers, secreted directly into the bloodstream by endocrine glands, that regulate diverse physiological processes throughout the body.',
     difficulty: 'easy'
   },
@@ -806,8 +806,8 @@ export const BIOMOLECULES = [
     id: 'biomol-69',
     type: 'mcq',
     question: 'Insulin, a hormone that helps regulate blood glucose levels, is chemically classified as a',
-    options: ['steroid', 'protein (polypeptide hormone)', 'carbohydrate', 'nucleic acid'],
-    correctIndex: 1,
+    options: ['carbohydrate', 'nucleic acid', 'steroid', 'protein (polypeptide hormone)'],
+    correctIndex: 3,
     explanation: 'Insulin is a protein hormone, composed of polypeptide chains, that plays a central role in regulating blood glucose levels.',
     difficulty: 'medium'
   },
@@ -1852,4 +1852,3 @@ export const BIOMOLECULES = [
     difficulty: 'medium'
   }
 ];
-

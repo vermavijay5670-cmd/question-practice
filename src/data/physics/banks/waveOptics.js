@@ -5,12 +5,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The wave theory of light, as opposed to the corpuscular (particle) theory, was strongly supported by the phenomenon of',
     options: [
-      'rectilinear propagation of light in a vacuum',
-      'interference and diffraction of light, which cannot be easily explained by treating light as a stream of particles',
       'reflection of light from a plane mirror',
-      'the fact that light travels in straight lines'
+      'the fact that light travels in straight lines',
+      'rectilinear propagation of light in a vacuum',
+      'interference and diffraction of light, which cannot be easily explained by treating light as a stream of particles'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Interference and diffraction, phenomena involving the superposition and bending of waves around obstacles, provided strong evidence for the wave nature of light, phenomena difficult to explain using a simple particle model.',
     difficulty: 'medium'
   },
@@ -19,12 +19,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'A wavefront is defined as',
     options: [
+      'the speed of light in a given medium',
       'a single ray of light',
-      'the locus of all points in a medium that are vibrating in the same phase at a given instant',
       'the source of light itself',
-      'the speed of light in a given medium'
+      'the locus of all points in a medium that are vibrating in the same phase at a given instant'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A wavefront is the surface (locus of points) over which the disturbance (phase of oscillation) of the wave is the same at a given instant of time.',
     difficulty: 'easy'
   },
@@ -34,11 +34,11 @@ export const WAVE_OPTICS = [
     question: 'For a point source of light emitting waves uniformly in all directions in an isotropic medium, the shape of the wavefront is',
     options: [
       'planar (flat)',
-      'spherical, with the source at the centre',
+      'always irregular and undefined',
       'cylindrical',
-      'always irregular and undefined'
+      'spherical, with the source at the centre'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A point source radiating uniformly in all directions produces spherical wavefronts, since all points at a given distance from the source have travelled the same optical path and are in phase.',
     difficulty: 'easy'
   },
@@ -47,12 +47,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'At a very large distance from a point source (in the far-field region), a small portion of the spherical wavefront can be approximated as',
     options: [
-      'still perfectly spherical, with no change in curvature',
-      'essentially a plane wavefront, since the radius of curvature becomes very large',
+      'a wavefront with no definite shape',
       'a converging wavefront',
-      'a wavefront with no definite shape'
+      'still perfectly spherical, with no change in curvature',
+      'essentially a plane wavefront, since the radius of curvature becomes very large'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'As the radius of a spherical wavefront becomes very large (far from the source), a small section of it appears nearly flat, and can be well-approximated as a plane wavefront.',
     difficulty: 'medium'
   },
@@ -60,8 +60,8 @@ export const WAVE_OPTICS = [
     id: 'wave-optics-5',
     type: 'mcq',
     question: 'For a line source of light (or a source at a very large but finite distance, viewed appropriately), the wavefront shape is',
-    options: ['spherical', 'cylindrical', 'planar only', 'always a single point'],
-    correctIndex: 1,
+    options: ['spherical', 'planar only', 'always a single point', 'cylindrical'],
+    correctIndex: 3,
     explanation: 'A line source produces cylindrical wavefronts, with the disturbance propagating outward from the line in a cylindrically symmetric pattern.',
     difficulty: 'medium'
   },
@@ -72,8 +72,8 @@ export const WAVE_OPTICS = [
     options: [
       'parallel to the wavefront',
       'perpendicular to the wavefront at that point',
-      'at 45° to the wavefront',
-      'unrelated to the orientation of the wavefront'
+      'unrelated to the orientation of the wavefront',
+      'at 45° to the wavefront'
     ],
     correctIndex: 1,
     explanation: 'By definition, a ray (representing the direction of energy propagation) is always drawn perpendicular (normal) to the wavefront at every point.',
@@ -85,11 +85,11 @@ export const WAVE_OPTICS = [
     question: 'Huygens\' principle states that every point on a wavefront acts as a source of',
     options: [
       'new, independent light rays travelling in random directions with no relationship to the original wave',
-      'secondary spherical wavelets, which spread out in the forward direction with the same speed as the original wave',
       'sound waves, not light waves',
-      'polarized light exclusively'
+      'polarized light exclusively',
+      'secondary spherical wavelets, which spread out in the forward direction with the same speed as the original wave'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Huygens\' principle states that every point on an existing wavefront can be regarded as a source of secondary wavelets, which spread out in all directions with the speed of the wave in that medium; the new wavefront is the tangential envelope of these secondary wavelets in the forward direction.',
     difficulty: 'medium'
   },
@@ -98,12 +98,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'According to Huygens\' construction, the new wavefront at a later time is obtained by',
     options: [
-      'drawing a random curve connecting some of the secondary wavelets',
-      'taking the common tangent (envelope) to all the secondary wavelets in the forward direction',
       'ignoring the secondary wavelets entirely',
-      'considering only the wavelet from a single, central point on the original wavefront'
+      'drawing a random curve connecting some of the secondary wavelets',
+      'considering only the wavelet from a single, central point on the original wavefront',
+      'taking the common tangent (envelope) to all the secondary wavelets in the forward direction'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The new wavefront is constructed as the common tangential surface (envelope) to all the secondary wavelets, specifically in the forward direction of propagation.',
     difficulty: 'medium'
   },
@@ -141,11 +141,11 @@ export const WAVE_OPTICS = [
     question: 'The phenomenon of interference of light refers to',
     options: [
       'the bending of light around obstacles',
-      'the superposition of two or more light waves, resulting in regions of increased intensity (constructive interference) and decreased intensity (destructive interference)',
+      'the polarization of light by certain materials',
       'the splitting of white light into its constituent colours by a prism',
-      'the polarization of light by certain materials'
+      'the superposition of two or more light waves, resulting in regions of increased intensity (constructive interference) and decreased intensity (destructive interference)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Interference refers to the phenomenon where two (or more) coherent light waves superpose, resulting in a redistribution of energy that produces bright (constructive) and dark (destructive) fringes/regions.',
     difficulty: 'easy'
   },
@@ -183,11 +183,11 @@ export const WAVE_OPTICS = [
     question: 'In Young\'s double-slit experiment, coherent sources are typically obtained by',
     options: [
       'using two completely independent, separate light bulbs',
-      'illuminating two closely spaced slits with light from a single source, so that the two slits act as coherent secondary sources derived from the same original wavefront',
       'using two different colours of light',
-      'coherence is not actually required in this experiment'
+      'coherence is not actually required in this experiment',
+      'illuminating two closely spaced slits with light from a single source, so that the two slits act as coherent secondary sources derived from the same original wavefront'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Young\'s experiment achieves coherence by deriving two secondary sources (the two slits) from a single primary source, ensuring both slits always have the same phase relationship relative to each other.',
     difficulty: 'medium'
   },
@@ -196,10 +196,10 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'In Young\'s double-slit experiment, the condition for constructive interference (bright fringe) at a point is that the path difference between the two waves arriving there is',
     options: [
-      'an odd multiple of half the wavelength',
+      'unrelated to the wavelength',
       'an integral multiple of the wavelength (nλ, where n = 0, 1, 2, ...)',
-      'always exactly zero, with no other possibility',
-      'unrelated to the wavelength'
+      'an odd multiple of half the wavelength',
+      'always exactly zero, with no other possibility'
     ],
     correctIndex: 1,
     explanation: 'Constructive interference (bright fringe) occurs when the path difference is an integral multiple of the wavelength, Δ = nλ, so that the two waves arrive in phase and reinforce each other.',
@@ -210,9 +210,9 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'In Young\'s double-slit experiment, the condition for destructive interference (dark fringe) at a point is that the path difference between the two waves arriving there is',
     options: [
-      'an integral multiple of the wavelength',
-      'an odd multiple of half the wavelength (Δ = (n + ½)λ)',
       'always exactly zero',
+      'an odd multiple of half the wavelength (Δ = (n + ½)λ)',
+      'an integral multiple of the wavelength',
       'unrelated to the wavelength'
     ],
     correctIndex: 1,
@@ -224,12 +224,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'In Young\'s double-slit experiment, the fringe width (spacing between consecutive bright or dark fringes) is given by β = Dλ/d, where D is the screen distance and d is the slit separation. If the slit separation d is increased (keeping D and λ constant), the fringe width',
     options: [
+      'becomes infinite',
       'increases',
-      'decreases, since fringe width is inversely proportional to slit separation',
       'remains unchanged',
-      'becomes infinite'
+      'decreases, since fringe width is inversely proportional to slit separation'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since β = Dλ/d, fringe width is inversely proportional to the slit separation d, so increasing d causes the fringes to become more closely spaced (fringe width decreases).',
     difficulty: 'medium'
   },
@@ -238,12 +238,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'In Young\'s double-slit experiment, if the distance D between the slits and the screen is increased (keeping d and λ constant), the fringe width',
     options: [
-      'increases, since fringe width is directly proportional to the screen distance',
-      'decreases',
       'remains unchanged',
-      'becomes zero'
+      'becomes zero',
+      'decreases',
+      'increases, since fringe width is directly proportional to the screen distance'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Since β = Dλ/d, fringe width is directly proportional to the screen distance D, so increasing D causes the fringes to spread out (fringe width increases).',
     difficulty: 'medium'
   },
@@ -252,12 +252,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'In Young\'s double-slit experiment, if the wavelength of light used is increased (keeping D and d constant), the fringe width',
     options: [
-      'increases, since fringe width is directly proportional to wavelength',
-      'decreases',
       'remains unchanged',
-      'has no relationship to the wavelength used'
+      'increases, since fringe width is directly proportional to wavelength',
+      'has no relationship to the wavelength used',
+      'decreases'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Since β = Dλ/d, fringe width is directly proportional to wavelength, so using light of a longer wavelength (e.g., switching from blue to red light) produces wider fringes.',
     difficulty: 'medium'
   },
@@ -266,10 +266,10 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'In Young\'s double-slit experiment, all the bright fringes (except possibly considerations of intensity variation with angle) have approximately',
     options: [
-      'different widths, increasing progressively away from the centre',
-      'the same width, evenly spaced (for small angles, where the approximation holds)',
       'zero width',
-      'infinite width'
+      'the same width, evenly spaced (for small angles, where the approximation holds)',
+      'infinite width',
+      'different widths, increasing progressively away from the centre'
     ],
     correctIndex: 1,
     explanation: 'Under the standard small-angle approximation used in the basic treatment of Young\'s experiment, the bright (and dark) fringes are evenly and uniformly spaced with the same fringe width β throughout the observed pattern.',
@@ -280,12 +280,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'If one of the two slits in Young\'s double-slit experiment is completely covered/blocked, the pattern on the screen would change from an interference pattern to',
     options: [
-      'an even more pronounced set of bright and dark fringes',
-      'a simple diffraction pattern from the single remaining open slit, without the alternating fringe structure characteristic of two-slit interference',
+      'no change at all in the observed pattern',
       'complete darkness everywhere on the screen',
-      'no change at all in the observed pattern'
+      'an even more pronounced set of bright and dark fringes',
+      'a simple diffraction pattern from the single remaining open slit, without the alternating fringe structure characteristic of two-slit interference'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'With only one slit open, there is no second coherent source to interfere with, so the double-slit interference fringes disappear, and the pattern becomes the (broader, differently structured) diffraction pattern characteristic of a single slit.',
     difficulty: 'medium'
   },
@@ -294,10 +294,10 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The intensity distribution across the fringes in Young\'s double-slit experiment, according to the ideal theoretical treatment (equal intensity from both slits), varies as',
     options: [
-      'a uniform, unvarying intensity everywhere on the screen',
+      'a step function with sharp, discrete intensity levels',
       'a cos² function of position, producing bright and dark fringes with intensity varying continuously between maxima and minima',
-      'a completely random and unpredictable pattern',
-      'a step function with sharp, discrete intensity levels'
+      'a uniform, unvarying intensity everywhere on the screen',
+      'a completely random and unpredictable pattern'
     ],
     correctIndex: 1,
     explanation: 'The theoretical intensity pattern in Young\'s double-slit experiment follows a cos² variation with position, producing smoothly varying bright and dark fringes rather than sharp discrete steps.',
@@ -308,9 +308,9 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The central bright fringe in Young\'s double-slit experiment (directly opposite the midpoint of the two slits) corresponds to a path difference of',
     options: [
-      'λ/2', 'zero (the two waves travel equal distances to reach this point)', 'λ', '2λ'
+      'λ/2', '2λ', 'λ', 'zero (the two waves travel equal distances to reach this point)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'At the central point (equidistant from both slits), the path difference is exactly zero, satisfying the condition for constructive interference and producing the brightest, central fringe.',
     difficulty: 'easy'
   },
@@ -319,12 +319,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'Diffraction of light refers to',
     options: [
+      'the polarization of light',
       'the splitting of white light into its constituent colours',
-      'the bending of light waves around obstacles or through small apertures, into the region of the geometrical shadow',
       'the reflection of light from a mirror',
-      'the polarization of light'
+      'the bending of light waves around obstacles or through small apertures, into the region of the geometrical shadow'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Diffraction is the phenomenon of bending of waves around the edges of an obstacle or aperture, allowing light to spread into regions that would be in shadow according to simple geometric (ray) optics.',
     difficulty: 'easy'
   },
@@ -333,10 +333,10 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'Diffraction effects become significant (noticeable) when the size of the obstacle or aperture is',
     options: [
-      'very much larger than the wavelength of the light used',
-      'comparable to (or smaller than) the wavelength of the light used',
       'exactly infinite',
-      'irrelevant to the wavelength; diffraction always looks the same regardless of size'
+      'comparable to (or smaller than) the wavelength of the light used',
+      'irrelevant to the wavelength; diffraction always looks the same regardless of size',
+      'very much larger than the wavelength of the light used'
     ],
     correctIndex: 1,
     explanation: 'Diffraction effects become prominent and easily observable when the obstacle or aperture size is comparable to or smaller than the wavelength of the wave; for much larger apertures, diffraction effects are negligible and light appears to travel in straight lines.',
@@ -362,11 +362,11 @@ export const WAVE_OPTICS = [
     question: 'The width of the central maximum in a single-slit diffraction pattern is related to the slit width (a) such that',
     options: [
       'a narrower slit produces a narrower central maximum',
-      'a narrower slit produces a wider central maximum, since diffraction spreading increases as the aperture size decreases',
+      'the central maximum width is completely independent of wavelength',
       'the slit width has no effect on the central maximum\'s width',
-      'the central maximum width is completely independent of wavelength'
+      'a narrower slit produces a wider central maximum, since diffraction spreading increases as the aperture size decreases'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'As the slit width decreases, diffraction spreading becomes more pronounced, resulting in a wider central maximum; this inverse relationship between aperture size and diffraction spread is a key feature of single-slit diffraction.',
     difficulty: 'medium'
   },
@@ -374,7 +374,7 @@ export const WAVE_OPTICS = [
     id: 'wave-optics-28',
     type: 'mcq',
     question: 'The condition for the first minimum in a single-slit diffraction pattern (slit width a, wavelength λ) is given by',
-    options: ['a sinθ = λ/2', 'a sinθ = λ', 'a sinθ = 2λ', 'a sinθ = 0, always'],
+    options: ['a sinθ = 2λ', 'a sinθ = λ', 'a sinθ = λ/2', 'a sinθ = 0, always'],
     correctIndex: 1,
     explanation: 'The first minimum in single-slit diffraction occurs at the angle θ satisfying a sinθ = λ, a standard result derived by considering the destructive interference of wavelets from different parts of the slit.',
     difficulty: 'medium'
@@ -384,12 +384,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'Diffraction and interference, though both involve the superposition of waves, are conceptually distinguished (in the basic NCERT treatment) mainly by the fact that',
     options: [
+      'diffraction only occurs in the absence of any wave phenomena',
       'interference typically involves superposition of waves from a small number of discrete coherent sources (like two slits), while diffraction typically involves superposition of a continuum of secondary wavelets from within a single aperture or around an obstacle',
       'diffraction and interference are exactly the same phenomenon with no meaningful distinction',
-      'interference only occurs in sound waves, never in light',
-      'diffraction only occurs in the absence of any wave phenomena'
+      'interference only occurs in sound waves, never in light'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'In the standard introductory framework, interference (as in Young\'s double-slit) involves the superposition of waves from a few discrete coherent sources, while diffraction (as in single-slit patterns) arises from the interference of a continuous distribution of secondary wavelets from within a single slit or aperture — though at a deeper level both are manifestations of the same superposition principle.',
     difficulty: 'hard'
   },
@@ -399,11 +399,11 @@ export const WAVE_OPTICS = [
     question: 'The resolving power of an optical instrument refers to its ability to',
     options: [
       'magnify an image to any arbitrary degree',
-      'distinguish between (resolve) two closely spaced objects or point sources as separate entities, rather than perceiving them as a single blurred object',
       'change the color of the light passing through it',
-      'focus light to a single infinitesimally small point with no limitations'
+      'focus light to a single infinitesimally small point with no limitations',
+      'distinguish between (resolve) two closely spaced objects or point sources as separate entities, rather than perceiving them as a single blurred object'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Resolving power is the capacity of an optical instrument (like a telescope or microscope) to distinguish between two closely spaced objects as separate, rather than merging them into one indistinguishable blur.',
     difficulty: 'medium'
   },
@@ -412,10 +412,10 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The resolving power of optical instruments is fundamentally limited by',
     options: [
-      'the cost of the instrument',
+      'gravitational effects on light',
       'diffraction effects, since the finite aperture of any lens or mirror causes light to spread out somewhat, blurring the image of a point source into a diffraction pattern',
       'the color of the observer\'s eyes',
-      'gravitational effects on light'
+      'the cost of the instrument'
     ],
     correctIndex: 1,
     explanation: 'Because any finite-sized aperture causes some diffraction spreading of light, even a perfectly constructed optical instrument has a fundamental resolution limit set by diffraction, beyond which further improvement in image sharpness is not possible.',
@@ -427,11 +427,11 @@ export const WAVE_OPTICS = [
     question: 'To improve (increase) the resolving power of a telescope, one could',
     options: [
       'decrease the diameter of its objective lens/mirror',
-      'increase the diameter of its objective lens/mirror, since a larger aperture reduces diffraction spreading and improves resolution',
+      'move the telescope closer to the observed object without changing the aperture',
       'use light of a longer wavelength',
-      'move the telescope closer to the observed object without changing the aperture'
+      'increase the diameter of its objective lens/mirror, since a larger aperture reduces diffraction spreading and improves resolution'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since resolving power improves with a larger aperture (reduced diffraction spreading) and shorter wavelength, increasing the objective diameter is a standard way to improve a telescope\'s resolving power.',
     difficulty: 'medium'
   },
@@ -440,12 +440,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The wave nature of light also implies that the resolving power of a microscope can be improved by using light of',
     options: [
-      'a longer wavelength',
-      'a shorter wavelength, since resolving power generally improves (resolution limit decreases) as wavelength decreases',
       'the wavelength has no effect on resolving power',
-      'exactly zero wavelength'
+      'exactly zero wavelength',
+      'a longer wavelength',
+      'a shorter wavelength, since resolving power generally improves (resolution limit decreases) as wavelength decreases'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since the diffraction-limited resolution improves with shorter wavelength, using shorter-wavelength light (such as blue/violet light, or in advanced instruments, even electron beams with very short associated wavelengths) can improve a microscope\'s resolving power.',
     difficulty: 'medium'
   },
@@ -454,10 +454,10 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'Polarization of light refers to',
     options: [
-      'the splitting of light into different colours',
-      'the phenomenon where the oscillations of the transverse light wave are restricted to (or predominantly occur in) a specific plane, rather than being randomly oriented in all directions perpendicular to the propagation direction',
       'the bending of light around obstacles',
-      'the reflection of light from a mirror'
+      'the phenomenon where the oscillations of the transverse light wave are restricted to (or predominantly occur in) a specific plane, rather than being randomly oriented in all directions perpendicular to the propagation direction',
+      'the reflection of light from a mirror',
+      'the splitting of light into different colours'
     ],
     correctIndex: 1,
     explanation: 'Polarization refers to the phenomenon where the electric field oscillations of a light wave are confined to (or preferentially aligned along) a specific plane, as opposed to unpolarized light where the oscillations occur randomly in all directions perpendicular to propagation.',
@@ -468,12 +468,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The phenomenon of polarization provides strong evidence that light is a',
     options: [
-      'longitudinal wave, like sound',
-      'transverse wave, since only transverse waves can be polarized (oscillations perpendicular to the direction of propagation can be restricted to one plane)',
       'purely particle-based phenomenon with no wave character',
-      'wave phenomenon of no particular type (longitudinal or transverse)'
+      'longitudinal wave, like sound',
+      'wave phenomenon of no particular type (longitudinal or transverse)',
+      'transverse wave, since only transverse waves can be polarized (oscillations perpendicular to the direction of propagation can be restricted to one plane)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since polarization (restricting oscillation to a single plane) is possible only for transverse waves (not longitudinal waves like sound, which oscillate along the direction of propagation), the observation of light polarization is strong evidence that light is a transverse wave.',
     difficulty: 'medium'
   },
@@ -482,10 +482,10 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'Ordinary light from sources like the Sun or an incandescent bulb is typically',
     options: [
-      'completely (100%) polarized in a single, fixed plane',
+      'always polarized vertically',
       'unpolarized, meaning the electric field oscillates randomly in all directions perpendicular to the direction of propagation',
-      'composed entirely of longitudinal waves',
-      'always polarized vertically'
+      'completely (100%) polarized in a single, fixed plane',
+      'composed entirely of longitudinal waves'
     ],
     correctIndex: 1,
     explanation: 'Ordinary light sources emit unpolarized light, in which the electric field vector oscillates randomly and rapidly in all directions perpendicular to the propagation direction, with no preferred orientation.',
@@ -497,11 +497,11 @@ export const WAVE_OPTICS = [
     question: 'A polaroid (polarizing sheet) is a material that',
     options: [
       'blocks all light completely, regardless of orientation',
-      'selectively transmits light whose electric field oscillates along a particular direction (its transmission axis), while absorbing components oscillating perpendicular to that axis',
+      'converts polarized light into unpolarized light',
       'has no effect on the polarization state of light passing through it',
-      'converts polarized light into unpolarized light'
+      'selectively transmits light whose electric field oscillates along a particular direction (its transmission axis), while absorbing components oscillating perpendicular to that axis'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A polaroid contains long-chain molecules aligned in a particular direction, which absorb the electric field component of light parallel to the molecular chains while transmitting the perpendicular component, thus acting as a polarizer along a specific transmission axis.',
     difficulty: 'medium'
   },
@@ -523,7 +523,7 @@ export const WAVE_OPTICS = [
     id: 'wave-optics-39',
     type: 'mcq',
     question: 'Malus\'s law describes the intensity of polarized light after passing through a second polaroid (analyzer), oriented at angle θ to the first polaroid\'s transmission axis, as',
-    options: ['I = I0 sinθ', 'I = I0 cos²θ', 'I = I0 sin²θ', 'I = I0, independent of θ'],
+    options: ['I = I0 sinθ', 'I = I0 cos²θ', 'I = I0, independent of θ', 'I = I0 sin²θ'],
     correctIndex: 1,
     explanation: 'Malus\'s law states that when already-polarized light of intensity I0 passes through an analyzer at angle θ to the polarization direction, the transmitted intensity is I = I0 cos²θ.',
     difficulty: 'medium'
@@ -534,11 +534,11 @@ export const WAVE_OPTICS = [
     question: 'According to Malus\'s law, if the transmission axis of the second polaroid (analyzer) is exactly parallel to the polarization direction of the incoming light (θ = 0°), the transmitted intensity is',
     options: [
       'zero',
-      'maximum, equal to the full incoming intensity I0 (in the ideal case)',
+      'undefined',
       'half of the incoming intensity',
-      'undefined'
+      'maximum, equal to the full incoming intensity I0 (in the ideal case)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'When θ = 0° (parallel axes), cos²(0°) = 1, so the entire incoming polarized light intensity is transmitted (in the ideal, lossless case).',
     difficulty: 'medium'
   },
@@ -548,11 +548,11 @@ export const WAVE_OPTICS = [
     question: 'According to Malus\'s law, if the transmission axis of the second polaroid (analyzer) is exactly perpendicular to the polarization direction of the incoming light (θ = 90°), the transmitted intensity is',
     options: [
       'maximum',
-      'zero, since cos²(90°) = 0',
+      'independent of the angle',
       'half of the incoming intensity',
-      'independent of the angle'
+      'zero, since cos²(90°) = 0'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'When θ = 90° (perpendicular, "crossed" polaroids), cos²(90°) = 0, so no light is transmitted through the second polaroid — this "crossed polaroids" configuration is a classic demonstration of polarization.',
     difficulty: 'medium'
   },
@@ -561,9 +561,9 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'Light can also become polarized upon reflection from a surface (like glass or water), especially when the angle of incidence equals a specific angle called the',
     options: [
-      'critical angle',
-      'Brewster\'s angle, at which the reflected light is completely (linearly) polarized',
       'angle of minimum deviation',
+      'Brewster\'s angle, at which the reflected light is completely (linearly) polarized',
+      'critical angle',
       'angle of total internal reflection'
     ],
     correctIndex: 1,
@@ -574,8 +574,8 @@ export const WAVE_OPTICS = [
     id: 'wave-optics-43',
     type: 'mcq',
     question: 'Brewster\'s law relates the Brewster angle (θB) to the refractive index (n) of the reflecting medium by',
-    options: ['tan θB = n', 'sin θB = n', 'cos θB = n', 'θB = n, without any trigonometric function'],
-    correctIndex: 0,
+    options: ['sin θB = n', 'θB = n, without any trigonometric function', 'cos θB = n', 'tan θB = n'],
+    correctIndex: 3,
     explanation: 'Brewster\'s law states tan θB = n, relating the polarizing (Brewster) angle to the refractive index of the medium from which light is being reflected.',
     difficulty: 'medium'
   },
@@ -584,10 +584,10 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'At Brewster\'s angle, the reflected ray and the refracted ray are related such that',
     options: [
-      'they are exactly parallel to each other',
-      'they are perpendicular (mutually at 90°) to each other',
       'they exactly coincide, travelling in the same direction',
-      'there is no fixed relationship between them'
+      'they are perpendicular (mutually at 90°) to each other',
+      'there is no fixed relationship between them',
+      'they are exactly parallel to each other'
     ],
     correctIndex: 1,
     explanation: 'A defining geometric feature of Brewster\'s angle is that the reflected and refracted rays are exactly perpendicular to each other at this specific angle of incidence.',
@@ -599,11 +599,11 @@ export const WAVE_OPTICS = [
     question: 'Polaroid sunglasses are effective at reducing glare (from reflections off surfaces like water or roads) because',
     options: [
       'they block all light entirely, regardless of orientation',
-      'reflected glare tends to be partially or strongly polarized (often horizontally), and polaroid sunglasses with a vertical transmission axis can selectively block much of this polarized glare while allowing normal, more randomly polarized light through',
+      'they have no interaction with polarized light at all',
       'they magnify the scene being viewed',
-      'they have no interaction with polarized light at all'
+      'reflected glare tends to be partially or strongly polarized (often horizontally), and polaroid sunglasses with a vertical transmission axis can selectively block much of this polarized glare while allowing normal, more randomly polarized light through'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since glare from horizontal surfaces (like water or a road) tends to be predominantly horizontally polarized upon reflection, polaroid sunglasses with a vertically oriented transmission axis effectively block much of this polarized glare while transmitting a good portion of normally polarized ambient light.',
     difficulty: 'medium'
   },
@@ -612,9 +612,9 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'Liquid crystal displays (LCDs), commonly used in electronic devices, rely on',
     options: [
-      'thermal radiation with no relation to polarization',
-      'the manipulation of polarized light using liquid crystal materials sandwiched between polaroid filters, controlling the amount of light transmitted at each pixel',
       'purely mechanical shutters with no optical principles involved',
+      'the manipulation of polarized light using liquid crystal materials sandwiched between polaroid filters, controlling the amount of light transmitted at each pixel',
+      'thermal radiation with no relation to polarization',
       'radioactive decay processes'
     ],
     correctIndex: 1,
@@ -626,12 +626,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The scattering of sunlight by molecules in the Earth\'s atmosphere (which contributes to the blue color of the sky) also results in',
     options: [
-      'the scattered light being completely unaffected in its polarization state',
-      'partial polarization of the scattered skylight, most noticeably at certain angles relative to the Sun',
       'the complete elimination of all blue light from the sky',
-      'no scattering effect whatsoever'
+      'the scattered light being completely unaffected in its polarization state',
+      'no scattering effect whatsoever',
+      'partial polarization of the scattered skylight, most noticeably at certain angles relative to the Sun'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Scattering of sunlight by atmospheric molecules (Rayleigh scattering) also produces partial polarization of the scattered skylight, an effect most pronounced at scattering angles around 90° from the Sun\'s direction, and which can be observed using polaroid filters.',
     difficulty: 'medium'
   },
@@ -656,8 +656,8 @@ export const WAVE_OPTICS = [
     options: [
       'always exactly equal to the displacement of just one of the individual waves, ignoring the others',
       'the algebraic (vector) sum of the individual displacements due to each wave, added at that point and instant',
-      'always zero, regardless of the individual wave displacements',
-      'the product of the individual wave displacements'
+      'the product of the individual wave displacements',
+      'always zero, regardless of the individual wave displacements'
     ],
     correctIndex: 1,
     explanation: 'The superposition principle states that when multiple waves overlap, the resultant disturbance at any point is simply the (vector) sum of the individual disturbances that each wave would produce alone at that point.',
@@ -668,12 +668,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The energy in an interference pattern (bright and dark fringes) is',
     options: [
-      'created out of nothing at the bright fringes, and destroyed at the dark fringes, violating energy conservation',
-      'redistributed — energy that would otherwise be uniformly spread is concentrated at bright fringes and depleted at dark fringes, with the total energy over the whole pattern remaining conserved',
       'unrelated to the concept of energy conservation',
-      'always uniformly distributed, with no bright or dark fringes ever forming'
+      'always uniformly distributed, with no bright or dark fringes ever forming',
+      'created out of nothing at the bright fringes, and destroyed at the dark fringes, violating energy conservation',
+      'redistributed — energy that would otherwise be uniformly spread is concentrated at bright fringes and depleted at dark fringes, with the total energy over the whole pattern remaining conserved'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Interference does not create or destroy energy; rather, it redistributes energy spatially — energy is enhanced at points of constructive interference and reduced at points of destructive interference, while the total energy summed over the entire pattern remains conserved.',
     difficulty: 'medium'
   },
@@ -696,10 +696,10 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The phenomenon of diffraction explains why we can still hear sound around a corner (even without a direct line of sight to the source), whereas',
     options: [
-      'light bends around corners to the same significant extent as sound, so we should also easily "see around corners"',
+      'sound waves do not diffract at all',
       'light, having a much shorter wavelength than sound, diffracts much less around typical everyday obstacles, so it does not bend around corners noticeably, and we generally cannot see around them',
-      'diffraction applies only to light, never to sound',
-      'sound waves do not diffract at all'
+      'light bends around corners to the same significant extent as sound, so we should also easily "see around corners"',
+      'diffraction applies only to light, never to sound'
     ],
     correctIndex: 1,
     explanation: 'Since diffraction effects are more pronounced when wavelength is comparable to the size of obstacles/apertures, and light has a much shorter wavelength than sound (relative to everyday obstacle sizes), light diffracts much less noticeably around everyday corners/obstacles compared to sound.',
@@ -711,11 +711,11 @@ export const WAVE_OPTICS = [
     question: 'The bending of light waves as they pass through the edge of an obstacle, causing some light to appear in the geometrical shadow region, is a direct manifestation of',
     options: [
       'reflection',
-      'diffraction',
       'dispersion',
-      'total internal reflection'
+      'total internal reflection',
+      'diffraction'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'This bending of light into the shadow region at the edges of obstacles is the defining characteristic of diffraction.',
     difficulty: 'easy'
   },
@@ -726,8 +726,8 @@ export const WAVE_OPTICS = [
     options: [
       'brighter than the central maximum',
       'considerably less intense (dimmer) than the central maximum, and their intensity decreases further with increasing order (distance from the centre)',
-      'exactly equal in intensity to the central maximum',
-      'nonexistent; only the central maximum is ever observed'
+      'nonexistent; only the central maximum is ever observed',
+      'exactly equal in intensity to the central maximum'
     ],
     correctIndex: 1,
     explanation: 'In single-slit diffraction, the central maximum is by far the brightest feature, with the secondary maxima on either side being considerably dimmer, and their intensity decreasing progressively for higher-order secondary maxima.',
@@ -738,12 +738,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The angular width of the central maximum in single-slit diffraction is inversely proportional to',
     options: [
-      'the wavelength of light used',
-      'the slit width, meaning a narrower slit gives a wider central maximum and vice versa',
       'the distance from the slit to the screen',
-      'the intensity of the light source'
+      'the wavelength of light used',
+      'the intensity of the light source',
+      'the slit width, meaning a narrower slit gives a wider central maximum and vice versa'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'From the diffraction minimum condition (a sinθ = λ), the angular width of the central maximum is inversely related to the slit width a; narrower slits cause the diffraction pattern to spread out more.',
     difficulty: 'medium'
   },
@@ -752,12 +752,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'For the phenomenon of interference in Young\'s double-slit experiment to be clearly and stably visible, the two slits should ideally be',
     options: [
-      'very far apart from each other, at a macroscopic distance',
-      'very close together (small slit separation), typically of the order of a fraction of a millimetre, compared to typical laboratory-scale screen distances',
+      'made of different materials',
       'of vastly different widths from each other',
-      'made of different materials'
+      'very far apart from each other, at a macroscopic distance',
+      'very close together (small slit separation), typically of the order of a fraction of a millimetre, compared to typical laboratory-scale screen distances'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'For observable fringe spacing (given by β = Dλ/d) at typical laboratory distances, the slit separation d must be very small (typically a fraction of a millimetre), since a very large d would make the fringes too closely spaced to resolve.',
     difficulty: 'medium'
   },
@@ -766,9 +766,9 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The wave theory of light, culminating in Maxwell\'s electromagnetic theory, established that light waves are fundamentally',
     options: [
-      'mechanical waves requiring a material medium like air',
-      'electromagnetic waves, consisting of oscillating electric and magnetic fields, which can propagate through vacuum',
       'sound-like pressure waves',
+      'electromagnetic waves, consisting of oscillating electric and magnetic fields, which can propagate through vacuum',
+      'mechanical waves requiring a material medium like air',
       'waves that require the hypothetical luminiferous ether to exist'
     ],
     correctIndex: 1,
@@ -822,12 +822,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The bending of a wavefront (as derived via Huygens\' construction) when passing from a rarer to a denser medium at an angle results in',
     options: [
+      'the ray reversing its direction entirely',
       'the ray bending away from the normal',
-      'the ray bending toward the normal, consistent with the ray travelling more slowly and the wavefront changing its tilt',
       'no bending of the ray at all',
-      'the ray reversing its direction entirely'
+      'the ray bending toward the normal, consistent with the ray travelling more slowly and the wavefront changing its tilt'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'As derived from Huygens\' construction, entering a denser medium (where speed decreases) causes the wavefront to tilt in a way that corresponds to the ray bending toward the normal, consistent with the empirically known law of refraction.',
     difficulty: 'medium'
   },
@@ -836,12 +836,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The two-source interference pattern (as in Young\'s experiment) and the single-slit diffraction pattern differ in that the interference fringes are generally',
     options: [
-      'of equal intensity/width throughout, in the idealized treatment, while diffraction produces a dominant central maximum with progressively weaker secondary maxima',
       'exactly identical to a single-slit diffraction pattern in every respect',
+      'only observable using sound waves, not light',
       'never observed under any circumstances',
-      'only observable using sound waves, not light'
+      'of equal intensity/width throughout, in the idealized treatment, while diffraction produces a dominant central maximum with progressively weaker secondary maxima'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'In the idealized, simple treatment, Young\'s double-slit interference fringes are roughly of equal width and intensity, while single-slit diffraction shows a markedly more intense and wide central maximum with progressively fainter secondary maxima — a key conceptual distinction between the two phenomena.',
     difficulty: 'medium'
   },
@@ -850,12 +850,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'In practice, the interference pattern observed in Young\'s double-slit experiment is actually modulated (its intensity envelope shaped) by the single-slit diffraction pattern of each individual slit, because',
     options: [
-      'each slit itself has a finite width and thus also produces its own diffraction pattern, which combines with the two-slit interference to shape the overall observed intensity distribution',
       'diffraction and interference never occur together in any real experiment',
+      'each slit itself has a finite width and thus also produces its own diffraction pattern, which combines with the two-slit interference to shape the overall observed intensity distribution',
       'this modulation effect is purely a theoretical curiosity with no practical observation',
       'the slits used are always infinitesimally thin, eliminating any diffraction effect'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Since real slits have finite width, each individually diffracts light, and the overall pattern observed is the two-slit interference pattern modulated (its overall envelope shaped) by the single-slit diffraction pattern from each slit\'s finite width — a more complete and realistic picture than the idealized point-source treatment.',
     difficulty: 'hard'
   },
@@ -865,11 +865,11 @@ export const WAVE_OPTICS = [
     question: 'The concept of coherence length/time in the context of light sources refers to',
     options: [
       'the physical length of the light source itself',
-      'the time (or corresponding path length) over which the phase of a light wave remains predictable/correlated, important for producing observable interference',
       'the speed of light exclusively',
-      'a property unrelated to interference phenomena'
+      'a property unrelated to interference phenomena',
+      'the time (or corresponding path length) over which the phase of a light wave remains predictable/correlated, important for producing observable interference'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Coherence time (and the corresponding coherence length) describes how long (or over what path length) a light wave maintains a predictable phase relationship with itself, a key factor determining whether stable interference can be observed with a given light source.',
     difficulty: 'hard'
   },
@@ -878,9 +878,9 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'A laser is often used in modern interference/diffraction experiments (instead of ordinary light sources) mainly because laser light is',
     options: [
-      'always of lower intensity than ordinary light sources',
-      'highly coherent (with a well-defined, stable phase relationship and narrow range of wavelengths), making it excellent for producing clear, stable interference and diffraction patterns',
       'never monochromatic',
+      'highly coherent (with a well-defined, stable phase relationship and narrow range of wavelengths), making it excellent for producing clear, stable interference and diffraction patterns',
+      'always of lower intensity than ordinary light sources',
       'incapable of undergoing interference or diffraction at all'
     ],
     correctIndex: 1,
@@ -892,12 +892,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The observation that a very narrow single slit produces a WIDER diffraction pattern (more spreading) than a wider slit is sometimes counterintuitive because',
     options: [
-      'one might naively expect a narrower opening to produce a narrower, more focused beam, similar to simple ray-optics intuition, but wave diffraction effects actually cause more spreading through narrower openings',
       'this observation is actually false; narrower slits always produce narrower patterns, with no exceptions',
       'diffraction effects are completely independent of slit width in all cases',
-      'wider slits always produce more diffraction spreading than narrower ones'
+      'wider slits always produce more diffraction spreading than narrower ones',
+      'one might naively expect a narrower opening to produce a narrower, more focused beam, similar to simple ray-optics intuition, but wave diffraction effects actually cause more spreading through narrower openings'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'This is indeed a classic counter-intuitive aspect of wave optics: unlike simple ray-optics intuition (where a narrower aperture might be expected to create a sharper, more confined beam), diffraction actually causes MORE spreading through narrower apertures, a direct consequence of the wave nature of light.',
     difficulty: 'hard'
   },
@@ -906,9 +906,9 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The bending of light waves around the edge of an opaque obstacle, allowing a faint illumination to appear at the centre of the geometrical shadow of a small circular disc under specific conditions, is known as the',
     options: [
-      'Doppler effect',
-      'Poisson\'s spot (or Arago spot), a striking confirmation of the wave theory of light via diffraction',
       'Brewster effect',
+      'Poisson\'s spot (or Arago spot), a striking confirmation of the wave theory of light via diffraction',
+      'Doppler effect',
       'Compton effect'
     ],
     correctIndex: 1,
@@ -920,9 +920,9 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The wave theory of light developed by Huygens and later refined mathematically (by Fresnel and others) initially faced resistance partly because',
     options: [
-      'it had no mathematical basis at all',
-      'the prevailing scientific opinion at the time (strongly influenced by Newton\'s corpuscular theory) favoured a particle-based model of light, and certain wave predictions (like the Poisson spot) initially seemed counter-intuitive',
       'wave theory had already been universally accepted with no historical controversy',
+      'the prevailing scientific opinion at the time (strongly influenced by Newton\'s corpuscular theory) favoured a particle-based model of light, and certain wave predictions (like the Poisson spot) initially seemed counter-intuitive',
+      'it had no mathematical basis at all',
       'light had not yet been observed to exhibit any wave-like behaviour whatsoever'
     ],
     correctIndex: 1,
@@ -934,12 +934,12 @@ export const WAVE_OPTICS = [
     type: 'mcq',
     question: 'The study of wave optics (interference, diffraction, polarization) collectively demonstrates that light exhibits',
     options: [
-      'purely particle-like behaviour with no wave characteristics whatsoever',
-      'wave-like behaviour, complementing the ray (geometric) optics description that is valid in the limit where wave effects like diffraction are negligible',
       'behaviour completely unrelated to any wave phenomena studied in other branches of physics',
-      'no measurable physical effects at all'
+      'no measurable physical effects at all',
+      'purely particle-like behaviour with no wave characteristics whatsoever',
+      'wave-like behaviour, complementing the ray (geometric) optics description that is valid in the limit where wave effects like diffraction are negligible'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Wave optics phenomena (interference, diffraction, polarization) demonstrate that light fundamentally behaves as a wave, with ray (geometric) optics being a useful approximation valid when the wavelength is much smaller than the relevant obstacles/apertures, so diffraction effects are negligible.',
     difficulty: 'medium'
   },
@@ -1984,4 +1984,3 @@ export const WAVE_OPTICS = [
     difficulty: 'medium'
   }
 ];
-

@@ -1,4 +1,3 @@
-
 export const D_F_BLOCK_ELEMENTS = [
   // ==================== MCQ (70) ====================
   {
@@ -6,12 +5,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'According to the IUPAC definition, a transition element is one whose atom, in the ground state or in any of its commonly occurring oxidation states, has',
     options: [
+      'a completely filled f subshell',
       'a completely filled d subshell',
-      'an incompletely filled d subshell',
       'no d electrons at all',
-      'a completely filled f subshell'
+      'an incompletely filled d subshell'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The IUPAC definition specifies a transition element as one with a partially (incompletely) filled d subshell, either in the ground state atom or in one of its commonly encountered oxidation states.',
     difficulty: 'easy'
   },
@@ -19,8 +18,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-2',
     type: 'mcq',
     question: 'The general electronic configuration of d-block elements is best represented as',
-    options: ['ns2 np1-6', '(n-1)d1-10 ns0-2', '(n-2)f1-14 (n-1)d0-1 ns2', 'ns1-2'],
-    correctIndex: 1,
+    options: ['ns2 np1-6', 'ns1-2', '(n-2)f1-14 (n-1)d0-1 ns2', '(n-1)d1-10 ns0-2'],
+    correctIndex: 3,
     explanation: 'd-block elements have the general electronic configuration (n-1)d1-10 ns0-2, reflecting the filling of the penultimate d subshell.',
     difficulty: 'easy'
   },
@@ -42,8 +41,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-4',
     type: 'mcq',
     question: 'The d-block of the periodic table consists of how many complete transition series arranged across periods 4, 5, and 6?',
-    options: ['One', 'Two', 'Three', 'Four'],
-    correctIndex: 2,
+    options: ['One', 'Two', 'Four', 'Three'],
+    correctIndex: 3,
     explanation: 'The d-block contains three complete transition series: the 3d series (Sc to Zn), the 4d series (Y to Cd), and the 5d series (La/Hf to Hg), with a partial fourth (6d) series also recognised.',
     difficulty: 'medium'
   },
@@ -52,10 +51,10 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'All transition elements are',
     options: [
-      'non-metals',
+      'gases at room temperature',
       'metals, generally characterised by hardness, high melting and boiling points, and good electrical and thermal conductivity',
       'metalloids',
-      'gases at room temperature'
+      'non-metals'
     ],
     correctIndex: 1,
     explanation: 'Transition elements are all metals, typically hard with high melting and boiling points, and are good conductors of heat and electricity.',
@@ -66,12 +65,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Transition metals generally have high melting and boiling points primarily because of',
     options: [
-      'the involvement of both ns and (n-1)d electrons in strong metallic bonding',
-      'their large atomic size',
       'their low nuclear charge',
-      'their complete absence of unpaired electrons'
+      'the involvement of both ns and (n-1)d electrons in strong metallic bonding',
+      'their complete absence of unpaired electrons',
+      'their large atomic size'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Since both the ns and (n-1)d electrons contribute to interatomic metallic bonding in transition metals, this results in stronger metallic bonds and correspondingly high melting and boiling points.',
     difficulty: 'medium'
   },
@@ -80,12 +79,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Across the 3d transition series, melting points generally rise to a maximum somewhere in the middle of the series (around group 6) and then decrease towards the end, mainly because',
     options: [
-      'the number of unpaired d electrons available for metallic bonding decreases as pairing of electrons increases towards the end of the series',
+      'melting point is completely unrelated to the number of unpaired electrons',
       'atomic size increases sharply towards the end of the series',
       'nuclear charge decreases towards the end of the series',
-      'melting point is completely unrelated to the number of unpaired electrons'
+      'the number of unpaired d electrons available for metallic bonding decreases as pairing of electrons increases towards the end of the series'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'As the d subshell fills, increasing electron pairing reduces the number of unpaired electrons available for strong metallic bonding, causing melting points to decrease again after reaching a maximum around the middle of the series.',
     difficulty: 'hard'
   },
@@ -94,10 +93,10 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Transition metals generally exhibit high enthalpies of atomisation, which is best explained by',
     options: [
-      'the weak interatomic bonding resulting from a large atomic size',
+      'their low densities',
       'strong interatomic metallic bonding arising from the involvement of a large number of unpaired d electrons',
-      'the complete absence of d electrons',
-      'their low densities'
+      'the weak interatomic bonding resulting from a large atomic size',
+      'the complete absence of d electrons'
     ],
     correctIndex: 1,
     explanation: 'The greater number of unpaired electrons in many transition metals allows for stronger metallic bonding, which requires a correspondingly higher enthalpy to vaporise/atomise the metal.',
@@ -108,12 +107,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'The atomic and ionic radii of transition elements generally decrease across a period, but this decrease',
     options: [
-      'is much steeper than the decrease observed across a typical p-block period',
-      'levels off (becomes much smaller) towards the end of the series, due to a balance between increasing nuclear charge and increasing electron-electron repulsion/shielding from d electrons',
       'does not occur at all; radii remain exactly constant throughout',
-      'increases continuously and steadily across the entire series'
+      'increases continuously and steadily across the entire series',
+      'is much steeper than the decrease observed across a typical p-block period',
+      'levels off (becomes much smaller) towards the end of the series, due to a balance between increasing nuclear charge and increasing electron-electron repulsion/shielding from d electrons'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Although atomic radii generally decrease across a transition series due to increasing nuclear charge, this decrease becomes much less pronounced (levels off) towards the end, as increased shielding by d electrons offsets the growing nuclear charge.',
     difficulty: 'medium'
   },
@@ -121,7 +120,7 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-10',
     type: 'mcq',
     question: 'The phenomenon in which there is a steady decrease in the atomic and ionic radii of lanthanide elements with increasing atomic number is called',
-    options: ['actinide contraction', 'lanthanide contraction', 'periodic contraction', 'nuclear contraction'],
+    options: ['actinide contraction', 'lanthanide contraction', 'nuclear contraction', 'periodic contraction'],
     correctIndex: 1,
     explanation: 'The lanthanide contraction refers to the steady decrease in atomic and ionic radii observed across the lanthanide series as atomic number increases.',
     difficulty: 'easy'
@@ -131,12 +130,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'The lanthanide contraction is primarily caused by the',
     options: [
-      'complete absence of shielding effect from any electrons in the lanthanide atoms',
-      'poor shielding effect of the 4f electrons, which allows the effective nuclear charge felt by outer electrons to increase steadily',
       'increasing atomic mass across the series',
-      'high electronegativity of the lanthanide elements'
+      'complete absence of shielding effect from any electrons in the lanthanide atoms',
+      'high electronegativity of the lanthanide elements',
+      'poor shielding effect of the 4f electrons, which allows the effective nuclear charge felt by outer electrons to increase steadily'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The diffuse shape of 4f orbitals provides poor shielding of the nuclear charge, so as electrons are added to the 4f subshell and protons to the nucleus, the effective nuclear charge experienced by outer electrons increases steadily, contracting the atomic/ionic radii.',
     difficulty: 'medium'
   },
@@ -145,10 +144,10 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'A major consequence of the lanthanide contraction is that',
     options: [
-      'lanthanides become larger than actinides',
+      'lanthanides become non-metallic',
       'the atomic and ionic radii of the 4d and 5d transition series elements in the same group become remarkably similar, making their chemical separation difficult',
       'transition elements lose all their d electrons',
-      'lanthanides become non-metallic'
+      'lanthanides become larger than actinides'
     ],
     correctIndex: 1,
     explanation: 'Because the lanthanide contraction compensates for the expected size increase on descending from the 4d to the 5d series, elements of the same group in these two series (e.g., Zr and Hf, Nb and Ta) have very similar radii and, consequently, very similar chemical properties, making them difficult to separate.',
@@ -174,11 +173,11 @@ export const D_F_BLOCK_ELEMENTS = [
     question: 'Across the first (3d) transition series, the general trend in first ionisation enthalpy is',
     options: [
       'a steep, uninterrupted decrease from Sc to Zn',
-      'a general increase from Sc to Zn, though with certain irregularities',
       'no change at all across the series',
-      'a steep, uninterrupted increase identical in magnitude to that seen across a p-block period'
+      'a steep, uninterrupted increase identical in magnitude to that seen across a p-block period',
+      'a general increase from Sc to Zn, though with certain irregularities'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'First ionisation enthalpy generally increases across the 3d transition series due to increasing nuclear charge, although the increase is less steep than across a p-block period and shows certain irregularities.',
     difficulty: 'medium'
   },
@@ -187,12 +186,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Chromium has the electronic configuration [Ar]3d5 4s1 rather than the expected [Ar]3d4 4s2, mainly due to',
     options: [
-      'the extra stability associated with a half-filled d subshell',
-      'the extra stability associated with a fully-filled d subshell',
       'a random anomaly with no theoretical basis',
-      'the low nuclear charge of chromium'
+      'the low nuclear charge of chromium',
+      'the extra stability associated with a fully-filled d subshell',
+      'the extra stability associated with a half-filled d subshell'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'A half-filled d subshell (d5) has extra stability due to symmetric distribution and exchange energy, so chromium adopts the [Ar]3d5 4s1 configuration rather than [Ar]3d4 4s2.',
     difficulty: 'medium'
   },
@@ -201,12 +200,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Copper has the electronic configuration [Ar]3d10 4s1 rather than the expected [Ar]3d9 4s2, mainly due to',
     options: [
-      'the extra stability associated with a fully-filled d subshell',
       'the extra stability associated with a half-filled d subshell',
-      'copper having no d electrons at all',
-      'copper being a non-metal'
+      'the extra stability associated with a fully-filled d subshell',
+      'copper being a non-metal',
+      'copper having no d electrons at all'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'A fully-filled d subshell (d10) is exceptionally stable, so copper adopts the configuration [Ar]3d10 4s1 instead of the otherwise expected [Ar]3d9 4s2.',
     difficulty: 'medium'
   },
@@ -237,8 +236,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-19',
     type: 'mcq',
     question: 'The highest oxidation state shown by manganese, +7, is exhibited in the compound',
-    options: ['MnO2', 'MnSO4', 'KMnO4', 'MnCl2'],
-    correctIndex: 2,
+    options: ['MnO2', 'MnSO4', 'MnCl2', 'KMnO4'],
+    correctIndex: 3,
     explanation: 'In potassium permanganate (KMnO4), manganese is in its highest common oxidation state of +7.',
     difficulty: 'easy'
   },
@@ -246,8 +245,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-20',
     type: 'mcq',
     question: 'The most stable and characteristic oxidation state of scandium in its compounds is',
-    options: ['+1', '+2', '+3', '+4'],
-    correctIndex: 2,
+    options: ['+1', '+4', '+2', '+3'],
+    correctIndex: 3,
     explanation: 'Scandium almost exclusively shows the +3 oxidation state in its compounds, corresponding to loss of its two 4s and one 3d electron.',
     difficulty: 'easy'
   },
@@ -256,10 +255,10 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Among the common oxidation states of iron, the +3 state (ferric) is often more stable than the +2 state (ferrous) in many circumstances, partly because Fe3+ has the electronic configuration',
     options: [
-      '3d4, an unstable configuration',
+      '3d0, a fully empty configuration',
       '3d5, a half-filled and therefore relatively stable configuration',
-      '3d6, a randomly stable configuration',
-      '3d0, a fully empty configuration'
+      '3d4, an unstable configuration',
+      '3d6, a randomly stable configuration'
     ],
     correctIndex: 1,
     explanation: 'Fe3+ has a 3d5 configuration, which benefits from the extra stability associated with a half-filled d subshell, contributing to the relative stability of the +3 oxidation state of iron.',
@@ -279,12 +278,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Transition metals in their highest oxidation states are most commonly and stably found combined with',
     options: [
-      'hydrogen and sulphur',
-      'oxygen and fluorine, due to their high electronegativity and small size',
       'carbon and nitrogen only',
-      'noble gases'
+      'hydrogen and sulphur',
+      'noble gases',
+      'oxygen and fluorine, due to their high electronegativity and small size'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Because oxygen and fluorine are highly electronegative and small in size, they are particularly effective at stabilising transition metals in their highest oxidation states, as seen in compounds like MnO4- and OsO4.',
     difficulty: 'medium'
   },
@@ -292,8 +291,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-24',
     type: 'mcq',
     question: 'Among the following, which transition metal ion has an unusually positive standard reduction potential (E°, M2+/M), making the metal resistant to oxidation by dilute non-oxidising acids?',
-    options: ['Zn2+/Zn', 'Fe2+/Fe', 'Cu2+/Cu', 'Mn2+/Mn'],
-    correctIndex: 2,
+    options: ['Fe2+/Fe', 'Zn2+/Zn', 'Mn2+/Mn', 'Cu2+/Cu'],
+    correctIndex: 3,
     explanation: 'Copper has an unusually positive E°(Cu2+/Cu) value, which explains why copper does not liberate hydrogen gas from dilute non-oxidising acids like HCl, unlike most other 3d transition metals.',
     difficulty: 'medium'
   },
@@ -302,10 +301,10 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'The unusually positive standard reduction potential of copper (Cu2+/Cu) compared to other 3d transition metals is largely attributed to',
     options: [
-      'its exceptionally high hydration enthalpy compared to its ionisation enthalpy',
-      'the high total (sublimation + ionisation) energy required to convert Cu(s) into Cu2+(aq), which is not fully compensated by its relatively lower hydration enthalpy',
       'copper having zero d electrons',
-      'copper being a non-metal'
+      'the high total (sublimation + ionisation) energy required to convert Cu(s) into Cu2+(aq), which is not fully compensated by its relatively lower hydration enthalpy',
+      'copper being a non-metal',
+      'its exceptionally high hydration enthalpy compared to its ionisation enthalpy'
     ],
     correctIndex: 1,
     explanation: 'For copper, the combined enthalpy of sublimation and ionisation is high, and this is not adequately offset by its hydration enthalpy, resulting in a positive (unfavourable for oxidation) standard reduction potential.',
@@ -316,12 +315,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Most transition metal ions are coloured in aqueous solution primarily because of',
     options: [
-      'the presence of an incompletely filled d subshell, allowing d-d electronic transitions upon absorption of visible light',
-      'the presence of a fully filled d subshell only',
       'the absence of any electrons at all',
-      'their large ionic radii'
+      'the presence of a fully filled d subshell only',
+      'their large ionic radii',
+      'the presence of an incompletely filled d subshell, allowing d-d electronic transitions upon absorption of visible light'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Colour in transition metal ions typically arises from d-d transitions, in which an electron is promoted from a lower-energy d orbital to a higher-energy d orbital by absorbing a specific wavelength of visible light; this requires an incompletely filled d subshell.',
     difficulty: 'easy'
   },
@@ -329,7 +328,7 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-27',
     type: 'mcq',
     question: 'Which of the following ions is expected to be colourless, since it has either a d0 or d10 configuration?',
-    options: ['Ti3+ (d1)', 'Sc3+ (d0)', 'V3+ (d2)', 'Cr3+ (d3)'],
+    options: ['Ti3+ (d1)', 'Sc3+ (d0)', 'Cr3+ (d3)', 'V3+ (d2)'],
     correctIndex: 1,
     explanation: 'Sc3+ has a d0 configuration, meaning there are no d electrons available to undergo a d-d transition, so it is colourless, unlike ions with partially filled d subshells.',
     difficulty: 'medium'
@@ -338,8 +337,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-28',
     type: 'mcq',
     question: 'Zn2+ and Cu+ ions are typically colourless in solution because they both have',
-    options: ['a d1 configuration', 'a d5 configuration', 'a completely filled d10 configuration, so no d-d transition is possible', 'no electrons in the d subshell at all'],
-    correctIndex: 2,
+    options: ['no electrons in the d subshell at all', 'a completely filled d10 configuration, so no d-d transition is possible', 'a d5 configuration', 'a d1 configuration'],
+    correctIndex: 1,
     explanation: 'Both Zn2+ and Cu+ have a fully filled d10 configuration, which means there is no vacant d orbital for an electron to transition into, so these ions are colourless.',
     difficulty: 'medium'
   },
@@ -348,12 +347,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'The paramagnetic behaviour of many transition metal ions is caused by the presence of',
     options: [
-      'unpaired electrons in the d orbitals',
       'fully paired electrons in the d orbitals',
       'no electrons at all in the outer shell',
-      'a fully filled s orbital only'
+      'a fully filled s orbital only',
+      'unpaired electrons in the d orbitals'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Paramagnetism arises from the presence of unpaired electrons, and many transition metal ions have unpaired d electrons, making them paramagnetic.',
     difficulty: 'easy'
   },
@@ -377,11 +376,11 @@ export const D_F_BLOCK_ELEMENTS = [
     question: 'According to the spin-only formula, an ion with a greater number of unpaired electrons will generally have a',
     options: [
       'smaller magnetic moment',
-      'larger magnetic moment',
       'magnetic moment of exactly zero',
-      'magnetic moment unrelated to the number of unpaired electrons'
+      'magnetic moment unrelated to the number of unpaired electrons',
+      'larger magnetic moment'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since the spin-only magnetic moment formula, μ = √(n(n+2)), increases with n, a greater number of unpaired electrons corresponds to a larger calculated magnetic moment.',
     difficulty: 'medium'
   },
@@ -391,11 +390,11 @@ export const D_F_BLOCK_ELEMENTS = [
     question: 'Transition metals and their compounds are widely used as catalysts mainly because of their',
     options: [
       'inability to form intermediate compounds',
-      'variable oxidation states, which allow them to form intermediate species and provide alternative reaction pathways with lower activation energy',
       'complete absence of d orbitals',
-      'very low melting points'
+      'very low melting points',
+      'variable oxidation states, which allow them to form intermediate species and provide alternative reaction pathways with lower activation energy'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The ability of transition metals to adopt multiple oxidation states allows them to form unstable intermediates during a reaction, providing an alternative pathway of lower activation energy, which is central to their catalytic activity.',
     difficulty: 'medium'
   },
@@ -421,8 +420,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-35',
     type: 'mcq',
     question: 'Nickel is commonly used as a catalyst in the industrial process of',
-    options: ['manufacture of sulphuric acid', 'hydrogenation of vegetable oils', 'decomposition of potassium chlorate', 'manufacture of nitric acid'],
-    correctIndex: 1,
+    options: ['manufacture of sulphuric acid', 'decomposition of potassium chlorate', 'manufacture of nitric acid', 'hydrogenation of vegetable oils'],
+    correctIndex: 3,
     explanation: 'Nickel is widely used as a catalyst for the hydrogenation of unsaturated vegetable oils, converting them into saturated fats.',
     difficulty: 'medium'
   },
@@ -444,8 +443,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-37',
     type: 'mcq',
     question: 'Manganese dioxide (MnO2) is commonly used as a catalyst in the laboratory decomposition of',
-    options: ['sodium chloride', 'potassium chlorate (KClO3), to liberate oxygen gas', 'water into hydrogen and oxygen', 'sulphuric acid'],
-    correctIndex: 1,
+    options: ['sulphuric acid', 'water into hydrogen and oxygen', 'sodium chloride', 'potassium chlorate (KClO3), to liberate oxygen gas'],
+    correctIndex: 3,
     explanation: 'MnO2 acts as a catalyst in the thermal decomposition of potassium chlorate, speeding up the release of oxygen gas.',
     difficulty: 'medium'
   },
@@ -454,10 +453,10 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Transition metals readily form alloys with one another mainly because',
     options: [
-      'they have very different atomic sizes, preventing substitution in the crystal lattice',
-      'they have similar atomic sizes, allowing one metal atom to readily substitute for another in the crystal lattice',
       'they never form solid solutions',
-      'they are all radioactive'
+      'they have similar atomic sizes, allowing one metal atom to readily substitute for another in the crystal lattice',
+      'they are all radioactive',
+      'they have very different atomic sizes, preventing substitution in the crystal lattice'
     ],
     correctIndex: 1,
     explanation: 'Because transition metals generally have comparable atomic radii, atoms of one transition metal can readily substitute for those of another in a metallic crystal lattice, favouring the formation of alloys.',
@@ -468,12 +467,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Interstitial compounds formed by transition metals with small atoms such as hydrogen, carbon, or nitrogen are typically characterised by',
     options: [
-      'lower melting points and reduced hardness compared to the pure metal',
-      'increased hardness, higher melting points than the pure metal, and retention of metallic electrical conductivity',
       'complete loss of metallic character',
-      'no change in any physical property compared to the pure metal'
+      'lower melting points and reduced hardness compared to the pure metal',
+      'no change in any physical property compared to the pure metal',
+      'increased hardness, higher melting points than the pure metal, and retention of metallic electrical conductivity'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Interstitial compounds, where small atoms occupy the empty spaces (interstitial sites) in a metal lattice, are typically harder and have higher melting points than the pure metal, while still retaining metallic conductivity.',
     difficulty: 'medium'
   },
@@ -482,12 +481,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Interstitial compounds formed by transition metals are generally',
     options: [
-      'stoichiometric compounds with fixed, definite composition',
-      'non-stoichiometric, without a strict fixed ratio of constituent atoms',
       'always ionic compounds',
-      'always gases at room temperature'
+      'stoichiometric compounds with fixed, definite composition',
+      'always gases at room temperature',
+      'non-stoichiometric, without a strict fixed ratio of constituent atoms'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Interstitial compounds are typically non-stoichiometric, meaning the ratio of the small atoms to metal atoms is not fixed and can vary within a range.',
     difficulty: 'medium'
   },
@@ -510,10 +509,10 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Potassium permanganate (KMnO4) is industrially prepared by fusion of manganese dioxide with potassium hydroxide and an oxidising agent to first give',
     options: [
-      'potassium chromate (K2CrO4)',
+      'manganese sulphate (MnSO4)',
       'potassium manganate (K2MnO4), a green compound',
-      'potassium dichromate (K2Cr2O7)',
-      'manganese sulphate (MnSO4)'
+      'potassium chromate (K2CrO4)',
+      'potassium dichromate (K2Cr2O7)'
     ],
     correctIndex: 1,
     explanation: 'MnO2 is fused with KOH in the presence of an oxidant (such as air or KNO3) to give green potassium manganate (K2MnO4), which is then converted to purple potassium permanganate.',
@@ -525,11 +524,11 @@ export const D_F_BLOCK_ELEMENTS = [
     question: 'The green potassium manganate (K2MnO4) formed during the preparation of KMnO4 is converted to permanganate (MnO4-) by',
     options: [
       'reduction with hydrogen gas',
-      'disproportionation in neutral or acidic medium, or by electrolytic oxidation',
       'simple heating in an inert atmosphere',
-      'reaction with sodium chloride'
+      'reaction with sodium chloride',
+      'disproportionation in neutral or acidic medium, or by electrolytic oxidation'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Green manganate (MnO4^2-) disproportionates in neutral or acidic medium to give purple permanganate (MnO4-) and MnO2, or can alternatively be oxidised electrolytically to permanganate.',
     difficulty: 'hard'
   },
@@ -537,7 +536,7 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-44',
     type: 'mcq',
     question: 'Potassium dichromate (K2Cr2O7) is manufactured starting from which naturally occurring ore?',
-    options: ['pyrolusite (MnO2)', 'chromite ore (FeCr2O4)', 'bauxite (Al2O3.xH2O)', 'haematite (Fe2O3)'],
+    options: ['bauxite (Al2O3.xH2O)', 'chromite ore (FeCr2O4)', 'haematite (Fe2O3)', 'pyrolusite (MnO2)'],
     correctIndex: 1,
     explanation: 'K2Cr2O7 is industrially prepared starting from chromite ore (FeCr2O4), which is fused with sodium/potassium carbonate in the presence of air.',
     difficulty: 'medium'
@@ -561,12 +560,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'The structure of the dichromate ion, Cr2O7^2-, consists of',
     options: [
-      'two isolated, unconnected CrO4 tetrahedra',
-      'two CrO4 tetrahedra sharing one corner (oxygen atom), forming a Cr-O-Cr bridge',
       'a single octahedral CrO6 unit',
-      'two CrO4 tetrahedra sharing an edge'
+      'two isolated, unconnected CrO4 tetrahedra',
+      'two CrO4 tetrahedra sharing an edge',
+      'two CrO4 tetrahedra sharing one corner (oxygen atom), forming a Cr-O-Cr bridge'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The dichromate ion is composed of two tetrahedral CrO4 units linked together by sharing one oxygen atom at a corner, forming a Cr-O-Cr bridging linkage.',
     difficulty: 'medium'
   },
@@ -575,12 +574,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Both potassium permanganate and potassium dichromate are widely used in analytical and preparative chemistry primarily as',
     options: [
+      'inert diluents',
       'reducing agents',
-      'strong oxidising agents',
       'chelating ligands',
-      'inert diluents'
+      'strong oxidising agents'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Both KMnO4 and K2Cr2O7 are well known and extensively used as strong oxidising agents in a variety of chemical reactions and titrations.',
     difficulty: 'easy'
   },
@@ -588,8 +587,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-48',
     type: 'mcq',
     question: 'The lanthanide series consists of elements with atomic numbers ranging approximately from',
-    options: ['21 to 30', '39 to 48', '58 to 71 (cerium to lutetium)', '90 to 103'],
-    correctIndex: 2,
+    options: ['39 to 48', '58 to 71 (cerium to lutetium)', '90 to 103', '21 to 30'],
+    correctIndex: 1,
     explanation: 'The lanthanide series comprises the 14 elements from cerium (atomic number 58) to lutetium (atomic number 71), corresponding to the filling of the 4f subshell.',
     difficulty: 'medium'
   },
@@ -598,12 +597,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'The general electronic configuration of lanthanide elements is best represented as',
     options: [
+      '[Ar] 3d1-10 4s2',
       '[Xe] 4f1-14 5d0-1 6s2',
       '[Rn] 5f1-14 6d0-2 7s2',
-      '[Ar] 3d1-10 4s2',
       '[Kr] 4d1-10 5s2'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Lanthanides have the general electronic configuration [Xe] 4f1-14 5d0-1 6s2, reflecting the progressive filling of the 4f subshell.',
     difficulty: 'medium'
   },
@@ -611,8 +610,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-50',
     type: 'mcq',
     question: 'The most common and characteristic oxidation state shown by nearly all lanthanide elements in their compounds is',
-    options: ['+1', '+2', '+3', '+4'],
-    correctIndex: 2,
+    options: ['+2', '+1', '+4', '+3'],
+    correctIndex: 3,
     explanation: 'The +3 oxidation state is by far the most common and stable oxidation state exhibited by lanthanide elements in their compounds.',
     difficulty: 'easy'
   },
@@ -635,12 +634,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Europium (Eu), among the lanthanides, is notable for showing a +2 oxidation state, in which it acts predominantly as',
     options: [
-      'an oxidising agent, since Eu2+ is highly stable',
-      'a reducing agent, since Eu2+ is relatively unstable and readily gets oxidised back to the more common Eu3+ state',
+      'an acid catalyst',
       'a completely inert species',
-      'an acid catalyst'
+      'an oxidising agent, since Eu2+ is highly stable',
+      'a reducing agent, since Eu2+ is relatively unstable and readily gets oxidised back to the more common Eu3+ state'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since Eu2+ is less stable than the common Eu3+ state, it readily loses an electron to revert to Eu3+, acting as a reducing agent.',
     difficulty: 'medium'
   },
@@ -648,8 +647,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-53',
     type: 'mcq',
     question: 'The actinide series consists of elements with atomic numbers ranging approximately from',
-    options: ['58 to 71', '90 to 103 (thorium to lawrencium)', '21 to 30', '39 to 48'],
-    correctIndex: 1,
+    options: ['58 to 71', '39 to 48', '21 to 30', '90 to 103 (thorium to lawrencium)'],
+    correctIndex: 3,
     explanation: 'The actinide series comprises the 14 elements from thorium (atomic number 90) to lawrencium (atomic number 103), corresponding to the filling of the 5f subshell.',
     difficulty: 'medium'
   },
@@ -672,12 +671,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Compared to lanthanides, actinides show',
     options: [
-      'a much narrower and more restricted range of oxidation states',
-      'a greater range of oxidation states, since the 5f, 6d, and 7s orbitals in actinides have relatively close (comparable) energies',
       'no variable oxidation states at all',
-      'exclusively negative oxidation states'
+      'exclusively negative oxidation states',
+      'a much narrower and more restricted range of oxidation states',
+      'a greater range of oxidation states, since the 5f, 6d, and 7s orbitals in actinides have relatively close (comparable) energies'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Because the 5f, 6d, and 7s orbitals in actinides are closer in energy than the corresponding orbitals in lanthanides, actinides display a wider range of oxidation states than lanthanides.',
     difficulty: 'medium'
   },
@@ -686,9 +685,9 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'All actinide elements share the common feature of being',
     options: [
-      'completely non-reactive and chemically inert',
-      'radioactive',
       'gases at room temperature',
+      'radioactive',
+      'completely non-reactive and chemically inert',
       'exclusively found in the +2 oxidation state'
     ],
     correctIndex: 1,
@@ -699,8 +698,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-57',
     type: 'mcq',
     question: 'Uranium, a well-studied actinide, commonly exhibits oxidation states ranging up to',
-    options: ['+3 only', '+4 only', '+6, as seen in the uranyl ion (UO2^2+)', '+2 only'],
-    correctIndex: 2,
+    options: ['+4 only', '+6, as seen in the uranyl ion (UO2^2+)', '+3 only', '+2 only'],
+    correctIndex: 1,
     explanation: 'Uranium is known to exhibit a range of oxidation states from +3 to +6, with the +6 state being particularly common and stable, as seen in the uranyl ion UO2^2+.',
     difficulty: 'medium'
   },
@@ -709,12 +708,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Actinides show a greater tendency than lanthanides to form complex compounds, largely because',
     options: [
-      '5f orbitals in actinides are less effectively shielded and can participate more readily in bonding, compared to the 4f orbitals of lanthanides',
       'actinides have no d electrons at all',
+      'actinides are always found as free elements in nature',
       'lanthanides have larger ionic radii than actinides',
-      'actinides are always found as free elements in nature'
+      '5f orbitals in actinides are less effectively shielded and can participate more readily in bonding, compared to the 4f orbitals of lanthanides'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Since the 5f orbitals of actinides are less well shielded from the nucleus than the 4f orbitals of lanthanides, they can participate more effectively in covalent bonding, contributing to a stronger tendency for actinides to form complexes.',
     difficulty: 'hard'
   },
@@ -722,8 +721,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-59',
     type: 'mcq',
     question: 'Similar to the lanthanide contraction, actinide elements also show a steady decrease in ionic radii across the series, known as the',
-    options: ['periodic contraction', 'actinide contraction', 'nuclear contraction', 'ionic expansion'],
-    correctIndex: 1,
+    options: ['ionic expansion', 'periodic contraction', 'nuclear contraction', 'actinide contraction'],
+    correctIndex: 3,
     explanation: 'Actinides exhibit an analogous phenomenon called actinide contraction, involving a steady decrease in atomic/ionic radii across the series, similar in origin to lanthanide contraction but arising from poor shielding by 5f electrons.',
     difficulty: 'medium'
   },
@@ -731,8 +730,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-60',
     type: 'mcq',
     question: 'Brass, a widely used alloy, is composed primarily of',
-    options: ['copper and tin', 'copper and zinc', 'iron and chromium', 'iron and nickel'],
-    correctIndex: 1,
+    options: ['copper and tin', 'iron and chromium', 'copper and zinc', 'iron and nickel'],
+    correctIndex: 2,
     explanation: 'Brass is an alloy composed primarily of copper and zinc, widely used for its favourable mechanical and corrosion-resistant properties.',
     difficulty: 'easy'
   },
@@ -740,7 +739,7 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-61',
     type: 'mcq',
     question: 'Bronze, another well-known alloy, is composed primarily of',
-    options: ['copper and zinc', 'copper and tin', 'iron and carbon', 'nickel and cadmium'],
+    options: ['nickel and cadmium', 'copper and tin', 'iron and carbon', 'copper and zinc'],
     correctIndex: 1,
     explanation: 'Bronze is an alloy composed primarily of copper and tin, historically significant and still used for its strength and corrosion resistance.',
     difficulty: 'easy'
@@ -749,7 +748,7 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-62',
     type: 'mcq',
     question: 'Stainless steel, an important alloy of iron, gains its corrosion resistance mainly from the addition of',
-    options: ['carbon and sulphur', 'chromium (and often nickel)', 'zinc and tin', 'lead and mercury'],
+    options: ['lead and mercury', 'chromium (and often nickel)', 'carbon and sulphur', 'zinc and tin'],
     correctIndex: 1,
     explanation: 'Stainless steel derives its corrosion resistance primarily from the addition of chromium (often along with nickel), which forms a passive protective oxide layer on the surface.',
     difficulty: 'medium'
@@ -759,12 +758,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Density of transition elements generally increases across a given transition series (with some irregularities) mainly because',
     options: [
-      'atomic mass increases while atomic volume decreases (or remains fairly constant) across the series',
+      'nuclear charge decreases across the series',
       'atomic mass decreases sharply across the series',
-      'transition metals become gases towards the end of the series',
-      'nuclear charge decreases across the series'
+      'atomic mass increases while atomic volume decreases (or remains fairly constant) across the series',
+      'transition metals become gases towards the end of the series'
     ],
-    correctIndex: 0,
+    correctIndex: 2,
     explanation: 'As atomic mass increases across a transition series while atomic volume decreases or stays relatively steady, the overall density (mass/volume) generally increases across the series.',
     difficulty: 'medium'
   },
@@ -773,12 +772,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'The 5d series transition metals generally have much higher densities than their 3d counterparts in the same group, largely because',
     options: [
+      'density has no relationship to atomic mass or volume',
       '5d elements have significantly smaller atomic mass than 3d elements',
-      'due to lanthanide contraction, 5d elements have atomic sizes similar to 4d elements but substantially greater atomic mass, resulting in higher density',
       '5d elements are non-metals',
-      'density has no relationship to atomic mass or volume'
+      'due to lanthanide contraction, 5d elements have atomic sizes similar to 4d elements but substantially greater atomic mass, resulting in higher density'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Because lanthanide contraction keeps the atomic radii of 5d elements comparable to those of 4d elements despite their much greater atomic mass, 5d transition metals (like osmium and iridium) exhibit exceptionally high densities.',
     difficulty: 'hard'
   },
@@ -787,12 +786,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Among all naturally occurring elements, osmium and iridium (both 5d transition metals) are notable for having',
     options: [
-      'the lowest known densities',
-      'among the highest known densities',
       'no measurable density at all',
-      'exclusively negative oxidation states'
+      'the lowest known densities',
+      'exclusively negative oxidation states',
+      'among the highest known densities'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Osmium and iridium, both 5d transition metals, are known to have among the highest densities of any naturally occurring elements, a consequence of lanthanide contraction combined with high atomic mass.',
     difficulty: 'medium'
   },
@@ -801,10 +800,10 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'A transition metal ion showing an unusually irregular (more negative than expected) standard reduction potential is sometimes explained by the special stability of a',
     options: [
-      'randomly chosen electronic configuration with no particular significance',
-      'half-filled (d5) or fully filled (d10) d subshell in that particular ion',
       'completely empty (d0) configuration only',
-      'configuration involving f electrons'
+      'half-filled (d5) or fully filled (d10) d subshell in that particular ion',
+      'configuration involving f electrons',
+      'randomly chosen electronic configuration with no particular significance'
     ],
     correctIndex: 1,
     explanation: 'Ions with particularly stable electronic configurations, such as half-filled (d5, as in Mn2+) or fully filled (d10, as in Zn2+) d subshells, require extra energy to be oxidised, leading to irregularities in standard reduction potentials.',
@@ -815,12 +814,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'A key structural/electronic distinction between lanthanides and actinides is that',
     options: [
-      '4f orbitals of lanthanides are more effectively shielded and participate less in bonding, compared to the 5f orbitals of actinides',
+      'actinides have completely filled f orbitals in the ground state, unlike lanthanides',
       'lanthanides always show a wider range of oxidation states than actinides',
-      'lanthanides are radioactive while actinides are not',
-      'actinides have completely filled f orbitals in the ground state, unlike lanthanides'
+      '4f orbitals of lanthanides are more effectively shielded and participate less in bonding, compared to the 5f orbitals of actinides',
+      'lanthanides are radioactive while actinides are not'
     ],
-    correctIndex: 0,
+    correctIndex: 2,
     explanation: 'The 4f orbitals of lanthanides are more compact and better shielded than the 5f orbitals of actinides, so actinide 5f electrons participate more readily in bonding, giving actinides a wider range of oxidation states and greater tendency for complex formation.',
     difficulty: 'hard'
   },
@@ -828,8 +827,8 @@ export const D_F_BLOCK_ELEMENTS = [
     id: 'dfblock-68',
     type: 'mcq',
     question: 'Which of the following elements would NOT be classified as a transition element according to the strict IUPAC definition, despite being located in the d-block?',
-    options: ['Iron (Fe)', 'Copper (Cu)', 'Zinc (Zn)', 'Chromium (Cr)'],
-    correctIndex: 2,
+    options: ['Zinc (Zn)', 'Iron (Fe)', 'Chromium (Cr)', 'Copper (Cu)'],
+    correctIndex: 0,
     explanation: 'Zinc has a completely filled 3d10 configuration in both its elemental form and its common +2 oxidation state, so it does not satisfy the IUPAC definition of a transition element, unlike Fe, Cu, and Cr.',
     difficulty: 'medium'
   },
@@ -838,12 +837,12 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'The transition metal ion Cr3+ (3d3 configuration) in aqueous solution appears coloured, primarily due to',
     options: [
-      'the absence of any electrons in its d orbitals',
-      'd-d electronic transitions made possible by its incompletely filled d subshell',
+      'the presence of f electrons',
       'its complete lack of unpaired electrons',
-      'the presence of f electrons'
+      'the absence of any electrons in its d orbitals',
+      'd-d electronic transitions made possible by its incompletely filled d subshell'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since Cr3+ has an incompletely filled (3d3) d subshell, it can undergo d-d electronic transitions upon absorbing visible light, giving rise to its characteristic colour in solution.',
     difficulty: 'medium'
   },
@@ -852,10 +851,10 @@ export const D_F_BLOCK_ELEMENTS = [
     type: 'mcq',
     question: 'Overall, the chemistry of the d- and f-block elements, as emphasised in this NCERT chapter, is characterised by the interplay of',
     options: [
-      'a completely fixed, invariant oxidation state for every element',
+      'exclusively gaseous elemental forms',
       'variable oxidation states, colour due to d-d/f-f transitions, catalytic ability, complex formation, and characteristic contraction effects (lanthanide/actinide contraction)',
-      'a total absence of any metallic character',
-      'exclusively gaseous elemental forms'
+      'a completely fixed, invariant oxidation state for every element',
+      'a total absence of any metallic character'
     ],
     correctIndex: 1,
     explanation: 'The distinctive chemistry of d- and f-block elements arises from a combination of variable oxidation states, characteristic colours from electronic transitions, strong catalytic and complex-forming tendencies, and size-contraction effects unique to these blocks.',
@@ -1888,4 +1887,3 @@ export const D_F_BLOCK_ELEMENTS = [
     difficulty: 'medium'
   }
 ];
-

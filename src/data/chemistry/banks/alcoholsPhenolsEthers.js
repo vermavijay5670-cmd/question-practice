@@ -5,12 +5,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Alcohols containing one, two, and three hydroxyl (-OH) groups are respectively classified as',
     options: [
-      'monohydric, dihydric, and trihydric alcohols',
       'primary, secondary, and tertiary alcohols',
+      'saturated, unsaturated, and aromatic alcohols',
       'allylic, benzylic, and vinylic alcohols',
-      'saturated, unsaturated, and aromatic alcohols'
+      'monohydric, dihydric, and trihydric alcohols'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Alcohols are classified as monohydric, dihydric, or trihydric based on whether they contain one, two, or three hydroxyl groups, respectively.',
     difficulty: 'easy'
   },
@@ -20,11 +20,11 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     question: 'Alcohols are classified as primary, secondary, or tertiary based on',
     options: [
       'the number of -OH groups present',
-      'the nature of the carbon atom (primary, secondary, or tertiary) to which the -OH group is attached',
+      'the boiling point of the alcohol',
       'the molecular mass of the alcohol',
-      'the boiling point of the alcohol'
+      'the nature of the carbon atom (primary, secondary, or tertiary) to which the -OH group is attached'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'This classification depends on whether the carbon bearing the -OH group is attached to one, two, or three other carbon atoms.',
     difficulty: 'easy'
   },
@@ -33,12 +33,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'An allylic alcohol is one in which the -OH group is attached to',
     options: [
-      'an sp3 carbon directly attached to an aromatic ring',
-      'an sp3 carbon atom next to (allylic to) a carbon-carbon double bond',
       'an sp2 carbon that is part of a carbon-carbon double bond',
-      'a carbon atom bonded to a halogen'
+      'an sp3 carbon directly attached to an aromatic ring',
+      'a carbon atom bonded to a halogen',
+      'an sp3 carbon atom next to (allylic to) a carbon-carbon double bond'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'An allylic alcohol has the hydroxyl group on an sp3 carbon adjacent to a C=C double bond.',
     difficulty: 'medium'
   },
@@ -47,12 +47,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'A benzylic alcohol is one in which the -OH group is attached to',
     options: [
-      'an sp3 carbon atom directly attached to an aromatic ring',
       'a carbon atom that is part of the aromatic ring itself',
       'an sp3 carbon adjacent to a carbon-carbon double bond',
-      'a carbon atom bonded to two aromatic rings only'
+      'a carbon atom bonded to two aromatic rings only',
+      'an sp3 carbon atom directly attached to an aromatic ring'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'A benzylic alcohol has the hydroxyl group on an sp3 carbon that is directly bonded to (but not part of) an aromatic ring.',
     difficulty: 'medium'
   },
@@ -60,8 +60,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-5',
     type: 'mcq',
     question: 'In alcohols, the oxygen atom of the -OH group is',
-    options: ['sp hybridised', 'sp2 hybridised', 'sp3 hybridised', 'not hybridised at all'],
-    correctIndex: 2,
+    options: ['not hybridised at all', 'sp hybridised', 'sp2 hybridised', 'sp3 hybridised'],
+    correctIndex: 3,
     explanation: 'The oxygen atom in an alcohol is sp3 hybridised, with two hybrid orbitals forming sigma bonds (to carbon and hydrogen) and two holding lone pairs.',
     difficulty: 'medium'
   },
@@ -70,12 +70,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'The C-O-H bond angle in a simple alcohol like methanol is generally found to be',
     options: [
-      'exactly 90°',
-      'slightly greater than the ideal tetrahedral angle, due to repulsion between the bulky alkyl group and lone pairs on oxygen',
       'exactly 180°, since alcohols have a linear geometry at oxygen',
-      'exactly equal to the bond angle in water'
+      'exactly 90°',
+      'exactly equal to the bond angle in water',
+      'slightly greater than the ideal tetrahedral angle, due to repulsion between the bulky alkyl group and lone pairs on oxygen'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The C-O-H bond angle in alcohols is slightly larger than the ideal tetrahedral angle (109.5°) because the bulkier alkyl group causes greater repulsion than a hydrogen atom would, as in water.',
     difficulty: 'medium'
   },
@@ -84,12 +84,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'The C-O-C bond angle in a simple ether like dimethyl ether is generally',
     options: [
+      'exactly 90°',
       'smaller than the C-O-H angle in alcohols',
-      'larger than the C-O-H angle in alcohols, due to greater steric repulsion between the two bulky alkyl groups',
       'exactly the same as the bond angle in water',
-      'exactly 90°'
+      'larger than the C-O-H angle in alcohols, due to greater steric repulsion between the two bulky alkyl groups'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since ethers have two alkyl groups attached to oxygen (compared to one alkyl group and one hydrogen in alcohols), the greater steric repulsion results in a larger C-O-C bond angle than the C-O-H angle in alcohols.',
     difficulty: 'medium'
   },
@@ -99,11 +99,11 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     question: 'Acid-catalysed hydration of an alkene to form an alcohol generally follows',
     options: [
       'anti-Markovnikov addition',
-      'Markovnikov\'s rule, with the -OH group adding to the more substituted carbon',
+      'Zaitsev\'s rule',
       'no particular regioselectivity',
-      'Zaitsev\'s rule'
+      'Markovnikov\'s rule, with the -OH group adding to the more substituted carbon'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Acid-catalysed hydration proceeds via a carbocation intermediate, so it follows Markovnikov\'s rule, with the hydroxyl group ending up on the more substituted carbon (which formed the more stable carbocation).',
     difficulty: 'medium'
   },
@@ -112,12 +112,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'The hydroboration-oxidation method for converting an alkene to an alcohol gives an overall result that is',
     options: [
+      'formation of an ether, not an alcohol',
       'Markovnikov addition of water, similar to acid-catalysed hydration',
-      'anti-Markovnikov addition of water, with syn (same-face) stereochemistry',
       'formation of an alkyl halide, not an alcohol',
-      'formation of an ether, not an alcohol'
+      'anti-Markovnikov addition of water, with syn (same-face) stereochemistry'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Hydroboration-oxidation gives an anti-Markovnikov alcohol product, with the boron (and hence eventually the -OH group) adding to the less substituted carbon, via a concerted syn-addition mechanism.',
     difficulty: 'medium'
   },
@@ -125,8 +125,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-10',
     type: 'mcq',
     question: 'Reduction of an aldehyde using a reagent such as NaBH4 or LiAlH4 gives',
-    options: ['a secondary alcohol', 'a primary alcohol', 'a tertiary alcohol', 'a carboxylic acid'],
-    correctIndex: 1,
+    options: ['a secondary alcohol', 'a tertiary alcohol', 'a carboxylic acid', 'a primary alcohol'],
+    correctIndex: 3,
     explanation: 'Reduction of an aldehyde adds hydrogen across the carbonyl group, converting it into a primary alcohol.',
     difficulty: 'easy'
   },
@@ -134,8 +134,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-11',
     type: 'mcq',
     question: 'Reduction of a ketone using a reagent such as NaBH4 or LiAlH4 gives',
-    options: ['a primary alcohol', 'a secondary alcohol', 'a tertiary alcohol', 'a carboxylic acid'],
-    correctIndex: 1,
+    options: ['a carboxylic acid', 'a primary alcohol', 'a tertiary alcohol', 'a secondary alcohol'],
+    correctIndex: 3,
     explanation: 'Reduction of a ketone converts the carbonyl group into a secondary alcohol, since the carbonyl carbon in a ketone is already attached to two other carbon groups.',
     difficulty: 'easy'
   },
@@ -143,7 +143,7 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-12',
     type: 'mcq',
     question: 'Reaction of a Grignard reagent with formaldehyde (HCHO), followed by acidic hydrolysis, gives',
-    options: ['a secondary alcohol', 'a primary alcohol', 'a tertiary alcohol', 'a ketone'],
+    options: ['a secondary alcohol', 'a primary alcohol', 'a ketone', 'a tertiary alcohol'],
     correctIndex: 1,
     explanation: 'Since formaldehyde has no alkyl substituents on the carbonyl carbon, reaction with a Grignard reagent gives a primary alcohol upon hydrolysis.',
     difficulty: 'medium'
@@ -152,8 +152,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-13',
     type: 'mcq',
     question: 'Reaction of a Grignard reagent with a ketone, followed by acidic hydrolysis, gives',
-    options: ['a primary alcohol', 'a secondary alcohol', 'a tertiary alcohol', 'an aldehyde'],
-    correctIndex: 2,
+    options: ['an aldehyde', 'a tertiary alcohol', 'a secondary alcohol', 'a primary alcohol'],
+    correctIndex: 1,
     explanation: 'Since a ketone carbonyl carbon already bears two alkyl/aryl groups, addition of a Grignard reagent followed by hydrolysis gives a tertiary alcohol.',
     difficulty: 'medium'
   },
@@ -162,12 +162,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'The industrial Dow\'s process for preparing phenol involves',
     options: [
-      'fusion of a haloarene with NaOH at high temperature and pressure, followed by acidification',
+      'reduction of nitrobenzene',
       'direct oxidation of benzene with air',
       'the cumene hydroperoxide process only',
-      'reduction of nitrobenzene'
+      'fusion of a haloarene with NaOH at high temperature and pressure, followed by acidification'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The Dow\'s process converts a haloarene (such as chlorobenzene) into phenol by fusion with sodium hydroxide under high temperature and pressure, followed by acidification.',
     difficulty: 'medium'
   },
@@ -175,8 +175,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-15',
     type: 'mcq',
     question: 'The industrially important cumene process for phenol production starts from cumene (isopropylbenzene), which is first oxidised by air to form',
-    options: ['cumene hydroperoxide', 'benzene sulphonic acid', 'chlorobenzene', 'benzaldehyde'],
-    correctIndex: 0,
+    options: ['benzaldehyde', 'cumene hydroperoxide', 'benzene sulphonic acid', 'chlorobenzene'],
+    correctIndex: 1,
     explanation: 'In the cumene process, cumene is first oxidised by atmospheric oxygen to form cumene hydroperoxide, which is then treated with dilute acid to give phenol and acetone.',
     difficulty: 'medium'
   },
@@ -184,8 +184,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-16',
     type: 'mcq',
     question: 'In the cumene process, treatment of cumene hydroperoxide with dilute acid gives phenol along with which valuable by-product?',
-    options: ['acetone', 'formaldehyde', 'acetic acid', 'ethanol'],
-    correctIndex: 0,
+    options: ['ethanol', 'formaldehyde', 'acetic acid', 'acetone'],
+    correctIndex: 3,
     explanation: 'Acid-catalysed rearrangement and cleavage of cumene hydroperoxide produces both phenol and acetone as valuable products.',
     difficulty: 'medium'
   },
@@ -193,8 +193,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-17',
     type: 'mcq',
     question: 'Phenol can be prepared by fusing sodium benzenesulphonate with',
-    options: ['sodium chloride', 'sodium hydroxide (NaOH) at high temperature', 'sulphuric acid', 'sodium metal'],
-    correctIndex: 1,
+    options: ['sulphuric acid', 'sodium chloride', 'sodium metal', 'sodium hydroxide (NaOH) at high temperature'],
+    correctIndex: 3,
     explanation: 'Fusion of sodium benzenesulphonate with NaOH at high temperature, followed by acidification, gives phenol.',
     difficulty: 'medium'
   },
@@ -202,8 +202,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-18',
     type: 'mcq',
     question: 'Phenol can also be prepared by warming an aqueous solution of a benzene diazonium salt with',
-    options: ['water, causing hydrolysis to give phenol and nitrogen gas', 'sodium metal', 'concentrated hydrochloric acid only', 'no reaction occurs under these conditions'],
-    correctIndex: 0,
+    options: ['concentrated hydrochloric acid only', 'water, causing hydrolysis to give phenol and nitrogen gas', 'no reaction occurs under these conditions', 'sodium metal'],
+    correctIndex: 1,
     explanation: 'Warming an aqueous solution of a benzenediazonium salt causes hydrolysis, replacing the diazonium group with a hydroxyl group and releasing nitrogen gas, giving phenol.',
     difficulty: 'medium'
   },
@@ -226,12 +226,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Ethers generally have lower boiling points than isomeric alcohols mainly because',
     options: [
-      'ethers have a much higher molecular mass',
-      'ether molecules cannot form hydrogen bonds with each other, lacking an O-H group',
       'ethers are always gases at room temperature',
-      'ethers have stronger covalent bonds than alcohols'
+      'ethers have a much higher molecular mass',
+      'ethers have stronger covalent bonds than alcohols',
+      'ether molecules cannot form hydrogen bonds with each other, lacking an O-H group'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since ethers lack an -OH group, they cannot hydrogen bond with each other, resulting in weaker intermolecular forces and lower boiling points than isomeric alcohols.',
     difficulty: 'medium'
   },
@@ -242,8 +242,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     options: [
       'increases steadily',
       'decreases, since the hydrophobic (non-polar) character becomes more dominant relative to the single hydrogen-bonding -OH group',
-      'remains completely unaffected',
-      'becomes completely independent of molecular structure'
+      'becomes completely independent of molecular structure',
+      'remains completely unaffected'
     ],
     correctIndex: 1,
     explanation: 'As the non-polar hydrocarbon portion of an alcohol grows larger relative to the single polar -OH group, the overall hydrophobic character increases, decreasing water solubility.',
@@ -254,9 +254,9 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'The Lucas test, used to distinguish primary, secondary, and tertiary alcohols, uses a reagent consisting of',
     options: [
-      'dilute sulphuric acid',
-      'anhydrous zinc chloride dissolved in concentrated hydrochloric acid',
       'aqueous sodium hydroxide',
+      'anhydrous zinc chloride dissolved in concentrated hydrochloric acid',
+      'dilute sulphuric acid',
       'potassium permanganate solution'
     ],
     correctIndex: 1,
@@ -296,12 +296,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Dehydration of alcohols to form alkenes, typically using concentrated sulphuric or phosphoric acid, generally follows the order of ease',
     options: [
+      'dehydration ease is unrelated to alcohol classification',
       'primary > secondary > tertiary',
-      'tertiary > secondary > primary, paralleling the stability of the intermediate carbocation',
       'all alcohols dehydrate equally easily',
-      'dehydration ease is unrelated to alcohol classification'
+      'tertiary > secondary > primary, paralleling the stability of the intermediate carbocation'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since acid-catalysed dehydration typically proceeds via an E1 mechanism through a carbocation intermediate, tertiary alcohols dehydrate most easily, followed by secondary, then primary alcohols.',
     difficulty: 'medium'
   },
@@ -309,8 +309,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-26',
     type: 'mcq',
     question: 'Oxidation of a primary alcohol using a strong oxidising agent such as acidified potassium dichromate generally gives, upon complete oxidation,',
-    options: ['a ketone', 'an aldehyde only, which cannot be oxidised further', 'a carboxylic acid, via an intermediate aldehyde', 'no reaction occurs'],
-    correctIndex: 2,
+    options: ['a ketone', 'no reaction occurs', 'an aldehyde only, which cannot be oxidised further', 'a carboxylic acid, via an intermediate aldehyde'],
+    correctIndex: 3,
     explanation: 'Strong oxidising agents oxidise a primary alcohol first to an aldehyde and then further to a carboxylic acid.',
     difficulty: 'medium'
   },
@@ -321,8 +321,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     options: [
       'acidified potassium permanganate',
       'pyridinium chlorochromate (PCC)',
-      'concentrated nitric acid',
-      'acidified potassium dichromate under reflux'
+      'acidified potassium dichromate under reflux',
+      'concentrated nitric acid'
     ],
     correctIndex: 1,
     explanation: 'PCC (pyridinium chlorochromate) is a mild oxidising agent that selectively oxidises a primary alcohol only to the aldehyde stage, without further oxidation to the carboxylic acid.',
@@ -332,8 +332,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-28',
     type: 'mcq',
     question: 'Oxidation of a secondary alcohol using an oxidising agent such as acidified potassium dichromate generally gives',
-    options: ['an aldehyde', 'a ketone', 'a carboxylic acid', 'no reaction occurs'],
-    correctIndex: 1,
+    options: ['a carboxylic acid', 'no reaction occurs', 'an aldehyde', 'a ketone'],
+    correctIndex: 3,
     explanation: 'Secondary alcohols are oxidised to ketones, since the resulting carbonyl carbon still bears two other carbon substituents and cannot be oxidised further under these conditions.',
     difficulty: 'easy'
   },
@@ -365,12 +365,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Reaction of an alcohol with sodium metal produces',
     options: [
-      'sodium alkoxide and hydrogen gas',
+      'no reaction occurs, since sodium is unreactive towards alcohols',
       'sodium alkoxide and oxygen gas',
       'an alkyl halide and sodium hydroxide',
-      'no reaction occurs, since sodium is unreactive towards alcohols'
+      'sodium alkoxide and hydrogen gas'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Alcohols react with sodium metal, releasing hydrogen gas and forming the corresponding sodium alkoxide.',
     difficulty: 'easy'
   },
@@ -380,11 +380,11 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     question: 'Phenols are generally more acidic than alcohols mainly because',
     options: [
       'phenols have a much higher molecular mass',
-      'the phenoxide ion formed after loss of a proton is stabilised by resonance delocalisation of the negative charge into the aromatic ring',
+      'phenols contain a stronger O-H bond than alcohols',
       'alcohols cannot lose a proton at all under any conditions',
-      'phenols contain a stronger O-H bond than alcohols'
+      'the phenoxide ion formed after loss of a proton is stabilised by resonance delocalisation of the negative charge into the aromatic ring'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Resonance stabilisation of the phenoxide ion, by delocalising the negative charge into the aromatic ring, makes phenol a stronger acid than a simple alcohol, whose corresponding alkoxide ion has no such stabilisation.',
     difficulty: 'medium'
   },
@@ -407,12 +407,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'The presence of an electron-withdrawing group, such as a nitro group, on the aromatic ring of a phenol generally',
     options: [
+      'converts the phenol into a base',
       'decreases the acidity of the phenol',
-      'increases the acidity of the phenol, by further stabilising the phenoxide ion through additional resonance/inductive effects',
       'has no effect whatsoever on acidity',
-      'converts the phenol into a base'
+      'increases the acidity of the phenol, by further stabilising the phenoxide ion through additional resonance/inductive effects'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Electron-withdrawing groups, especially at ortho or para positions, stabilise the negative charge on the phenoxide ion through resonance and inductive effects, increasing the acidity of the phenol.',
     difficulty: 'medium'
   },
@@ -421,9 +421,9 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'The presence of an electron-donating group, such as a methyl group, on the aromatic ring of a phenol generally',
     options: [
-      'increases the acidity of the phenol',
-      'decreases the acidity of the phenol, by destabilising the phenoxide ion',
       'has no effect whatsoever on acidity',
+      'decreases the acidity of the phenol, by destabilising the phenoxide ion',
+      'increases the acidity of the phenol',
       'converts phenol into an alcohol'
     ],
     correctIndex: 1,
@@ -434,7 +434,7 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-36',
     type: 'mcq',
     question: 'The Kolbe reaction converts sodium phenoxide, when treated with carbon dioxide under pressure followed by acidification, into',
-    options: ['benzoic acid', 'salicylic acid (ortho-hydroxybenzoic acid)', 'salicylaldehyde', 'phenol itself, unchanged'],
+    options: ['salicylaldehyde', 'salicylic acid (ortho-hydroxybenzoic acid)', 'phenol itself, unchanged', 'benzoic acid'],
     correctIndex: 1,
     explanation: 'In the Kolbe reaction, sodium phenoxide reacts with carbon dioxide under pressure, and subsequent acidification gives salicylic acid (2-hydroxybenzoic acid).',
     difficulty: 'medium'
@@ -443,8 +443,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-37',
     type: 'mcq',
     question: 'The Reimer-Tiemann reaction converts phenol, when treated with chloroform and aqueous sodium hydroxide, into',
-    options: ['salicylic acid', 'salicylaldehyde (ortho-hydroxybenzaldehyde), via a dichlorocarbene intermediate', 'benzaldehyde', 'phenyl acetate'],
-    correctIndex: 1,
+    options: ['benzaldehyde', 'phenyl acetate', 'salicylic acid', 'salicylaldehyde (ortho-hydroxybenzaldehyde), via a dichlorocarbene intermediate'],
+    correctIndex: 3,
     explanation: 'The Reimer-Tiemann reaction generates a dichlorocarbene intermediate from chloroform and base, which reacts with phenol to ultimately give salicylaldehyde after hydrolysis.',
     difficulty: 'medium'
   },
@@ -452,8 +452,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-38',
     type: 'mcq',
     question: 'The reactive electrophilic species generated in the Reimer-Tiemann reaction, from chloroform and a strong base, is',
-    options: ['a carbanion', 'dichlorocarbene, :CCl2', 'a diazonium ion', 'a phenoxide radical'],
-    correctIndex: 1,
+    options: ['a diazonium ion', 'a carbanion', 'a phenoxide radical', 'dichlorocarbene, :CCl2'],
+    correctIndex: 3,
     explanation: 'Treatment of chloroform with a strong base generates dichlorocarbene (:CCl2), a highly reactive electrophilic species that is central to the mechanism of the Reimer-Tiemann reaction.',
     difficulty: 'hard'
   },
@@ -462,12 +462,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Acetylation of phenol, using acetic anhydride or acetyl chloride, gives',
     options: [
-      'phenyl acetate, via esterification of the -OH group',
       'salicylic acid',
+      'phenyl acetate, via esterification of the -OH group',
       'anisole',
       'sodium phenoxide'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Reaction of phenol with acetic anhydride or acetyl chloride esterifies the -OH group, forming phenyl acetate.',
     difficulty: 'medium'
   },
@@ -485,12 +485,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'In electrophilic aromatic substitution reactions, the -OH group of phenol acts as',
     options: [
-      'a deactivating and meta-directing group',
-      'a strongly activating and ortho/para-directing group, due to resonance donation of a lone pair into the ring',
       'a group that has no influence on the ring\'s reactivity at all',
-      'a deactivating but ortho/para-directing group'
+      'a deactivating and meta-directing group',
+      'a deactivating but ortho/para-directing group',
+      'a strongly activating and ortho/para-directing group, due to resonance donation of a lone pair into the ring'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The -OH group is a strong activator and ortho/para director, since one of the lone pairs on oxygen delocalises into the ring, increasing electron density especially at the ortho and para positions.',
     difficulty: 'medium'
   },
@@ -499,12 +499,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Nitration of phenol with dilute nitric acid generally gives a mixture of',
     options: [
-      'ortho- and meta-nitrophenol',
-      'ortho- and para-nitrophenol',
+      'only para-nitrophenol, exclusively',
       'meta- and para-nitrophenol only',
-      'only para-nitrophenol, exclusively'
+      'ortho- and meta-nitrophenol',
+      'ortho- and para-nitrophenol'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since -OH is an ortho/para director, nitration of phenol with dilute nitric acid gives a mixture predominantly consisting of ortho- and para-nitrophenol.',
     difficulty: 'medium'
   },
@@ -513,12 +513,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'ortho-Nitrophenol is more volatile (steam-volatile) than para-nitrophenol mainly because',
     options: [
-      'ortho-nitrophenol has intramolecular hydrogen bonding, reducing intermolecular association, while para-nitrophenol has intermolecular hydrogen bonding, raising its effective boiling point',
-      'ortho-nitrophenol has a much higher molecular mass',
       'para-nitrophenol has no hydrogen bonding at all',
-      'ortho-nitrophenol is ionic while para-nitrophenol is covalent'
+      'ortho-nitrophenol has intramolecular hydrogen bonding, reducing intermolecular association, while para-nitrophenol has intermolecular hydrogen bonding, raising its effective boiling point',
+      'ortho-nitrophenol is ionic while para-nitrophenol is covalent',
+      'ortho-nitrophenol has a much higher molecular mass'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'In ortho-nitrophenol, intramolecular hydrogen bonding occurs between the adjacent -OH and -NO2 groups, reducing intermolecular association and making it more volatile; para-nitrophenol instead forms intermolecular hydrogen bonds, resulting in a higher effective boiling point and lower volatility.',
     difficulty: 'hard'
   },
@@ -527,12 +527,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Bromination of phenol with bromine water (without any catalyst) readily gives',
     options: [
-      'a mixture of mono-brominated products only, similar to benzene',
-      '2,4,6-tribromophenol as a white precipitate, due to the highly activating nature of the -OH group',
       'no reaction at all, since phenol is unreactive towards bromine',
-      'a meta-substituted bromophenol'
+      'a mixture of mono-brominated products only, similar to benzene',
+      'a meta-substituted bromophenol',
+      '2,4,6-tribromophenol as a white precipitate, due to the highly activating nature of the -OH group'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Because the -OH group strongly activates the aromatic ring, phenol reacts readily with bromine water even without a catalyst, giving 2,4,6-tribromophenol as a white precipitate.',
     difficulty: 'medium'
   },
@@ -541,12 +541,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'The Williamson ether synthesis involves reacting an alkyl halide with',
     options: [
-      'a sodium or potassium alkoxide, via an SN2 mechanism',
-      'a Grignard reagent',
       'sodium metal in dry ether',
-      'concentrated sulphuric acid'
+      'a sodium or potassium alkoxide, via an SN2 mechanism',
+      'concentrated sulphuric acid',
+      'a Grignard reagent'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'The Williamson synthesis reacts an alkyl halide with a metal alkoxide (or aryloxide) via an SN2 mechanism to form an ether.',
     difficulty: 'easy'
   },
@@ -569,12 +569,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Acid-catalysed intermolecular dehydration of two molecules of a primary alcohol, under controlled (relatively lower) temperature conditions, gives predominantly',
     options: [
-      'an alkene',
-      'a symmetrical ether',
       'an aldehyde',
-      'a carboxylic acid'
+      'an alkene',
+      'a carboxylic acid',
+      'a symmetrical ether'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'At relatively lower temperatures, acid-catalysed dehydration of two molecules of a primary alcohol proceeds via intermolecular loss of water, favouring formation of a symmetrical ether over the alkene (which requires higher temperature).',
     difficulty: 'medium'
   },
@@ -583,10 +583,10 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Ethers are generally considered relatively unreactive (inert) compounds, but they can undergo cleavage of the C-O bond when treated with',
     options: [
-      'dilute sodium hydroxide',
+      'a mild oxidising agent like PCC',
       'concentrated hydrogen halide acids (such as HI or HBr), especially with heating or excess reagent',
-      'water alone at room temperature',
-      'a mild oxidising agent like PCC'
+      'dilute sodium hydroxide',
+      'water alone at room temperature'
     ],
     correctIndex: 1,
     explanation: 'Despite their general inertness, ethers can be cleaved by strong hydrogen halide acids like HI or HBr, particularly under more vigorous conditions such as heating or using an excess of the acid.',
@@ -611,9 +611,9 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'When ether cleavage by HI occurs with a primary or methyl alkyl group, the mechanism generally proceeds via',
     options: [
-      'an SN1 pathway, through a stable carbocation intermediate',
-      'an SN2 pathway, via backside attack of the iodide nucleophile',
       'a radical mechanism only',
+      'an SN2 pathway, via backside attack of the iodide nucleophile',
+      'an SN1 pathway, through a stable carbocation intermediate',
       'no mechanism is possible, since cleavage does not occur with primary groups'
     ],
     correctIndex: 1,
@@ -625,12 +625,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'When ether cleavage by HI occurs with a tertiary, benzylic, or allylic alkyl group, the mechanism generally proceeds via',
     options: [
-      'an SN2 pathway, via backside attack',
-      'an SN1 pathway, through formation of a relatively stable carbocation intermediate',
+      'a purely radical chain mechanism',
       'no reaction occurs under any conditions',
-      'a purely radical chain mechanism'
+      'an SN2 pathway, via backside attack',
+      'an SN1 pathway, through formation of a relatively stable carbocation intermediate'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'When the alkyl group is tertiary, benzylic, or allylic, the corresponding carbocation is relatively stable, favouring cleavage via an SN1 mechanism.',
     difficulty: 'hard'
   },
@@ -639,10 +639,10 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'In electrophilic aromatic substitution reactions, the alkoxy (-OR) group of an aryl alkyl ether (such as anisole) behaves similarly to the -OH group of phenol, acting as',
     options: [
-      'a deactivating and meta-directing group',
+      'a group that completely deactivates the ring towards any substitution',
       'an activating and ortho/para-directing group',
-      'a group with no directing influence at all',
-      'a group that completely deactivates the ring towards any substitution'
+      'a deactivating and meta-directing group',
+      'a group with no directing influence at all'
     ],
     correctIndex: 1,
     explanation: 'Like the -OH group in phenol, the alkoxy group in aryl alkyl ethers donates electron density into the ring via resonance, acting as an activator and directing electrophilic substitution to the ortho and para positions.',
@@ -653,12 +653,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Ethers can act as weak hydrogen bond acceptors with water molecules, which explains why',
     options: [
+      'ethers cannot interact with water in any way',
       'ethers are completely insoluble in water',
-      'lower ethers show appreciable solubility in water, comparable to alcohols of similar molecular mass in some cases',
       'ethers are more soluble in water than alcohols of the same molecular mass',
-      'ethers cannot interact with water in any way'
+      'lower ethers show appreciable solubility in water, comparable to alcohols of similar molecular mass in some cases'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Although ethers cannot donate hydrogen bonds (lacking O-H), the lone pairs on their oxygen atom allow them to accept hydrogen bonds from water, giving lower ethers reasonable water solubility, even though it is generally somewhat less than that of comparable alcohols.',
     difficulty: 'medium'
   },
@@ -667,12 +667,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Which of the following correctly ranks the typical boiling points of an alcohol, ether, and alkane, all of comparable molecular mass?',
     options: [
-      'alkane > ether > alcohol',
-      'alcohol > ether > alkane',
+      'alkane > alcohol > ether',
       'ether > alcohol > alkane',
-      'alkane > alcohol > ether'
+      'alkane > ether > alcohol',
+      'alcohol > ether > alkane'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Alcohols, capable of hydrogen bonding, have the highest boiling point; ethers, though polar, cannot hydrogen bond with themselves and have intermediate boiling points; alkanes, being non-polar, have the lowest boiling points among these comparable-mass compounds.',
     difficulty: 'medium'
   },
@@ -682,9 +682,9 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     question: 'Vicinal diols (glycols), such as ethylene glycol, are typically prepared from alkenes by',
     options: [
       'reaction with cold, dilute alkaline potassium permanganate (syn-dihydroxylation)',
-      'reaction with hydrogen halide acids',
       'reaction with sodium metal',
-      'complete combustion of the alkene'
+      'complete combustion of the alkene',
+      'reaction with hydrogen halide acids'
     ],
     correctIndex: 0,
     explanation: 'Reaction of an alkene with cold, dilute alkaline KMnO4 is a classic method for syn-dihydroxylation, converting the alkene into a vicinal diol.',
@@ -697,8 +697,8 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     options: [
       'two carboxylic acids exclusively',
       'a mixture of aldehydes and/or ketones, depending on the substitution at each carbon, with cleavage of the C-C bond between the two -OH groups',
-      'a single alkene product',
-      'a single alcohol product with no cleavage at all'
+      'a single alcohol product with no cleavage at all',
+      'a single alkene product'
     ],
     correctIndex: 1,
     explanation: 'Periodic acid selectively cleaves the C-C bond between the two hydroxyl groups of a vicinal diol, giving two carbonyl compounds (aldehydes and/or ketones, depending on substitution).',
@@ -709,12 +709,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Among primary, secondary, and tertiary alcohols of similar molecular mass, boiling points generally follow the trend',
     options: [
-      'tertiary > secondary > primary',
-      'primary > secondary > tertiary, since increased branching reduces surface area available for intermolecular contact',
       'all three types show identical boiling points',
-      'boiling point is completely unrelated to the degree of branching'
+      'boiling point is completely unrelated to the degree of branching',
+      'primary > secondary > tertiary, since increased branching reduces surface area available for intermolecular contact',
+      'tertiary > secondary > primary'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'As with other classes of organic compounds, increased branching (as in tertiary alcohols compared to primary) reduces the surface area available for van der Waals interactions, generally lowering the boiling point.',
     difficulty: 'medium'
   },
@@ -723,9 +723,9 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Phenols, like alcohols, can undergo hydrogen bonding, and this contributes to their',
     options: [
-      'unusually low boiling points compared to similarly sized hydrocarbons',
-      'relatively high boiling points and appreciable, though limited, water solubility',
       'complete insolubility in any solvent',
+      'relatively high boiling points and appreciable, though limited, water solubility',
+      'unusually low boiling points compared to similarly sized hydrocarbons',
       'complete lack of any intermolecular interactions'
     ],
     correctIndex: 1,
@@ -738,11 +738,11 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     question: 'Reaction of phenol with excess bromine water occurs readily without a catalyst because',
     options: [
       'phenol is a strongly deactivated aromatic ring',
-      'the -OH group strongly activates the aromatic ring, increasing its electron density and reactivity towards electrophiles',
       'bromine is an extremely weak electrophile that reacts with any aromatic compound easily',
-      'phenol contains no aromatic ring at all'
+      'phenol contains no aromatic ring at all',
+      'the -OH group strongly activates the aromatic ring, increasing its electron density and reactivity towards electrophiles'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The strong activation of the ring by the -OH group increases electron density sufficiently that phenol reacts readily with bromine water, without requiring a Lewis acid catalyst (unlike benzene).',
     difficulty: 'medium'
   },
@@ -752,9 +752,9 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     question: 'Which of the following statements correctly compares the two industrial phenol-producing methods discussed in NCERT?',
     options: [
       'The Dow\'s process uses a haloarene as starting material, while the cumene process uses cumene, which is oxidised via a hydroperoxide intermediate',
-      'Both processes use exactly the same starting material and reagents',
+      'The Dow\'s process gives acetone as its main by-product',
       'The cumene process does not produce any valuable by-product',
-      'The Dow\'s process gives acetone as its main by-product'
+      'Both processes use exactly the same starting material and reagents'
     ],
     correctIndex: 0,
     explanation: 'The Dow\'s process starts from a haloarene and uses NaOH fusion, whereas the cumene process starts from cumene and proceeds through a hydroperoxide intermediate, ultimately giving phenol and acetone.',
@@ -780,9 +780,9 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     question: 'Phenol reacts with aqueous sodium hydroxide to form',
     options: [
       'sodium phenoxide and water',
+      'anisole',
       'no reaction, since phenol is not acidic enough to react with NaOH',
-      'phenyl acetate',
-      'anisole'
+      'phenyl acetate'
     ],
     correctIndex: 0,
     explanation: 'Being weakly acidic, phenol readily reacts with aqueous sodium hydroxide to form sodium phenoxide and water.',
@@ -793,12 +793,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'In terms of general reactivity, phenols undergo electrophilic aromatic substitution reactions',
     options: [
-      'much more slowly than benzene, due to deactivation by the -OH group',
-      'much more readily than benzene, due to strong activation by the -OH group',
+      'only under forcing conditions with strong catalysts, similar to benzene',
       'at exactly the same rate as benzene, with no difference at all',
-      'only under forcing conditions with strong catalysts, similar to benzene'
+      'much more slowly than benzene, due to deactivation by the -OH group',
+      'much more readily than benzene, due to strong activation by the -OH group'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since the -OH group strongly activates the aromatic ring by resonance donation, phenols undergo electrophilic aromatic substitution much more readily than benzene itself.',
     difficulty: 'medium'
   },
@@ -807,12 +807,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Anisole (methoxybenzene) can be conveniently prepared using the Williamson synthesis from phenol by reaction with',
     options: [
-      'sodium metal alone',
-      'sodium hydroxide, followed by treatment with methyl iodide (or another suitable methylating agent)',
       'concentrated sulphuric acid',
-      'acetic anhydride'
+      'acetic anhydride',
+      'sodium hydroxide, followed by treatment with methyl iodide (or another suitable methylating agent)',
+      'sodium metal alone'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Phenol is first converted to sodium phenoxide using a base, which then reacts with methyl iodide (or dimethyl sulphate) via the Williamson synthesis to give anisole.',
     difficulty: 'medium'
   },
@@ -822,11 +822,11 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     question: 'The general trend in acidity of substituted phenols shows that para-nitrophenol is generally',
     options: [
       'less acidic than unsubstituted phenol',
-      'more acidic than unsubstituted phenol, due to the electron-withdrawing effect of the nitro group at the para position',
+      'not acidic at all',
       'exactly as acidic as unsubstituted phenol',
-      'not acidic at all'
+      'more acidic than unsubstituted phenol, due to the electron-withdrawing effect of the nitro group at the para position'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The strongly electron-withdrawing nitro group at the para position stabilises the phenoxide ion through resonance, making para-nitrophenol significantly more acidic than unsubstituted phenol.',
     difficulty: 'medium'
   },
@@ -835,12 +835,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'para-Cresol (4-methylphenol) is generally',
     options: [
-      'more acidic than phenol, due to the electron-donating methyl group',
-      'less acidic than phenol, since the electron-donating methyl group destabilises the phenoxide ion',
       'exactly as acidic as phenol',
-      'a stronger acid than any nitrophenol'
+      'a stronger acid than any nitrophenol',
+      'less acidic than phenol, since the electron-donating methyl group destabilises the phenoxide ion',
+      'more acidic than phenol, due to the electron-donating methyl group'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'The electron-donating methyl group in para-cresol destabilises the negative charge on the phenoxide ion, making it a weaker acid than unsubstituted phenol.',
     difficulty: 'medium'
   },
@@ -849,12 +849,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Aromatic rings in phenols and aryl ethers are activated for electrophilic substitution primarily because the attached oxygen atom',
     options: [
-      'withdraws electron density from the ring inductively, with no resonance effect',
       'donates one of its lone pairs into the ring through resonance, increasing electron density at ortho and para positions',
       'has no lone pairs available for donation',
-      'forms a triple bond with the ring carbon'
+      'forms a triple bond with the ring carbon',
+      'withdraws electron density from the ring inductively, with no resonance effect'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'The oxygen atom in both phenol and aryl ethers donates a lone pair into the aromatic ring system through resonance, significantly increasing electron density (especially at ortho and para positions) and activating the ring.',
     difficulty: 'medium'
   },
@@ -862,7 +862,7 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     id: 'alcohol-68',
     type: 'mcq',
     question: 'Which classic laboratory test can be used to help distinguish primary, secondary, and tertiary alcohols based on differing reaction rates?',
-    options: ['Tollens\' test', 'Lucas test', 'Fehling\'s test', 'Iodoform test only'],
+    options: ['Tollens\' test', 'Lucas test', 'Iodoform test only', 'Fehling\'s test'],
     correctIndex: 1,
     explanation: 'The Lucas test, using ZnCl2/HCl, distinguishes alcohols based on the differing rates at which primary, secondary, and tertiary alcohols react to form an insoluble alkyl chloride.',
     difficulty: 'medium'
@@ -872,12 +872,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'The dehydration of alcohols to form alkenes generally follows Zaitsev\'s rule, meaning the major product is typically the',
     options: [
-      'least substituted (least stable) alkene',
       'more substituted (more stable) alkene',
-      'ether, rather than an alkene',
-      'the original alcohol, unreacted'
+      'the original alcohol, unreacted',
+      'least substituted (least stable) alkene',
+      'ether, rather than an alkene'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'In accordance with Zaitsev\'s rule, elimination reactions (including alcohol dehydration) generally favour formation of the more substituted, more thermodynamically stable alkene as the major product.',
     difficulty: 'medium'
   },
@@ -886,12 +886,12 @@ export const ALCOHOLS_PHENOLS_ETHERS = [
     type: 'mcq',
     question: 'Overall, the chemistry of alcohols, phenols, and ethers, as emphasised throughout this NCERT chapter, centres on understanding',
     options: [
-      'the structure, preparation, physical properties, and reactivity (acidity, substitution, oxidation, cleavage) arising from the presence of the hydroxyl or ether oxygen functional group',
-      'only their use as industrial fuels',
+      'topics entirely unrelated to functional group chemistry',
       'only their crystal structure in the solid state',
-      'topics entirely unrelated to functional group chemistry'
+      'the structure, preparation, physical properties, and reactivity (acidity, substitution, oxidation, cleavage) arising from the presence of the hydroxyl or ether oxygen functional group',
+      'only their use as industrial fuels'
     ],
-    correctIndex: 0,
+    correctIndex: 2,
     explanation: 'The chapter integrates the structural features, preparation methods, physical behaviour, and diverse chemical reactivity that arise specifically from the hydroxyl group (in alcohols/phenols) or the ether oxygen linkage.',
     difficulty: 'medium'
   },

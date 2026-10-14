@@ -1,4 +1,3 @@
-
 export const ATOMS = [
   // ==================== MCQ (70) ====================
   {
@@ -6,12 +5,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'J.J. Thomson\'s model of the atom (the "plum pudding" model) proposed that',
     options: [
-      'the atom consists of a small, dense, positively charged nucleus with electrons orbiting around it',
-      'positive charge is uniformly distributed throughout the atom, like a sphere, with electrons embedded within it like seeds in a pudding',
+      'the atom consists entirely of neutrons with no charge',
       'the atom has no internal structure at all, being a fundamental indivisible particle',
-      'the atom consists entirely of neutrons with no charge'
+      'the atom consists of a small, dense, positively charged nucleus with electrons orbiting around it',
+      'positive charge is uniformly distributed throughout the atom, like a sphere, with electrons embedded within it like seeds in a pudding'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Thomson\'s model envisioned the atom as a uniform sphere of positive charge with negatively charged electrons embedded within it, resembling plums (electrons) distributed in a pudding (positive charge) — hence the name.',
     difficulty: 'easy'
   },
@@ -20,12 +19,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'Rutherford\'s alpha-particle scattering experiment involved directing a beam of alpha particles at a',
     options: [
-      'thick block of lead',
-      'thin gold foil',
       'container of hydrogen gas',
-      'sample of radioactive uranium'
+      'thick block of lead',
+      'sample of radioactive uranium',
+      'thin gold foil'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Rutherford\'s classic experiment used a thin gold foil as the target, chosen because gold can be beaten into extremely thin sheets, allowing alpha particles to interact primarily with individual atoms.',
     difficulty: 'easy'
   },
@@ -34,12 +33,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'In Rutherford\'s alpha-particle scattering experiment, the observation that most alpha particles passed through the gold foil with little or no deflection suggested that',
     options: [
+      'alpha particles cannot interact with matter',
       'the atom is a solid, densely packed sphere with no empty space',
-      'most of the volume of an atom is empty space',
       'gold atoms have no positive charge at all',
-      'alpha particles cannot interact with matter'
+      'most of the volume of an atom is empty space'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since the vast majority of alpha particles passed through with little deflection, Rutherford concluded that most of the atom\'s volume must be empty space, with mass and charge concentrated elsewhere.',
     difficulty: 'medium'
   },
@@ -48,12 +47,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'In Rutherford\'s experiment, the small fraction of alpha particles that were deflected through large angles (some even bouncing almost straight back) indicated that',
     options: [
+      'gold atoms are entirely negatively charged',
       'the atom has no dense central region at all',
-      'a small, dense, positively charged region (the nucleus) exists at the centre of the atom, capable of strongly repelling the positively charged alpha particles that come very close to it',
       'the alpha particles were somehow altered in charge during the experiment',
-      'gold atoms are entirely negatively charged'
+      'a small, dense, positively charged region (the nucleus) exists at the centre of the atom, capable of strongly repelling the positively charged alpha particles that come very close to it'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Large-angle deflections (and rare near-180° backscattering) could only be explained by a small, extremely dense, positively charged nucleus that could exert a strong repulsive force on alpha particles passing very close to it.',
     difficulty: 'medium'
   },
@@ -62,12 +61,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'Rutherford\'s nuclear model of the atom proposed that',
     options: [
-      'the entire positive charge and most of the mass of the atom is concentrated in a tiny central nucleus, with electrons revolving around it at a relatively large distance',
-      'positive and negative charges are uniformly mixed throughout the atom',
       'the atom has no nucleus, only electrons distributed in space',
-      'the nucleus contains only electrons, with positive charge spread outside it'
+      'the nucleus contains only electrons, with positive charge spread outside it',
+      'positive and negative charges are uniformly mixed throughout the atom',
+      'the entire positive charge and most of the mass of the atom is concentrated in a tiny central nucleus, with electrons revolving around it at a relatively large distance'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Rutherford\'s nuclear model placed nearly all the atom\'s mass and its entire positive charge in a tiny central nucleus, with the much lighter electrons revolving around it in the surrounding, largely empty space.',
     difficulty: 'easy'
   },
@@ -76,12 +75,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The size of the atomic nucleus, as estimated from scattering experiments, is of the order of',
     options: [
-      '10⁻¹⁰ m, comparable to the size of the whole atom',
-      '10⁻¹⁵ to 10⁻¹⁴ m, roughly ten thousand times smaller than the size of the whole atom',
       '10⁻² m, a macroscopically visible size',
-      'exactly the same size as the atom itself'
+      '10⁻¹⁰ m, comparable to the size of the whole atom',
+      'exactly the same size as the atom itself',
+      '10⁻¹⁵ to 10⁻¹⁴ m, roughly ten thousand times smaller than the size of the whole atom'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Scattering experiments established the nuclear radius to be of the order of 10⁻¹⁵ to 10⁻¹⁴ m, dramatically smaller than the overall atomic size (~10⁻¹⁰ m), confirming that the atom is mostly empty space.',
     difficulty: 'medium'
   },
@@ -90,12 +89,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'A major theoretical problem with Rutherford\'s classical planetary model of the atom (electrons orbiting the nucleus like planets) was that',
     options: [
+      'it could not explain why atoms have a nucleus at all',
       'it correctly predicted all observed properties of atoms with no issues',
-      'according to classical electromagnetic theory, an accelerating (orbiting) charge should continuously radiate energy, causing the electron to spiral into the nucleus almost instantaneously, making atoms inherently unstable',
       'it predicted atoms would be infinitely large',
-      'it could not explain why atoms have a nucleus at all'
+      'according to classical electromagnetic theory, an accelerating (orbiting) charge should continuously radiate energy, causing the electron to spiral into the nucleus almost instantaneously, making atoms inherently unstable'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since an orbiting (and hence accelerating) electron should, according to classical electromagnetism, continuously emit electromagnetic radiation and lose energy, it would be expected to spiral into the nucleus in a fraction of a second — clearly contradicting the observed stability of atoms.',
     difficulty: 'medium'
   },
@@ -104,12 +103,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The instability problem of Rutherford\'s classical model would also imply that the radiation emitted by a spiraling electron should have',
     options: [
-      'a single, sharp, unchanging frequency',
-      'a continuously changing frequency as the electron spirals inward, resulting in a continuous emission spectrum, rather than the discrete line spectra actually observed in atoms',
+      'exactly the same frequency as visible light only',
       'no relationship to the electron\'s motion at all',
-      'exactly the same frequency as visible light only'
+      'a single, sharp, unchanging frequency',
+      'a continuously changing frequency as the electron spirals inward, resulting in a continuous emission spectrum, rather than the discrete line spectra actually observed in atoms'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'As the electron classically spirals inward, its orbital frequency (and hence the frequency of emitted radiation) would continuously change, predicting a continuous spectrum — but atoms are observed to emit sharp, discrete spectral lines, contradicting this classical prediction.',
     difficulty: 'medium'
   },
@@ -132,12 +131,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The Balmer series refers to a specific set of spectral lines observed in the emission spectrum of',
     options: [
+      'all elements equally, with identical wavelengths',
       'helium',
-      'hydrogen, corresponding to transitions where the electron falls to the second energy level (n = 2)',
       'sodium',
-      'all elements equally, with identical wavelengths'
+      'hydrogen, corresponding to transitions where the electron falls to the second energy level (n = 2)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The Balmer series is a specific set of spectral lines in the hydrogen spectrum, corresponding to electron transitions from higher energy levels down to the n = 2 level, and it was historically important in guiding early atomic theory.',
     difficulty: 'medium'
   },
@@ -146,12 +145,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The empirical Balmer formula, which successfully predicted the wavelengths of the hydrogen spectral lines, was initially derived',
     options: [
-      'directly from a complete theoretical model of atomic structure',
-      'empirically, by fitting a mathematical formula to the experimentally observed wavelengths, without an underlying theoretical explanation at the time',
+      'from measurements of the size of the atomic nucleus',
       'from Rutherford\'s nuclear model directly',
-      'from measurements of the size of the atomic nucleus'
+      'directly from a complete theoretical model of atomic structure',
+      'empirically, by fitting a mathematical formula to the experimentally observed wavelengths, without an underlying theoretical explanation at the time'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The Balmer formula was originally an empirical relation, discovered by fitting observed spectral line wavelengths to a mathematical pattern, without an underlying theoretical (atomic model) justification at the time of its discovery — that came later with Bohr\'s model.',
     difficulty: 'medium'
   },
@@ -173,8 +172,8 @@ export const ATOMS = [
     id: 'atoms-13',
     type: 'mcq',
     question: 'Bohr\'s quantization postulate states that the angular momentum of an electron in a stationary orbit is an integral multiple of',
-    options: ['h (Planck\'s constant)', 'h/2π (denoted ħ)', 'h²', '2πh'],
-    correctIndex: 1,
+    options: ['h (Planck\'s constant)', '2πh', 'h²', 'h/2π (denoted ħ)'],
+    correctIndex: 3,
     explanation: 'Bohr\'s quantization condition states that the orbital angular momentum L = nh/2π = nħ, where n is a positive integer (the principal quantum number), restricting electrons to only certain discrete orbits.',
     difficulty: 'medium'
   },
@@ -183,12 +182,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'According to Bohr\'s model, an atom emits radiation (a photon) when',
     options: [
+      'an electron transitions from a lower-energy orbit to a higher-energy orbit',
       'an electron remains in the same stationary orbit indefinitely',
-      'an electron transitions (jumps) from a higher-energy stationary orbit to a lower-energy stationary orbit, emitting a photon whose energy equals the difference between the two orbit energies',
       'the nucleus itself changes its charge',
-      'an electron transitions from a lower-energy orbit to a higher-energy orbit'
+      'an electron transitions (jumps) from a higher-energy stationary orbit to a lower-energy stationary orbit, emitting a photon whose energy equals the difference between the two orbit energies'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'In Bohr\'s model, radiation is emitted specifically when an electron makes a downward transition from a higher-energy orbit to a lower-energy orbit, releasing a photon carrying the energy difference between the two orbits.',
     difficulty: 'medium'
   },
@@ -198,11 +197,11 @@ export const ATOMS = [
     question: 'The energy of the photon emitted (or absorbed) during an electron transition between two stationary orbits, according to Bohr\'s model, is given by',
     options: [
       'hf = Ei + Ef (the sum of the two orbit energies)',
-      'hf = |Ei - Ef|, the magnitude of the difference between the initial and final orbit energies',
       'hf = Ei × Ef',
-      'hf is completely unrelated to the orbit energies'
+      'hf is completely unrelated to the orbit energies',
+      'hf = |Ei - Ef|, the magnitude of the difference between the initial and final orbit energies'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The photon energy equals the difference between the energies of the initial and final stationary states, hf = |Ei - Ef|, directly explaining the origin of discrete spectral lines.',
     difficulty: 'medium'
   },
@@ -224,8 +223,8 @@ export const ATOMS = [
     id: 'atoms-17',
     type: 'mcq',
     question: 'The radius of the nth Bohr orbit for the hydrogen atom is proportional to',
-    options: ['n', 'n²', '1/n', '1/n²'],
-    correctIndex: 1,
+    options: ['n', '1/n', '1/n²', 'n²'],
+    correctIndex: 3,
     explanation: 'The radius of the nth Bohr orbit is given by rn ∝ n², meaning higher energy levels correspond to progressively larger (and more widely spaced) orbits.',
     difficulty: 'medium'
   },
@@ -233,8 +232,8 @@ export const ATOMS = [
     id: 'atoms-18',
     type: 'mcq',
     question: 'The energy of the electron in the nth Bohr orbit of the hydrogen atom is proportional to',
-    options: ['n', 'n²', '-1/n²', '1/n'],
-    correctIndex: 2,
+    options: ['n²', '1/n', 'n', '-1/n²'],
+    correctIndex: 3,
     explanation: 'The energy of the nth orbit is given by En ∝ -1/n², meaning the energy is negative (bound state) and its magnitude decreases (becomes less negative, approaching zero) as n increases.',
     difficulty: 'medium'
   },
@@ -243,12 +242,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The negative sign in the expression for the energy of an electron in a Bohr orbit (En ∝ -1/n²) indicates that',
     options: [
-      'the electron has negative mass',
-      'the electron is bound to the nucleus, meaning energy must be supplied to remove it completely from the atom (to n = ∞, where energy is defined as zero)',
       'the formula is simply incorrect',
-      'the nucleus itself has negative charge'
+      'the nucleus itself has negative charge',
+      'the electron has negative mass',
+      'the electron is bound to the nucleus, meaning energy must be supplied to remove it completely from the atom (to n = ∞, where energy is defined as zero)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The negative energy reflects the fact that the electron is in a bound state; energy (equal in magnitude to the binding energy) must be supplied to completely free the electron from the atom, corresponding to raising it to zero energy at n = ∞ (ionization).',
     difficulty: 'medium'
   },
@@ -257,12 +256,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The ground state of the hydrogen atom corresponds to the electron being in the orbit with',
     options: [
-      'n = ∞, the highest possible energy level',
-      'n = 1, the lowest possible energy level (most negative energy, most tightly bound)',
       'n = 0',
-      'any arbitrary value of n, since ground state is not well-defined'
+      'n = ∞, the highest possible energy level',
+      'any arbitrary value of n, since ground state is not well-defined',
+      'n = 1, the lowest possible energy level (most negative energy, most tightly bound)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The ground state is the lowest energy state (n = 1), where the electron is most tightly bound to the nucleus (has the most negative total energy).',
     difficulty: 'easy'
   },
@@ -270,8 +269,8 @@ export const ATOMS = [
     id: 'atoms-21',
     type: 'mcq',
     question: 'The ground state energy of the hydrogen atom (n = 1) is approximately',
-    options: ['0 eV', '+13.6 eV', '-13.6 eV', '-3.4 eV'],
-    correctIndex: 2,
+    options: ['0 eV', '-3.4 eV', '+13.6 eV', '-13.6 eV'],
+    correctIndex: 3,
     explanation: 'The ground state energy of hydrogen is -13.6 eV, a standard and frequently referenced value in atomic physics.',
     difficulty: 'medium'
   },
@@ -280,9 +279,9 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The ionization energy of the hydrogen atom (the energy required to remove the electron completely from the ground state) is',
     options: [
-      '0 eV',
-      '13.6 eV, equal in magnitude to the ground state energy',
       '-13.6 eV',
+      '13.6 eV, equal in magnitude to the ground state energy',
+      '0 eV',
       '3.4 eV'
     ],
     correctIndex: 1,
@@ -294,12 +293,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'As the principal quantum number n increases (electron in higher energy orbits), the energy levels of the hydrogen atom become',
     options: [
-      'more widely spaced from each other',
-      'more closely spaced together, converging toward zero energy as n approaches infinity',
       'exactly equally spaced regardless of n',
-      'undefined for n greater than 1'
+      'more widely spaced from each other',
+      'undefined for n greater than 1',
+      'more closely spaced together, converging toward zero energy as n approaches infinity'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since En ∝ -1/n², the spacing between successive energy levels decreases as n increases, with the levels converging toward zero (the ionization limit) as n → ∞.',
     difficulty: 'medium'
   },
@@ -307,8 +306,8 @@ export const ATOMS = [
     id: 'atoms-24',
     type: 'mcq',
     question: 'The Lyman series of spectral lines in the hydrogen spectrum corresponds to electron transitions ending at',
-    options: ['n = 1 (ground state)', 'n = 2', 'n = 3', 'n = ∞'],
-    correctIndex: 0,
+    options: ['n = 3', 'n = ∞', 'n = 2', 'n = 1 (ground state)'],
+    correctIndex: 3,
     explanation: 'The Lyman series consists of transitions from higher energy levels (n = 2, 3, 4, ...) down to the ground state (n = 1), and these lines fall in the ultraviolet region of the spectrum.',
     difficulty: 'medium'
   },
@@ -316,7 +315,7 @@ export const ATOMS = [
     id: 'atoms-25',
     type: 'mcq',
     question: 'The Balmer series of spectral lines in the hydrogen spectrum corresponds to electron transitions ending at',
-    options: ['n = 1', 'n = 2', 'n = 3', 'n = 4'],
+    options: ['n = 3', 'n = 2', 'n = 1', 'n = 4'],
     correctIndex: 1,
     explanation: 'The Balmer series consists of transitions from higher energy levels down to n = 2, and this series notably includes lines in the visible region of the spectrum.',
     difficulty: 'medium'
@@ -325,8 +324,8 @@ export const ATOMS = [
     id: 'atoms-26',
     type: 'mcq',
     question: 'The Paschen series of spectral lines in the hydrogen spectrum corresponds to electron transitions ending at',
-    options: ['n = 1', 'n = 2', 'n = 3', 'n = 5'],
-    correctIndex: 2,
+    options: ['n = 1', 'n = 3', 'n = 5', 'n = 2'],
+    correctIndex: 1,
     explanation: 'The Paschen series consists of transitions from higher energy levels down to n = 3, and these lines fall in the infrared region of the spectrum.',
     difficulty: 'medium'
   },
@@ -344,12 +343,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The de Broglie hypothesis, which proposed that matter particles (like electrons) have an associated wavelength, provided a theoretical justification for',
     options: [
-      'the existence of the nucleus',
-      'Bohr\'s quantization condition for angular momentum, by showing that the allowed orbits correspond to those in which a whole number of electron de Broglie wavelengths fit exactly around the orbit\'s circumference',
+      'the non-existence of electrons in atoms',
       'the size of the atom being exactly zero',
-      'the non-existence of electrons in atoms'
+      'the existence of the nucleus',
+      'Bohr\'s quantization condition for angular momentum, by showing that the allowed orbits correspond to those in which a whole number of electron de Broglie wavelengths fit exactly around the orbit\'s circumference'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'De Broglie showed that Bohr\'s otherwise ad-hoc quantization postulate (L = nh/2π) can be understood as the condition that a standing wave pattern forms around the orbit — specifically, that the orbit\'s circumference must accommodate a whole number of the electron\'s de Broglie wavelengths.',
     difficulty: 'hard'
   },
@@ -358,12 +357,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'According to de Broglie\'s interpretation, the allowed (quantized) Bohr orbits are those for which',
     options: [
+      'no electron wave can exist in any orbit',
       'the orbit circumference is an integral multiple of the electron\'s de Broglie wavelength (2πr = nλ)',
-      'the orbit circumference is completely unrelated to the electron\'s wavelength',
       'the orbit radius equals the electron\'s de Broglie wavelength exactly',
-      'no electron wave can exist in any orbit'
+      'the orbit circumference is completely unrelated to the electron\'s wavelength'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'De Broglie\'s condition 2πr = nλ (circumference equals an integral number of wavelengths) ensures the electron wave forms a stable standing wave pattern around the orbit, providing a physical/wave-based rationale for Bohr\'s originally postulated quantization rule.',
     difficulty: 'hard'
   },
@@ -373,11 +372,11 @@ export const ATOMS = [
     question: 'Despite its successes in explaining the hydrogen spectrum, Bohr\'s model has notable limitations, including that it',
     options: [
       'perfectly explains the spectra of all atoms, including complex multi-electron atoms, with no issues',
-      'could not satisfactorily explain the detailed spectra of multi-electron atoms and did not account for the relative intensities of spectral lines',
       'has no limitations whatsoever and was never superseded by any later theory',
-      'was immediately proven completely incorrect and discarded entirely'
+      'was immediately proven completely incorrect and discarded entirely',
+      'could not satisfactorily explain the detailed spectra of multi-electron atoms and did not account for the relative intensities of spectral lines'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Bohr\'s model, while successful for hydrogen (and hydrogen-like single-electron ions), could not accurately predict the more complex spectra of multi-electron atoms and did not explain the relative intensities of different spectral lines, among other limitations, which were later addressed by full quantum mechanics.',
     difficulty: 'medium'
   },
@@ -400,10 +399,10 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The concept of "excitation energy" of an atom refers to the energy required to',
     options: [
-      'completely remove an electron from the atom (ionize it)',
-      'raise an electron from its ground state to some higher (excited) energy level, without removing it from the atom entirely',
       'add an extra electron to the atom, forming a negative ion',
-      'destroy the nucleus of the atom'
+      'raise an electron from its ground state to some higher (excited) energy level, without removing it from the atom entirely',
+      'destroy the nucleus of the atom',
+      'completely remove an electron from the atom (ionize it)'
     ],
     correctIndex: 1,
     explanation: 'Excitation energy is the energy needed to move an electron from the ground state to a higher (but still bound) energy level within the same atom, as distinct from ionization energy, which removes the electron entirely.',
@@ -414,12 +413,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'When an atom absorbs a photon with energy exactly matching the difference between its ground state and a particular excited state, the atom',
     options: [
-      'cannot absorb the photon at all',
-      'absorbs the photon and its electron transitions from the ground state to that specific excited state',
+      'emits an identical photon simultaneously with no change in its own state',
       'immediately ionizes completely',
-      'emits an identical photon simultaneously with no change in its own state'
+      'cannot absorb the photon at all',
+      'absorbs the photon and its electron transitions from the ground state to that specific excited state'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'An atom can absorb a photon only if its energy precisely matches the energy gap between two of its allowed energy levels; if it matches the ground-to-excited-state gap, the atom absorbs the photon and its electron transitions to that excited state.',
     difficulty: 'medium'
   },
@@ -443,11 +442,11 @@ export const ATOMS = [
     question: 'The absorption spectrum of an element, showing dark lines against a continuous background, arises when',
     options: [
       'the element emits light at all possible wavelengths with no absorption occurring',
-      'atoms of a cool gas absorb specific wavelengths from a continuous spectrum of light passing through it, corresponding to the energy differences between their allowed energy levels, leaving dark lines at those wavelengths',
       'the element is completely transparent at all wavelengths, showing no spectral features at all',
-      'no relationship exists between absorption and emission spectra'
+      'no relationship exists between absorption and emission spectra',
+      'atoms of a cool gas absorb specific wavelengths from a continuous spectrum of light passing through it, corresponding to the energy differences between their allowed energy levels, leaving dark lines at those wavelengths'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'An absorption spectrum shows dark lines at wavelengths corresponding to the specific energy transitions absorbed by atoms in a cooler gas, superimposed on an otherwise continuous background spectrum from a hotter source behind it.',
     difficulty: 'medium'
   },
@@ -470,12 +469,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The study of absorption/emission spectra of the Sun and stars (astronomical spectroscopy) allows scientists to determine',
     options: [
-      'nothing useful about the composition of stars',
-      'the chemical composition of stars and other astronomical objects, since each element leaves its characteristic spectral "fingerprint"',
       'only the distance to a star, with no information about its composition',
-      'only the temperature of a star, with no information about the elements present'
+      'nothing useful about the composition of stars',
+      'only the temperature of a star, with no information about the elements present',
+      'the chemical composition of stars and other astronomical objects, since each element leaves its characteristic spectral "fingerprint"'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since each element produces a unique pattern of spectral lines, analysis of the absorption/emission spectra from stars allows astronomers to determine which elements are present in stellar atmospheres, a foundational technique in astrophysics.',
     difficulty: 'medium'
   },
@@ -484,10 +483,10 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The element helium was first discovered through',
     options: [
-      'direct chemical analysis of rocks on Earth',
-      'spectroscopic analysis of sunlight, where an unexplained spectral line (later attributed to a previously unknown element, helium) was observed before it was found on Earth',
       'radioactive decay experiments',
-      'analysis of meteorite samples that fell to Earth'
+      'spectroscopic analysis of sunlight, where an unexplained spectral line (later attributed to a previously unknown element, helium) was observed before it was found on Earth',
+      'analysis of meteorite samples that fell to Earth',
+      'direct chemical analysis of rocks on Earth'
     ],
     correctIndex: 1,
     explanation: 'Helium is famous for having been discovered spectroscopically in the Sun\'s spectrum (hence its name, from the Greek "helios" for Sun) before it was subsequently identified and isolated on Earth, illustrating the power of spectroscopic analysis.',
@@ -498,10 +497,10 @@ export const ATOMS = [
     type: 'mcq',
     question: 'Rutherford\'s scattering experiment allowed an estimate of the size of the nucleus by analyzing',
     options: [
-      'the color of the scattered alpha particles',
-      'the distance of closest approach of alpha particles to the nucleus, determined from the alpha particle\'s kinetic energy and the electrostatic repulsion it experiences as it approaches the nucleus',
       'the temperature of the gold foil',
-      'the total mass of the gold foil used'
+      'the distance of closest approach of alpha particles to the nucleus, determined from the alpha particle\'s kinetic energy and the electrostatic repulsion it experiences as it approaches the nucleus',
+      'the total mass of the gold foil used',
+      'the color of the scattered alpha particles'
     ],
     correctIndex: 1,
     explanation: 'By calculating the distance of closest approach for alpha particles undergoing significant deflection (based on their kinetic energy converting to electrostatic potential energy as they approach the nucleus), Rutherford could estimate an upper bound on the size of the nucleus.',
@@ -512,12 +511,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'Alpha particles used in Rutherford\'s scattering experiment are essentially',
     options: [
-      'electrons',
-      'helium nuclei (two protons and two neutrons, with a net positive charge)',
       'neutrons, with no charge',
-      'photons of light'
+      'electrons',
+      'photons of light',
+      'helium nuclei (two protons and two neutrons, with a net positive charge)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Alpha particles are helium nuclei, consisting of two protons and two neutrons, carrying a net positive charge of +2e, which is essential to the electrostatic repulsion mechanism used to probe the nucleus in Rutherford\'s experiment.',
     difficulty: 'easy'
   },
@@ -527,11 +526,11 @@ export const ATOMS = [
     question: 'The scattering of alpha particles in Rutherford\'s experiment is primarily due to',
     options: [
       'gravitational attraction between the alpha particles and the gold nuclei',
-      'the electrostatic (Coulomb) repulsive force between the positively charged alpha particles and the positively charged gold nuclei',
       'magnetic forces between the alpha particles and the gold foil',
-      'nuclear (strong) forces acting over very large distances'
+      'nuclear (strong) forces acting over very large distances',
+      'the electrostatic (Coulomb) repulsive force between the positively charged alpha particles and the positively charged gold nuclei'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since both the alpha particle and the gold nucleus are positively charged, the dominant interaction causing scattering is the electrostatic (Coulomb) repulsion between them, which is the basis for Rutherford\'s scattering formula.',
     difficulty: 'medium'
   },
@@ -542,8 +541,8 @@ export const ATOMS = [
     options: [
       'is the same for all scattering angles, with no angular dependence',
       'decreases as the scattering angle increases, with very few particles scattered at large angles',
-      'increases indefinitely as the scattering angle increases, with most particles scattered at 180°',
-      'has no dependence on the scattering angle or any other experimental parameter'
+      'has no dependence on the scattering angle or any other experimental parameter',
+      'increases indefinitely as the scattering angle increases, with most particles scattered at 180°'
     ],
     correctIndex: 1,
     explanation: 'Rutherford\'s scattering formula predicts (and experiments confirmed) that the number of scattered particles decreases sharply with increasing scattering angle, consistent with the idea that large-angle scattering (requiring a very close approach to the small nucleus) is a comparatively rare event.',
@@ -554,10 +553,10 @@ export const ATOMS = [
     type: 'mcq',
     question: 'A key assumption underlying Rutherford\'s trajectory calculations for alpha particle scattering is that',
     options: [
-      'the gold nucleus moves significantly during the scattering event, since it has comparable mass to the alpha particle',
-      'the gold nucleus, being much more massive than the alpha particle, remains essentially stationary during the scattering event',
       'the alpha particle passes directly through the gold nucleus without any interaction',
-      'there is no electrostatic force involved at all'
+      'the gold nucleus, being much more massive than the alpha particle, remains essentially stationary during the scattering event',
+      'there is no electrostatic force involved at all',
+      'the gold nucleus moves significantly during the scattering event, since it has comparable mass to the alpha particle'
     ],
     correctIndex: 1,
     explanation: 'Since the gold nucleus is far more massive than the alpha particle, it is reasonably approximated as remaining essentially stationary (recoil-free) during the brief scattering interaction, simplifying the trajectory calculations.',
@@ -568,12 +567,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The trajectory (path) followed by a scattered alpha particle in Rutherford\'s classical analysis, under the influence of the repulsive Coulomb force from the nucleus, is a',
     options: [
-      'straight line, unaffected by the nucleus',
-      'hyperbola, with the nucleus at one focus',
+      'parabola, similar to projectile motion under gravity',
       'perfect circle around the nucleus',
-      'parabola, similar to projectile motion under gravity'
+      'straight line, unaffected by the nucleus',
+      'hyperbola, with the nucleus at one focus'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'For a repulsive inverse-square force (like the Coulomb repulsion here), the classical trajectory of the scattered particle is a hyperbola, with the source of the force (the nucleus) located at one focus of the hyperbola.',
     difficulty: 'hard'
   },
@@ -582,12 +581,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The "impact parameter" in the context of alpha particle scattering refers to',
     options: [
+      'the exact scattering angle observed',
       'the total energy of the incoming alpha particle',
-      'the perpendicular distance between the initial (undeflected) trajectory of the alpha particle and the nucleus, if the particle were to continue in a straight line',
       'the mass of the alpha particle',
-      'the exact scattering angle observed'
+      'the perpendicular distance between the initial (undeflected) trajectory of the alpha particle and the nucleus, if the particle were to continue in a straight line'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The impact parameter is defined as the perpendicular distance from the nucleus to the line along which the alpha particle would have travelled if there were no force deflecting it; smaller impact parameters generally correspond to larger scattering angles.',
     difficulty: 'hard'
   },
@@ -596,10 +595,10 @@ export const ATOMS = [
     type: 'mcq',
     question: 'A smaller impact parameter in alpha particle scattering generally results in',
     options: [
-      'a smaller scattering angle (less deflection)',
-      'a larger scattering angle (more deflection), since the alpha particle passes closer to the nucleus and experiences a stronger repulsive force',
       'no scattering at all',
-      'the alpha particle being completely absorbed by the nucleus'
+      'a larger scattering angle (more deflection), since the alpha particle passes closer to the nucleus and experiences a stronger repulsive force',
+      'the alpha particle being completely absorbed by the nucleus',
+      'a smaller scattering angle (less deflection)'
     ],
     correctIndex: 1,
     explanation: 'A smaller impact parameter means the alpha particle passes closer to the nucleus, experiencing a stronger Coulomb repulsion and hence undergoing a larger deflection (scattering angle).',
@@ -610,12 +609,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The specific alpha particles that undergo very large-angle scattering (close to 180°) in Rutherford\'s experiment are those that',
     options: [
-      'have a very large impact parameter, passing far from the nucleus',
-      'have a very small impact parameter, approaching the nucleus almost head-on',
       'never actually interact with any nucleus at all',
-      'travel through multiple gold atoms simultaneously with no cumulative effect'
+      'have a very large impact parameter, passing far from the nucleus',
+      'travel through multiple gold atoms simultaneously with no cumulative effect',
+      'have a very small impact parameter, approaching the nucleus almost head-on'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Very large-angle (near head-on) scattering occurs for the rare alpha particles with a very small impact parameter, approaching the tiny nucleus almost directly and experiencing the strongest possible repulsive interaction.',
     difficulty: 'medium'
   },
@@ -624,9 +623,9 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The overall electrical neutrality of an atom (in its normal, non-ionized state) is maintained because',
     options: [
-      'the atom has no charged particles at all',
-      'the total positive charge of the nucleus (from protons) exactly balances the total negative charge of the surrounding electrons',
       'the nucleus has no charge, only the electrons carry charge',
+      'the total positive charge of the nucleus (from protons) exactly balances the total negative charge of the surrounding electrons',
+      'the atom has no charged particles at all',
       'atoms are never actually electrically neutral'
     ],
     correctIndex: 1,
@@ -638,12 +637,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'In terms of the historical development of atomic models, the correct chronological order is',
     options: [
-      'Rutherford\'s nuclear model → Thomson\'s plum pudding model → Bohr\'s quantized model',
-      'Thomson\'s plum pudding model → Rutherford\'s nuclear model → Bohr\'s quantized model',
+      'All three models were proposed simultaneously, with no clear chronological order',
       'Bohr\'s quantized model → Thomson\'s plum pudding model → Rutherford\'s nuclear model',
-      'All three models were proposed simultaneously, with no clear chronological order'
+      'Thomson\'s plum pudding model → Rutherford\'s nuclear model → Bohr\'s quantized model',
+      'Rutherford\'s nuclear model → Thomson\'s plum pudding model → Bohr\'s quantized model'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'The historical progression was: Thomson\'s plum pudding model came first, then Rutherford\'s scattering experiment led to his nuclear model, and finally Bohr introduced quantization to resolve the stability problem inherent in Rutherford\'s classical model.',
     difficulty: 'medium'
   },
@@ -653,11 +652,11 @@ export const ATOMS = [
     question: 'The transition of the atomic model from Thomson\'s to Rutherford\'s represented a shift from',
     options: [
       'a nucleus-centred model to a uniformly-distributed-charge model',
-      'a uniformly-distributed-charge model to a nucleus-centred model, based on new experimental evidence from alpha scattering',
       'no meaningful change at all between the two models',
-      'a model with no electrons to one with electrons'
+      'a model with no electrons to one with electrons',
+      'a uniformly-distributed-charge model to a nucleus-centred model, based on new experimental evidence from alpha scattering'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Thomson\'s model had positive charge spread throughout the atom, while Rutherford\'s scattering results necessitated a shift to a model with charge (and mass) concentrated in a small central nucleus — a significant conceptual shift driven directly by new experimental evidence.',
     difficulty: 'medium'
   },
@@ -682,8 +681,8 @@ export const ATOMS = [
     options: [
       'any arbitrarily complex, multi-electron atom',
       'hydrogen and hydrogen-like ions (single-electron systems, such as He⁺ or Li²⁺), where there is only one electron interacting with the nucleus',
-      'only molecules, never individual atoms',
-      'atoms with no nucleus at all'
+      'atoms with no nucleus at all',
+      'only molecules, never individual atoms'
     ],
     correctIndex: 1,
     explanation: 'The Bohr model, in its original and simplest form, is most successfully and accurately applied to hydrogen and other single-electron (hydrogen-like) systems, where the analysis of a single electron orbiting a nucleus is mathematically tractable.',
@@ -709,11 +708,11 @@ export const ATOMS = [
     question: 'The concept of "stationary states" in Bohr\'s model refers to orbits in which',
     options: [
       'the electron is completely motionless, with zero velocity',
-      'the electron moves in a stable, defined orbit without radiating energy, despite continuously accelerating (undergoing circular motion)',
       'the nucleus itself is stationary, unrelated to the electron\'s motion',
+      'the electron moves in a stable, defined orbit without radiating energy, despite continuously accelerating (undergoing circular motion)',
       'the entire atom does not move through space at all'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: '"Stationary" in this context refers to the stability of the orbit (constant energy, no radiation), not to the electron being physically motionless — the electron continues its circular motion but does not lose energy while in one of these special orbits.',
     difficulty: 'medium'
   },
@@ -722,12 +721,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'In Bohr\'s model, the centripetal force required to keep the electron in its circular orbit around the nucleus is provided by',
     options: [
-      'gravitational attraction between the electron and the nucleus',
-      'the electrostatic (Coulomb) attraction between the negatively charged electron and the positively charged nucleus',
       'magnetic forces exclusively',
-      'nuclear (strong) forces acting on the electron directly'
+      'nuclear (strong) forces acting on the electron directly',
+      'the electrostatic (Coulomb) attraction between the negatively charged electron and the positively charged nucleus',
+      'gravitational attraction between the electron and the nucleus'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'The electrostatic Coulomb attraction between the oppositely charged electron and nucleus provides the necessary centripetal force to maintain the electron\'s circular orbital motion in Bohr\'s model.',
     difficulty: 'easy'
   },
@@ -750,10 +749,10 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The wavelength of the spectral line corresponding to the transition from n = 3 to n = 2 in hydrogen falls within the',
     options: [
-      'ultraviolet region (part of the Lyman series)',
-      'visible region (part of the Balmer series)',
       'infrared region (part of the Paschen series)',
-      'gamma ray region'
+      'visible region (part of the Balmer series)',
+      'gamma ray region',
+      'ultraviolet region (part of the Lyman series)'
     ],
     correctIndex: 1,
     explanation: 'Since this transition ends at n = 2, it belongs to the Balmer series, and this particular line (n = 3 to n = 2) is a well-known visible-light line (the "H-alpha" line) in the hydrogen spectrum.',
@@ -764,12 +763,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'As the principal quantum number of the initial state increases (for transitions ending at the same final level, e.g., all transitions in the Lyman series), the energy of the emitted photon',
     options: [
-      'increases progressively, approaching a limiting (series limit) value as the initial level tends to n = ∞',
       'decreases without bound, eventually becoming negative',
       'remains exactly the same for every transition',
-      'drops abruptly to zero once the initial level exceeds n = 2'
+      'drops abruptly to zero once the initial level exceeds n = 2',
+      'increases progressively, approaching a limiting (series limit) value as the initial level tends to n = ∞'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'As the initial n increases toward infinity (for transitions ending at the same fixed lower level), the photon energy increases progressively, approaching a maximum limiting value — the series limit — corresponding to a transition effectively starting from n = ∞.',
     difficulty: 'hard'
   },
@@ -778,10 +777,10 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The "series limit" of a spectral series (like the Lyman series) corresponds to the transition where the initial energy level approaches',
     options: [
-      'n = 1',
-      'n = ∞ (ionization limit), representing the shortest wavelength (highest energy) line in that series',
       'n = 2 exclusively',
-      'a negative value of n'
+      'n = ∞ (ionization limit), representing the shortest wavelength (highest energy) line in that series',
+      'a negative value of n',
+      'n = 1'
     ],
     correctIndex: 1,
     explanation: 'The series limit corresponds to a transition from n = ∞ (effectively, from just above the ionization threshold) down to the series\' fixed lower level, representing the highest-energy (shortest-wavelength) line that series can have.',
@@ -791,8 +790,8 @@ export const ATOMS = [
     id: 'atoms-60',
     type: 'mcq',
     question: 'When an electron in a hydrogen atom absorbs a photon and jumps from n = 1 to n = 3, this transition belongs to (i.e., the reverse process of emission would belong to) the',
-    options: ['Balmer series', 'Lyman series', 'Paschen series', 'None of the standard named series'],
-    correctIndex: 1,
+    options: ['Paschen series', 'Balmer series', 'Lyman series', 'None of the standard named series'],
+    correctIndex: 2,
     explanation: 'Any transition between n = 1 and any higher level (whether absorption from 1 to 3, or emission from 3 to 1) belongs to the Lyman series, since the series is defined by the lower level (n = 1) involved.',
     difficulty: 'medium'
   },
@@ -801,12 +800,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The fact that Bohr\'s theoretical formula for hydrogen spectral line wavelengths matched the previously known empirical Balmer/Rydberg formula was considered',
     options: [
-      'a coincidence with no real significance',
-      'a major triumph and strong validation of Bohr\'s quantized atomic model, since a genuinely new theoretical framework reproduced an already-established experimental pattern',
+      'unrelated to the validity of Bohr\'s postulates',
       'evidence that Bohr\'s model was actually incorrect',
-      'unrelated to the validity of Bohr\'s postulates'
+      'a coincidence with no real significance',
+      'a major triumph and strong validation of Bohr\'s quantized atomic model, since a genuinely new theoretical framework reproduced an already-established experimental pattern'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The successful theoretical derivation of the previously empirical Balmer formula was a landmark achievement for Bohr\'s model, providing strong validation for his quantization postulates by connecting them to already well-established experimental spectroscopic data.',
     difficulty: 'medium'
   },
@@ -829,12 +828,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The Rutherford model, while successfully explaining the existence of a small dense nucleus, was ultimately considered incomplete because it',
     options: [
-      'correctly predicted the discrete, stable spectral lines observed in atoms with no issues',
-      'could not explain the stability of atoms or the discrete nature of atomic spectra, both of which required the additional quantization ideas introduced later by Bohr',
       'incorrectly predicted that atoms have no nucleus at all',
-      'was found to have no experimental support whatsoever'
+      'was found to have no experimental support whatsoever',
+      'correctly predicted the discrete, stable spectral lines observed in atoms with no issues',
+      'could not explain the stability of atoms or the discrete nature of atomic spectra, both of which required the additional quantization ideas introduced later by Bohr'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'While Rutherford\'s model correctly established the existence of a small, dense, positively charged nucleus, it lacked any mechanism to explain why atoms are stable (rather than electrons spiraling in) or why they emit only discrete spectral lines — gaps that Bohr\'s quantization postulate specifically addressed.',
     difficulty: 'medium'
   },
@@ -843,12 +842,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The overall historical narrative of atomic models (Thomson → Rutherford → Bohr) illustrates the general scientific principle that',
     options: [
+      'later models are always identical in every respect to earlier ones',
       'once a model is proposed, it is never revised or replaced, regardless of new evidence',
       'scientific models evolve and are revised as new experimental evidence emerges, with each successive model building upon (and correcting limitations of) the previous one',
-      'atomic models were developed without any reference to experimental data at any stage',
-      'later models are always identical in every respect to earlier ones'
+      'atomic models were developed without any reference to experimental data at any stage'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'This historical progression exemplifies how scientific understanding advances iteratively: new experimental evidence (like Rutherford\'s scattering results) drives revisions to existing models, and successive theories build on and refine earlier ones to better match observations.',
     difficulty: 'medium'
   },
@@ -857,10 +856,10 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The concept of the electron "jumping" instantaneously between discrete orbits in Bohr\'s model, without passing through any intermediate states, is referred to as a',
     options: [
-      'continuous transition',
-      'quantum jump (or quantum leap)',
       'classical orbital decay',
-      'nuclear transition'
+      'quantum jump (or quantum leap)',
+      'nuclear transition',
+      'continuous transition'
     ],
     correctIndex: 1,
     explanation: 'The instantaneous transition of an electron between two discrete, quantized energy levels (with no continuous intermediate states) is termed a "quantum jump" or "quantum leap," a characteristically non-classical feature of Bohr\'s (and later, full quantum) theory.',
@@ -871,12 +870,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'Rutherford\'s alpha scattering experiment is historically significant not just for revealing the nucleus, but also for establishing',
     options: [
-      'that atoms have no internal structure of any kind',
-      'a foundational experimental technique (scattering experiments) that continues to be used in modern physics to probe the structure of matter at very small scales',
       'that alpha particles cannot interact with matter in any way',
-      'that gold is the only element with a nucleus'
+      'that atoms have no internal structure of any kind',
+      'that gold is the only element with a nucleus',
+      'a foundational experimental technique (scattering experiments) that continues to be used in modern physics to probe the structure of matter at very small scales'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Beyond its immediate discovery, Rutherford\'s scattering experiment established scattering-based experimental techniques as a fundamental and enduringly important method (still used in modern particle physics) for probing the internal structure of matter.',
     difficulty: 'medium'
   },
@@ -886,11 +885,11 @@ export const ATOMS = [
     question: 'The fact that different elements produce distinctly different sets of spectral lines is fundamentally due to',
     options: [
       'random chance, with no underlying physical cause',
+      'the temperature of the light source alone, unrelated to the element\'s composition',
       'the fact that different elements have different arrangements and numbers of electrons (and different nuclear charges), leading to different sets of allowed energy levels and hence different transition energies',
-      'all elements actually having identical spectra, an observational error',
-      'the temperature of the light source alone, unrelated to the element\'s composition'
+      'all elements actually having identical spectra, an observational error'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Since each element has a characteristic electronic structure (determined by its nuclear charge and electron configuration), the resulting set of allowed energy levels — and hence the possible transition energies and spectral line wavelengths — differs uniquely from element to element.',
     difficulty: 'medium'
   },
@@ -899,12 +898,12 @@ export const ATOMS = [
     type: 'mcq',
     question: 'The energy levels of the hydrogen atom, as predicted by Bohr\'s model, are all',
     options: [
+      'increasing without bound as n increases',
       'positive, since the electron is not actually bound to the nucleus',
       'negative, reflecting the fact that the electron is in a bound state relative to the reference of a free electron at rest infinitely far from the nucleus',
-      'exactly zero for every value of n',
-      'increasing without bound as n increases'
+      'exactly zero for every value of n'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'All the bound-state energy levels in Bohr\'s hydrogen model are negative, consistent with the standard convention where zero energy corresponds to a free (unbound) electron at rest infinitely far from the nucleus.',
     difficulty: 'medium'
   },
@@ -928,11 +927,11 @@ export const ATOMS = [
     question: 'The overall significance of the study of atomic models and spectra lies in establishing that',
     options: [
       'atoms have no meaningful internal structure worth studying',
-      'atomic structure can be probed and understood through a combination of scattering experiments, spectroscopic observation, and theoretical modeling, revealing a nucleus-centred, quantized electronic structure',
+      'spectroscopy has no practical or scientific applications',
       'atoms behave in a completely arbitrary and unpredictable manner, with no consistent underlying structure',
-      'spectroscopy has no practical or scientific applications'
+      'atomic structure can be probed and understood through a combination of scattering experiments, spectroscopic observation, and theoretical modeling, revealing a nucleus-centred, quantized electronic structure'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The combined historical effort of scattering experiments (Rutherford), spectroscopic observations (Balmer and others), and theoretical modeling (Bohr) collectively established our modern understanding of atomic structure as centred on a small nucleus surrounded by electrons occupying quantized energy levels.',
     difficulty: 'medium'
   },

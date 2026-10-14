@@ -5,12 +5,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'Chemical kinetics is the branch of chemistry that deals with',
     options: [
-      'the extent to which a reaction proceeds at equilibrium',
-      'the rate at which a chemical reaction occurs and the factors affecting it',
+      'the physical states of reactants and products',
       'the heat evolved or absorbed during a reaction',
-      'the physical states of reactants and products'
+      'the extent to which a reaction proceeds at equilibrium',
+      'the rate at which a chemical reaction occurs and the factors affecting it'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Chemical kinetics is concerned with the speed (rate) of chemical reactions and the various factors, such as concentration, temperature, and catalysts, that influence this rate.',
     difficulty: 'easy'
   },
@@ -19,12 +19,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'The average rate of a reaction is defined as the',
     options: [
-      'change in concentration of a reactant or product divided by the time interval over which the change occurs',
-      'instantaneous slope of the concentration vs time curve at a single point',
+      'equilibrium constant divided by time',
       'total amount of product formed regardless of time taken',
-      'equilibrium constant divided by time'
+      'instantaneous slope of the concentration vs time curve at a single point',
+      'change in concentration of a reactant or product divided by the time interval over which the change occurs'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Average rate is calculated as the change in concentration of a reactant or product over a finite time interval, Δ[concentration]/Δt.',
     difficulty: 'easy'
   },
@@ -34,11 +34,11 @@ export const CHEMICAL_KINETICS = [
     question: 'The instantaneous rate of a reaction at a particular time is obtained from a concentration vs time graph as the',
     options: [
       'average slope over the entire graph',
-      'slope of the tangent drawn to the curve at that particular time',
+      'x-intercept of the graph',
       'y-intercept of the graph',
-      'x-intercept of the graph'
+      'slope of the tangent drawn to the curve at that particular time'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Instantaneous rate is the rate at a specific moment in time, obtained mathematically as the derivative of concentration with respect to time, which graphically corresponds to the slope of the tangent at that point.',
     difficulty: 'medium'
   },
@@ -47,12 +47,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'Since the concentration of a reactant decreases with time, the rate of disappearance of a reactant is expressed with a negative sign so that',
     options: [
-      'the calculated rate matches the units of concentration',
-      'the overall reaction rate is reported as a positive quantity',
       'the rate constant becomes negative',
-      'the reaction becomes reversible'
+      'the reaction becomes reversible',
+      'the calculated rate matches the units of concentration',
+      'the overall reaction rate is reported as a positive quantity'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since d[Reactant]/dt is inherently negative (concentration decreasing), a negative sign is included in the rate expression (Rate = -d[R]/dt) so that the reported rate of reaction is a positive quantity.',
     difficulty: 'medium'
   },
@@ -74,8 +74,8 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-6',
     type: 'mcq',
     question: 'The common unit for the rate of a reaction is',
-    options: ['mol L-1 s-1 (concentration per unit time)', 'mol s-1 only', 'L mol-1', 's-1 only, regardless of reaction order'],
-    correctIndex: 0,
+    options: ['mol s-1 only', 's-1 only, regardless of reaction order', 'L mol-1', 'mol L-1 s-1 (concentration per unit time)'],
+    correctIndex: 3,
     explanation: 'Since rate is defined as change in concentration per unit time, its unit is typically mol L-1 s-1 (or equivalent concentration/time units).',
     difficulty: 'easy'
   },
@@ -83,7 +83,7 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-7',
     type: 'mcq',
     question: 'Which of the following is NOT a factor that generally affects the rate of a chemical reaction, as covered in NCERT?',
-    options: ['Concentration of reactants', 'Temperature', 'Presence of a catalyst', 'The colour of the container used'],
+    options: ['Concentration of reactants', 'Presence of a catalyst', 'Temperature', 'The colour of the container used'],
     correctIndex: 3,
     explanation: 'The colour of the reaction vessel has no bearing on reaction rate; concentration, temperature, and catalysts are all well-established factors influencing rate.',
     difficulty: 'easy'
@@ -94,8 +94,6 @@ export const CHEMICAL_KINETICS = [
     question: 'For heterogeneous reactions (involving reactants in different phases), the rate of reaction is also significantly influenced by the',
     options: ['molecular symmetry of the reactants', 'atomic number of the elements involved', 'colour of the reactants', 'surface area of the solid reactant exposed to the other phase'],
     correctIndex: 3,
-    options: ['colour of the reactants', 'surface area of the solid reactant exposed to the other phase', 'atomic number of the elements involved', 'molecular symmetry of the reactants'],
-    correctIndex: 1,
     explanation: 'In heterogeneous reactions, greater surface area of the solid reactant increases the contact between reacting phases, thereby increasing the rate of reaction.',
     difficulty: 'medium'
   },
@@ -105,11 +103,11 @@ export const CHEMICAL_KINETICS = [
     question: 'The rate law (rate equation) of a reaction expresses the rate as a function of the',
     options: [
       'temperature of the reaction only',
-      'molar concentrations of the reactants, each raised to some power',
       'total volume of the reaction vessel',
-      'physical state of the products only'
+      'physical state of the products only',
+      'molar concentrations of the reactants, each raised to some power'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The rate law expresses the rate of a reaction in terms of the molar concentrations of the reactants, each raised to a power that must be determined experimentally.',
     difficulty: 'easy'
   },
@@ -118,12 +116,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'The rate constant (k) of a reaction can be determined',
     options: [
-      'only theoretically, using the balanced equation',
-      'only experimentally, and cannot be predicted purely from the stoichiometry of the balanced equation',
       'from the atomic masses of the reactants',
-      'from the molar mass of the solvent only'
+      'only theoretically, using the balanced equation',
+      'from the molar mass of the solvent only',
+      'only experimentally, and cannot be predicted purely from the stoichiometry of the balanced equation'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The rate law and the associated rate constant must be determined experimentally, since they cannot generally be deduced simply from the stoichiometric coefficients of the balanced chemical equation.',
     difficulty: 'medium'
   },
@@ -132,12 +130,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'The order of a reaction with respect to a given rate law rate = k[A]^x[B]^y is defined as',
     options: [
-      'the sum of the exponents x and y, i.e. the sum of the powers to which the concentration terms are raised in the rate law',
       'the number of reactant molecules colliding simultaneously',
       'the number of steps in the reaction mechanism',
-      'always equal to the sum of the stoichiometric coefficients in the balanced equation'
+      'always equal to the sum of the stoichiometric coefficients in the balanced equation',
+      'the sum of the exponents x and y, i.e. the sum of the powers to which the concentration terms are raised in the rate law'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The overall order of a reaction is the sum of the powers (exponents) of the concentration terms appearing in the experimentally determined rate law.',
     difficulty: 'easy'
   },
@@ -160,12 +158,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'Molecularity of an elementary reaction is defined as the',
     options: [
-      'sum of the concentration exponents in the experimental rate law',
-      'number of reacting species (atoms, ions, or molecules) that must collide simultaneously in that single elementary step to bring about the reaction',
+      'number of moles of product formed per mole of reactant',
       'total number of steps in a reaction mechanism',
-      'number of moles of product formed per mole of reactant'
+      'sum of the concentration exponents in the experimental rate law',
+      'number of reacting species (atoms, ions, or molecules) that must collide simultaneously in that single elementary step to bring about the reaction'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Molecularity refers to the number of reactant species that must come together in a single elementary reaction step for the reaction to occur.',
     difficulty: 'easy'
   },
@@ -173,8 +171,8 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-14',
     type: 'mcq',
     question: 'Molecularity of a reaction can never be',
-    options: ['one', 'two', 'zero or a fraction', 'three'],
-    correctIndex: 2,
+    options: ['two', 'one', 'three', 'zero or a fraction'],
+    correctIndex: 3,
     explanation: 'Since molecularity refers to a definite number of colliding species in an elementary step, it must always be a positive whole number (typically 1, 2, or rarely 3) and can never be zero or fractional.',
     difficulty: 'medium'
   },
@@ -183,10 +181,10 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'The concept of molecularity applies strictly to',
     options: [
-      'the overall reaction, regardless of how many steps it involves',
-      'each elementary step of a reaction mechanism, not necessarily to the overall complex reaction',
       'only zero order reactions',
-      'only reactions occurring in the gas phase'
+      'each elementary step of a reaction mechanism, not necessarily to the overall complex reaction',
+      'only reactions occurring in the gas phase',
+      'the overall reaction, regardless of how many steps it involves'
     ],
     correctIndex: 1,
     explanation: 'Molecularity is meaningful only for elementary (single-step) reactions; for a multistep (complex) reaction, molecularity is defined separately for each individual elementary step, not for the overall process.',
@@ -197,12 +195,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'In a multistep reaction mechanism, the overall rate of the reaction is generally determined by the',
     options: [
+      'average rate of all steps combined',
       'fastest step in the mechanism',
-      'slowest step in the mechanism, known as the rate-determining step',
       'first step in the mechanism, regardless of its rate',
-      'average rate of all steps combined'
+      'slowest step in the mechanism, known as the rate-determining step'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The overall reaction rate is governed by the slowest elementary step in the mechanism, called the rate-determining step, since it acts as a bottleneck for the overall process.',
     difficulty: 'medium'
   },
@@ -212,11 +210,11 @@ export const CHEMICAL_KINETICS = [
     question: 'For a zero order reaction, the rate of reaction is',
     options: [
       'directly proportional to the concentration of the reactant',
-      'independent of the concentration of the reactant',
+      'proportional to the square of the concentration of the reactant',
       'inversely proportional to the concentration of the reactant',
-      'proportional to the square of the concentration of the reactant'
+      'independent of the concentration of the reactant'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'In a zero order reaction, the rate law is rate = k[A]^0 = k, meaning the rate does not depend on the concentration of the reactant at all.',
     difficulty: 'easy'
   },
@@ -224,7 +222,7 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-18',
     type: 'mcq',
     question: 'The unit of the rate constant for a zero order reaction is',
-    options: ['s-1', 'mol L-1 s-1', 'mol-1 L s-1', 'mol-2 L2 s-1'],
+    options: ['mol-2 L2 s-1', 'mol L-1 s-1', 's-1', 'mol-1 L s-1'],
     correctIndex: 1,
     explanation: 'For a zero order reaction, rate = k, so k must carry the same units as rate itself, namely mol L-1 s-1.',
     difficulty: 'medium'
@@ -233,7 +231,7 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-19',
     type: 'mcq',
     question: 'The unit of the rate constant for a first order reaction is',
-    options: ['mol L-1 s-1', 's-1, independent of concentration units', 'mol-1 L s-1', 'mol-2 L2 s-1'],
+    options: ['mol-1 L s-1', 's-1, independent of concentration units', 'mol L-1 s-1', 'mol-2 L2 s-1'],
     correctIndex: 1,
     explanation: 'For a first order reaction, rate = k[A], so k has units of s-1 (reciprocal time), independent of the concentration units used.',
     difficulty: 'medium'
@@ -242,8 +240,8 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-20',
     type: 'mcq',
     question: 'The unit of the rate constant for a second order reaction is',
-    options: ['s-1', 'mol L-1 s-1', 'mol-1 L s-1 (or L mol-1 s-1)', 'mol L-2 s-1'],
-    correctIndex: 2,
+    options: ['mol L-1 s-1', 's-1', 'mol L-2 s-1', 'mol-1 L s-1 (or L mol-1 s-1)'],
+    correctIndex: 3,
     explanation: 'For a second order reaction, rate = k[A]^2 (or k[A][B]), so k must carry units of mol-1 L s-1 (equivalently L mol-1 s-1) to keep the rate expression dimensionally consistent.',
     difficulty: 'medium'
   },
@@ -253,11 +251,11 @@ export const CHEMICAL_KINETICS = [
     question: 'The integrated rate equation for a zero order reaction, [A] = [A]0 - kt, shows that a plot of [A] versus time gives a',
     options: [
       'straight line with a positive slope equal to k',
-      'straight line with a negative slope equal to -k',
+      'horizontal line, since concentration does not change',
       'curve that rises exponentially',
-      'horizontal line, since concentration does not change'
+      'straight line with a negative slope equal to -k'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Rearranging [A] = [A]0 - kt shows that plotting [A] against t gives a straight line with slope -k and intercept [A]0.',
     difficulty: 'medium'
   },
@@ -280,12 +278,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'For a first order reaction, a plot of log[A] (or ln[A]) versus time gives a',
     options: [
-      'straight line, from which the rate constant can be determined from the slope',
-      'parabola',
+      'curve that cannot be used to determine k',
       'horizontal line',
-      'curve that cannot be used to determine k'
+      'parabola',
+      'straight line, from which the rate constant can be determined from the slope'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The integrated first order rate law can be rearranged to ln[A] = ln[A]0 - kt, so a plot of ln[A] (or log[A]) versus time is linear, with slope related directly to the rate constant k.',
     difficulty: 'medium'
   },
@@ -294,10 +292,10 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'The half-life (t1/2) of a reaction is defined as the',
     options: [
-      'time required for the rate constant to become zero',
+      'time required for the products to reach half of their maximum possible concentration',
       'time required for the concentration of a reactant to be reduced to half of its initial value',
-      'time required for the reaction to reach completion',
-      'time required for the products to reach half of their maximum possible concentration'
+      'time required for the rate constant to become zero',
+      'time required for the reaction to reach completion'
     ],
     correctIndex: 1,
     explanation: 'Half-life is defined as the time taken for the concentration of a reactant to decrease to exactly half of its initial value.',
@@ -308,12 +306,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'For a first order reaction, the half-life (t1/2) is given by',
     options: [
-      't1/2 = 0.693/k, which is independent of the initial concentration',
-      't1/2 = [A]0/(2k), which depends on the initial concentration',
+      't1/2 = 2.303 × k × [A]0',
       't1/2 = k/[A]0',
-      't1/2 = 2.303 × k × [A]0'
+      't1/2 = [A]0/(2k), which depends on the initial concentration',
+      't1/2 = 0.693/k, which is independent of the initial concentration'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'For a first order reaction, t1/2 = 0.693/k, and notably this value does not depend on the initial concentration of the reactant, a distinguishing characteristic of first order kinetics.',
     difficulty: 'medium'
   },
@@ -324,8 +322,8 @@ export const CHEMICAL_KINETICS = [
     options: [
       't1/2 = 0.693/k, independent of initial concentration',
       't1/2 = [A]0/(2k), which is directly proportional to the initial concentration',
-      't1/2 = k/[A]0, inversely proportional to initial concentration',
-      't1/2 is undefined for zero order reactions'
+      't1/2 is undefined for zero order reactions',
+      't1/2 = k/[A]0, inversely proportional to initial concentration'
     ],
     correctIndex: 1,
     explanation: 'For a zero order reaction, t1/2 = [A]0/(2k); unlike first order reactions, this half-life depends directly on the initial concentration of the reactant.',
@@ -336,12 +334,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'The fact that the half-life of a first order reaction is independent of the initial concentration of the reactant is',
     options: [
-      'a coincidence with no theoretical basis',
-      'a distinguishing characteristic that can be used to identify a reaction as first order',
       'true for all reaction orders, not just first order',
-      'only true at very high temperatures'
+      'a coincidence with no theoretical basis',
+      'only true at very high temperatures',
+      'a distinguishing characteristic that can be used to identify a reaction as first order'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since t1/2 = 0.693/k for a first order reaction (with no dependence on [A]0), constancy of half-life across different starting concentrations serves as a diagnostic test for first order kinetics.',
     difficulty: 'medium'
   },
@@ -352,8 +350,8 @@ export const CHEMICAL_KINETICS = [
     options: [
       'truly zero order but mistakenly labelled first order',
       'actually of higher order (such as second order) but experimentally behaves as first order because one reactant is present in large excess',
-      'always exactly second order under all conditions',
-      'a reaction with no measurable rate at all'
+      'a reaction with no measurable rate at all',
+      'always exactly second order under all conditions'
     ],
     correctIndex: 1,
     explanation: 'A pseudo first order reaction has a rate law that is genuinely higher order, but because one reactant (often water) is present in great excess and its concentration remains essentially constant, the reaction appears to follow first order kinetics with respect to the other reactant.',
@@ -364,9 +362,9 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'The acid-catalysed hydrolysis of ethyl acetate (CH3COOC2H5 + H2O → CH3COOH + C2H5OH) is a classic example of a',
     options: [
-      'zero order reaction',
-      'pseudo first order reaction, since water is present in large excess',
       'third order reaction with respect to water',
+      'pseudo first order reaction, since water is present in large excess',
+      'zero order reaction',
       'reaction with no measurable order'
     ],
     correctIndex: 1,
@@ -377,8 +375,8 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-30',
     type: 'mcq',
     question: 'The inversion (acid-catalysed hydrolysis) of cane sugar, C12H22O11 + H2O → glucose + fructose, is another standard example of a',
-    options: ['zero order reaction', 'pseudo first order reaction', 'third order reaction', 'reaction with negative order'],
-    correctIndex: 1,
+    options: ['reaction with negative order', 'third order reaction', 'zero order reaction', 'pseudo first order reaction'],
+    correctIndex: 3,
     explanation: 'Like ester hydrolysis, the inversion of cane sugar in dilute aqueous acid is treated as pseudo first order, since water is present in large excess and its concentration effectively remains constant throughout the reaction.',
     difficulty: 'medium'
   },
@@ -386,7 +384,7 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-31',
     type: 'mcq',
     question: 'As the temperature of a reaction system is increased, the rate constant of the reaction generally',
-    options: ['decreases', 'increases', 'remains completely unchanged', 'becomes negative'],
+    options: ['remains completely unchanged', 'increases', 'becomes negative', 'decreases'],
     correctIndex: 1,
     explanation: 'Increasing temperature provides reactant molecules with greater kinetic energy, increasing the fraction of molecules with energy equal to or greater than the activation energy, thereby increasing the rate constant.',
     difficulty: 'easy'
@@ -395,8 +393,8 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-32',
     type: 'mcq',
     question: 'As a rough rule of thumb discussed in NCERT, the rate of many reactions approximately doubles for every rise in temperature of about',
-    options: ['1°C', '5°C', '10°C', '50°C'],
-    correctIndex: 2,
+    options: ['50°C', '1°C', '5°C', '10°C'],
+    correctIndex: 3,
     explanation: 'A commonly cited empirical rule states that the rate of a reaction roughly doubles (or becomes 2-3 times faster) for approximately every 10°C rise in temperature, for many reactions.',
     difficulty: 'medium'
   },
@@ -405,12 +403,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'The Arrhenius equation, which describes the temperature dependence of the rate constant, is written as',
     options: [
+      'k = A - Ea/RT',
       'k = A × e^(+Ea/RT)',
-      'k = A × e^(-Ea/RT)',
       'k = Ea × e^(-A/RT)',
-      'k = A - Ea/RT'
+      'k = A × e^(-Ea/RT)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The Arrhenius equation, k = A e^(-Ea/RT), describes how the rate constant k depends exponentially on the activation energy Ea and the absolute temperature T.',
     difficulty: 'medium'
   },
@@ -419,10 +417,10 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'In the Arrhenius equation, the term "A" is called the',
     options: [
-      'activation energy',
+      'rate of reaction',
       'pre-exponential (frequency) factor, related to the frequency of collisions',
-      'gas constant',
-      'rate of reaction'
+      'activation energy',
+      'gas constant'
     ],
     correctIndex: 1,
     explanation: 'The pre-exponential factor A (also called the frequency factor) in the Arrhenius equation is related to the frequency of collisions between reacting molecules and their orientation.',
@@ -447,10 +445,10 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'Taking the logarithm of the Arrhenius equation gives the linear form',
     options: [
-      'log k = log A + Ea/(2.303RT)',
+      'log k = A/Ea - RT',
       'log k = log A - Ea/(2.303RT)',
-      'log k = Ea/A - 2.303RT',
-      'log k = A/Ea - RT'
+      'log k = log A + Ea/(2.303RT)',
+      'log k = Ea/A - 2.303RT'
     ],
     correctIndex: 1,
     explanation: 'Taking the natural log of k = A e^(-Ea/RT) and converting to base-10 logarithm gives log k = log A - Ea/(2.303RT), a linear relationship between log k and 1/T.',
@@ -461,12 +459,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'A plot of log k versus 1/T, based on the logarithmic form of the Arrhenius equation, gives a straight line with',
     options: [
-      'slope = -Ea/(2.303R) and intercept = log A',
       'slope = Ea/(2.303R) and intercept = -log A',
+      'a slope of zero regardless of activation energy',
       'slope = log A and intercept = -Ea/(2.303R)',
-      'a slope of zero regardless of activation energy'
+      'slope = -Ea/(2.303R) and intercept = log A'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The linear Arrhenius plot of log k against 1/T has a slope equal to -Ea/(2.303R) and a y-intercept equal to log A, allowing both Ea and A to be determined experimentally.',
     difficulty: 'hard'
   },
@@ -475,12 +473,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'A reaction with a higher activation energy, compared to one with a lower activation energy at the same temperature, will generally have a',
     options: [
-      'faster rate, since more molecules can react',
-      'slower rate, since fewer molecules possess sufficient energy to overcome the higher energy barrier',
       'rate completely unaffected by activation energy',
-      'rate that depends only on the pre-exponential factor, not activation energy'
+      'faster rate, since more molecules can react',
+      'rate that depends only on the pre-exponential factor, not activation energy',
+      'slower rate, since fewer molecules possess sufficient energy to overcome the higher energy barrier'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A higher activation energy means fewer molecules have enough energy to react at a given temperature (per the Boltzmann distribution), resulting in a smaller rate constant and slower reaction rate.',
     difficulty: 'medium'
   },
@@ -491,8 +489,8 @@ export const CHEMICAL_KINETICS = [
     options: [
       'increasing the activation energy of the reaction',
       'providing an alternative reaction pathway with a lower activation energy',
-      'permanently changing the products formed',
-      'increasing the temperature of the reaction mixture'
+      'increasing the temperature of the reaction mixture',
+      'permanently changing the products formed'
     ],
     correctIndex: 1,
     explanation: 'A catalyst works by providing an alternative reaction pathway (mechanism) that has a lower activation energy, allowing a greater fraction of molecules to react successfully at a given temperature.',
@@ -517,12 +515,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'A catalyst is chemically unchanged at the end of a reaction because it',
     options: [
-      'reacts with the products to form new compounds',
-      'is regenerated in the mechanism after participating in intermediate steps',
       'never actually participates in the reaction mechanism at all',
-      'is only physically mixed with the reactants without any chemical involvement'
+      'reacts with the products to form new compounds',
+      'is only physically mixed with the reactants without any chemical involvement',
+      'is regenerated in the mechanism after participating in intermediate steps'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Although a catalyst does participate in the reaction mechanism (often forming an intermediate), it is regenerated by the end of the reaction sequence, leaving its own chemical identity and amount unchanged overall.',
     difficulty: 'medium'
   },
@@ -532,11 +530,11 @@ export const CHEMICAL_KINETICS = [
     question: 'According to the collision theory of reaction rates, for a reaction to occur, reacting molecules must',
     options: [
       'simply be present in the same container, regardless of any collision',
-      'collide with each other with sufficient energy (equal to or greater than activation energy) and proper orientation',
       'collide with each other regardless of energy or orientation',
-      'never actually come into contact with each other'
+      'never actually come into contact with each other',
+      'collide with each other with sufficient energy (equal to or greater than activation energy) and proper orientation'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Collision theory states that a reaction occurs only when reacting molecules collide with both sufficient energy (at least the activation energy) and the correct relative orientation.',
     difficulty: 'medium'
   },
@@ -545,12 +543,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'In collision theory, not all collisions between reactant molecules lead to a reaction because',
     options: [
-      'most collisions occur with insufficient energy or improper orientation, and are therefore ineffective',
       'molecules never actually collide in a gas or solution',
+      'most collisions occur with insufficient energy or improper orientation, and are therefore ineffective',
       'the pre-exponential factor is always zero',
       'reactant molecules repel each other and never collide at all'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Most molecular collisions do not lead to a reaction because they either lack sufficient energy to overcome the activation energy barrier or occur with improper orientation, making them ineffective.',
     difficulty: 'medium'
   },
@@ -573,12 +571,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'According to collision theory, the rate of a bimolecular reaction can be expressed approximately as',
     options: [
+      'Rate = Ea / (P × Z(AB))',
       'Rate = P × Z(AB) × e^(-Ea/RT), where Z(AB) is the collision frequency and P is the steric factor',
       'Rate = Z(AB) / P only',
-      'Rate = Ea / (P × Z(AB))',
       'Rate is completely independent of collision frequency'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Collision theory expresses the rate as the product of the collision frequency Z(AB), the fraction of molecules with sufficient energy (via the exponential Boltzmann term), and the steric factor P accounting for correct orientation.',
     difficulty: 'hard'
   },
@@ -587,12 +585,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'Fraction of molecules possessing energy equal to or greater than the activation energy, as a function of temperature, follows a distribution described by',
     options: [
-      'the Boltzmann distribution, which is central to explaining the temperature dependence of reaction rate',
       'a purely linear relationship with temperature',
+      'no known mathematical distribution',
       'an inverse relationship independent of exponential terms',
-      'no known mathematical distribution'
+      'the Boltzmann distribution, which is central to explaining the temperature dependence of reaction rate'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The fraction of molecules with energy greater than or equal to activation energy follows the Boltzmann (Maxwell-Boltzmann) energy distribution, which increases with temperature, providing the theoretical basis for the exponential term in the Arrhenius equation.',
     difficulty: 'hard'
   },
@@ -617,8 +615,8 @@ export const CHEMICAL_KINETICS = [
     options: [
       'first order reaction',
       'zero order reaction, since the metal surface is saturated with gas molecules and further increase in gas concentration does not change the rate',
-      'second order reaction',
-      'reaction with fractional order 1.5'
+      'reaction with fractional order 1.5',
+      'second order reaction'
     ],
     correctIndex: 1,
     explanation: 'Once the platinum surface is fully saturated with adsorbed ammonia molecules, the reaction rate becomes independent of the concentration (pressure) of ammonia gas, making it a classic example of a zero order (heterogeneous, surface-catalysed) reaction.',
@@ -629,12 +627,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'Which of the following correctly relates concentration units to time for the units of a general nth order rate constant?',
     options: [
-      'The units of k for order n are (concentration)^(1-n) × (time)^-1',
       'The units of k are always mol L-1 s-1, regardless of order',
       'The units of k are always dimensionless',
-      'The units of k depend only on temperature, not order'
+      'The units of k depend only on temperature, not order',
+      'The units of k for order n are (concentration)^(1-n) × (time)^-1'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'For an nth order reaction, the general form of the units of the rate constant is (concentration)^(1-n) × (time)^-1, consistent with the specific cases for zero, first, and second order reactions.',
     difficulty: 'hard'
   },
@@ -643,9 +641,9 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'The rate of a chemical reaction generally increases with increasing concentration of reactants because',
     options: [
-      'higher concentration means fewer collisions occur between molecules',
-      'higher concentration increases the number of reactant molecules per unit volume, increasing the frequency of collisions',
       'concentration has no effect on collision frequency',
+      'higher concentration increases the number of reactant molecules per unit volume, increasing the frequency of collisions',
+      'higher concentration means fewer collisions occur between molecules',
       'higher concentration always decreases the activation energy'
     ],
     correctIndex: 1,
@@ -658,11 +656,11 @@ export const CHEMICAL_KINETICS = [
     question: 'For a first order reaction, the time required to complete 99.9% of the reaction, compared to the time required for 50% completion (t1/2), is',
     options: [
       'exactly the same as t1/2',
-      'about 10 times t1/2 (since it takes roughly 10 half-lives to reach 99.9% completion)',
+      'independent of the value of k',
       'half of t1/2',
-      'independent of the value of k'
+      'about 10 times t1/2 (since it takes roughly 10 half-lives to reach 99.9% completion)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since a first order reaction reduces concentration by half with every half-life, roughly 10 half-lives are needed to reduce the concentration to about 0.1% of the original (99.9% completion), making the total time approximately 10 × t1/2.',
     difficulty: 'hard'
   },
@@ -670,7 +668,7 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-52',
     type: 'mcq',
     question: 'The decomposition of N2O5 in the gas phase is a well-known textbook example of a',
-    options: ['zero order reaction', 'first order reaction', 'third order reaction', 'reaction with negative order'],
+    options: ['reaction with negative order', 'first order reaction', 'zero order reaction', 'third order reaction'],
     correctIndex: 1,
     explanation: 'The thermal decomposition of dinitrogen pentoxide (N2O5) is a classic and frequently cited example of a first order gas-phase reaction.',
     difficulty: 'medium'
@@ -679,8 +677,8 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-53',
     type: 'mcq',
     question: 'Radioactive decay processes are always treated kinetically as',
-    options: ['zero order processes', 'first order processes', 'second order processes', 'processes with no defined order'],
-    correctIndex: 1,
+    options: ['zero order processes', 'processes with no defined order', 'second order processes', 'first order processes'],
+    correctIndex: 3,
     explanation: 'Radioactive decay follows first order kinetics, with the rate of decay proportional to the amount of the radioactive substance present, characterised by a constant half-life.',
     difficulty: 'medium'
   },
@@ -689,12 +687,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'The method of initial rates is an experimental technique used to determine the',
     options: [
+      'molecularity of the overall reaction',
       'equilibrium constant of a reaction',
-      'order of a reaction with respect to each reactant, by measuring the rate very early in the reaction before concentrations change significantly',
       'enthalpy of reaction',
-      'molecularity of the overall reaction'
+      'order of a reaction with respect to each reactant, by measuring the rate very early in the reaction before concentrations change significantly'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The method of initial rates measures the rate of reaction at the very start (before reactant concentrations change appreciably), allowing the order with respect to each reactant to be determined by systematically varying initial concentrations.',
     difficulty: 'medium'
   },
@@ -702,7 +700,7 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-55',
     type: 'mcq',
     question: 'For an elementary bimolecular reaction such as 2NO2 → 2NO + O2 (as a single-step elementary process), the molecularity of the reaction is',
-    options: ['1', '2', '3', 'undefined'],
+    options: ['3', '2', 'undefined', '1'],
     correctIndex: 1,
     explanation: 'For an elementary reaction where two molecules of NO2 collide and react directly in a single step, the molecularity is 2 (bimolecular).',
     difficulty: 'medium'
@@ -712,10 +710,10 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'Trimolecular (termolecular) elementary reactions, involving the simultaneous collision of three reactant species, are',
     options: [
-      'extremely common and occur more frequently than bimolecular reactions',
-      'rare, since the simultaneous collision of three molecules with proper orientation and sufficient energy is statistically much less probable',
       'impossible under all circumstances',
-      'always faster than bimolecular reactions'
+      'rare, since the simultaneous collision of three molecules with proper orientation and sufficient energy is statistically much less probable',
+      'always faster than bimolecular reactions',
+      'extremely common and occur more frequently than bimolecular reactions'
     ],
     correctIndex: 1,
     explanation: 'Termolecular elementary reactions are rare because the probability of three molecules colliding simultaneously, with correct orientation and sufficient combined energy, is statistically much lower than for two molecules.',
@@ -727,11 +725,11 @@ export const CHEMICAL_KINETICS = [
     question: 'For a complex (multistep) reaction with an overall balanced equation, the order of the reaction determined experimentally',
     options: [
       'must always match the sum of the stoichiometric coefficients in the balanced equation',
-      'may or may not match the sum of stoichiometric coefficients, since it depends on the actual mechanism, particularly the rate-determining step',
+      'cannot be determined at all for multistep reactions',
       'is always equal to 1',
-      'cannot be determined at all for multistep reactions'
+      'may or may not match the sum of stoichiometric coefficients, since it depends on the actual mechanism, particularly the rate-determining step'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since the order of a reaction reflects the mechanism (especially the slow, rate-determining step), it does not necessarily equal the sum of stoichiometric coefficients of the overall balanced equation.',
     difficulty: 'medium'
   },
@@ -741,11 +739,11 @@ export const CHEMICAL_KINETICS = [
     question: 'A reaction is said to be of "fractional order" when',
     options: [
       'the reaction mechanism is not well understood',
-      'the sum of the exponents in the experimentally determined rate law is not a whole number',
       'the reaction obeys the ideal gas law',
+      'the sum of the exponents in the experimentally determined rate law is not a whole number',
       'the reaction has zero activation energy'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Fractional order reactions have rate laws in which the sum of the concentration exponents is a non-integer value, typically arising from complex, multistep reaction mechanisms.',
     difficulty: 'medium'
   },
@@ -753,8 +751,8 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-59',
     type: 'mcq',
     question: 'The rate law for the reaction 2NO(g) + O2(g) → 2NO2(g) is experimentally found to be rate = k[NO]^2[O2]. The overall order of this reaction is',
-    options: ['1', '2', '3', '4'],
-    correctIndex: 2,
+    options: ['4', '3', '1', '2'],
+    correctIndex: 1,
     explanation: 'Adding the exponents in the rate law, 2 (for NO) + 1 (for O2), gives an overall reaction order of 3.',
     difficulty: 'medium'
   },
@@ -762,8 +760,8 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-60',
     type: 'mcq',
     question: 'For the reaction described by rate = k[NO]^2[O2] (order 3 overall), the order with respect to O2 alone is',
-    options: ['0', '1', '2', '3'],
-    correctIndex: 1,
+    options: ['2', '3', '0', '1'],
+    correctIndex: 3,
     explanation: 'The exponent of [O2] in the rate law is 1, so the reaction is first order with respect to O2.',
     difficulty: 'easy'
   },
@@ -772,12 +770,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'Which of the following statements about the Arrhenius pre-exponential factor A is correct?',
     options: [
+      'A always equals the activation energy',
       'A generally decreases with increasing temperature',
       'A is related to the frequency of collisions and their orientation, and is often treated as approximately constant over a limited temperature range',
-      'A has no physical significance whatsoever',
-      'A always equals the activation energy'
+      'A has no physical significance whatsoever'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'The pre-exponential factor A reflects the frequency of collisions and their orientation probability; while it can have a slight temperature dependence, it is often treated as approximately constant over the temperature ranges typically studied.',
     difficulty: 'medium'
   },
@@ -800,9 +798,9 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'The energy profile diagram of an exothermic reaction shows that the activation energy for the forward reaction is generally',
     options: [
-      'always equal to the activation energy of the reverse reaction',
-      'less than the activation energy of the reverse reaction, since the products are at a lower energy level than the reactants',
       'greater than the activation energy of the reverse reaction',
+      'less than the activation energy of the reverse reaction, since the products are at a lower energy level than the reactants',
+      'always equal to the activation energy of the reverse reaction',
       'zero, regardless of the reaction type'
     ],
     correctIndex: 1,
@@ -815,11 +813,11 @@ export const CHEMICAL_KINETICS = [
     question: 'A reaction between ions in solution proceeds much faster than an equivalent reaction between neutral molecules of similar size, mainly because',
     options: [
       'ionic reactions never require any activation energy',
-      'ionic reactions generally have very low activation energies compared to molecular reactions requiring bond breaking',
       'ions have no charge and therefore collide more frequently',
-      'ions are always larger than neutral molecules'
+      'ions are always larger than neutral molecules',
+      'ionic reactions generally have very low activation energies compared to molecular reactions requiring bond breaking'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Reactions between ions typically involve simple electrostatic attraction/repulsion rather than extensive covalent bond breaking, resulting in much lower activation energies and correspondingly faster rates compared to many molecular reactions.',
     difficulty: 'hard'
   },
@@ -827,8 +825,8 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-65',
     type: 'mcq',
     question: 'For a zero order reaction, plotting concentration [A] versus time gives a straight line whose slope is',
-    options: ['positive and equal to k', 'negative and equal to -k', 'zero, regardless of k', 'undefined'],
-    correctIndex: 1,
+    options: ['undefined', 'zero, regardless of k', 'negative and equal to -k', 'positive and equal to k'],
+    correctIndex: 2,
     explanation: 'Since [A] = [A]0 - kt for a zero order reaction, the plot of [A] versus t is linear with a negative slope of magnitude equal to the rate constant k.',
     difficulty: 'medium'
   },
@@ -836,8 +834,8 @@ export const CHEMICAL_KINETICS = [
     id: 'kinetics-66',
     type: 'mcq',
     question: 'The photochemical reaction between hydrogen and chlorine gas, H2 + Cl2 → 2HCl (under constant illumination), is often cited as an example of a',
-    options: ['first order reaction', 'zero order reaction, since the rate is largely determined by light intensity rather than reactant concentration', 'third order reaction', 'reaction with negative order'],
-    correctIndex: 1,
+    options: ['zero order reaction, since the rate is largely determined by light intensity rather than reactant concentration', 'third order reaction', 'first order reaction', 'reaction with negative order'],
+    correctIndex: 0,
     explanation: 'Under constant illumination, this photochemical reaction is a classic example of an apparent zero order reaction, since its rate depends primarily on the intensity of light absorbed rather than on the concentrations of H2 and Cl2.',
     difficulty: 'hard'
   },
@@ -846,12 +844,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'Which statement correctly compares order and molecularity of a reaction?',
     options: [
+      'Order applies only to elementary reactions, while molecularity applies to all reactions',
       'Order and molecularity are always exactly equal for any reaction',
-      'For an elementary (single-step) reaction, order and molecularity are usually the same, but for a complex multistep reaction, the overall order need not equal the molecularity of any single step',
       'Molecularity can be fractional, but order cannot',
-      'Order applies only to elementary reactions, while molecularity applies to all reactions'
+      'For an elementary (single-step) reaction, order and molecularity are usually the same, but for a complex multistep reaction, the overall order need not equal the molecularity of any single step'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'For simple, elementary reactions, order and molecularity typically coincide, but for complex reactions occurring via multiple steps, the experimentally observed overall order reflects the mechanism and need not match the molecularity of any individual step.',
     difficulty: 'medium'
   },
@@ -860,9 +858,9 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'Increasing the temperature of a reaction increases the rate constant primarily by increasing the',
     options: [
-      'concentration of the reactants',
-      'fraction of molecules possessing energy equal to or greater than the activation energy',
       'volume of the reaction vessel',
+      'fraction of molecules possessing energy equal to or greater than the activation energy',
+      'concentration of the reactants',
       'molecular weight of the reactants'
     ],
     correctIndex: 1,
@@ -874,12 +872,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'For a reaction to be classified as first order overall, which of the following is a necessary experimental observation?',
     options: [
-      'The rate is independent of the concentration of any reactant',
       'A plot of log(concentration) versus time is linear, and the half-life remains constant regardless of initial concentration',
+      'The reaction must involve exactly three reactant molecules colliding',
       'The rate constant has units of mol L-1 s-1',
-      'The reaction must involve exactly three reactant molecules colliding'
+      'The rate is independent of the concentration of any reactant'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'Linearity of the log[A] versus time plot, together with a half-life that remains constant irrespective of starting concentration, are the key experimental signatures confirming first order kinetics.',
     difficulty: 'medium'
   },
@@ -888,12 +886,12 @@ export const CHEMICAL_KINETICS = [
     type: 'mcq',
     question: 'Overall, the central goal of studying chemical kinetics, as emphasised throughout the NCERT chapter, is to understand',
     options: [
+      'only the enthalpy change accompanying a reaction',
       'only whether a reaction is thermodynamically favourable',
       'how fast a reaction proceeds, what factors control this rate, and the mechanistic pathway by which reactants are converted to products',
-      'only the final equilibrium composition of a reaction mixture',
-      'only the enthalpy change accompanying a reaction'
+      'only the final equilibrium composition of a reaction mixture'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Chemical kinetics focuses specifically on reaction rates, the factors influencing them (concentration, temperature, catalysts), and the underlying mechanistic steps by which a reaction proceeds — distinct from the purely thermodynamic question of whether a reaction is favourable.',
     difficulty: 'medium'
   },

@@ -5,12 +5,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'Amines are classified as primary, secondary, or tertiary based on',
     options: [
+      'whether the amine is aromatic or aliphatic only',
       'the number of carbon atoms in the molecule',
-      'the number of hydrogen atoms of ammonia that have been replaced by alkyl or aryl groups',
       'the molecular mass of the amine',
-      'whether the amine is aromatic or aliphatic only'
+      'the number of hydrogen atoms of ammonia that have been replaced by alkyl or aryl groups'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Amines are classified based on how many of the three hydrogen atoms of ammonia have been substituted by alkyl or aryl groups: one substitution gives a primary amine, two gives secondary, and three gives tertiary.',
     difficulty: 'easy'
   },
@@ -20,11 +20,11 @@ export const AMINES = [
     question: 'A quaternary ammonium salt is formed when',
     options: [
       'a primary amine reacts with water',
-      'all four bonds of nitrogen are to carbon atoms (or hydrogen replaced by four organic groups), giving a positively charged nitrogen with no lone pair available',
+      'ammonia is simply dissolved in water',
       'a tertiary amine loses one of its alkyl groups',
-      'ammonia is simply dissolved in water'
+      'all four bonds of nitrogen are to carbon atoms (or hydrogen replaced by four organic groups), giving a positively charged nitrogen with no lone pair available'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A quaternary ammonium salt forms when all four positions around nitrogen are occupied by organic (alkyl/aryl) groups, giving a permanently positively charged nitrogen with no remaining lone pair.',
     difficulty: 'medium'
   },
@@ -33,12 +33,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'In a simple aliphatic amine, the nitrogen atom is generally',
     options: [
-      'sp2 hybridised, with a trigonal planar geometry',
-      'sp3 hybridised, with a pyramidal shape and a lone pair occupying the fourth position',
+      'not hybridised at all',
       'sp hybridised, with a linear geometry',
-      'not hybridised at all'
+      'sp2 hybridised, with a trigonal planar geometry',
+      'sp3 hybridised, with a pyramidal shape and a lone pair occupying the fourth position'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The nitrogen atom in aliphatic amines is sp3 hybridised, adopting a pyramidal shape similar to ammonia, with the lone pair occupying one of the four tetrahedral positions.',
     difficulty: 'medium'
   },
@@ -47,12 +47,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'In aniline, the lone pair on the nitrogen atom is',
     options: [
-      'completely localised on nitrogen, with no interaction with the aromatic ring',
-      'partially delocalised into the aromatic ring through resonance, giving the C-N bond partial double bond character',
+      'unavailable for any chemical interaction whatsoever',
       'completely transferred to the ring, leaving nitrogen with a formal positive charge at all times',
-      'unavailable for any chemical interaction whatsoever'
+      'completely localised on nitrogen, with no interaction with the aromatic ring',
+      'partially delocalised into the aromatic ring through resonance, giving the C-N bond partial double bond character'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The nitrogen lone pair in aniline is delocalised into the aromatic ring via resonance, giving the C-N bond some double bond character and making the nitrogen geometry flatter than in a simple aliphatic amine.',
     difficulty: 'medium'
   },
@@ -60,8 +60,8 @@ export const AMINES = [
     id: 'amine-5',
     type: 'mcq',
     question: 'Reduction of a nitro compound using hydrogen gas with a catalyst (or using Fe/HCl or Sn/HCl) gives',
-    options: ['an amide', 'a primary amine', 'a secondary amine', 'a nitrile'],
-    correctIndex: 1,
+    options: ['an amide', 'a nitrile', 'a secondary amine', 'a primary amine'],
+    correctIndex: 3,
     explanation: 'Reduction of a nitro group (-NO2) converts it into a primary amine (-NH2), a widely used method especially for preparing aromatic amines such as aniline from nitrobenzene.',
     difficulty: 'easy'
   },
@@ -71,11 +71,11 @@ export const AMINES = [
     question: 'The ammonolysis of an alkyl halide with excess ammonia is generally considered a less-than-ideal method for preparing a pure primary amine because',
     options: [
       'no reaction occurs between alkyl halides and ammonia',
-      'the initially formed primary amine can itself act as a nucleophile and react further with more alkyl halide, giving a mixture of primary, secondary, tertiary amines, and a quaternary ammonium salt',
+      'ammonolysis destroys the alkyl halide without forming any nitrogen-containing product',
       'ammonolysis only ever produces tertiary amines',
-      'ammonolysis destroys the alkyl halide without forming any nitrogen-containing product'
+      'the initially formed primary amine can itself act as a nucleophile and react further with more alkyl halide, giving a mixture of primary, secondary, tertiary amines, and a quaternary ammonium salt'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since the primary amine product is itself nucleophilic, it can react with additional alkyl halide, leading to a mixture of differently substituted amines and quaternary ammonium salt, making this method impractical for obtaining a single pure amine.',
     difficulty: 'medium'
   },
@@ -84,12 +84,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'Reduction of a nitrile using LiAlH4 or catalytic hydrogenation gives',
     options: [
-      'a primary amine with one more carbon atom than the original nitrile',
-      'a secondary amine',
+      'an alcohol',
       'a carboxylic acid',
-      'an alcohol'
+      'a secondary amine',
+      'a primary amine with one more carbon atom than the original nitrile'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Reduction of a nitrile (R-C≡N) adds hydrogen across the triple bond, giving a primary amine (R-CH2-NH2) that retains the extra carbon originally present in the nitrile group.',
     difficulty: 'medium'
   },
@@ -99,11 +99,11 @@ export const AMINES = [
     question: 'The Gabriel phthalimide synthesis is a method used specifically to prepare',
     options: [
       'pure aromatic (aryl) primary amines',
-      'pure primary aliphatic amines, avoiding the formation of secondary or tertiary amine by-products',
       'secondary amines exclusively',
-      'quaternary ammonium salts exclusively'
+      'quaternary ammonium salts exclusively',
+      'pure primary aliphatic amines, avoiding the formation of secondary or tertiary amine by-products'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The Gabriel synthesis allows the clean preparation of a pure primary aliphatic amine, avoiding the over-alkylation problem seen with direct ammonolysis of alkyl halides.',
     difficulty: 'medium'
   },
@@ -113,11 +113,11 @@ export const AMINES = [
     question: 'The Gabriel phthalimide synthesis cannot be used to prepare aromatic (aryl) primary amines mainly because',
     options: [
       'phthalimide does not exist as a compound',
-      'aryl halides do not readily undergo the nucleophilic substitution reaction with the phthalimide anion required in this synthesis',
+      'the reaction produces only secondary amines when aryl halides are used',
       'aromatic amines cannot exist under any circumstances',
-      'the reaction produces only secondary amines when aryl halides are used'
+      'aryl halides do not readily undergo the nucleophilic substitution reaction with the phthalimide anion required in this synthesis'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since aryl halides are generally unreactive towards nucleophilic substitution (as covered in the haloalkanes/haloarenes chapter), they cannot react with the phthalimide anion in the way required for this synthesis, limiting the method to aliphatic primary amines.',
     difficulty: 'medium'
   },
@@ -126,12 +126,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'The Hofmann bromamide degradation reaction converts an amide into',
     options: [
-      'a primary amine with one more carbon atom than the original amide',
-      'a primary amine with one carbon atom fewer than the original amide',
+      'a nitrile',
       'a secondary amine with the same number of carbon atoms',
-      'a nitrile'
+      'a primary amine with one more carbon atom than the original amide',
+      'a primary amine with one carbon atom fewer than the original amide'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The Hofmann bromamide degradation converts an amide (RCONH2) into a primary amine (RNH2) with one fewer carbon atom, since the carbonyl carbon is lost as carbon dioxide during the reaction sequence.',
     difficulty: 'medium'
   },
@@ -155,11 +155,11 @@ export const AMINES = [
     question: 'In the mechanism of the Hofmann bromamide degradation reaction, the alkyl (or aryl) group migrates from the carbonyl carbon to the adjacent nitrogen atom in a step best described as',
     options: [
       'a free radical chain process',
-      'a concerted 1,2-shift (migration), occurring with retention of configuration at the migrating carbon if it is a stereocentre',
+      'a random, non-stereospecific rearrangement',
       'a simple acid-base proton transfer with no group migration at all',
-      'a random, non-stereospecific rearrangement'
+      'a concerted 1,2-shift (migration), occurring with retention of configuration at the migrating carbon if it is a stereocentre'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The key mechanistic step of the Hofmann rearrangement is a concerted migration of the alkyl/aryl group from carbon to nitrogen, which proceeds with retention of configuration at the migrating group if it is chiral.',
     difficulty: 'hard'
   },
@@ -177,12 +177,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'Primary and secondary amines can form intermolecular hydrogen bonds with each other because they possess',
     options: [
-      'a C-H bond',
-      'an N-H bond',
       'a lone pair on carbon',
-      'no polar bonds at all'
+      'a C-H bond',
+      'no polar bonds at all',
+      'an N-H bond'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since primary and secondary amines retain at least one N-H bond, they can hydrogen bond with each other; tertiary amines, lacking N-H, cannot hydrogen bond in this way.',
     difficulty: 'easy'
   },
@@ -191,9 +191,9 @@ export const AMINES = [
     type: 'mcq',
     question: 'For isomeric amines of similar molecular mass, boiling points generally follow the order',
     options: [
-      'tertiary > secondary > primary',
-      'primary > secondary > tertiary',
       'all three types show identical boiling points',
+      'primary > secondary > tertiary',
+      'tertiary > secondary > primary',
       'tertiary amines always have the highest boiling point due to their larger size'
     ],
     correctIndex: 1,
@@ -205,12 +205,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'The N-H...N hydrogen bond in amines is generally weaker than the O-H...O hydrogen bond in alcohols mainly because',
     options: [
-      'nitrogen is more electronegative than oxygen',
-      'nitrogen is less electronegative than oxygen, resulting in a less polarised (and therefore weaker) hydrogen bond',
       'amines do not actually contain any hydrogen atoms',
-      'alcohols cannot form hydrogen bonds at all'
+      'nitrogen is more electronegative than oxygen',
+      'alcohols cannot form hydrogen bonds at all',
+      'nitrogen is less electronegative than oxygen, resulting in a less polarised (and therefore weaker) hydrogen bond'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since nitrogen is less electronegative than oxygen, the N-H bond is less polarised than the O-H bond, resulting in weaker hydrogen bonding in amines compared to alcohols.',
     difficulty: 'medium'
   },
@@ -219,10 +219,10 @@ export const AMINES = [
     type: 'mcq',
     question: 'Consequently, for comparable molecular mass, amines generally have boiling points that are',
     options: [
-      'higher than alcohols but lower than alkanes',
-      'lower than alcohols, since the N-H hydrogen bond is weaker than the O-H hydrogen bond, but generally higher than corresponding alkanes',
       'identical to those of alkanes',
-      'always higher than alcohols under all conditions'
+      'lower than alcohols, since the N-H hydrogen bond is weaker than the O-H hydrogen bond, but generally higher than corresponding alkanes',
+      'always higher than alcohols under all conditions',
+      'higher than alcohols but lower than alkanes'
     ],
     correctIndex: 1,
     explanation: 'Amines generally have boiling points intermediate between alkanes (no hydrogen bonding) and alcohols (stronger O-H hydrogen bonding), owing to the comparatively weaker N-H hydrogen bonding.',
@@ -233,12 +233,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'Even tertiary amines, which cannot hydrogen bond with each other, show appreciable solubility in water because',
     options: [
-      'they can accept hydrogen bonds from water via the lone pair on nitrogen',
       'they undergo complete ionisation in water',
+      'they are completely non-polar and dissolve for that reason',
       'they contain an O-H group',
-      'they are completely non-polar and dissolve for that reason'
+      'they can accept hydrogen bonds from water via the lone pair on nitrogen'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Even without N-H bonds of their own, tertiary amines can still accept hydrogen bonds from water molecules via the nitrogen lone pair, giving them reasonable water solubility, particularly for smaller amines.',
     difficulty: 'medium'
   },
@@ -247,12 +247,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'Amines act as bases mainly because of the',
     options: [
-      'presence of a lone pair of electrons on the nitrogen atom, available for donation or protonation',
       'presence of a positive charge on nitrogen at all times',
-      'absence of any nitrogen atom in their structure',
-      'strong acidity of the N-H bond'
+      'presence of a lone pair of electrons on the nitrogen atom, available for donation or protonation',
+      'strong acidity of the N-H bond',
+      'absence of any nitrogen atom in their structure'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'The lone pair of electrons on nitrogen makes amines both Lewis bases (able to donate the lone pair) and Bronsted bases (able to accept a proton), accounting for their characteristic basicity.',
     difficulty: 'easy'
   },
@@ -261,9 +261,9 @@ export const AMINES = [
     type: 'mcq',
     question: 'Aliphatic amines are generally more basic than ammonia mainly because',
     options: [
-      'alkyl groups withdraw electron density from nitrogen',
-      'alkyl groups donate electron density towards nitrogen via the inductive (+I) effect, increasing the availability of the lone pair for protonation',
       'aliphatic amines have no lone pair at all',
+      'alkyl groups donate electron density towards nitrogen via the inductive (+I) effect, increasing the availability of the lone pair for protonation',
+      'alkyl groups withdraw electron density from nitrogen',
       'ammonia is not actually basic'
     ],
     correctIndex: 1,
@@ -276,11 +276,11 @@ export const AMINES = [
     question: 'Aromatic amines such as aniline are generally',
     options: [
       'much more basic than aliphatic amines and ammonia',
-      'much less basic than aliphatic amines and ammonia, due to delocalisation of the nitrogen lone pair into the aromatic ring',
       'exactly as basic as aliphatic amines',
-      'completely non-basic, with no ability to be protonated at all'
+      'completely non-basic, with no ability to be protonated at all',
+      'much less basic than aliphatic amines and ammonia, due to delocalisation of the nitrogen lone pair into the aromatic ring'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since the lone pair on the nitrogen of aniline is significantly delocalised into the aromatic ring through resonance, it is much less available for protonation, making aniline considerably less basic than aliphatic amines or ammonia.',
     difficulty: 'medium'
   },
@@ -291,8 +291,8 @@ export const AMINES = [
     options: [
       'retains the same resonance stabilisation as the free amine, since protonation does not affect resonance',
       'loses the resonance stabilisation associated with the delocalised lone pair, since that lone pair is now used to bond the proton',
-      'becomes more stable than the free amine',
-      'has no relationship to resonance at all'
+      'has no relationship to resonance at all',
+      'becomes more stable than the free amine'
     ],
     correctIndex: 1,
     explanation: 'Once the nitrogen lone pair is used to bond the incoming proton, it is no longer available for delocalisation into the ring, so the anilinium ion loses this stabilisation, making protonation of aniline less energetically favourable overall.',
@@ -304,11 +304,11 @@ export const AMINES = [
     question: 'An electron-donating substituent (such as -CH3) on the aromatic ring of aniline generally',
     options: [
       'decreases the basicity of the amine',
-      'increases the basicity of the amine, by further increasing electron density on nitrogen',
+      'converts the amine into an acid',
       'has no effect whatsoever on basicity',
-      'converts the amine into an acid'
+      'increases the basicity of the amine, by further increasing electron density on nitrogen'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Electron-donating substituents increase electron density on nitrogen (partially offsetting the delocalisation into the ring), generally increasing the basicity of the substituted aniline compared to aniline itself.',
     difficulty: 'medium'
   },
@@ -318,11 +318,11 @@ export const AMINES = [
     question: 'An electron-withdrawing substituent (such as -NO2) on the aromatic ring of aniline generally',
     options: [
       'increases the basicity of the amine',
-      'decreases the basicity of the amine, by further withdrawing electron density from nitrogen',
       'has no effect whatsoever on basicity',
-      'converts the amine into a much stronger base than ammonia'
+      'converts the amine into a much stronger base than ammonia',
+      'decreases the basicity of the amine, by further withdrawing electron density from nitrogen'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Electron-withdrawing substituents further reduce electron density on nitrogen (via resonance and/or induction), decreasing the basicity of the substituted aniline compared to aniline itself.',
     difficulty: 'medium'
   },
@@ -344,8 +344,8 @@ export const AMINES = [
     id: 'amine-26',
     type: 'mcq',
     question: 'Amines react with acid chlorides or acid anhydrides in a nucleophilic acyl substitution reaction, known as acylation, to give',
-    options: ['an alcohol', 'an amide', 'a nitrile', 'an alkene'],
-    correctIndex: 1,
+    options: ['an alcohol', 'an alkene', 'a nitrile', 'an amide'],
+    correctIndex: 3,
     explanation: 'The nucleophilic nitrogen of an amine attacks an acid chloride or anhydride, displacing the leaving group and forming an amide.',
     difficulty: 'easy'
   },
@@ -368,10 +368,10 @@ export const AMINES = [
     type: 'mcq',
     question: 'When a primary aliphatic amine reacts with nitrous acid (generated in situ from NaNO2/HCl), the typical observation is',
     options: [
-      'formation of a stable, isolable diazonium salt',
+      'no reaction of any kind is observed',
       'vigorous effervescence, as nitrogen gas is released while the amine is converted (via an unstable diazonium intermediate) mainly into an alcohol',
-      'formation of a yellow oily liquid',
-      'no reaction of any kind is observed'
+      'formation of a stable, isolable diazonium salt',
+      'formation of a yellow oily liquid'
     ],
     correctIndex: 1,
     explanation: 'Primary aliphatic amines form highly unstable diazonium salts with nitrous acid that decompose immediately, releasing nitrogen gas and giving primarily an alcohol as the major organic product.',
@@ -382,12 +382,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'When a primary aromatic amine (such as aniline) reacts with nitrous acid at low temperature (0-5°C), the product formed is',
     options: [
-      'an unstable species that decomposes immediately',
-      'a diazonium salt that is reasonably stable at this low temperature',
       'an isocyanide',
-      'a secondary amine'
+      'an unstable species that decomposes immediately',
+      'a secondary amine',
+      'a diazonium salt that is reasonably stable at this low temperature'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Primary aromatic amines form diazonium salts with nitrous acid at low temperature that are stabilised (in part by the aromatic ring) and can be kept and used for further reactions as long as the temperature remains low.',
     difficulty: 'medium'
   },
@@ -396,10 +396,10 @@ export const AMINES = [
     type: 'mcq',
     question: 'When a secondary amine (aliphatic or aromatic) reacts with nitrous acid, the characteristic product formed is',
     options: [
-      'a diazonium salt',
+      'no reaction occurs at all',
       'an N-nitrosamine, typically observed as a yellow oily liquid',
       'an isocyanide',
-      'no reaction occurs at all'
+      'a diazonium salt'
     ],
     correctIndex: 1,
     explanation: 'Secondary amines react with nitrous acid to give N-nitrosamines, characteristically observed as yellow oily liquids, distinguishing them from primary and tertiary amines in this test.',
@@ -410,12 +410,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'When a tertiary aromatic amine such as N,N-dimethylaniline reacts with nitrous acid, since there is no N-H available for typical nitrogen substitution, the reaction instead occurs',
     options: [
-      'at the nitrogen atom regardless, forming a diazonium salt',
-      'on the aromatic ring, giving a para-substituted C-nitroso compound (since the ring is strongly activated)',
       'nowhere at all; no reaction of any kind occurs',
-      'exclusively at the methyl groups attached to nitrogen'
+      'exclusively at the methyl groups attached to nitrogen',
+      'at the nitrogen atom regardless, forming a diazonium salt',
+      'on the aromatic ring, giving a para-substituted C-nitroso compound (since the ring is strongly activated)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since tertiary aromatic amines have no available N-H, the highly activated ring instead undergoes electrophilic substitution with the nitrosating species, typically giving a para-nitroso product.',
     difficulty: 'hard'
   },
@@ -453,11 +453,11 @@ export const AMINES = [
     question: 'To achieve a cleaner nitration of aniline favouring ortho/para products, the amino group is typically first "protected" by',
     options: [
       'converting it into a nitro group',
-      'acetylation (using acetic anhydride) to form acetanilide, which is then nitrated and later hydrolysed to regenerate the amine',
+      'converting it into a Grignard reagent',
       'reducing it further to an alkane',
-      'converting it into a Grignard reagent'
+      'acetylation (using acetic anhydride) to form acetanilide, which is then nitrated and later hydrolysed to regenerate the amine'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Acetylating the amino group to form acetanilide reduces its basicity (making it resistant to protonation under acidic nitration conditions) while still allowing it to activate and direct the ring towards ortho/para substitution; hydrolysis afterward regenerates the free amine.',
     difficulty: 'medium'
   },
@@ -489,12 +489,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'A diazonium salt can undergo a coupling reaction with a phenol or an aromatic amine under mildly alkaline (or neutral) conditions to give',
     options: [
+      'a nitro compound',
       'an azo compound, containing the characteristic -N=N- linkage, which is often intensely coloured',
       'an alcohol',
-      'a nitro compound',
       'no reaction occurs under these conditions'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Diazonium coupling with phenols or aromatic amines produces azo compounds, characterised by the -N=N- linkage, which are typically intensely coloured and form the basis of many azo dyes.',
     difficulty: 'medium'
   },
@@ -502,8 +502,8 @@ export const AMINES = [
     id: 'amine-38',
     type: 'mcq',
     question: 'In diazonium coupling reactions, the new bond generally forms predominantly at the',
-    options: ['ortho position of the coupling partner', 'para position of the coupling partner (unless blocked, in which case ortho is favoured)', 'meta position exclusively', 'ipso position, replacing an existing substituent, in all cases'],
-    correctIndex: 1,
+    options: ['meta position exclusively', 'ortho position of the coupling partner', 'ipso position, replacing an existing substituent, in all cases', 'para position of the coupling partner (unless blocked, in which case ortho is favoured)'],
+    correctIndex: 3,
     explanation: 'Coupling generally occurs predominantly at the para position of the phenol or aromatic amine partner, unless that position is already occupied, in which case ortho coupling becomes favoured instead.',
     difficulty: 'medium'
   },
@@ -512,10 +512,10 @@ export const AMINES = [
     type: 'mcq',
     question: 'Treatment of a diazonium salt with hypophosphorus acid (H3PO2) or ethanol brings about',
     options: [
-      'conversion of the diazonium group into a hydroxyl group',
+      'formation of an azo dye',
       'replacement of the diazonium group (-N2+) by hydrogen, a process known as deamination',
       'conversion of the diazonium group into a nitro group',
-      'formation of an azo dye'
+      'conversion of the diazonium group into a hydroxyl group'
     ],
     correctIndex: 1,
     explanation: 'Reaction with H3PO2 (or ethanol, which itself gets oxidised in the process) reduces the diazonium group, replacing it with hydrogen — a reaction useful for removing an amino group after it has served its purpose in directing a synthesis.',
@@ -527,11 +527,11 @@ export const AMINES = [
     question: 'The strategy of introducing an amino group temporarily (via nitro group reduction), using it to direct another substitution reaction, and then removing it via diazotisation and reduction with H3PO2, is a useful synthetic tactic because',
     options: [
       'the amino group is a permanent, unremovable feature of any synthesis',
-      '-NH2 is such a strongly activating and directing group that it can be exploited to control the position of another substituent, then removed once it has served its purpose',
+      'this strategy is never actually used in real synthetic chemistry',
       'amino groups have no effect on aromatic substitution reactions',
-      'this strategy is never actually used in real synthetic chemistry'
+      '-NH2 is such a strongly activating and directing group that it can be exploited to control the position of another substituent, then removed once it has served its purpose'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Because -NH2 so strongly directs electrophilic substitution, chemists can install it temporarily to control regiochemistry, and then remove it via diazotisation/deamination once its directing role is complete.',
     difficulty: 'hard'
   },
@@ -548,8 +548,8 @@ export const AMINES = [
     id: 'amine-42',
     type: 'mcq',
     question: 'A diazonium salt can be hydrolysed by simply warming its aqueous solution, giving',
-    options: ['an alkyl halide', 'phenol, with loss of nitrogen gas', 'an amine', 'a nitrile'],
-    correctIndex: 1,
+    options: ['an amine', 'an alkyl halide', 'a nitrile', 'phenol, with loss of nitrogen gas'],
+    correctIndex: 3,
     explanation: 'Warming an aqueous solution of a diazonium salt causes hydrolysis, replacing the diazonium group with a hydroxyl group and releasing nitrogen gas, giving phenol.',
     difficulty: 'medium'
   },
@@ -558,12 +558,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'The molecular formula of aniline shows it to be a primary aromatic amine with the amino group attached',
     options: [
+      'to a carbon bearing a halogen',
       'directly to a carbon of the benzene ring',
-      'to an sp3 carbon that is itself attached to the ring (benzylic position)',
       'to an alkene carbon',
-      'to a carbon bearing a halogen'
+      'to an sp3 carbon that is itself attached to the ring (benzylic position)'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Aniline has the -NH2 group attached directly to a ring carbon of benzene, making it an aromatic (aryl) primary amine.',
     difficulty: 'easy'
   },
@@ -581,12 +581,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'The solubility of amines in water generally decreases as',
     options: [
-      'the size of the alkyl/aryl group attached to nitrogen increases',
       'the size of the alkyl/aryl group attached to nitrogen decreases',
+      'solubility is completely independent of molecular structure',
       'the number of nitrogen atoms increases, with no relation to alkyl group size',
-      'solubility is completely independent of molecular structure'
+      'the size of the alkyl/aryl group attached to nitrogen increases'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'As with alcohols, increasing the hydrophobic (alkyl/aryl) portion of an amine reduces its overall water solubility, since the hydrocarbon part becomes more dominant relative to the polar amino group.',
     difficulty: 'medium'
   },
@@ -609,12 +609,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'Aromatic primary amines like aniline give a positive carbylamine test, similar to aliphatic primary amines, forming',
     options: [
-      'phenyl isocyanide, with a characteristic offensive odour',
-      'phenol',
+      'nitrobenzene',
       'benzaldehyde',
-      'nitrobenzene'
+      'phenol',
+      'phenyl isocyanide, with a characteristic offensive odour'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Aniline, being a primary amine, reacts with chloroform and alcoholic KOH to form phenyl isocyanide, giving the same characteristic offensive odour seen with aliphatic primary amines.',
     difficulty: 'medium'
   },
@@ -623,9 +623,9 @@ export const AMINES = [
     type: 'mcq',
     question: 'An amide (RCONH2), unlike an amine, is generally',
     options: [
-      'a much stronger base than a comparable amine',
-      'a much weaker base than a comparable amine, since the nitrogen lone pair is delocalised into the adjacent carbonyl group by resonance',
       'exactly as basic as the corresponding amine',
+      'a much weaker base than a comparable amine, since the nitrogen lone pair is delocalised into the adjacent carbonyl group by resonance',
+      'a much stronger base than a comparable amine',
       'unrelated in structure to amines'
     ],
     correctIndex: 1,
@@ -637,10 +637,10 @@ export const AMINES = [
     type: 'mcq',
     question: 'Which classical laboratory test can help distinguish primary, secondary, and tertiary amines from one another, based on differing observations with nitrous acid and with the carbylamine reaction?',
     options: [
-      'Tollens\' test alone',
+      'The iodoform test alone',
       'A combination of the nitrous acid (diazotisation) test and the carbylamine (isocyanide) test',
-      'Fehling\'s test alone',
-      'The iodoform test alone'
+      'Tollens\' test alone',
+      'Fehling\'s test alone'
     ],
     correctIndex: 1,
     explanation: 'Using nitrous acid and the carbylamine test together, since each amine class behaves differently, allows for the systematic distinction between primary, secondary, and tertiary amines.',
@@ -651,12 +651,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'Alkyl isocyanides (carbylamines), formed in the carbylamine test, are notable for their',
     options: [
-      'pleasant, fragrant odour',
-      'extremely unpleasant, offensive odour, which is used diagnostically to identify a positive test',
+      'explosive nature under all conditions',
       'complete lack of any smell',
-      'explosive nature under all conditions'
+      'pleasant, fragrant odour',
+      'extremely unpleasant, offensive odour, which is used diagnostically to identify a positive test'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Isocyanides are characteristically foul-smelling compounds, and this offensive odour is precisely what is used to identify a positive carbylamine test.',
     difficulty: 'medium'
   },
@@ -666,11 +666,11 @@ export const AMINES = [
     question: 'The nitrogen atom in a tertiary aliphatic amine, unlike in a primary or secondary amine, has',
     options: [
       'two N-H bonds',
-      'no N-H bonds at all, since all three positions (besides the lone pair) are occupied by alkyl/aryl groups',
       'one N-H bond',
-      'four N-H bonds'
+      'four N-H bonds',
+      'no N-H bonds at all, since all three positions (besides the lone pair) are occupied by alkyl/aryl groups'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A tertiary amine has all three substituent positions on nitrogen occupied by alkyl or aryl groups, leaving no N-H bonds at all (only the lone pair remains available).',
     difficulty: 'easy'
   },
@@ -681,8 +681,8 @@ export const AMINES = [
     options: [
       'alkanes > amines > alcohols',
       'alcohols > amines > alkanes',
-      'amines > alcohols > alkanes',
-      'alkanes > alcohols > amines'
+      'alkanes > alcohols > amines',
+      'amines > alcohols > alkanes'
     ],
     correctIndex: 1,
     explanation: 'Alcohols, with the strongest hydrogen bonding (O-H), have the highest boiling points; amines, with weaker N-H hydrogen bonding, are intermediate; alkanes, with no hydrogen bonding, have the lowest boiling points among these comparable-mass compounds.',
@@ -693,12 +693,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'The reaction of an amine with excess methyl iodide, proceeding through successive alkylation steps, can ultimately give a',
     options: [
-      'primary amine, regardless of how much methyl iodide is used',
-      'quaternary ammonium salt, if enough methyl iodide is used',
+      'nitrile',
       'carboxylic acid',
-      'nitrile'
+      'quaternary ammonium salt, if enough methyl iodide is used',
+      'primary amine, regardless of how much methyl iodide is used'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Successive alkylation of an amine by excess alkyl halide can proceed all the way to exhaustive methylation, ultimately forming a quaternary ammonium salt.',
     difficulty: 'medium'
   },
@@ -707,12 +707,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'The reaction of aniline with acetic anhydride, giving acetanilide, is an example of',
     options: [
-      'a nucleophilic addition reaction',
-      'an acylation reaction, in which the amine nitrogen acts as a nucleophile towards the acid anhydride',
+      'an electrophilic aromatic substitution reaction on the ring',
       'a diazotisation reaction',
-      'an electrophilic aromatic substitution reaction on the ring'
+      'a nucleophilic addition reaction',
+      'an acylation reaction, in which the amine nitrogen acts as a nucleophile towards the acid anhydride'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Aniline\'s nitrogen lone pair attacks the electrophilic carbonyl carbon of acetic anhydride, displacing acetate and forming the amide (acetanilide) via an acylation reaction.',
     difficulty: 'medium'
   },
@@ -721,12 +721,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'Acetanilide, compared to aniline, is generally',
     options: [
+      'a much stronger acid than aniline, with no basic character at all',
       'a much stronger base',
       'a much weaker base, due to delocalisation of the nitrogen lone pair into the adjacent carbonyl group',
-      'exactly as basic as aniline',
-      'a much stronger acid than aniline, with no basic character at all'
+      'exactly as basic as aniline'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Since the nitrogen lone pair of acetanilide is delocalised into the carbonyl group of the acetyl substituent (similar to any amide), acetanilide is significantly less basic than the free amine aniline.',
     difficulty: 'medium'
   },
@@ -735,10 +735,10 @@ export const AMINES = [
     type: 'mcq',
     question: 'Amines are generally considered good nucleophiles primarily because of the',
     options: [
-      'high electronegativity of nitrogen, which pulls electron density away strongly',
+      'positive charge that amines always carry',
       'availability of the lone pair of electrons on nitrogen for donation to an electrophilic centre',
-      'complete absence of any lone pair on nitrogen',
-      'positive charge that amines always carry'
+      'high electronegativity of nitrogen, which pulls electron density away strongly',
+      'complete absence of any lone pair on nitrogen'
     ],
     correctIndex: 1,
     explanation: 'The availability of the nitrogen lone pair for donation to an electrophile is exactly what makes amines effective nucleophiles in a wide range of reactions.',
@@ -749,12 +749,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'Among the various methods for preparing amines, reduction of an amide with LiAlH4 gives',
     options: [
-      'an amine with the same number of carbon atoms as the parent amide',
       'an amine with one carbon atom fewer than the parent amide',
+      'a nitrile, not an amine',
       'an amine with one carbon atom more than the parent amide',
-      'a nitrile, not an amine'
+      'an amine with the same number of carbon atoms as the parent amide'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'LiAlH4 reduction of an amide simply reduces the C=O to CH2, retaining the same carbon skeleton and giving an amine with the same number of carbon atoms as the starting amide.',
     difficulty: 'medium'
   },
@@ -763,10 +763,10 @@ export const AMINES = [
     type: 'mcq',
     question: 'The Hofmann bromamide degradation is particularly useful synthetically because it allows conversion of an amide into',
     options: [
-      'a longer-chain amine, adding a carbon atom',
+      'a symmetrical dimeric product',
       'a shorter-chain (one carbon fewer) primary amine, providing a controlled route to specific amines that might be difficult to prepare by other methods',
       'a completely different functional group unrelated to amines',
-      'a symmetrical dimeric product'
+      'a longer-chain amine, adding a carbon atom'
     ],
     correctIndex: 1,
     explanation: 'The Hofmann degradation offers a reliable, controlled route to primary amines with one fewer carbon than the starting amide, useful in synthetic planning where this specific chain-shortening transformation is needed.',
@@ -792,11 +792,11 @@ export const AMINES = [
     question: 'The reaction sequence: nitrobenzene → (reduction) → aniline → (acetylation) → acetanilide → (nitration) → nitroacetanilide → (hydrolysis) → nitroaniline, illustrates the general synthetic strategy of',
     options: [
       'randomly modifying a molecule with no particular purpose',
+      'a purely hypothetical sequence with no real synthetic application',
       'protecting a reactive amino group before a subsequent reaction step, then deprotecting it afterward to reveal the free amine',
-      'converting an amine permanently into an amide with no possibility of reversal',
-      'a purely hypothetical sequence with no real synthetic application'
+      'converting an amine permanently into an amide with no possibility of reversal'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'This exact sequence demonstrates the standard protecting-group strategy: acetylating the amine before nitration to control reactivity and regiochemistry, then hydrolysing the resulting amide afterward to regenerate the free amine.',
     difficulty: 'medium'
   },
@@ -804,8 +804,8 @@ export const AMINES = [
     id: 'amine-61',
     type: 'mcq',
     question: 'The nomenclature suffix commonly used for naming an amine in IUPAC nomenclature is',
-    options: ['-ol', '-amine', '-one', '-oic acid'],
-    correctIndex: 1,
+    options: ['-one', '-ol', '-oic acid', '-amine'],
+    correctIndex: 3,
     explanation: 'IUPAC nomenclature uses the suffix "-amine" to indicate the presence of an amino group in a compound.',
     difficulty: 'easy'
   },
@@ -814,10 +814,10 @@ export const AMINES = [
     type: 'mcq',
     question: 'Which of the following amines would be expected to give a negative result with both the carbylamine test and the typical nitrous acid tests characteristic of primary/secondary amines (aside from possible ring nitrosation for an aromatic case)?',
     options: [
-      'A primary amine',
+      'All classes of amines give identical results',
       'A secondary amine',
       'A tertiary amine',
-      'All classes of amines give identical results'
+      'A primary amine'
     ],
     correctIndex: 2,
     explanation: 'A tertiary amine gives a negative carbylamine test (specific to primary amines) and does not form a diazonium salt or N-nitrosamine like primary or secondary amines; aliphatic tertiary amines simply form an unstable salt with nitrous acid, showing no easily visible characteristic reaction.',
@@ -828,10 +828,10 @@ export const AMINES = [
     type: 'mcq',
     question: 'Amines are widely used as intermediates in the synthesis of dyes, drugs, and other important compounds mainly because of their',
     options: [
-      'complete chemical inertness',
-      'nucleophilic nitrogen atom, which readily participates in a wide range of substitution, addition, and coupling reactions',
       'inability to react with any other functional group',
-      'lack of any biological or industrial relevance'
+      'nucleophilic nitrogen atom, which readily participates in a wide range of substitution, addition, and coupling reactions',
+      'lack of any biological or industrial relevance',
+      'complete chemical inertness'
     ],
     correctIndex: 1,
     explanation: 'The versatile nucleophilic nitrogen of amines allows them to participate in numerous synthetic transformations, making them valuable and widely used intermediates in industrial and pharmaceutical chemistry.',
@@ -858,8 +858,8 @@ export const AMINES = [
     options: [
       'Ammonolysis of alkyl halides — gives a clean, single pure primary amine with no side products',
       'Gabriel synthesis — limited to aliphatic primary amines, since aryl halides do not undergo the required substitution',
-      'Reduction of nitriles — gives an amine with one fewer carbon than the nitrile',
-      'Hofmann degradation — gives an amine with one more carbon than the starting amide'
+      'Hofmann degradation — gives an amine with one more carbon than the starting amide',
+      'Reduction of nitriles — gives an amine with one fewer carbon than the nitrile'
     ],
     correctIndex: 1,
     explanation: 'The Gabriel synthesis is specifically limited to aliphatic primary amines due to the unreactivity of aryl halides towards the required nucleophilic substitution step, correctly matching this pairing.',
@@ -884,12 +884,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'The intense colours often associated with azo compounds (formed via diazonium coupling reactions) are primarily due to',
     options: [
-      'the presence of the -N=N- linkage, which is part of an extended conjugated system that absorbs visible light',
+      'the presence of halogen atoms in the molecule',
       'random chance, with no structural basis for the colour',
-      'the presence of a carbonyl group, unrelated to the azo linkage',
-      'the presence of halogen atoms in the molecule'
+      'the presence of the -N=N- linkage, which is part of an extended conjugated system that absorbs visible light',
+      'the presence of a carbonyl group, unrelated to the azo linkage'
     ],
-    correctIndex: 0,
+    correctIndex: 2,
     explanation: 'The -N=N- azo linkage, conjugated with the attached aromatic rings, creates an extended system capable of absorbing visible light, giving azo compounds their characteristic and often intense colours.',
     difficulty: 'medium'
   },
@@ -898,12 +898,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'Which of the following best summarises the overall relationship between amine basicity, structure, and steric/electronic effects, as emphasised in this chapter?',
     options: [
-      'Basicity is a simple, single-factor property depending only on molecular mass',
-      'Basicity depends on a combination of inductive effects, resonance/delocalisation effects (especially for aromatic amines), steric hindrance, and solvation of the resulting cation',
       'Basicity is completely unrelated to the structure of the amine',
-      'All amines, regardless of structure, show identical basicity'
+      'All amines, regardless of structure, show identical basicity',
+      'Basicity is a simple, single-factor property depending only on molecular mass',
+      'Basicity depends on a combination of inductive effects, resonance/delocalisation effects (especially for aromatic amines), steric hindrance, and solvation of the resulting cation'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Amine basicity is a multifactorial property, shaped by the combined influence of inductive effects, resonance delocalisation, steric factors, and solvation, as emphasised throughout the discussion of aliphatic versus aromatic amine basicity.',
     difficulty: 'medium'
   },
@@ -912,12 +912,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'Which of the following amine-related reactions is correctly classified as an example of electrophilic aromatic substitution, rather than a reaction occurring at the nitrogen atom itself?',
     options: [
-      'Acylation of aniline with acetic anhydride',
       'Bromination of aniline with bromine water, giving 2,4,6-tribromoaniline',
       'Reaction of a primary amine with nitrous acid to form a diazonium salt',
-      'Reaction of a primary amine with chloroform and KOH (carbylamine reaction)'
+      'Reaction of a primary amine with chloroform and KOH (carbylamine reaction)',
+      'Acylation of aniline with acetic anhydride'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'Bromination of aniline occurs on the aromatic ring itself (an electrophilic aromatic substitution), unlike acylation, diazotisation, and the carbylamine reaction, which all involve the nitrogen atom directly.',
     difficulty: 'medium'
   },
@@ -926,12 +926,12 @@ export const AMINES = [
     type: 'mcq',
     question: 'Overall, the chemistry of amines, as emphasised throughout this NCERT chapter, centres on understanding',
     options: [
-      'the nucleophilic and basic character of the nitrogen lone pair, its influence on structure and basicity (particularly the aliphatic vs. aromatic distinction), preparation methods, and the important synthetic role of diazonium salts',
-      'only the physical appearance and smell of amine compounds',
+      'topics entirely unrelated to the amino functional group',
       'only their industrial cost of manufacture',
-      'topics entirely unrelated to the amino functional group'
+      'only the physical appearance and smell of amine compounds',
+      'the nucleophilic and basic character of the nitrogen lone pair, its influence on structure and basicity (particularly the aliphatic vs. aromatic distinction), preparation methods, and the important synthetic role of diazonium salts'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The chapter integrates structural features, basicity trends (especially the aliphatic-aromatic contrast), diverse preparation methods, characteristic reactions, and the synthetically valuable chemistry of diazonium salts, all stemming from the nitrogen lone pair.',
     difficulty: 'medium'
   },
@@ -1962,4 +1962,3 @@ export const AMINES = [
     difficulty: 'medium'
   }
 ];
-

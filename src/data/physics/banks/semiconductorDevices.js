@@ -4,8 +4,8 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-1',
     type: 'mcq',
     question: 'According to the energy band theory of solids, the range of energy values that electrons in a solid can occupy (arising from overlapping/splitting of discrete atomic energy levels) is called a',
-    options: ['forbidden gap', 'energy band', 'depletion region', 'Fermi level'],
-    correctIndex: 1,
+    options: ['forbidden gap', 'depletion region', 'Fermi level', 'energy band'],
+    correctIndex: 3,
     explanation: 'When a large number of atoms come close together to form a solid, their discrete energy levels split and overlap, forming continuous ranges of allowed energy called energy bands.',
     difficulty: 'medium'
   },
@@ -13,8 +13,8 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-2',
     type: 'mcq',
     question: 'The energy band that is completely or partially filled with valence electrons, generally not directly involved in conduction, is called the',
-    options: ['conduction band', 'valence band', 'forbidden gap', 'depletion band'],
-    correctIndex: 1,
+    options: ['depletion band', 'conduction band', 'forbidden gap', 'valence band'],
+    correctIndex: 3,
     explanation: 'The valence band contains the energy levels occupied by the valence electrons of the atoms in the solid.',
     difficulty: 'easy'
   },
@@ -22,8 +22,8 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-3',
     type: 'mcq',
     question: 'The energy band above the valence band, in which electrons must be present to participate freely in electrical conduction, is called the',
-    options: ['valence band', 'conduction band', 'forbidden gap', 'depletion region'],
-    correctIndex: 1,
+    options: ['forbidden gap', 'depletion region', 'valence band', 'conduction band'],
+    correctIndex: 3,
     explanation: 'The conduction band is the energy band in which electrons are free to move and contribute to electrical conduction.',
     difficulty: 'easy'
   },
@@ -31,8 +31,8 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-4',
     type: 'mcq',
     question: 'The energy gap between the valence band and the conduction band, in which no electron states are normally allowed, is called the',
-    options: ['depletion region', 'forbidden energy gap', 'Fermi band', 'donor level'],
-    correctIndex: 1,
+    options: ['donor level', 'Fermi band', 'depletion region', 'forbidden energy gap'],
+    correctIndex: 3,
     explanation: 'The forbidden energy gap (band gap) is the range of energies between the valence and conduction bands where no allowed electron states exist.',
     difficulty: 'easy'
   },
@@ -55,12 +55,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'In insulators, the forbidden energy gap between the valence and conduction bands is generally',
     options: [
-      'very small (close to zero)',
-      'very large (typically greater than about 3 eV), making it extremely difficult for electrons to jump into the conduction band',
+      'negative in value',
       'exactly zero, identical to a metal',
-      'negative in value'
+      'very small (close to zero)',
+      'very large (typically greater than about 3 eV), making it extremely difficult for electrons to jump into the conduction band'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Insulators have a large forbidden energy gap, typically greater than about 3 eV, making it very difficult for valence electrons to acquire enough energy to reach the conduction band.',
     difficulty: 'medium'
   },
@@ -70,11 +70,11 @@ export const SEMICONDUCTORS_DEVICES = [
     question: 'In semiconductors, the forbidden energy gap is generally',
     options: [
       'as large as that of typical insulators',
-      'small (of the order of about 1 eV), allowing some electrons to be thermally excited into the conduction band at room temperature',
+      'infinite',
       'exactly zero, like a metal',
-      'infinite'
+      'small (of the order of about 1 eV), allowing some electrons to be thermally excited into the conduction band at room temperature'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Semiconductors have a relatively small forbidden energy gap (around 1 eV for common materials like silicon and germanium), allowing a modest number of electrons to be thermally excited across the gap at room temperature.',
     difficulty: 'medium'
   },
@@ -83,12 +83,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'At absolute zero temperature (0 K), a pure (intrinsic) semiconductor behaves essentially like',
     options: [
+      'a material with infinite conductivity',
       'a perfect conductor',
-      'an insulator, since no electrons have enough thermal energy to jump the forbidden gap',
       'a superconductor',
-      'a material with infinite conductivity'
+      'an insulator, since no electrons have enough thermal energy to jump the forbidden gap'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'At absolute zero, there is no thermal energy available to excite electrons across the forbidden gap, so an intrinsic semiconductor behaves like an insulator at this temperature.',
     difficulty: 'medium'
   },
@@ -98,11 +98,11 @@ export const SEMICONDUCTORS_DEVICES = [
     question: 'In an intrinsic (pure) semiconductor, the number of free electrons in the conduction band is',
     options: [
       'always much greater than the number of holes in the valence band',
+      'always exactly zero',
       'always much less than the number of holes in the valence band',
-      'exactly equal to the number of holes in the valence band, since each thermally excited electron leaves behind a corresponding hole',
-      'always exactly zero'
+      'exactly equal to the number of holes in the valence band, since each thermally excited electron leaves behind a corresponding hole'
     ],
-    correctIndex: 2,
+    correctIndex: 3,
     explanation: 'In an intrinsic semiconductor, each electron thermally excited into the conduction band leaves behind a hole in the valence band, so the number of electrons equals the number of holes.',
     difficulty: 'medium'
   },
@@ -111,12 +111,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'As temperature increases, the electrical conductivity of an intrinsic semiconductor generally',
     options: [
-      'decreases, similar to the behaviour of metals',
-      'increases, since more electron-hole pairs are generated thermally at higher temperature',
       'remains completely unchanged',
-      'becomes exactly zero'
+      'becomes exactly zero',
+      'decreases, similar to the behaviour of metals',
+      'increases, since more electron-hole pairs are generated thermally at higher temperature'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Higher temperature provides more thermal energy for electron-hole pair generation, increasing the number of charge carriers and hence the conductivity of an intrinsic semiconductor.',
     difficulty: 'medium'
   },
@@ -125,12 +125,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'Unlike semiconductors, the electrical conductivity of metals generally',
     options: [
-      'increases with increasing temperature',
-      'decreases with increasing temperature, mainly due to increased lattice vibrations scattering the charge carriers',
+      'behaves in exactly the same way as a semiconductor',
       'is unaffected by any change in temperature',
-      'behaves in exactly the same way as a semiconductor'
+      'increases with increasing temperature',
+      'decreases with increasing temperature, mainly due to increased lattice vibrations scattering the charge carriers'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'In metals, the number of free electrons remains essentially constant with temperature, but increased lattice vibrations at higher temperatures scatter these electrons more, decreasing conductivity — opposite to the behaviour seen in semiconductors.',
     difficulty: 'medium'
   },
@@ -139,12 +139,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'Doping a semiconductor with a pentavalent impurity (such as phosphorus or arsenic) produces a',
     options: [
+      'perfect insulator',
       'p-type semiconductor, with holes as majority carriers',
-      'n-type semiconductor, with electrons as majority carriers',
       'purely intrinsic semiconductor, unaffected by the impurity',
-      'perfect insulator'
+      'n-type semiconductor, with electrons as majority carriers'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A pentavalent (donor) impurity contributes an extra electron beyond what is needed for covalent bonding, creating an n-type semiconductor with electrons as the majority charge carriers.',
     difficulty: 'medium'
   },
@@ -154,11 +154,11 @@ export const SEMICONDUCTORS_DEVICES = [
     question: 'Doping a semiconductor with a trivalent impurity (such as boron or gallium) produces a',
     options: [
       'n-type semiconductor, with electrons as majority carriers',
-      'p-type semiconductor, with holes as majority carriers',
+      'perfect conductor',
       'purely intrinsic semiconductor, unaffected by the impurity',
-      'perfect conductor'
+      'p-type semiconductor, with holes as majority carriers'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A trivalent (acceptor) impurity has one fewer electron than needed for covalent bonding, creating a hole (missing bond) and resulting in a p-type semiconductor with holes as the majority carriers.',
     difficulty: 'medium'
   },
@@ -168,11 +168,11 @@ export const SEMICONDUCTORS_DEVICES = [
     question: 'In an n-type semiconductor, the majority and minority charge carriers are, respectively,',
     options: [
       'holes and electrons',
-      'electrons and holes',
+      'only electrons, with no minority carriers at all',
       'protons and electrons',
-      'only electrons, with no minority carriers at all'
+      'electrons and holes'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'In an n-type semiconductor, electrons (contributed by the donor impurity) are the majority carriers, while holes are present only as minority carriers.',
     difficulty: 'easy'
   },
@@ -182,11 +182,11 @@ export const SEMICONDUCTORS_DEVICES = [
     question: 'In a p-type semiconductor, the majority and minority charge carriers are, respectively,',
     options: [
       'electrons and holes',
-      'holes and electrons',
+      'only holes, with no minority carriers at all',
       'protons and neutrons',
-      'only holes, with no minority carriers at all'
+      'holes and electrons'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'In a p-type semiconductor, holes (created by the acceptor impurity) are the majority carriers, while electrons are present only as minority carriers.',
     difficulty: 'easy'
   },
@@ -195,12 +195,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'Despite having an excess of one type of charge carrier (majority carriers), an n-type or p-type doped semiconductor is overall',
     options: [
-      'positively charged, if it is n-type',
-      'electrically neutral, since the number of majority carriers is balanced by the fixed charge of the ionised dopant atoms',
       'negatively charged, if it is p-type',
-      'always highly charged, regardless of type'
+      'positively charged, if it is n-type',
+      'always highly charged, regardless of type',
+      'electrically neutral, since the number of majority carriers is balanced by the fixed charge of the ionised dopant atoms'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Even though one type of carrier dominates, a doped semiconductor remains overall electrically neutral, since the mobile majority carriers are balanced by the immobile, oppositely charged ionised dopant atoms.',
     difficulty: 'medium'
   },
@@ -209,12 +209,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'The typical concentration of dopant atoms added to a semiconductor during doping is',
     options: [
+      'completely irrelevant to the resulting conductivity',
       'roughly equal to the number of semiconductor atoms present',
-      'very small (often around 1 dopant atom per 10^6 to 10^8 semiconductor atoms), yet sufficient to dramatically increase conductivity',
       'far greater than the number of semiconductor atoms present',
-      'completely irrelevant to the resulting conductivity'
+      'very small (often around 1 dopant atom per 10^6 to 10^8 semiconductor atoms), yet sufficient to dramatically increase conductivity'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Doping typically introduces only a very small proportion of impurity atoms relative to the semiconductor atoms, yet this small addition dramatically increases the conductivity compared to the pure (intrinsic) material.',
     difficulty: 'medium'
   },
@@ -223,10 +223,10 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'The formation of a p-n junction, when p-type and n-type semiconductor materials are joined together, is initially driven by',
     options: [
-      'an externally applied voltage',
+      'gravitational forces between the two materials',
       'diffusion of majority carriers across the junction, from the region of higher concentration to the region of lower concentration',
-      'a magnetic field applied across the junction',
-      'gravitational forces between the two materials'
+      'an externally applied voltage',
+      'a magnetic field applied across the junction'
     ],
     correctIndex: 1,
     explanation: 'When p-type and n-type materials are joined, majority carriers (electrons from the n-side, holes from the p-side) diffuse across the junction due to the concentration gradient, initiating the formation of the junction\'s characteristic properties.',
@@ -236,7 +236,7 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-19',
     type: 'mcq',
     question: 'The diffusion of majority carriers across a newly formed p-n junction leaves behind a region depleted of free mobile charge carriers, known as the',
-    options: ['conduction band', 'depletion region', 'valence band', 'saturation region'],
+    options: ['valence band', 'depletion region', 'conduction band', 'saturation region'],
     correctIndex: 1,
     explanation: 'As majority carriers diffuse across the junction and recombine, a region near the junction becomes depleted of free mobile charge carriers, containing only fixed, immobile ionised dopant atoms — this is called the depletion region.',
     difficulty: 'medium'
@@ -246,12 +246,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'The depletion region of a p-n junction contains',
     options: [
-      'a high concentration of free, mobile electrons and holes',
-      'fixed, immobile ionised dopant atoms, but essentially no free mobile charge carriers',
       'no charge at all, of any kind',
-      'only neutral, un-ionised dopant atoms'
+      'only neutral, un-ionised dopant atoms',
+      'a high concentration of free, mobile electrons and holes',
+      'fixed, immobile ionised dopant atoms, but essentially no free mobile charge carriers'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The depletion region consists of immobile, ionised dopant atoms (positive ions on the n-side, negative ions on the p-side) left behind after the mobile carriers have diffused away and recombined; it is essentially free of mobile charge carriers.',
     difficulty: 'medium'
   },
@@ -260,12 +260,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'The internal electric field created within the depletion region of a p-n junction points',
     options: [
-      'from the p-side towards the n-side',
-      'from the n-side towards the p-side, opposing further diffusion of majority carriers across the junction',
       'parallel to the junction plane, with no component across it',
-      'in a random, undefined direction'
+      'in a random, undefined direction',
+      'from the p-side towards the n-side',
+      'from the n-side towards the p-side, opposing further diffusion of majority carriers across the junction'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The internal electric field within the depletion region points from the positively charged ions on the n-side towards the negatively charged ions on the p-side, opposing further diffusion of majority carriers and eventually establishing equilibrium.',
     difficulty: 'medium'
   },
@@ -273,7 +273,7 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-22',
     type: 'mcq',
     question: 'The potential difference that develops across the depletion region of an unbiased p-n junction, opposing further net diffusion of majority carriers, is called the',
-    options: ['forward voltage', 'barrier (built-in) potential', 'breakdown voltage', 'Zener voltage'],
+    options: ['breakdown voltage', 'barrier (built-in) potential', 'forward voltage', 'Zener voltage'],
     correctIndex: 1,
     explanation: 'The barrier (or built-in) potential is the potential difference that develops across the depletion region, arising from the internal electric field, and it opposes further net diffusion of majority carriers at equilibrium.',
     difficulty: 'medium'
@@ -283,12 +283,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'When a p-n junction diode is forward biased (p-side connected to the positive terminal, n-side to the negative terminal), the depletion region generally',
     options: [
-      'widens, and current flow is strongly opposed',
-      'narrows, reducing the barrier potential and allowing majority carrier current to flow relatively easily',
       'remains exactly the same width as in the unbiased state',
-      'disappears entirely, along with the semiconductor material itself'
+      'disappears entirely, along with the semiconductor material itself',
+      'widens, and current flow is strongly opposed',
+      'narrows, reducing the barrier potential and allowing majority carrier current to flow relatively easily'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Forward bias opposes the internal built-in field, narrowing the depletion region and lowering the barrier potential, allowing majority carriers to flow across the junction relatively easily.',
     difficulty: 'medium'
   },
@@ -311,10 +311,10 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'The forward current through a p-n junction diode, once the applied forward voltage exceeds the threshold (knee) voltage, generally',
     options: [
-      'remains constant, regardless of further increases in voltage',
+      'becomes exactly zero',
       'increases rapidly (approximately exponentially) with further increases in forward voltage',
       'decreases as voltage increases',
-      'becomes exactly zero'
+      'remains constant, regardless of further increases in voltage'
     ],
     correctIndex: 1,
     explanation: 'Once the forward voltage exceeds the threshold (knee) voltage, the forward current increases rapidly, approximately following an exponential relationship with applied voltage.',
@@ -324,8 +324,8 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-26',
     type: 'mcq',
     question: 'The typical threshold (knee) voltage for a silicon p-n junction diode to begin conducting significantly in forward bias is approximately',
-    options: ['0.1 V', '0.7 V', '5 V', '50 V'],
-    correctIndex: 1,
+    options: ['0.1 V', '5 V', '50 V', '0.7 V'],
+    correctIndex: 3,
     explanation: 'A silicon diode typically requires a forward voltage of around 0.7 V before it begins conducting a significant forward current.',
     difficulty: 'medium'
   },
@@ -334,10 +334,10 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'Under reverse bias conditions (below breakdown), the reverse current through a p-n junction diode is generally',
     options: [
-      'very large and strongly dependent on the exact reverse voltage applied',
-      'very small and nearly independent of the applied reverse voltage, until breakdown occurs',
       'exactly zero under all reverse bias conditions',
-      'larger than the typical forward current'
+      'very small and nearly independent of the applied reverse voltage, until breakdown occurs',
+      'larger than the typical forward current',
+      'very large and strongly dependent on the exact reverse voltage applied'
     ],
     correctIndex: 1,
     explanation: 'The reverse saturation current, carried by minority carriers, remains very small and is nearly independent of the exact applied reverse voltage, until the breakdown voltage is reached.',
@@ -347,8 +347,8 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-28',
     type: 'mcq',
     question: 'Beyond a certain reverse voltage, the reverse current through a p-n junction diode increases sharply; this phenomenon is called',
-    options: ['forward conduction', 'breakdown', 'saturation biasing', 'thermal runaway of the forward current'],
-    correctIndex: 1,
+    options: ['forward conduction', 'thermal runaway of the forward current', 'saturation biasing', 'breakdown'],
+    correctIndex: 3,
     explanation: 'Beyond the breakdown voltage, the reverse current increases sharply due to mechanisms such as the Zener effect or avalanche effect, a phenomenon called breakdown.',
     difficulty: 'medium'
   },
@@ -357,12 +357,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'Zener breakdown, typically occurring at heavily doped junctions with narrow depletion regions, is caused by',
     options: [
+      'a decrease in the applied reverse voltage',
       'a strong electric field directly breaking covalent bonds (tunnelling of electrons), rather than a multiplying collision process',
       'impact ionisation caused by accelerated minority carriers colliding with lattice atoms',
-      'an increase in temperature alone, with no relation to electric field strength',
-      'a decrease in the applied reverse voltage'
+      'an increase in temperature alone, with no relation to electric field strength'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Zener breakdown occurs when a very strong electric field across a narrow depletion region directly breaks covalent bonds (a quantum mechanical tunnelling process), typically at heavily doped junctions.',
     difficulty: 'hard'
   },
@@ -371,12 +371,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'Avalanche breakdown, typically occurring at lightly doped junctions with wider depletion regions, is caused by',
     options: [
-      'direct tunnelling of electrons through the depletion region',
-      'impact ionisation, in which accelerated minority carriers collide with lattice atoms, generating additional electron-hole pairs in a multiplying process',
       'a decrease in the applied reverse voltage below a certain threshold',
-      'the complete absence of any electric field in the depletion region'
+      'direct tunnelling of electrons through the depletion region',
+      'the complete absence of any electric field in the depletion region',
+      'impact ionisation, in which accelerated minority carriers collide with lattice atoms, generating additional electron-hole pairs in a multiplying process'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Avalanche breakdown occurs through impact ionisation, where accelerated minority carriers gain enough energy to knock additional electrons free upon collision, creating a rapidly multiplying cascade of charge carriers.',
     difficulty: 'hard'
   },
@@ -385,10 +385,10 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'A Zener diode is a specially designed p-n junction diode that is typically operated in the',
     options: [
-      'forward bias region only',
-      'reverse breakdown region, exploiting the nearly constant voltage across it over a range of currents',
       'zero bias (unbiased) state only',
-      'region where it acts as a light-emitting device'
+      'reverse breakdown region, exploiting the nearly constant voltage across it over a range of currents',
+      'region where it acts as a light-emitting device',
+      'forward bias region only'
     ],
     correctIndex: 1,
     explanation: 'A Zener diode is specifically designed to operate reliably in the reverse breakdown region, where the voltage across it remains nearly constant over a wide range of currents, making it useful for voltage regulation.',
@@ -399,10 +399,10 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'A Zener diode is commonly used in circuits as a',
     options: [
-      'light-emitting device',
-      'voltage regulator, maintaining a nearly constant output voltage despite variations in input voltage or load current',
       'photodetector',
-      'high-power rectifier only'
+      'voltage regulator, maintaining a nearly constant output voltage despite variations in input voltage or load current',
+      'high-power rectifier only',
+      'light-emitting device'
     ],
     correctIndex: 1,
     explanation: 'Since the voltage across a Zener diode remains nearly constant in its breakdown region, it is widely used as a voltage regulator in electronic circuits.',
@@ -413,12 +413,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'A photodiode is a p-n junction diode that is typically operated under',
     options: [
+      'extremely high forward current conditions only',
       'forward bias, to emit light',
-      'reverse bias, generating a photocurrent proportional to the intensity of light incident on the junction',
       'zero bias only, with no external circuit connection possible',
-      'extremely high forward current conditions only'
+      'reverse bias, generating a photocurrent proportional to the intensity of light incident on the junction'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A photodiode is typically operated under reverse bias, where incident light generates additional electron-hole pairs, producing a photocurrent proportional to the light intensity, making it useful as a light sensor.',
     difficulty: 'medium'
   },
@@ -427,12 +427,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'An LED (Light Emitting Diode) operates under',
     options: [
-      'reverse bias, emitting light due to minority carrier generation',
-      'forward bias, emitting light due to the recombination of injected electrons and holes at the junction',
+      'no bias, generating light purely from ambient heat',
       'zero bias only',
-      'no bias, generating light purely from ambient heat'
+      'reverse bias, emitting light due to minority carrier generation',
+      'forward bias, emitting light due to the recombination of injected electrons and holes at the junction'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'An LED is forward biased, and the resulting recombination of electrons and holes at (or near) the junction releases energy in the form of emitted light (photons).',
     difficulty: 'medium'
   },
@@ -455,12 +455,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'LEDs are typically fabricated from direct band gap semiconductor materials (such as GaAs, GaP, or GaAsP) rather than materials like silicon, mainly because',
     options: [
-      'silicon is far too expensive to use in electronic devices',
-      'direct band gap materials allow the recombination energy to be efficiently released as light, whereas materials like silicon primarily release this energy as heat',
       'silicon cannot be doped to form a p-n junction',
-      'direct band gap materials cannot conduct electricity at all'
+      'direct band gap materials cannot conduct electricity at all',
+      'silicon is far too expensive to use in electronic devices',
+      'direct band gap materials allow the recombination energy to be efficiently released as light, whereas materials like silicon primarily release this energy as heat'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'In direct band gap semiconductors, electron-hole recombination can efficiently release energy as light (photons), whereas in indirect band gap materials like silicon, this recombination energy is predominantly released as heat rather than light, making silicon unsuitable for efficient LEDs.',
     difficulty: 'hard'
   },
@@ -468,7 +468,7 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-37',
     type: 'mcq',
     question: 'A solar cell converts light energy directly into electrical energy through a phenomenon known as the',
-    options: ['photoelectric effect on a metal surface', 'photovoltaic effect', 'thermionic effect', 'Zener effect'],
+    options: ['photoelectric effect on a metal surface', 'photovoltaic effect', 'Zener effect', 'thermionic effect'],
     correctIndex: 1,
     explanation: 'A solar cell exploits the photovoltaic effect, in which absorbed light generates a voltage/current across a p-n junction without requiring any external bias.',
     difficulty: 'medium'
@@ -478,12 +478,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'Unlike a photodiode, which requires an external reverse bias to function as a light detector, a solar cell',
     options: [
+      'cannot generate any current, regardless of the light intensity',
       'also requires an external bias, identical to a photodiode',
-      'requires no external bias at all, generating its own emf directly from absorbed light energy',
       'must be forward biased at all times to work',
-      'cannot generate any current, regardless of the light intensity'
+      'requires no external bias at all, generating its own emf directly from absorbed light energy'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A solar cell is designed to generate its own voltage and current directly from absorbed sunlight, without requiring any external applied bias, unlike a photodiode which is typically operated under reverse bias.',
     difficulty: 'medium'
   },
@@ -534,10 +534,10 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'A junction transistor (BJT) is a three-terminal semiconductor device consisting of three regions, named',
     options: [
-      'anode, cathode, and gate',
+      'positive terminal, negative terminal, and neutral terminal',
       'emitter, base, and collector',
-      'source, drain, and channel',
-      'positive terminal, negative terminal, and neutral terminal'
+      'anode, cathode, and gate',
+      'source, drain, and channel'
     ],
     correctIndex: 1,
     explanation: 'A bipolar junction transistor (BJT) consists of three regions: the emitter, base, and collector, each with a specific role in the device\'s operation.',
@@ -548,12 +548,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'In a BJT, the emitter region is typically',
     options: [
-      'lightly doped and very thin, compared to the other two regions',
-      'heavily doped, since it must supply a large number of majority carriers into the base region',
       'undoped, remaining a purely intrinsic semiconductor',
-      'the largest of the three regions in physical size'
+      'lightly doped and very thin, compared to the other two regions',
+      'the largest of the three regions in physical size',
+      'heavily doped, since it must supply a large number of majority carriers into the base region'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The emitter region is heavily doped to supply a large number of majority carriers, which are injected into the thin base region during transistor operation.',
     difficulty: 'medium'
   },
@@ -562,12 +562,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'In a BJT, the base region is typically',
     options: [
-      'heavily doped and physically the largest region',
-      'very thin and only lightly doped, allowing most carriers injected from the emitter to pass through to the collector with minimal recombination',
+      'made of a completely different material from the emitter and collector',
       'exactly the same doping level and thickness as the emitter',
-      'made of a completely different material from the emitter and collector'
+      'heavily doped and physically the largest region',
+      'very thin and only lightly doped, allowing most carriers injected from the emitter to pass through to the collector with minimal recombination'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The base region is deliberately made very thin and lightly doped, so that most of the carriers injected from the emitter pass through to the collector, with only a small fraction recombining within the base.',
     difficulty: 'medium'
   },
@@ -589,8 +589,8 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-46',
     type: 'mcq',
     question: 'In a transistor, the fundamental relationship between emitter current (IE), base current (IB), and collector current (IC) is given by',
-    options: ['IE = IB - IC', 'IE = IB + IC', 'IE = IB × IC', 'IE = IC - IB'],
-    correctIndex: 1,
+    options: ['IE = IB × IC', 'IE = IB - IC', 'IE = IB + IC', 'IE = IC - IB'],
+    correctIndex: 2,
     explanation: 'By conservation of current (Kirchhoff\'s current law applied to the transistor), the total emitter current equals the sum of the base and collector currents: IE = IB + IC.',
     difficulty: 'medium'
   },
@@ -598,7 +598,7 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-47',
     type: 'mcq',
     question: 'The common-base current gain (α) of a transistor is defined as the ratio',
-    options: ['IC/IB', 'IC/IE, and its value is typically slightly less than 1', 'IB/IE', 'IE/IC'],
+    options: ['IE/IC', 'IC/IE, and its value is typically slightly less than 1', 'IC/IB', 'IB/IE'],
     correctIndex: 1,
     explanation: 'Common-base current gain α is defined as IC/IE, and since a small fraction of injected carriers recombine in the base rather than reaching the collector, its value is always slightly less than 1.',
     difficulty: 'medium'
@@ -607,8 +607,8 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-48',
     type: 'mcq',
     question: 'The common-emitter current gain (β) of a transistor is defined as the ratio',
-    options: ['IC/IE', 'IC/IB, and its value is typically large (much greater than 1)', 'IB/IC', 'IE/IB'],
-    correctIndex: 1,
+    options: ['IB/IC', 'IC/IE', 'IE/IB', 'IC/IB, and its value is typically large (much greater than 1)'],
+    correctIndex: 3,
     explanation: 'Common-emitter current gain β is defined as IC/IB, and since base current is typically much smaller than collector current, its value is usually large, providing significant current amplification.',
     difficulty: 'medium'
   },
@@ -616,8 +616,8 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-49',
     type: 'mcq',
     question: 'The relationship between the common-base current gain (α) and the common-emitter current gain (β) of a transistor is given by',
-    options: ['β = α/(1-α)', 'β = α + 1', 'β = 1/α', 'β = α × (1-α)'],
-    correctIndex: 0,
+    options: ['β = α + 1', 'β = α × (1-α)', 'β = α/(1-α)', 'β = 1/α'],
+    correctIndex: 2,
     explanation: 'The relationship between the two current gains, derived from their definitions and the fundamental current relation IE = IB + IC, is β = α/(1-α).',
     difficulty: 'hard'
   },
@@ -640,12 +640,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'When used as an amplifier, a transistor exploits the fact that',
     options: [
-      'small changes in base current produce correspondingly large changes in collector current',
-      'small changes in collector current have no effect on the base current whatsoever',
       'the emitter current is always exactly zero',
-      'amplification requires no external power supply at all'
+      'small changes in collector current have no effect on the base current whatsoever',
+      'amplification requires no external power supply at all',
+      'small changes in base current produce correspondingly large changes in collector current'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'In amplifier applications, a small variation in the base current (input signal) produces a much larger corresponding variation in the collector current (output), achieving current amplification.',
     difficulty: 'medium'
   },
@@ -654,10 +654,10 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'When a transistor is used as a switch, the "off" (cutoff) state corresponds to',
     options: [
-      'both the emitter-base and base-collector junctions being forward biased, allowing maximum current to flow',
+      'the transistor generating its own current spontaneously, with no external bias needed',
       'both the emitter-base and base-collector junctions being reverse biased, so essentially no current flows, similar to an open switch',
-      'only the emitter-base junction being forward biased',
-      'the transistor generating its own current spontaneously, with no external bias needed'
+      'both the emitter-base and base-collector junctions being forward biased, allowing maximum current to flow',
+      'only the emitter-base junction being forward biased'
     ],
     correctIndex: 1,
     explanation: 'In the cutoff region, both transistor junctions are reverse biased, allowing essentially no current to flow through the device, analogous to an open switch.',
@@ -668,10 +668,10 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'When a transistor is used as a switch, the "on" (saturation) state corresponds to',
     options: [
-      'both junctions being reverse biased',
+      'the transistor having zero collector current under all conditions',
       'both the emitter-base and base-collector junctions being forward biased, allowing maximum current to flow through the transistor, similar to a closed switch',
-      'only the base-collector junction being reverse biased, with no other change',
-      'the transistor having zero collector current under all conditions'
+      'both junctions being reverse biased',
+      'only the base-collector junction being reverse biased, with no other change'
     ],
     correctIndex: 1,
     explanation: 'In the saturation region, both junctions are forward biased, allowing the maximum possible current to flow through the transistor, analogous to a closed switch.',
@@ -681,8 +681,8 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-54',
     type: 'mcq',
     question: 'A logic gate that produces a high (1) output only when all of its inputs are high (1) is called an',
-    options: ['OR gate', 'AND gate', 'NOT gate', 'NOR gate'],
-    correctIndex: 1,
+    options: ['OR gate', 'NOR gate', 'AND gate', 'NOT gate'],
+    correctIndex: 2,
     explanation: 'An AND gate outputs a high (1) signal only when every one of its inputs is high (1); if any input is low (0), the output is low.',
     difficulty: 'easy'
   },
@@ -690,8 +690,8 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-55',
     type: 'mcq',
     question: 'A logic gate that produces a high (1) output if at least one of its inputs is high (1) is called an',
-    options: ['AND gate', 'OR gate', 'NAND gate', 'NOT gate'],
-    correctIndex: 1,
+    options: ['AND gate', 'NOT gate', 'NAND gate', 'OR gate'],
+    correctIndex: 3,
     explanation: 'An OR gate outputs a high (1) signal if any one (or more) of its inputs is high (1), and outputs low (0) only when all inputs are low.',
     difficulty: 'easy'
   },
@@ -699,8 +699,8 @@ export const SEMICONDUCTORS_DEVICES = [
     id: 'semiconductor-56',
     type: 'mcq',
     question: 'A logic gate with a single input that produces an output that is the inverse (opposite) of its input is called a',
-    options: ['AND gate', 'OR gate', 'NOT gate', 'NAND gate'],
-    correctIndex: 2,
+    options: ['OR gate', 'AND gate', 'NAND gate', 'NOT gate'],
+    correctIndex: 3,
     explanation: 'A NOT gate (inverter) has a single input and produces an output that is the logical opposite (inverse) of that input.',
     difficulty: 'easy'
   },
@@ -709,12 +709,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'A NAND gate produces an output that is',
     options: [
+      'always exactly zero, regardless of input',
       'identical to an AND gate\'s output',
       'the inverse (complement) of an AND gate\'s output',
-      'identical to an OR gate\'s output',
-      'always exactly zero, regardless of input'
+      'identical to an OR gate\'s output'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A NAND gate is functionally equivalent to an AND gate followed by a NOT gate, so its output is the logical inverse of the corresponding AND gate\'s output.',
     difficulty: 'medium'
   },
@@ -723,10 +723,10 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'A NOR gate produces an output that is',
     options: [
-      'identical to an OR gate\'s output',
-      'the inverse (complement) of an OR gate\'s output',
       'identical to an AND gate\'s output',
-      'always exactly one, regardless of input'
+      'the inverse (complement) of an OR gate\'s output',
+      'always exactly one, regardless of input',
+      'identical to an OR gate\'s output'
     ],
     correctIndex: 1,
     explanation: 'A NOR gate is functionally equivalent to an OR gate followed by a NOT gate, so its output is the logical inverse of the corresponding OR gate\'s output.',
@@ -737,12 +737,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'NAND and NOR gates are often referred to as "universal gates" because',
     options: [
+      'they are the only logic gates that actually exist',
       'they cannot be used to construct any other type of logic gate',
       'any other basic logic gate (AND, OR, NOT) can be constructed using only NAND gates alone, or only NOR gates alone',
-      'they are the only logic gates that actually exist',
       'they require no electrical power to operate'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'NAND and NOR gates are termed universal gates because any other logic function (AND, OR, NOT, etc.) can be implemented using combinations of only NAND gates, or alternatively, only NOR gates.',
     difficulty: 'medium'
   },
@@ -765,10 +765,10 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'In terms of the energy band picture, doping a semiconductor with an acceptor (trivalent) impurity creates a new energy level',
     options: [
-      'close to the conduction band',
-      'close to the valence band, allowing electrons from the valence band to be easily excited into this level, leaving behind a hole',
       'exactly in the middle of the forbidden gap',
-      'far below the valence band, with no relevance to conduction'
+      'close to the valence band, allowing electrons from the valence band to be easily excited into this level, leaving behind a hole',
+      'far below the valence band, with no relevance to conduction',
+      'close to the conduction band'
     ],
     correctIndex: 1,
     explanation: 'An acceptor impurity introduces a discrete energy level located close to the valence band, allowing valence band electrons to be readily excited into this level, leaving behind mobile holes in the valence band.',
@@ -779,12 +779,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'The Fermi level in an intrinsic semiconductor lies approximately',
     options: [
+      'far outside the forbidden gap entirely',
       'at the top of the conduction band',
-      'in the middle of the forbidden energy gap',
       'at the bottom of the valence band',
-      'far outside the forbidden gap entirely'
+      'in the middle of the forbidden energy gap'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'For an intrinsic semiconductor, since electron and hole concentrations are equal, the Fermi level lies approximately midway within the forbidden energy gap.',
     difficulty: 'hard'
   },
@@ -794,9 +794,9 @@ export const SEMICONDUCTORS_DEVICES = [
     question: 'In an n-type semiconductor, compared to the intrinsic case, the Fermi level generally shifts',
     options: [
       'closer to the conduction band, reflecting the higher concentration of electrons',
-      'closer to the valence band',
+      'completely outside the semiconductor material',
       'to exactly the middle of the gap, identical to the intrinsic case',
-      'completely outside the semiconductor material'
+      'closer to the valence band'
     ],
     correctIndex: 0,
     explanation: 'Since n-type doping increases the concentration of electrons (relative to holes), the Fermi level shifts upward, closer to the conduction band, compared to its position in an intrinsic semiconductor.',
@@ -821,12 +821,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'Silicon and germanium are the two most commonly used semiconductor materials, and silicon generally has a',
     options: [
-      'smaller band gap than germanium',
       'larger band gap than germanium, contributing to its higher threshold voltage and greater temperature stability in devices',
+      'zero band gap, similar to a metal',
       'exactly the same band gap as germanium',
-      'zero band gap, similar to a metal'
+      'smaller band gap than germanium'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'Silicon has a larger band gap (about 1.1 eV) compared to germanium (about 0.7 eV), contributing to silicon devices having a higher threshold (knee) voltage and generally better temperature stability.',
     difficulty: 'medium'
   },
@@ -836,11 +836,11 @@ export const SEMICONDUCTORS_DEVICES = [
     question: 'A bridge rectifier circuit, a common full-wave rectifier configuration, typically uses',
     options: [
       'a single diode',
-      'four diodes arranged in a specific bridge configuration, without necessarily requiring a centre-tapped transformer',
       'two diodes and no transformer at all',
+      'four diodes arranged in a specific bridge configuration, without necessarily requiring a centre-tapped transformer',
       'no diodes whatsoever'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A bridge rectifier uses four diodes arranged in a bridge configuration to achieve full-wave rectification, without requiring the centre-tapped transformer needed for the two-diode full-wave rectifier design.',
     difficulty: 'medium'
   },
@@ -850,11 +850,11 @@ export const SEMICONDUCTORS_DEVICES = [
     question: 'The output of a full-wave rectifier, compared to a half-wave rectifier (with a similar input signal), generally has',
     options: [
       'a lower average output voltage and higher ripple',
-      'a higher average output voltage and lower ripple, due to utilising both halves of the AC cycle',
+      'no output at all under any conditions',
       'exactly the same average output voltage and ripple in every respect',
-      'no output at all under any conditions'
+      'a higher average output voltage and lower ripple, due to utilising both halves of the AC cycle'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since a full-wave rectifier makes use of both halves of the AC input cycle, it produces a higher average output voltage and a smoother output waveform (lower ripple) compared to a half-wave rectifier.',
     difficulty: 'medium'
   },
@@ -863,12 +863,12 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'Digital electronic circuits, including logic gates, typically operate using signals that represent',
     options: [
-      'a continuous range of infinitely many possible voltage values',
       'only two discrete voltage levels, conventionally labelled as 0 (low) and 1 (high)',
       'exactly three discrete voltage levels',
+      'a continuous range of infinitely many possible voltage values',
       'purely analog waveforms with no discrete levels at all'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'Digital circuits, including logic gates, operate using binary signals, represented by only two discrete voltage levels: a low state (0) and a high state (1).',
     difficulty: 'easy'
   },
@@ -877,10 +877,10 @@ export const SEMICONDUCTORS_DEVICES = [
     type: 'mcq',
     question: 'Semiconductor devices such as diodes and transistors form the basis of modern electronics mainly because they allow',
     options: [
-      'no control over the flow of electric current whatsoever',
-      'precise and versatile control over the flow of electric current, enabling functions like rectification, amplification, and switching',
       'only the generation of heat, with no other electrical function',
-      'the complete elimination of the need for any electric current in circuits'
+      'precise and versatile control over the flow of electric current, enabling functions like rectification, amplification, and switching',
+      'the complete elimination of the need for any electric current in circuits',
+      'no control over the flow of electric current whatsoever'
     ],
     correctIndex: 1,
     explanation: 'Semiconductor devices provide precise, controllable behaviour regarding current flow, enabling essential electronic functions such as rectification (diodes), amplification (transistors), and switching (transistors, logic gates).',

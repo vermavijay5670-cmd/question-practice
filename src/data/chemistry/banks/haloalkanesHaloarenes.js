@@ -4,8 +4,8 @@ export const HALOALKANES_HALOARENES = [
     id: 'haloalkane-1',
     type: 'mcq',
     question: 'A haloalkane in which the halogen atom is directly attached to an sp3 hybridised carbon is classified as',
-    options: ['a vinylic halide', 'an aryl halide', 'an alkyl halide', 'a benzylic halide only'],
-    correctIndex: 2,
+    options: ['a benzylic halide only', 'a vinylic halide', 'an aryl halide', 'an alkyl halide'],
+    correctIndex: 3,
     explanation: 'An alkyl halide is defined as a compound in which the halogen is bonded to an sp3 hybridised carbon atom.',
     difficulty: 'easy'
   },
@@ -13,8 +13,8 @@ export const HALOALKANES_HALOARENES = [
     id: 'haloalkane-2',
     type: 'mcq',
     question: 'A halide in which the halogen atom is attached to an sp2 hybridised carbon that is directly part of a carbon-carbon double bond is classified as',
-    options: ['an alkyl halide', 'a vinylic halide', 'an allylic halide', 'a benzylic halide'],
-    correctIndex: 1,
+    options: ['a benzylic halide', 'an alkyl halide', 'an allylic halide', 'a vinylic halide'],
+    correctIndex: 3,
     explanation: 'A vinylic halide has the halogen bonded directly to one of the sp2 carbons of a C=C double bond.',
     difficulty: 'medium'
   },
@@ -22,8 +22,8 @@ export const HALOALKANES_HALOARENES = [
     id: 'haloalkane-3',
     type: 'mcq',
     question: 'A halide in which the halogen is attached to an sp3 hybridised carbon adjacent to a carbon-carbon double bond is called',
-    options: ['a vinylic halide', 'an allylic halide', 'an aryl halide', 'a haloarene'],
-    correctIndex: 1,
+    options: ['a haloarene', 'an aryl halide', 'a vinylic halide', 'an allylic halide'],
+    correctIndex: 3,
     explanation: 'An allylic halide has the halogen on an sp3 carbon atom directly next to (allylic to) a C=C double bond, not on the double bond carbon itself.',
     difficulty: 'medium'
   },
@@ -31,8 +31,8 @@ export const HALOALKANES_HALOARENES = [
     id: 'haloalkane-4',
     type: 'mcq',
     question: 'A halide in which the halogen atom is attached to an sp3 hybridised carbon that is directly bonded to an aromatic ring is called',
-    options: ['a benzylic halide', 'an aryl halide', 'a vinylic halide', 'an alkyl halide only, unrelated to the aromatic ring'],
-    correctIndex: 0,
+    options: ['a vinylic halide', 'an alkyl halide only, unrelated to the aromatic ring', 'an aryl halide', 'a benzylic halide'],
+    correctIndex: 3,
     explanation: 'A benzylic halide has the halogen on an sp3 carbon directly attached to (but not part of) an aromatic ring.',
     difficulty: 'medium'
   },
@@ -40,8 +40,8 @@ export const HALOALKANES_HALOARENES = [
     id: 'haloalkane-5',
     type: 'mcq',
     question: 'A halide in which the halogen atom is directly attached to an sp2 hybridised carbon of an aromatic ring is called',
-    options: ['an aryl halide (haloarene)', 'a benzylic halide', 'an alkyl halide', 'an allylic halide'],
-    correctIndex: 0,
+    options: ['an alkyl halide', 'a benzylic halide', 'an allylic halide', 'an aryl halide (haloarene)'],
+    correctIndex: 3,
     explanation: 'An aryl halide (haloarene) has the halogen bonded directly to a carbon atom that is part of the aromatic ring itself.',
     difficulty: 'easy'
   },
@@ -50,12 +50,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Alkyl halides are further classified as primary, secondary, or tertiary based on',
     options: [
-      'the number of halogen atoms present in the molecule',
-      'the nature of the carbon atom (primary, secondary, or tertiary) to which the halogen is attached',
       'the boiling point of the compound',
-      'the colour of the compound'
+      'the colour of the compound',
+      'the number of halogen atoms present in the molecule',
+      'the nature of the carbon atom (primary, secondary, or tertiary) to which the halogen is attached'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Alkyl halides are classified as primary, secondary, or tertiary depending on whether the halogen-bearing carbon is attached to one, two, or three other carbon atoms, respectively.',
     difficulty: 'easy'
   },
@@ -64,9 +64,9 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The C-X bond in haloalkanes is polar mainly because',
     options: [
-      'carbon and halogen have identical electronegativities',
-      'the halogen atom is more electronegative than carbon, pulling the shared electron pair towards itself',
       'the halogen atom is less electronegative than carbon',
+      'the halogen atom is more electronegative than carbon, pulling the shared electron pair towards itself',
+      'carbon and halogen have identical electronegativities',
       'the bond is purely ionic in character'
     ],
     correctIndex: 1,
@@ -78,10 +78,10 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Going down the halogen group from fluorine to iodine, the C-X bond length generally',
     options: [
-      'decreases, since the halogen atoms become smaller',
+      'is unrelated to the size of the halogen atom',
       'increases, since the halogen atoms become progressively larger in size',
       'remains completely unchanged',
-      'is unrelated to the size of the halogen atom'
+      'decreases, since the halogen atoms become smaller'
     ],
     correctIndex: 1,
     explanation: 'As halogen atomic size increases from F to I, the C-X bond length correspondingly increases, since a larger halogen atom is bonded at a greater average distance from carbon.',
@@ -92,12 +92,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Going down the halogen group from fluorine to iodine, the C-X bond enthalpy (bond strength) generally',
     options: [
+      'shows no consistent trend at all',
       'increases from C-F to C-I',
-      'decreases from C-F to C-I, making C-F the strongest and C-I the weakest bond',
       'remains exactly the same for all halogens',
-      'shows no consistent trend at all'
+      'decreases from C-F to C-I, making C-F the strongest and C-I the weakest bond'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'As the C-X bond length increases down the group, the bond strength (enthalpy) correspondingly decreases, making C-F the strongest bond and C-I the weakest among the carbon-halogen bonds.',
     difficulty: 'medium'
   },
@@ -105,7 +105,7 @@ export const HALOALKANES_HALOARENES = [
     id: 'haloalkane-10',
     type: 'mcq',
     question: 'Among the four carbon-halogen bonds, the C-F bond is generally the',
-    options: ['weakest bond, with the shortest bond length', 'strongest bond, with the shortest bond length', 'strongest bond, but with the longest bond length', 'weakest bond, with the longest bond length'],
+    options: ['weakest bond, with the longest bond length', 'strongest bond, with the shortest bond length', 'weakest bond, with the shortest bond length', 'strongest bond, but with the longest bond length'],
     correctIndex: 1,
     explanation: 'The C-F bond is both the shortest and the strongest among the C-X bonds, due to the small size of fluorine and effective orbital overlap.',
     difficulty: 'medium'
@@ -114,8 +114,8 @@ export const HALOALKANES_HALOARENES = [
     id: 'haloalkane-11',
     type: 'mcq',
     question: 'The most commonly used and generally preferred reagent for converting an alcohol into the corresponding alkyl chloride, because the by-products are both gases that escape, leaving a relatively pure product, is',
-    options: ['HCl gas', 'PCl5', 'thionyl chloride (SOCl2), in the presence of pyridine (Darzens procedure)', 'concentrated sulphuric acid'],
-    correctIndex: 2,
+    options: ['PCl5', 'HCl gas', 'concentrated sulphuric acid', 'thionyl chloride (SOCl2), in the presence of pyridine (Darzens procedure)'],
+    correctIndex: 3,
     explanation: 'Thionyl chloride is generally the preferred reagent for converting alcohols to alkyl chlorides, since the by-products SO2 and HCl are both gases that readily escape the reaction mixture, giving a relatively pure alkyl chloride.',
     difficulty: 'medium'
   },
@@ -124,12 +124,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'When alcohols react with phosphorus pentachloride (PCl5), the products formed are',
     options: [
-      'the corresponding alkyl chloride, along with POCl3 and HCl',
       'only water and phosphorus',
+      'no reaction occurs at all',
       'the corresponding alkyl bromide',
-      'no reaction occurs at all'
+      'the corresponding alkyl chloride, along with POCl3 and HCl'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Reaction of an alcohol with PCl5 gives the corresponding alkyl chloride, along with phosphorus oxychloride (POCl3) and hydrogen chloride as by-products.',
     difficulty: 'medium'
   },
@@ -138,10 +138,10 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The addition of HBr to an unsymmetrical alkene in the absence of any peroxide follows',
     options: [
-      'the anti-Markovnikov rule',
+      'the Saytzeff (Zaitsev) rule instead',
       'Markovnikov\'s rule, with the halogen preferentially adding to the more substituted carbon',
       'no particular selectivity at all',
-      'the Saytzeff (Zaitsev) rule instead'
+      'the anti-Markovnikov rule'
     ],
     correctIndex: 1,
     explanation: 'In the absence of peroxides, addition of HBr to an unsymmetrical alkene follows Markovnikov\'s rule, with the halogen adding to the carbon that already bears more alkyl substituents (via the more stable carbocation intermediate).',
@@ -152,12 +152,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'In the presence of peroxides, addition of HBr to an unsymmetrical alkene follows the anti-Markovnikov rule, a phenomenon known as the',
     options: [
+      'Markovnikov effect',
       'Saytzeff effect',
-      'Kharasch (peroxide) effect, occurring via a free radical mechanism',
       'Hofmann effect',
-      'Markovnikov effect'
+      'Kharasch (peroxide) effect, occurring via a free radical mechanism'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The peroxide effect (Kharasch effect) causes HBr addition to proceed via a free radical mechanism, resulting in anti-Markovnikov addition, where the bromine ends up on the less substituted carbon.',
     difficulty: 'medium'
   },
@@ -166,12 +166,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The peroxide (Kharasch) effect, giving anti-Markovnikov addition, is observed specifically with',
     options: [
+      'HI only',
       'HBr only, and not with HCl or HI',
       'HCl, HBr, and HI equally',
-      'HI only',
       'HF only'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'The peroxide effect is observed specifically with HBr; it is not observed with HCl (due to the highly exothermic and slow initiation step involved) or with HI (since the propagation step involving iodine atoms is endothermic and unfavourable).',
     difficulty: 'hard'
   },
@@ -193,8 +193,8 @@ export const HALOALKANES_HALOARENES = [
     id: 'haloalkane-17',
     type: 'mcq',
     question: 'The Swarts reaction is used to convert an alkyl chloride or bromide into the corresponding alkyl fluoride, using reagents such as',
-    options: ['NaI in dry acetone', 'AgF, Hg2F2, CoF2, or SbF3', 'concentrated HCl', 'sodium metal in dry ether'],
-    correctIndex: 1,
+    options: ['sodium metal in dry ether', 'concentrated HCl', 'NaI in dry acetone', 'AgF, Hg2F2, CoF2, or SbF3'],
+    correctIndex: 3,
     explanation: 'The Swarts reaction uses metallic fluorides such as AgF, Hg2F2, CoF2, or SbF3 to convert an alkyl chloride or bromide into the corresponding alkyl fluoride.',
     difficulty: 'medium'
   },
@@ -203,9 +203,9 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Direct halogenation of benzene to form a haloarene, using chlorine or bromine, requires the presence of a catalyst such as',
     options: [
-      'sodium metal',
-      'a Lewis acid such as anhydrous FeCl3, FeBr3, or AlCl3',
       'concentrated sulphuric acid alone',
+      'a Lewis acid such as anhydrous FeCl3, FeBr3, or AlCl3',
+      'sodium metal',
       'no catalyst is needed at all'
     ],
     correctIndex: 1,
@@ -218,11 +218,11 @@ export const HALOALKANES_HALOARENES = [
     question: 'Direct iodination of benzene to form iodobenzene is a reversible reaction that requires the addition of an oxidising agent, such as HNO3 or HIO4, mainly because',
     options: [
       'iodine does not react with benzene at all without an oxidiser',
-      'the HI produced as a by-product is a reducing agent that can reduce iodobenzene back to benzene, so it must be oxidised to drive the reaction forward',
       'the oxidising agent directly forms the C-I bond',
-      'iodobenzene is unstable without an oxidising agent present'
+      'iodobenzene is unstable without an oxidising agent present',
+      'the HI produced as a by-product is a reducing agent that can reduce iodobenzene back to benzene, so it must be oxidised to drive the reaction forward'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since the by-product HI can reduce the iodobenzene product back to benzene, an oxidising agent is needed to consume the HI, driving the equilibrium towards iodobenzene formation.',
     difficulty: 'hard'
   },
@@ -231,12 +231,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The Sandmeyer reaction converts an aryl diazonium salt into the corresponding aryl chloride or bromide, using',
     options: [
-      'cuprous chloride (CuCl) or cuprous bromide (CuBr)',
       'sodium metal in dry ether',
-      'fluoroboric acid (HBF4)',
-      'thionyl chloride (SOCl2)'
+      'cuprous chloride (CuCl) or cuprous bromide (CuBr)',
+      'thionyl chloride (SOCl2)',
+      'fluoroboric acid (HBF4)'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'The Sandmeyer reaction uses cuprous halides (CuCl or CuBr) to convert an aryl diazonium salt into the corresponding aryl chloride or bromide, with loss of nitrogen gas.',
     difficulty: 'medium'
   },
@@ -245,12 +245,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The Gattermann reaction, similar in outcome to the Sandmeyer reaction, converts an aryl diazonium salt into an aryl halide using',
     options: [
-      'copper powder in the presence of the corresponding hydrogen halide (HX)',
-      'sodium metal',
+      'potassium permanganate',
       'fluoroboric acid alone',
-      'potassium permanganate'
+      'sodium metal',
+      'copper powder in the presence of the corresponding hydrogen halide (HX)'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The Gattermann reaction is a variant that uses copper powder together with the corresponding hydrogen halide (HCl or HBr) to convert an aryl diazonium salt directly into the aryl halide.',
     difficulty: 'medium'
   },
@@ -259,9 +259,9 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The Balz-Schiemann reaction is used to prepare an aryl fluoride from an aryl diazonium salt via',
     options: [
-      'reaction with CuCl',
-      'formation of the diazonium fluoroborate salt (ArN2+BF4-), which is then thermally decomposed to give the aryl fluoride',
       'direct reaction with fluorine gas',
+      'formation of the diazonium fluoroborate salt (ArN2+BF4-), which is then thermally decomposed to give the aryl fluoride',
+      'reaction with CuCl',
       'reaction with sodium fluoride in dry acetone'
     ],
     correctIndex: 1,
@@ -273,12 +273,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Aryl iodides can be conveniently prepared directly from an aryl diazonium salt by simple reaction with',
     options: [
-      'potassium iodide (KI) solution, without requiring a copper catalyst',
-      'iodine gas alone, under high pressure',
+      'concentrated sulphuric acid',
       'sodium metal',
-      'concentrated sulphuric acid'
+      'iodine gas alone, under high pressure',
+      'potassium iodide (KI) solution, without requiring a copper catalyst'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Aryl diazonium salts react readily with potassium iodide solution to give the corresponding aryl iodide directly, without needing a copper catalyst as in the Sandmeyer reaction.',
     difficulty: 'medium'
   },
@@ -287,10 +287,10 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Pure haloalkanes are generally',
     options: [
-      'coloured liquids or solids',
+      'brightly coloured solids that decompose readily in the dark',
       'colourless when pure, though bromides and iodides may develop colour on storage due to slow decomposition',
-      'always gases at room temperature',
-      'brightly coloured solids that decompose readily in the dark'
+      'coloured liquids or solids',
+      'always gases at room temperature'
     ],
     correctIndex: 1,
     explanation: 'Pure haloalkanes are colourless, but many bromides and iodides can slowly develop a colour on prolonged storage due to gradual decomposition, releasing free halogen.',
@@ -301,12 +301,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Haloalkanes are generally insoluble in water mainly because',
     options: [
-      'they are unable to form hydrogen bonds with water molecules, and the energy released on dissolving does not compensate for the energy needed to break existing water-water hydrogen bonds',
-      'they react violently with water',
       'they have no dipole moment at all',
-      'haloalkanes are always denser than water'
+      'haloalkanes are always denser than water',
+      'they react violently with water',
+      'they are unable to form hydrogen bonds with water molecules, and the energy released on dissolving does not compensate for the energy needed to break existing water-water hydrogen bonds'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Since haloalkanes cannot form hydrogen bonds with water (no O-H or N-H present in the haloalkane), the energy required to break existing hydrogen bonds in water is not compensated, resulting in poor solubility.',
     difficulty: 'medium'
   },
@@ -316,11 +316,11 @@ export const HALOALKANES_HALOARENES = [
     question: 'For a given alkyl group, the boiling points of the corresponding haloalkanes generally follow the order',
     options: [
       'RF > RCl > RBr > RI',
-      'RI > RBr > RCl > RF, increasing with increasing molar mass and polarisability of the halogen',
       'RCl > RBr > RI > RF',
-      'all haloalkanes of a given alkyl group have identical boiling points'
+      'all haloalkanes of a given alkyl group have identical boiling points',
+      'RI > RBr > RCl > RF, increasing with increasing molar mass and polarisability of the halogen'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Boiling point generally increases with the size (molar mass and polarisability) of the halogen atom, giving the order RI > RBr > RCl > RF for a given alkyl group.',
     difficulty: 'medium'
   },
@@ -329,10 +329,10 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Among isomeric haloalkanes, increasing branching in the carbon chain generally causes the boiling point to',
     options: [
-      'increase, due to greater surface area contact between molecules',
+      'become impossible to predict at all',
       'decrease, since branching reduces the surface area available for intermolecular contact',
       'remain completely unchanged',
-      'become impossible to predict at all'
+      'increase, due to greater surface area contact between molecules'
     ],
     correctIndex: 1,
     explanation: 'As with alkanes, increased branching in haloalkanes decreases the surface area available for intermolecular van der Waals interactions, resulting in a lower boiling point compared to the corresponding straight-chain isomer.',
@@ -343,12 +343,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Density of haloalkanes generally increases with',
     options: [
-      'decreasing molar mass of the halogen substituent',
-      'increasing number of halogen atoms and increasing molar mass of the halogen',
       'increasing distance from the halogen to the rest of the molecule',
-      'density is unrelated to the halogen present'
+      'decreasing molar mass of the halogen substituent',
+      'density is unrelated to the halogen present',
+      'increasing number of halogen atoms and increasing molar mass of the halogen'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Density generally increases with the number and molar mass of halogen atoms present, since heavier halogens like bromine and iodine substantially increase the mass without proportionally increasing molecular volume.',
     difficulty: 'medium'
   },
@@ -356,7 +356,7 @@ export const HALOALKANES_HALOARENES = [
     id: 'haloalkane-29',
     type: 'mcq',
     question: 'A nucleophilic substitution reaction that proceeds in a single concerted step, with simultaneous bond breaking and bond formation, and shows second-order kinetics (dependent on both substrate and nucleophile concentration), is classified as',
-    options: ['SN1', 'SN2', 'E1', 'E2'],
+    options: ['E2', 'SN2', 'E1', 'SN1'],
     correctIndex: 1,
     explanation: 'The SN2 (bimolecular nucleophilic substitution) mechanism proceeds in a single concerted step, with rate depending on the concentrations of both the substrate and the nucleophile.',
     difficulty: 'medium'
@@ -366,12 +366,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The SN2 mechanism proceeds via backside attack of the nucleophile on the carbon bearing the leaving group, resulting in',
     options: [
-      'retention of configuration at the reacting carbon',
-      'complete inversion of configuration at the reacting carbon, known as Walden inversion',
       'complete racemisation at the reacting carbon',
-      'no change to the stereochemistry, since SN2 is not stereospecific'
+      'retention of configuration at the reacting carbon',
+      'no change to the stereochemistry, since SN2 is not stereospecific',
+      'complete inversion of configuration at the reacting carbon, known as Walden inversion'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Backside attack in the SN2 mechanism causes the configuration at the reacting carbon to invert completely, a phenomenon known as Walden inversion.',
     difficulty: 'medium'
   },
@@ -380,9 +380,9 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The reactivity order of alkyl halides towards the SN2 mechanism, based on steric hindrance at the reacting carbon, is generally',
     options: [
-      'tertiary > secondary > primary',
-      'primary > secondary > tertiary',
       'all types react equally fast in SN2',
+      'primary > secondary > tertiary',
+      'tertiary > secondary > primary',
       'reactivity in SN2 is unrelated to the degree of substitution'
     ],
     correctIndex: 1,
@@ -393,8 +393,8 @@ export const HALOALKANES_HALOARENES = [
     id: 'haloalkane-32',
     type: 'mcq',
     question: 'A nucleophilic substitution reaction that proceeds via a two-step mechanism, with formation of a carbocation intermediate as the rate-determining step, and shows first-order kinetics, is classified as',
-    options: ['SN2', 'SN1', 'E2', 'radical substitution'],
-    correctIndex: 1,
+    options: ['radical substitution', 'E2', 'SN2', 'SN1'],
+    correctIndex: 3,
     explanation: 'The SN1 (unimolecular nucleophilic substitution) mechanism proceeds through a carbocation intermediate, with the rate-determining ionisation step depending only on substrate concentration.',
     difficulty: 'medium'
   },
@@ -403,10 +403,10 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The reactivity order of alkyl halides towards the SN1 mechanism, based on the stability of the intermediate carbocation, is generally',
     options: [
-      'primary > secondary > tertiary',
+      'reactivity in SN1 is unrelated to carbocation stability',
       'tertiary > secondary > primary',
-      'all types react equally fast in SN1',
-      'reactivity in SN1 is unrelated to carbocation stability'
+      'primary > secondary > tertiary',
+      'all types react equally fast in SN1'
     ],
     correctIndex: 1,
     explanation: 'Since SN1 proceeds through a carbocation intermediate, the reactivity order follows carbocation stability, with tertiary carbocations being the most stable, giving the reactivity order tertiary > secondary > primary.',
@@ -454,12 +454,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Aryl halides are generally much less reactive than alkyl halides towards nucleophilic substitution under normal conditions, primarily due to',
     options: [
-      'the lower electronegativity of the halogen attached to the aromatic ring',
-      'resonance delocalisation of the halogen\'s lone pair into the aromatic ring, giving the C-X bond partial double bond character and making it shorter and stronger',
       'aryl halides having a much larger molecular size',
-      'aryl halides having no C-X bond at all'
+      'aryl halides having no C-X bond at all',
+      'the lower electronegativity of the halogen attached to the aromatic ring',
+      'resonance delocalisation of the halogen\'s lone pair into the aromatic ring, giving the C-X bond partial double bond character and making it shorter and stronger'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The lone pair on the halogen in an aryl halide can delocalise into the aromatic ring through resonance, giving the C-X bond partial double bond character, making it stronger and more resistant to nucleophilic substitution.',
     difficulty: 'medium'
   },
@@ -468,10 +468,10 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'In addition to resonance stabilisation, another reason aryl halides resist nucleophilic substitution is that the carbon bearing the halogen is',
     options: [
-      'sp3 hybridised, with less s-character, giving a weaker bond',
+      'not bonded to the halogen at all',
       'sp2 hybridised, with more s-character, holding the bonding electrons more tightly and giving a stronger, shorter C-X bond',
-      'sp hybridised',
-      'not bonded to the halogen at all'
+      'sp3 hybridised, with less s-character, giving a weaker bond',
+      'sp hybridised'
     ],
     correctIndex: 1,
     explanation: 'The sp2 hybridised carbon in an aryl halide has greater s-character than the sp3 carbon in an alkyl halide, holding the C-X bonding electrons more tightly and resulting in a shorter, stronger bond that resists substitution.',
@@ -482,12 +482,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Vinylic halides, like aryl halides, are generally unreactive towards nucleophilic substitution under normal conditions, for reasons that include',
     options: [
-      'resonance stabilisation of the C-X bond and the sp2 hybridisation of the halogen-bearing carbon',
       'the complete absence of any halogen atom',
+      'their inability to exist as stable compounds',
       'their extremely high boiling points',
-      'their inability to exist as stable compounds'
+      'resonance stabilisation of the C-X bond and the sp2 hybridisation of the halogen-bearing carbon'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Similar to aryl halides, vinylic halides have resonance stabilisation of the C-X bond (delocalisation of the halogen lone pair into the adjacent double bond) and an sp2 hybridised carbon, both contributing to their resistance to nucleophilic substitution.',
     difficulty: 'medium'
   },
@@ -496,10 +496,10 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The dehydrohalogenation (elimination) of a haloalkane using alcoholic KOH generally produces',
     options: [
-      'an alkane',
+      'a carboxylic acid',
       'an alkene, via loss of a hydrogen halide',
       'an alcohol',
-      'a carboxylic acid'
+      'an alkane'
     ],
     correctIndex: 1,
     explanation: 'Treatment of a haloalkane with alcoholic KOH promotes elimination (dehydrohalogenation), removing a hydrogen and the halogen to form an alkene.',
@@ -511,11 +511,11 @@ export const HALOALKANES_HALOARENES = [
     question: 'When a haloalkane undergoes elimination to form more than one possible alkene product, Zaitsev\'s (Saytzeff\'s) rule predicts that the major product will generally be the',
     options: [
       'least substituted (least stable) alkene',
-      'more substituted (more stable) alkene',
+      'alkyne, rather than an alkene',
       'alkene with the lowest boiling point, regardless of stability',
-      'alkyne, rather than an alkene'
+      'more substituted (more stable) alkene'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Zaitsev\'s rule states that in elimination reactions producing multiple possible alkenes, the more highly substituted (and therefore more thermodynamically stable) alkene is generally the major product.',
     difficulty: 'medium'
   },
@@ -524,10 +524,10 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The Wurtz reaction involves treating an alkyl halide with sodium metal in dry ether to give',
     options: [
-      'an alkene',
+      'a Grignard reagent',
       'a higher alkane with double the number of carbon atoms of the alkyl halide, via a free radical mechanism',
       'an alcohol',
-      'a Grignard reagent'
+      'an alkene'
     ],
     correctIndex: 1,
     explanation: 'In the Wurtz reaction, two molecules of an alkyl halide react with sodium metal in dry ether to form a higher alkane with double the carbon chain length, via a free radical mechanism.',
@@ -540,8 +540,8 @@ export const HALOALKANES_HALOARENES = [
     options: [
       'the reaction fails completely and no product is formed',
       'a mixture of all possible coupling products is obtained, making separation of the desired unsymmetrical alkane difficult',
-      'only the unsymmetrical alkane is formed cleanly',
-      'the reaction becomes explosively fast'
+      'the reaction becomes explosively fast',
+      'only the unsymmetrical alkane is formed cleanly'
     ],
     correctIndex: 1,
     explanation: 'When two different alkyl halides are used, the Wurtz reaction produces a statistical mixture of all possible coupling products, making it impractical for the clean synthesis of unsymmetrical alkanes.',
@@ -552,12 +552,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The Fittig reaction, an aryl analogue of the Wurtz reaction, involves treating two molecules of an aryl halide with sodium metal in dry ether to give',
     options: [
-      'an alkane',
-      'a biaryl compound (aryl-aryl coupling product)',
       'an alkyl-aryl coupling product',
-      'no reaction occurs, since aryl halides never react with sodium'
+      'an alkane',
+      'no reaction occurs, since aryl halides never react with sodium',
+      'a biaryl compound (aryl-aryl coupling product)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The Fittig reaction couples two aryl halide molecules using sodium metal in dry ether, producing a biaryl compound through aryl-aryl coupling.',
     difficulty: 'medium'
   },
@@ -580,12 +580,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'A Grignard reagent, of general formula RMgX, is prepared by reacting an alkyl halide with',
     options: [
-      'sodium metal in dry ether',
-      'magnesium metal in dry ether, under strictly anhydrous conditions',
       'water',
-      'concentrated sulphuric acid'
+      'sodium metal in dry ether',
+      'concentrated sulphuric acid',
+      'magnesium metal in dry ether, under strictly anhydrous conditions'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A Grignard reagent is prepared by reacting an alkyl (or aryl) halide with magnesium metal, using dry ether as the solvent, since strictly anhydrous conditions are essential.',
     difficulty: 'easy'
   },
@@ -595,11 +595,11 @@ export const HALOALKANES_HALOARENES = [
     question: 'Grignard reagents must be prepared and used under strictly anhydrous (moisture-free) conditions because they',
     options: [
       'are completely unreactive and inert compounds',
-      'react readily with water (or any source of active/acidic hydrogen) to give the corresponding hydrocarbon',
       'decompose spontaneously without any external reagent',
-      'only react with strong acids, not water'
+      'only react with strong acids, not water',
+      'react readily with water (or any source of active/acidic hydrogen) to give the corresponding hydrocarbon'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Grignard reagents are highly reactive and react readily with water or any compound containing an active/acidic hydrogen, converting them into the corresponding hydrocarbon and destroying the reagent, so strictly dry conditions are essential.',
     difficulty: 'medium'
   },
@@ -607,7 +607,7 @@ export const HALOALKANES_HALOARENES = [
     id: 'haloalkane-48',
     type: 'mcq',
     question: 'Dichloromethane (DCM, CH2Cl2) is commonly used industrially as a',
-    options: ['refrigerant only', 'solvent and paint remover', 'insecticide', 'anaesthetic agent'],
+    options: ['anaesthetic agent', 'solvent and paint remover', 'refrigerant only', 'insecticide'],
     correctIndex: 1,
     explanation: 'Dichloromethane is widely used as an industrial solvent and as a component in paint removers.',
     difficulty: 'medium'
@@ -618,11 +618,11 @@ export const HALOALKANES_HALOARENES = [
     question: 'Trichloromethane (chloroform, CHCl3) was historically used as an anaesthetic, but is now known to slowly oxidise in air and light to form',
     options: [
       'carbon dioxide, which is harmless',
-      'the highly poisonous gas phosgene (COCl2)',
+      'sodium chloride',
       'ethanol',
-      'sodium chloride'
+      'the highly poisonous gas phosgene (COCl2)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Chloroform slowly oxidises when exposed to air and light, producing the extremely toxic gas phosgene (carbonyl chloride, COCl2).',
     difficulty: 'medium'
   },
@@ -631,10 +631,10 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'To prevent the formation and accumulation of poisonous phosgene, chloroform is typically stored in',
     options: [
-      'clear, transparent bottles filled only partway, exposed to sunlight',
+      'plastic containers only, never in glass',
       'dark-coloured bottles, completely filled, with a small amount of ethanol added to convert any phosgene formed into harmless products',
       'open containers, to allow phosgene to escape freely',
-      'plastic containers only, never in glass'
+      'clear, transparent bottles filled only partway, exposed to sunlight'
     ],
     correctIndex: 1,
     explanation: 'Chloroform is stored in dark-coloured, completely filled bottles (to minimise air and light exposure) with a small amount of ethanol added, which reacts with any phosgene formed to give the relatively harmless ethyl carbonate.',
@@ -645,10 +645,10 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Tetrachloromethane (carbon tetrachloride, CCl4) has historically been used as a solvent and as a fire extinguishing agent, but its use has now been largely discontinued mainly due to',
     options: [
-      'its extremely low boiling point',
+      'its explosive nature',
       'its toxicity and its role in ozone layer depletion',
-      'its complete insolubility in all organic solvents',
-      'its explosive nature'
+      'its extremely low boiling point',
+      'its complete insolubility in all organic solvents'
     ],
     correctIndex: 1,
     explanation: 'CCl4 use has declined significantly due to concerns over its toxicity and its contribution to depletion of the stratospheric ozone layer.',
@@ -660,11 +660,11 @@ export const HALOALKANES_HALOARENES = [
     question: 'Iodoform (CHI3) has traditionally been used as an antiseptic, though its antiseptic action is actually attributed to',
     options: [
       'the iodoform molecule itself, which is directly antiseptic',
-      'the free iodine liberated from iodoform, which possesses antiseptic properties',
+      'a completely unrelated and unknown mechanism',
       'the carbon skeleton of iodoform',
-      'a completely unrelated and unknown mechanism'
+      'the free iodine liberated from iodoform, which possesses antiseptic properties'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The antiseptic action attributed to iodoform is actually due to the small amounts of free iodine that are liberated from it, since iodine itself is a well-known antiseptic.',
     difficulty: 'medium'
   },
@@ -673,12 +673,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Chlorofluorocarbons (CFCs, commonly known as Freons) have been widely used as refrigerants and aerosol propellants, but their release into the atmosphere is of major environmental concern because they',
     options: [
-      'are completely biodegradable and harmless',
-      'cause depletion of the stratospheric ozone layer through photochemically generated chlorine radicals',
+      'are highly flammable and cause fires',
       'have no known effect on the atmosphere at all',
-      'are highly flammable and cause fires'
+      'are completely biodegradable and harmless',
+      'cause depletion of the stratospheric ozone layer through photochemically generated chlorine radicals'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'CFCs undergo photochemical decomposition in the stratosphere, releasing chlorine radicals that catalytically destroy ozone molecules, contributing significantly to depletion of the ozone layer.',
     difficulty: 'medium'
   },
@@ -687,10 +687,10 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'DDT (dichlorodiphenyltrichloroethane) was widely used historically as',
     options: [
-      'a refrigerant',
+      'a solvent for organic reactions',
       'a chlorinated organic insecticide, effective in controlling insect-borne diseases such as malaria',
-      'an anaesthetic agent',
-      'a solvent for organic reactions'
+      'a refrigerant',
+      'an anaesthetic agent'
     ],
     correctIndex: 1,
     explanation: 'DDT was one of the first chlorinated organic insecticides, widely used to control disease-carrying insects, particularly mosquitoes responsible for spreading malaria.',
@@ -702,11 +702,11 @@ export const HALOALKANES_HALOARENES = [
     question: 'Despite its effectiveness as an insecticide, DDT use has been restricted or banned in many countries mainly because it is',
     options: [
       'too expensive to manufacture',
-      'non-biodegradable and persists in the environment and in fatty tissues of living organisms, leading to bioaccumulation',
+      'highly soluble in water and quickly washed away',
       'completely ineffective against insects',
-      'highly soluble in water and quickly washed away'
+      'non-biodegradable and persists in the environment and in fatty tissues of living organisms, leading to bioaccumulation'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'DDT is non-biodegradable and accumulates in the fatty tissues of organisms (bioaccumulation), persisting in the environment and posing long-term ecological and health concerns, leading to its restriction in many countries.',
     difficulty: 'medium'
   },
@@ -729,10 +729,10 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'N-bromosuccinimide (NBS) is a reagent specifically used to carry out',
     options: [
-      'complete combustion of alkanes',
+      'esterification reactions',
       'selective allylic or benzylic bromination',
       'reduction of alkyl halides to alkanes',
-      'esterification reactions'
+      'complete combustion of alkanes'
     ],
     correctIndex: 1,
     explanation: 'NBS is a specialised reagent used to achieve selective bromination at allylic or benzylic positions, providing a low, steady concentration of bromine for controlled radical substitution.',
@@ -743,12 +743,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The polarity of the C-X bond in haloalkanes means the carbon atom bears a',
     options: [
+      'no charge at all, since haloalkanes are entirely non-polar',
       'partial negative charge, while the halogen bears a partial positive charge',
-      'partial positive charge, while the halogen bears a partial negative charge',
       'full positive charge, making the compound ionic',
-      'no charge at all, since haloalkanes are entirely non-polar'
+      'partial positive charge, while the halogen bears a partial negative charge'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Because halogens are more electronegative than carbon, the carbon atom in the C-X bond carries a partial positive charge, while the halogen carries a partial negative charge.',
     difficulty: 'easy'
   },
@@ -758,11 +758,11 @@ export const HALOALKANES_HALOARENES = [
     question: 'The general trend in dipole moment of C-X bonds is such that, despite fluorine being the most electronegative halogen, the C-F bond dipole moment is generally',
     options: [
       'the highest among all C-X bonds, due to the extreme electronegativity of fluorine',
-      'not necessarily the highest, since the shorter bond length of C-F partially offsets the large electronegativity difference',
       'exactly zero',
-      'unrelated to bond length or electronegativity'
+      'unrelated to bond length or electronegativity',
+      'not necessarily the highest, since the shorter bond length of C-F partially offsets the large electronegativity difference'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Although fluorine is the most electronegative halogen, the C-F bond is also the shortest, and this shorter bond length partially compensates for the large electronegativity difference, so the dipole moment does not simply follow electronegativity trends alone.',
     difficulty: 'hard'
   },
@@ -771,10 +771,10 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Which of the following statements about the reactivity of primary, secondary, and tertiary alkyl halides towards SN1 versus SN2 mechanisms is correct?',
     options: [
-      'Primary halides favour SN1, while tertiary halides favour SN2',
+      'All alkyl halides react exclusively via SN2, regardless of substitution',
       'Primary halides favour SN2 due to low steric hindrance, while tertiary halides favour SN1 due to stable carbocation formation',
       'All alkyl halides react exclusively via SN1, regardless of substitution',
-      'All alkyl halides react exclusively via SN2, regardless of substitution'
+      'Primary halides favour SN1, while tertiary halides favour SN2'
     ],
     correctIndex: 1,
     explanation: 'Primary halides, with minimal steric hindrance, favour the SN2 pathway, while tertiary halides, which can form relatively stable carbocations, favour the SN1 pathway.',
@@ -785,12 +785,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Alkyl halides can be converted into nitriles by reaction with',
     options: [
+      'concentrated sulphuric acid',
       'sodium chloride',
       'potassium cyanide (KCN), following an SN2 mechanism (since the nitrogen end attacks predominantly)',
-      'concentrated sulphuric acid',
       'sodium metal'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Reaction of an alkyl halide with potassium cyanide (KCN) gives the corresponding alkyl nitrile, proceeding via an SN2-type mechanism.',
     difficulty: 'medium'
   },
@@ -800,11 +800,11 @@ export const HALOALKANES_HALOARENES = [
     question: 'The reaction of an alkyl halide with aqueous KOH (rather than alcoholic KOH) generally favours',
     options: [
       'elimination to give an alkene',
-      'nucleophilic substitution to give an alcohol',
       'no reaction at all',
+      'nucleophilic substitution to give an alcohol',
       'oxidation to give a carboxylic acid'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Aqueous KOH, being a good nucleophile/weaker base under these conditions, generally favours substitution to give the corresponding alcohol, whereas alcoholic KOH (a stronger, more hindered base in this context) favours elimination.',
     difficulty: 'medium'
   },
@@ -813,12 +813,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'In general, for a given set of reaction conditions, the ease of nucleophilic substitution by the SN1 mechanism roughly parallels the',
     options: [
-      'ease of formation and stability of the corresponding carbocation intermediate',
       'boiling point of the solvent used',
-      'colour of the alkyl halide',
-      'molecular formula of the nucleophile'
+      'ease of formation and stability of the corresponding carbocation intermediate',
+      'molecular formula of the nucleophile',
+      'colour of the alkyl halide'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Since SN1 proceeds through a carbocation intermediate, the ease and rate of the reaction are closely tied to how readily and stably that carbocation can form.',
     difficulty: 'medium'
   },
@@ -826,8 +826,8 @@ export const HALOALKANES_HALOARENES = [
     id: 'haloalkane-64',
     type: 'mcq',
     question: 'The synthesis of biphenyl (Ph-Ph) from bromobenzene using sodium metal in dry ether is an example of the',
-    options: ['Wurtz reaction', 'Fittig reaction', 'Sandmeyer reaction', 'Finkelstein reaction'],
-    correctIndex: 1,
+    options: ['Wurtz reaction', 'Finkelstein reaction', 'Sandmeyer reaction', 'Fittig reaction'],
+    correctIndex: 3,
     explanation: 'Coupling two molecules of an aryl halide (such as bromobenzene) using sodium metal to form a biaryl compound (like biphenyl) is specifically called the Fittig reaction.',
     difficulty: 'medium'
   },
@@ -836,10 +836,10 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'When comparing haloalkanes to haloarenes with a similar number of carbon atoms, haloarenes generally show',
     options: [
-      'much greater reactivity towards nucleophilic substitution than haloalkanes',
+      'reactivity that is completely unpredictable and random',
       'much lower reactivity towards nucleophilic substitution than haloalkanes, due to resonance and hybridisation effects',
       'exactly identical reactivity, with no difference at all',
-      'reactivity that is completely unpredictable and random'
+      'much greater reactivity towards nucleophilic substitution than haloalkanes'
     ],
     correctIndex: 1,
     explanation: 'Due to the resonance stabilisation of the C-X bond and the sp2 hybridisation of the halogen-bearing carbon, haloarenes are significantly less reactive towards nucleophilic substitution compared to haloalkanes.',
@@ -850,12 +850,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The C-X bond in chlorobenzene is shorter than the corresponding C-Cl bond in an alkyl chloride mainly because of',
     options: [
+      'a complete absence of any bonding interaction between carbon and chlorine',
       'the greater atomic size of chlorine in chlorobenzene',
       'partial double bond character resulting from resonance delocalisation of the chlorine lone pair into the aromatic ring',
-      'a complete absence of any bonding interaction between carbon and chlorine',
       'the presence of hydrogen bonding in chlorobenzene'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Resonance delocalisation of one of chlorine\'s lone pairs into the aromatic ring gives the C-Cl bond partial double bond character, shortening and strengthening it compared to a simple alkyl C-Cl bond.',
     difficulty: 'hard'
   },
@@ -864,12 +864,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Complete hydrolysis of a haloalkane using aqueous alkali (such as NaOH or KOH) generally proceeds via nucleophilic substitution to yield',
     options: [
-      'an alkene',
       'the corresponding alcohol, with hydroxide ion acting as the nucleophile',
+      'a nitrile',
       'a carboxylic acid directly',
-      'a nitrile'
+      'an alkene'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'When hydroxide ion acts as a nucleophile in a substitution reaction with a haloalkane, the halide is displaced and the corresponding alcohol is formed.',
     difficulty: 'easy'
   },
@@ -878,12 +878,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Alkyl halides react with silver nitrite (AgNO2) predominantly to give',
     options: [
-      'nitroalkanes, as the major product, since the reaction proceeds mainly through the nitrogen atom of the ambident nitrite ion when silver salt is used',
-      'alkyl nitrites, exclusively',
       'no reaction occurs',
-      'alcohols exclusively'
+      'alkyl nitrites, exclusively',
+      'alcohols exclusively',
+      'nitroalkanes, as the major product, since the reaction proceeds mainly through the nitrogen atom of the ambident nitrite ion when silver salt is used'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'When alkyl halides react with silver nitrite, the reaction proceeds predominantly through the nitrogen atom (since silver salts favour the more covalent nitro linkage), giving nitroalkanes as the major product.',
     difficulty: 'hard'
   },
@@ -892,12 +892,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'The general trend of increasing boiling point with increasing molecular size and increasing intermolecular forces in haloalkanes is primarily attributed to',
     options: [
-      'covalent bond strength within the molecule',
       'van der Waals forces (dispersion forces), which increase with increasing molecular size and surface area',
+      'covalent bond strength within the molecule',
       'ionic bonding between molecules',
       'hydrogen bonding between haloalkane molecules'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'Since haloalkanes cannot hydrogen bond with each other, the primary intermolecular force is van der Waals (dispersion) forces, which increase with molecular size, larger halogen atoms, and greater surface area, raising the boiling point.',
     difficulty: 'medium'
   },
@@ -906,12 +906,12 @@ export const HALOALKANES_HALOARENES = [
     type: 'mcq',
     question: 'Overall, the study of haloalkanes and haloarenes, as emphasised in this NCERT chapter, focuses on the interplay between',
     options: [
-      'structure (classification, bonding, hybridisation), synthesis methods, physical properties, reaction mechanisms (SN1/SN2/elimination), and important environmental/biological applications',
-      'exclusively their industrial cost of production',
       'exclusively their use as fuels',
-      'exclusively their crystal structure in the solid state'
+      'exclusively their crystal structure in the solid state',
+      'structure (classification, bonding, hybridisation), synthesis methods, physical properties, reaction mechanisms (SN1/SN2/elimination), and important environmental/biological applications',
+      'exclusively their industrial cost of production'
     ],
-    correctIndex: 0,
+    correctIndex: 2,
     explanation: 'The chapter integrates the structural classification, bonding characteristics, preparation methods, physical properties, mechanistic behaviour, and broader applications and environmental impact of haloalkanes and haloarenes.',
     difficulty: 'medium'
   },
@@ -1942,4 +1942,3 @@ export const HALOALKANES_HALOARENES = [
     difficulty: 'medium'
   }
 ];
-

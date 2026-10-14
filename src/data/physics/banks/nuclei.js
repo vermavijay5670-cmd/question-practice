@@ -5,12 +5,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'The atomic number (Z) of a nucleus represents the',
     options: [
-      'total number of nucleons (protons plus neutrons) in the nucleus',
-      'number of protons in the nucleus',
       'number of neutrons in the nucleus',
-      'mass of the nucleus in atomic mass units'
+      'total number of nucleons (protons plus neutrons) in the nucleus',
+      'mass of the nucleus in atomic mass units',
+      'number of protons in the nucleus'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The atomic number (Z) is defined as the number of protons present in the nucleus, which also determines the chemical identity of the element.',
     difficulty: 'easy'
   },
@@ -32,8 +32,8 @@ export const NUCLEI = [
     id: 'nuclei-3',
     type: 'mcq',
     question: 'The number of neutrons (N) in a nucleus is related to the mass number (A) and atomic number (Z) by',
-    options: ['N = A + Z', 'N = A - Z', 'N = A × Z', 'N = Z - A'],
-    correctIndex: 1,
+    options: ['N = A × Z', 'N = A + Z', 'N = Z - A', 'N = A - Z'],
+    correctIndex: 3,
     explanation: 'Since mass number is the sum of protons and neutrons, the number of neutrons is obtained as N = A - Z.',
     difficulty: 'easy'
   },
@@ -42,12 +42,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'Isotopes of an element are nuclei that have',
     options: [
-      'the same atomic number (Z) but different mass numbers (A)',
-      'the same mass number (A) but different atomic numbers (Z)',
       'the same number of neutrons but different atomic numbers',
-      'completely different atomic numbers and mass numbers'
+      'the same mass number (A) but different atomic numbers (Z)',
+      'completely different atomic numbers and mass numbers',
+      'the same atomic number (Z) but different mass numbers (A)'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Isotopes are nuclei of the same element (same Z, same number of protons) but with differing numbers of neutrons, and hence differing mass numbers.',
     difficulty: 'easy'
   },
@@ -57,11 +57,11 @@ export const NUCLEI = [
     question: 'Isobars are nuclei that have',
     options: [
       'the same atomic number but different mass numbers',
-      'the same mass number but different atomic numbers',
       'the same number of neutrons only',
-      'identical chemical properties in every case'
+      'identical chemical properties in every case',
+      'the same mass number but different atomic numbers'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Isobars are nuclei of different elements (different Z) that happen to share the same mass number (A).',
     difficulty: 'medium'
   },
@@ -70,12 +70,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'Isotones are nuclei that have',
     options: [
-      'the same atomic number but different mass numbers',
+      'exactly the same number of protons and neutrons',
       'the same mass number but different atomic numbers',
-      'the same number of neutrons, but different atomic numbers and mass numbers',
-      'exactly the same number of protons and neutrons'
+      'the same atomic number but different mass numbers',
+      'the same number of neutrons, but different atomic numbers and mass numbers'
     ],
-    correctIndex: 2,
+    correctIndex: 3,
     explanation: 'Isotones are nuclei that share the same number of neutrons (N) but differ in both their atomic number (Z) and mass number (A).',
     difficulty: 'medium'
   },
@@ -83,8 +83,8 @@ export const NUCLEI = [
     id: 'nuclei-7',
     type: 'mcq',
     question: 'The atomic mass unit (u) is defined such that the mass of a carbon-12 atom is taken to be exactly',
-    options: ['1 u', '6 u', '12 u', '24 u'],
-    correctIndex: 2,
+    options: ['1 u', '24 u', '6 u', '12 u'],
+    correctIndex: 3,
     explanation: 'By convention, the atomic mass unit is defined such that the mass of one carbon-12 atom is exactly 12 u, with 1 u equal to one-twelfth of this mass.',
     difficulty: 'medium'
   },
@@ -92,8 +92,8 @@ export const NUCLEI = [
     id: 'nuclei-8',
     type: 'mcq',
     question: 'The energy equivalent of 1 atomic mass unit (u), using Einstein\'s mass-energy relation, is approximately',
-    options: ['1 eV', '931.5 MeV', '931.5 keV', '9.315 MeV'],
-    correctIndex: 1,
+    options: ['1 eV', '931.5 keV', '9.315 MeV', '931.5 MeV'],
+    correctIndex: 3,
     explanation: '1 atomic mass unit is equivalent to approximately 931.5 MeV of energy, a conversion factor frequently used in nuclear physics calculations.',
     difficulty: 'medium'
   },
@@ -101,8 +101,8 @@ export const NUCLEI = [
     id: 'nuclei-9',
     type: 'mcq',
     question: 'The radius of a nucleus with mass number A is found to follow the empirical relation',
-    options: ['R = R0 × A', 'R = R0 × A^(1/3), where R0 is an approximately constant value', 'R = R0 × A^2', 'R = R0 / A'],
-    correctIndex: 1,
+    options: ['R = R0 × A', 'R = R0 / A', 'R = R0 × A^2', 'R = R0 × A^(1/3), where R0 is an approximately constant value'],
+    correctIndex: 3,
     explanation: 'Experimentally, nuclear radius is found to follow R = R0 A^(1/3), with R0 being approximately the same constant (about 1.2 fm) for all nuclei.',
     difficulty: 'medium'
   },
@@ -110,8 +110,8 @@ export const NUCLEI = [
     id: 'nuclei-10',
     type: 'mcq',
     question: 'The approximate constant R0 in the nuclear radius formula (R = R0 A^(1/3)) has a value of about',
-    options: ['1.2 femtometres (fm)', '1.2 metres', '1.2 nanometres', '1.2 kilometres'],
-    correctIndex: 0,
+    options: ['1.2 kilometres', '1.2 femtometres (fm)', '1.2 nanometres', '1.2 metres'],
+    correctIndex: 1,
     explanation: 'The constant R0 is approximately 1.2 femtometres (1 fm = 10^-15 m), reflecting the extremely small scale of nuclear dimensions.',
     difficulty: 'medium'
   },
@@ -120,12 +120,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'The relation R = R0 A^(1/3) implies that the volume of a nucleus is',
     options: [
-      'independent of its mass number',
-      'directly proportional to its mass number A, since volume scales with R³',
+      'proportional to A²',
       'inversely proportional to its mass number',
-      'proportional to A²'
+      'independent of its mass number',
+      'directly proportional to its mass number A, since volume scales with R³'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since volume scales as R³ and R ∝ A^(1/3), the nuclear volume is directly proportional to A, implying that nuclear density is roughly constant across different nuclei.',
     difficulty: 'medium'
   },
@@ -136,8 +136,8 @@ export const NUCLEI = [
     options: [
       'highly dependent on the specific nucleus, varying greatly from element to element',
       'approximately the same (constant) for all nuclei, regardless of mass number, and extremely high compared to ordinary matter',
-      'extremely low compared to ordinary matter',
-      'zero for all nuclei'
+      'zero for all nuclei',
+      'extremely low compared to ordinary matter'
     ],
     correctIndex: 1,
     explanation: 'Since nuclear volume scales proportionally with mass number, nuclear density comes out to be approximately constant across all nuclei, and this value is extraordinarily high (of order 10^17 kg/m³) compared to everyday matter.',
@@ -148,12 +148,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'The mass defect of a nucleus is defined as the',
     options: [
-      'exact mass of the nucleus itself',
-      'difference between the sum of the masses of the individual, separated nucleons and the actual measured mass of the bound nucleus',
       'total charge of the nucleus',
-      'mass of a single proton in the nucleus'
+      'exact mass of the nucleus itself',
+      'mass of a single proton in the nucleus',
+      'difference between the sum of the masses of the individual, separated nucleons and the actual measured mass of the bound nucleus'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Mass defect (Δm) is the difference between the total mass of the individual, unbound nucleons and the actual (smaller) mass of the bound nucleus they form together.',
     difficulty: 'medium'
   },
@@ -161,8 +161,8 @@ export const NUCLEI = [
     id: 'nuclei-14',
     type: 'mcq',
     question: 'The binding energy of a nucleus is calculated from its mass defect (Δm) using the relation',
-    options: ['BE = Δm/c²', 'BE = Δm × c²', 'BE = Δm + c²', 'BE = Δm - c²'],
-    correctIndex: 1,
+    options: ['BE = Δm + c²', 'BE = Δm - c²', 'BE = Δm/c²', 'BE = Δm × c²'],
+    correctIndex: 3,
     explanation: 'The binding energy is obtained by converting the mass defect into its energy equivalent using Einstein\'s mass-energy relation, BE = Δm c².',
     difficulty: 'medium'
   },
@@ -171,10 +171,10 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'The binding energy of a nucleus can be physically interpreted as the',
     options: [
-      'energy released when the nucleus radioactively decays',
-      'minimum energy that would need to be supplied to completely separate the nucleus into its individual, free nucleons',
       'kinetic energy of the electrons orbiting the nucleus',
-      'total electric potential energy of the protons alone'
+      'minimum energy that would need to be supplied to completely separate the nucleus into its individual, free nucleons',
+      'total electric potential energy of the protons alone',
+      'energy released when the nucleus radioactively decays'
     ],
     correctIndex: 1,
     explanation: 'Binding energy represents the minimum energy required to completely disassemble a nucleus into its constituent, individual (unbound) nucleons.',
@@ -198,7 +198,7 @@ export const NUCLEI = [
     id: 'nuclei-17',
     type: 'mcq',
     question: 'The binding energy per nucleon versus mass number curve shows that the maximum stability (highest BE/A) occurs for nuclei with mass numbers around',
-    options: ['A ≈ 2-4', 'A ≈ 56-62, in the iron-nickel region', 'A ≈ 238', 'A ≈ 500'],
+    options: ['A ≈ 500', 'A ≈ 56-62, in the iron-nickel region', 'A ≈ 2-4', 'A ≈ 238'],
     correctIndex: 1,
     explanation: 'The binding energy per nucleon curve peaks in the region around A ≈ 56-62 (iron and nickel), which are among the most stable nuclei found in nature.',
     difficulty: 'medium'
@@ -208,12 +208,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'For mass numbers beyond the peak of the binding energy per nucleon curve (i.e., for very heavy nuclei), the value of BE/A generally',
     options: [
-      'continues to increase indefinitely',
-      'gradually decreases, making very heavy nuclei somewhat less stable and prone to energy release via fission',
+      'drops immediately to zero',
       'remains exactly constant at its maximum value forever',
-      'drops immediately to zero'
+      'continues to increase indefinitely',
+      'gradually decreases, making very heavy nuclei somewhat less stable and prone to energy release via fission'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Beyond the peak (around A ≈ 56-62), binding energy per nucleon gradually decreases for heavier nuclei, making them relatively less stable and capable of releasing energy through fission into lighter, more tightly bound fragments.',
     difficulty: 'medium'
   },
@@ -222,12 +222,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'The shape of the binding energy per nucleon curve explains why energy can be released through nuclear fusion, since',
     options: [
-      'combining two very light nuclei into a somewhat heavier nucleus generally moves the product towards higher BE/A, releasing energy',
-      'fusion always decreases the binding energy per nucleon',
+      'only extremely heavy nuclei can undergo fusion',
       'fusion has no effect on binding energy at all',
-      'only extremely heavy nuclei can undergo fusion'
+      'fusion always decreases the binding energy per nucleon',
+      'combining two very light nuclei into a somewhat heavier nucleus generally moves the product towards higher BE/A, releasing energy'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'For sufficiently light nuclei, combining them into a heavier product generally increases BE/A (moving up the steep initial rise of the curve), releasing energy in the process, which is the basis of nuclear fusion.',
     difficulty: 'medium'
   },
@@ -236,12 +236,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'The shape of the binding energy per nucleon curve explains why energy can be released through nuclear fission, since',
     options: [
+      'fission has no effect on binding energy at all',
       'splitting a very heavy nucleus into two lighter fragments generally moves the products towards higher BE/A (closer to the peak of the curve), releasing energy',
       'fission always decreases the binding energy per nucleon',
-      'fission has no effect on binding energy at all',
       'only extremely light nuclei can undergo fission'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'For very heavy nuclei (with relatively lower BE/A than the peak), splitting into two medium-mass fragments generally increases the total BE/A, releasing energy — the basis of nuclear fission.',
     difficulty: 'medium'
   },
@@ -264,9 +264,9 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'Within its effective range, the nuclear force is generally',
     options: [
-      'much weaker than the electrostatic (Coulomb) repulsion between protons',
-      'much stronger than the electrostatic (Coulomb) repulsion between protons, which is why the nucleus remains bound despite this repulsion',
       'exactly equal in magnitude to the Coulomb repulsion at all times',
+      'much stronger than the electrostatic (Coulomb) repulsion between protons, which is why the nucleus remains bound despite this repulsion',
+      'much weaker than the electrostatic (Coulomb) repulsion between protons',
       'a purely repulsive force, with no attractive component at all'
     ],
     correctIndex: 1,
@@ -293,11 +293,11 @@ export const NUCLEI = [
     question: 'The saturation property of the nuclear force refers to the fact that',
     options: [
       'a given nucleon interacts strongly with all other nucleons in the nucleus, regardless of distance',
-      'a given nucleon interacts strongly only with its nearest neighbouring nucleons, not with every nucleon in the nucleus',
       'the nuclear force becomes infinitely strong as more nucleons are added',
-      'nuclear force disappears entirely once more than two nucleons are present'
+      'nuclear force disappears entirely once more than two nucleons are present',
+      'a given nucleon interacts strongly only with its nearest neighbouring nucleons, not with every nucleon in the nucleus'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Saturation means each nucleon effectively interacts strongly only with its nearby neighbours rather than with every other nucleon in the nucleus, consistent with the roughly constant binding energy per nucleon observed for larger nuclei.',
     difficulty: 'medium'
   },
@@ -305,8 +305,8 @@ export const NUCLEI = [
     id: 'nuclei-25',
     type: 'mcq',
     question: 'Radioactivity, the spontaneous emission of radiation from certain unstable nuclei, was discovered by',
-    options: ['Ernest Rutherford', 'Marie Curie', 'Henri Becquerel', 'Niels Bohr'],
-    correctIndex: 2,
+    options: ['Ernest Rutherford', 'Henri Becquerel', 'Niels Bohr', 'Marie Curie'],
+    correctIndex: 1,
     explanation: 'Radioactivity was first discovered by Henri Becquerel, who observed that certain uranium compounds spontaneously emitted radiation.',
     difficulty: 'medium'
   },
@@ -314,8 +314,8 @@ export const NUCLEI = [
     id: 'nuclei-26',
     type: 'mcq',
     question: 'In alpha decay, the emitted alpha particle is equivalent to the nucleus of a',
-    options: ['hydrogen atom', 'helium atom, consisting of 2 protons and 2 neutrons', 'lithium atom', 'carbon atom'],
-    correctIndex: 1,
+    options: ['carbon atom', 'hydrogen atom', 'lithium atom', 'helium atom, consisting of 2 protons and 2 neutrons'],
+    correctIndex: 3,
     explanation: 'An alpha particle is identical to a helium nucleus, consisting of two protons and two neutrons bound together.',
     difficulty: 'easy'
   },
@@ -324,12 +324,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'When a nucleus undergoes alpha decay, its mass number and atomic number change according to',
     options: [
+      'mass number decreases by 4, atomic number remains unchanged',
       'mass number decreases by 4, atomic number decreases by 2',
-      'mass number decreases by 2, atomic number decreases by 4',
       'mass number remains unchanged, atomic number decreases by 2',
-      'mass number decreases by 4, atomic number remains unchanged'
+      'mass number decreases by 2, atomic number decreases by 4'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Since an alpha particle carries away 2 protons and 2 neutrons, the parent nucleus loses 4 units of mass number and 2 units of atomic number.',
     difficulty: 'medium'
   },
@@ -339,11 +339,11 @@ export const NUCLEI = [
     question: 'In beta-minus decay, a neutron within the nucleus transforms into a proton, with the emission of',
     options: [
       'an alpha particle and a gamma ray',
-      'an electron and an antineutrino',
       'a positron and a neutrino',
-      'a proton and a photon'
+      'a proton and a photon',
+      'an electron and an antineutrino'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Beta-minus decay involves the conversion of a neutron into a proton within the nucleus, accompanied by the emission of an electron (the beta particle) and an antineutrino.',
     difficulty: 'medium'
   },
@@ -366,12 +366,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'Gamma decay involves the emission of',
     options: [
-      'a helium nucleus',
-      'a high-energy photon (gamma ray), as the nucleus transitions from a higher-energy excited state to a lower-energy state',
       'an electron and an antineutrino',
-      'a proton and a neutron together'
+      'a helium nucleus',
+      'a proton and a neutron together',
+      'a high-energy photon (gamma ray), as the nucleus transitions from a higher-energy excited state to a lower-energy state'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Gamma decay occurs when an excited nucleus releases excess energy in the form of a high-energy photon (gamma ray), without any change in its proton or neutron composition.',
     difficulty: 'medium'
   },
@@ -380,9 +380,9 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'Unlike alpha and beta decay, gamma decay does NOT change the',
     options: [
-      'internal energy state of the nucleus',
-      'mass number (A) or atomic number (Z) of the nucleus',
       'total energy of the system',
+      'mass number (A) or atomic number (Z) of the nucleus',
+      'internal energy state of the nucleus',
       'wavelength of the emitted radiation'
     ],
     correctIndex: 1,
@@ -394,12 +394,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'The law of radioactive decay states that the rate of decay of a radioactive sample is',
     options: [
-      'constant over time, regardless of the number of undecayed nuclei remaining',
-      'directly proportional to the number of undecayed radioactive nuclei present at that instant',
       'inversely proportional to the number of undecayed nuclei present',
-      'completely independent of the number of nuclei present'
+      'completely independent of the number of nuclei present',
+      'constant over time, regardless of the number of undecayed nuclei remaining',
+      'directly proportional to the number of undecayed radioactive nuclei present at that instant'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The fundamental law of radioactive decay states that the decay rate (-dN/dt) is directly proportional to the number of undecayed nuclei (N) present at that time, leading to exponential decay.',
     difficulty: 'medium'
   },
@@ -408,12 +408,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'The mathematical solution to the radioactive decay law, giving the number of undecayed nuclei N(t) at time t (starting from N0 at t=0), is',
     options: [
-      'N(t) = N0 e^(-λt), where λ is the decay constant',
       'N(t) = N0 e^(+λt)',
-      'N(t) = N0 - λt',
-      'N(t) = N0 / λt'
+      'N(t) = N0 e^(-λt), where λ is the decay constant',
+      'N(t) = N0 / λt',
+      'N(t) = N0 - λt'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Solving the differential decay law gives the exponential decay formula N(t) = N0 e^(-λt), where λ is the characteristic decay constant of the radioactive species.',
     difficulty: 'medium'
   },
@@ -423,11 +423,11 @@ export const NUCLEI = [
     question: 'The half-life of a radioactive substance is defined as the',
     options: [
       'time required for the entire sample to decay completely',
-      'time required for exactly half of the initial number of radioactive nuclei to decay',
+      'average lifetime of every individual nucleus in the sample',
       'time required for the decay constant to double',
-      'average lifetime of every individual nucleus in the sample'
+      'time required for exactly half of the initial number of radioactive nuclei to decay'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Half-life (T1/2) is defined as the time needed for exactly half of the initial number of radioactive nuclei in a sample to undergo decay.',
     difficulty: 'easy'
   },
@@ -435,7 +435,7 @@ export const NUCLEI = [
     id: 'nuclei-35',
     type: 'mcq',
     question: 'The half-life (T1/2) is related to the decay constant (λ) by',
-    options: ['T1/2 = λ', 'T1/2 = 0.693/λ', 'T1/2 = λ/0.693', 'T1/2 = 1/λ²'],
+    options: ['T1/2 = λ/0.693', 'T1/2 = 0.693/λ', 'T1/2 = λ', 'T1/2 = 1/λ²'],
     correctIndex: 1,
     explanation: 'Solving N0/2 = N0 e^(-λT1/2) gives T1/2 = ln(2)/λ ≈ 0.693/λ, the standard relationship between half-life and decay constant.',
     difficulty: 'medium'
@@ -444,8 +444,8 @@ export const NUCLEI = [
     id: 'nuclei-36',
     type: 'mcq',
     question: 'The mean (average) life of a radioactive species, τ, is related to the decay constant (λ) by',
-    options: ['τ = λ', 'τ = 1/λ', 'τ = 0.693λ', 'τ = λ²'],
-    correctIndex: 1,
+    options: ['τ = λ²', 'τ = 0.693λ', 'τ = λ', 'τ = 1/λ'],
+    correctIndex: 3,
     explanation: 'Mean life is defined as τ = 1/λ, representing the average time a nucleus in the sample survives before decaying.',
     difficulty: 'medium'
   },
@@ -454,10 +454,10 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'Comparing half-life (T1/2) and mean life (τ) for the same radioactive substance, it is found that',
     options: [
-      'T1/2 is always greater than τ',
-      'T1/2 is always less than τ, since T1/2 = 0.693τ',
       'T1/2 and τ are always exactly equal',
-      'there is no fixed mathematical relationship between T1/2 and τ'
+      'T1/2 is always less than τ, since T1/2 = 0.693τ',
+      'there is no fixed mathematical relationship between T1/2 and τ',
+      'T1/2 is always greater than τ'
     ],
     correctIndex: 1,
     explanation: 'Since T1/2 = 0.693/λ = 0.693τ, and 0.693 is less than 1, the half-life is always somewhat shorter than the mean life for a given radioactive substance.',
@@ -476,8 +476,8 @@ export const NUCLEI = [
     id: 'nuclei-39',
     type: 'mcq',
     question: 'The SI unit of radioactive activity is the',
-    options: ['curie (Ci)', 'becquerel (Bq), defined as one decay per second', 'roentgen', 'gray'],
-    correctIndex: 1,
+    options: ['roentgen', 'curie (Ci)', 'gray', 'becquerel (Bq), defined as one decay per second'],
+    correctIndex: 3,
     explanation: 'The SI unit of activity is the becquerel (Bq), corresponding to one radioactive decay event per second; the curie (Ci) is an older, non-SI unit still sometimes used.',
     difficulty: 'medium'
   },
@@ -502,8 +502,8 @@ export const NUCLEI = [
     options: [
       'greatest penetrating power and least ionising power',
       'least penetrating power and greatest ionising power',
-      'exactly the same penetrating and ionising power as gamma rays',
-      'no ionising power at all'
+      'no ionising power at all',
+      'exactly the same penetrating and ionising power as gamma rays'
     ],
     correctIndex: 1,
     explanation: 'Alpha particles, being relatively heavy and doubly charged, have strong ionising power but very limited penetrating ability, being stopped by just a sheet of paper or the outer layer of skin.',
@@ -514,12 +514,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'Among alpha, beta, and gamma radiation, gamma rays generally have the',
     options: [
-      'greatest penetrating power and least ionising power, requiring thick lead or concrete shielding',
       'least penetrating power of the three',
       'exactly the same penetrating power as alpha particles',
-      'greatest ionising power of the three'
+      'greatest ionising power of the three',
+      'greatest penetrating power and least ionising power, requiring thick lead or concrete shielding'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Gamma rays, being high-energy photons, have the greatest penetrating power among the three types of radiation but the least ionising power, requiring substantial shielding (such as thick lead or concrete) to be effectively absorbed.',
     difficulty: 'medium'
   },
@@ -529,11 +529,11 @@ export const NUCLEI = [
     question: 'Nuclear fission is the process in which',
     options: [
       'two light nuclei combine to form a heavier nucleus',
-      'a heavy nucleus splits into two lighter nuclei, typically upon absorbing a neutron, releasing energy and additional neutrons',
+      'a proton is converted into a neutron inside the nucleus',
       'a nucleus emits only gamma radiation, with no change in composition',
-      'a proton is converted into a neutron inside the nucleus'
+      'a heavy nucleus splits into two lighter nuclei, typically upon absorbing a neutron, releasing energy and additional neutrons'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Nuclear fission involves a heavy nucleus (such as uranium-235) splitting into two lighter nuclei after absorbing a neutron, releasing a large amount of energy along with additional neutrons.',
     difficulty: 'medium'
   },
@@ -541,7 +541,7 @@ export const NUCLEI = [
     id: 'nuclei-44',
     type: 'mcq',
     question: 'Nuclear fission was experimentally discovered by',
-    options: ['Albert Einstein', 'Otto Hahn and Fritz Strassmann', 'Isaac Newton', 'James Chadwick'],
+    options: ['Isaac Newton', 'Otto Hahn and Fritz Strassmann', 'Albert Einstein', 'James Chadwick'],
     correctIndex: 1,
     explanation: 'Nuclear fission was first experimentally discovered by Otto Hahn and Fritz Strassmann, who observed the splitting of uranium nuclei upon neutron bombardment.',
     difficulty: 'medium'
@@ -553,8 +553,8 @@ export const NUCLEI = [
     options: [
       'never interact with any other nucleus',
       'go on to induce further fission events in other fissile nuclei, potentially sustaining a chain reaction',
-      'immediately stop all further fission from occurring',
-      'convert instantly into protons'
+      'convert instantly into protons',
+      'immediately stop all further fission from occurring'
     ],
     correctIndex: 1,
     explanation: 'The neutrons released during fission can trigger further fission events in nearby fissile nuclei, enabling a self-sustaining chain reaction if enough of these neutrons go on to cause additional fissions.',
@@ -566,11 +566,11 @@ export const NUCLEI = [
     question: 'In a controlled nuclear reactor, control rods (typically made of materials like cadmium or boron) function to',
     options: [
       'speed up the fission reaction as much as possible',
-      'absorb excess neutrons, regulating the rate of the chain reaction and preventing it from becoming uncontrolled',
       'generate additional neutrons to increase reactor output',
-      'act as the primary nuclear fuel'
+      'act as the primary nuclear fuel',
+      'absorb excess neutrons, regulating the rate of the chain reaction and preventing it from becoming uncontrolled'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Control rods absorb some of the free neutrons produced during fission, allowing the reactor operator to regulate and control the rate of the ongoing chain reaction.',
     difficulty: 'medium'
   },
@@ -579,12 +579,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'In a nuclear reactor, a moderator (such as heavy water or graphite) functions to',
     options: [
-      'absorb excess neutrons to stop the reaction entirely',
-      'slow down fast neutrons produced in fission, increasing the probability that they will cause further fission events',
       'act as the fuel source for fission',
-      'convert neutrons into protons'
+      'absorb excess neutrons to stop the reaction entirely',
+      'convert neutrons into protons',
+      'slow down fast neutrons produced in fission, increasing the probability that they will cause further fission events'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A moderator slows down the fast neutrons produced by fission to lower (thermal) energies, at which they are more likely to induce further fission in the fuel, sustaining the chain reaction efficiently.',
     difficulty: 'medium'
   },
@@ -593,10 +593,10 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'In a nuclear power reactor, the coolant primarily functions to',
     options: [
-      'absorb all the neutrons produced',
+      'directly convert nuclear energy into electrical energy without any intermediate steps',
       'remove the heat generated by fission, transferring it to eventually produce steam for driving turbines and generating electricity',
       'act as the moderator as well',
-      'directly convert nuclear energy into electrical energy without any intermediate steps'
+      'absorb all the neutrons produced'
     ],
     correctIndex: 1,
     explanation: 'The coolant carries away the heat generated by the fission reaction, typically transferring this heat to produce steam, which then drives turbines connected to electricity generators.',
@@ -623,8 +623,8 @@ export const NUCLEI = [
     options: [
       'cool down the nuclei sufficiently for them to combine',
       'provide the nuclei with enough kinetic energy to overcome the strong electrostatic (Coulomb) repulsion between them and get close enough for the nuclear force to bind them',
-      'convert the nuclei into a solid state',
-      'prevent any nuclear reaction from occurring at all'
+      'prevent any nuclear reaction from occurring at all',
+      'convert the nuclei into a solid state'
     ],
     correctIndex: 1,
     explanation: 'Since positively charged nuclei repel each other electrostatically, very high temperatures are needed to give them sufficient kinetic energy to overcome this repulsion and get close enough for the short-range nuclear force to take over and bind them together.',
@@ -635,12 +635,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'The energy radiated by the Sun and other stars is primarily generated through',
     options: [
+      'radioactive decay of uranium alone',
       'nuclear fission of heavy elements',
-      'nuclear fusion reactions, particularly the conversion of hydrogen into helium via processes like the proton-proton cycle',
       'chemical combustion reactions',
-      'radioactive decay of uranium alone'
+      'nuclear fusion reactions, particularly the conversion of hydrogen into helium via processes like the proton-proton cycle'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The Sun and most stars generate their energy through nuclear fusion, primarily converting hydrogen nuclei into helium through a series of reactions known as the proton-proton cycle.',
     difficulty: 'medium'
   },
@@ -649,12 +649,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'Compared to nuclear fission, nuclear fusion generally releases',
     options: [
+      'exactly the same amount of energy per unit mass',
       'much less energy per unit mass of fuel',
       'considerably more energy per unit mass of fuel',
-      'exactly the same amount of energy per unit mass',
       'no energy at all, since fusion is not an exothermic process'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Nuclear fusion typically releases significantly more energy per unit mass of fuel than nuclear fission, one reason fusion is considered an attractive potential energy source.',
     difficulty: 'medium'
   },
@@ -663,10 +663,10 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'A key ongoing scientific and engineering challenge for practical, controlled nuclear fusion as a widespread energy source has been',
     options: [
-      'a complete lack of theoretical understanding of the fusion process',
+      'the fact that fusion releases no usable energy',
       'achieving and sustaining the extremely high temperature and confinement conditions needed for a controlled, self-sustaining fusion reaction',
       'a complete absence of light elements needed as fuel',
-      'the fact that fusion releases no usable energy'
+      'a complete lack of theoretical understanding of the fusion process'
     ],
     correctIndex: 1,
     explanation: 'Achieving and maintaining the extremely high temperatures and adequate confinement conditions needed for a stable, controlled, and net energy-producing fusion reaction has remained a major ongoing scientific and engineering challenge.',
@@ -678,11 +678,11 @@ export const NUCLEI = [
     question: 'The total energy released in a fission or fusion reaction can be calculated from the mass difference between the reactants and products using',
     options: [
       'Newton\'s second law',
-      'Einstein\'s mass-energy equivalence relation, E = Δm c²',
+      'Ohm\'s law',
       'Coulomb\'s law',
-      'Ohm\'s law'
+      'Einstein\'s mass-energy equivalence relation, E = Δm c²'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The energy released in nuclear reactions is calculated from the mass difference (Δm) between initial and final states, converted to energy using Einstein\'s relation E = Δm c².',
     difficulty: 'medium'
   },
@@ -691,12 +691,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'Since a nucleus is far more tightly bound than the sum of its free, separated nucleons, the actual mass of a stable nucleus is generally',
     options: [
+      'completely unrelated to the masses of its constituent nucleons',
       'greater than the sum of the masses of its constituent free nucleons',
       'less than the sum of the masses of its constituent free nucleons, consistent with a positive binding energy and mass defect',
-      'exactly equal to the sum of the masses of its constituent free nucleons',
-      'completely unrelated to the masses of its constituent nucleons'
+      'exactly equal to the sum of the masses of its constituent free nucleons'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'The nucleus\'s actual mass is less than the total mass of its free, separated nucleons, since some mass is converted into the binding energy that holds the nucleus together, consistent with a positive mass defect.',
     difficulty: 'medium'
   },
@@ -707,8 +707,8 @@ export const NUCLEI = [
     options: [
       'isotope identity only, with no relation to chemical properties',
       'chemical identity (which element it is), since it determines the number of protons and hence electrons in a neutral atom',
-      'exact mass in atomic mass units',
-      'exact number of neutrons present'
+      'exact number of neutrons present',
+      'exact mass in atomic mass units'
     ],
     correctIndex: 1,
     explanation: 'Since the atomic number equals the number of protons, and this determines the number of electrons in a neutral atom, it fundamentally determines the chemical identity and properties of the element.',
@@ -720,11 +720,11 @@ export const NUCLEI = [
     question: 'Isotopes of the same element share identical chemical properties primarily because',
     options: [
       'they have the same number of neutrons',
+      'isotopes actually have completely different chemical properties from one another',
       'they have the same atomic number (and hence the same number of electrons), which determines chemical behaviour',
-      'they have identical mass numbers',
-      'isotopes actually have completely different chemical properties from one another'
+      'they have identical mass numbers'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Since isotopes share the same atomic number (and hence the same electron configuration in a neutral atom), they exhibit essentially identical chemical behaviour, despite differing in mass due to differing neutron numbers.',
     difficulty: 'medium'
   },
@@ -733,12 +733,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'A radioactive decay series (chain) typically continues through successive alpha and beta decays until it reaches',
     options: [
+      'a nucleus with zero protons and zero neutrons',
       'an unstable nucleus that decays infinitely without ever stopping',
-      'a stable, non-radioactive nucleus (often an isotope of lead, in naturally occurring heavy element series)',
       'the original parent nucleus once again',
-      'a nucleus with zero protons and zero neutrons'
+      'a stable, non-radioactive nucleus (often an isotope of lead, in naturally occurring heavy element series)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Natural radioactive decay series proceed through a sequence of alpha and beta decays until a stable, non-radioactive nucleus is finally reached, often an isotope of lead in the case of naturally occurring heavy element decay chains.',
     difficulty: 'hard'
   },
@@ -746,8 +746,8 @@ export const NUCLEI = [
     id: 'nuclei-59',
     type: 'mcq',
     question: 'In terms of half-life, after two half-lives have elapsed, the fraction of the original radioactive sample remaining undecayed is',
-    options: ['1/2', '1/4', '1/8', '3/4'],
-    correctIndex: 1,
+    options: ['1/8', '1/2', '3/4', '1/4'],
+    correctIndex: 3,
     explanation: 'Each half-life reduces the remaining amount by half; after two half-lives, (1/2) × (1/2) = 1/4 of the original sample remains undecayed.',
     difficulty: 'medium'
   },
@@ -755,8 +755,8 @@ export const NUCLEI = [
     id: 'nuclei-60',
     type: 'mcq',
     question: 'In terms of half-life, after three half-lives have elapsed, the fraction of the original radioactive sample remaining undecayed is',
-    options: ['1/2', '1/4', '1/8', '1/16'],
-    correctIndex: 2,
+    options: ['1/2', '1/8', '1/16', '1/4'],
+    correctIndex: 1,
     explanation: 'After three half-lives, the remaining fraction is (1/2)³ = 1/8 of the original sample.',
     difficulty: 'medium'
   },
@@ -765,12 +765,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'A radioactive sample with a very short half-life, compared to one with a very long half-life (starting with the same initial number of nuclei), will generally show',
     options: [
-      'a lower initial activity',
       'a higher initial activity, since activity A = λN, and a shorter half-life corresponds to a larger decay constant λ',
       'exactly the same activity, regardless of half-life',
-      'no activity at all'
+      'no activity at all',
+      'a lower initial activity'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'Since decay constant λ is inversely related to half-life (λ = 0.693/T1/2), a shorter half-life means a larger λ, and since activity A = λN, a shorter-half-life sample (with the same N) shows higher initial activity.',
     difficulty: 'medium'
   },
@@ -779,12 +779,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'Which of the following statements correctly compares the range and relative strength of the nuclear force to the electromagnetic (Coulomb) force?',
     options: [
-      'The nuclear force has a longer range and is always weaker than the electromagnetic force',
-      'The nuclear force has a much shorter range but is much stronger than the electromagnetic force at nuclear distances',
+      'The nuclear force does not exist; only electromagnetic forces act within the nucleus',
       'Both forces have identical ranges and identical strengths',
-      'The nuclear force does not exist; only electromagnetic forces act within the nucleus'
+      'The nuclear force has a much shorter range but is much stronger than the electromagnetic force at nuclear distances',
+      'The nuclear force has a longer range and is always weaker than the electromagnetic force'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'The nuclear force is very short-ranged (effective only over nuclear distances) but is significantly stronger than the electromagnetic force at these short distances, which is why the nucleus remains bound despite proton-proton repulsion.',
     difficulty: 'medium'
   },
@@ -793,12 +793,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'A neutron, unlike a proton, carries',
     options: [
-      'a positive electric charge',
-      'no net electric charge (it is electrically neutral)',
+      'exactly the same charge as a proton',
       'a negative electric charge equal in magnitude to that of an electron',
-      'exactly the same charge as a proton'
+      'a positive electric charge',
+      'no net electric charge (it is electrically neutral)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A neutron is electrically neutral, carrying no net electric charge, unlike the positively charged proton.',
     difficulty: 'easy'
   },
@@ -806,7 +806,7 @@ export const NUCLEI = [
     id: 'nuclei-64',
     type: 'mcq',
     question: 'The neutron was experimentally discovered by',
-    options: ['Ernest Rutherford', 'James Chadwick', 'Niels Bohr', 'Marie Curie'],
+    options: ['Niels Bohr', 'James Chadwick', 'Ernest Rutherford', 'Marie Curie'],
     correctIndex: 1,
     explanation: 'The neutron was experimentally discovered by James Chadwick, completing the basic picture of the nucleus as composed of protons and neutrons.',
     difficulty: 'medium'
@@ -816,12 +816,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'The observation that the volume of a nucleus is proportional to its mass number (A) is consistent with the nucleus behaving somewhat like a',
     options: [
-      'perfect vacuum, with no internal structure at all',
       'closely packed collection of roughly incompressible nucleons, similar in spirit to an incompressible liquid drop',
       'a single, indivisible point particle with zero volume',
-      'a gas of freely expanding, non-interacting particles'
+      'a gas of freely expanding, non-interacting particles',
+      'perfect vacuum, with no internal structure at all'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'Since nuclear volume scales proportionally with the number of nucleons (constant density), the nucleus behaves somewhat like a closely packed, roughly incompressible collection of nucleons, an analogy sometimes described using the liquid drop model.',
     difficulty: 'hard'
   },
@@ -830,12 +830,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'Nuclear reactors used for generating electricity typically use fuel such as',
     options: [
+      'pure hydrogen gas',
       'ordinary (natural) carbon',
       'enriched uranium, containing an increased proportion of the fissile isotope uranium-235',
-      'pure hydrogen gas',
       'liquid nitrogen'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Nuclear power reactors typically use enriched uranium fuel, with an increased concentration of the fissile isotope uranium-235, to sustain an efficient fission chain reaction.',
     difficulty: 'medium'
   },
@@ -858,12 +858,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'An uncontrolled nuclear fission chain reaction, in which the number of fission events grows very rapidly without any regulation, is the basic principle behind',
     options: [
-      'a controlled nuclear power reactor',
       'an atomic (fission) bomb',
       'a simple electric battery',
+      'a controlled nuclear power reactor',
       'a solar panel'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'An atomic bomb relies on an uncontrolled, rapidly escalating fission chain reaction, in contrast to the carefully regulated, controlled chain reaction maintained within a nuclear power reactor.',
     difficulty: 'medium'
   },
@@ -872,12 +872,12 @@ export const NUCLEI = [
     type: 'mcq',
     question: 'The concept of "critical mass" in the context of nuclear fission refers to',
     options: [
+      'the mass of a single neutron',
       'the maximum possible mass a nucleus can have before it becomes stable',
       'the minimum mass of fissile material needed to sustain a self-propagating chain reaction',
-      'the mass of a single neutron',
       'a mass value that has no relevance to nuclear reactions at all'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Critical mass refers to the minimum quantity of fissile material required for a self-sustaining chain reaction to occur, since below this mass too many neutrons escape without causing further fission.',
     difficulty: 'medium'
   },

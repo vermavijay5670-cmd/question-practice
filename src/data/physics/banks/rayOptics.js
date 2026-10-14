@@ -5,12 +5,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'According to the Cartesian sign convention used for spherical mirrors and lenses, distances are measured',
     options: [
-      'from the pole (or optical centre), with distances in the direction of the incident light taken as positive',
-      'from the focal point only, regardless of direction',
       'from the observer\'s eye, regardless of the position of the mirror or lens',
-      'in a manner that makes all distances always positive'
+      'in a manner that makes all distances always positive',
+      'from the focal point only, regardless of direction',
+      'from the pole (or optical centre), with distances in the direction of the incident light taken as positive'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The Cartesian sign convention measures all distances from the pole (for mirrors) or optical centre (for lenses), with distances measured in the direction of incident light taken as positive.',
     difficulty: 'medium'
   },
@@ -18,8 +18,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-2',
     type: 'mcq',
     question: 'The mirror formula relating object distance (u), image distance (v), and focal length (f) is',
-    options: ['1/v + 1/u = 1/f', '1/v - 1/u = 1/f', 'v + u = f', 'v × u = f'],
-    correctIndex: 0,
+    options: ['v × u = f', 'v + u = f', '1/v - 1/u = 1/f', '1/v + 1/u = 1/f'],
+    correctIndex: 3,
     explanation: 'The mirror formula is 1/v + 1/u = 1/f, applicable to both concave and convex spherical mirrors when the sign convention is applied consistently.',
     difficulty: 'easy'
   },
@@ -27,8 +27,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-3',
     type: 'mcq',
     question: 'The focal length of a spherical mirror is related to its radius of curvature (R) by',
-    options: ['f = R', 'f = R/2', 'f = 2R', 'f = R^2'],
-    correctIndex: 1,
+    options: ['f = R', 'f = 2R', 'f = R^2', 'f = R/2'],
+    correctIndex: 3,
     explanation: 'For a spherical mirror, the focal length is half the radius of curvature, f = R/2, a relation derivable using the paraxial ray approximation.',
     difficulty: 'easy'
   },
@@ -37,12 +37,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'A convex mirror, regardless of the position of the object in front of it, always forms an image that is',
     options: [
-      'real, inverted, and enlarged',
-      'virtual, erect, and diminished',
       'real, erect, and diminished',
-      'virtual, inverted, and enlarged'
+      'virtual, inverted, and enlarged',
+      'real, inverted, and enlarged',
+      'virtual, erect, and diminished'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A convex mirror always produces a virtual, erect, and diminished image for any object position, which is why it is used in vehicle side mirrors to provide a wider field of view.',
     difficulty: 'medium'
   },
@@ -51,12 +51,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'A concave mirror produces a virtual, erect, and magnified image when the object is placed',
     options: [
-      'beyond the centre of curvature',
-      'exactly at the centre of curvature',
+      'exactly at the focal point',
       'between the pole and the focal point',
-      'exactly at the focal point'
+      'exactly at the centre of curvature',
+      'beyond the centre of curvature'
     ],
-    correctIndex: 2,
+    correctIndex: 1,
     explanation: 'When an object is placed between the pole and the focal point of a concave mirror, the mirror produces a virtual, erect, and magnified image, as used in shaving/makeup mirrors.',
     difficulty: 'medium'
   },
@@ -67,8 +67,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     options: [
       'always form a real, magnified image',
       'provide a wider field of view due to their diverging nature, though the image is diminished',
-      'have a longer focal length than any concave mirror',
-      'cannot form any image at all'
+      'cannot form any image at all',
+      'have a longer focal length than any concave mirror'
     ],
     correctIndex: 1,
     explanation: 'Because a convex mirror diverges reflected rays, it provides a much wider field of view than a plane or concave mirror of the same size, even though the resulting image is diminished.',
@@ -79,12 +79,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'Snell\'s law of refraction relates the angle of incidence (θ1) and angle of refraction (θ2) at a boundary between two media through',
     options: [
-      'n1 sin θ1 = n2 sin θ2',
-      'n1 cos θ1 = n2 cos θ2',
       'n1 θ1 = n2 θ2',
-      'n1/θ1 = n2/θ2'
+      'n1/θ1 = n2/θ2',
+      'n1 cos θ1 = n2 cos θ2',
+      'n1 sin θ1 = n2 sin θ2'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Snell\'s law states that n1 sin θ1 = n2 sin θ2, relating the refractive indices of the two media to the angles of incidence and refraction.',
     difficulty: 'easy'
   },
@@ -93,10 +93,10 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'The refractive index of a medium is defined as the ratio of the',
     options: [
-      'speed of light in the medium to the speed of light in vacuum',
-      'speed of light in vacuum to the speed of light in the medium',
       'wavelength of light in vacuum to its wavelength in the medium only, unrelated to speed',
-      'frequency of light in the medium to its frequency in vacuum'
+      'speed of light in vacuum to the speed of light in the medium',
+      'frequency of light in the medium to its frequency in vacuum',
+      'speed of light in the medium to the speed of light in vacuum'
     ],
     correctIndex: 1,
     explanation: 'The (absolute) refractive index of a medium is defined as n = c/v, the ratio of the speed of light in vacuum to its speed in that medium.',
@@ -107,12 +107,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'When light travels from a rarer medium into a denser medium, it bends',
     options: [
-      'away from the normal',
-      'towards the normal',
+      'in a direction unrelated to the normal',
       'exactly along the normal, with no bending',
-      'in a direction unrelated to the normal'
+      'away from the normal',
+      'towards the normal'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'On entering a denser medium (where light travels more slowly), the refracted ray bends towards the normal, consistent with Snell\'s law.',
     difficulty: 'easy'
   },
@@ -120,8 +120,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-10',
     type: 'mcq',
     question: 'The thin lens formula relating object distance (u), image distance (v), and focal length (f) is',
-    options: ['1/v - 1/u = 1/f', '1/v + 1/u = 1/f', 'v - u = f', 'v/u = f'],
-    correctIndex: 0,
+    options: ['1/v + 1/u = 1/f', '1/v - 1/u = 1/f', 'v - u = f', 'v/u = f'],
+    correctIndex: 1,
     explanation: 'The thin lens formula is 1/v - 1/u = 1/f, applicable to both converging and diverging thin lenses under the Cartesian sign convention.',
     difficulty: 'easy'
   },
@@ -130,12 +130,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'The lens maker\'s formula relates the focal length of a thin lens to the radii of curvature of its two surfaces and the',
     options: [
-      'refractive index of the lens material relative to the surrounding medium',
-      'thickness of the lens only, with no dependence on refractive index',
+      'distance of the observer from the lens',
       'colour of the light source used',
-      'distance of the observer from the lens'
+      'thickness of the lens only, with no dependence on refractive index',
+      'refractive index of the lens material relative to the surrounding medium'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The lens maker\'s formula, 1/f = (n21 - 1)(1/R1 - 1/R2), relates focal length to the relative refractive index of the lens material and the curvatures of its two surfaces.',
     difficulty: 'medium'
   },
@@ -144,12 +144,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'The power of a lens is defined as',
     options: [
+      'always a negative quantity regardless of lens type',
       'the square of its focal length',
-      'the reciprocal of its focal length (measured in metres), giving power in dioptres',
       'the product of its focal length and refractive index',
-      'always a negative quantity regardless of lens type'
+      'the reciprocal of its focal length (measured in metres), giving power in dioptres'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Power of a lens is defined as P = 1/f, with focal length measured in metres, giving power in units of dioptres (D).',
     difficulty: 'easy'
   },
@@ -157,7 +157,7 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-13',
     type: 'mcq',
     question: 'A converging (convex) lens has',
-    options: ['negative power', 'positive power', 'zero power always', 'power that depends only on its colour'],
+    options: ['zero power always', 'positive power', 'negative power', 'power that depends only on its colour'],
     correctIndex: 1,
     explanation: 'By convention, a converging (convex) lens has a positive focal length and therefore positive power.',
     difficulty: 'easy'
@@ -166,8 +166,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-14',
     type: 'mcq',
     question: 'A diverging (concave) lens has',
-    options: ['positive power', 'negative power', 'infinite power always', 'power that cannot be defined'],
-    correctIndex: 1,
+    options: ['infinite power always', 'power that cannot be defined', 'positive power', 'negative power'],
+    correctIndex: 3,
     explanation: 'By convention, a diverging (concave) lens has a negative focal length and therefore negative power.',
     difficulty: 'easy'
   },
@@ -176,12 +176,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'When two thin lenses are placed in close contact, the power of the combination is given by',
     options: [
+      'always equal to zero, regardless of the individual lens powers',
       'the sum of the individual powers, P = P1 + P2',
       'the difference of the individual powers only',
-      'the product of the individual powers',
-      'always equal to zero, regardless of the individual lens powers'
+      'the product of the individual powers'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'For thin lenses in contact, the powers simply add algebraically: P = P1 + P2 + ..., which follows directly from the additive nature of 1/f for lenses in contact.',
     difficulty: 'medium'
   },
@@ -190,9 +190,9 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'Total internal reflection can occur only when light travels from',
     options: [
-      'a rarer medium into a denser medium',
-      'a denser medium into a rarer medium, with the angle of incidence exceeding the critical angle',
       'any medium into vacuum, regardless of angle',
+      'a denser medium into a rarer medium, with the angle of incidence exceeding the critical angle',
+      'a rarer medium into a denser medium',
       'a medium into an identical medium'
     ],
     correctIndex: 1,
@@ -204,12 +204,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'The critical angle is defined as the angle of incidence (in the denser medium) for which the',
     options: [
-      'angle of refraction becomes exactly 90°',
       'angle of refraction becomes exactly 0°',
+      'refracted ray travels back into the denser medium',
       'reflected ray disappears completely',
-      'refracted ray travels back into the denser medium'
+      'angle of refraction becomes exactly 90°'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The critical angle is the specific angle of incidence in the denser medium at which the refracted ray grazes along the boundary, making the angle of refraction exactly 90°.',
     difficulty: 'medium'
   },
@@ -218,12 +218,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'For angles of incidence greater than the critical angle, light incident at a denser-rarer boundary from the denser side',
     options: [
-      'is completely refracted into the rarer medium',
-      'undergoes total internal reflection, with no refracted ray transmitted into the rarer medium',
       'is completely absorbed by the boundary',
-      'travels straight through with no change in direction'
+      'travels straight through with no change in direction',
+      'is completely refracted into the rarer medium',
+      'undergoes total internal reflection, with no refracted ray transmitted into the rarer medium'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Beyond the critical angle, no refraction occurs at all; the light is completely (totally) internally reflected back into the denser medium.',
     difficulty: 'medium'
   },
@@ -232,9 +232,9 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'Optical fibres used in communication and medical instruments (such as endoscopes) work on the principle of',
     options: [
-      'partial reflection at the outer surface',
-      'total internal reflection, guiding light along the fibre through repeated internal reflections',
       'diffraction of light around obstacles',
+      'total internal reflection, guiding light along the fibre through repeated internal reflections',
+      'partial reflection at the outer surface',
       'polarisation of light'
     ],
     correctIndex: 1,
@@ -246,10 +246,10 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'The optical mirage phenomenon observed on hot roads is explained by',
     options: [
-      'diffraction of light by dust particles',
+      'the Doppler effect',
       'total internal reflection occurring at the boundary between layers of air of different densities (and hence different refractive indices) near the hot surface',
       'polarisation of sunlight',
-      'the Doppler effect'
+      'diffraction of light by dust particles'
     ],
     correctIndex: 1,
     explanation: 'Mirages occur because air near a hot surface is less dense (lower refractive index) than the air above it, and light travelling through these varying layers can undergo total internal reflection, creating the illusion of a water-like reflection.',
@@ -260,12 +260,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'The brilliant sparkle of a well-cut diamond is largely due to',
     options: [
-      'its extremely low refractive index',
-      'its very high refractive index, causing light entering the diamond to undergo total internal reflection multiple times before emerging',
       'the diamond\'s natural colour',
-      'the diamond absorbing and re-emitting light at a different wavelength'
+      'its extremely low refractive index',
+      'the diamond absorbing and re-emitting light at a different wavelength',
+      'its very high refractive index, causing light entering the diamond to undergo total internal reflection multiple times before emerging'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Diamond has an unusually high refractive index, giving it a small critical angle, which causes light entering the stone to undergo multiple total internal reflections before finally emerging, producing its characteristic sparkle.',
     difficulty: 'medium'
   },
@@ -275,11 +275,11 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     question: 'Totally reflecting prisms (such as 45°-45°-90° prisms) are often preferred over ordinary silvered mirrors in optical instruments like binoculars and periscopes because',
     options: [
       'they are always cheaper to manufacture than mirrors',
-      'total internal reflection provides a more complete reflection with less loss of light intensity, unlike partial absorption that can occur at a silvered surface',
       'they cannot form any image at all',
-      'they require the incident light to be polarised'
+      'they require the incident light to be polarised',
+      'total internal reflection provides a more complete reflection with less loss of light intensity, unlike partial absorption that can occur at a silvered surface'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Total internal reflection inside a prism reflects essentially all of the incident light with minimal loss, whereas a silvered mirror surface can absorb a small fraction of the light, making prisms advantageous in some optical instruments.',
     difficulty: 'medium'
   },
@@ -288,12 +288,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'The angle of deviation produced by a prism generally depends on the angle of incidence and reaches a minimum value when',
     options: [
-      'the light ray passes through the prism symmetrically, i.e., the angle of incidence equals the angle of emergence',
       'the light ray grazes along the prism surface',
-      'the angle of incidence is exactly 0°',
-      'the prism angle is exactly 90°'
+      'the light ray passes through the prism symmetrically, i.e., the angle of incidence equals the angle of emergence',
+      'the prism angle is exactly 90°',
+      'the angle of incidence is exactly 0°'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'The angle of deviation through a prism reaches its minimum value specifically when the ray passes symmetrically through the prism, with equal angles of incidence and emergence.',
     difficulty: 'medium'
   },
@@ -302,12 +302,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'The refractive index of a prism material can be determined from the prism angle (A) and the angle of minimum deviation (δm) using the relation',
     options: [
-      'n = sin[(A + δm)/2] / sin(A/2)',
-      'n = sin(A) / sin(δm)',
       'n = A / δm',
-      'n = sin(A + δm) / sin(A)'
+      'n = sin(A + δm) / sin(A)',
+      'n = sin(A) / sin(δm)',
+      'n = sin[(A + δm)/2] / sin(A/2)'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The refractive index of the prism material is related to the prism angle and the angle of minimum deviation by n = sin[(A + δm)/2] / sin(A/2).',
     difficulty: 'hard'
   },
@@ -316,10 +316,10 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'Dispersion of light by a prism occurs because the refractive index of the prism material',
     options: [
-      'is exactly the same for all wavelengths of light',
-      'varies with the wavelength of light, causing different colours to be refracted (and hence deviated) by different amounts',
       'is undefined for visible light',
-      'depends only on the angle of the prism, not on wavelength'
+      'varies with the wavelength of light, causing different colours to be refracted (and hence deviated) by different amounts',
+      'depends only on the angle of the prism, not on wavelength',
+      'is exactly the same for all wavelengths of light'
     ],
     correctIndex: 1,
     explanation: 'Dispersion arises because the refractive index of the prism material varies with wavelength, so each colour of light is deviated by a different amount as it passes through the prism.',
@@ -331,11 +331,11 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     question: 'In the dispersion of white light by a glass prism (normal dispersion), violet light is deviated',
     options: [
       'the least of all the visible colours',
-      'the most of all the visible colours, since glass typically has the highest refractive index for violet light among visible wavelengths',
+      'in the opposite direction to red light',
       'exactly the same amount as red light',
-      'in the opposite direction to red light'
+      'the most of all the visible colours, since glass typically has the highest refractive index for violet light among visible wavelengths'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'In normal dispersion, since the refractive index generally increases as wavelength decreases, violet light (shortest visible wavelength) is deviated the most, while red light (longest visible wavelength) is deviated the least.',
     difficulty: 'medium'
   },
@@ -359,11 +359,11 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     question: 'A primary rainbow is formed in the sky due to sunlight undergoing, within each spherical raindrop,',
     options: [
       'refraction only, with no reflection at all',
-      'refraction, followed by one internal reflection, followed by further refraction as the light exits the drop',
       'two internal reflections',
-      'diffraction only'
+      'diffraction only',
+      'refraction, followed by one internal reflection, followed by further refraction as the light exits the drop'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A primary rainbow forms due to sunlight undergoing refraction upon entering a raindrop, one internal reflection inside the drop, and further refraction as it exits, combined with dispersion.',
     difficulty: 'medium'
   },
@@ -372,9 +372,9 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'A secondary rainbow, which appears fainter and with reversed colour order compared to the primary rainbow, is formed due to',
     options: [
-      'exactly the same single internal reflection as the primary rainbow',
-      'two internal reflections within the raindrop, with the additional reflection causing greater intensity loss (hence the fainter appearance) and colour reversal',
       'no reflection at all, only refraction',
+      'two internal reflections within the raindrop, with the additional reflection causing greater intensity loss (hence the fainter appearance) and colour reversal',
+      'exactly the same single internal reflection as the primary rainbow',
       'the raindrops being a different colour than those forming the primary rainbow'
     ],
     correctIndex: 1,
@@ -386,12 +386,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'The blue colour of the clear daytime sky is primarily explained by',
     options: [
-      'absorption of blue light by atmospheric gases',
-      'Rayleigh scattering, in which shorter wavelengths (blue) are scattered more strongly than longer wavelengths (red) by atmospheric molecules',
       'reflection of blue light from the ocean',
-      'the blue colour of sunlight itself, unaltered by the atmosphere'
+      'absorption of blue light by atmospheric gases',
+      'the blue colour of sunlight itself, unaltered by the atmosphere',
+      'Rayleigh scattering, in which shorter wavelengths (blue) are scattered more strongly than longer wavelengths (red) by atmospheric molecules'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Rayleigh scattering causes shorter wavelengths (blue/violet) to be scattered much more strongly than longer wavelengths (red) by atmospheric gas molecules, giving the sky its blue appearance during the day.',
     difficulty: 'medium'
   },
@@ -400,10 +400,10 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'According to Rayleigh\'s scattering law, the intensity of scattered light is generally proportional to',
     options: [
-      'the wavelength of light directly, with no inverse relationship',
+      'a constant, independent of wavelength',
       'the inverse fourth power of the wavelength (1/λ^4)',
-      'the square of the wavelength',
-      'a constant, independent of wavelength'
+      'the wavelength of light directly, with no inverse relationship',
+      'the square of the wavelength'
     ],
     correctIndex: 1,
     explanation: 'Rayleigh scattering intensity varies as the inverse fourth power of wavelength, meaning shorter wavelengths are scattered much more strongly than longer wavelengths.',
@@ -415,11 +415,11 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     question: 'The reddish appearance of the sun at sunrise and sunset is explained by the fact that, at these times,',
     options: [
       'sunlight travels through a much shorter path in the atmosphere than at midday',
-      'sunlight travels through a much longer path in the atmosphere, scattering away most of the shorter (blue) wavelengths and leaving mostly longer (red) wavelengths to reach the observer directly',
       'the sun itself emits only red light at these times',
-      'the atmosphere absorbs all colours except red'
+      'the atmosphere absorbs all colours except red',
+      'sunlight travels through a much longer path in the atmosphere, scattering away most of the shorter (blue) wavelengths and leaving mostly longer (red) wavelengths to reach the observer directly'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'At sunrise and sunset, sunlight travels a much longer path through the atmosphere, causing most of the shorter (blue) wavelengths to be scattered away, so mostly the longer (red) wavelengths reach the observer directly, giving the sun its reddish appearance.',
     difficulty: 'medium'
   },
@@ -427,7 +427,7 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-33',
     type: 'mcq',
     question: 'In the human eye, the transparent front part of the eye through which light first enters is called the',
-    options: ['retina', 'cornea', 'iris', 'ciliary muscle'],
+    options: ['iris', 'cornea', 'retina', 'ciliary muscle'],
     correctIndex: 1,
     explanation: 'The cornea is the transparent front part of the eye, through which light first enters and undergoes most of its initial refraction.',
     difficulty: 'easy'
@@ -436,8 +436,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-34',
     type: 'mcq',
     question: 'The coloured diaphragm of the eye that controls the size of the pupil (and hence the amount of light entering) is called the',
-    options: ['cornea', 'retina', 'iris', 'lens'],
-    correctIndex: 2,
+    options: ['retina', 'lens', 'cornea', 'iris'],
+    correctIndex: 3,
     explanation: 'The iris is the coloured diaphragm that adjusts the size of the pupil, controlling the amount of light entering the eye.',
     difficulty: 'easy'
   },
@@ -445,8 +445,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-35',
     type: 'mcq',
     question: 'The light-sensitive layer at the back of the eye, where a real, inverted image is formed, is called the',
-    options: ['cornea', 'iris', 'retina', 'aqueous humour'],
-    correctIndex: 2,
+    options: ['iris', 'retina', 'cornea', 'aqueous humour'],
+    correctIndex: 1,
     explanation: 'The retina is the light-sensitive layer at the back of the eye, and it is here that the crystalline lens forms a real, inverted image.',
     difficulty: 'easy'
   },
@@ -454,8 +454,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-36',
     type: 'mcq',
     question: 'The ability of the eye lens to adjust its focal length so as to focus on objects at varying distances is called',
-    options: ['dispersion', 'accommodation', 'total internal reflection', 'polarisation'],
-    correctIndex: 1,
+    options: ['total internal reflection', 'dispersion', 'polarisation', 'accommodation'],
+    correctIndex: 3,
     explanation: 'Accommodation refers to the eye\'s ability to change the curvature (and hence focal length) of its crystalline lens, allowing it to focus on objects at different distances.',
     difficulty: 'medium'
   },
@@ -463,7 +463,7 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-37',
     type: 'mcq',
     question: 'The least distance of distinct vision (near point) for a normal, healthy adult human eye is generally taken to be about',
-    options: ['1 cm', '25 cm', '2.5 m', 'infinity'],
+    options: ['2.5 m', '25 cm', '1 cm', 'infinity'],
     correctIndex: 1,
     explanation: 'The conventional near point (least distance of distinct vision) for a normal eye is taken to be approximately 25 cm.',
     difficulty: 'medium'
@@ -473,12 +473,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'Myopia (short-sightedness/near-sightedness) is a defect of vision in which',
     options: [
-      'distant objects appear blurred, since the image is formed in front of the retina',
       'near objects appear blurred, since the image is formed behind the retina',
-      'the eye cannot see any colour except red',
-      'the eye has no near point at all'
+      'distant objects appear blurred, since the image is formed in front of the retina',
+      'the eye has no near point at all',
+      'the eye cannot see any colour except red'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'In myopia, the image of a distant object is formed in front of the retina (rather than exactly on it), commonly due to elongation of the eyeball or excessive curvature of the lens, causing distant objects to appear blurred.',
     difficulty: 'medium'
   },
@@ -487,12 +487,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'Myopia is corrected using a',
     options: [
+      'cylindrical lens',
       'converging (convex) lens',
-      'diverging (concave) lens, which diverges incoming rays slightly before they reach the eye, moving the focus back onto the retina',
       'plano lens with zero power',
-      'cylindrical lens'
+      'diverging (concave) lens, which diverges incoming rays slightly before they reach the eye, moving the focus back onto the retina'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A diverging (concave) lens is used to correct myopia, since it slightly diverges the incoming rays before they reach the eye\'s own lens, shifting the point of focus back onto the retina.',
     difficulty: 'medium'
   },
@@ -501,10 +501,10 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'Hypermetropia (long-sightedness/far-sightedness) is a defect of vision in which',
     options: [
-      'distant objects appear blurred',
+      'the eye sees everything in only shades of grey',
       'near objects appear blurred, since the image is formed behind the retina',
-      'both near and far objects appear equally blurred at all times, with no exceptions',
-      'the eye sees everything in only shades of grey'
+      'distant objects appear blurred',
+      'both near and far objects appear equally blurred at all times, with no exceptions'
     ],
     correctIndex: 1,
     explanation: 'In hypermetropia, the image of a nearby object tends to form behind the retina, commonly due to a shortened eyeball or reduced curvature of the lens, causing near objects to appear blurred.',
@@ -516,11 +516,11 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     question: 'Hypermetropia is corrected using a',
     options: [
       'diverging (concave) lens',
-      'converging (convex) lens, which helps converge the incoming rays slightly before they reach the eye, moving the focus forward onto the retina',
       'lens with zero power',
-      'mirror instead of a lens'
+      'mirror instead of a lens',
+      'converging (convex) lens, which helps converge the incoming rays slightly before they reach the eye, moving the focus forward onto the retina'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A converging (convex) lens is used to correct hypermetropia, helping to focus the image correctly onto the retina rather than behind it.',
     difficulty: 'medium'
   },
@@ -529,12 +529,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'Presbyopia is an age-related vision defect caused by',
     options: [
-      'a sudden infection of the eye',
-      'a gradual loss of the eye\'s power of accommodation, as the ciliary muscles weaken and the lens loses flexibility with age',
+      'a congenital abnormality present from birth only',
       'excessive exposure to bright light',
-      'a congenital abnormality present from birth only'
+      'a sudden infection of the eye',
+      'a gradual loss of the eye\'s power of accommodation, as the ciliary muscles weaken and the lens loses flexibility with age'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Presbyopia results from the natural, age-related weakening of the ciliary muscles and reduced flexibility of the crystalline lens, diminishing the eye\'s ability to accommodate for both near and far vision.',
     difficulty: 'medium'
   },
@@ -557,12 +557,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'Astigmatism is a defect of vision caused by',
     options: [
+      'excessive length of the eyeball only',
       'the cornea (or lens) not being perfectly spherical, resulting in different focal lengths in different planes',
       'complete opacity of the lens',
-      'excessive length of the eyeball only',
       'a defect that affects colour perception exclusively'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Astigmatism arises when the cornea or lens is not perfectly spherical, causing light in different planes to focus at different points, resulting in blurred or distorted vision.',
     difficulty: 'medium'
   },
@@ -572,11 +572,11 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     question: 'Astigmatism is typically corrected using',
     options: [
       'a simple spherical convex lens',
-      'a cylindrical lens, designed to compensate for the unequal curvature in different planes',
       'no lens at all; only surgery can correct astigmatism',
-      'a mirror rather than a lens'
+      'a mirror rather than a lens',
+      'a cylindrical lens, designed to compensate for the unequal curvature in different planes'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Cylindrical lenses are used to correct astigmatism, since they can selectively adjust the focusing power in the specific plane where the irregular curvature exists.',
     difficulty: 'medium'
   },
@@ -585,10 +585,10 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'A simple microscope (magnifying glass) achieves magnification by',
     options: [
-      'using two separate lenses working together',
-      'placing the object within the focal length of a single converging lens, so that a virtual, magnified, erect image is formed',
       'using a concave mirror only',
-      'using total internal reflection'
+      'placing the object within the focal length of a single converging lens, so that a virtual, magnified, erect image is formed',
+      'using total internal reflection',
+      'using two separate lenses working together'
     ],
     correctIndex: 1,
     explanation: 'A simple microscope uses a single converging lens, with the object placed within its focal length, producing a virtual, erect, and magnified image.',
@@ -598,8 +598,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-47',
     type: 'mcq',
     question: 'The angular magnification of a simple microscope, when the final image is formed at infinity, is given by',
-    options: ['m = D/f, where D is the least distance of distinct vision and f is the focal length of the lens', 'm = f/D', 'm = D × f', 'm = f - D'],
-    correctIndex: 0,
+    options: ['m = f/D', 'm = f - D', 'm = D × f', 'm = D/f, where D is the least distance of distinct vision and f is the focal length of the lens'],
+    correctIndex: 3,
     explanation: 'When the image is viewed at infinity (relaxed eye), the angular magnification of a simple microscope is given by m = D/f.',
     difficulty: 'medium'
   },
@@ -617,12 +617,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'A compound microscope consists of two converging lenses, generally referred to as the',
     options: [
-      'objective (short focal length, closer to the object) and eyepiece (larger focal length, closer to the eye)',
-      'primary lens and secondary lens, both of equal focal length',
       'concave lens and convex lens, in that specific order',
-      'field lens and correcting lens'
+      'field lens and correcting lens',
+      'primary lens and secondary lens, both of equal focal length',
+      'objective (short focal length, closer to the object) and eyepiece (larger focal length, closer to the eye)'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'A compound microscope uses an objective lens (short focal length, positioned near the object) and an eyepiece (larger focal length, positioned near the observer\'s eye) working together to achieve high magnification.',
     difficulty: 'medium'
   },
@@ -633,8 +633,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     options: [
       'the sum of the magnifications produced by the objective and the eyepiece',
       'the product of the magnification produced by the objective and the angular magnification produced by the eyepiece',
-      'simply the magnification of the objective lens alone, ignoring the eyepiece',
-      'simply the magnification of the eyepiece alone, ignoring the objective'
+      'simply the magnification of the eyepiece alone, ignoring the objective',
+      'simply the magnification of the objective lens alone, ignoring the eyepiece'
     ],
     correctIndex: 1,
     explanation: 'The total magnifying power of a compound microscope is the product of the linear magnification produced by the objective lens and the angular magnification produced by the eyepiece.',
@@ -645,12 +645,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'In an astronomical (refracting) telescope adjusted for normal use (final image at infinity), the magnifying power is given by',
     options: [
-      'm = fo/fe, the ratio of the focal length of the objective to that of the eyepiece',
       'm = fe/fo',
+      'm = fo × fe',
       'm = fo + fe',
-      'm = fo × fe'
+      'm = fo/fe, the ratio of the focal length of the objective to that of the eyepiece'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'For an astronomical telescope in normal adjustment, the angular magnification is given by the ratio of the objective\'s focal length to the eyepiece\'s focal length, m = fo/fe.',
     difficulty: 'medium'
   },
@@ -661,8 +661,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     options: [
       'a small focal length for the objective and a large focal length for the eyepiece',
       'a large focal length for the objective and a small focal length for the eyepiece',
-      'equal focal lengths for both the objective and the eyepiece',
-      'a telescope with no eyepiece at all'
+      'a telescope with no eyepiece at all',
+      'equal focal lengths for both the objective and the eyepiece'
     ],
     correctIndex: 1,
     explanation: 'Since magnifying power is fo/fe, a large objective focal length combined with a small eyepiece focal length gives a higher magnifying power.',
@@ -672,8 +672,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-53',
     type: 'mcq',
     question: 'A reflecting telescope uses which of the following as its objective, instead of a large lens?',
-    options: ['a plane mirror', 'a concave (typically parabolic) mirror', 'a diverging lens', 'a prism'],
-    correctIndex: 1,
+    options: ['a plane mirror', 'a prism', 'a diverging lens', 'a concave (typically parabolic) mirror'],
+    correctIndex: 3,
     explanation: 'A reflecting telescope uses a large concave (often parabolic) mirror as its objective, in place of the large converging lens used in a refracting telescope.',
     difficulty: 'medium'
   },
@@ -682,10 +682,10 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'A major advantage of reflecting telescopes over refracting telescopes is that reflecting telescopes',
     options: [
-      'suffer from more chromatic aberration',
+      'require no mirrors or lenses at all',
       'are free from chromatic aberration, since mirrors do not disperse different colours of light the way a lens does',
-      'cannot collect any significant amount of light',
-      'require no mirrors or lenses at all'
+      'suffer from more chromatic aberration',
+      'cannot collect any significant amount of light'
     ],
     correctIndex: 1,
     explanation: 'Since a mirror reflects all colours of light identically (unlike a lens, which refracts different wavelengths by different amounts), reflecting telescopes do not suffer from chromatic aberration.',
@@ -711,11 +711,11 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     question: 'The apparent depth of an object submerged in a denser medium (such as water), when viewed from a rarer medium (such as air) directly above, is generally',
     options: [
       'greater than the real depth',
+      'completely unrelated to the real depth',
       'less than the real depth, due to the bending of light rays at the water-air interface',
-      'exactly equal to the real depth in all cases',
-      'completely unrelated to the real depth'
+      'exactly equal to the real depth in all cases'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Due to refraction of light at the interface, an object submerged in a denser medium appears to be at a shallower (apparent) depth than its actual (real) depth, when viewed from a rarer medium above.',
     difficulty: 'medium'
   },
@@ -738,12 +738,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'The refraction of light at a single spherical surface, relating the refractive indices (n1, n2) of the two media, the object distance (u), image distance (v), and radius of curvature (R), is given by',
     options: [
-      'n2/v - n1/u = (n2 - n1)/R',
       'n1/v - n2/u = (n1 - n2)/R',
       'n2/v + n1/u = (n2 + n1)/R',
-      'v - u = R'
+      'v - u = R',
+      'n2/v - n1/u = (n2 - n1)/R'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The formula for refraction at a single spherical surface is n2/v - n1/u = (n2 - n1)/R, connecting the refractive indices of the two media with the object and image distances and the radius of curvature.',
     difficulty: 'hard'
   },
@@ -752,12 +752,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'The refracting telescope\'s objective lens is generally designed with a large aperture mainly to',
     options: [
+      'eliminate the need for an eyepiece',
       'reduce the amount of light collected, protecting the observer\'s eyes',
       'collect more light and improve the resolving power (ability to distinguish closely spaced objects)',
-      'reduce the magnifying power of the telescope',
-      'eliminate the need for an eyepiece'
+      'reduce the magnifying power of the telescope'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A larger aperture objective collects more light from a distant object, increasing brightness, and also improves the telescope\'s resolving power, allowing finer detail to be distinguished.',
     difficulty: 'medium'
   },
@@ -767,11 +767,11 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     question: 'The eyepiece of a telescope or microscope, generally a converging lens of relatively short focal length, functions to',
     options: [
       'collect light directly from the distant object or specimen, forming the very first image',
-      'further magnify the (real or virtual) image already formed by the objective, producing the final image that the eye views',
       'eliminate the need for an objective lens entirely',
-      'convert visible light into a different type of electromagnetic radiation'
+      'convert visible light into a different type of electromagnetic radiation',
+      'further magnify the (real or virtual) image already formed by the objective, producing the final image that the eye views'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The eyepiece works on the image already formed by the objective, acting essentially as a simple magnifying glass to further enlarge this intermediate image for final viewing.',
     difficulty: 'medium'
   },
@@ -779,8 +779,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-61',
     type: 'mcq',
     question: 'In normal adjustment of a refracting telescope, where the final image is formed at infinity, the separation between the objective and the eyepiece is approximately',
-    options: ['fo - fe', 'fo + fe, the sum of the two focal lengths', 'fo × fe', 'fo / fe'],
-    correctIndex: 1,
+    options: ['fo - fe', 'fo × fe', 'fo + fe, the sum of the two focal lengths', 'fo / fe'],
+    correctIndex: 2,
     explanation: 'In normal adjustment, the eyepiece is positioned such that the image formed by the objective lies exactly at its focal point, giving a total tube length equal to the sum of the two focal lengths, fo + fe.',
     difficulty: 'medium'
   },
@@ -789,12 +789,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'For a real, extended object placed in front of a plane mirror, the image formed is always',
     options: [
+      'real, erect, and diminished',
       'virtual, erect, and of the same size as the object',
       'real, inverted, and magnified',
-      'virtual, inverted, and diminished',
-      'real, erect, and diminished'
+      'virtual, inverted, and diminished'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'A plane mirror always produces a virtual, erect image that is the same size as the object, located as far behind the mirror as the object is in front of it.',
     difficulty: 'easy'
   },
@@ -803,12 +803,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'Consider light passing from air into glass and then back into air through a parallel-sided glass slab. Compared to the original path (if the slab were absent), the emergent ray is',
     options: [
-      'displaced laterally but remains parallel to the original incident direction',
       'bent at a large angle away from the original direction, no longer parallel to it',
+      'displaced laterally but remains parallel to the original incident direction',
       'completely absorbed within the slab',
       'reflected entirely back into the air on the same side'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Refraction at the two parallel surfaces of a glass slab causes a lateral shift in the emergent ray\'s position, but the ray emerges parallel to its original direction of incidence.',
     difficulty: 'medium'
   },
@@ -818,11 +818,11 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     question: 'When white light passes through a rectangular glass slab (with parallel faces) rather than a prism, noticeable dispersion into separate colours is generally',
     options: [
       'clearly observed, exactly as with a prism',
-      'not obviously observed, since the dispersion at the first surface is largely reversed (recombined) upon exiting through the second, parallel surface',
       'completely impossible under any circumstances',
-      'stronger than that produced by a prism'
+      'stronger than that produced by a prism',
+      'not obviously observed, since the dispersion at the first surface is largely reversed (recombined) upon exiting through the second, parallel surface'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Because the two faces of a rectangular slab are parallel, the initial dispersion caused at the first surface is largely undone at the second surface, so the emergent light recombines and dispersion is not obviously visible, unlike with a prism (whose two refracting surfaces are not parallel).',
     difficulty: 'hard'
   },
@@ -831,12 +831,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'The formation of a real image by a concave mirror generally occurs when the object is placed',
     options: [
-      'anywhere between the pole and the focal point only',
-      'beyond the focal point of the mirror',
+      'a real image can never be formed by a concave mirror',
       'at the pole of the mirror only',
-      'a real image can never be formed by a concave mirror'
+      'beyond the focal point of the mirror',
+      'anywhere between the pole and the focal point only'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A concave mirror forms a real image (which can be projected onto a screen) when the object is placed beyond the focal point; placing the object between the pole and focus instead gives a virtual image.',
     difficulty: 'medium'
   },
@@ -844,7 +844,7 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-66',
     type: 'mcq',
     question: 'The magnification produced by a spherical mirror, in terms of image height (h\') and object height (h), is given by',
-    options: ['m = h/h\'', 'm = h\'/h = -v/u', 'm = h + h\'', 'm = h × h\''],
+    options: ['m = h × h\'', 'm = h\'/h = -v/u', 'm = h + h\'', 'm = h/h\''],
     correctIndex: 1,
     explanation: 'Magnification for a spherical mirror is given by m = h\'/h = -v/u, connecting image and object heights to the image and object distances via the sign convention.',
     difficulty: 'medium'
@@ -853,8 +853,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     id: 'rayoptics-67',
     type: 'mcq',
     question: 'A ray of light travelling parallel to the principal axis of a converging (convex) lens, after refraction, passes through the',
-    options: ['optical centre without bending', 'principal focus on the other side of the lens', 'edge of the lens only', 'exact position of the object'],
-    correctIndex: 1,
+    options: ['exact position of the object', 'optical centre without bending', 'principal focus on the other side of the lens', 'edge of the lens only'],
+    correctIndex: 2,
     explanation: 'A ray travelling parallel to the principal axis of a converging lens is refracted such that it passes through the principal focus on the far side of the lens.',
     difficulty: 'easy'
   },
@@ -863,12 +863,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'A ray of light passing through the optical centre of a thin lens',
     options: [
-      'is significantly bent, changing direction sharply',
-      'passes through essentially undeviated, continuing in a straight line',
+      'never actually reaches the optical centre',
       'is always totally internally reflected',
-      'never actually reaches the optical centre'
+      'is significantly bent, changing direction sharply',
+      'passes through essentially undeviated, continuing in a straight line'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'For a thin lens, a ray passing through the optical centre travels through the lens essentially without any change in direction.',
     difficulty: 'easy'
   },
@@ -879,8 +879,8 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     options: [
       'produce the brightest possible image, regardless of detail',
       'distinguish between two closely spaced objects (or points) as separate, rather than as a single blurred entity',
-      'change the colour of the light passing through it',
-      'increase the focal length of the objective lens indefinitely'
+      'increase the focal length of the objective lens indefinitely',
+      'change the colour of the light passing through it'
     ],
     correctIndex: 1,
     explanation: 'Resolving power describes an optical instrument\'s ability to produce distinct images of two closely spaced objects, rather than merging them into a single indistinguishable blur.',
@@ -891,12 +891,12 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     type: 'mcq',
     question: 'Overall, the chapter on ray optics and optical instruments, as emphasised in NCERT, integrates the fundamental laws of reflection and refraction with',
     options: [
-      'their applications in mirrors, lenses, prisms, natural phenomena (rainbow, scattering), and the design and function of optical instruments such as the eye, microscope, and telescope',
       'only the mathematical derivation of formulas, with no practical application discussed',
+      'topics entirely unrelated to lenses, mirrors, or optical devices',
       'only the historical development of optics, with no formulas at all',
-      'topics entirely unrelated to lenses, mirrors, or optical devices'
+      'their applications in mirrors, lenses, prisms, natural phenomena (rainbow, scattering), and the design and function of optical instruments such as the eye, microscope, and telescope'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The chapter connects the basic laws of reflection and refraction to a wide range of practical applications, from mirrors and lenses to natural optical phenomena and the design of optical instruments like the eye, microscopes, and telescopes.',
     difficulty: 'medium'
   },
@@ -1927,4 +1927,3 @@ export const RAY_OPTICS_OPTICAL_INSTRUMENTS = [
     difficulty: 'medium'
   }
 ];
-

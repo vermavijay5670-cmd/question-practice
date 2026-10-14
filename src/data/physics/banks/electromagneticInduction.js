@@ -6,11 +6,11 @@ export const ELECTROMAGNETIC_INDUCTION = [
     question: 'Electromagnetic induction refers to the phenomenon of',
     options: [
       'generation of a magnetic field by a stationary charge',
-      'generation of an EMF (and hence current, if the circuit is closed) in a conductor due to a changing magnetic flux linked with it',
+      'generation of magnetic field lines that never change with time',
       'generation of heat by a resistor carrying current',
-      'generation of magnetic field lines that never change with time'
+      'generation of an EMF (and hence current, if the circuit is closed) in a conductor due to a changing magnetic flux linked with it'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Electromagnetic induction is the phenomenon where a changing magnetic flux through a circuit induces an EMF in it, discovered experimentally by Faraday and Henry.',
     difficulty: 'easy'
   },
@@ -19,12 +19,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'Magnetic flux through a surface is defined as',
     options: [
-      'the total charge passing through the surface',
-      'the surface integral of the magnetic field over that surface (Φ = ∫B·dA)',
+      'the resistance of the surface',
       'the current flowing through the surface',
-      'the resistance of the surface'
+      'the total charge passing through the surface',
+      'the surface integral of the magnetic field over that surface (Φ = ∫B·dA)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Magnetic flux ΦB through a surface is defined as the surface integral of the magnetic field, ΦB = ∫B·dA, analogous to electric flux in electrostatics.',
     difficulty: 'easy'
   },
@@ -32,8 +32,8 @@ export const ELECTROMAGNETIC_INDUCTION = [
     id: 'electromagnetic-induction-3',
     type: 'mcq',
     question: 'The SI unit of magnetic flux is',
-    options: ['tesla', 'weber', 'henry', 'farad'],
-    correctIndex: 1,
+    options: ['tesla', 'farad', 'henry', 'weber'],
+    correctIndex: 3,
     explanation: 'The SI unit of magnetic flux is the weber (Wb), where 1 Wb = 1 tesla × 1 metre².',
     difficulty: 'easy'
   },
@@ -43,11 +43,11 @@ export const ELECTROMAGNETIC_INDUCTION = [
     question: 'Faraday\'s law of electromagnetic induction states that the induced EMF in a circuit is',
     options: [
       'directly proportional to the magnetic flux linked with the circuit',
-      'directly proportional to the negative rate of change of magnetic flux linked with the circuit',
+      'inversely proportional to the rate of change of flux',
       'independent of the rate of change of flux',
-      'inversely proportional to the rate of change of flux'
+      'directly proportional to the negative rate of change of magnetic flux linked with the circuit'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Faraday\'s law states ε = -dΦ/dt, i.e., the induced EMF equals the negative rate of change of magnetic flux, meaning it depends specifically on how fast the flux changes, not on the flux value itself.',
     difficulty: 'easy'
   },
@@ -55,8 +55,8 @@ export const ELECTROMAGNETIC_INDUCTION = [
     id: 'electromagnetic-induction-5',
     type: 'mcq',
     question: 'According to Faraday\'s law, if the magnetic flux through a circuit remains constant (unchanging) with time, the induced EMF is',
-    options: ['maximum', 'zero', 'infinite', 'dependent only on the flux magnitude'],
-    correctIndex: 1,
+    options: ['dependent only on the flux magnitude', 'maximum', 'infinite', 'zero'],
+    correctIndex: 3,
     explanation: 'Since ε = -dΦ/dt, a constant (unchanging) flux gives dΦ/dt = 0, resulting in zero induced EMF, regardless of how large the flux itself might be.',
     difficulty: 'easy'
   },
@@ -78,8 +78,8 @@ export const ELECTROMAGNETIC_INDUCTION = [
     id: 'electromagnetic-induction-7',
     type: 'mcq',
     question: 'For a coil of N turns, each with the same magnetic flux Φ linked through it, Faraday\'s law gives the induced EMF as',
-    options: ['ε = -dΦ/dt', 'ε = -N dΦ/dt', 'ε = -Φ/N', 'ε = -NΦ, independent of time'],
-    correctIndex: 1,
+    options: ['ε = -dΦ/dt', 'ε = -Φ/N', 'ε = -NΦ, independent of time', 'ε = -N dΦ/dt'],
+    correctIndex: 3,
     explanation: 'For a coil with N turns, each carrying the same flux linkage, the total induced EMF is ε = -N dΦ/dt, since the EMFs of individual turns add up in series.',
     difficulty: 'medium'
   },
@@ -88,10 +88,10 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'Lenz\'s law states that the direction of an induced current is such that',
     options: [
-      'it always increases the change in flux that produced it',
-      'it opposes the change in magnetic flux that produced it',
       'it is unrelated to the change in flux',
-      'it always flows in the same direction, regardless of the nature of the flux change'
+      'it opposes the change in magnetic flux that produced it',
+      'it always flows in the same direction, regardless of the nature of the flux change',
+      'it always increases the change in flux that produced it'
     ],
     correctIndex: 1,
     explanation: 'Lenz\'s law states that the induced current flows in a direction such that it opposes the very change in magnetic flux that caused it, which is the physical basis for the negative sign in Faraday\'s law.',
@@ -101,8 +101,8 @@ export const ELECTROMAGNETIC_INDUCTION = [
     id: 'electromagnetic-induction-9',
     type: 'mcq',
     question: 'Lenz\'s law is essentially a consequence of which fundamental conservation principle?',
-    options: ['Conservation of charge', 'Conservation of momentum', 'Conservation of energy', 'Conservation of angular momentum'],
-    correctIndex: 2,
+    options: ['Conservation of angular momentum', 'Conservation of charge', 'Conservation of momentum', 'Conservation of energy'],
+    correctIndex: 3,
     explanation: 'Lenz\'s law is a manifestation of the conservation of energy: if the induced current aided the change in flux instead of opposing it, it would create energy from nothing, violating energy conservation.',
     difficulty: 'medium'
   },
@@ -111,12 +111,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'If the north pole of a bar magnet is moved toward a stationary conducting loop, the induced current in the loop flows in a direction such that',
     options: [
-      'the near face of the loop becomes a north pole, repelling the approaching magnet',
       'the near face of the loop becomes a south pole, attracting the approaching magnet',
-      'no current is induced at all',
-      'the current direction is unpredictable'
+      'the near face of the loop becomes a north pole, repelling the approaching magnet',
+      'the current direction is unpredictable',
+      'no current is induced at all'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'By Lenz\'s law, the induced current opposes the increasing flux (due to the approaching north pole) by creating its own north pole on the near face of the loop, repelling the incoming magnet.',
     difficulty: 'medium'
   },
@@ -125,12 +125,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'If the north pole of a bar magnet is moved away from a stationary conducting loop, the induced current in the loop flows in a direction such that',
     options: [
-      'the near face of the loop becomes a south pole, attracting the receding magnet (opposing its departure)',
       'the near face of the loop becomes a north pole, repelling the magnet further away',
+      'the loop\'s temperature decreases sharply',
       'no current is induced',
-      'the loop\'s temperature decreases sharply'
+      'the near face of the loop becomes a south pole, attracting the receding magnet (opposing its departure)'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'As the magnet moves away, flux through the loop decreases; by Lenz\'s law, the induced current opposes this decrease by creating a south pole on the near face, attracting the magnet (opposing its departure).',
     difficulty: 'medium'
   },
@@ -139,12 +139,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'Lenz\'s law implies that work must be done against the induced effects (like an opposing force) whenever',
     options: [
+      'two loops of identical current are placed side by side',
       'a magnet is moved relative to a conducting loop to change the flux, or an electromagnetic actuation changes flux through a circuit',
       'a circuit is simply switched off with no change in flux',
-      'a stationary charge sits in a magnetic field',
-      'two loops of identical current are placed side by side'
+      'a stationary charge sits in a magnetic field'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Whenever relative motion (or another mechanism) is used to actively change the flux through a circuit and induce a current, the induced effects oppose this change, requiring an external agent to do work against this opposition — this converts mechanical work into electrical energy.',
     difficulty: 'medium'
   },
@@ -154,11 +154,11 @@ export const ELECTROMAGNETIC_INDUCTION = [
     question: 'Motional EMF refers to the EMF induced in a conductor',
     options: [
       'due to a purely time-varying magnetic field with the conductor stationary',
-      'due to the physical motion of the conductor (or part of it) through a magnetic field, resulting in a changing flux',
+      'that occurs even in the complete absence of any magnetic field',
       'due to a chemical reaction inside the conductor',
-      'that occurs even in the complete absence of any magnetic field'
+      'due to the physical motion of the conductor (or part of it) through a magnetic field, resulting in a changing flux'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Motional EMF specifically refers to the EMF generated because a conductor is physically moving relative to a magnetic field (or through a region of varying field), leading to a change in enclosed flux and hence an induced EMF.',
     difficulty: 'medium'
   },
@@ -178,8 +178,8 @@ export const ELECTROMAGNETIC_INDUCTION = [
     options: [
       'the electric field alone acting on stationary charges',
       'the magnetic (Lorentz) force qv×B acting on free charges within the moving conductor, pushing them along the length of the conductor',
-      'gravitational force acting on the charges',
-      'a chemical potential difference'
+      'a chemical potential difference',
+      'gravitational force acting on the charges'
     ],
     correctIndex: 1,
     explanation: 'As the conductor moves through the field, free charges within it experience the magnetic component of the Lorentz force (qv × B), which drives them to accumulate at one end, creating the motional EMF.',
@@ -204,12 +204,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'Eddy currents are generally considered undesirable in transformer and motor cores because they',
     options: [
-      'increase the efficiency of the device',
-      'cause energy loss as heat (I²R losses within the core material), reducing overall efficiency',
+      'increase the magnetic field strength significantly',
       'have no effect on the device\'s performance',
-      'increase the magnetic field strength significantly'
+      'increase the efficiency of the device',
+      'cause energy loss as heat (I²R losses within the core material), reducing overall efficiency'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Eddy currents dissipate energy as heat within the conducting core (due to the core\'s own resistance), representing an unwanted energy loss that reduces the efficiency of devices like transformers and motors.',
     difficulty: 'medium'
   },
@@ -220,8 +220,8 @@ export const ELECTROMAGNETIC_INDUCTION = [
     options: [
       'using a solid block of iron for the core',
       'using a laminated core (thin, insulated sheets of iron stacked together) instead of a solid block',
-      'removing the core entirely',
-      'increasing the core\'s electrical conductivity'
+      'increasing the core\'s electrical conductivity',
+      'removing the core entirely'
     ],
     correctIndex: 1,
     explanation: 'Laminating the core into thin sheets, each insulated from the next, breaks up the paths available for eddy currents to circulate, significantly reducing eddy current losses compared to a solid core.',
@@ -232,12 +232,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'Eddy currents are put to beneficial use in',
     options: [
-      'electromagnetic braking systems, induction furnaces, and induction cooktops',
-      'devices where minimizing all currents is essential',
       'systems designed to avoid any magnetic effects',
-      'purely electrostatic applications'
+      'purely electrostatic applications',
+      'devices where minimizing all currents is essential',
+      'electromagnetic braking systems, induction furnaces, and induction cooktops'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Eddy currents are deliberately exploited in applications like electromagnetic braking (using the retarding force from induced eddy currents), induction furnaces (using eddy-current heating to melt metals), and induction cooktops.',
     difficulty: 'medium'
   },
@@ -246,9 +246,9 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'In electromagnetic braking (as used in some trains), a metal wheel or disc moving through a magnetic field experiences a retarding force because',
     options: [
-      'the magnetic field directly stops the wheel via friction',
-      'eddy currents induced in the moving conductor create their own magnetic field which, by Lenz\'s law, opposes the wheel\'s motion, producing a retarding force',
       'the wheel loses mass as it moves',
+      'eddy currents induced in the moving conductor create their own magnetic field which, by Lenz\'s law, opposes the wheel\'s motion, producing a retarding force',
+      'the magnetic field directly stops the wheel via friction',
       'gravity increases suddenly'
     ],
     correctIndex: 1,
@@ -260,12 +260,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'Self-induction refers to the phenomenon where',
     options: [
-      'an EMF is induced in a coil due to a changing current in a completely separate, nearby coil',
-      'an EMF is induced in a coil due to a change in the current flowing through that same coil itself',
       'a coil produces heat without any current flowing',
-      'a magnet induces current in a non-conducting material'
+      'an EMF is induced in a coil due to a changing current in a completely separate, nearby coil',
+      'a magnet induces current in a non-conducting material',
+      'an EMF is induced in a coil due to a change in the current flowing through that same coil itself'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Self-induction is the phenomenon in which a changing current in a coil induces an EMF in the same coil, due to the changing flux the coil\'s own current produces through itself.',
     difficulty: 'medium'
   },
@@ -273,7 +273,7 @@ export const ELECTROMAGNETIC_INDUCTION = [
     id: 'electromagnetic-induction-22',
     type: 'mcq',
     question: 'The self-inductance (L) of a coil is defined through the relation',
-    options: ['Φ = L/I', 'Φ = LI, where Φ is the flux linked with the coil due to its own current I', 'L = ΦI', 'L is independent of the current or flux'],
+    options: ['L = ΦI', 'Φ = LI, where Φ is the flux linked with the coil due to its own current I', 'L is independent of the current or flux', 'Φ = L/I'],
     correctIndex: 1,
     explanation: 'Self-inductance L is defined by Φ = LI, relating the magnetic flux linked with a coil (due to its own current) to the current itself; L is a property of the coil\'s geometry (and the medium), not of I or Φ individually.',
     difficulty: 'medium'
@@ -282,8 +282,8 @@ export const ELECTROMAGNETIC_INDUCTION = [
     id: 'electromagnetic-induction-23',
     type: 'mcq',
     question: 'The SI unit of self-inductance (and mutual inductance) is',
-    options: ['weber', 'tesla', 'henry', 'farad'],
-    correctIndex: 2,
+    options: ['tesla', 'farad', 'weber', 'henry'],
+    correctIndex: 3,
     explanation: 'The SI unit of inductance (both self and mutual) is the henry (H), where 1 H = 1 Wb/A = 1 V·s/A.',
     difficulty: 'easy'
   },
@@ -291,7 +291,7 @@ export const ELECTROMAGNETIC_INDUCTION = [
     id: 'electromagnetic-induction-24',
     type: 'mcq',
     question: 'The self-induced EMF in a coil due to a changing current I is given by',
-    options: ['ε = L(dI/dt)', 'ε = -L(dI/dt)', 'ε = L/I', 'ε = -LI, independent of time'],
+    options: ['ε = L/I', 'ε = -L(dI/dt)', 'ε = -LI, independent of time', 'ε = L(dI/dt)'],
     correctIndex: 1,
     explanation: 'The self-induced EMF is ε = -L(dI/dt), with the negative sign (consistent with Lenz\'s law) indicating that this EMF opposes the change in current that produced it.',
     difficulty: 'medium'
@@ -301,12 +301,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'Self-inductance is sometimes called the "electrical inertia" of a circuit because',
     options: [
-      'it has no relation to mass or inertia at all',
-      'like mechanical inertia opposes changes in velocity, self-inductance opposes any change in the current flowing through the circuit',
       'it increases the current instantaneously',
-      'it makes current flow without any driving EMF'
+      'it has no relation to mass or inertia at all',
+      'it makes current flow without any driving EMF',
+      'like mechanical inertia opposes changes in velocity, self-inductance opposes any change in the current flowing through the circuit'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Just as mechanical inertia resists changes in an object\'s velocity, self-inductance resists (opposes) any change in the current through a circuit, which is why it is analogously termed "electrical inertia."',
     difficulty: 'medium'
   },
@@ -314,8 +314,8 @@ export const ELECTROMAGNETIC_INDUCTION = [
     id: 'electromagnetic-induction-26',
     type: 'mcq',
     question: 'The self-inductance of a long solenoid with N turns, length l, and cross-sectional area A is given by',
-    options: ['L = µ0N²A/l', 'L = µ0NA/l²', 'L = µ0N/A', 'L = µ0Nl/A'],
-    correctIndex: 0,
+    options: ['L = µ0Nl/A', 'L = µ0N²A/l', 'L = µ0NA/l²', 'L = µ0N/A'],
+    correctIndex: 1,
     explanation: 'For an ideal long solenoid, the self-inductance is L = µ0N²A/l, a standard NCERT-derived result showing L depends on the square of the number of turns.',
     difficulty: 'medium'
   },
@@ -324,9 +324,9 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'Increasing the number of turns in a solenoid (keeping other dimensions fixed) generally',
     options: [
-      'decreases its self-inductance',
-      'increases its self-inductance, since L ∝ N²',
       'has no effect on self-inductance',
+      'increases its self-inductance, since L ∝ N²',
+      'decreases its self-inductance',
       'makes self-inductance negative'
     ],
     correctIndex: 1,
@@ -338,12 +338,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'Mutual induction refers to the phenomenon where',
     options: [
-      'a changing current in one coil induces an EMF in a nearby, separate (but magnetically linked) coil',
-      'a coil induces an EMF purely within itself, unrelated to any other coil',
       'two coils spontaneously produce current with no external cause',
-      'an EMF is generated due to a chemical reaction between two coils'
+      'an EMF is generated due to a chemical reaction between two coils',
+      'a coil induces an EMF purely within itself, unrelated to any other coil',
+      'a changing current in one coil induces an EMF in a nearby, separate (but magnetically linked) coil'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Mutual induction is the phenomenon in which a changing current in one coil (primary) induces an EMF in a nearby, magnetically coupled coil (secondary), due to the changing flux linkage between them.',
     difficulty: 'medium'
   },
@@ -352,12 +352,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'The mutual inductance (M) between two coils is defined through the relation',
     options: [
+      'M = Φ2 I1',
       'Φ2 = MI1, where Φ2 is the flux linked with coil 2 due to current I1 in coil 1',
       'Φ2 = M/I1',
-      'M = Φ2 I1',
       'M is unrelated to flux or current'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Mutual inductance M is defined by Φ2 = MI1, relating the flux linked with the second coil to the current in the first coil, a property determined by the geometry and relative arrangement of both coils.',
     difficulty: 'medium'
   },
@@ -365,8 +365,8 @@ export const ELECTROMAGNETIC_INDUCTION = [
     id: 'electromagnetic-induction-30',
     type: 'mcq',
     question: 'The mutually induced EMF in a secondary coil due to a changing current in the primary coil is given by',
-    options: ['ε2 = M(dI1/dt)', 'ε2 = -M(dI1/dt)', 'ε2 = M/I1', 'ε2 = -MI1, independent of time'],
-    correctIndex: 1,
+    options: ['ε2 = M/I1', 'ε2 = -MI1, independent of time', 'ε2 = M(dI1/dt)', 'ε2 = -M(dI1/dt)'],
+    correctIndex: 3,
     explanation: 'The mutually induced EMF is ε2 = -M(dI1/dt), with the negative sign reflecting Lenz\'s law, showing that the induced EMF in the secondary opposes the change in the primary\'s current.',
     difficulty: 'medium'
   },
@@ -375,12 +375,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'The mutual inductance between two coils is the same regardless of which coil is considered the "primary" (current-carrying) and which is the "secondary" (in which EMF is induced). This is known as',
     options: [
-      'Lenz\'s law',
-      'the reciprocity theorem for mutual inductance (M12 = M21)',
+      'Ohm\'s law',
       'Faraday\'s law',
-      'Ohm\'s law'
+      'Lenz\'s law',
+      'the reciprocity theorem for mutual inductance (M12 = M21)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A fundamental result in mutual induction is that M12 = M21 = M, meaning the mutual inductance is the same value regardless of which coil is treated as the source of the changing current — a consequence of the reciprocity theorem.',
     difficulty: 'hard'
   },
@@ -403,9 +403,9 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'A transformer works on the principle of',
     options: [
-      'self-induction only',
-      'mutual induction between a primary coil and a secondary coil, both wound on a common core',
       'motional EMF only',
+      'mutual induction between a primary coil and a secondary coil, both wound on a common core',
+      'self-induction only',
       'electrostatic induction'
     ],
     correctIndex: 1,
@@ -430,8 +430,8 @@ export const ELECTROMAGNETIC_INDUCTION = [
     id: 'electromagnetic-induction-35',
     type: 'mcq',
     question: 'In an AC generator with a coil of N turns and area A rotating with angular velocity ω in a uniform magnetic field B, the instantaneous induced EMF is given by',
-    options: ['ε = NBAω cos(ωt)', 'ε = NBA sin(ωt), a constant value regardless of time', 'ε(t) = NBAω sin(ωt)', 'ε = NBA, independent of rotation'],
-    correctIndex: 2,
+    options: ['ε = NBA, independent of rotation', 'ε = NBA sin(ωt), a constant value regardless of time', 'ε = NBAω cos(ωt)', 'ε(t) = NBAω sin(ωt)'],
+    correctIndex: 3,
     explanation: 'As the coil rotates with angular velocity ω, flux varies as Φ = BA cos(ωt), and the induced EMF, ε = -dΦ/dt, works out to ε(t) = NBAω sin(ωt), a sinusoidally varying (alternating) EMF.',
     difficulty: 'medium'
   },
@@ -449,12 +449,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'The EMF generated by an AC generator is maximum when the plane of the rotating coil is',
     options: [
-      'perpendicular to the magnetic field (coil\'s normal parallel to the field)',
-      'parallel to the magnetic field (coil\'s normal perpendicular to the field)',
       'at 45° to the field',
-      'irrelevant, since EMF does not depend on orientation'
+      'perpendicular to the magnetic field (coil\'s normal parallel to the field)',
+      'irrelevant, since EMF does not depend on orientation',
+      'parallel to the magnetic field (coil\'s normal perpendicular to the field)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The EMF is maximum when the rate of change of flux is maximum, which occurs when the coil\'s plane is parallel to the field (flux is momentarily zero but changing fastest at that instant, since Φ = BA cosθ has its steepest slope there).',
     difficulty: 'hard'
   },
@@ -463,9 +463,9 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'The EMF generated by an AC generator is zero (momentarily) when the plane of the rotating coil is',
     options: [
-      'parallel to the magnetic field',
-      'perpendicular to the magnetic field (coil\'s normal parallel to B, flux is maximum at that instant)',
       'at 45° to the field',
+      'perpendicular to the magnetic field (coil\'s normal parallel to B, flux is maximum at that instant)',
+      'parallel to the magnetic field',
       'the EMF is never zero'
     ],
     correctIndex: 1,
@@ -477,12 +477,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'A moving conducting rod on two parallel rails, connected at one end, forming a closed circuit in a magnetic field, is a common setup used to illustrate',
     options: [
-      'Ohm\'s law only',
-      'motional EMF and the associated retarding force on the moving rod, consistent with Lenz\'s law',
+      'electrostatic induction only',
       'the photoelectric effect',
-      'electrostatic induction only'
+      'Ohm\'s law only',
+      'motional EMF and the associated retarding force on the moving rod, consistent with Lenz\'s law'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'This classic setup (rod on rails) is used to demonstrate motional EMF (ε = Bvl), the resulting induced current, and the retarding magnetic force on the rod that opposes its motion, consistent with both Lenz\'s law and energy conservation.',
     difficulty: 'medium'
   },
@@ -491,12 +491,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'In the rod-on-rails setup, when the rod is pulled with a constant external force, the induced current creates a retarding magnetic force on the rod. This retarding force means that',
     options: [
-      'the rod eventually accelerates indefinitely without limit',
-      'as the rod speeds up, the retarding force increases until it can balance the external force, and the rod may approach a terminal (constant) velocity',
       'the rod immediately stops moving',
-      'the retarding force is unrelated to the rod\'s speed'
+      'the retarding force is unrelated to the rod\'s speed',
+      'the rod eventually accelerates indefinitely without limit',
+      'as the rod speeds up, the retarding force increases until it can balance the external force, and the rod may approach a terminal (constant) velocity'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since the induced EMF (and hence current and retarding force) increases with the rod\'s velocity, the retarding force grows until it balances the applied external force, at which point the rod moves at a constant (terminal) velocity.',
     difficulty: 'medium'
   },
@@ -505,10 +505,10 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'In the rod-on-rails setup, the work done by the external force pulling the rod is converted into',
     options: [
-      'purely potential energy of the rod',
-      'electrical energy (which is then dissipated as heat in the circuit\'s resistance), consistent with energy conservation',
       'nothing; the work simply disappears',
-      'only kinetic energy of the rod, with no other energy transformation'
+      'electrical energy (which is then dissipated as heat in the circuit\'s resistance), consistent with energy conservation',
+      'only kinetic energy of the rod, with no other energy transformation',
+      'purely potential energy of the rod'
     ],
     correctIndex: 1,
     explanation: 'At terminal velocity (rod moving at constant speed), the work done by the external force is entirely converted into electrical energy, which is then dissipated as heat in the resistance of the circuit — consistent with overall energy conservation.',
@@ -519,12 +519,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'Two coils placed near each other, one carrying a steadily increasing current, will induce an EMF in the second coil that, by Lenz\'s law, drives an induced current opposing',
     options: [
+      'the magnetic field of the Earth',
       'the increase in current in the first coil (tending to decrease it)',
       'the resistance of the second coil',
-      'the induced current has no relationship to the first coil\'s current',
-      'the magnetic field of the Earth'
+      'the induced current has no relationship to the first coil\'s current'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'By Lenz\'s law, the induced current in the second coil flows in a direction that opposes the change (increase) in flux caused by the increasing current in the first coil, which corresponds to opposing that increase.',
     difficulty: 'medium'
   },
@@ -533,12 +533,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'When the switch in a circuit containing an inductor and a battery is suddenly closed, the current in the circuit',
     options: [
-      'jumps instantaneously to its maximum steady-state value',
-      'rises gradually from zero to its steady-state value, due to the opposing self-induced EMF that resists the sudden change in current',
+      'oscillates indefinitely without settling',
       'remains zero forever',
-      'oscillates indefinitely without settling'
+      'jumps instantaneously to its maximum steady-state value',
+      'rises gradually from zero to its steady-state value, due to the opposing self-induced EMF that resists the sudden change in current'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Due to self-induction, an inductor opposes any sudden change in current; when the switch is closed, the current rises gradually (rather than jumping instantly) toward its steady-state value, governed by the circuit\'s time constant.',
     difficulty: 'medium'
   },
@@ -547,12 +547,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'When the switch in an inductor-containing circuit is suddenly opened (breaking the circuit), a spark may sometimes be observed at the switch contacts because',
     options: [
+      'this phenomenon is unrelated to the inductor',
       'the inductor tries to maintain the current, inducing a large EMF as the current is forced to change rapidly, which can cause a spark across the gap',
       'the battery suddenly produces extra voltage',
-      'the resistor overheats instantaneously',
-      'this phenomenon is unrelated to the inductor'
+      'the resistor overheats instantaneously'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Since the inductor opposes rapid changes in current, suddenly breaking the circuit (forcing current to drop rapidly to zero) induces a large back-EMF (ε = -L dI/dt, with dI/dt very large over a short interval), which can be large enough to cause arcing/sparking at the switch.',
     difficulty: 'hard'
   },
@@ -560,8 +560,8 @@ export const ELECTROMAGNETIC_INDUCTION = [
     id: 'electromagnetic-induction-45',
     type: 'mcq',
     question: 'The energy stored in an inductor carrying current I, with self-inductance L, is given by',
-    options: ['U = LI', 'U = ½LI²', 'U = L²I', 'U = LI²/2, but with the sign always negative'],
-    correctIndex: 1,
+    options: ['U = LI', 'U = L²I', 'U = LI²/2, but with the sign always negative', 'U = ½LI²'],
+    correctIndex: 3,
     explanation: 'The energy stored in the magnetic field of an inductor is U = ½LI², analogous to the ½CV² formula for the energy stored in a charged capacitor.',
     difficulty: 'medium'
   },
@@ -570,12 +570,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'This energy stored in an inductor is considered to reside',
     options: [
-      'in the wire of the inductor itself, as a material property',
-      'in the magnetic field created by the current flowing through the inductor',
+      'in the resistance of the connecting wires',
       'outside the inductor, unrelated to the field',
-      'in the resistance of the connecting wires'
+      'in the wire of the inductor itself, as a material property',
+      'in the magnetic field created by the current flowing through the inductor'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Analogous to the electric field energy in a capacitor, the energy of a current-carrying inductor is understood to be stored in the magnetic field it generates.',
     difficulty: 'medium'
   },
@@ -584,10 +584,10 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'A metallic plate swinging as a pendulum through the poles of a magnet experiences a noticeably increased damping (slowing down) compared to swinging in the absence of the magnet, mainly due to',
     options: [
-      'increased air resistance caused by the magnet',
+      'gravitational changes near the magnet',
       'eddy currents induced in the plate as it moves through the field, which dissipate energy as heat and create a retarding force',
-      'the plate becoming permanently magnetized',
-      'gravitational changes near the magnet'
+      'increased air resistance caused by the magnet',
+      'the plate becoming permanently magnetized'
     ],
     correctIndex: 1,
     explanation: 'As the metallic plate swings through the magnetic field, changing flux induces eddy currents within it; these currents dissipate energy as heat and create a retarding force (by Lenz\'s law), damping the pendulum\'s oscillation noticeably faster than without the field.',
@@ -598,12 +598,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'If slots are cut into a swinging metallic plate (used as a pendulum in the presence of a magnetic field), the damping effect due to eddy currents',
     options: [
-      'increases significantly',
-      'decreases significantly, since the slots interrupt the paths available for eddy currents to circulate',
       'remains completely unchanged',
-      'becomes infinite'
+      'increases significantly',
+      'becomes infinite',
+      'decreases significantly, since the slots interrupt the paths available for eddy currents to circulate'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Cutting slots into the plate breaks up the large closed-loop paths that eddy currents would otherwise follow, significantly reducing eddy current strength and hence the damping effect, similar in principle to why laminated cores reduce eddy current losses.',
     difficulty: 'medium'
   },
@@ -612,12 +612,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'The direction of induced EMF/current, as required by Lenz\'s law, can also be determined using',
     options: [
+      'the right-hand thumb rule for magnetic field due to current alone',
       'Fleming\'s right-hand rule (for a conductor moving in a field)',
       'only Ohm\'s law',
-      'the right-hand thumb rule for magnetic field due to current alone',
       'no rule is available; it must be determined by trial and error'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Fleming\'s right-hand rule (thumb = motion/velocity, forefinger = field, middle finger = induced current) is a convenient mnemonic specifically for determining the direction of induced current in a conductor moving through a magnetic field.',
     difficulty: 'medium'
   },
@@ -640,12 +640,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'If a bar magnet is dropped vertically through a fixed horizontal conducting loop (falling under gravity, magnet oriented along its axis of fall), the induced EMF in the loop will',
     options: [
-      'remain exactly constant as the magnet falls through',
-      'first increase, reach a peak, reverse direction, and vary again as the magnet approaches, passes through, and moves away from the loop',
+      'depend only on the magnet\'s mass, not on its velocity or position',
       'always be zero, since the magnet is falling under gravity only',
-      'depend only on the magnet\'s mass, not on its velocity or position'
+      'remain exactly constant as the magnet falls through',
+      'first increase, reach a peak, reverse direction, and vary again as the magnet approaches, passes through, and moves away from the loop'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'As the magnet approaches, passes through, and recedes from the loop, the flux (and its rate of change) varies in a complex, non-monotonic way, producing an induced EMF that changes in both magnitude and direction throughout the process — a classic and instructive NCERT scenario.',
     difficulty: 'hard'
   },
@@ -669,11 +669,11 @@ export const ELECTROMAGNETIC_INDUCTION = [
     question: 'For a purely resistive circuit connected to an ideal battery with no inductance present, closing the switch causes the current to',
     options: [
       'rise gradually over a significant time interval before reaching steady state',
-      'reach its steady-state value essentially instantaneously (since there is no inductor to oppose the sudden change)',
       'oscillate indefinitely',
-      'never reach a steady value'
+      'never reach a steady value',
+      'reach its steady-state value essentially instantaneously (since there is no inductor to oppose the sudden change)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Without any inductance in the circuit to oppose sudden changes in current, a purely resistive circuit\'s current jumps essentially instantaneously to its steady-state value I = ε/R upon closing the switch.',
     difficulty: 'medium'
   },
@@ -682,12 +682,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'Two coils are wound on the same iron core, one connected to an AC source (primary) and the other left open (secondary, no external circuit connected). Even though the secondary circuit is open, an EMF is still induced in the secondary coil because',
     options: [
-      'a changing flux due to the primary\'s current still links the secondary coil, inducing an EMF regardless of whether current can flow in the secondary',
-      'induced EMF requires a closed circuit; there can be no EMF in an open secondary coil',
       'the primary and secondary coils are not actually related in this scenario',
-      'the iron core prevents any EMF from being induced'
+      'the iron core prevents any EMF from being induced',
+      'induced EMF requires a closed circuit; there can be no EMF in an open secondary coil',
+      'a changing flux due to the primary\'s current still links the secondary coil, inducing an EMF regardless of whether current can flow in the secondary'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Induced EMF depends on the changing flux linkage, which exists as long as the secondary coil is magnetically coupled to the changing flux, regardless of whether the secondary circuit is closed to allow current to actually flow; an open secondary still shows induced EMF (measurable as a potential difference) even though no current flows.',
     difficulty: 'hard'
   },
@@ -710,12 +710,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'In the phenomenon of self-induction, the induced EMF opposes the change in current. This means that during the growth of current in an inductive circuit (current increasing), the self-induced EMF acts to',
     options: [
+      'immediately reduce the current to zero',
       'further increase the current beyond its natural growth',
       'oppose (delay/slow down) the growth of current',
-      'have no effect on the current at all',
-      'immediately reduce the current to zero'
+      'have no effect on the current at all'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'As current increases, the self-induced (back) EMF opposes this increase, acting against the applied EMF and thus slowing (delaying) the rate at which current can grow — this is the physical meaning of "opposing the change."',
     difficulty: 'medium'
   },
@@ -724,12 +724,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'During the decay of current in an inductive circuit (current decreasing, e.g., when a switch is opened), the self-induced EMF acts to',
     options: [
+      'have no relationship to the direction of current change',
       'oppose the decrease, trying to maintain the current flowing in its original direction',
       'accelerate the decrease of current',
-      'have no relationship to the direction of current change',
       'reverse the polarity of the battery'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Consistent with Lenz\'s law, when current is decreasing, the self-induced EMF opposes this decrease, trying to sustain the current in its original direction, which is why sudden circuit-breaking can cause sparking (as the inductor "fights" the abrupt drop to zero).',
     difficulty: 'medium'
   },
@@ -739,11 +739,11 @@ export const ELECTROMAGNETIC_INDUCTION = [
     question: 'The self-inductance of a coil depends on',
     options: [
       'the current flowing through it at a given instant',
+      'the color of the wire used',
       'the geometry (number of turns, area, length) of the coil and the permeability of the medium/core, but not on the instantaneous current or EMF',
-      'only the resistance of the coil\'s wire',
-      'the color of the wire used'
+      'only the resistance of the coil\'s wire'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Like capacitance and resistance, self-inductance is a property determined by the geometry of the coil (turns, area, length) and the magnetic properties of the surrounding medium/core, independent of the specific current or EMF present at any instant.',
     difficulty: 'medium'
   },
@@ -752,12 +752,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'Placing a ferromagnetic core (instead of air) inside a solenoid generally',
     options: [
-      'decreases its self-inductance',
-      'increases its self-inductance significantly, due to the higher permeability of the ferromagnetic material',
       'has no effect on self-inductance',
-      'makes self-inductance become negative'
+      'makes self-inductance become negative',
+      'decreases its self-inductance',
+      'increases its self-inductance significantly, due to the higher permeability of the ferromagnetic material'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since L is proportional to the permeability of the core material (µ = µ0µr), and ferromagnetic materials have very high relative permeability, inserting a ferromagnetic core significantly increases the self-inductance of a solenoid.',
     difficulty: 'medium'
   },
@@ -766,10 +766,10 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'A generator coil rotates such that the flux through it varies as Φ(t) = Φ0 cos(ωt). The induced EMF, ε(t) = -dΦ/dt, will vary as',
     options: [
-      'ε(t) = Φ0 cos(ωt), in phase with the flux',
-      'ε(t) = Φ0ω sin(ωt), which is 90° out of phase with the flux',
       'ε(t) is constant, independent of time',
-      'ε(t) = -Φ0ω cos(ωt), in phase with the flux but negative'
+      'ε(t) = Φ0ω sin(ωt), which is 90° out of phase with the flux',
+      'ε(t) = -Φ0ω cos(ωt), in phase with the flux but negative',
+      'ε(t) = Φ0 cos(ωt), in phase with the flux'
     ],
     correctIndex: 1,
     explanation: 'Differentiating Φ(t) = Φ0 cos(ωt) gives dΦ/dt = -Φ0ω sin(ωt), so ε(t) = -dΦ/dt = Φ0ω sin(ωt), which is 90° out of phase with the flux (EMF is maximum when flux is zero, and vice versa).',
@@ -782,8 +782,8 @@ export const ELECTROMAGNETIC_INDUCTION = [
     options: [
       'a stationary magnet and a stationary coil, with no relative motion or flux change at all',
       'moving a magnet relative to a coil (or vice versa), or changing the current in a nearby coil, observing a deflection in a connected galvanometer',
-      'heating a coil to very high temperatures',
-      'applying a constant DC voltage across an isolated wire'
+      'applying a constant DC voltage across an isolated wire',
+      'heating a coil to very high temperatures'
     ],
     correctIndex: 1,
     explanation: 'The historic experiments involved changing the flux linked with a coil — by moving a magnet relative to the coil, or by starting/stopping/varying current in a nearby coil — and observing the resulting deflection in a galvanometer connected to the coil.',
@@ -809,11 +809,11 @@ export const ELECTROMAGNETIC_INDUCTION = [
     question: 'A copper ring and a similarly-sized wooden ring are both dropped through the poles of a strong magnet. Compared to the wooden ring, the copper ring will experience',
     options: [
       'the same acceleration due to gravity, with no additional retarding effect',
-      'a noticeable retarding force due to eddy currents induced in it, causing it to fall more slowly than free fall (and more slowly than the wooden ring, which is unaffected since wood is an insulator)',
       'an increased acceleration, falling faster than free fall',
+      'a noticeable retarding force due to eddy currents induced in it, causing it to fall more slowly than free fall (and more slowly than the wooden ring, which is unaffected since wood is an insulator)',
       'levitation, never actually passing through the magnet'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Since copper is a conductor, the changing flux as it falls through the magnet induces eddy currents, which by Lenz\'s law create a retarding force, slowing its fall compared to free fall. The wooden ring (an insulator) experiences no such induced currents and falls essentially under gravity alone.',
     difficulty: 'medium'
   },
@@ -822,12 +822,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'When two coils are placed such that all of the flux produced by one coil links completely with the other (perfect/ideal coupling, e.g., using a common iron core in an ideal transformer), the mutual inductance is related to the individual self-inductances L1 and L2 by',
     options: [
-      'M = L1 + L2',
-      'M = √(L1 L2), the geometric mean, in the ideal case of perfect coupling',
+      'M has no relationship to L1 and L2',
       'M = L1 × L2',
-      'M has no relationship to L1 and L2'
+      'M = L1 + L2',
+      'M = √(L1 L2), the geometric mean, in the ideal case of perfect coupling'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'For perfectly (ideally) coupled coils, the mutual inductance equals the geometric mean of the two self-inductances, M = √(L1L2); in real (imperfectly coupled) systems, M is somewhat less than this ideal maximum value.',
     difficulty: 'hard'
   },
@@ -836,12 +836,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'The negative sign in Faraday\'s law of induction (ε = -dΦ/dt) is essential because it',
     options: [
-      'has no physical significance and is purely a mathematical convention',
-      'encodes Lenz\'s law, indicating that the induced EMF opposes the change in flux that produces it',
+      'shows that flux itself must always be negative',
       'indicates that the induced EMF is always negative in value',
-      'shows that flux itself must always be negative'
+      'encodes Lenz\'s law, indicating that the induced EMF opposes the change in flux that produces it',
+      'has no physical significance and is purely a mathematical convention'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'The negative sign is not arbitrary — it is precisely how Lenz\'s law (opposition to the change in flux) is mathematically encoded within Faraday\'s law, ensuring consistency with energy conservation.',
     difficulty: 'medium'
   },
@@ -850,12 +850,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'A step-up transformer is designed to',
     options: [
-      'decrease the voltage from primary to secondary',
-      'increase the voltage from primary to secondary (with a corresponding decrease in current, for an ideal transformer), typically having more turns in the secondary than the primary',
       'keep the voltage exactly the same on both sides',
-      'convert AC to DC directly'
+      'decrease the voltage from primary to secondary',
+      'convert AC to DC directly',
+      'increase the voltage from primary to secondary (with a corresponding decrease in current, for an ideal transformer), typically having more turns in the secondary than the primary'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A step-up transformer has more turns in its secondary coil than its primary, resulting in a higher secondary voltage than primary voltage (with current correspondingly lower on the secondary side, for power to be conserved in the ideal case).',
     difficulty: 'medium'
   },
@@ -878,10 +878,10 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'A transformer works only with alternating current (AC) and not with steady direct current (DC) because',
     options: [
-      'DC produces a stronger magnetic field than AC',
+      'AC has no magnetic field associated with it',
       'a steady DC current produces a constant (unchanging) flux, and since induced EMF requires a CHANGING flux, no EMF would be induced in the secondary with steady DC',
       'transformers are incapable of carrying any current at all',
-      'AC has no magnetic field associated with it'
+      'DC produces a stronger magnetic field than AC'
     ],
     correctIndex: 1,
     explanation: 'Since electromagnetic induction fundamentally requires a changing flux (Faraday\'s law), a transformer only works effectively with AC (whose current, and hence flux, is continuously changing); a steady DC current produces constant flux and hence no induced EMF in the secondary.',
@@ -892,12 +892,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'A brief transient EMF may be induced in the secondary coil of a transformer even when a steady DC current is switched ON or OFF in the primary, because',
     options: [
+      'transformers cannot respond to DC under any circumstances',
       'DC always produces changing flux, contradicting the general rule',
       'during the brief moments the current is switching on or off, the current (and hence flux) IS actually changing over that short interval, satisfying Faraday\'s law momentarily',
-      'transformers cannot respond to DC under any circumstances',
       'this phenomenon does not actually occur'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'While a steady DC current produces no ongoing induction, the brief transition period as DC is switched on or off does involve a rapidly changing current (and flux), inducing a brief transient EMF in the secondary during just that switching interval.',
     difficulty: 'hard'
   },
@@ -906,12 +906,12 @@ export const ELECTROMAGNETIC_INDUCTION = [
     type: 'mcq',
     question: 'The overall phenomenon of electromagnetic induction, unifying electricity and magnetism, historically paved the way for the development of',
     options: [
-      'only static electricity generators',
-      'practical electric generators, motors, and transformers, forming the foundation of modern electrical power generation and distribution',
       'the theory of relativity exclusively',
-      'nuclear reactors only'
+      'only static electricity generators',
+      'nuclear reactors only',
+      'practical electric generators, motors, and transformers, forming the foundation of modern electrical power generation and distribution'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The discovery and understanding of electromagnetic induction directly enabled the development of practical electric generators, motors, and transformers, which together form the technological backbone of modern electrical power generation, transmission, and use.',
     difficulty: 'medium'
   },

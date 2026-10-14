@@ -4,8 +4,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-1',
     type: 'mcq',
     question: 'In an aldehyde or ketone, the carbonyl carbon atom is',
-    options: ['sp hybridised', 'sp2 hybridised, with a trigonal planar geometry', 'sp3 hybridised', 'not hybridised at all'],
-    correctIndex: 1,
+    options: ['not hybridised at all', 'sp hybridised', 'sp3 hybridised', 'sp2 hybridised, with a trigonal planar geometry'],
+    correctIndex: 3,
     explanation: 'The carbonyl carbon in aldehydes and ketones is sp2 hybridised, giving it a trigonal planar geometry with bond angles close to 120°.',
     difficulty: 'easy'
   },
@@ -27,8 +27,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-3',
     type: 'mcq',
     question: 'The electrophilic character of the carbonyl carbon is the primary reason why aldehydes and ketones readily undergo',
-    options: ['electrophilic addition reactions', 'nucleophilic addition reactions', 'free radical substitution reactions', 'elimination reactions exclusively'],
-    correctIndex: 1,
+    options: ['electrophilic addition reactions', 'free radical substitution reactions', 'elimination reactions exclusively', 'nucleophilic addition reactions'],
+    correctIndex: 3,
     explanation: 'Because the carbonyl carbon is electron-deficient (electrophilic), it is readily attacked by nucleophiles, making nucleophilic addition the characteristic reaction of the carbonyl group.',
     difficulty: 'easy'
   },
@@ -36,8 +36,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-4',
     type: 'mcq',
     question: 'Oxidation of a primary alcohol using a mild oxidising agent such as PCC gives',
-    options: ['a ketone', 'an aldehyde', 'a carboxylic acid', 'an ether'],
-    correctIndex: 1,
+    options: ['a carboxylic acid', 'an ether', 'a ketone', 'an aldehyde'],
+    correctIndex: 3,
     explanation: 'PCC is a mild oxidant that stops the oxidation of a primary alcohol at the aldehyde stage, without further oxidation to the carboxylic acid.',
     difficulty: 'easy'
   },
@@ -46,12 +46,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'The Rosenmund reduction converts an acid chloride into an aldehyde using',
     options: [
-      'LiAlH4',
-      'hydrogen gas in the presence of a palladium catalyst partially poisoned with barium sulphate',
       'sodium metal in dry ether',
-      'concentrated sulphuric acid'
+      'concentrated sulphuric acid',
+      'LiAlH4',
+      'hydrogen gas in the presence of a palladium catalyst partially poisoned with barium sulphate'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The Rosenmund reduction uses H2 with a Pd catalyst on BaSO4 (a "poisoned" catalyst), which selectively reduces an acid chloride to an aldehyde without over-reduction to the alcohol.',
     difficulty: 'medium'
   },
@@ -74,12 +74,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'The Stephen reaction converts a nitrile into an aldehyde using',
     options: [
-      'stannous chloride (SnCl2) and HCl, followed by hydrolysis',
-      'LiAlH4 at room temperature',
       'hydrogen gas with a Pd catalyst',
-      'concentrated nitric acid'
+      'concentrated nitric acid',
+      'LiAlH4 at room temperature',
+      'stannous chloride (SnCl2) and HCl, followed by hydrolysis'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The Stephen reaction reduces a nitrile to an imine intermediate using SnCl2/HCl, which is then hydrolysed to give the corresponding aldehyde.',
     difficulty: 'medium'
   },
@@ -87,8 +87,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-8',
     type: 'mcq',
     question: 'DIBAL-H (diisobutylaluminium hydride) is a reducing agent used, particularly at low temperature, to partially reduce esters or nitriles specifically to',
-    options: ['carboxylic acids', 'aldehydes, stopping short of the fully reduced alcohol', 'alkanes', 'amines'],
-    correctIndex: 1,
+    options: ['amines', 'alkanes', 'carboxylic acids', 'aldehydes, stopping short of the fully reduced alcohol'],
+    correctIndex: 3,
     explanation: 'DIBAL-H, when used at low temperature, forms a stable intermediate that, upon aqueous workup, yields the aldehyde rather than proceeding all the way to the alcohol.',
     difficulty: 'medium'
   },
@@ -97,12 +97,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'The Etard reaction converts toluene (or another methylbenzene) directly into benzaldehyde using',
     options: [
-      'potassium permanganate',
-      'chromyl chloride (CrO2Cl2), followed by hydrolysis',
+      'ozone, followed by zinc dust reduction',
       'sodium borohydride',
-      'ozone, followed by zinc dust reduction'
+      'potassium permanganate',
+      'chromyl chloride (CrO2Cl2), followed by hydrolysis'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The Etard reaction uses chromyl chloride to oxidise the methyl group of toluene directly to an aldehyde group (via an intermediate complex), avoiding over-oxidation to the carboxylic acid.',
     difficulty: 'medium'
   },
@@ -111,12 +111,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'The Gattermann-Koch reaction converts benzene directly into benzaldehyde using',
     options: [
-      'carbon monoxide and hydrogen chloride gas, in the presence of anhydrous AlCl3 and CuCl',
+      'chromyl chloride',
       'ozone, followed by reductive workup',
       'sodium cyanide and hydrochloric acid',
-      'chromyl chloride'
+      'carbon monoxide and hydrogen chloride gas, in the presence of anhydrous AlCl3 and CuCl'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The Gattermann-Koch reaction is a special Friedel-Crafts-type formylation, using CO and HCl with anhydrous AlCl3/CuCl catalysts to introduce a -CHO group directly onto benzene.',
     difficulty: 'medium'
   },
@@ -139,12 +139,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'In the reductive workup of ozonolysis, zinc dust is specifically used to',
     options: [
-      'convert the intermediate ozonide directly into a carboxylic acid',
-      'prevent further oxidation of any aldehyde product that is formed, by reducing any oxidising species like H2O2',
       'add extra oxygen atoms to the product',
-      'convert the alkene into an alkyne first'
+      'convert the alkene into an alkyne first',
+      'convert the intermediate ozonide directly into a carboxylic acid',
+      'prevent further oxidation of any aldehyde product that is formed, by reducing any oxidising species like H2O2'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Zinc dust reduces the intermediate hydrogen peroxide (or similar oxidising species) generated during ozonide hydrolysis, preventing over-oxidation of any aldehyde product to a carboxylic acid.',
     difficulty: 'hard'
   },
@@ -167,12 +167,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Aldehydes and ketones generally have higher boiling points than hydrocarbons or ethers of comparable molecular mass, mainly because of',
     options: [
+      'their extremely large molecular size compared to hydrocarbons',
       'the absence of any polar bond',
-      'the polar carbon-oxygen double bond, which allows for dipole-dipole interactions between molecules',
       'the presence of an O-H bond, allowing hydrogen bonding',
-      'their extremely large molecular size compared to hydrocarbons'
+      'the polar carbon-oxygen double bond, which allows for dipole-dipole interactions between molecules'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The polar C=O bond enables dipole-dipole interactions between aldehyde/ketone molecules, raising their boiling points above those of comparable non-polar hydrocarbons or ethers.',
     difficulty: 'medium'
   },
@@ -183,8 +183,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     options: [
       'much higher boiling points, since they can hydrogen bond with each other',
       'lower boiling points, since they cannot hydrogen bond with each other (lacking an O-H group)',
-      'exactly the same boiling points',
-      'boiling points that are impossible to compare'
+      'boiling points that are impossible to compare',
+      'exactly the same boiling points'
     ],
     correctIndex: 1,
     explanation: 'Since aldehydes and ketones cannot hydrogen bond with each other (only dipole-dipole interactions are possible between them), they generally have lower boiling points than comparable alcohols, which can hydrogen bond.',
@@ -194,8 +194,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-16',
     type: 'mcq',
     question: 'Addition of hydrogen cyanide (HCN) to an aldehyde or ketone gives',
-    options: ['an alcohol', 'a cyanohydrin', 'an amide', 'an ester'],
-    correctIndex: 1,
+    options: ['an ester', 'an amide', 'an alcohol', 'a cyanohydrin'],
+    correctIndex: 3,
     explanation: 'Nucleophilic addition of HCN to a carbonyl compound gives a cyanohydrin, in which -CN and -OH are added across the C=O bond.',
     difficulty: 'medium'
   },
@@ -226,8 +226,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-19',
     type: 'mcq',
     question: 'Reaction of an aldehyde or ketone with hydroxylamine (NH2OH) gives',
-    options: ['a hydrazone', 'an oxime', 'a semicarbazone', 'an acetal'],
-    correctIndex: 1,
+    options: ['an acetal', 'a semicarbazone', 'a hydrazone', 'an oxime'],
+    correctIndex: 3,
     explanation: 'Hydroxylamine reacts with a carbonyl compound via condensation to form an oxime (>C=N-OH).',
     difficulty: 'medium'
   },
@@ -235,8 +235,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-20',
     type: 'mcq',
     question: 'Reaction of an aldehyde or ketone with semicarbazide (NH2NHCONH2) gives a derivative called a',
-    options: ['hydrazone', 'oxime', 'semicarbazone, often used as a solid crystalline derivative for characterisation', 'nitrile'],
-    correctIndex: 2,
+    options: ['hydrazone', 'oxime', 'nitrile', 'semicarbazone, often used as a solid crystalline derivative for characterisation'],
+    correctIndex: 3,
     explanation: 'Semicarbazide reacts with carbonyl compounds to form semicarbazones, which are often solid, easily purified derivatives useful for identifying and characterising aldehydes and ketones.',
     difficulty: 'medium'
   },
@@ -245,10 +245,10 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Aldehydes are generally more reactive towards nucleophilic addition than ketones, mainly due to a combination of',
     options: [
-      'greater steric hindrance and greater electron donation from substituents in aldehydes',
-      'less steric hindrance and less electron donation from alkyl/aryl substituents (making the carbonyl carbon more electrophilic) in aldehydes',
       'aldehydes having a much larger molecular size than ketones',
-      'aldehydes lacking a carbonyl group entirely'
+      'less steric hindrance and less electron donation from alkyl/aryl substituents (making the carbonyl carbon more electrophilic) in aldehydes',
+      'aldehydes lacking a carbonyl group entirely',
+      'greater steric hindrance and greater electron donation from substituents in aldehydes'
     ],
     correctIndex: 1,
     explanation: 'Aldehydes are less hindered (bearing at most one bulky group and a hydrogen) and have less electron-donating alkyl substitution around the carbonyl carbon, making them more electrophilic and hence more reactive towards nucleophilic addition than ketones.',
@@ -259,12 +259,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Among aldehydes, formaldehyde (HCHO) is generally the most reactive towards nucleophilic addition because it',
     options: [
+      'cannot undergo nucleophilic addition at all',
       'has the highest molecular mass among aldehydes',
-      'has no alkyl or aryl substituents at all, minimising both steric hindrance and electron donation to the carbonyl carbon',
       'is the least polar of all aldehydes',
-      'cannot undergo nucleophilic addition at all'
+      'has no alkyl or aryl substituents at all, minimising both steric hindrance and electron donation to the carbonyl carbon'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'With no substituents other than hydrogen atoms, formaldehyde experiences minimal steric hindrance and no electron-donating alkyl group effects, making its carbonyl carbon the most electrophilic and reactive among aldehydes.',
     difficulty: 'medium'
   },
@@ -273,12 +273,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'The Clemmensen reduction converts a carbonyl group (C=O) directly into a methylene group (CH2) using',
     options: [
+      'sodium borohydride',
       'zinc amalgam (Zn-Hg) and concentrated hydrochloric acid, under acidic conditions',
       'hydrazine and potassium hydroxide, under basic conditions',
-      'sodium borohydride',
       'lithium aluminium hydride'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'The Clemmensen reduction uses zinc amalgam and concentrated HCl to fully reduce a carbonyl group to a methylene group, under strongly acidic conditions.',
     difficulty: 'medium'
   },
@@ -315,12 +315,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Aldehydes are readily oxidised to carboxylic acids by mild oxidising agents, such as Tollens\' reagent, mainly because',
     options: [
-      'the aldehyde carbon still bears a hydrogen atom that can be removed relatively easily during oxidation',
       'aldehydes have no hydrogen atoms at all on the carbonyl carbon',
       'aldehydes are completely resistant to any form of oxidation',
-      'ketones oxidise more readily than aldehydes under all conditions'
+      'ketones oxidise more readily than aldehydes under all conditions',
+      'the aldehyde carbon still bears a hydrogen atom that can be removed relatively easily during oxidation'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The presence of a hydrogen atom directly on the carbonyl carbon of an aldehyde makes it susceptible to relatively easy oxidation to a carboxylic acid.',
     difficulty: 'medium'
   },
@@ -329,12 +329,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Ketones generally resist oxidation under mild conditions mainly because',
     options: [
-      'the carbonyl carbon in a ketone has no hydrogen atom attached, so oxidation without breaking a C-C bond is not possible under mild conditions',
-      'ketones have too many hydrogen atoms on the carbonyl carbon',
       'ketones do not actually possess a carbonyl group',
-      'ketones spontaneously decompose before any oxidation can occur'
+      'ketones have too many hydrogen atoms on the carbonyl carbon',
+      'ketones spontaneously decompose before any oxidation can occur',
+      'the carbonyl carbon in a ketone has no hydrogen atom attached, so oxidation without breaking a C-C bond is not possible under mild conditions'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Since the carbonyl carbon of a ketone has no hydrogen attached, mild oxidation cannot proceed as it does for aldehydes; oxidative cleavage of a ketone requires much more vigorous conditions.',
     difficulty: 'medium'
   },
@@ -345,8 +345,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     options: [
       'the formation of a brick-red precipitate',
       'the deposition of a shiny silver mirror on the inside of the test tube',
-      'the evolution of a colourless gas',
-      'a yellow crystalline precipitate'
+      'a yellow crystalline precipitate',
+      'the evolution of a colourless gas'
     ],
     correctIndex: 1,
     explanation: 'In the Tollens\' test, an aldehyde reduces the ammoniacal silver nitrate reagent, depositing metallic silver as a characteristic silver mirror on the test tube.',
@@ -357,10 +357,10 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'A positive Fehling\'s test is observed as the formation of',
     options: [
-      'a shiny silver mirror',
+      'a colourless solution with no visible change',
       'a brick-red precipitate of cuprous oxide (Cu2O)',
       'a yellow precipitate of iodoform',
-      'a colourless solution with no visible change'
+      'a shiny silver mirror'
     ],
     correctIndex: 1,
     explanation: 'A positive Fehling\'s test produces a brick-red precipitate of Cu2O, as the aldehyde reduces the alkaline copper(II) tartrate complex.',
@@ -370,8 +370,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-30',
     type: 'mcq',
     question: 'Aromatic aldehydes, such as benzaldehyde, generally give a positive Tollens\' test but typically do NOT give a positive result with',
-    options: ['the iodoform test', 'Fehling\'s solution', 'sodium bisulphite addition', 'hydroxylamine condensation to form an oxime'],
-    correctIndex: 1,
+    options: ['sodium bisulphite addition', 'hydroxylamine condensation to form an oxime', 'the iodoform test', 'Fehling\'s solution'],
+    correctIndex: 3,
     explanation: 'Aromatic aldehydes generally give a positive Tollens\' test, but they typically do not give a positive Fehling\'s test, which is more characteristic of aliphatic aldehydes.',
     difficulty: 'medium'
   },
@@ -380,10 +380,10 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Ketones, unlike aldehydes, generally give a',
     options: [
-      'positive Tollens\' test',
+      'positive test with both Tollens\' and Fehling\'s reagents',
       'negative Tollens\' test and negative Fehling\'s test, since they lack a readily removable hydrogen on the carbonyl carbon',
       'positive Fehling\'s test but negative Tollens\' test',
-      'positive test with both Tollens\' and Fehling\'s reagents'
+      'positive Tollens\' test'
     ],
     correctIndex: 1,
     explanation: 'Since ketones lack the readily removable hydrogen on the carbonyl carbon required for these mild oxidations, they generally give negative results with both Tollens\' and Fehling\'s reagents.',
@@ -394,12 +394,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'The iodoform test gives a positive result (yellow precipitate of CHI3) specifically with compounds containing',
     options: [
+      'any alcohol, regardless of its structure',
       'any aldehyde group, regardless of structure',
-      'a methyl ketone group (CH3-CO-) or a structural feature (like CH3-CH(OH)-) that can be oxidised in situ to a methyl ketone',
       'any carboxylic acid group',
-      'any alcohol, regardless of its structure'
+      'a methyl ketone group (CH3-CO-) or a structural feature (like CH3-CH(OH)-) that can be oxidised in situ to a methyl ketone'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The iodoform test is specific to compounds bearing a methyl ketone group, or those (like certain secondary alcohols and acetaldehyde) that can be oxidised in situ under the reaction conditions to generate a methyl ketone-type structure.',
     difficulty: 'medium'
   },
@@ -422,9 +422,9 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Ethanol gives a positive iodoform test mainly because',
     options: [
-      'ethanol itself directly reacts with iodine to give iodoform, without any oxidation step',
-      'ethanol is first oxidised in situ under the reaction conditions to acetaldehyde, which then gives the positive test',
       'ethanol has no relationship to the iodoform test at all',
+      'ethanol is first oxidised in situ under the reaction conditions to acetaldehyde, which then gives the positive test',
+      'ethanol itself directly reacts with iodine to give iodoform, without any oxidation step',
       'ethanol contains a methyl ketone group directly'
     ],
     correctIndex: 1,
@@ -435,8 +435,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-35',
     type: 'mcq',
     question: 'A base-catalysed reaction in which two molecules of an aldehyde or ketone (each possessing an alpha-hydrogen) combine to give a beta-hydroxy carbonyl compound is called',
-    options: ['Cannizzaro reaction', 'aldol condensation', 'Reimer-Tiemann reaction', 'Kolbe reaction'],
-    correctIndex: 1,
+    options: ['Reimer-Tiemann reaction', 'Kolbe reaction', 'Cannizzaro reaction', 'aldol condensation'],
+    correctIndex: 3,
     explanation: 'Aldol condensation involves the combination of two molecules of a carbonyl compound (each bearing at least one alpha-hydrogen) to form a beta-hydroxy aldehyde or ketone (the "aldol").',
     difficulty: 'medium'
   },
@@ -445,12 +445,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'The beta-hydroxy carbonyl compound formed in aldol condensation can undergo dehydration (loss of water), giving',
     options: [
-      'an alpha,beta-unsaturated carbonyl compound',
       'a saturated carboxylic acid',
-      'an alkane',
-      'an ether'
+      'an alpha,beta-unsaturated carbonyl compound',
+      'an ether',
+      'an alkane'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Loss of water from the aldol product generates an alpha,beta-unsaturated carbonyl compound (an enal or enone).',
     difficulty: 'medium'
   },
@@ -459,12 +459,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Aldol condensation specifically requires the reacting aldehyde or ketone to possess',
     options: [
-      'at least one alpha-hydrogen atom',
       'no hydrogen atoms at all',
+      'an aromatic ring',
       'a halogen substituent',
-      'an aromatic ring'
+      'at least one alpha-hydrogen atom'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Aldol condensation depends on the presence of an alpha-hydrogen, which is removed by base to form the nucleophilic enolate that attacks another carbonyl molecule.',
     difficulty: 'medium'
   },
@@ -487,9 +487,9 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'A clean, predominantly single-product crossed aldol condensation (Claisen-Schmidt reaction) can often be achieved when one of the carbonyl reactants is',
     options: [
-      'a compound with multiple alpha-hydrogens',
-      'an aromatic aldehyde (like benzaldehyde) lacking alpha-hydrogens, reacting with an aliphatic carbonyl compound that has alpha-hydrogens',
       'a compound with no carbonyl group at all',
+      'an aromatic aldehyde (like benzaldehyde) lacking alpha-hydrogens, reacting with an aliphatic carbonyl compound that has alpha-hydrogens',
+      'a compound with multiple alpha-hydrogens',
       'a tertiary alcohol'
     ],
     correctIndex: 1,
@@ -502,11 +502,11 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     question: 'The Cannizzaro reaction is a disproportionation reaction observed specifically with',
     options: [
       'aldehydes possessing alpha-hydrogens',
-      'aldehydes lacking any alpha-hydrogen atom, such as formaldehyde or benzaldehyde, when treated with concentrated alkali',
       'ketones with multiple alpha-hydrogens',
-      'carboxylic acids only'
+      'carboxylic acids only',
+      'aldehydes lacking any alpha-hydrogen atom, such as formaldehyde or benzaldehyde, when treated with concentrated alkali'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since the Cannizzaro reaction requires the absence of alpha-hydrogens (so that no aldol pathway competes), it occurs with aldehydes like formaldehyde and benzaldehyde in the presence of concentrated alkali.',
     difficulty: 'medium'
   },
@@ -515,10 +515,10 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'In the Cannizzaro reaction, one molecule of the aldehyde is oxidised while another is simultaneously reduced, giving',
     options: [
-      'two molecules of the corresponding carboxylic acid',
+      'a single molecule with no net change',
       'one molecule of the carboxylate salt and one molecule of the corresponding alcohol',
-      'two molecules of the corresponding alcohol',
-      'a single molecule with no net change'
+      'two molecules of the corresponding carboxylic acid',
+      'two molecules of the corresponding alcohol'
     ],
     correctIndex: 1,
     explanation: 'In this self-disproportionation reaction, one aldehyde molecule is oxidised to the carboxylate salt, while another is simultaneously reduced to the corresponding alcohol.',
@@ -530,11 +530,11 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     question: 'The carbonyl group (-CHO, -COR) attached to an aromatic ring generally acts, in electrophilic aromatic substitution reactions, as a',
     options: [
       'strongly activating and ortho/para-directing group',
-      'deactivating and meta-directing group',
+      'strongly activating but meta-directing group',
       'group with no effect on the ring\'s reactivity',
-      'strongly activating but meta-directing group'
+      'deactivating and meta-directing group'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The electron-withdrawing carbonyl group deactivates the aromatic ring (via induction and resonance) and directs incoming electrophiles predominantly to the meta position.',
     difficulty: 'medium'
   },
@@ -552,12 +552,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Oxidation of an alkylbenzene (such as toluene or ethylbenzene) with a strong oxidising agent such as KMnO4 or K2Cr2O7 gives, regardless of the length of the alkyl side chain,',
     options: [
-      'a mixture of unpredictable products',
-      'benzoic acid, since the oxidation always stops at the ring carbon bearing the side chain',
       'a substituted phenol',
-      'a nitrobenzene derivative'
+      'a nitrobenzene derivative',
+      'a mixture of unpredictable products',
+      'benzoic acid, since the oxidation always stops at the ring carbon bearing the side chain'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Regardless of the length of the alkyl side chain (as long as there is at least one benzylic hydrogen), strong oxidation of an alkylbenzene always cleaves the side chain down to give a carboxylic acid group directly on the ring, forming benzoic acid.',
     difficulty: 'medium'
   },
@@ -566,12 +566,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Carboxylic acids can be prepared from nitriles by',
     options: [
+      'reaction with hydrogen gas and a Pd catalyst',
       'acidic or basic hydrolysis, followed by acidification if a basic hydrolysis was used',
       'simple exposure to air with no other reagents',
-      'reaction with sodium metal',
-      'reaction with hydrogen gas and a Pd catalyst'
+      'reaction with sodium metal'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Hydrolysis of a nitrile, under either acidic or basic conditions (with subsequent acidification for basic hydrolysis), converts the -CN group into a -COOH group.',
     difficulty: 'medium'
   },
@@ -579,8 +579,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-46',
     type: 'mcq',
     question: 'Reaction of a Grignard reagent with dry ice (solid carbon dioxide), followed by acidic workup, gives',
-    options: ['an alcohol', 'a carboxylic acid, containing one more carbon atom than the original Grignard reagent', 'an aldehyde', 'an ether'],
-    correctIndex: 1,
+    options: ['an alcohol', 'an aldehyde', 'an ether', 'a carboxylic acid, containing one more carbon atom than the original Grignard reagent'],
+    correctIndex: 3,
     explanation: 'A Grignard reagent adds to carbon dioxide to form a magnesium carboxylate, which upon acidic workup gives a carboxylic acid with one additional carbon atom compared to the original alkyl/aryl group.',
     difficulty: 'medium'
   },
@@ -589,12 +589,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Carboxylic acids are generally more acidic than phenols mainly because',
     options: [
+      'phenols cannot lose a proton at all',
       'the carboxylate ion has two exactly equivalent resonance structures with the negative charge equally delocalised over both oxygen atoms, providing greater stabilisation than the phenoxide ion',
       'carboxylic acids have a much higher molecular mass than phenols',
-      'phenols cannot lose a proton at all',
       'carboxylic acids contain no oxygen atoms'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'The two resonance structures of the carboxylate ion are exactly equivalent, allowing the negative charge to be shared equally between two electronegative oxygen atoms, providing more effective stabilisation than the resonance available to phenoxide (where the negative charge is partly delocalised onto less electronegative ring carbons).',
     difficulty: 'medium'
   },
@@ -603,12 +603,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'The general order of acid strength among carboxylic acids, carbonic acid, phenols, and simple alcohols is best represented as',
     options: [
-      'alcohols > phenols > carbonic acid > carboxylic acids',
-      'carboxylic acids > carbonic acid > phenols > alcohols',
       'phenols > carboxylic acids > carbonic acid > alcohols',
-      'carbonic acid > carboxylic acids > alcohols > phenols'
+      'alcohols > phenols > carbonic acid > carboxylic acids',
+      'carbonic acid > carboxylic acids > alcohols > phenols',
+      'carboxylic acids > carbonic acid > phenols > alcohols'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Carboxylic acids are generally the strongest of this group, followed by carbonic acid, then phenols, with simple alcohols being the weakest acids among them.',
     difficulty: 'medium'
   },
@@ -631,12 +631,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'The inductive effect of an electron-withdrawing substituent on carboxylic acid acidity is generally strongest when the substituent is',
     options: [
-      'located as far from the -COOH group as possible',
-      'located close to the -COOH group (such as at the alpha-carbon), since the inductive effect weakens rapidly with increasing distance',
       'located on a completely different, unconnected molecule',
-      'unrelated to distance from the -COOH group'
+      'located as far from the -COOH group as possible',
+      'unrelated to distance from the -COOH group',
+      'located close to the -COOH group (such as at the alpha-carbon), since the inductive effect weakens rapidly with increasing distance'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since inductive effects are transmitted through sigma bonds and weaken rapidly with distance, a substituent located closer to the -COOH group (such as at the alpha-carbon) has the greatest effect on acidity.',
     difficulty: 'medium'
   },
@@ -647,8 +647,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     options: [
       'increases the acidity of the carboxylic acid',
       'decreases the acidity of the carboxylic acid, since it destabilises the negative charge on the carboxylate ion',
-      'has no effect whatsoever',
-      'converts the carboxylic acid into a strong base'
+      'converts the carboxylic acid into a strong base',
+      'has no effect whatsoever'
     ],
     correctIndex: 1,
     explanation: 'Electron-donating alkyl groups intensify the negative charge on the carboxylate ion, destabilising it and thereby decreasing the acidity of the carboxylic acid.',
@@ -658,8 +658,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-52',
     type: 'mcq',
     question: 'Reaction of a carboxylic acid with thionyl chloride (SOCl2) gives',
-    options: ['an ester', 'an acid chloride, along with SO2 and HCl gases as by-products', 'an amide', 'a carboxylate salt'],
-    correctIndex: 1,
+    options: ['an ester', 'a carboxylate salt', 'an amide', 'an acid chloride, along with SO2 and HCl gases as by-products'],
+    correctIndex: 3,
     explanation: 'Thionyl chloride converts a carboxylic acid into the corresponding acid chloride, with SO2 and HCl escaping as gaseous by-products, similar to its analogous use with alcohols.',
     difficulty: 'medium'
   },
@@ -668,12 +668,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Reaction of a carboxylic acid with an alcohol, in the presence of an acid catalyst, is the basis of',
     options: [
-      'Fischer esterification, giving an ester and water',
       'the Cannizzaro reaction',
       'the Rosenmund reduction',
-      'the Wolff-Kishner reduction'
+      'the Wolff-Kishner reduction',
+      'Fischer esterification, giving an ester and water'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Fischer esterification is the acid-catalysed reaction between a carboxylic acid and an alcohol to give an ester and water, as also described in the alcohols chapter.',
     difficulty: 'medium'
   },
@@ -682,10 +682,10 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Reduction of a carboxylic acid to a primary alcohol requires a strong reducing agent, typically',
     options: [
-      'sodium borohydride (NaBH4), which readily accomplishes this reduction',
+      'zinc amalgam and HCl',
       'lithium aluminium hydride (LiAlH4), since NaBH4 is generally not strong enough to reduce carboxylic acids under normal conditions',
       'PCC, an oxidising agent unrelated to reduction',
-      'zinc amalgam and HCl'
+      'sodium borohydride (NaBH4), which readily accomplishes this reduction'
     ],
     correctIndex: 1,
     explanation: 'Carboxylic acids require the strong reducing agent LiAlH4 to be converted to primary alcohols; the milder NaBH4 is generally insufficient for this particular reduction.',
@@ -696,12 +696,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'The Hell-Volhard-Zelinsky (HVZ) reaction introduces a halogen atom at the alpha-carbon of a carboxylic acid, using',
     options: [
-      'a halogen (Cl2 or Br2) in the presence of red phosphorus',
       'sodium hypohalite alone',
+      'a halogen (Cl2 or Br2) in the presence of red phosphorus',
       'concentrated sulphuric acid',
       'hydrogen gas with a Pd catalyst'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'The HVZ reaction uses a halogen (typically Br2 or Cl2) with a catalytic amount of red phosphorus to selectively introduce a halogen at the alpha-position of a carboxylic acid.',
     difficulty: 'medium'
   },
@@ -710,12 +710,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Heating the sodium salt of a carboxylic acid with soda lime (a mixture of NaOH and CaO) leads to',
     options: [
-      'esterification',
-      'decarboxylation, giving an alkane with one carbon fewer than the parent acid',
       'reduction to the corresponding alcohol',
-      'oxidation to a dicarboxylic acid'
+      'esterification',
+      'oxidation to a dicarboxylic acid',
+      'decarboxylation, giving an alkane with one carbon fewer than the parent acid'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Heating a sodium carboxylate with soda lime causes decarboxylation, releasing carbon dioxide and forming an alkane with one fewer carbon atom than the original acid.',
     difficulty: 'medium'
   },
@@ -725,11 +725,11 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     question: 'Which of the following correctly lists a series of carbonyl group derivatives (all formed by condensation of a carbonyl compound with a nitrogen nucleophile)?',
     options: [
       'ester, ether, acetal',
-      'oxime, hydrazone, semicarbazone',
+      'alkene, alkyne, alkane',
       'alkyl halide, alcohol, carboxylic acid',
-      'alkene, alkyne, alkane'
+      'oxime, hydrazone, semicarbazone'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Oximes, hydrazones, and semicarbazones are all condensation products formed between a carbonyl compound and a nitrogen-containing nucleophile (hydroxylamine, hydrazine derivatives, and semicarbazide, respectively).',
     difficulty: 'medium'
   },
@@ -752,12 +752,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Catalytic hydrogenation (H2 with a metal catalyst such as Pt, Pd, or Ni) of an aldehyde or ketone reduces the carbonyl group to give',
     options: [
-      'the corresponding alcohol',
       'the corresponding carboxylic acid',
-      'the corresponding alkane, directly, in one step under mild conditions',
-      'no reaction occurs at all'
+      'the corresponding alcohol',
+      'no reaction occurs at all',
+      'the corresponding alkane, directly, in one step under mild conditions'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Catalytic hydrogenation of the carbonyl group in an aldehyde or ketone reduces it to the corresponding alcohol (primary from aldehyde, secondary from ketone).',
     difficulty: 'medium'
   },
@@ -765,8 +765,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-60',
     type: 'mcq',
     question: 'The nucleophilic addition of a Grignard reagent to an aldehyde or ketone, followed by acidic hydrolysis, gives',
-    options: ['a carboxylic acid', 'an alcohol', 'an ester', 'an ether'],
-    correctIndex: 1,
+    options: ['an ester', 'a carboxylic acid', 'an ether', 'an alcohol'],
+    correctIndex: 3,
     explanation: 'Grignard reagent addition to a carbonyl compound, followed by aqueous acidic workup, gives the corresponding alcohol, as covered earlier for both alcohols and now revisited in the context of carbonyl reactivity.',
     difficulty: 'easy'
   },
@@ -774,7 +774,7 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-61',
     type: 'mcq',
     question: 'The nomenclature suffix used for naming an aldehyde in IUPAC nomenclature is',
-    options: ['-ol', '-al', '-one', '-oic acid'],
+    options: ['-oic acid', '-al', '-ol', '-one'],
     correctIndex: 1,
     explanation: 'IUPAC nomenclature uses the suffix "-al" to indicate the presence of an aldehyde group in a compound.',
     difficulty: 'easy'
@@ -792,8 +792,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-63',
     type: 'mcq',
     question: 'The nomenclature suffix used for naming a carboxylic acid in IUPAC nomenclature is',
-    options: ['-al', '-one', '-oic acid', '-ol'],
-    correctIndex: 2,
+    options: ['-ol', '-al', '-one', '-oic acid'],
+    correctIndex: 3,
     explanation: 'IUPAC nomenclature uses the suffix "-oic acid" to indicate the presence of a carboxylic acid group in a compound.',
     difficulty: 'easy'
   },
@@ -816,12 +816,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Lower molecular mass carboxylic acids (such as formic and acetic acid) are generally',
     options: [
+      'gases at room temperature',
       'completely insoluble in water',
-      'miscible with water in all proportions, due to their ability to hydrogen bond with water molecules',
       'insoluble in any solvent, polar or non-polar',
-      'gases at room temperature'
+      'miscible with water in all proportions, due to their ability to hydrogen bond with water molecules'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Lower carboxylic acids, having small hydrocarbon portions and an -OH group capable of hydrogen bonding, are miscible with water in all proportions.',
     difficulty: 'medium'
   },
@@ -829,8 +829,8 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     id: 'carbonyl-66',
     type: 'mcq',
     question: 'Reaction of a carboxylic acid with ammonia, followed by heating (dehydration of the resulting ammonium salt), gives',
-    options: ['an ester', 'an amide', 'a nitrile', 'an alcohol'],
-    correctIndex: 1,
+    options: ['an alcohol', 'an ester', 'a nitrile', 'an amide'],
+    correctIndex: 3,
     explanation: 'Reaction of a carboxylic acid with ammonia first forms an ammonium carboxylate salt, which upon heating (dehydration) is converted into the corresponding amide.',
     difficulty: 'medium'
   },
@@ -839,10 +839,10 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'The alpha-halo carboxylic acid produced via the HVZ reaction is more acidic than the parent (unsubstituted) carboxylic acid mainly because',
     options: [
-      'the halogen atom donates electron density to the carboxylate ion',
+      'the halogen atom converts the compound into a base',
       'the electronegative halogen atom withdraws electron density inductively, stabilising the carboxylate ion',
-      'halogens have no electronic effect on acidity whatsoever',
-      'the halogen atom converts the compound into a base'
+      'the halogen atom donates electron density to the carboxylate ion',
+      'halogens have no electronic effect on acidity whatsoever'
     ],
     correctIndex: 1,
     explanation: 'The inductive electron-withdrawing effect of the newly introduced halogen atom stabilises the resulting carboxylate ion, increasing the acidity of the alpha-halo acid compared to the parent acid.',
@@ -853,12 +853,12 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'A key distinguishing chemical test that differentiates aldehydes from ketones, based on the ease of oxidation, is the',
     options: [
-      'Tollens\' or Fehling\'s test, which give a positive result with (most) aldehydes but a negative result with ketones',
+      'flame test',
       'litmus test',
       'bromine water test',
-      'flame test'
+      'Tollens\' or Fehling\'s test, which give a positive result with (most) aldehydes but a negative result with ketones'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Since aldehydes are readily oxidised (having a hydrogen on the carbonyl carbon) while ketones generally are not under mild conditions, Tollens\' and Fehling\'s tests serve as reliable ways to distinguish between them.',
     difficulty: 'medium'
   },
@@ -867,10 +867,10 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     type: 'mcq',
     question: 'Under vigorous oxidative conditions (strong oxidants, high temperature), ketones can undergo oxidative cleavage of a carbon-carbon bond, giving',
     options: [
-      'no reaction at all, since ketones cannot be oxidised under any conditions',
+      'a single, pure alcohol product',
       'a mixture of carboxylic acids, generally with fewer carbon atoms than the original ketone',
       'the parent alkane, with no oxygen incorporated',
-      'a single, pure alcohol product'
+      'no reaction at all, since ketones cannot be oxidised under any conditions'
     ],
     correctIndex: 1,
     explanation: 'Under sufficiently vigorous conditions, ketones can undergo oxidative C-C bond cleavage on either side of the carbonyl group, yielding a mixture of carboxylic acids.',
@@ -882,9 +882,9 @@ export const ALDEHYDES_KETONES_CARBOXYLICACIDES = [
     question: 'Overall, the chemistry of aldehydes, ketones, and carboxylic acids, as emphasised throughout this NCERT chapter, centres on',
     options: [
       'the electrophilic nature of the carbonyl carbon, governing nucleophilic addition, oxidation-reduction behaviour, condensation reactions, and (for carboxylic acids) acidity and derivative formation',
+      'topics entirely unrelated to the carbonyl functional group',
       'only the physical appearance of these compounds',
-      'only their industrial cost of manufacture',
-      'topics entirely unrelated to the carbonyl functional group'
+      'only their industrial cost of manufacture'
     ],
     correctIndex: 0,
     explanation: 'The chapter integrates the structural and electronic basis of carbonyl reactivity with a wide range of chemical behaviours, from nucleophilic addition and redox reactions to condensation chemistry and the distinctive acidity and derivative chemistry of carboxylic acids.',
