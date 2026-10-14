@@ -1,15 +1,14 @@
 import { Link } from 'react-router-dom';
 import { CLASS_11, CLASS_12 } from '../data/physics/chapters';
-import { getChapterQuestions } from '../data/physics/questions';
+import { getChapterQuestionCount } from '../data/physics/questions';
 import { useProgress } from '../context/ProgressContext';
 import { RESOURCES } from '../data/resources';
 import '../styles/PhysicsHome.css';
 
 function ChapterCard({ chapter }) {
   const { state } = useProgress();
-  const questions = getChapterQuestions(chapter.id);
+  const total = getChapterQuestionCount(chapter.id);
   const attempt = state.attempts.physics?.[chapter.id];
-  const total = questions.length;
   const seen = attempt?.seen || 0;
   const pct = total ? Math.min(100, Math.round((seen / total) * 100)) : 0;
   const resources =
@@ -69,10 +68,11 @@ export default function PhysicsHome() {
   const { state } = useProgress();
   const attempts = state.attempts.physics || {};
   const mistakeCount = Object.keys(state.mistakes.physics || {}).length;
+  const bookmarkCount = Object.keys(state.bookmarks.physics || {}).length;
   const totalSeen = Object.values(attempts).reduce((s, a) => s + (a.seen || 0), 0);
   const totalCorrect = Object.values(attempts).reduce((s, a) => s + (a.correct || 0), 0);
   const accuracy = totalSeen ? Math.round((totalCorrect / totalSeen) * 100) : 0;
-  const chaptersLive = [...CLASS_11, ...CLASS_12].filter(c => getChapterQuestions(c.id).length > 0).length;
+  const chaptersLive = [...CLASS_11, ...CLASS_12].filter(c => getChapterQuestionCount(c.id) > 0).length;
 
   return (
     <main className="physics-home">
@@ -96,6 +96,10 @@ export default function PhysicsHome() {
 
       <Link to="/physics/mistakes" className="pill-btn">
         Mistake bank ({mistakeCount})
+      </Link>
+
+      <Link to="/physics/bookmarks" className="pill-btn">
+        Bookmarks ({bookmarkCount})
       </Link>
     </div>
 

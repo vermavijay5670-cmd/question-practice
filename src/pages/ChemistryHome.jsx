@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { CLASS_11, CLASS_12 } from '../data/chemistry/chapters';
-import { getChapterQuestions } from '../data/chemistry/questions';
+import { getChapterQuestionCount } from '../data/chemistry/questions';
 import { useProgress } from '../context/ProgressContext';
 import { RESOURCES } from '../data/resources';
 import '../styles/ChemistryHome.css';
@@ -8,11 +8,10 @@ import '../styles/ChemistryHome.css';
 function ChapterCard({ chapter }) {
   const { state } = useProgress();
 
-  const questions = getChapterQuestions(chapter.id);
+  const total = getChapterQuestionCount(chapter.id);
 
   const attempt = state.attempts.chemistry?.[chapter.id];
 
-  const total = questions.length;
   const seen = attempt?.seen || 0;
 
   const pct = total
@@ -141,6 +140,11 @@ export default function ChemistryHome() {
       state.mistakes.chemistry || {}
     ).length;
 
+  const bookmarkCount =
+    Object.keys(
+      state.bookmarks.chemistry || {}
+    ).length;
+
   const totalSeen =
     Object.values(attempts)
       .reduce(
@@ -172,7 +176,7 @@ export default function ChemistryHome() {
   const chaptersLive =
     allChapters.filter(
       chapter =>
-        getChapterQuestions(chapter.id).length > 0
+        getChapterQuestionCount(chapter.id) > 0
     ).length;
 
 
@@ -226,6 +230,13 @@ export default function ChemistryHome() {
             className="pill-btn"
           >
             Mistake bank ({mistakeCount})
+          </Link>
+
+          <Link
+            to="/chemistry/bookmarks"
+            className="pill-btn"
+          >
+            Bookmarks ({bookmarkCount})
           </Link>
 
         </div>

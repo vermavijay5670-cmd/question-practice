@@ -5,12 +5,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'A bar magnet, when suspended freely, always aligns itself approximately along the',
     options: [
-      'east-west direction',
-      'north-south direction (geographic)',
       'vertical direction',
-      'any random direction'
+      'east-west direction',
+      'any random direction',
+      'north-south direction (geographic)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A freely suspended bar magnet aligns itself approximately along the geographic north-south direction, due to the interaction between its own magnetic field and the Earth\'s magnetic field.',
     difficulty: 'easy'
   },
@@ -18,8 +18,8 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-2',
     type: 'mcq',
     question: 'The pole of a freely suspended magnet that points toward the geographic north is called the',
-    options: ['south pole of the magnet', 'north pole of the magnet', 'neutral pole', 'magnetic equator'],
-    correctIndex: 1,
+    options: ['neutral pole', 'magnetic equator', 'south pole of the magnet', 'north pole of the magnet'],
+    correctIndex: 3,
     explanation: 'By convention, the pole of a magnet that points toward geographic north is called the north pole (or north-seeking pole) of the magnet.',
     difficulty: 'easy'
   },
@@ -57,11 +57,11 @@ export const MAGNETISM_MATTER = [
     question: 'The magnetic field lines outside a bar magnet run from the',
     options: [
       'south pole to the north pole',
-      'north pole to the south pole',
       'centre of the magnet outward in all directions equally',
-      'they do not exist outside the magnet'
+      'they do not exist outside the magnet',
+      'north pole to the south pole'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Outside a bar magnet, magnetic field lines emerge from the north pole and curve around to enter the south pole, similar in pattern to the electric field lines of a dipole.',
     difficulty: 'easy'
   },
@@ -70,12 +70,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'Inside a bar magnet, the magnetic field lines run from the',
     options: [
+      'centre outward',
       'north pole to the south pole',
-      'south pole to the north pole, completing the loop that continues outside the magnet',
       'they do not exist inside the magnet',
-      'centre outward'
+      'south pole to the north pole, completing the loop that continues outside the magnet'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Unlike electric field lines (which start and end on charges), magnetic field lines form closed loops; inside the magnet, they run from the south pole to the north pole, completing the loop that runs from north to south outside.',
     difficulty: 'medium'
   },
@@ -85,11 +85,11 @@ export const MAGNETISM_MATTER = [
     question: 'Magnetic field lines, unlike electric field lines, always form',
     options: [
       'straight lines',
-      'closed loops (with no beginning or end)',
       'lines that terminate at a magnetic pole',
-      'random, non-continuous curves'
+      'random, non-continuous curves',
+      'closed loops (with no beginning or end)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since isolated magnetic poles do not exist, magnetic field lines cannot start or end at a point (unlike electric field lines terminating on charges); instead, they always form continuous closed loops.',
     difficulty: 'medium'
   },
@@ -98,12 +98,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'Gauss\'s law for magnetism states that the net magnetic flux through any closed surface is',
     options: [
-      'proportional to the enclosed magnetic charge',
-      'always zero, since magnetic monopoles do not exist',
       'equal to µ0 times the enclosed current',
-      'always positive'
+      'proportional to the enclosed magnetic charge',
+      'always positive',
+      'always zero, since magnetic monopoles do not exist'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Gauss\'s law for magnetism states ∮B·dA = 0 for any closed surface, reflecting the fact that magnetic monopoles do not exist, so as many field lines enter a closed surface as leave it.',
     difficulty: 'medium'
   },
@@ -112,10 +112,10 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'A bar magnet can be modelled, for many purposes, as equivalent to',
     options: [
-      'a single point charge',
+      'a stationary electron',
       'a solenoid carrying current, or as a magnetic dipole with two poles separated by a small distance',
       'an insulator with no field',
-      'a stationary electron'
+      'a single point charge'
     ],
     correctIndex: 1,
     explanation: 'A bar magnet is often modelled either as a solenoid (current loop analogy) or as a magnetic dipole with two poles of equal and opposite pole strength separated by a small distance, both giving similar external field patterns.',
@@ -126,12 +126,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'The magnetic dipole moment of a bar magnet is defined as',
     options: [
-      'the product of one pole strength and the distance between the poles (m = q_m × 2l)',
       'the current flowing through the magnet',
+      'the surface area of the magnet',
       'the mass of the magnet',
-      'the surface area of the magnet'
+      'the product of one pole strength and the distance between the poles (m = q_m × 2l)'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Analogous to electric dipole moment, the magnetic dipole moment of a bar magnet is defined as m = qm × 2l, where qm is the pole strength and 2l is the distance between the two poles.',
     difficulty: 'medium'
   },
@@ -140,10 +140,10 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'The direction of the magnetic dipole moment vector of a bar magnet is taken to be',
     options: [
-      'from the north pole to the south pole',
-      'from the south pole to the north pole',
       'perpendicular to the axis of the magnet',
-      'undefined for a bar magnet'
+      'from the south pole to the north pole',
+      'undefined for a bar magnet',
+      'from the north pole to the south pole'
     ],
     correctIndex: 1,
     explanation: 'By convention, the magnetic dipole moment vector of a bar magnet points from the south pole to the north pole, along the axis of the magnet.',
@@ -154,10 +154,10 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'A current loop and a bar magnet are considered equivalent because',
     options: [
-      'they have identical internal structure',
+      'a bar magnet cannot be placed in a magnetic field',
       'they produce similar magnetic field patterns at large distances and behave similarly when placed in an external magnetic field',
-      'a current loop has no magnetic moment',
-      'a bar magnet cannot be placed in a magnetic field'
+      'they have identical internal structure',
+      'a current loop has no magnetic moment'
     ],
     correctIndex: 1,
     explanation: 'Both a current loop and a bar magnet produce magnetic dipole-like fields at large distances and experience similar torques in an external field, which is the basis of the well-known equivalence between the two.',
@@ -167,8 +167,8 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-13',
     type: 'mcq',
     question: 'The torque experienced by a bar magnet of magnetic moment m placed in a uniform external magnetic field B, making angle θ with the field, is given by',
-    options: ['τ = mB sinθ', 'τ = mB cosθ', 'τ = mB tanθ', 'τ = mB, independent of θ'],
-    correctIndex: 0,
+    options: ['τ = mB, independent of θ', 'τ = mB cosθ', 'τ = mB tanθ', 'τ = mB sinθ'],
+    correctIndex: 3,
     explanation: 'The torque on a magnetic dipole in a uniform field is τ = m × B, with magnitude τ = mB sinθ, exactly analogous to the electric dipole torque formula.',
     difficulty: 'medium'
   },
@@ -176,7 +176,7 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-14',
     type: 'mcq',
     question: 'The potential energy of a bar magnet in a uniform external magnetic field, at angle θ to the field, is given by',
-    options: ['U = mB sinθ', 'U = -mB cosθ', 'U = mB cosθ', 'U = -mB sinθ'],
+    options: ['U = mB cosθ', 'U = -mB cosθ', 'U = -mB sinθ', 'U = mB sinθ'],
     correctIndex: 1,
     explanation: 'Analogous to an electric dipole, the potential energy of a magnetic dipole in a uniform field is U = -mB cosθ = -m·B, minimum (most stable) when m is aligned parallel to B.',
     difficulty: 'medium'
@@ -186,12 +186,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'A bar magnet is in stable equilibrium in an external uniform magnetic field when its magnetic moment is',
     options: [
+      'at 45° to the field',
       'perpendicular to the field',
-      'parallel to the field (aligned in the same direction)',
       'antiparallel to the field',
-      'at 45° to the field'
+      'parallel to the field (aligned in the same direction)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Potential energy U = -mB cosθ is minimum when θ = 0° (m parallel to B), corresponding to stable equilibrium.',
     difficulty: 'medium'
   },
@@ -201,11 +201,11 @@ export const MAGNETISM_MATTER = [
     question: 'The Earth\'s magnetic field is believed to originate primarily from',
     options: [
       'a giant permanent bar magnet at the Earth\'s core',
-      'convective motions of molten iron and other conducting materials in the Earth\'s outer core, acting as a dynamo',
+      'radioactive decay in the Earth\'s crust',
       'the Sun\'s magnetic field alone',
-      'radioactive decay in the Earth\'s crust'
+      'convective motions of molten iron and other conducting materials in the Earth\'s outer core, acting as a dynamo'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The currently accepted explanation for the Earth\'s magnetic field is the dynamo theory, attributing it to convective motion of molten conducting material in the outer core, rather than any solid permanent magnet (since the core is far too hot to retain permanent magnetism).',
     difficulty: 'medium'
   },
@@ -214,10 +214,10 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'The three elements of the Earth\'s magnetic field at a given location are',
     options: [
-      'temperature, pressure, and humidity',
+      'north pole, south pole, and equator',
       'declination, dip (inclination), and horizontal component of the field',
-      'latitude, longitude, and altitude',
-      'north pole, south pole, and equator'
+      'temperature, pressure, and humidity',
+      'latitude, longitude, and altitude'
     ],
     correctIndex: 1,
     explanation: 'The Earth\'s magnetic field at a point is completely specified by three elements: declination (angle between magnetic and geographic meridians), dip/inclination (angle the field makes with the horizontal), and the horizontal component of the field.',
@@ -228,10 +228,10 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'Magnetic declination at a place is defined as the angle between',
     options: [
-      'the magnetic field and the vertical',
-      'the geographic meridian and the magnetic meridian at that place',
       'the magnetic field and the ground',
-      'true north and true south'
+      'the geographic meridian and the magnetic meridian at that place',
+      'true north and true south',
+      'the magnetic field and the vertical'
     ],
     correctIndex: 1,
     explanation: 'Declination is the angle between the true geographic north (geographic meridian) and the direction indicated by a compass needle (magnetic meridian) at a given location.',
@@ -255,8 +255,8 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-20',
     type: 'mcq',
     question: 'At the magnetic equator, the angle of dip is approximately',
-    options: ['90°', '0°', '45°', '180°'],
-    correctIndex: 1,
+    options: ['45°', '90°', '180°', '0°'],
+    correctIndex: 3,
     explanation: 'At the magnetic equator, the Earth\'s magnetic field is entirely horizontal (parallel to the surface), so the angle of dip is 0°.',
     difficulty: 'medium'
   },
@@ -264,8 +264,8 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-21',
     type: 'mcq',
     question: 'At the magnetic poles, the angle of dip is approximately',
-    options: ['0°', '45°', '90°, with the field pointing vertically into or out of the Earth', '180°'],
-    correctIndex: 2,
+    options: ['0°', '45°', '180°', '90°, with the field pointing vertically into or out of the Earth'],
+    correctIndex: 3,
     explanation: 'At the magnetic poles, the Earth\'s magnetic field is entirely vertical (perpendicular to the surface), giving an angle of dip of 90°.',
     difficulty: 'medium'
   },
@@ -274,10 +274,10 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'The horizontal component of the Earth\'s magnetic field is generally',
     options: [
-      'maximum at the poles and zero at the equator',
+      'always directed vertically',
       'maximum at the equator and zero (or minimum) at the poles',
-      'the same everywhere on Earth',
-      'always directed vertically'
+      'maximum at the poles and zero at the equator',
+      'the same everywhere on Earth'
     ],
     correctIndex: 1,
     explanation: 'The horizontal component is largest at the magnetic equator (where the field is entirely horizontal) and diminishes toward the poles, becoming zero at the poles where the field is entirely vertical.',
@@ -288,9 +288,9 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'The geographic north pole of the Earth is actually close to the Earth\'s magnetic',
     options: [
-      'north pole (magnetic north pole)',
-      'south pole (i.e., the Earth\'s magnetic dipole is oriented such that its south pole is near geographic north)',
       'equator',
+      'south pole (i.e., the Earth\'s magnetic dipole is oriented such that its south pole is near geographic north)',
+      'north pole (magnetic north pole)',
       'core'
     ],
     correctIndex: 1,
@@ -302,12 +302,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'A magnetic material is said to be "magnetized" or "polarized" when',
     options: [
-      'it develops a net magnetic dipole moment per unit volume under the influence of an external field',
       'it loses all its magnetic properties',
       'it becomes an electrical conductor',
-      'its temperature increases significantly'
+      'its temperature increases significantly',
+      'it develops a net magnetic dipole moment per unit volume under the influence of an external field'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Magnetization refers to the net magnetic dipole moment developed per unit volume of a material, typically induced (or enhanced) when the material is placed in an external magnetic field.',
     difficulty: 'medium'
   },
@@ -318,8 +318,8 @@ export const MAGNETISM_MATTER = [
     options: [
       'the total magnetic moment of the sample',
       'the net magnetic dipole moment per unit volume of the material',
-      'the external magnetic field applied to the material',
-      'the magnetic susceptibility of the material'
+      'the magnetic susceptibility of the material',
+      'the external magnetic field applied to the material'
     ],
     correctIndex: 1,
     explanation: 'Magnetization M is defined as the net magnetic moment per unit volume of the material, M = m/V, and has the same units as magnetic field intensity H.',
@@ -330,12 +330,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'Magnetic susceptibility (χ) of a material is defined as',
     options: [
+      'the resistivity of the material',
       'the ratio of the magnetic field B to the applied field H',
-      'the ratio of the magnetization M to the magnetic intensity H (χ = M/H)',
       'the total magnetic moment of the material',
-      'the resistivity of the material'
+      'the ratio of the magnetization M to the magnetic intensity H (χ = M/H)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Magnetic susceptibility χ is defined as M/H, indicating how readily a material becomes magnetized in response to an applied magnetizing field H.',
     difficulty: 'medium'
   },
@@ -345,11 +345,11 @@ export const MAGNETISM_MATTER = [
     question: 'Diamagnetic materials are characterized by',
     options: [
       'a small positive susceptibility, weakly attracted to a magnetic field',
-      'a small negative susceptibility, weakly repelled by a magnetic field',
+      'zero susceptibility under all conditions',
       'a large positive susceptibility, strongly attracted to a magnetic field',
-      'zero susceptibility under all conditions'
+      'a small negative susceptibility, weakly repelled by a magnetic field'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Diamagnetic materials have a small negative susceptibility; they are weakly repelled by an external magnetic field and tend to move from stronger to weaker field regions.',
     difficulty: 'medium'
   },
@@ -373,11 +373,11 @@ export const MAGNETISM_MATTER = [
     question: 'Ferromagnetic materials are characterized by',
     options: [
       'a small negative susceptibility',
+      'zero susceptibility under all conditions',
       'a small positive susceptibility, similar to paramagnetic materials',
-      'a very large positive susceptibility, strongly attracted to a magnetic field, and can retain magnetization even after the external field is removed',
-      'zero susceptibility under all conditions'
+      'a very large positive susceptibility, strongly attracted to a magnetic field, and can retain magnetization even after the external field is removed'
     ],
-    correctIndex: 2,
+    correctIndex: 3,
     explanation: 'Ferromagnetic materials have very large positive susceptibility, are strongly attracted by magnetic fields, and can retain significant magnetization even after the external field is removed (a property called retentivity).',
     difficulty: 'medium'
   },
@@ -385,8 +385,8 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-30',
     type: 'mcq',
     question: 'Common examples of diamagnetic materials include',
-    options: ['iron, cobalt, nickel', 'aluminium, chromium, sodium', 'bismuth, copper, water', 'all metals equally'],
-    correctIndex: 2,
+    options: ['aluminium, chromium, sodium', 'bismuth, copper, water', 'iron, cobalt, nickel', 'all metals equally'],
+    correctIndex: 1,
     explanation: 'Bismuth, copper, water, and gold are classic examples of diamagnetic materials, showing weak repulsion from magnetic fields.',
     difficulty: 'medium'
   },
@@ -403,8 +403,8 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-32',
     type: 'mcq',
     question: 'Common examples of ferromagnetic materials include',
-    options: ['bismuth, copper, gold', 'iron, cobalt, nickel, and their alloys', 'aluminium, sodium', 'all gases'],
-    correctIndex: 1,
+    options: ['bismuth, copper, gold', 'aluminium, sodium', 'all gases', 'iron, cobalt, nickel, and their alloys'],
+    correctIndex: 3,
     explanation: 'Iron, cobalt, nickel, and various alloys (like alnico) are the classic examples of strongly ferromagnetic materials.',
     difficulty: 'easy'
   },
@@ -413,9 +413,9 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'The microscopic origin of diamagnetism lies in',
     options: [
-      'the permanent magnetic moments of atoms/molecules aligning with the field',
-      'the orbital motion of electrons, which, according to Lenz\'s law, induces a magnetic moment opposing the applied field',
       'the alignment of atomic domains',
+      'the orbital motion of electrons, which, according to Lenz\'s law, induces a magnetic moment opposing the applied field',
+      'the permanent magnetic moments of atoms/molecules aligning with the field',
       'the presence of unpaired electrons'
     ],
     correctIndex: 1,
@@ -428,11 +428,11 @@ export const MAGNETISM_MATTER = [
     question: 'The microscopic origin of paramagnetism lies in',
     options: [
       'the induced orbital motion of electrons opposing the field',
-      'the presence of atoms/molecules with permanent (but randomly oriented) magnetic dipole moments, which tend to align with an external field',
+      'the complete absence of electrons in the material',
       'domains of aligned atoms that persist even without an external field',
-      'the complete absence of electrons in the material'
+      'the presence of atoms/molecules with permanent (but randomly oriented) magnetic dipole moments, which tend to align with an external field'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Paramagnetic materials have atoms/molecules with permanent (but normally randomly oriented, due to thermal agitation) magnetic dipole moments; an external field tends to partially align these moments, producing weak net magnetization.',
     difficulty: 'hard'
   },
@@ -440,8 +440,8 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-35',
     type: 'mcq',
     question: 'The concept of "magnetic domains" is specifically associated with',
-    options: ['diamagnetic materials', 'paramagnetic materials', 'ferromagnetic materials', 'all materials equally'],
-    correctIndex: 2,
+    options: ['all materials equally', 'diamagnetic materials', 'paramagnetic materials', 'ferromagnetic materials'],
+    correctIndex: 3,
     explanation: 'Ferromagnetic materials are characterized by domains — small regions where atomic magnetic moments are spontaneously aligned in the same direction, even without an external field, giving rise to strong overall magnetization when domains align.',
     difficulty: 'medium'
   },
@@ -450,9 +450,9 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'When an external magnetic field is applied to an unmagnetized ferromagnetic material, the domains',
     options: [
-      'remain unaffected',
-      'grow in size and align themselves along the direction of the applied field, producing strong overall magnetization',
       'disappear entirely',
+      'grow in size and align themselves along the direction of the applied field, producing strong overall magnetization',
+      'remain unaffected',
       'randomize their orientation further'
     ],
     correctIndex: 1,
@@ -463,7 +463,7 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-37',
     type: 'mcq',
     question: 'The phenomenon where a ferromagnetic material retains some magnetization even after the external magnetizing field is removed is called',
-    options: ['susceptibility', 'retentivity (or remanence)', 'permeability', 'coercivity'],
+    options: ['coercivity', 'retentivity (or remanence)', 'permeability', 'susceptibility'],
     correctIndex: 1,
     explanation: 'Retentivity (or remanence) refers to the residual magnetization that remains in a ferromagnetic material after the external magnetizing field has been reduced to zero.',
     difficulty: 'medium'
@@ -472,8 +472,8 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-38',
     type: 'mcq',
     question: 'The reverse magnetizing field required to completely demagnetize a ferromagnetic material (reduce its retained magnetization to zero) is called its',
-    options: ['retentivity', 'coercivity', 'permeability', 'susceptibility'],
-    correctIndex: 1,
+    options: ['permeability', 'retentivity', 'susceptibility', 'coercivity'],
+    correctIndex: 3,
     explanation: 'Coercivity is the magnitude of the reverse magnetic field that must be applied to a magnetized ferromagnetic material to reduce its residual magnetization to zero.',
     difficulty: 'medium'
   },
@@ -482,10 +482,10 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'The hysteresis loop (B-H curve) of a ferromagnetic material shows that',
     options: [
-      'B and H are always directly proportional, with no lag',
-      'the magnetization (B) lags behind the magnetizing field (H), and the material retains some magnetization even when H is reduced to zero',
       'the material never gets magnetized',
-      'B decreases to zero exactly when H decreases to zero'
+      'the magnetization (B) lags behind the magnetizing field (H), and the material retains some magnetization even when H is reduced to zero',
+      'B decreases to zero exactly when H decreases to zero',
+      'B and H are always directly proportional, with no lag'
     ],
     correctIndex: 1,
     explanation: 'The hysteresis loop demonstrates that B does not retrace the same path as H during increasing and decreasing cycles, lagging behind H, and crucially, B remains non-zero (retentivity) even when H returns to zero.',
@@ -497,11 +497,11 @@ export const MAGNETISM_MATTER = [
     question: 'Materials with a high retentivity and high coercivity (large hysteresis loop area) are used for making',
     options: [
       'electromagnets used in transformers',
-      'permanent magnets',
       'the cores of AC generators only',
-      'materials with no magnetic use'
+      'materials with no magnetic use',
+      'permanent magnets'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Materials with both high retentivity (retain strong magnetization) and high coercivity (resist demagnetization) are ideal for permanent magnets, such as alnico or steel.',
     difficulty: 'medium'
   },
@@ -510,10 +510,10 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'Materials with low retentivity and low coercivity (narrow, small-area hysteresis loop) are preferred for use in',
     options: [
-      'permanent magnets',
+      'refrigerator magnets',
       'electromagnets and transformer cores, where the material needs to be easily magnetized and demagnetized repeatedly with minimal energy loss',
       'compass needles',
-      'refrigerator magnets'
+      'permanent magnets'
     ],
     correctIndex: 1,
     explanation: 'Soft magnetic materials with narrow hysteresis loops (low retentivity, low coercivity) lose less energy per cycle of magnetization/demagnetization, making them ideal for transformer cores and electromagnets subjected to alternating fields.',
@@ -524,12 +524,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'Soft iron is preferred over steel for making the core of an electromagnet mainly because soft iron has',
     options: [
-      'high retentivity, so it stays permanently magnetized',
-      'low retentivity and low coercivity, so it can be magnetized and demagnetized quickly and easily as current is switched on/off',
+      'no magnetic properties at all',
       'high electrical resistivity',
-      'no magnetic properties at all'
+      'high retentivity, so it stays permanently magnetized',
+      'low retentivity and low coercivity, so it can be magnetized and demagnetized quickly and easily as current is switched on/off'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Soft iron has low retentivity and low coercivity, meaning it loses its magnetization almost completely once the current (and hence the external field) is switched off, making it ideal for electromagnets that need to be turned on and off.',
     difficulty: 'medium'
   },
@@ -538,10 +538,10 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'Steel is preferred over soft iron for making permanent magnets because steel has',
     options: [
-      'lower retentivity than soft iron',
-      'higher retentivity and higher coercivity than soft iron, allowing it to retain strong magnetization and resist demagnetization',
       'no magnetic domains',
-      'higher electrical conductivity'
+      'higher retentivity and higher coercivity than soft iron, allowing it to retain strong magnetization and resist demagnetization',
+      'higher electrical conductivity',
+      'lower retentivity than soft iron'
     ],
     correctIndex: 1,
     explanation: 'Steel retains a larger fraction of its magnetization (higher retentivity) and requires a stronger reverse field to demagnetize (higher coercivity) compared to soft iron, making it suitable for permanent magnets.',
@@ -553,11 +553,11 @@ export const MAGNETISM_MATTER = [
     question: 'The Curie temperature of a ferromagnetic material is the temperature above which',
     options: [
       'the material becomes superconducting',
-      'the material loses its ferromagnetic properties and behaves as a paramagnetic material, due to thermal agitation disrupting domain alignment',
       'the material becomes diamagnetic',
-      'the material melts completely'
+      'the material melts completely',
+      'the material loses its ferromagnetic properties and behaves as a paramagnetic material, due to thermal agitation disrupting domain alignment'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Above the Curie temperature, thermal energy overcomes the tendency of atomic magnetic moments to align in domains, and the ferromagnetic material transitions to paramagnetic behaviour.',
     difficulty: 'medium'
   },
@@ -566,12 +566,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'According to Curie\'s law, the magnetic susceptibility of a paramagnetic material is',
     options: [
-      'independent of temperature',
-      'inversely proportional to the absolute temperature (χ ∝ 1/T)',
+      'independent of the applied magnetic field',
       'directly proportional to the absolute temperature',
-      'independent of the applied magnetic field'
+      'independent of temperature',
+      'inversely proportional to the absolute temperature (χ ∝ 1/T)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Curie\'s law states χ = C/T, where C is the Curie constant, meaning paramagnetic susceptibility decreases as temperature increases, since higher thermal agitation disrupts the alignment of dipole moments with the field.',
     difficulty: 'medium'
   },
@@ -580,10 +580,10 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'The reason paramagnetic susceptibility decreases with increasing temperature (Curie\'s law) is that',
     options: [
-      'the number of atoms decreases with temperature',
+      'the material\'s volume increases significantly with temperature',
       'increased thermal agitation at higher temperature disrupts the alignment of the atomic magnetic dipoles with the external field',
       'the applied field decreases with temperature',
-      'the material\'s volume increases significantly with temperature'
+      'the number of atoms decreases with temperature'
     ],
     correctIndex: 1,
     explanation: 'At higher temperatures, increased random thermal motion of atoms/molecules works against the tendency of dipoles to align with the external field, reducing the net magnetization and hence the susceptibility.',
@@ -594,12 +594,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'Diamagnetic materials, unlike paramagnetic and ferromagnetic materials, show susceptibility that is',
     options: [
-      'strongly temperature dependent',
-      'essentially independent of temperature',
       'directly proportional to temperature',
-      'always negative and increases sharply with temperature'
+      'always negative and increases sharply with temperature',
+      'strongly temperature dependent',
+      'essentially independent of temperature'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Diamagnetism arises from induced effects on electron orbital motion (not from thermally-disrupted permanent dipoles), so diamagnetic susceptibility is largely independent of temperature, unlike paramagnetic susceptibility.',
     difficulty: 'medium'
   },
@@ -608,10 +608,10 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'When a diamagnetic material is placed in a non-uniform magnetic field, it tends to move',
     options: [
-      'from weaker field regions to stronger field regions',
+      'perpendicular to the field gradient',
       'from stronger field regions to weaker field regions',
       'it remains stationary regardless of field',
-      'perpendicular to the field gradient'
+      'from weaker field regions to stronger field regions'
     ],
     correctIndex: 1,
     explanation: 'Diamagnetic materials, being weakly repelled by magnetic fields, tend to move from regions of stronger field to regions of weaker field when placed in a non-uniform field.',
@@ -622,12 +622,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'When a paramagnetic material is placed in a non-uniform magnetic field, it tends to move',
     options: [
-      'from stronger field regions to weaker field regions',
-      'from weaker field regions to stronger field regions',
       'it remains stationary',
-      'in a circular path around the field source'
+      'in a circular path around the field source',
+      'from stronger field regions to weaker field regions',
+      'from weaker field regions to stronger field regions'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Paramagnetic materials are weakly attracted to magnetic fields and tend to move from weaker field regions toward stronger field regions in a non-uniform field.',
     difficulty: 'medium'
   },
@@ -635,7 +635,7 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-50',
     type: 'mcq',
     question: 'The relative magnetic permeability (µr) of a material is related to its susceptibility (χ) by',
-    options: ['µr = χ', 'µr = 1 + χ', 'µr = 1 - χ', 'µr = χ²'],
+    options: ['µr = χ²', 'µr = 1 + χ', 'µr = χ', 'µr = 1 - χ'],
     correctIndex: 1,
     explanation: 'The relative permeability of a magnetic material is related to susceptibility by µr = 1 + χ, a standard NCERT result connecting these two ways of characterizing a material\'s magnetic response.',
     difficulty: 'medium'
@@ -645,9 +645,9 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'For diamagnetic materials, since χ is small and negative, the relative permeability µr is',
     options: [
-      'slightly greater than 1',
-      'slightly less than 1',
       'exactly equal to 1',
+      'slightly less than 1',
+      'slightly greater than 1',
       'much greater than 1'
     ],
     correctIndex: 1,
@@ -659,12 +659,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'For paramagnetic materials, since χ is small and positive, the relative permeability µr is',
     options: [
-      'slightly less than 1',
-      'slightly greater than 1',
+      'always negative',
       'exactly equal to 1',
-      'always negative'
+      'slightly less than 1',
+      'slightly greater than 1'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since µr = 1 + χ and χ is small and positive for paramagnetic materials, µr is slightly greater than 1.',
     difficulty: 'medium'
   },
@@ -673,12 +673,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'For ferromagnetic materials, the relative permeability µr is',
     options: [
-      'slightly less than 1',
       'slightly greater than 1',
-      'much greater than 1 (can be in the thousands for some materials)',
-      'always exactly 1'
+      'always exactly 1',
+      'slightly less than 1',
+      'much greater than 1 (can be in the thousands for some materials)'
     ],
-    correctIndex: 2,
+    correctIndex: 3,
     explanation: 'Ferromagnetic materials have very large positive susceptibility, leading to a relative permeability that can be in the hundreds or thousands, far exceeding that of para- or diamagnetic materials.',
     difficulty: 'medium'
   },
@@ -686,7 +686,7 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-54',
     type: 'mcq',
     question: 'A superconductor placed in an external magnetic field expels the magnetic field from its interior. This phenomenon is called',
-    options: ['the Curie effect', 'the Meissner effect', 'the Hall effect', 'hysteresis'],
+    options: ['hysteresis', 'the Meissner effect', 'the Curie effect', 'the Hall effect'],
     correctIndex: 1,
     explanation: 'The Meissner effect refers to the expulsion of magnetic field lines from the interior of a superconductor, making it behave as a perfect diamagnet (χ = -1, µr = 0) below its critical temperature.',
     difficulty: 'medium'
@@ -695,8 +695,8 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-55',
     type: 'mcq',
     question: 'A superconductor can be considered an extreme (perfect) diamagnetic material because its magnetic susceptibility is',
-    options: ['zero', 'slightly negative', 'exactly -1', 'very large and positive'],
-    correctIndex: 2,
+    options: ['slightly negative', 'zero', 'very large and positive', 'exactly -1'],
+    correctIndex: 3,
     explanation: 'For a superconductor, χ = -1 exactly (a perfect diamagnet), meaning it completely cancels any external field within itself, consistent with the Meissner effect.',
     difficulty: 'hard'
   },
@@ -714,12 +714,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'Two magnetic field lines can never intersect each other because',
     options: [
-      'they repel each other physically',
-      'if they intersected, the magnetic field at that point would have two different directions simultaneously, which is not physically possible',
+      'magnetic fields do not really exist',
       'field lines are always straight',
-      'magnetic fields do not really exist'
+      'they repel each other physically',
+      'if they intersected, the magnetic field at that point would have two different directions simultaneously, which is not physically possible'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Just as with electric field lines, magnetic field lines cannot intersect because the magnetic field at any given point has a single, well-defined direction; intersection would imply two directions at once.',
     difficulty: 'medium'
   },
@@ -736,8 +736,8 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-59',
     type: 'mcq',
     question: 'The magnetic field on the axial line of a short bar magnet is how many times the field on its equatorial line, at the same distance?',
-    options: ['Equal', 'Half', 'Twice', 'Four times'],
-    correctIndex: 2,
+    options: ['Half', 'Twice', 'Four times', 'Equal'],
+    correctIndex: 1,
     explanation: 'Analogous to the electric dipole case, the axial field of a short bar magnet is twice the equatorial field at the same distance, Baxial = 2Bequatorial (both proportional to m/d³, with the axial expression having an extra factor of 2).',
     difficulty: 'hard'
   },
@@ -746,10 +746,10 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'A compass needle placed near a current-carrying wire experiences a deflection because',
     options: [
-      'the wire heats up and creates air currents',
+      'gravity between the wire and the needle changes',
       'the current-carrying wire produces its own magnetic field, which exerts a torque on the compass needle (itself a small magnet)',
-      'the compass needle becomes electrically charged',
-      'gravity between the wire and the needle changes'
+      'the wire heats up and creates air currents',
+      'the compass needle becomes electrically charged'
     ],
     correctIndex: 1,
     explanation: 'A current-carrying wire generates a magnetic field around it (as per the Biot-Savart/Ampere laws), and this field interacts with the compass needle\'s own magnetic dipole moment, producing a deflecting torque — this was Oersted\'s historic observation.',
@@ -761,11 +761,11 @@ export const MAGNETISM_MATTER = [
     question: 'Oersted\'s discovery that a current-carrying wire deflects a nearby compass needle was historically significant because it',
     options: [
       'proved that electricity and magnetism were entirely unrelated phenomena',
-      'was the first experimental evidence linking electricity and magnetism, showing that electric currents produce magnetic effects',
+      'showed that compass needles cannot be affected by any external influence',
       'disproved the existence of magnetic fields',
-      'showed that compass needles cannot be affected by any external influence'
+      'was the first experimental evidence linking electricity and magnetism, showing that electric currents produce magnetic effects'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Oersted\'s accidental observation that current deflects a compass needle was a landmark discovery, providing the first experimental link between electricity and magnetism and paving the way for the unified theory of electromagnetism.',
     difficulty: 'medium'
   },
@@ -774,12 +774,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'A tangent galvanometer is a device that uses',
     options: [
-      'the deflection of a compass needle at the centre of a current-carrying circular coil, compared against the Earth\'s horizontal magnetic field, to measure current',
+      'radioactive decay to measure current',
       'a moving coil suspended by a spring',
-      'a solenoid without any coil',
-      'radioactive decay to measure current'
+      'the deflection of a compass needle at the centre of a current-carrying circular coil, compared against the Earth\'s horizontal magnetic field, to measure current',
+      'a solenoid without any coil'
     ],
-    correctIndex: 0,
+    correctIndex: 2,
     explanation: 'A tangent galvanometer uses a magnetic compass needle placed at the centre of a vertical circular current-carrying coil; the needle\'s deflection depends on the tangent of the angle between the coil\'s field and the Earth\'s horizontal field, hence its name.',
     difficulty: 'medium'
   },
@@ -788,9 +788,9 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'The similarity between magnetism and electrostatics (e.g., magnetic dipole vs. electric dipole, susceptibility vs. polarizability) is useful because',
     options: [
-      'the two phenomena are governed by identical physical laws with no differences',
-      'it allows many formulas and concepts from electrostatics to be adapted (with appropriate substitutions) to magnetostatics, aiding conceptual understanding',
       'electric and magnetic fields are actually the same field',
+      'it allows many formulas and concepts from electrostatics to be adapted (with appropriate substitutions) to magnetostatics, aiding conceptual understanding',
+      'the two phenomena are governed by identical physical laws with no differences',
       'magnetism can be completely explained without reference to electric currents'
     ],
     correctIndex: 1,
@@ -802,12 +802,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'A key difference between electrostatics and magnetostatics is that',
     options: [
-      'electric field lines can form closed loops, but magnetic field lines cannot',
-      'isolated electric charges (monopoles) exist, but isolated magnetic poles (monopoles) do not exist in nature',
       'magnetic fields obey an inverse-cube law while electric fields obey an inverse-square law, always',
-      'there is no relationship between the two at all'
+      'there is no relationship between the two at all',
+      'isolated electric charges (monopoles) exist, but isolated magnetic poles (monopoles) do not exist in nature',
+      'electric field lines can form closed loops, but magnetic field lines cannot'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A fundamental distinction is that isolated electric charges exist freely, while magnetic poles always occur in pairs (dipoles); this is why electric field lines can begin/end on charges but magnetic field lines must always form closed loops.',
     difficulty: 'medium'
   },
@@ -817,11 +817,11 @@ export const MAGNETISM_MATTER = [
     question: 'Magnetic materials used for making the cores of transformers must have',
     options: [
       'high retentivity and high coercivity, similar to permanent magnet materials',
-      'low hysteresis loss (small hysteresis loop area) and high permeability, to minimize energy loss during repeated magnetization cycles',
+      'very high electrical resistivity but low magnetic response',
       'zero magnetic permeability',
-      'very high electrical resistivity but low magnetic response'
+      'low hysteresis loss (small hysteresis loop area) and high permeability, to minimize energy loss during repeated magnetization cycles'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Transformer cores experience continuous cycles of magnetization/demagnetization due to alternating current, so materials with small hysteresis loop area (low energy loss per cycle) and high permeability (efficient flux linkage) are preferred, such as soft iron.',
     difficulty: 'medium'
   },
@@ -830,12 +830,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'The magnetic field of the Earth is best modelled, to a first approximation, as that of',
     options: [
+      'a uniformly charged sphere',
       'a point charge at the centre of the Earth',
-      'a short bar magnet (magnetic dipole) located approximately at the centre of the Earth, tilted at an angle to the rotational axis',
       'a straight infinite current-carrying wire',
-      'a uniformly charged sphere'
+      'a short bar magnet (magnetic dipole) located approximately at the centre of the Earth, tilted at an angle to the rotational axis'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The Earth\'s magnetic field, to a good first approximation, resembles that of a short bar magnet (magnetic dipole) located near the Earth\'s centre, tilted at an angle (about 11.3°) to the Earth\'s rotational axis.',
     difficulty: 'medium'
   },
@@ -843,7 +843,7 @@ export const MAGNETISM_MATTER = [
     id: 'magnetism-matter-67',
     type: 'mcq',
     question: 'The angle between the Earth\'s magnetic axis and its rotational (geographic) axis is approximately',
-    options: ['0°', '11.3°', '45°', '90°'],
+    options: ['90°', '11.3°', '45°', '0°'],
     correctIndex: 1,
     explanation: 'The Earth\'s magnetic axis is tilted at approximately 11.3° from its rotational (geographic) axis, which is why the magnetic poles do not exactly coincide with the geographic poles.',
     difficulty: 'medium'
@@ -853,12 +853,12 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'A neutral point in the context of a bar magnet placed in the Earth\'s magnetic field is a point where',
     options: [
-      'the magnetic field due to the bar magnet is exactly zero',
-      'the resultant magnetic field (due to the magnet and the Earth\'s horizontal field combined) is zero',
+      'the temperature is zero',
       'the electric field is zero',
-      'the temperature is zero'
+      'the resultant magnetic field (due to the magnet and the Earth\'s horizontal field combined) is zero',
+      'the magnetic field due to the bar magnet is exactly zero'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A neutral point is a location where the magnetic field due to the bar magnet exactly cancels the Earth\'s horizontal magnetic field component, resulting in zero net (resultant) magnetic field at that point — useful for experimentally determining the bar magnet\'s field strength.',
     difficulty: 'hard'
   },
@@ -881,10 +881,10 @@ export const MAGNETISM_MATTER = [
     type: 'mcq',
     question: 'Hysteresis, as observed in the B-H curve of a ferromagnetic material, essentially represents',
     options: [
-      'the material becoming permanently non-magnetic',
+      'the complete absence of any relationship between B and H',
       'energy dissipated (as heat) within the material during each cycle of magnetization and demagnetization, related to the area enclosed by the loop',
       'an error in measurement with no physical significance',
-      'the complete absence of any relationship between B and H'
+      'the material becoming permanently non-magnetic'
     ],
     correctIndex: 1,
     explanation: 'The area enclosed by the hysteresis loop (B-H curve) represents the energy dissipated as heat per unit volume of the material during one complete cycle of magnetization and demagnetization.',

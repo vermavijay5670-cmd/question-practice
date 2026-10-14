@@ -19,12 +19,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'According to the classical concept, reduction is defined as',
     options: [
-      'addition of oxygen to a substance',
       'removal of hydrogen from a substance',
-      'addition of hydrogen or an electropositive element, or removal of oxygen, from a substance',
-      'loss of electrons by a substance'
+      'loss of electrons by a substance',
+      'addition of oxygen to a substance',
+      'addition of hydrogen or an electropositive element, or removal of oxygen, from a substance'
     ],
-    correctIndex: 2,
+    correctIndex: 3,
     explanation: 'Reduction, in the classical sense, is the addition of hydrogen or an electropositive element, or the removal of oxygen or an electronegative element, from a substance.',
     difficulty: 'easy'
   },
@@ -32,8 +32,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-3',
     type: 'mcq',
     question: 'In the electronic concept of redox reactions, oxidation is defined as a process involving',
-    options: ['loss of electrons', 'gain of electrons', 'gain of protons', 'no change in electron count'],
-    correctIndex: 0,
+    options: ['no change in electron count', 'loss of electrons', 'gain of protons', 'gain of electrons'],
+    correctIndex: 1,
     explanation: 'The electronic concept defines oxidation as the loss of one or more electrons by an atom, ion, or molecule.',
     difficulty: 'easy'
   },
@@ -41,7 +41,7 @@ export const REDOX_REACTIONS = [
     id: 'redox-4',
     type: 'mcq',
     question: 'In the electronic concept of redox reactions, reduction is defined as a process involving',
-    options: ['loss of electrons', 'gain of electrons', 'loss of protons', 'gain of neutrons'],
+    options: ['loss of protons', 'gain of electrons', 'loss of electrons', 'gain of neutrons'],
     correctIndex: 1,
     explanation: 'Reduction, in the electronic concept, is the gain of one or more electrons by a species.',
     difficulty: 'easy'
@@ -51,12 +51,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'A redox reaction is best described as a reaction in which',
     options: [
-      'only oxidation occurs',
       'only reduction occurs',
-      'oxidation and reduction occur simultaneously, since electrons lost by one species are gained by another',
-      'no transfer of electrons takes place'
+      'only oxidation occurs',
+      'no transfer of electrons takes place',
+      'oxidation and reduction occur simultaneously, since electrons lost by one species are gained by another'
     ],
-    correctIndex: 2,
+    correctIndex: 3,
     explanation: 'A redox reaction always involves oxidation and reduction occurring together, since electrons lost by the substance being oxidised must be gained by the substance being reduced.',
     difficulty: 'easy'
   },
@@ -64,8 +64,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-6',
     type: 'mcq',
     question: 'A substance that gains electrons and gets reduced during a redox reaction is called the',
-    options: ['reducing agent', 'oxidising agent', 'catalyst', 'spectator species'],
-    correctIndex: 1,
+    options: ['catalyst', 'reducing agent', 'spectator species', 'oxidising agent'],
+    correctIndex: 3,
     explanation: 'The species that gains electrons (and is itself reduced) causes oxidation of the other species, and is therefore called the oxidising agent or oxidant.',
     difficulty: 'easy'
   },
@@ -73,7 +73,7 @@ export const REDOX_REACTIONS = [
     id: 'redox-7',
     type: 'mcq',
     question: 'A substance that loses electrons and gets oxidised during a redox reaction is called the',
-    options: ['oxidising agent', 'reducing agent', 'electrolyte', 'buffer'],
+    options: ['electrolyte', 'reducing agent', 'buffer', 'oxidising agent'],
     correctIndex: 1,
     explanation: 'The species that loses electrons (and is itself oxidised) causes reduction of the other species, and is therefore called the reducing agent or reductant.',
     difficulty: 'easy'
@@ -84,11 +84,11 @@ export const REDOX_REACTIONS = [
     question: 'The oxidation number of an atom is best described as',
     options: [
       'the actual charge present on that atom in a molecule',
-      'a formal charge assigned to an atom assuming all bonds to be fully ionic',
       'always equal to its valency',
-      'always a whole number, never fractional'
+      'always a whole number, never fractional',
+      'a formal charge assigned to an atom assuming all bonds to be fully ionic'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Oxidation number is a formal (hypothetical) charge assigned to an atom in a molecule or ion on the assumption that the bonding is completely ionic, following a set of assignment rules.',
     difficulty: 'medium'
   },
@@ -96,8 +96,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-9',
     type: 'mcq',
     question: 'The oxidation number of any atom in its free/elemental state (e.g. Na(s), O2(g), P4(s)) is',
-    options: ['+1', '-1', 'zero', 'equal to its group number'],
-    correctIndex: 2,
+    options: ['+1', 'zero', '-1', 'equal to its group number'],
+    correctIndex: 1,
     explanation: 'By convention, the oxidation number of an atom in its free elemental form is always taken as zero.',
     difficulty: 'easy'
   },
@@ -105,8 +105,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-10',
     type: 'mcq',
     question: 'For a monoatomic ion, the oxidation number of the atom equals',
-    options: ['zero always', 'the charge carried by the ion', 'twice the charge on the ion', 'its group number in the periodic table'],
-    correctIndex: 1,
+    options: ['twice the charge on the ion', 'its group number in the periodic table', 'zero always', 'the charge carried by the ion'],
+    correctIndex: 3,
     explanation: 'For simple monoatomic ions, the oxidation number is taken as equal to the charge on the ion, e.g. Na+ has oxidation number +1, Cl- has oxidation number -1.',
     difficulty: 'easy'
   },
@@ -114,8 +114,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-11',
     type: 'mcq',
     question: 'The oxidation number of oxygen in most compounds (excluding peroxides, superoxides, and OF2) is',
-    options: ['+2', '-1', '-2', '0'],
-    correctIndex: 2,
+    options: ['+2', '-2', '0', '-1'],
+    correctIndex: 1,
     explanation: 'In the vast majority of its compounds, oxygen is assigned an oxidation number of -2, since it is highly electronegative except when bonded to fluorine.',
     difficulty: 'easy'
   },
@@ -123,7 +123,7 @@ export const REDOX_REACTIONS = [
     id: 'redox-12',
     type: 'mcq',
     question: 'The oxidation number of oxygen in hydrogen peroxide (H2O2) is',
-    options: ['-2', '-1', '0', '+1'],
+    options: ['+1', '-1', '-2', '0'],
     correctIndex: 1,
     explanation: 'In peroxides such as H2O2, each oxygen atom is assigned an oxidation number of -1, since the two oxygen atoms share the -2 charge equally between them via the O-O bond.',
     difficulty: 'medium'
@@ -141,8 +141,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-14',
     type: 'mcq',
     question: 'The oxidation number of hydrogen in most of its compounds (excluding metal hydrides) is',
-    options: ['-1', '0', '+1', '+2'],
-    correctIndex: 2,
+    options: ['+2', '+1', '-1', '0'],
+    correctIndex: 1,
     explanation: 'Hydrogen is usually assigned an oxidation number of +1 in most compounds, since it is generally less electronegative than the atoms it is bonded to.',
     difficulty: 'easy'
   },
@@ -150,8 +150,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-15',
     type: 'mcq',
     question: 'The oxidation number of hydrogen in metal hydrides such as NaH is',
-    options: ['+1', '-1', '0', '+2'],
-    correctIndex: 1,
+    options: ['+1', '+2', '0', '-1'],
+    correctIndex: 3,
     explanation: 'In metal hydrides, hydrogen is bonded to a less electronegative metal, so hydrogen is assigned an oxidation number of -1, an exception to its usual +1 value.',
     difficulty: 'medium'
   },
@@ -159,8 +159,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-16',
     type: 'mcq',
     question: 'The oxidation number of fluorine in all of its compounds is always',
-    options: ['+1', '0', '-1', 'variable, depending on the compound'],
-    correctIndex: 2,
+    options: ['variable, depending on the compound', '+1', '0', '-1'],
+    correctIndex: 3,
     explanation: 'Fluorine, being the most electronegative element, always shows an oxidation number of -1 in all of its compounds, without exception.',
     difficulty: 'easy'
   },
@@ -168,7 +168,7 @@ export const REDOX_REACTIONS = [
     id: 'redox-17',
     type: 'mcq',
     question: 'The oxidation numbers of alkali metals (Group 1) and alkaline earth metals (Group 2) in their compounds are, respectively,',
-    options: ['+2 and +1', '+1 and +2', '-1 and -2', '+1 and +1'],
+    options: ['-1 and -2', '+1 and +2', '+2 and +1', '+1 and +1'],
     correctIndex: 1,
     explanation: 'Alkali metals almost always show an oxidation number of +1, and alkaline earth metals almost always show +2, in their compounds.',
     difficulty: 'easy'
@@ -177,8 +177,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-18',
     type: 'mcq',
     question: 'The sum of the oxidation numbers of all atoms in a neutral molecule is',
-    options: ['always +1', 'always -1', 'zero', 'equal to the number of atoms present'],
-    correctIndex: 2,
+    options: ['equal to the number of atoms present', 'always +1', 'always -1', 'zero'],
+    correctIndex: 3,
     explanation: 'For a neutral molecule, the algebraic sum of the oxidation numbers of all constituent atoms must add up to zero.',
     difficulty: 'easy'
   },
@@ -186,7 +186,7 @@ export const REDOX_REACTIONS = [
     id: 'redox-19',
     type: 'mcq',
     question: 'The sum of the oxidation numbers of all atoms in a polyatomic ion is equal to',
-    options: ['zero always', 'the net charge on the ion', 'the number of atoms in the ion', 'the molar mass of the ion'],
+    options: ['zero always', 'the net charge on the ion', 'the molar mass of the ion', 'the number of atoms in the ion'],
     correctIndex: 1,
     explanation: 'For a polyatomic ion, the sum of the oxidation numbers of the constituent atoms equals the net charge carried by that ion.',
     difficulty: 'easy'
@@ -195,7 +195,7 @@ export const REDOX_REACTIONS = [
     id: 'redox-20',
     type: 'mcq',
     question: 'The oxidation number of manganese in KMnO4 is',
-    options: ['+2', '+4', '+6', '+7'],
+    options: ['+2', '+6', '+4', '+7'],
     correctIndex: 3,
     explanation: 'Taking K as +1 and each O as -2: +1 + Mn + 4(-2) = 0, giving Mn = +7.',
     difficulty: 'medium'
@@ -204,8 +204,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-21',
     type: 'mcq',
     question: 'The oxidation number of chromium in K2Cr2O7 is',
-    options: ['+3', '+4', '+6', '+7'],
-    correctIndex: 2,
+    options: ['+7', '+6', '+3', '+4'],
+    correctIndex: 1,
     explanation: 'Taking K as +1 and O as -2: 2(+1) + 2Cr + 7(-2) = 0, giving 2Cr = +12, so Cr = +6.',
     difficulty: 'medium'
   },
@@ -213,8 +213,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-22',
     type: 'mcq',
     question: 'The oxidation number of sulphur in H2SO4 is',
-    options: ['+2', '+4', '+6', '+8'],
-    correctIndex: 2,
+    options: ['+2', '+8', '+4', '+6'],
+    correctIndex: 3,
     explanation: 'Taking H as +1 and O as -2: 2(+1) + S + 4(-2) = 0, giving S = +6.',
     difficulty: 'medium'
   },
@@ -222,8 +222,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-23',
     type: 'mcq',
     question: 'The oxidation number of nitrogen in HNO3 is',
-    options: ['+3', '+4', '+5', '+6'],
-    correctIndex: 2,
+    options: ['+6', '+5', '+3', '+4'],
+    correctIndex: 1,
     explanation: 'Taking H as +1 and O as -2: (+1) + N + 3(-2) = 0, giving N = +5.',
     difficulty: 'medium'
   },
@@ -231,8 +231,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-24',
     type: 'mcq',
     question: 'The oxidation number of chlorine in HClO4 (perchloric acid) is',
-    options: ['+3', '+5', '+7', '+1'],
-    correctIndex: 2,
+    options: ['+1', '+7', '+3', '+5'],
+    correctIndex: 1,
     explanation: 'Taking H as +1 and O as -2: (+1) + Cl + 4(-2) = 0, giving Cl = +7.',
     difficulty: 'medium'
   },
@@ -240,8 +240,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-25',
     type: 'mcq',
     question: 'The oxidation number of carbon in methane (CH4) is',
-    options: ['+4', '0', '-4', '+2'],
-    correctIndex: 2,
+    options: ['+4', '+2', '0', '-4'],
+    correctIndex: 3,
     explanation: 'Taking H as +1: C + 4(+1) = 0, giving C = -4.',
     difficulty: 'medium'
   },
@@ -249,7 +249,7 @@ export const REDOX_REACTIONS = [
     id: 'redox-26',
     type: 'mcq',
     question: 'The oxidation number of carbon in carbon dioxide (CO2) is',
-    options: ['-4', '0', '+2', '+4'],
+    options: ['-4', '+2', '0', '+4'],
     correctIndex: 3,
     explanation: 'Taking O as -2: C + 2(-2) = 0, giving C = +4.',
     difficulty: 'medium'
@@ -258,8 +258,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-27',
     type: 'mcq',
     question: 'The average oxidation number of iron in Fe3O4 (magnetite) is',
-    options: ['+2', '+3', '+8/3', '+4'],
-    correctIndex: 2,
+    options: ['+3', '+8/3', '+4', '+2'],
+    correctIndex: 1,
     explanation: 'Taking O as -2: 3Fe + 4(-2) = 0, giving Fe = +8/3, an average value since Fe3O4 actually contains Fe in both +2 and +3 states in a 1:2 ratio.',
     difficulty: 'hard'
   },
@@ -268,9 +268,9 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'The concept of oxidation number was primarily developed to',
     options: [
-      'replace the need for balancing chemical equations',
-      'keep track of electron transfer/distribution and identify oxidation and reduction in a reaction',
       'calculate the molar mass of a compound',
+      'keep track of electron transfer/distribution and identify oxidation and reduction in a reaction',
+      'replace the need for balancing chemical equations',
       'determine the physical state of a compound'
     ],
     correctIndex: 1,
@@ -282,12 +282,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'In terms of oxidation number, oxidation corresponds to',
     options: [
-      'a decrease in oxidation number of an element',
-      'an increase in oxidation number of an element',
+      'oxidation number becoming exactly zero',
       'no change in oxidation number',
-      'oxidation number becoming exactly zero'
+      'a decrease in oxidation number of an element',
+      'an increase in oxidation number of an element'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Oxidation is defined, in terms of oxidation number, as an increase in the oxidation number of an element, consistent with loss of electrons.',
     difficulty: 'easy'
   },
@@ -296,10 +296,10 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'In terms of oxidation number, reduction corresponds to',
     options: [
-      'an increase in oxidation number of an element',
-      'a decrease in oxidation number of an element',
       'no change in oxidation number',
-      'the element becoming a free element'
+      'a decrease in oxidation number of an element',
+      'the element becoming a free element',
+      'an increase in oxidation number of an element'
     ],
     correctIndex: 1,
     explanation: 'Reduction is defined, in terms of oxidation number, as a decrease in the oxidation number of an element, consistent with gain of electrons.',
@@ -310,12 +310,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'Which of the following combination reactions is a redox reaction?',
     options: [
-      'CaO(s) + CO2(g) → CaCO3(s)',
-      'C(s) + O2(g) → CO2(g)',
       'NH3(g) + HCl(g) → NH4Cl(s)',
-      'CaO(s) + H2O(l) → Ca(OH)2(aq)'
+      'CaO(s) + CO2(g) → CaCO3(s)',
+      'CaO(s) + H2O(l) → Ca(OH)2(aq)',
+      'C(s) + O2(g) → CO2(g)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'In C + O2 → CO2, carbon goes from oxidation number 0 to +4 and oxygen goes from 0 to -2, so this is a redox reaction. The other combination reactions listed involve no change in oxidation number of any element.',
     difficulty: 'medium'
   },
@@ -351,8 +351,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-34',
     type: 'mcq',
     question: 'A displacement reaction in which a more reactive metal displaces a less reactive metal from its salt solution, such as Zn(s) + CuSO4(aq) → ZnSO4(aq) + Cu(s), is classified as a',
-    options: ['non-redox metathesis reaction', 'metal displacement redox reaction', 'disproportionation reaction', 'acid-base neutralisation reaction'],
-    correctIndex: 1,
+    options: ['acid-base neutralisation reaction', 'disproportionation reaction', 'non-redox metathesis reaction', 'metal displacement redox reaction'],
+    correctIndex: 3,
     explanation: 'Zinc is oxidised (0 to +2) while copper is reduced (+2 to 0), so this is a classic example of a metal displacement redox reaction.',
     difficulty: 'easy'
   },
@@ -369,8 +369,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-36',
     type: 'mcq',
     question: 'The reaction Cl2(g) + 2NaBr(aq) → 2NaCl(aq) + Br2(l) is an example of',
-    options: ['metal displacement', 'halogen (non-metal) displacement', 'disproportionation', 'a non-redox precipitation reaction'],
-    correctIndex: 1,
+    options: ['a non-redox precipitation reaction', 'disproportionation', 'metal displacement', 'halogen (non-metal) displacement'],
+    correctIndex: 3,
     explanation: 'Chlorine displaces bromine from sodium bromide because chlorine is more electronegative/reactive than bromine, making this a non-metal (halogen) displacement redox reaction.',
     difficulty: 'medium'
   },
@@ -379,10 +379,10 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'A disproportionation reaction is one in which',
     options: [
-      'two different elements are simultaneously oxidised',
+      'only reduction occurs without any accompanying oxidation',
       'a single element in one oxidation state is simultaneously oxidised and reduced, forming two different oxidation states',
       'no element undergoes any change in oxidation state',
-      'only reduction occurs without any accompanying oxidation'
+      'two different elements are simultaneously oxidised'
     ],
     correctIndex: 1,
     explanation: 'In disproportionation, an element in an intermediate oxidation state is simultaneously oxidised to a higher state and reduced to a lower state, appearing in two different oxidation states among the products.',
@@ -392,8 +392,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-38',
     type: 'mcq',
     question: 'In the reaction 2H2O2(aq) → 2H2O(l) + O2(g), the oxidation number of oxygen changes from',
-    options: ['-1 to -2 and 0 (disproportionation)', '-2 to -1 only', '0 to -2 only', '+1 to -1 only'],
-    correctIndex: 0,
+    options: ['+1 to -1 only', '0 to -2 only', '-2 to -1 only', '-1 to -2 and 0 (disproportionation)'],
+    correctIndex: 3,
     explanation: 'Oxygen in H2O2 is at oxidation state -1; in the products it becomes -2 in water (reduction) and 0 in O2 gas (oxidation), making this a classic disproportionation reaction.',
     difficulty: 'medium'
   },
@@ -430,12 +430,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'The two general methods used to balance redox reactions, as covered in NCERT, are',
     options: [
+      'the titration method and the gravimetric method',
       'the oxidation number method and the ion-electron (half-reaction) method',
-      'the mole method and the equivalent method',
       'the graphical method and the empirical method',
-      'the titration method and the gravimetric method'
+      'the mole method and the equivalent method'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'NCERT describes two systematic approaches for balancing redox equations: the oxidation number method and the half-reaction (ion-electron) method.',
     difficulty: 'easy'
   },
@@ -444,12 +444,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'In the oxidation number method of balancing redox equations, the guiding principle is that',
     options: [
-      'the total increase in oxidation number (oxidation) must equal the total decrease in oxidation number (reduction)',
       'the number of atoms of oxygen must always be doubled',
       'only hydrogen atoms need to be balanced',
-      'charge balance is irrelevant'
+      'charge balance is irrelevant',
+      'the total increase in oxidation number (oxidation) must equal the total decrease in oxidation number (reduction)'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The oxidation number method balances a redox equation by ensuring the total increase in oxidation number of the species oxidised equals the total decrease in oxidation number of the species reduced.',
     difficulty: 'medium'
   },
@@ -458,12 +458,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'In the ion-electron (half-reaction) method of balancing redox equations, the overall reaction is first split into',
     options: [
-      'a precipitation half and a dissolution half',
-      'an oxidation half-reaction and a reduction half-reaction, which are then balanced separately',
+      'a molecular half and an atomic half',
       'an acidic half and a basic half, without further steps',
-      'a molecular half and an atomic half'
+      'a precipitation half and a dissolution half',
+      'an oxidation half-reaction and a reduction half-reaction, which are then balanced separately'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The half-reaction method splits the overall redox equation into an oxidation half-reaction and a reduction half-reaction, each balanced separately for atoms and charge before combining.',
     difficulty: 'medium'
   },
@@ -471,7 +471,7 @@ export const REDOX_REACTIONS = [
     id: 'redox-44',
     type: 'mcq',
     question: 'While balancing a half-reaction in acidic medium by the ion-electron method, oxygen atoms are typically balanced by adding',
-    options: ['OH- ions', 'H2O molecules', 'O2 molecules', 'H+ ions only'],
+    options: ['O2 molecules', 'H2O molecules', 'OH- ions', 'H+ ions only'],
     correctIndex: 1,
     explanation: 'In acidic medium, oxygen atoms are balanced by adding H2O molecules to the side deficient in oxygen, and then hydrogen is balanced separately using H+ ions.',
     difficulty: 'medium'
@@ -480,7 +480,7 @@ export const REDOX_REACTIONS = [
     id: 'redox-45',
     type: 'mcq',
     question: 'While balancing a half-reaction in acidic medium by the ion-electron method, after oxygen is balanced with H2O, hydrogen atoms are balanced by adding',
-    options: ['OH- ions', 'H+ ions', 'H2O molecules again', 'electrons only'],
+    options: ['electrons only', 'H+ ions', 'H2O molecules again', 'OH- ions'],
     correctIndex: 1,
     explanation: 'After using H2O to balance oxygen atoms, hydrogen atoms are then balanced by adding H+ ions to the side deficient in hydrogen, appropriate for an acidic medium.',
     difficulty: 'medium'
@@ -490,12 +490,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'When balancing a half-reaction by the ion-electron method in a basic medium, after balancing as in acidic medium, the equation is adjusted for basic conditions by adding',
     options: [
-      'an equal number of OH- ions to both sides to neutralise the H+ ions present',
       'extra O2 molecules to both sides',
+      'nothing further is required',
       'extra H+ ions to only one side',
-      'nothing further is required'
+      'an equal number of OH- ions to both sides to neutralise the H+ ions present'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'For a basic medium, once the equation is balanced as though acidic, an equal number of OH- ions are added to both sides to neutralise H+ (forming H2O), converting the equation to a form valid in basic medium.',
     difficulty: 'hard'
   },
@@ -504,12 +504,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'After balancing atoms in each half-reaction, the final step before combining the two half-reactions is to',
     options: [
+      'remove all spectator ions',
       'balance the charge on each side by adding the appropriate number of electrons',
       'multiply both half-reactions by 2 regardless of electron count',
-      'remove all spectator ions',
       'convert the equation into ionic form'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Once atoms are balanced, electrons are added to whichever side is needed to balance the net charge, reflecting the number of electrons lost or gained in that half-reaction.',
     difficulty: 'medium'
   },
@@ -518,12 +518,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'Before adding the two balanced half-reactions together, it is necessary to',
     options: [
-      'multiply each half-reaction so the number of electrons lost equals the number of electrons gained',
-      'ensure both half-reactions have exactly the same number of oxygen atoms',
+      'discard the half-reaction with fewer atoms',
       'convert both half-reactions into molecular equations',
-      'discard the half-reaction with fewer atoms'
+      'ensure both half-reactions have exactly the same number of oxygen atoms',
+      'multiply each half-reaction so the number of electrons lost equals the number of electrons gained'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Since electrons must cancel out when the two half-reactions are added, each is multiplied by an appropriate integer so that the number of electrons lost in oxidation equals the number gained in reduction.',
     difficulty: 'medium'
   },
@@ -532,10 +532,10 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'Potassium permanganate (KMnO4) is widely used as an oxidising agent in redox titrations mainly because it',
     options: [
-      'is colourless in all its oxidation states',
+      'is insoluble in water',
       'acts as a self-indicator due to the distinct colour change on reduction',
-      'cannot oxidise any species in acidic medium',
-      'is insoluble in water'
+      'is colourless in all its oxidation states',
+      'cannot oxidise any species in acidic medium'
     ],
     correctIndex: 1,
     explanation: 'KMnO4 solution is intensely purple, and upon reduction (e.g., to nearly colourless Mn2+ in acidic medium) the colour change is sharp, allowing it to act as its own indicator (self-indicator) in titrations.',
@@ -554,8 +554,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-51',
     type: 'mcq',
     question: 'In neutral or faintly alkaline medium, potassium permanganate (MnO4-) is reduced to',
-    options: ['Mn2+', 'MnO2, a brown precipitate', 'MnO4^2-, a green species', 'metallic manganese'],
-    correctIndex: 1,
+    options: ['Mn2+', 'MnO4^2-, a green species', 'metallic manganese', 'MnO2, a brown precipitate'],
+    correctIndex: 3,
     explanation: 'In neutral or faintly alkaline conditions, permanganate is reduced only to MnO2, which appears as a brown precipitate, rather than being reduced all the way to Mn2+.',
     difficulty: 'hard'
   },
@@ -563,8 +563,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-52',
     type: 'mcq',
     question: 'In strongly alkaline medium, potassium permanganate (MnO4-) is reduced to',
-    options: ['Mn2+', 'MnO2', 'the green manganate ion, MnO4^2-', 'Mn3+'],
-    correctIndex: 2,
+    options: ['the green manganate ion, MnO4^2-', 'Mn2+', 'Mn3+', 'MnO2'],
+    correctIndex: 0,
     explanation: 'Under strongly alkaline conditions, permanganate is reduced only to the green manganate ion MnO4^2-, rather than to lower oxidation states.',
     difficulty: 'hard'
   },
@@ -572,8 +572,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-53',
     type: 'mcq',
     question: 'Potassium dichromate (K2Cr2O7) is used in redox titrations and, upon reduction in acidic medium, changes colour from',
-    options: ['colourless to purple', 'orange to green, as Cr(VI) is reduced to Cr(III)', 'green to orange', 'blue to yellow'],
-    correctIndex: 1,
+    options: ['green to orange', 'colourless to purple', 'blue to yellow', 'orange to green, as Cr(VI) is reduced to Cr(III)'],
+    correctIndex: 3,
     explanation: 'The orange dichromate ion (Cr in +6 state) is reduced to the green Cr3+ ion in acidic medium, giving a characteristic orange-to-green colour change.',
     difficulty: 'medium'
   },
@@ -581,8 +581,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-54',
     type: 'mcq',
     question: 'Iodometric titrations, which involve titrating liberated iodine against sodium thiosulphate solution, typically use which indicator?',
-    options: ['Phenolphthalein', 'Methyl orange', 'Starch, which gives a blue-black colour with iodine that disappears at the endpoint', 'Litmus'],
-    correctIndex: 2,
+    options: ['Methyl orange', 'Starch, which gives a blue-black colour with iodine that disappears at the endpoint', 'Phenolphthalein', 'Litmus'],
+    correctIndex: 1,
     explanation: 'Starch forms an intense blue-black complex with iodine; as thiosulphate consumes the remaining iodine near the endpoint, this colour disappears sharply, marking the endpoint of an iodometric titration.',
     difficulty: 'medium'
   },
@@ -590,8 +590,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-55',
     type: 'mcq',
     question: 'The standard hydrogen electrode (SHE) is assigned a standard reduction potential of',
-    options: ['+1.00 V', '-1.00 V', '0.00 V, by convention', 'undefined'],
-    correctIndex: 2,
+    options: ['-1.00 V', '0.00 V, by convention', '+1.00 V', 'undefined'],
+    correctIndex: 1,
     explanation: 'By international convention, the standard hydrogen electrode is assigned a standard reduction potential of exactly 0.00 V, serving as the reference point for all other electrode potentials.',
     difficulty: 'easy'
   },
@@ -599,8 +599,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-56',
     type: 'mcq',
     question: 'A species with a higher (more positive) standard reduction potential compared to another species is generally a',
-    options: ['stronger reducing agent', 'stronger oxidising agent, since it has a greater tendency to get reduced', 'weaker oxidising agent', 'chemically inert species'],
-    correctIndex: 1,
+    options: ['stronger reducing agent', 'weaker oxidising agent', 'chemically inert species', 'stronger oxidising agent, since it has a greater tendency to get reduced'],
+    correctIndex: 3,
     explanation: 'A more positive standard reduction potential indicates a greater tendency of that species to be reduced (gain electrons), making it a stronger oxidising agent.',
     difficulty: 'medium'
   },
@@ -608,8 +608,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-57',
     type: 'mcq',
     question: 'A species with a highly negative standard reduction potential is generally a',
-    options: ['strong oxidising agent', 'strong reducing agent, since it readily loses electrons (is easily oxidised)', 'chemically unreactive species', 'weak acid'],
-    correctIndex: 1,
+    options: ['strong reducing agent, since it readily loses electrons (is easily oxidised)', 'weak acid', 'strong oxidising agent', 'chemically unreactive species'],
+    correctIndex: 0,
     explanation: 'A very negative standard reduction potential indicates the species has little tendency to be reduced and instead readily loses electrons, making it a strong reducing agent.',
     difficulty: 'medium'
   },
@@ -617,8 +617,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-58',
     type: 'mcq',
     question: 'Among common oxidising agents, fluorine (F2) is regarded as one of the strongest because it has',
-    options: ['the lowest standard reduction potential among halogens', 'a highly negative standard reduction potential', 'the highest (most positive) standard reduction potential among common oxidants', 'no tendency to accept electrons'],
-    correctIndex: 2,
+    options: ['a highly negative standard reduction potential', 'the lowest standard reduction potential among halogens', 'no tendency to accept electrons', 'the highest (most positive) standard reduction potential among common oxidants'],
+    correctIndex: 3,
     explanation: 'Fluorine has one of the highest standard reduction potentials among commonly encountered species, reflecting its exceptionally strong tendency to be reduced (gain an electron), making it one of the strongest oxidising agents.',
     difficulty: 'medium'
   },
@@ -627,10 +627,10 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'Lithium is considered an exceptionally strong reducing agent in aqueous solution, despite its relatively unfavourable ionisation enthalpy compared to other alkali metals, mainly because of its',
     options: [
-      'very low melting point',
-      'exceptionally high enthalpy of hydration of Li+ ions',
       'large atomic radius',
-      'high electron affinity'
+      'exceptionally high enthalpy of hydration of Li+ ions',
+      'high electron affinity',
+      'very low melting point'
     ],
     correctIndex: 1,
     explanation: 'Lithium\'s small ionic size gives Li+ a very high hydration enthalpy in water, which more than compensates for its relatively high ionisation enthalpy, making it the strongest reducing agent among alkali metals in aqueous medium.',
@@ -641,12 +641,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'An electrochemical series arranges elements (or ions) in order of their',
     options: [
-      'atomic radii',
       'standard reduction potentials',
       'electronegativity values only',
-      'melting points'
+      'melting points',
+      'atomic radii'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'The electrochemical series lists elements or half-reactions in order of increasing (or decreasing) standard reduction potential, allowing prediction of relative oxidising and reducing strength.',
     difficulty: 'easy'
   },
@@ -655,12 +655,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'One major limitation of the oxidation number concept is that',
     options: [
-      'it always gives whole-number values, which is inconvenient',
       'it can give fractional or average values that do not represent the actual charge distribution in the molecule',
       'it cannot be applied to ionic compounds',
-      'it applies only to organic compounds'
+      'it applies only to organic compounds',
+      'it always gives whole-number values, which is inconvenient'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'In some compounds, the oxidation number calculated is only an average across chemically non-equivalent atoms of the same element, which does not accurately depict the actual bonding or charge distribution.',
     difficulty: 'hard'
   },
@@ -683,12 +683,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'Which of the following is a correct example illustrating a limitation of the oxidation number concept giving only an average value?',
     options: [
+      'Oxidation number of O in H2O is -2',
       'Oxidation number of Na in NaCl is +1',
-      'Average oxidation number of Fe in Fe3O4, which actually contains a mixture of Fe2+ and Fe3+ ions',
       'Oxidation number of Cl in Cl2 is 0',
-      'Oxidation number of O in H2O is -2'
+      'Average oxidation number of Fe in Fe3O4, which actually contains a mixture of Fe2+ and Fe3+ ions'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Fe3O4 is a mixed oxide containing Fe2+ and Fe3+ ions in a 1:2 ratio; the calculated average oxidation number of +8/3 for iron does not represent an actual single oxidation state, exposing a limitation of the concept.',
     difficulty: 'hard'
   },
@@ -696,8 +696,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-64',
     type: 'mcq',
     question: 'The oxidation number of phosphorus in white phosphorus (P4), before it reacts, is',
-    options: ['+3', '-3', '0, since it is in its elemental form', '+5'],
-    correctIndex: 2,
+    options: ['+3', '0, since it is in its elemental form', '+5', '-3'],
+    correctIndex: 1,
     explanation: 'As an elemental (uncombined) form of phosphorus, P4 has each phosphorus atom at oxidation number zero.',
     difficulty: 'easy'
   },
@@ -720,12 +720,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'Which of the following statements about a species acting simultaneously as both an oxidising agent and reducing agent (disproportionation) is correct?',
     options: [
-      'This can only happen for species already in their highest possible oxidation state',
-      'This can only happen for species already in their lowest possible oxidation state',
       'This requires the element to be in an intermediate oxidation state, so it has scope to be both oxidised (to a higher state) and reduced (to a lower state)',
-      'Disproportionation reactions never actually occur in nature'
+      'This can only happen for species already in their lowest possible oxidation state',
+      'Disproportionation reactions never actually occur in nature',
+      'This can only happen for species already in their highest possible oxidation state'
     ],
-    correctIndex: 2,
+    correctIndex: 0,
     explanation: 'For a species to disproportionate, it must be in an intermediate oxidation state so that some of it can be pushed to a higher oxidation state (oxidation) while the rest goes to a lower oxidation state (reduction).',
     difficulty: 'medium'
   },
@@ -733,7 +733,7 @@ export const REDOX_REACTIONS = [
     id: 'redox-67',
     type: 'mcq',
     question: 'The oxidation number of nitrogen in ammonia (NH3) is',
-    options: ['+3', '-3', '0', '+5'],
+    options: ['0', '-3', '+3', '+5'],
     correctIndex: 1,
     explanation: 'Taking H as +1: N + 3(+1) = 0, giving N = -3.',
     difficulty: 'easy'
@@ -742,8 +742,8 @@ export const REDOX_REACTIONS = [
     id: 'redox-68',
     type: 'mcq',
     question: 'The oxidation number of sulphur in sodium thiosulphate, Na2S2O3, calculated on an average basis, is',
-    options: ['+2', '+4', '+6', '0'],
-    correctIndex: 0,
+    options: ['0', '+6', '+4', '+2'],
+    correctIndex: 3,
     explanation: 'Taking Na as +1 and O as -2: 2(+1) + 2S + 3(-2) = 0, giving 2S = +4, so average S = +2 (though the two sulphur atoms are not actually chemically equivalent).',
     difficulty: 'hard'
   },
@@ -752,12 +752,12 @@ export const REDOX_REACTIONS = [
     type: 'mcq',
     question: 'In the reaction 3Cl2 + 6NaOH(hot, concentrated) → 5NaCl + NaClO3 + 3H2O, chlorine (oxidation number 0) disproportionates into',
     options: [
-      'Cl- (oxidation number -1) and ClO3- (oxidation number +5)',
+      'Cl2 remains unreacted with no change in oxidation state',
       'Cl- (oxidation number -1) only',
       'ClO3- (oxidation number +5) only',
-      'Cl2 remains unreacted with no change in oxidation state'
+      'Cl- (oxidation number -1) and ClO3- (oxidation number +5)'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'In hot, concentrated alkali, chlorine disproportionates further than in cold dilute alkali, going to Cl- (-1) in NaCl and to ClO3- (+5) in NaClO3.',
     difficulty: 'hard'
   },
@@ -767,9 +767,9 @@ export const REDOX_REACTIONS = [
     question: 'Redox reactions form the chemical basis of titrations used to determine the concentration of an unknown solution because',
     options: [
       'the reaction between the oxidising and reducing agents proceeds in definite, stoichiometric electron-transfer proportions that can be tracked to an observable endpoint',
+      'redox indicators change colour randomly, unrelated to concentration',
       'redox reactions never reach completion',
-      'oxidising and reducing agents cannot react with each other in solution',
-      'redox indicators change colour randomly, unrelated to concentration'
+      'oxidising and reducing agents cannot react with each other in solution'
     ],
     correctIndex: 0,
     explanation: 'Because oxidising and reducing agents react in definite stoichiometric ratios based on electron transfer, and because this can often be monitored via a colour change (self-indicating or with an indicator), redox reactions are well suited as the basis for quantitative titrations.',

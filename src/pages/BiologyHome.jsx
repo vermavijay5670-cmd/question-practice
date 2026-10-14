@@ -7,7 +7,7 @@ import {
 } from '../data/biology/chapters';
 
 import {
-  getChapterQuestions,
+  getChapterQuestionCount,
 } from '../data/biology/questions';
 
 import {
@@ -31,12 +31,11 @@ import '../styles/BiologyHome.css';
 function ChapterCard({ chapter }) {
   const { state } = useProgress();
 
-  const questions = getChapterQuestions(chapter.id);
+  const total = getChapterQuestionCount(chapter.id);
 
   const attempt =
     state.attempts.biology?.[chapter.id];
 
-  const total = questions.length;
 
   const seen = attempt?.seen || 0;
 
@@ -257,9 +256,9 @@ export default function BiologyHome() {
   const chaptersLive =
     allChapters.filter(
       (chapter) =>
-        getChapterQuestions(
+        getChapterQuestionCount(
           chapter.id
-        ).length > 0
+        ) > 0
     ).length;
 
 
@@ -301,6 +300,15 @@ export default function BiologyHome() {
             >
               Mistake bank (
               {Object.keys(state.mistakes?.biology || {}).length}
+              )
+            </Link>
+
+            <Link
+              to="/biology/bookmarks"
+              className="mistake-button"
+            >
+              Bookmarks (
+              {Object.keys(state.bookmarks?.biology || {}).length}
               )
             </Link>
 

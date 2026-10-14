@@ -4,7 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "gen:counts": "node scripts/gen-counts.mjs",
+    "predev": "node scripts/gen-counts.mjs",
     "dev": "vite",
+    "prebuild": "node scripts/gen-counts.mjs",
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview"

@@ -5,12 +5,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'Electric potential at a point is defined as',
     options: [
-      'the force experienced by a unit positive charge at that point',
-      'the work done in bringing a unit positive charge from infinity to that point, without any acceleration',
+      'the electric field at that point',
       'the total charge enclosed at that point',
-      'the electric field at that point'
+      'the force experienced by a unit positive charge at that point',
+      'the work done in bringing a unit positive charge from infinity to that point, without any acceleration'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Electric potential V at a point is defined as the work done per unit positive test charge in bringing it from infinity to that point, quasi-statically (without acceleration) against the electric field.',
     difficulty: 'easy'
   },
@@ -18,8 +18,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-2',
     type: 'mcq',
     question: 'The SI unit of electric potential is',
-    options: ['newton per coulomb', 'joule per coulomb (volt)', 'coulomb per joule', 'joule per metre'],
-    correctIndex: 1,
+    options: ['newton per coulomb', 'joule per metre', 'coulomb per joule', 'joule per coulomb (volt)'],
+    correctIndex: 3,
     explanation: 'Electric potential is work done per unit charge, so its SI unit is joule per coulomb, given the special name volt (V).',
     difficulty: 'easy'
   },
@@ -27,8 +27,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-3',
     type: 'mcq',
     question: 'Electric potential due to a point charge q at a distance r is given by',
-    options: ['V = kq/r', 'V = kq/r²', 'V = kqr', 'V = kq²/r'],
-    correctIndex: 0,
+    options: ['V = kqr', 'V = kq/r²', 'V = kq²/r', 'V = kq/r'],
+    correctIndex: 3,
     explanation: 'The potential due to a point charge is V = kq/r = q/(4πε₀r), decreasing as 1/r with distance, unlike the field which decreases as 1/r².',
     difficulty: 'easy'
   },
@@ -37,12 +37,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'Electric potential is a scalar quantity because',
     options: [
-      'it has direction associated with it',
-      'it is defined as work done per unit charge, and work (energy) is inherently a scalar quantity',
       'it always has a positive value',
-      'it does not depend on the charge distribution'
+      'it does not depend on the charge distribution',
+      'it has direction associated with it',
+      'it is defined as work done per unit charge, and work (energy) is inherently a scalar quantity'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since potential is derived from work (which is a scalar, being W = F·d, a dot product), potential itself is a scalar quantity with only magnitude and sign, no direction.',
     difficulty: 'medium'
   },
@@ -50,8 +50,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-5',
     type: 'mcq',
     question: 'The electric potential due to a point charge decreases with distance r as',
-    options: ['1/r', '1/r²', '1/r³', 'r'],
-    correctIndex: 0,
+    options: ['1/r³', '1/r²', 'r', '1/r'],
+    correctIndex: 3,
     explanation: 'V = kq/r falls off as 1/r, decreasing more slowly with distance than the electric field (which falls off as 1/r²).',
     difficulty: 'easy'
   },
@@ -60,12 +60,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'The relationship between electric field E and electric potential V along a given direction is',
     options: [
-      'E = dV/dr (the field equals the rate of increase of potential)',
-      'E = -dV/dr (the field equals the negative gradient of potential)',
       'E = V/r always',
-      'E and V are completely unrelated quantities'
+      'E = dV/dr (the field equals the rate of increase of potential)',
+      'E and V are completely unrelated quantities',
+      'E = -dV/dr (the field equals the negative gradient of potential)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The electric field is the negative gradient of potential, E = -dV/dr; the field points in the direction of steepest decrease of potential.',
     difficulty: 'medium'
   },
@@ -73,8 +73,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-7',
     type: 'mcq',
     question: 'If the electric potential in a region is constant (same value everywhere), the electric field in that region must be',
-    options: ['maximum', 'zero', 'equal to the potential value', 'infinite'],
-    correctIndex: 1,
+    options: ['maximum', 'equal to the potential value', 'infinite', 'zero'],
+    correctIndex: 3,
     explanation: 'Since E = -dV/dr, if V does not change with position (constant), its spatial derivative is zero, so the electric field must be zero throughout that region.',
     difficulty: 'medium'
   },
@@ -83,12 +83,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'An equipotential surface is defined as a surface',
     options: [
-      'on which the electric field is the same everywhere',
-      'on which the electric potential has the same value at every point',
       'that always passes through the source charge',
-      'on which charge density is constant'
+      'on which charge density is constant',
+      'on which the electric field is the same everywhere',
+      'on which the electric potential has the same value at every point'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'An equipotential surface is one on which the electric potential is constant at every point on the surface; moving along the surface involves no change in potential.',
     difficulty: 'easy'
   },
@@ -97,12 +97,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'The electric field at every point on an equipotential surface is always',
     options: [
-      'tangential to the surface',
-      'perpendicular (normal) to the surface',
       'zero',
-      'directed at 45° to the surface'
+      'directed at 45° to the surface',
+      'tangential to the surface',
+      'perpendicular (normal) to the surface'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since no work is done in moving a charge along an equipotential surface (potential constant), the field must have no component along the surface — it is always perpendicular to the equipotential surface.',
     difficulty: 'medium'
   },
@@ -110,7 +110,7 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-10',
     type: 'mcq',
     question: 'The work done in moving a charge along an equipotential surface is',
-    options: ['maximum', 'always zero', 'equal to qV', 'dependent on the path taken'],
+    options: ['dependent on the path taken', 'always zero', 'maximum', 'equal to qV'],
     correctIndex: 1,
     explanation: 'Since potential is constant on an equipotential surface, there is no potential difference between any two points on it, so the work done (W = q ΔV) in moving a charge along the surface is always zero.',
     difficulty: 'easy'
@@ -120,12 +120,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'Equipotential surfaces for an isolated point charge are',
     options: [
-      'concentric spheres centred on the charge',
-      'parallel planes',
       'concentric cylinders',
-      'randomly shaped surfaces'
+      'randomly shaped surfaces',
+      'parallel planes',
+      'concentric spheres centred on the charge'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Since V = kq/r depends only on distance from the point charge, all points at the same distance r have the same potential, forming concentric spherical equipotential surfaces around the charge.',
     difficulty: 'easy'
   },
@@ -134,12 +134,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'Equipotential surfaces for a uniform electric field (as between two parallel charged plates) are',
     options: [
-      'concentric spheres',
-      'planes perpendicular to the field direction',
       'planes parallel to the field direction',
-      'not well defined'
+      'concentric spheres',
+      'not well defined',
+      'planes perpendicular to the field direction'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'For a uniform field, equipotential surfaces are flat planes perpendicular to the field lines, since potential changes uniformly only along the field direction.',
     difficulty: 'medium'
   },
@@ -147,7 +147,7 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-13',
     type: 'mcq',
     question: 'The spacing between equipotential surfaces in a region indicates the strength of the electric field. Closely spaced equipotential surfaces indicate',
-    options: ['a weak field', 'a strong field', 'zero field', 'no relationship to field strength'],
+    options: ['no relationship to field strength', 'a strong field', 'zero field', 'a weak field'],
     correctIndex: 1,
     explanation: 'Since E = -dV/dr, for a given potential difference, closely spaced equipotential surfaces (small dr) correspond to a larger field magnitude, indicating a stronger field in that region.',
     difficulty: 'medium'
@@ -156,8 +156,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-14',
     type: 'mcq',
     question: 'The potential energy of a system of two point charges q1 and q2 separated by distance r12 is given by',
-    options: ['U = kq1q2/r12', 'U = kq1q2/r12²', 'U = kq1q2 r12', 'U = k(q1+q2)/r12'],
-    correctIndex: 0,
+    options: ['U = k(q1+q2)/r12', 'U = kq1q2 r12', 'U = kq1q2/r12²', 'U = kq1q2/r12'],
+    correctIndex: 3,
     explanation: 'The electrostatic potential energy of a pair of point charges is U = kq1q2/r12, representing the work done in assembling the two charges from infinite separation to distance r12.',
     difficulty: 'medium'
   },
@@ -165,7 +165,7 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-15',
     type: 'mcq',
     question: 'For a system of two like charges (both positive or both negative), the potential energy of the system is',
-    options: ['always negative', 'always positive', 'always zero', 'undefined'],
+    options: ['undefined', 'always positive', 'always negative', 'always zero'],
     correctIndex: 1,
     explanation: 'For two like charges, q1q2 is positive, making U = kq1q2/r positive, reflecting that positive work must be done (against repulsion) to bring them together from infinity.',
     difficulty: 'medium'
@@ -185,11 +185,11 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     question: 'Potential energy of a system of charges is taken as zero when',
     options: [
       'all charges are brought very close together',
-      'all charges are placed at infinite separation from each other',
+      'the net charge of the system is zero',
       'all charges are equal in magnitude',
-      'the net charge of the system is zero'
+      'all charges are placed at infinite separation from each other'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'By convention, the reference (zero) configuration for potential energy of a system of charges is when all charges are infinitely far apart from each other, with no mutual interaction.',
     difficulty: 'medium'
   },
@@ -197,7 +197,7 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-18',
     type: 'mcq',
     question: 'The potential energy of a dipole of moment p placed in a uniform external field E, making angle θ with the field, is given by',
-    options: ['U = pE sinθ', 'U = -pE cosθ', 'U = pE cosθ', 'U = -pE sinθ'],
+    options: ['U = pE cosθ', 'U = -pE cosθ', 'U = -pE sinθ', 'U = pE sinθ'],
     correctIndex: 1,
     explanation: 'The potential energy of a dipole in an external uniform field is U = -pE cosθ = -p·E, which is minimum (most negative/stable) when the dipole is aligned parallel to the field (θ = 0°).',
     difficulty: 'medium'
@@ -208,11 +208,11 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     question: 'A capacitor is a device used to',
     options: [
       'generate electric charge',
-      'store electric charge and electrical energy in the form of an electric field',
       'convert electrical energy into mechanical energy',
-      'measure electric current'
+      'measure electric current',
+      'store electric charge and electrical energy in the form of an electric field'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A capacitor is a system of two conductors separated by an insulator (dielectric or vacuum), designed to store electric charge and the associated electrical potential energy in the electric field between them.',
     difficulty: 'easy'
   },
@@ -221,12 +221,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'The capacitance of a capacitor is defined as',
     options: [
-      'the charge stored per unit potential difference across it, C = Q/V',
-      'the potential difference stored per unit charge',
+      'the energy stored per unit time',
       'the total charge stored, regardless of voltage',
-      'the energy stored per unit time'
+      'the potential difference stored per unit charge',
+      'the charge stored per unit potential difference across it, C = Q/V'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Capacitance is defined as C = Q/V, the ratio of the magnitude of charge on either conductor to the potential difference between them, and is a property of the capacitor\'s geometry (not of Q or V individually).',
     difficulty: 'easy'
   },
@@ -234,8 +234,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-21',
     type: 'mcq',
     question: 'The SI unit of capacitance is',
-    options: ['volt', 'coulomb', 'farad', 'joule'],
-    correctIndex: 2,
+    options: ['volt', 'farad', 'joule', 'coulomb'],
+    correctIndex: 1,
     explanation: 'The SI unit of capacitance is the farad (F), defined as one coulomb per volt (1 F = 1 C/V).',
     difficulty: 'easy'
   },
@@ -243,7 +243,7 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-22',
     type: 'mcq',
     question: 'One farad is an extremely large unit of capacitance for practical purposes, so capacitors in ordinary circuits are usually measured in',
-    options: ['kilofarads or megafarads', 'microfarads (µF) or picofarads (pF)', 'farads directly, no smaller units are used', 'coulombs'],
+    options: ['farads directly, no smaller units are used', 'microfarads (µF) or picofarads (pF)', 'coulombs', 'kilofarads or megafarads'],
     correctIndex: 1,
     explanation: 'Since 1 farad is a very large capacitance, most practical capacitors have values in the microfarad (10⁻⁶ F) or picofarad (10⁻¹² F) range.',
     difficulty: 'easy'
@@ -253,12 +253,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'The capacitance of a parallel plate capacitor (with vacuum/air between the plates) depends on',
     options: [
+      'the current flowing through the circuit',
       'the charge stored on the plates and the voltage applied',
-      'the area of the plates and the separation between them, not on the charge or voltage',
       'only the material of the plates',
-      'the current flowing through the circuit'
+      'the area of the plates and the separation between them, not on the charge or voltage'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Capacitance C = ε₀A/d for a parallel plate capacitor is a purely geometric property, determined by plate area A and separation d; it is independent of the charge or voltage applied.',
     difficulty: 'medium'
   },
@@ -266,8 +266,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-24',
     type: 'mcq',
     question: 'If the plate separation of a parallel plate capacitor (vacuum between plates) is doubled while keeping the plate area constant, its capacitance becomes',
-    options: ['double', 'half', 'four times', 'unchanged'],
-    correctIndex: 1,
+    options: ['unchanged', 'four times', 'double', 'half'],
+    correctIndex: 3,
     explanation: 'Since C = ε₀A/d, capacitance is inversely proportional to separation d; doubling d halves the capacitance.',
     difficulty: 'medium'
   },
@@ -275,8 +275,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-25',
     type: 'mcq',
     question: 'If the plate area of a parallel plate capacitor is doubled while keeping separation constant, its capacitance becomes',
-    options: ['double', 'half', 'four times', 'unchanged'],
-    correctIndex: 0,
+    options: ['four times', 'double', 'half', 'unchanged'],
+    correctIndex: 1,
     explanation: 'Since C = ε₀A/d, capacitance is directly proportional to plate area A; doubling A doubles the capacitance.',
     difficulty: 'easy'
   },
@@ -284,8 +284,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-26',
     type: 'mcq',
     question: 'Introducing a dielectric slab of dielectric constant K completely between the plates of a capacitor (filling the entire gap) changes its capacitance to',
-    options: ['C/K', 'KC (K times the original capacitance)', 'C (unchanged)', 'C - K'],
-    correctIndex: 1,
+    options: ['C (unchanged)', 'C/K', 'C - K', 'KC (K times the original capacitance)'],
+    correctIndex: 3,
     explanation: 'A dielectric with constant K, when completely filling the gap, increases capacitance by a factor of K: C\' = KC = Kε₀A/d.',
     difficulty: 'medium'
   },
@@ -294,9 +294,9 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'A dielectric increases the capacitance of a capacitor because',
     options: [
-      'it increases the plate area',
-      'it gets polarized in the external field, producing an internal field that opposes and reduces the net field, thereby reducing the potential difference for the same charge',
       'it conducts current through the capacitor',
+      'it gets polarized in the external field, producing an internal field that opposes and reduces the net field, thereby reducing the potential difference for the same charge',
+      'it increases the plate area',
       'it decreases the charge stored on the plates'
     ],
     correctIndex: 1,
@@ -307,7 +307,7 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-28',
     type: 'mcq',
     question: 'The process by which the molecules of a dielectric develop a net dipole moment when placed in an external electric field is called',
-    options: ['ionization', 'polarization', 'conduction', 'induction only'],
+    options: ['ionization', 'polarization', 'induction only', 'conduction'],
     correctIndex: 1,
     explanation: 'Polarization is the process by which an external field induces or aligns dipole moments in a dielectric material, creating bound surface charges.',
     difficulty: 'easy'
@@ -317,12 +317,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'A "polar" dielectric molecule (such as water) is one that',
     options: [
-      'has zero dipole moment even in the absence of an external field',
-      'possesses a permanent dipole moment even without any external field, due to asymmetric charge distribution',
       'cannot be polarized at all',
-      'conducts electricity like a metal'
+      'has zero dipole moment even in the absence of an external field',
+      'conducts electricity like a metal',
+      'possesses a permanent dipole moment even without any external field, due to asymmetric charge distribution'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Polar molecules (like water, HCl) possess a permanent (built-in) dipole moment due to the asymmetric arrangement of their positive and negative charge centres, even without any applied field.',
     difficulty: 'medium'
   },
@@ -331,12 +331,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'A "non-polar" dielectric molecule (such as O2 or CO2) is one in which',
     options: [
+      'it always has excess free electrons',
       'the centres of positive and negative charge coincide in the absence of an external field, giving zero permanent dipole moment',
-      'a permanent dipole moment always exists',
       'it cannot become polarized under any circumstances',
-      'it always has excess free electrons'
+      'a permanent dipole moment always exists'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'In non-polar molecules, the centres of positive and negative charge coincide by symmetry in the absence of a field, resulting in zero net dipole moment normally; an external field can still induce a small dipole moment.',
     difficulty: 'medium'
   },
@@ -345,12 +345,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'When capacitors are connected in series, the equivalent capacitance is given by',
     options: [
-      '1/Ceq = 1/C1 + 1/C2 + ...',
-      'Ceq = C1 + C2 + ...',
+      'Ceq = (C1 + C2)/2',
       'Ceq = C1 × C2 × ...',
-      'Ceq = (C1 + C2)/2'
+      'Ceq = C1 + C2 + ...',
+      '1/Ceq = 1/C1 + 1/C2 + ...'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'For capacitors in series, the reciprocals of individual capacitances add up: 1/Ceq = 1/C1 + 1/C2 + ..., analogous to resistors in parallel.',
     difficulty: 'easy'
   },
@@ -359,12 +359,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'When capacitors are connected in parallel, the equivalent capacitance is given by',
     options: [
+      'Ceq is always less than the smallest individual capacitance',
       '1/Ceq = 1/C1 + 1/C2 + ...',
-      'Ceq = C1 + C2 + ...',
       'Ceq = C1 × C2/(C1+C2)',
-      'Ceq is always less than the smallest individual capacitance'
+      'Ceq = C1 + C2 + ...'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'For capacitors in parallel, capacitances simply add: Ceq = C1 + C2 + ..., analogous to resistors in series.',
     difficulty: 'easy'
   },
@@ -372,7 +372,7 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-33',
     type: 'mcq',
     question: 'In a series combination of capacitors connected to a battery, which quantity is the same for each capacitor?',
-    options: ['Potential difference across each', 'Charge stored on each', 'Capacitance of each', 'Energy stored in each'],
+    options: ['Potential difference across each', 'Charge stored on each', 'Energy stored in each', 'Capacitance of each'],
     correctIndex: 1,
     explanation: 'In series, the same charge Q flows onto and accumulates on each capacitor (since they are connected end-to-end forming a single path), while the voltage divides among them.',
     difficulty: 'medium'
@@ -392,11 +392,11 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     question: 'The equivalent capacitance of a series combination of capacitors is always',
     options: [
       'greater than the largest individual capacitance',
-      'less than the smallest individual capacitance',
+      'equal to the average of the capacitances',
       'equal to the sum of the individual capacitances',
-      'equal to the average of the capacitances'
+      'less than the smallest individual capacitance'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since 1/Ceq = sum of reciprocals, the equivalent series capacitance is always smaller than the smallest individual capacitor, analogous to resistors in parallel giving smaller equivalent resistance.',
     difficulty: 'medium'
   },
@@ -405,9 +405,9 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'The equivalent capacitance of a parallel combination of capacitors is always',
     options: [
-      'less than the smallest individual capacitance',
-      'greater than the largest individual capacitance',
       'equal to the smallest individual capacitance',
+      'greater than the largest individual capacitance',
+      'less than the smallest individual capacitance',
       'zero'
     ],
     correctIndex: 1,
@@ -442,12 +442,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'The energy stored in a capacitor is considered to reside',
     options: [
+      'outside the capacitor, in the surrounding air',
       'entirely on the positive plate',
       'entirely on the negative plate',
-      'in the electric field present in the region between the plates',
-      'outside the capacitor, in the surrounding air'
+      'in the electric field present in the region between the plates'
     ],
-    correctIndex: 2,
+    correctIndex: 3,
     explanation: 'In the field-based view of electrostatics, the energy of a charged capacitor is understood to be stored in the electric field occupying the space between the plates, not on the plates themselves.',
     difficulty: 'medium'
   },
@@ -455,7 +455,7 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-40',
     type: 'mcq',
     question: 'Energy density (energy per unit volume) of the electric field in a parallel plate capacitor is given by',
-    options: ['u = ε₀E', 'u = ½ε₀E²', 'u = ε₀E²', 'u = E/ε₀'],
+    options: ['u = ε₀E', 'u = ½ε₀E²', 'u = E/ε₀', 'u = ε₀E²'],
     correctIndex: 1,
     explanation: 'The energy density of an electric field is u = ½ε₀E², a general result showing energy stored per unit volume is proportional to the square of the field strength.',
     difficulty: 'medium'
@@ -465,12 +465,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'A conductor is an equipotential body under electrostatic conditions. This means',
     options: [
-      'the potential varies smoothly from the surface to the centre of the conductor',
-      'the entire conductor, including its surface and interior, is at the same potential',
       'only the surface of the conductor has a well-defined potential',
-      'the potential inside is always higher than at the surface'
+      'the potential varies smoothly from the surface to the centre of the conductor',
+      'the potential inside is always higher than at the surface',
+      'the entire conductor, including its surface and interior, is at the same potential'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since the electric field inside a conductor is zero in electrostatic equilibrium, there is no potential gradient inside it, making the entire conductor (interior and surface) equipotential.',
     difficulty: 'medium'
   },
@@ -479,12 +479,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'When two conductors at different potentials are connected by a wire, charge flows from',
     options: [
+      'the conductor at lower potential to the one at higher potential',
       'the conductor with less charge to the one with more charge',
-      'the conductor at higher potential to the one at lower potential, until both reach the same potential',
       'the smaller conductor to the larger conductor always',
-      'the conductor at lower potential to the one at higher potential'
+      'the conductor at higher potential to the one at lower potential, until both reach the same potential'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Charge (specifically, positive charge conventionally) flows from a region/conductor of higher potential to one of lower potential when connected, continuing until both reach a common equilibrium potential — not necessarily based on which had more charge initially.',
     difficulty: 'medium'
   },
@@ -492,8 +492,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-43',
     type: 'mcq',
     question: 'For a spherical conductor of radius R carrying charge Q, the potential at its surface is',
-    options: ['kQ/R', 'kQ/R²', 'kQR', 'zero'],
-    correctIndex: 0,
+    options: ['kQR', 'kQ/R', 'kQ/R²', 'zero'],
+    correctIndex: 1,
     explanation: 'Since a uniformly charged sphere behaves like a point charge for external and surface points, the potential at the surface is V = kQ/R, the same formula as for a point charge at that distance.',
     difficulty: 'medium'
   },
@@ -515,8 +515,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-45',
     type: 'mcq',
     question: 'A capacitor of capacitance C1 is charged to potential V and then connected to an identical uncharged capacitor C2 = C1. After connection, assuming charge is shared and reaches a common potential, the common potential is',
-    options: ['V', 'V/2', '2V', 'zero'],
-    correctIndex: 1,
+    options: ['2V', 'V', 'zero', 'V/2'],
+    correctIndex: 3,
     explanation: 'By charge conservation, total charge C1V is redistributed equally between two identical capacitors (total capacitance 2C1), giving common potential Vcommon = C1V/(2C1) = V/2.',
     difficulty: 'medium'
   },
@@ -525,10 +525,10 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'When two capacitors charged to different potentials are connected together (positive plate to positive plate), some energy is lost during the redistribution of charge, mainly because',
     options: [
-      'charge is destroyed during the process',
+      'the process violates conservation of energy',
       'energy is dissipated as heat (and possibly radiation/sparking) due to the momentary flow of current through the connecting wires, which have some resistance',
-      'the capacitors gain extra charge from nowhere',
-      'the process violates conservation of energy'
+      'charge is destroyed during the process',
+      'the capacitors gain extra charge from nowhere'
     ],
     correctIndex: 1,
     explanation: 'Even though total charge is conserved, connecting capacitors at different potentials always results in some current flow through the (however small) resistance of the connecting wires, dissipating energy as heat — hence total energy after connection is generally less than before.',
@@ -540,11 +540,11 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     question: 'The van de Graaff generator is a device used to',
     options: [
       'store very small amounts of charge',
-      'build up very high electrostatic potentials (of the order of millions of volts) using a moving charged belt and the principle that charge given to a hollow conductor moves entirely to its outer surface',
+      'generate alternating current',
       'measure electric current directly',
-      'generate alternating current'
+      'build up very high electrostatic potentials (of the order of millions of volts) using a moving charged belt and the principle that charge given to a hollow conductor moves entirely to its outer surface'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The van de Graaff generator accumulates charge on a large hollow spherical conductor using a continuously moving insulating belt, exploiting the fact that charge given to a conductor always moves to its outer surface, allowing extremely high potentials to build up.',
     difficulty: 'medium'
   },
@@ -553,12 +553,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'The principle behind charging a hollow conductor to a very high potential in a van de Graaff generator relies on the fact that',
     options: [
-      'charge given to a hollow conductor resides on the outer surface, so more charge can always be added regardless of the potential already present',
       'the hollow conductor cannot hold any charge',
+      'charge given to a hollow conductor resides on the outer surface, so more charge can always be added regardless of the potential already present',
       'charge always moves to the innermost point of a hollow conductor',
       'potential decreases as more charge is added'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Since excess charge on a conductor always resides on its outer surface, charge can keep being transferred to and added onto the outer shell of the hollow sphere continuously, regardless of how much charge (and hence how high a potential) is already present.',
     difficulty: 'hard'
   },
@@ -568,11 +568,11 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     question: 'The electric potential due to an electric dipole at a point on its equatorial line (perpendicular bisector of the dipole axis) is',
     options: [
       'maximum',
-      'zero, at every point on the equatorial line',
       'equal to the potential on the axial line',
-      'negative always'
+      'negative always',
+      'zero, at every point on the equatorial line'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'By symmetry, the potentials due to the +q and -q charges of the dipole are equal in magnitude but opposite in sign at any point equidistant from both (which is true for every point on the equatorial line), so they cancel exactly, giving zero potential.',
     difficulty: 'medium'
   },
@@ -580,8 +580,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-50',
     type: 'mcq',
     question: 'The electric potential due to a short dipole at a point on its axial line, at distance r (r much greater than dipole length), varies as',
-    options: ['1/r', '1/r²', '1/r³', 'r'],
-    correctIndex: 1,
+    options: ['1/r³', '1/r', 'r', '1/r²'],
+    correctIndex: 3,
     explanation: 'The potential due to a short dipole on the axial line is V = kp/r², decreasing as 1/r², faster than a single point charge\'s potential (1/r) but slower than the corresponding field (1/r³).',
     difficulty: 'medium'
   },
@@ -589,8 +589,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-51',
     type: 'mcq',
     question: 'The general expression for the potential due to a short electric dipole at a point making angle θ with the dipole axis, at distance r, is',
-    options: ['V = kp cosθ/r²', 'V = kp sinθ/r²', 'V = kp/r', 'V = kp cosθ/r'],
-    correctIndex: 0,
+    options: ['V = kp cosθ/r', 'V = kp cosθ/r²', 'V = kp/r', 'V = kp sinθ/r²'],
+    correctIndex: 1,
     explanation: 'The general dipole potential is V = kp cosθ/r², which reduces to kp/r² on the axial line (θ = 0°) and to zero on the equatorial line (θ = 90°), consistent with both special cases.',
     difficulty: 'hard'
   },
@@ -599,12 +599,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'The work done in moving a charge q between two points in an electric field depends on',
     options: [
-      'the exact path taken between the two points',
-      'only the potential difference between the two points and the charge, not on the path taken',
+      'the shape of the region through which the charge moves',
       'the speed at which the charge is moved',
-      'the shape of the region through which the charge moves'
+      'the exact path taken between the two points',
+      'only the potential difference between the two points and the charge, not on the path taken'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since electrostatic forces are conservative, the work done in moving a charge between two points, W = q(VA - VB), depends only on the potential difference between the initial and final points, not on the path.',
     difficulty: 'medium'
   },
@@ -613,9 +613,9 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'The fact that electric potential energy (and hence potential) does not depend on the path taken between two points is a direct consequence of',
     options: [
-      'Ohm\'s law',
-      'the electrostatic force being conservative in nature',
       'the presence of a magnetic field',
+      'the electrostatic force being conservative in nature',
+      'Ohm\'s law',
       'Kirchhoff\'s laws'
     ],
     correctIndex: 1,
@@ -626,7 +626,7 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-54',
     type: 'mcq',
     question: 'The work done in moving a charge along a closed loop in an electrostatic field is',
-    options: ['always positive', 'always negative', 'always zero', 'dependent on the shape of the loop'],
+    options: ['always negative', 'dependent on the shape of the loop', 'always zero', 'always positive'],
     correctIndex: 2,
     explanation: 'Since the electrostatic field is conservative, the work done around any closed path is always zero — this is a fundamental property of conservative fields.',
     difficulty: 'medium'
@@ -636,12 +636,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'The dielectric strength of an insulating material refers to',
     options: [
-      'the maximum electric field the material can withstand before it breaks down and begins to conduct',
-      'the dielectric constant K of the material',
       'the thickness of the material',
-      'the capacitance of a capacitor made using this material'
+      'the maximum electric field the material can withstand before it breaks down and begins to conduct',
+      'the capacitance of a capacitor made using this material',
+      'the dielectric constant K of the material'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Dielectric strength is the maximum electric field intensity a dielectric material can sustain without undergoing electrical breakdown (where it suddenly starts to conduct).',
     difficulty: 'medium'
   },
@@ -650,12 +650,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'In a practical parallel plate capacitor, a thin dielectric sheet is often placed between the plates in addition to increasing capacitance, mainly to',
     options: [
-      'decrease the capacitance',
-      'provide mechanical support and increase the maximum voltage the capacitor can safely withstand (avoiding electrical breakdown)',
       'make the capacitor conduct current continuously',
-      'eliminate the electric field between the plates'
+      'decrease the capacitance',
+      'eliminate the electric field between the plates',
+      'provide mechanical support and increase the maximum voltage the capacitor can safely withstand (avoiding electrical breakdown)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Besides increasing capacitance, a dielectric provides mechanical spacing/support between the plates and increases the breakdown voltage of the capacitor, allowing it to be charged to higher potential differences safely.',
     difficulty: 'medium'
   },
@@ -663,8 +663,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-57',
     type: 'mcq',
     question: 'The capacitance of an isolated spherical conductor of radius R (in vacuum/air) is given by',
-    options: ['C = 4πε₀R', 'C = ε₀R²', 'C = 4πε₀R²', 'C = ε₀/R'],
-    correctIndex: 0,
+    options: ['C = ε₀R²', 'C = ε₀/R', 'C = 4πε₀R', 'C = 4πε₀R²'],
+    correctIndex: 2,
     explanation: 'For an isolated sphere, using C = Q/V with V = kQ/R = Q/(4πε₀R), we get C = 4πε₀R, directly proportional to the radius of the sphere.',
     difficulty: 'medium'
   },
@@ -672,8 +672,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-58',
     type: 'mcq',
     question: 'As the radius of an isolated spherical conductor increases, its capacitance',
-    options: ['decreases', 'increases proportionally with radius', 'remains constant', 'becomes zero'],
-    correctIndex: 1,
+    options: ['becomes zero', 'decreases', 'remains constant', 'increases proportionally with radius'],
+    correctIndex: 3,
     explanation: 'Since C = 4πε₀R for an isolated sphere, capacitance increases directly (linearly) with the radius of the sphere.',
     difficulty: 'easy'
   },
@@ -681,7 +681,7 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-59',
     type: 'mcq',
     question: 'If a battery remains connected to a parallel plate capacitor while a dielectric slab is inserted between the plates, which quantity remains constant?',
-    options: ['Charge on the plates', 'Potential difference across the plates (held fixed by the battery)', 'Capacitance', 'Energy stored'],
+    options: ['Energy stored', 'Potential difference across the plates (held fixed by the battery)', 'Charge on the plates', 'Capacitance'],
     correctIndex: 1,
     explanation: 'With the battery connected, it maintains a fixed potential difference V across the capacitor. Inserting the dielectric increases capacitance, and since V is fixed, additional charge Q = CV flows onto the plates.',
     difficulty: 'medium'
@@ -714,12 +714,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'When a dielectric is inserted into a parallel plate capacitor that remains connected to a battery (constant V), the energy stored in the capacitor',
     options: [
-      'decreases',
-      'increases, since U = ½CV² and C increases while V remains constant (though the battery also does work in this process)',
       'remains exactly the same',
-      'becomes zero'
+      'decreases',
+      'becomes zero',
+      'increases, since U = ½CV² and C increases while V remains constant (though the battery also does work in this process)'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'With V held constant by the battery and C increasing due to the dielectric, U = ½CV² increases; the battery supplies the additional energy required (part of which is stored, part accounts for other effects like the mechanical work of insertion).',
     difficulty: 'hard'
   },
@@ -728,12 +728,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'The concept of "potential" is preferred over "potential energy" as a fundamental quantity in electrostatics because',
     options: [
+      'potential and potential energy are exactly the same quantity',
       'potential energy has no physical meaning',
       'potential is a property of the field/point in space alone (independent of the test charge used), making it more universally useful for characterizing the field',
-      'potential energy cannot be calculated',
-      'potential and potential energy are exactly the same quantity'
+      'potential energy cannot be calculated'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Potential energy U = qV depends on the specific test charge q, whereas potential V = U/q is a property characterizing the field/configuration itself, independent of which charge you place there, making it a more fundamental descriptive quantity.',
     difficulty: 'hard'
   },
@@ -741,8 +741,8 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     id: 'potential-capacitance-64',
     type: 'mcq',
     question: 'A parallel plate capacitor with air between the plates has capacitance C0. If the entire space between the plates is filled with a dielectric of dielectric constant K = 5, the new capacitance is',
-    options: ['C0/5', '5C0', 'C0', '25C0'],
-    correctIndex: 1,
+    options: ['25C0', 'C0/5', '5C0', 'C0'],
+    correctIndex: 2,
     explanation: 'Filling the entire gap with a dielectric of constant K multiplies the capacitance by K, so the new capacitance is 5C0.',
     difficulty: 'easy'
   },
@@ -751,9 +751,9 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'The potential due to a group (system) of point charges at a given point is obtained by',
     options: [
-      'vector addition of the individual potentials',
-      'algebraic (scalar) addition of the individual potentials due to each charge, taking sign into account',
       'multiplying the individual potentials together',
+      'algebraic (scalar) addition of the individual potentials due to each charge, taking sign into account',
+      'vector addition of the individual potentials',
       'considering only the nearest charge'
     ],
     correctIndex: 1,
@@ -766,11 +766,11 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     question: 'A parallel combination of capacitors is generally used when we need to',
     options: [
       'reduce the overall capacitance below the smallest individual value',
-      'increase the overall capacitance and increase the charge storage capacity at a given voltage',
+      'always minimize energy stored',
       'increase the voltage rating without changing capacitance',
-      'always minimize energy stored'
+      'increase the overall capacitance and increase the charge storage capacity at a given voltage'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Parallel combination increases total capacitance (Ceq = sum) and hence the total charge that can be stored for a given applied voltage, making it useful when higher capacitance is required.',
     difficulty: 'medium'
   },
@@ -779,12 +779,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'A series combination of capacitors is generally used when we need to',
     options: [
-      'reduce the overall capacitance and allow the combination to withstand a higher total voltage than any single capacitor alone',
+      'eliminate the need for a battery',
       'increase the overall capacitance',
-      'store more charge than any single capacitor',
-      'eliminate the need for a battery'
+      'reduce the overall capacitance and allow the combination to withstand a higher total voltage than any single capacitor alone',
+      'store more charge than any single capacitor'
     ],
-    correctIndex: 0,
+    correctIndex: 2,
     explanation: 'Series combination reduces the equivalent capacitance but distributes the total applied voltage among the individual capacitors, allowing the combination to be used at a higher total voltage than any single capacitor could handle alone.',
     difficulty: 'medium'
   },
@@ -793,12 +793,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'The potential difference between two points A and B in an electric field, VA - VB, equals',
     options: [
-      'the work done by an external agent in moving a unit positive charge from B to A, against the electric force (quasi-statically)',
-      'the work done by an external agent in moving a unit positive charge from A to B',
       'the electric field strength between A and B',
-      'always zero'
+      'always zero',
+      'the work done by an external agent in moving a unit positive charge from A to B',
+      'the work done by an external agent in moving a unit positive charge from B to A, against the electric force (quasi-statically)'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'The potential difference VA - VB equals the work done per unit positive charge by an external agent in moving the charge from point B to point A against the field, quasi-statically (no change in kinetic energy).',
     difficulty: 'medium'
   },
@@ -821,12 +821,12 @@ export const ELECTROSTATICS_POTENTIAL_CAPACITANCE = [
     type: 'mcq',
     question: 'A negative test charge, when released from rest in an electric field with no other forces acting, will naturally tend to move toward the region of',
     options: [
+      'it will not move at all',
       'lower potential',
-      'higher potential',
       'zero potential only',
-      'it will not move at all'
+      'higher potential'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A negative charge experiences a force opposite to the field direction, i.e., toward higher potential regions, so it accelerates toward higher potential when released from rest.',
     difficulty: 'medium'
   },

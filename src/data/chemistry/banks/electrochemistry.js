@@ -5,12 +5,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'A galvanic (voltaic) cell is a device that converts',
     options: [
-      'electrical energy into chemical energy',
-      'chemical energy into electrical energy, using a spontaneous redox reaction',
       'mechanical energy into chemical energy',
-      'thermal energy into electrical energy directly, without any chemical reaction'
+      'electrical energy into chemical energy',
+      'thermal energy into electrical energy directly, without any chemical reaction',
+      'chemical energy into electrical energy, using a spontaneous redox reaction'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A galvanic cell harnesses a spontaneous redox reaction to generate electrical energy, converting chemical energy into electrical energy.',
     difficulty: 'easy'
   },
@@ -20,11 +20,11 @@ export const ELECTROCHEMISTRY = [
     question: 'An electrolytic cell is a device that converts',
     options: [
       'chemical energy into electrical energy spontaneously',
-      'electrical energy into chemical energy, driving a non-spontaneous redox reaction',
+      'light energy into electrical energy',
       'heat energy into mechanical energy',
-      'light energy into electrical energy'
+      'electrical energy into chemical energy, driving a non-spontaneous redox reaction'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'An electrolytic cell uses an external source of electrical energy to force a non-spontaneous redox reaction to occur, converting electrical energy into chemical energy.',
     difficulty: 'easy'
   },
@@ -32,8 +32,8 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-3',
     type: 'mcq',
     question: 'In a galvanic cell, oxidation occurs at the',
-    options: ['cathode', 'anode', 'salt bridge', 'external wire'],
-    correctIndex: 1,
+    options: ['cathode', 'salt bridge', 'external wire', 'anode'],
+    correctIndex: 3,
     explanation: 'By convention, oxidation always occurs at the anode, whether the cell is galvanic or electrolytic.',
     difficulty: 'easy'
   },
@@ -41,8 +41,8 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-4',
     type: 'mcq',
     question: 'In a galvanic cell, reduction occurs at the',
-    options: ['anode', 'cathode', 'salt bridge', 'voltmeter'],
-    correctIndex: 1,
+    options: ['voltmeter', 'anode', 'salt bridge', 'cathode'],
+    correctIndex: 3,
     explanation: 'By convention, reduction always occurs at the cathode, whether the cell is galvanic or electrolytic.',
     difficulty: 'easy'
   },
@@ -50,8 +50,8 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-5',
     type: 'mcq',
     question: 'In a galvanic cell, the anode is the',
-    options: ['positive electrode', 'negative electrode', 'electrode with no charge', 'electrode connected directly to the salt bridge only'],
-    correctIndex: 1,
+    options: ['positive electrode', 'electrode with no charge', 'electrode connected directly to the salt bridge only', 'negative electrode'],
+    correctIndex: 3,
     explanation: 'In a galvanic cell, since electrons are released at the anode and flow out into the external circuit, the anode is designated the negative electrode.',
     difficulty: 'medium'
   },
@@ -59,8 +59,8 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-6',
     type: 'mcq',
     question: 'In a galvanic cell, the cathode is the',
-    options: ['negative electrode', 'positive electrode', 'electrode where oxidation occurs', 'electrode that always loses mass'],
-    correctIndex: 1,
+    options: ['electrode that always loses mass', 'electrode where oxidation occurs', 'negative electrode', 'positive electrode'],
+    correctIndex: 3,
     explanation: 'In a galvanic cell, electrons flow into the cathode from the external circuit and are consumed in reduction, making the cathode the positive electrode.',
     difficulty: 'medium'
   },
@@ -71,8 +71,8 @@ export const ELECTROCHEMISTRY = [
     options: [
       'anode is negative and cathode is positive, same as a galvanic cell',
       'anode is positive and cathode is negative',
-      'both electrodes are always neutral',
-      'cathode is where oxidation occurs'
+      'cathode is where oxidation occurs',
+      'both electrodes are always neutral'
     ],
     correctIndex: 1,
     explanation: 'In an electrolytic cell, the external battery forces electrons into the cathode (making it negative) and pulls them from the anode (making it positive) — opposite polarity to a galvanic cell, even though oxidation still occurs at the anode and reduction still at the cathode.',
@@ -84,11 +84,11 @@ export const ELECTROCHEMISTRY = [
     question: 'The primary function of the salt bridge in a galvanic cell is to',
     options: [
       'increase the concentration of the electrolyte solutions',
-      'maintain electrical neutrality in both half-cells by allowing ion flow, and minimise the liquid junction potential',
+      'supply electrons directly to the cathode',
       'act as an external resistor to control current flow',
-      'supply electrons directly to the cathode'
+      'maintain electrical neutrality in both half-cells by allowing ion flow, and minimise the liquid junction potential'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The salt bridge completes the internal circuit by allowing ions to migrate between the two half-cells, maintaining electrical neutrality as the reaction proceeds, while also minimising the liquid junction potential.',
     difficulty: 'medium'
   },
@@ -105,8 +105,8 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-10',
     type: 'mcq',
     question: 'By convention, in writing a galvanic cell using standard notation, the anode is written on the',
-    options: ['right side', 'left side', 'top', 'it does not matter which side'],
-    correctIndex: 1,
+    options: ['right side', 'it does not matter which side', 'top', 'left side'],
+    correctIndex: 3,
     explanation: 'The standard convention places the anode (where oxidation occurs) on the left and the cathode (where reduction occurs) on the right.',
     difficulty: 'easy'
   },
@@ -117,8 +117,8 @@ export const ELECTROCHEMISTRY = [
     options: [
       'Cu(s) + Zn2+(aq) → Cu2+(aq) + Zn(s)',
       'Zn(s) + Cu2+(aq) → Zn2+(aq) + Cu(s)',
-      'Zn(s) + Cu(s) → ZnCu(s)',
-      'no net reaction occurs in a Daniell cell'
+      'no net reaction occurs in a Daniell cell',
+      'Zn(s) + Cu(s) → ZnCu(s)'
     ],
     correctIndex: 1,
     explanation: 'In the Daniell cell, zinc metal is oxidised to Zn2+ while Cu2+ ions are reduced to copper metal, giving the spontaneous overall reaction Zn(s) + Cu2+(aq) → Zn2+(aq) + Cu(s).',
@@ -128,8 +128,8 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-12',
     type: 'mcq',
     question: 'Electrons flow through the external circuit of a galvanic cell from the',
-    options: ['cathode to the anode', 'anode to the cathode', 'salt bridge to the anode', 'salt bridge to the cathode'],
-    correctIndex: 1,
+    options: ['salt bridge to the cathode', 'cathode to the anode', 'salt bridge to the anode', 'anode to the cathode'],
+    correctIndex: 3,
     explanation: 'Since oxidation releases electrons at the anode, electrons flow through the external wire from the anode to the cathode, where they are consumed in reduction.',
     difficulty: 'easy'
   },
@@ -137,8 +137,8 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-13',
     type: 'mcq',
     question: 'The electromotive force (EMF) of a cell is measured experimentally using a',
-    options: ['simple ammeter', 'potentiometer, under conditions of zero or negligible current flow', 'thermometer', 'ordinary voltmeter that draws large current'],
-    correctIndex: 1,
+    options: ['simple ammeter', 'ordinary voltmeter that draws large current', 'thermometer', 'potentiometer, under conditions of zero or negligible current flow'],
+    correctIndex: 3,
     explanation: 'EMF is measured using a potentiometer, which balances the cell voltage against a reference voltage under conditions where negligible current is drawn, giving the true equilibrium potential.',
     difficulty: 'medium'
   },
@@ -146,7 +146,7 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-14',
     type: 'mcq',
     question: 'The standard hydrogen electrode (SHE) is assigned a standard reduction potential of',
-    options: ['+1.00 V', '0.00 V, by convention', '-1.00 V', 'a value that depends on the metal used in the other half-cell'],
+    options: ['a value that depends on the metal used in the other half-cell', '0.00 V, by convention', '-1.00 V', '+1.00 V'],
     correctIndex: 1,
     explanation: 'By international convention, the standard hydrogen electrode is assigned a standard reduction potential of exactly 0.00 V at all temperatures, serving as the universal reference electrode.',
     difficulty: 'easy'
@@ -155,8 +155,8 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-15',
     type: 'mcq',
     question: 'The standard electrode potential of any half-cell is measured by connecting it to a',
-    options: ['second identical half-cell', 'standard hydrogen electrode, forming a complete cell', 'battery of known voltage only', 'resistor of known resistance'],
-    correctIndex: 1,
+    options: ['battery of known voltage only', 'second identical half-cell', 'resistor of known resistance', 'standard hydrogen electrode, forming a complete cell'],
+    correctIndex: 3,
     explanation: 'Standard electrode potentials are determined by pairing the half-cell of interest with the standard hydrogen electrode and measuring the resulting cell EMF under standard conditions.',
     difficulty: 'medium'
   },
@@ -165,10 +165,10 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'The EMF of a galvanic cell (Ecell) is related to the electrode potentials of the two half-cells by',
     options: [
-      'Ecell = Eanode - Ecathode',
+      'Ecell is unrelated to the individual electrode potentials',
       'Ecell = Ecathode - Eanode, using reduction potentials for both',
-      'Ecell = Eanode + Ecathode',
-      'Ecell is unrelated to the individual electrode potentials'
+      'Ecell = Eanode - Ecathode',
+      'Ecell = Eanode + Ecathode'
     ],
     correctIndex: 1,
     explanation: 'The cell EMF is calculated as the reduction potential of the cathode minus the reduction potential of the anode: Ecell = Ecathode - Eanode.',
@@ -178,7 +178,7 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-17',
     type: 'mcq',
     question: 'A positive value of the standard cell potential (E°cell) indicates that the cell reaction, as written, is',
-    options: ['non-spontaneous', 'spontaneous, with a negative Gibbs free energy change', 'at equilibrium', 'independent of thermodynamics'],
+    options: ['non-spontaneous', 'spontaneous, with a negative Gibbs free energy change', 'independent of thermodynamics', 'at equilibrium'],
     correctIndex: 1,
     explanation: 'A positive E°cell corresponds to a negative ΔG° (since ΔG° = -nFE°cell), indicating that the cell reaction, as written, proceeds spontaneously.',
     difficulty: 'medium'
@@ -187,8 +187,8 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-18',
     type: 'mcq',
     question: 'The relationship between the standard Gibbs energy change and the standard cell potential of a redox reaction is given by',
-    options: ['ΔG° = nFE°cell', 'ΔG° = -nFE°cell', 'ΔG° = FE°cell / n', 'ΔG° = -nF / E°cell'],
-    correctIndex: 1,
+    options: ['ΔG° = FE°cell / n', 'ΔG° = nFE°cell', 'ΔG° = -nF / E°cell', 'ΔG° = -nFE°cell'],
+    correctIndex: 3,
     explanation: 'The thermodynamic relation connecting Gibbs free energy change and cell potential is ΔG° = -nFE°cell, where n is the number of moles of electrons transferred and F is the Faraday constant.',
     difficulty: 'medium'
   },
@@ -197,12 +197,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'The Nernst equation relates the cell potential under non-standard conditions to the standard cell potential and the',
     options: [
+      'size of the salt bridge',
       'temperature and reaction quotient (Q) of the cell reaction',
-      'mass of the electrodes used',
       'colour of the electrolyte solution',
-      'size of the salt bridge'
+      'mass of the electrodes used'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'The Nernst equation, Ecell = E°cell - (RT/nF) ln Q, expresses how the actual cell potential depends on temperature and the reaction quotient Q, which reflects the current concentrations of reactants and products.',
     difficulty: 'medium'
   },
@@ -211,12 +211,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'The Nernst equation at 298 K, in terms of base-10 logarithm, is commonly written as',
     options: [
-      'Ecell = E°cell - (0.0591/n) log Q',
-      'Ecell = E°cell + (0.0591/n) log Q',
+      'Ecell = E°cell / (0.0591 × n) log Q',
       'Ecell = E°cell - (0.0591 × n) log Q',
-      'Ecell = E°cell / (0.0591 × n) log Q'
+      'Ecell = E°cell + (0.0591/n) log Q',
+      'Ecell = E°cell - (0.0591/n) log Q'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Converting the natural logarithm form to base-10 and substituting T = 298 K gives the widely used form Ecell = E°cell - (0.0591/n) log Q.',
     difficulty: 'medium'
   },
@@ -238,8 +238,8 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-22',
     type: 'mcq',
     question: 'At electrochemical equilibrium, the cell potential (Ecell) of a galvanic cell becomes',
-    options: ['maximum', 'zero, and the reaction quotient Q equals the equilibrium constant K', 'equal to E°cell', 'undefined'],
-    correctIndex: 1,
+    options: ['undefined', 'maximum', 'equal to E°cell', 'zero, and the reaction quotient Q equals the equilibrium constant K'],
+    correctIndex: 3,
     explanation: 'At equilibrium, no net reaction occurs, so Ecell = 0, and at this point Q equals the equilibrium constant K of the cell reaction.',
     difficulty: 'medium'
   },
@@ -248,12 +248,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'The relationship between the standard cell potential and the equilibrium constant of the cell reaction is given by',
     options: [
+      'E°cell = nF / (RT ln K)',
       'E°cell = (RT/nF) ln K',
       'E°cell = -nF ln K',
-      'E°cell = nF / (RT ln K)',
       'E°cell is unrelated to the equilibrium constant'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'Combining ΔG° = -nFE°cell with ΔG° = -RT ln K gives E°cell = (RT/nF) ln K, linking the standard cell potential directly to the equilibrium constant of the reaction.',
     difficulty: 'hard'
   },
@@ -263,11 +263,11 @@ export const ELECTROCHEMISTRY = [
     question: 'Specific conductance (conductivity, κ) of an electrolytic solution is defined as the conductance of',
     options: [
       'the entire volume of solution in the cell, regardless of dimensions',
-      'a solution enclosed between two electrodes of unit area of cross-section separated by unit length',
       'one mole of the electrolyte dissolved in the solution',
-      'pure solvent alone, without any electrolyte'
+      'pure solvent alone, without any electrolyte',
+      'a solution enclosed between two electrodes of unit area of cross-section separated by unit length'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Conductivity (κ) is defined as the conductance of a solution contained between electrodes of unit area separated by unit distance, making it a property intrinsic to the material.',
     difficulty: 'medium'
   },
@@ -275,8 +275,8 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-25',
     type: 'mcq',
     question: 'Molar conductivity (Λm) of an electrolytic solution is related to its conductivity (κ) and molar concentration (c) by',
-    options: ['Λm = κ × c', 'Λm = κ / c', 'Λm = c / κ', 'Λm = κ + c'],
-    correctIndex: 1,
+    options: ['Λm = c / κ', 'Λm = κ + c', 'Λm = κ × c', 'Λm = κ / c'],
+    correctIndex: 3,
     explanation: 'Molar conductivity is defined as Λm = κ/c, representing the conducting power of all the ions produced by dissolving one mole of electrolyte.',
     difficulty: 'medium'
   },
@@ -285,10 +285,10 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'As an electrolyte solution is progressively diluted, the conductivity (κ) of the solution generally',
     options: [
-      'increases, because more ions are generated',
-      'decreases, because the number of ions per unit volume decreases',
       'remains completely unchanged',
-      'becomes undefined at low concentration'
+      'decreases, because the number of ions per unit volume decreases',
+      'becomes undefined at low concentration',
+      'increases, because more ions are generated'
     ],
     correctIndex: 1,
     explanation: 'Conductivity depends on the number of ions present per unit volume; as the solution is diluted, this number decreases, so conductivity decreases.',
@@ -299,10 +299,10 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'As an electrolyte solution is progressively diluted, the molar conductivity (Λm) generally',
     options: [
-      'decreases continuously',
+      'becomes zero at infinite dilution',
       'increases, since it accounts for the total conducting power of one mole of the electrolyte, unaffected by the drop in ion density',
-      'remains constant for both strong and weak electrolytes',
-      'becomes zero at infinite dilution'
+      'decreases continuously',
+      'remains constant for both strong and weak electrolytes'
     ],
     correctIndex: 1,
     explanation: 'Molar conductivity increases with dilution because it is normalised per mole of electrolyte; for weak electrolytes this rise reflects increased dissociation, while for strong electrolytes it reflects reduced interionic interactions.',
@@ -312,8 +312,8 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-28',
     type: 'mcq',
     question: 'For strong electrolytes, molar conductivity (Λm) plotted against the square root of concentration (√c) gives approximately a',
-    options: ['sharply rising curve near c = 0', 'straight line, which can be extrapolated to c = 0 to find Λm°', 'horizontal line at all concentrations', 'random scattering of points'],
-    correctIndex: 1,
+    options: ['random scattering of points', 'horizontal line at all concentrations', 'sharply rising curve near c = 0', 'straight line, which can be extrapolated to c = 0 to find Λm°'],
+    correctIndex: 3,
     explanation: 'For strong electrolytes, the Λm vs √c plot is nearly linear (as described by the Debye-Hückel-Onsager equation), allowing extrapolation to zero concentration to determine the limiting molar conductivity, Λm°.',
     difficulty: 'medium'
   },
@@ -322,12 +322,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'For weak electrolytes, the value of Λm° (limiting molar conductivity at infinite dilution) generally cannot be obtained by simple extrapolation of the Λm vs √c plot because',
     options: [
+      'Λm decreases sharply near c = 0 for weak electrolytes',
       'weak electrolytes do not conduct electricity at all',
-      'Λm rises very steeply at low concentrations, so the plot does not extrapolate reliably to c = 0',
       'weak electrolytes have no ions in solution',
-      'Λm decreases sharply near c = 0 for weak electrolytes'
+      'Λm rises very steeply at low concentrations, so the plot does not extrapolate reliably to c = 0'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'For weak electrolytes, molar conductivity increases very sharply as concentration approaches zero (due to increasing dissociation), making a reliable graphical extrapolation to Λm° impractical.',
     difficulty: 'hard'
   },
@@ -350,9 +350,9 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'According to Kohlrausch\'s law, the limiting molar conductivity of an electrolyte, Λm°, can be expressed as',
     options: [
-      'Λm° = ν+λ°+ - ν-λ°-',
-      'Λm° = ν+λ°+ + ν-λ°-, where ν+ and ν- are the number of cations and anions per formula unit',
       'Λm° = ν+ × ν- × λ°+ × λ°-',
+      'Λm° = ν+λ°+ + ν-λ°-, where ν+ and ν- are the number of cations and anions per formula unit',
+      'Λm° = ν+λ°+ - ν-λ°-',
       'Λm° = λ°+ / λ°-'
     ],
     correctIndex: 1,
@@ -364,12 +364,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'Kohlrausch\'s law is particularly useful for determining the limiting molar conductivity (Λm°) of',
     options: [
-      'strong electrolytes only, since weak electrolytes cannot be measured at all',
-      'weak electrolytes, using known Λm° values of related strong electrolytes',
+      'gaseous mixtures',
       'pure solvents with no dissolved electrolyte',
-      'gaseous mixtures'
+      'strong electrolytes only, since weak electrolytes cannot be measured at all',
+      'weak electrolytes, using known Λm° values of related strong electrolytes'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Since Λm° for weak electrolytes cannot be found by direct extrapolation, Kohlrausch\'s law allows it to be calculated indirectly by combining the known Λm° values of strong electrolytes that share common ions.',
     difficulty: 'medium'
   },
@@ -378,9 +378,9 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'The degree of dissociation (α) of a weak electrolyte at a given concentration can be estimated using',
     options: [
-      'α = Λm° / Λcm, where Λcm is the molar conductivity at that concentration',
-      'α = Λcm / Λm°, the ratio of molar conductivity at concentration c to the limiting molar conductivity',
       'α = Λcm × Λm°',
+      'α = Λcm / Λm°, the ratio of molar conductivity at concentration c to the limiting molar conductivity',
+      'α = Λm° / Λcm, where Λcm is the molar conductivity at that concentration',
       'α is unrelated to molar conductivity'
     ],
     correctIndex: 1,
@@ -392,10 +392,10 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'Faraday\'s first law of electrolysis states that the mass of a substance deposited or liberated at an electrode is',
     options: [
-      'independent of the quantity of electricity passed',
+      'proportional only to the time of electrolysis, regardless of current',
       'directly proportional to the quantity of electricity (charge) passed through the electrolyte',
-      'inversely proportional to the quantity of electricity passed',
-      'proportional only to the time of electrolysis, regardless of current'
+      'independent of the quantity of electricity passed',
+      'inversely proportional to the quantity of electricity passed'
     ],
     correctIndex: 1,
     explanation: 'Faraday\'s first law states m ∝ Q, i.e. the mass of substance deposited/liberated is directly proportional to the total quantity of charge (Q = It) passed through the electrolyte.',
@@ -407,11 +407,11 @@ export const ELECTROCHEMISTRY = [
     question: 'Faraday\'s second law of electrolysis states that when the same quantity of electricity is passed through different electrolytes connected in series, the masses of substances deposited are',
     options: [
       'all exactly equal, regardless of the substance',
-      'proportional to their chemical equivalent weights',
       'inversely proportional to their molar masses',
-      'unrelated to the substances involved'
+      'unrelated to the substances involved',
+      'proportional to their chemical equivalent weights'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Faraday\'s second law states that for the same quantity of charge, the masses of different substances liberated at electrodes are proportional to their respective equivalent weights.',
     difficulty: 'medium'
   },
@@ -421,11 +421,11 @@ export const ELECTROCHEMISTRY = [
     question: 'One Faraday of electricity corresponds to the charge carried by',
     options: [
       'one electron',
-      'one mole of electrons, approximately 96500 coulombs',
       'one mole of protons only',
-      'one coulomb of charge'
+      'one coulomb of charge',
+      'one mole of electrons, approximately 96500 coulombs'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'One Faraday (F) is defined as the charge carried by one mole of electrons, with a value of approximately 96500 C/mol.',
     difficulty: 'easy'
   },
@@ -434,10 +434,10 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'During the electrolysis of dilute aqueous sodium chloride solution using inert electrodes, at the cathode, the species preferentially reduced is generally',
     options: [
-      'Na+ ions, giving sodium metal',
-      'water molecules, giving hydrogen gas and hydroxide ions, since the reduction potential of water is more favourable than that of Na+',
       'Cl- ions',
-      'no reduction occurs at the cathode'
+      'water molecules, giving hydrogen gas and hydroxide ions, since the reduction potential of water is more favourable than that of Na+',
+      'no reduction occurs at the cathode',
+      'Na+ ions, giving sodium metal'
     ],
     correctIndex: 1,
     explanation: 'Since the standard reduction potential of Na+/Na is much more negative than that of water, water is preferentially reduced at the cathode, liberating hydrogen gas and leaving hydroxide ions in solution.',
@@ -448,12 +448,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'During the electrolysis of molten sodium chloride (with no water present), the products formed are',
     options: [
-      'sodium metal at the cathode and chlorine gas at the anode',
+      'no reaction occurs in the molten state',
       'hydrogen gas at the cathode and oxygen gas at the anode',
       'sodium hydroxide only',
-      'no reaction occurs in the molten state'
+      'sodium metal at the cathode and chlorine gas at the anode'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'With no water present to compete, molten NaCl is electrolysed directly, giving sodium metal deposited at the cathode (Na+ reduced) and chlorine gas liberated at the anode (Cl- oxidised).',
     difficulty: 'medium'
   },
@@ -462,10 +462,10 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'A dry cell (Leclanché-type cell) is an example of a',
     options: [
-      'secondary (rechargeable) cell',
+      'concentration cell',
       'primary (non-rechargeable) cell',
       'fuel cell',
-      'concentration cell'
+      'secondary (rechargeable) cell'
     ],
     correctIndex: 1,
     explanation: 'A dry cell is a primary cell — once its chemical reactants are consumed, the reaction cannot be reversed by recharging, so the cell must be discarded.',
@@ -476,12 +476,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'In a common dry cell (Leclanché cell), the anode and cathode materials are, respectively,',
     options: [
-      'zinc metal container and a graphite (carbon) rod surrounded by manganese dioxide',
-      'lead and lead dioxide',
       'cadmium and nickel oxide',
-      'platinum and hydrogen gas'
+      'lead and lead dioxide',
+      'platinum and hydrogen gas',
+      'zinc metal container and a graphite (carbon) rod surrounded by manganese dioxide'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'In a dry cell, the zinc container acts as the anode, and a central graphite rod surrounded by a paste of MnO2 and carbon acts as the cathode.',
     difficulty: 'medium'
   },
@@ -490,10 +490,10 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'A mercury cell (button cell), commonly used in hearing aids and watches, is notable for providing',
     options: [
-      'a steadily increasing voltage over its lifetime',
+      'a voltage that depends heavily on the current drawn',
       'a highly steady, constant voltage throughout its useful life',
       'a voltage that fluctuates unpredictably',
-      'a voltage that depends heavily on the current drawn'
+      'a steadily increasing voltage over its lifetime'
     ],
     correctIndex: 1,
     explanation: 'The mercury cell provides an unusually steady voltage because its overall cell reaction does not involve any ion in solution whose concentration changes appreciably during discharge.',
@@ -504,12 +504,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'The lead storage battery, commonly used in automobiles, is an example of a',
     options: [
-      'primary cell that cannot be recharged',
-      'secondary cell that can be recharged by passing current in the reverse direction',
       'fuel cell',
-      'reference electrode'
+      'reference electrode',
+      'primary cell that cannot be recharged',
+      'secondary cell that can be recharged by passing current in the reverse direction'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The lead storage battery is a secondary cell — the discharge reaction can be reversed by passing an external current through it in the opposite direction, recharging the battery.',
     difficulty: 'easy'
   },
@@ -518,12 +518,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'In a lead storage battery, the electrodes used are',
     options: [
+      'platinum electrodes with hydrogen gas',
       'spongy lead (Pb) as anode and lead dioxide (PbO2) as cathode, with dilute sulphuric acid as electrolyte',
-      'zinc as anode and copper as cathode',
       'cadmium as anode and nickel oxide as cathode',
-      'platinum electrodes with hydrogen gas'
+      'zinc as anode and copper as cathode'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'The lead storage battery uses spongy lead as the anode and lead dioxide as the cathode, immersed in dilute sulphuric acid as the electrolyte.',
     difficulty: 'medium'
   },
@@ -531,7 +531,7 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-44',
     type: 'mcq',
     question: 'During discharge of a lead storage battery, both the lead anode and the lead dioxide cathode are converted to',
-    options: ['pure lead metal', 'lead sulphate (PbSO4)', 'lead oxide (PbO)', 'lead chloride'],
+    options: ['pure lead metal', 'lead sulphate (PbSO4)', 'lead chloride', 'lead oxide (PbO)'],
     correctIndex: 1,
     explanation: 'During discharge, both electrode reactions produce lead sulphate (PbSO4), which deposits on the respective electrodes and is later reconverted during charging.',
     difficulty: 'medium'
@@ -542,11 +542,11 @@ export const ELECTROCHEMISTRY = [
     question: 'The nickel-cadmium (Ni-Cd) cell, compared to the lead storage battery, has the advantage of',
     options: [
       'being much cheaper to manufacture',
-      'having a longer life, though at a higher manufacturing cost',
+      'requiring no electrolyte at all',
       'not being rechargeable, which simplifies its design',
-      'requiring no electrolyte at all'
+      'having a longer life, though at a higher manufacturing cost'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The Ni-Cd cell offers a longer operational life than the lead storage battery, though this comes at the expense of a higher manufacturing cost.',
     difficulty: 'medium'
   },
@@ -555,12 +555,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'A fuel cell is a device that converts the energy of combustion of a fuel',
     options: [
-      'first into heat, and then into electrical energy via a heat engine',
-      'directly into electrical energy, without a separate combustion step',
+      'into light energy',
       'into mechanical energy only',
-      'into light energy'
+      'first into heat, and then into electrical energy via a heat engine',
+      'directly into electrical energy, without a separate combustion step'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Fuel cells convert the chemical energy of a fuel directly into electrical energy through controlled electrochemical oxidation, bypassing the inefficiencies of a separate combustion and heat-engine process.',
     difficulty: 'medium'
   },
@@ -568,7 +568,7 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-47',
     type: 'mcq',
     question: 'The hydrogen-oxygen fuel cell, famously used in the Apollo space programme, produces which by-product?',
-    options: ['carbon dioxide', 'water, which made it especially valuable for use aboard spacecraft', 'sulphur dioxide', 'nitrogen oxides'],
+    options: ['nitrogen oxides', 'water, which made it especially valuable for use aboard spacecraft', 'carbon dioxide', 'sulphur dioxide'],
     correctIndex: 1,
     explanation: 'The overall reaction in a hydrogen-oxygen fuel cell, 2H2 + O2 → 2H2O, produces water as its only by-product, which was additionally useful as drinking water for astronauts.',
     difficulty: 'medium'
@@ -578,12 +578,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'A major advantage of fuel cells over conventional batteries is that fuel cells',
     options: [
-      'require no maintenance and last forever with no fuel supply',
-      'can operate continuously as long as reactants (fuel and oxidant) are continuously supplied, without needing to be recharged',
       'never produce any electrical current',
-      'are always cheaper than any other type of cell'
+      'are always cheaper than any other type of cell',
+      'require no maintenance and last forever with no fuel supply',
+      'can operate continuously as long as reactants (fuel and oxidant) are continuously supplied, without needing to be recharged'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Unlike batteries, fuel cells can generate electricity indefinitely as long as fuel and oxidant are continuously fed in, since the reactants are not stored internally but supplied externally.',
     difficulty: 'medium'
   },
@@ -620,12 +620,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'In the mechanism of rusting, at the anodic region of the iron surface, the reaction occurring is',
     options: [
+      'Fe2+ + 2OH- → Fe(OH)2, a precipitation only',
       'Fe(s) → Fe2+(aq) + 2e-, an oxidation',
       'O2 + 2H2O + 4e- → 4OH-, a reduction',
-      'Fe2+ + 2OH- → Fe(OH)2, a precipitation only',
       'no reaction occurs at the anodic region'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'At the anodic region of the corroding iron surface, iron metal is oxidised to Fe2+ ions, releasing electrons that migrate through the metal to the cathodic region.',
     difficulty: 'medium'
   },
@@ -634,12 +634,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'In the mechanism of rusting, at the cathodic region of the iron surface, dissolved oxygen is generally reduced according to',
     options: [
-      'O2(g) + 4H+(aq) + 4e- → 2H2O(l)',
-      'Fe(s) → Fe2+(aq) + 2e-',
       'Fe2+(aq) → Fe3+(aq) + e-',
-      'H2O → H2 + 1/2 O2'
+      'O2(g) + 4H+(aq) + 4e- → 2H2O(l)',
+      'H2O → H2 + 1/2 O2',
+      'Fe(s) → Fe2+(aq) + 2e-'
     ],
-    correctIndex: 0,
+    correctIndex: 1,
     explanation: 'At the cathodic region, dissolved oxygen (aided by H+ from dissolved CO2 forming carbonic acid) is reduced to water, consuming the electrons released at the anodic region.',
     difficulty: 'medium'
   },
@@ -648,12 +648,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'The relationship between molar conductivity (Λm) and the molarity (c) of the electrolyte, along with conductivity (κ), is generally expressed with which unit conversion consideration?',
     options: [
-      'Λm has units of S cm2 mol-1 (or S m2 mol-1), requiring c to be expressed consistently in mol per unit volume',
       'Λm has the same units as κ',
+      'molarity has no role in this relationship',
       'Λm is always dimensionless',
-      'molarity has no role in this relationship'
+      'Λm has units of S cm2 mol-1 (or S m2 mol-1), requiring c to be expressed consistently in mol per unit volume'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Since Λm = κ/c, and κ has units of S/cm (or S/m), the concentration must be expressed in matching volume units (e.g., mol/cm³ or mol/m³) to give Λm consistent units of S cm² mol-1 or S m² mol-1.',
     difficulty: 'hard'
   },
@@ -690,12 +690,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'Which of the following is an application of Kohlrausch\'s law?',
     options: [
-      'Calculating the limiting molar conductivity of a weak electrolyte such as acetic acid from the limiting molar conductivities of related strong electrolytes',
-      'Determining the melting point of an electrolyte',
+      'Determining the boiling point elevation of a solution',
       'Calculating the vapour pressure of a solution',
-      'Determining the boiling point elevation of a solution'
+      'Determining the melting point of an electrolyte',
+      'Calculating the limiting molar conductivity of a weak electrolyte such as acetic acid from the limiting molar conductivities of related strong electrolytes'
     ],
-    correctIndex: 0,
+    correctIndex: 3,
     explanation: 'Kohlrausch\'s law allows calculation of Λm° for a weak electrolyte like acetic acid using known Λm° values of strong electrolytes sharing common ions, such as HCl, CH3COONa, and NaCl.',
     difficulty: 'medium'
   },
@@ -712,7 +712,7 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-58',
     type: 'mcq',
     question: 'A cell in which the two half-cells contain the same electrode material but different ionic concentrations, generating an EMF purely due to the concentration difference, is called a',
-    options: ['fuel cell', 'concentration cell', 'primary cell', 'reference cell only'],
+    options: ['reference cell only', 'concentration cell', 'fuel cell', 'primary cell'],
     correctIndex: 1,
     explanation: 'A concentration cell derives its EMF entirely from the difference in ionic concentration between two half-cells using the same electrode material, and its potential can be calculated using the Nernst equation.',
     difficulty: 'medium'
@@ -722,12 +722,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'For a concentration cell to generate a non-zero EMF, the two half-cells must have',
     options: [
-      'identical electrode materials and identical ion concentrations',
-      'identical electrode materials but different ion concentrations',
       'different electrode materials but identical ion concentrations',
-      'no electrolyte solution present at all'
+      'no electrolyte solution present at all',
+      'identical electrode materials and identical ion concentrations',
+      'identical electrode materials but different ion concentrations'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A concentration cell is built from identical electrodes and ions, but with a concentration difference between the two half-cells; this difference is precisely what drives the spontaneous cell reaction and generates EMF.',
     difficulty: 'medium'
   },
@@ -735,7 +735,7 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-60',
     type: 'mcq',
     question: 'The unit commonly used for conductivity (κ) of an electrolytic solution is',
-    options: ['ohm (Ω)', 'siemens per metre (S/m) or siemens per centimetre (S/cm)', 'farad (F)', 'coulomb (C)'],
+    options: ['coulomb (C)', 'siemens per metre (S/m) or siemens per centimetre (S/cm)', 'ohm (Ω)', 'farad (F)'],
     correctIndex: 1,
     explanation: 'Conductivity is the reciprocal of resistivity, with SI units of siemens per metre (S/m); it is also commonly expressed in siemens per centimetre (S/cm).',
     difficulty: 'medium'
@@ -744,8 +744,8 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-61',
     type: 'mcq',
     question: 'The reciprocal of resistance is called',
-    options: ['resistivity', 'conductance', 'capacitance', 'inductance'],
-    correctIndex: 1,
+    options: ['resistivity', 'inductance', 'capacitance', 'conductance'],
+    correctIndex: 3,
     explanation: 'Conductance is defined as the reciprocal of resistance, expressed in units of siemens (S), previously called mho.',
     difficulty: 'easy'
   },
@@ -753,8 +753,8 @@ export const ELECTROCHEMISTRY = [
     id: 'electrochem-62',
     type: 'mcq',
     question: 'The unit of electrical conductance (as opposed to conductivity) is',
-    options: ['siemens (S)', 'siemens per metre (S/m)', 'ohm-metre', 'siemens metre squared per mole'],
-    correctIndex: 0,
+    options: ['siemens metre squared per mole', 'siemens (S)', 'siemens per metre (S/m)', 'ohm-metre'],
+    correctIndex: 1,
     explanation: 'Conductance, being the reciprocal of resistance (measured in ohms), has units of siemens (S), sometimes historically called mho.',
     difficulty: 'medium'
   },
@@ -764,11 +764,11 @@ export const ELECTROCHEMISTRY = [
     question: 'For the electrolysis of an aqueous CuSO4 solution using copper electrodes (electrorefining setup), the anode (impure copper) undergoes',
     options: [
       'reduction, gaining copper metal',
+      'reduction to form hydrogen gas',
       'oxidation, dissolving as Cu2+ ions into solution',
-      'no chemical change at all',
-      'reduction to form hydrogen gas'
+      'no chemical change at all'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'In electrorefining, the impure copper anode is oxidised, dissolving into the solution as Cu2+ ions, while pure copper is deposited by reduction at the cathode.',
     difficulty: 'medium'
   },
@@ -778,11 +778,11 @@ export const ELECTROCHEMISTRY = [
     question: 'The number of electrons transferred in a redox reaction, as used in the term "n" in the Nernst equation and in ΔG° = -nFE°cell, refers to the',
     options: [
       'total number of atoms in the balanced equation',
-      'number of moles of electrons transferred per mole of reaction as balanced',
       'atomic number of the metal involved',
-      'number of moles of electrolyte used'
+      'number of moles of electrolyte used',
+      'number of moles of electrons transferred per mole of reaction as balanced'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'The symbol n represents the number of moles of electrons transferred in the balanced overall redox reaction, a key quantity linking cell potential, Gibbs energy, and Faraday\'s constant.',
     difficulty: 'medium'
   },
@@ -791,10 +791,10 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'If the standard cell potential (E°cell) of a reaction is negative, the reaction as written is',
     options: [
-      'spontaneous in the forward direction',
+      'unrelated to spontaneity',
       'non-spontaneous in the forward direction, but the reverse reaction would be spontaneous',
       'at equilibrium',
-      'unrelated to spontaneity'
+      'spontaneous in the forward direction'
     ],
     correctIndex: 1,
     explanation: 'A negative E°cell corresponds to a positive ΔG° (non-spontaneous forward reaction), but implies the reverse reaction, with a positive E°cell, would be spontaneous instead.',
@@ -805,12 +805,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'A metal higher up in the standard reduction potential series (more negative reduction potential) compared to another metal will generally',
     options: [
-      'be more easily reduced from its ions',
-      'more readily displace the other metal from its salt solution, acting as a stronger reducing agent',
       'never react in any redox reaction',
-      'always have a higher melting point'
+      'always have a higher melting point',
+      'be more easily reduced from its ions',
+      'more readily displace the other metal from its salt solution, acting as a stronger reducing agent'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Metals with more negative standard reduction potentials have a greater tendency to be oxidised (lose electrons), making them stronger reducing agents capable of displacing metals lower in the series from their salt solutions.',
     difficulty: 'medium'
   },
@@ -819,12 +819,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'Using Faraday\'s laws, if the same quantity of charge is passed through solutions of AgNO3 and CuSO4 connected in series, the ratio of masses of silver to copper deposited will equal the ratio of their',
     options: [
-      'atomic numbers',
-      'equivalent weights',
+      'melting points',
       'atomic radii',
-      'melting points'
+      'equivalent weights',
+      'atomic numbers'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Faraday\'s second law states that for a given quantity of charge, the masses of substances deposited are proportional to their chemical equivalent weights.',
     difficulty: 'medium'
   },
@@ -847,10 +847,10 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'Galvanisation, the process of coating iron with a layer of zinc to prevent rusting, works by',
     options: [
-      'making the iron chemically inert',
-      'providing zinc as a more easily oxidised (sacrificial) metal that corrodes preferentially, protecting the underlying iron',
       'preventing any water from ever touching the iron surface',
-      'converting the iron entirely into zinc'
+      'providing zinc as a more easily oxidised (sacrificial) metal that corrodes preferentially, protecting the underlying iron',
+      'converting the iron entirely into zinc',
+      'making the iron chemically inert'
     ],
     correctIndex: 1,
     explanation: 'Since zinc is more easily oxidised than iron, it acts as a sacrificial anode, corroding first and protecting the iron underneath, even if the zinc coating is scratched.',
@@ -861,12 +861,12 @@ export const ELECTROCHEMISTRY = [
     type: 'mcq',
     question: 'Overall, which statement correctly summarises the key thermodynamic and electrochemical relationships covered in this chapter?',
     options: [
-      'ΔG° = -nFE°cell and E°cell = (RT/nF) ln K link cell potential to both Gibbs free energy and the equilibrium constant of the cell reaction',
       'Cell potential has no connection to Gibbs free energy or equilibrium constants',
-      'Only the Nernst equation is relevant; ΔG° and K are unrelated concepts',
-      'Faraday\'s laws and the Nernst equation describe the same phenomenon'
+      'Faraday\'s laws and the Nernst equation describe the same phenomenon',
+      'ΔG° = -nFE°cell and E°cell = (RT/nF) ln K link cell potential to both Gibbs free energy and the equilibrium constant of the cell reaction',
+      'Only the Nernst equation is relevant; ΔG° and K are unrelated concepts'
     ],
-    correctIndex: 0,
+    correctIndex: 2,
     explanation: 'The chapter establishes a unified thermodynamic framework connecting cell potential, Gibbs free energy change, and equilibrium constant through ΔG° = -nFE°cell and E°cell = (RT/nF) ln K.',
     difficulty: 'hard'
   },
