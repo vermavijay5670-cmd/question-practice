@@ -2,6 +2,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import { ProgressProvider } from './context/ProgressContext';
 
+import Landing from './pages/Landing';
 import Home from './pages/Home';
 
 import BiologyHome from './pages/BiologyHome';
@@ -34,11 +35,21 @@ export default function App() {
           <Routes>
 
             {/* =================================================
-                HOME
+                LANDING  (public-facing splash page)
                 ================================================= */}
 
             <Route
               path="/"
+              element={<Landing />}
+            />
+
+
+            {/* =================================================
+                HOME  (subject picker — internal app entry)
+                ================================================= */}
+
+            <Route
+              path="/app"
               element={<Home />}
             />
 

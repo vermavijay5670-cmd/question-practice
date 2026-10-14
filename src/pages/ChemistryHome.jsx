@@ -193,7 +193,7 @@ export default function ChemistryHome() {
         <div className="chem-title-block">
 
           <Link
-            to="/"
+            to="/app"
             className="back-link"
           >
             ← All subjects

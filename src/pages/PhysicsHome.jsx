@@ -80,7 +80,7 @@ export default function PhysicsHome() {
   <div className="physics-top">
 
     <div className="physics-title-block">
-      <Link to="/" className="back-link">
+      <Link to="/app" className="back-link">
         ← All subjects
       </Link>
 

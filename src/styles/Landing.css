@@ -1,0 +1,502 @@
+/* ═══════════════════════════════════════════════════════════════
+   Landing.css  —  Minimal, clean, dark + light mode
+   Uses [data-lp-theme="dark"|"light"] on <html> (set by JS),
+   with a prefers-color-scheme fallback.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Token layer (landing-only, isolated from app tokens) ────── */
+
+:root,
+[data-lp-theme="dark"] {
+  --lp-bg:      #0c0c0c;
+  --lp-bg-2:    #141414;
+  --lp-line:    rgba(255,255,255,0.08);
+  --lp-ink:     #f0f0f0;
+  --lp-ink-2:   #888;
+  --lp-ink-3:   #555;
+  --lp-accent:  #f0f0f0;          /* monochrome accent — stays neutral */
+
+  /* subject underline colours */
+  --lp-bio:     #7FB069;
+  --lp-chem:    #A78BDA;
+  --lp-phy:     #4FA8D8;
+}
+
+[data-lp-theme="light"] {
+  --lp-bg:      #fafafa;
+  --lp-bg-2:    #f2f2f2;
+  --lp-line:    rgba(0,0,0,0.09);
+  --lp-ink:     #111;
+  --lp-ink-2:   #555;
+  --lp-ink-3:   #aaa;
+  --lp-accent:  #111;
+
+  --lp-bio:     #3a7d29;
+  --lp-chem:    #6b3fbc;
+  --lp-phy:     #1c6fa8;
+}
+
+/* Fallback for users who haven't clicked the toggle yet */
+@media (prefers-color-scheme: light) {
+  :root:not([data-lp-theme]) {
+    --lp-bg:      #fafafa;
+    --lp-bg-2:    #f2f2f2;
+    --lp-line:    rgba(0,0,0,0.09);
+    --lp-ink:     #111;
+    --lp-ink-2:   #555;
+    --lp-ink-3:   #aaa;
+    --lp-accent:  #111;
+    --lp-bio:     #3a7d29;
+    --lp-chem:    #6b3fbc;
+    --lp-phy:     #1c6fa8;
+  }
+}
+
+/* ── Base ─────────────────────────────────────────────────────── */
+
+.lp {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--lp-bg);
+  color: var(--lp-ink);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* ── Shared horizontal rule ───────────────────────────────────── */
+
+.lp-rule {
+  border: none;
+  border-top: 1px solid var(--lp-line);
+  margin: 0;
+}
+
+/* ── Shared label (eyebrow) ───────────────────────────────────── */
+
+.lp-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lp-ink-3);
+  margin: 0 0 2rem;
+}
+
+/* ── Brand mark ───────────────────────────────────────────────── */
+
+.lp-brand {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--lp-ink);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   NAV
+   ══════════════════════════════════════════════════════════════ */
+
+.lp-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 5vw;
+  border-bottom: 1px solid var(--lp-line);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--lp-bg);
+  gap: 1rem;
+}
+
+.lp-nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.lp-nav-link {
+  font-size: 0.82rem;
+  color: var(--lp-ink-2);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.lp-nav-link:hover { color: var(--lp-ink); }
+
+.lp-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* Theme toggle */
+.lp-theme-btn {
+  background: none;
+  border: 1px solid var(--lp-line);
+  color: var(--lp-ink-2);
+  font-size: 0.95rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.lp-theme-btn:hover {
+  color: var(--lp-ink);
+  border-color: var(--lp-ink-2);
+}
+
+/* Nav CTA */
+.lp-cta-btn {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--lp-bg);
+  background: var(--lp-ink);
+  padding: 0.45rem 1.1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.lp-cta-btn:hover { opacity: 0.8; }
+
+/* ══════════════════════════════════════════════════════════════
+   HERO
+   ══════════════════════════════════════════════════════════════ */
+
+.lp-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 7vw 5vw 6vw;
+  align-items: start;
+  min-height: 80vh;
+}
+
+/* "NEET UG 2026 · FREE" label sits above the title, full-width row */
+.lp-hero > .lp-label {
+  grid-column: 1 / -1;
+  margin-bottom: 2.5rem;
+}
+
+.lp-hero-title {
+  font-size: clamp(3rem, 6.5vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+  margin: 0;
+  color: var(--lp-ink);
+}
+
+.lp-hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 0.5rem;
+  padding-left: 3vw;
+}
+
+.lp-hero-desc {
+  font-size: 0.97rem;
+  color: var(--lp-ink-2);
+  line-height: 1.75;
+  max-width: 42ch;
+  margin: 0;
+}
+
+/* ── Buttons ──────────────────────────────────────────────── */
+
+.lp-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.lp-btn-solid {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--lp-bg);
+  background: var(--lp-ink);
+  padding: 0.7rem 1.6rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: opacity 0.15s, transform 0.15s;
+  display: inline-block;
+}
+
+.lp-btn-solid:hover {
+  opacity: 0.82;
+  transform: translateY(-1px);
+}
+
+.lp-btn-solid.lp-btn-lg {
+  font-size: 0.92rem;
+  padding: 0.85rem 2rem;
+}
+
+.lp-btn-text {
+  font-size: 0.82rem;
+  color: var(--lp-ink-2);
+  text-decoration: none;
+  border-bottom: 1px solid var(--lp-line);
+  padding-bottom: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.lp-btn-text:hover {
+  color: var(--lp-ink);
+  border-color: var(--lp-ink-2);
+}
+
+/* ── Stats row ────────────────────────────────────────────── */
+
+.lp-stats {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.lp-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.lp-stat-n {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--lp-ink);
+}
+
+.lp-stat-l {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--lp-ink-3);
+}
+
+.lp-stat-sep {
+  width: 1px;
+  height: 32px;
+  background: var(--lp-line);
+  flex-shrink: 0;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SUBJECTS
+   ══════════════════════════════════════════════════════════════ */
+
+.lp-subjects {
+  padding: 5vw 5vw;
+}
+
+.lp-subj-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.lp-subj-row {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--lp-line);
+  text-decoration: none;
+  color: var(--lp-ink);
+  transition: background 0.15s;
+}
+
+.lp-subj-row:first-child {
+  border-top: 1px solid var(--lp-line);
+}
+
+.lp-subj-row:hover {
+  background: var(--lp-bg-2);
+  padding-left: 0.75rem;
+  margin: 0 -0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 4px;
+}
+
+.lp-subj-idx {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--lp-ink-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.lp-subj-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  transition: color 0.15s;
+}
+
+/* Subject-specific hover accent on the name */
+.lp-subj-bio:hover  .lp-subj-name { color: var(--lp-bio); }
+.lp-subj-chem:hover .lp-subj-name { color: var(--lp-chem); }
+.lp-subj-phy:hover  .lp-subj-name { color: var(--lp-phy); }
+
+.lp-subj-tag {
+  font-size: 0.85rem;
+  color: var(--lp-ink-2);
+}
+
+.lp-subj-arrow {
+  font-size: 1rem;
+  color: var(--lp-ink-3);
+  transition: transform 0.2s, color 0.15s;
+}
+
+.lp-subj-row:hover .lp-subj-arrow {
+  transform: translateX(5px);
+  color: var(--lp-ink);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   FEATURES
+   ══════════════════════════════════════════════════════════════ */
+
+.lp-features {
+  padding: 5vw 5vw;
+}
+
+.lp-feat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--lp-line);  /* the gap IS the border */
+  border: 1px solid var(--lp-line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.lp-feat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 2rem 1.75rem;
+  background: var(--lp-bg);
+  transition: background 0.15s;
+}
+
+.lp-feat:hover {
+  background: var(--lp-bg-2);
+}
+
+.lp-feat-num {
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  color: var(--lp-ink-3);
+}
+
+.lp-feat-title {
+  font-size: 0.97rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--lp-ink);
+  line-height: 1.3;
+}
+
+.lp-feat-body {
+  font-size: 0.85rem;
+  color: var(--lp-ink-2);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   BOTTOM CTA
+   ══════════════════════════════════════════════════════════════ */
+
+.lp-bottom-cta {
+  padding: 7vw 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.lp-cta-title {
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 0;
+  max-width: 18ch;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   FOOTER
+   ══════════════════════════════════════════════════════════════ */
+
+.lp-footer {
+  border-top: 1px solid var(--lp-line);
+  padding: 1.5rem 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.lp-footer-note {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--lp-ink-3);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 860px) {
+  .lp-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 8vw 5vw 6vw;
+    gap: 2rem;
+  }
+
+  .lp-hero-right {
+    padding-left: 0;
+  }
+
+  .lp-feat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lp-subj-row {
+    grid-template-columns: 2.5rem 1fr auto;
+  }
+
+  .lp-subj-tag { display: none; }
+}
+
+@media (max-width: 540px) {
+  .lp-nav-links { display: none; }
+
+  .lp-feat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lp-subj-row {
+    grid-template-columns: 2rem 1fr auto;
+  }
+
+  .lp-stats { gap: 1rem; }
+  .lp-stat-sep { height: 24px; }
+}

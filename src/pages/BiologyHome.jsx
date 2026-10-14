@@ -276,7 +276,7 @@ export default function BiologyHome() {
           {/* Back */}
 
           <Link
-            to="/"
+            to="/app"
             className="back-button"
           >
             ← All subjects
