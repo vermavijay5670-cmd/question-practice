@@ -1,8 +1,7 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import { ProgressProvider } from './context/ProgressContext';
 
-import Landing from './pages/Landing';
 import Home from './pages/Home';
 
 import BiologyHome from './pages/BiologyHome';
@@ -35,23 +34,12 @@ export default function App() {
           <Routes>
 
             {/* =================================================
-                LANDING  (public-facing splash page)
+                HOME  (landing page + subject picker)
+                `/app` is kept so old links keep working.
                 ================================================= */}
 
-            <Route
-              path="/"
-              element={<Landing />}
-            />
-
-
-            {/* =================================================
-                HOME  (subject picker — internal app entry)
-                ================================================= */}
-
-            <Route
-              path="/app"
-              element={<Home />}
-            />
+            <Route path="/" element={<Home />} />
+            <Route path="/app" element={<Navigate to="/" replace />} />
 
 
             {/* =================================================

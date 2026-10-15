@@ -7,7 +7,7 @@ import { ALL_CHAPTERS as CHEM } from '../data/chemistry/chapters';
 import { QUESTION_COUNTS as BIO_COUNTS } from '../data/biology/counts';
 import { QUESTION_COUNTS as PHY_COUNTS } from '../data/physics/counts';
 import { QUESTION_COUNTS as CHEM_COUNTS } from '../data/chemistry/counts';
-import '../styles/Landing.css';
+import '../styles/HomeLanding.css';
 
 const TRACKER_URL = 'https://study-tracker-green-nine.vercel.app/Today';
 const THEME_KEY = 'neetprep.landing.theme';
