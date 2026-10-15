@@ -1,144 +1,17 @@
-import { Link } from 'react-router-dom';
+import SubjectLibrary from '../components/SubjectLibrary';
 import { CLASS_11, CLASS_12 } from '../data/physics/chapters';
 import { getChapterQuestionCount } from '../data/physics/questions';
-import { useProgress } from '../context/ProgressContext';
-import { RESOURCES } from '../data/resources';
-import '../styles/PhysicsHome.css';
-
-function ChapterCard({ chapter }) {
-  const { state } = useProgress();
-  const total = getChapterQuestionCount(chapter.id);
-  const attempt = state.attempts.physics?.[chapter.id];
-  const seen = attempt?.seen || 0;
-  const pct = total ? Math.min(100, Math.round((seen / total) * 100)) : 0;
-  const resources =
-  RESOURCES.physics[chapter.id];
-
-  if (total === 0) {
-    return (
-      <div className="chapter-card">
-        <div className="name">{chapter.name}</div>
-        <div className="empty-tag">No questions yet — send the chapter PDF, or ask Claude to generate a set.</div>
-      </div>
-    );
-  }
-
-  return (
-    <Link to={`/physics/chapter/${chapter.id}`} className="chapter-card">
-      <div className="name">{chapter.name}</div>
-      <div className="progress-track"><div className="progress-fill" style={{ width: `${pct}%` }} /></div>
-      <div className="meta-row">
-        <span>{total} questions</span>
-        <span>{attempt?.correct || 0}/{seen || 0} correct so far</span>
-      </div>
-      {resources && (
-  <div className="chapter-resources">
-
-    {resources.shortnotes && (
-      <a
-        href={resources.shortnotes}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="resource-button"
-        onClick={(e) => e.stopPropagation()}
-      >
-        ↗ Short Notes
-      </a>
-    )}
-
-    {resources.flashcards && (
-      <a
-        href={resources.flashcards}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="resource-button"
-        onClick={(e) => e.stopPropagation()}
-      >
-        ↗ FlashCards
-      </a>
-    )}
-
-  </div>
-)}
-    </Link>
-  );
-}
 
 export default function PhysicsHome() {
-  const { state } = useProgress();
-  const attempts = state.attempts.physics || {};
-  const mistakeCount = Object.keys(state.mistakes.physics || {}).length;
-  const bookmarkCount = Object.keys(state.bookmarks.physics || {}).length;
-  const totalSeen = Object.values(attempts).reduce((s, a) => s + (a.seen || 0), 0);
-  const totalCorrect = Object.values(attempts).reduce((s, a) => s + (a.correct || 0), 0);
-  const accuracy = totalSeen ? Math.round((totalCorrect / totalSeen) * 100) : 0;
-  const chaptersLive = [...CLASS_11, ...CLASS_12].filter(c => getChapterQuestionCount(c.id) > 0).length;
-
   return (
-    <main className="physics-home">
-
-  <div className="physics-top">
-
-    <div className="physics-title-block">
-      <Link to="/app" className="back-link">
-        ← All subjects
-      </Link>
-
-      <div className="eyebrow">Physics</div>
-
-      <h1>Chapter-wise practice</h1>
-    </div>
-
-    <div className="physics-actions">
-      <Link to="/physics/mock" className="pill-btn primary">
-        Mock test
-      </Link>
-
-      <Link to="/physics/mistakes" className="pill-btn">
-        Mistake bank ({mistakeCount})
-      </Link>
-
-      <Link to="/physics/bookmarks" className="pill-btn">
-        Bookmarks ({bookmarkCount})
-      </Link>
-    </div>
-
-  </div>
-
-  <div className="physics-stats-strip">
-
-    <div className="physics-stat">
-      <span className="num">{totalSeen}</span>
-      <span className="label">Questions attempted</span>
-    </div>
-
-    <div className="physics-stat">
-      <span className="num">{accuracy}%</span>
-      <span className="label">Accuracy</span>
-    </div>
-
-    <div className="physics-stat">
-      <span className="num">
-        {chaptersLive}/{CLASS_11.length + CLASS_12.length}
-      </span>
-      <span className="label">Chapters live</span>
-    </div>
-
-  </div>
-
-      <section className="class-section">
-        <div className="class-heading">Class 11</div>
-        <div className="chapter-grid">
-          {CLASS_11.map((c) => <ChapterCard key={c.id} chapter={c} />)}
-        </div>
-      </section>
-
-      <section className="class-section">
-        <div className="class-heading">Class 12</div>
-        <div className="chapter-grid">
-          {CLASS_12.map((c) => <ChapterCard key={c.id} chapter={c} />)}
-        </div>
-      </section>
-    </main>
+    <SubjectLibrary
+      subject="physics"
+      label="Physics"
+      class11={CLASS_11}
+      class12={CLASS_12}
+      getCount={getChapterQuestionCount}
+      footIcon="atom"
+      footLines={['Physics', 'Makes Sense']}
+    />
   );
 }

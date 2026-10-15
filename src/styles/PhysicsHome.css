@@ -1,618 +1,276 @@
-/* =========================================================
-   PHYSICS HOME
-   ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+/* =====================================================================
+   PHYSICS HOME  ·  neon-lime / concrete theme
+   Everything is scoped under .phx
+   ===================================================================== */
+
+.phx {
+  --bg: #0a0a0a;
+  --panel: #111111;
+  --panel-2: #161616;
+  --line: #2a2a2a;
+  --line-soft: #1d1d1d;
+  --acc: #d6f21f;
+  --acc-dim: rgba(214, 242, 31, 0.14);
+  --ink: #f3f3ee;
+  --mute: #a5a59d;
+  --dim: #6c6c66;
+  --paper: #dcdad1;
+  --paper-ink: #121212;
+  --f-display: 'Anton', 'Bebas Neue', 'Oswald', Impact, 'Arial Narrow', sans-serif;
+  --f-mono: 'Space Mono', 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+  --f-ui: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --top-h: 60px;
+  --side-w: 192px;
 
-.physics-home {
-  min-height: 100vh;
-
-  background:
-    radial-gradient(
-      ellipse at top left,
-      rgba(79, 168, 216, 0.18),
-      transparent 55%
-    ),
-    radial-gradient(
-      ellipse at bottom right,
-      rgba(230, 87, 122, 0.08),
-      transparent 50%
-    ),
-    var(--void);
-
-  padding: 4vh 5vw 8vh;
-
-  position: relative;
-  overflow: hidden;
-}
-
-
-/* ---------------------------------------------------------
-   Subtle Physics Grid
-   --------------------------------------------------------- */
-
-.physics-home::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-image:
-    linear-gradient(
-      rgba(79, 168, 216, 0.035) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(79, 168, 216, 0.035) 1px,
-      transparent 1px
-    );
-
-  background-size: 42px 42px;
-
-  pointer-events: none;
-  mask-image: linear-gradient(
-    to bottom,
-    black,
-    transparent 90%
-  );
-}
-
-
-/* ---------------------------------------------------------
-   Top Section
-   --------------------------------------------------------- */
-
-.physics-top {
-  position: relative;
-  z-index: 1;
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-
-  gap: 1rem;
-  margin-bottom: 2.5rem;
-
-  flex-wrap: wrap;
-}
-
-
-/* ---------------------------------------------------------
-   Back Button
-   --------------------------------------------------------- */
-
-.physics-top .back-link {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-
-  color: var(--ink-dim);
-
-  border: 1px solid var(--line);
-
-  padding: 0.4rem 0.8rem;
-
-  border-radius: 999px;
-
-  display: inline-block;
-
-  transition:
-    color 0.2s ease,
-    border-color 0.2s ease,
-    background 0.2s ease;
-}
-
-.physics-top .back-link:hover {
-  border-color: var(--phy-bright);
-  color: var(--phy-bright);
-
-  background: rgba(79, 168, 216, 0.06);
-}
-
-
-/* ---------------------------------------------------------
-   Title
-   --------------------------------------------------------- */
-
-.physics-title-block {
-  position: relative;
-}
-
-.physics-title-block h1 {
-  font-family: var(--font-display);
-
-  font-size: clamp(
-    1.9rem,
-    4vw,
-    2.6rem
-  );
-
-  margin: 0.3rem 0 0.2rem;
-
-  letter-spacing: -0.02em;
-}
-
-.physics-title-block .eyebrow {
-  font-family: var(--font-mono);
-
-  font-size: 0.7rem;
-
-  letter-spacing: 0.16em;
-
-  text-transform: uppercase;
-
-  color: var(--phy-bright);
-}
-
-
-/* ---------------------------------------------------------
-   Physics Actions
-   --------------------------------------------------------- */
-
-.physics-actions {
-  display: flex;
-
-  gap: 0.75rem;
-
-  flex-wrap: wrap;
-}
-
-
-/* ---------------------------------------------------------
-   Buttons
-   --------------------------------------------------------- */
-
-.physics-actions .pill-btn {
-  font-family: var(--font-mono);
-
-  font-size: 0.78rem;
-
-  padding: 0.55rem 1rem;
-
-  border-radius: 999px;
-
-  border: 1px solid var(--phy-mid);
-
-  color: var(--ink);
-
-  background: rgba(79, 168, 216, 0.06);
-
-  display: inline-flex;
-
-  align-items: center;
-
-  gap: 0.4rem;
-
-  transition:
-    border-color 0.2s ease,
-    background 0.2s ease,
-    transform 0.2s ease;
-}
-
-.physics-actions .pill-btn:hover {
-  border-color: var(--phy-bright);
-
-  background: rgba(79, 168, 216, 0.14);
-
-  transform: translateY(-1px);
-}
-
-
-/* Primary Physics button */
-
-.physics-actions .pill-btn.primary {
-  background: var(--phy-bright);
-
-  color: var(--void);
-
-  border-color: var(--phy-bright);
-
-  font-weight: 600;
-}
-
-.physics-actions .pill-btn.primary:hover {
-  background: var(--phy-accent);
-
-  border-color: var(--phy-accent);
-
-  color: white;
-}
-
-
-/* ---------------------------------------------------------
-   Statistics
-   --------------------------------------------------------- */
-
-.physics-stats-strip {
-  position: relative;
-  z-index: 1;
-
-  display: flex;
-
-  gap: 2.5rem;
-
-  margin-bottom: 2.5rem;
-
-  flex-wrap: wrap;
-
-  font-family: var(--font-mono);
-}
-
-.physics-stat {
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 0.15rem;
-}
-
-.physics-stat .num {
-  font-size: 1.6rem;
-
-  color: var(--phy-bright);
-
-  text-shadow:
-    0 0 16px rgba(79, 168, 216, 0.25);
-}
-
-.physics-stat .label {
-  font-size: 0.7rem;
-
-  color: var(--ink-dim);
-
-  text-transform: uppercase;
-
-  letter-spacing: 0.08em;
-}
-
-
-/* ---------------------------------------------------------
-   Class Sections
-   --------------------------------------------------------- */
-
-.physics-class-section {
-  position: relative;
-  z-index: 1;
-
-  margin-bottom: 2.5rem;
-}
-
-
-/* ---------------------------------------------------------
-   Class Heading
-   --------------------------------------------------------- */
-
-.physics-class-heading {
-  font-family: var(--font-mono);
-
-  font-size: 0.78rem;
-
-  letter-spacing: 0.14em;
-
-  text-transform: uppercase;
-
-  color: var(--phy-accent);
-
-  margin-bottom: 0.9rem;
-
-  padding-bottom: 0.5rem;
-
-  border-bottom: 1px solid var(--line);
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 0.6rem;
-}
-
-.physics-class-heading::before {
-  content: "∿";
-
-  color: var(--phy-bright);
-
-  font-size: 1rem;
-}
-
-
-/* ---------------------------------------------------------
-   Chapter Grid
-   --------------------------------------------------------- */
-
-.physics-chapter-grid {
   display: grid;
-
-  grid-template-columns:
-    repeat(
-      auto-fill,
-      minmax(260px, 1fr)
-    );
-
-  gap: 1rem;
+  grid-template-columns: var(--side-w) minmax(0, 1fr);
+  grid-template-rows: var(--top-h) minmax(0, 1fr);
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--f-ui);
 }
 
+.phx *, .phx *::before, .phx *::after { box-sizing: border-box; }
+.phx :where(a) { color: inherit; text-decoration: none; }
+.phx :where(h1, h2, p) { margin: 0; }
+.phx :where(button) { font: inherit; color: inherit; }
+.phx :focus-visible { outline: 2px solid var(--acc); outline-offset: 2px; }
+.phx .phx-icon { flex: none; display: block; }
 
-/* ---------------------------------------------------------
-   Chapter Card
-   --------------------------------------------------------- */
+/* ---------------------------------------------------------------------
+   Top bar
+   --------------------------------------------------------------------- */
+.phx-top {
+  grid-column: 1 / -1;
+  position: sticky; top: 0; z-index: 30;
+  display: flex; align-items: center; gap: 18px;
+  padding: 0 24px 0 28px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line-soft);
+}
+.phx-brand {
+  display: inline-flex; align-items: center; gap: 14px;
+  font-family: var(--f-mono); font-weight: 700; font-size: 17px; letter-spacing: 0.14em;
+}
+.phx-brand-mark {
+  position: relative; display: block; width: 26px; height: 26px; background: var(--acc);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 55% 100%, 55% 55%, 0 55%);
+}
+.phx-top-sep { width: 1px; height: 28px; background: var(--line); }
+.phx-top-meta { font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.16em; color: var(--mute); white-space: nowrap; }
+.phx-top-accent { color: var(--acc); }
 
-.physics-chapter-card {
-  position: relative;
+.phx-search {
+  margin-left: auto; min-width: 0; display: flex; align-items: center; gap: 10px;
+  width: min(380px, 40vw); height: 40px; padding: 0 14px;
+  border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--mute);
+  transition: border-color 0.2s;
+}
+.phx-search:focus-within { border-color: var(--acc); color: var(--acc); }
+.phx-search input {
+  flex: 1; min-width: 0; border: 0; outline: 0; background: transparent;
+  color: var(--ink); font: 14px var(--f-ui);
+}
+.phx-search input::placeholder { color: var(--dim); }
+.phx-search input::-webkit-search-cancel-button { filter: invert(0.8); }
 
-  border: 1px solid var(--line);
-
-  background:
-    linear-gradient(
-      145deg,
-      rgba(35, 81, 127, 0.10),
-      var(--surface)
-    );
-
-  border-radius: 14px;
-
-  padding: 1.1rem 1.2rem;
-
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 0.6rem;
-
-  overflow: hidden;
-
-  transition:
-    border-color 0.25s ease,
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease;
+/* ---------------------------------------------------------------------
+   Sidebar
+   --------------------------------------------------------------------- */
+.phx-side {
+  position: sticky; top: var(--top-h); align-self: start;
+  height: calc(100vh - var(--top-h));
+  display: flex; flex-direction: column;
+  padding: 12px 8px 16px;
+  border-right: 1px solid var(--line-soft);
+  overflow-y: auto;
+}
+.phx-nav { display: flex; flex-direction: column; gap: 2px; }
+.phx-nav-item {
+  position: relative; display: flex; align-items: center; gap: 12px;
+  min-height: 46px; padding: 0 12px;
+  font-size: 14px; white-space: nowrap; font-weight: 500; color: var(--ink);
+  border-radius: 2px; transition: background 0.18s, color 0.18s;
+}
+.phx-nav-item:hover { background: var(--panel-2); }
+.phx-nav-item.is-active { background: var(--acc); color: #0a0a0a; font-weight: 600; }
+.phx-count {
+  margin-left: auto; min-width: 22px; padding: 1px 7px; border-radius: 999px; text-align: center;
+  background: var(--acc-dim); color: var(--acc); font: 700 11px var(--f-mono);
 }
 
-
-/* Physics decorative corner */
-
-.physics-chapter-card::after {
-  content: "↗";
-
-  position: absolute;
-
-  right: 12px;
-  top: 8px;
-
-  font-family: var(--font-mono);
-
-  font-size: 1rem;
-
-  color: rgba(79, 168, 216, 0.20);
-
-  transition:
-    color 0.25s ease,
-    transform 0.25s ease;
+.phx-side-rule { height: 1px; background: var(--line); margin: 22px 8px 20px; }
+.phx-side-label { padding: 0 14px 12px; font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.2em; color: var(--mute); }
+.phx-class-nav { display: flex; flex-direction: column; gap: 8px; padding: 0 6px; }
+.phx-class-btn {
+  display: flex; align-items: center; gap: 12px; height: 38px; padding: 0 14px;
+  border: 0; border-radius: 3px; background: transparent; text-align: left; cursor: pointer;
+  font-size: 14px; font-weight: 500; color: var(--mute); transition: background 0.18s, color 0.18s;
+}
+.phx-class-btn:hover { color: var(--ink); }
+.phx-class-btn.is-active { background: var(--acc); color: #0a0a0a; font-weight: 600; }
+.phx-radio {
+  position: relative; flex: none; width: 17px; height: 17px; border-radius: 50%;
+  border: 1.5px solid currentColor;
+}
+.phx-class-btn.is-active .phx-radio::after {
+  content: ''; position: absolute; inset: 3px; border-radius: 50%; background: #0a0a0a;
 }
 
+.phx-side-spacer { flex: 1; min-height: 20px; }
 
-/* Hover */
+.phx-quote {
+  position: relative; display: flex; flex-direction: column; gap: 5px;
+  margin: 0 4px 22px; padding: 22px 16px 20px;
+  border: 1px solid var(--line); background: var(--panel);
+  font-family: var(--f-mono); font-size: 11.5px; letter-spacing: 0.16em; line-height: 1.2;
+}
+.phx-quote::before {
+  content: ''; position: absolute; left: -1px; top: -1px; width: 22px; height: 22px;
+  border-top: 3px solid var(--acc); border-left: 3px solid var(--acc);
+}
+.phx-quote::after {
+  content: ''; position: absolute; right: 0; top: 0; width: 26px; height: 52px;
+  background: repeating-linear-gradient(135deg, var(--line) 0 2px, transparent 2px 6px);
+}
+.phx-quote em { display: block; width: 26px; height: 3px; margin-top: 12px; background: var(--acc); }
 
-.physics-chapter-card:hover {
-  border-color: var(--phy-bright);
+.phx-side-foot {
+  display: flex; align-items: center; gap: 12px; padding: 14px 12px 0;
+  border-top: 1px solid var(--line); color: var(--mute); font-size: 12px; line-height: 1.35;
+}
+.phx-side-foot .phx-icon { color: var(--ink); }
 
-  transform:
-    translateY(-4px);
+/* ---------------------------------------------------------------------
+   Main
+   --------------------------------------------------------------------- */
+.phx-main { min-width: 0; padding: 14px 14px 48px 18px; }
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(35, 81, 127, 0.20),
-      var(--surface)
-    );
+/* ---------- banner (concrete) ---------- */
+.phx-banner {
+  position: relative; display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 0 28px;
+  padding: 24px 34px 24px 24px; border-radius: 2px; overflow: hidden;
+  color: var(--paper-ink);
+  background-color: var(--paper);
+  background-image:
+    url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cfilter id='n' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .1  0 0 0 0 .1  0 0 0 0 .1  1.6 0 0 0 -.62'/%3E%3C/filter%3E%3Crect width='320' height='320' filter='url(%23n)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='360'%3E%3Cfilter id='m' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.012 .02' numOctaves='4' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .35  0 0 0 0 .34  0 0 0 0 .3  0 0 0 .9 -.28'/%3E%3C/filter%3E%3Crect width='640' height='360' filter='url(%23m)'/%3E%3C/svg%3E");
+}
+.phx-kicker { font-family: var(--f-mono); font-weight: 700; font-size: 15px; letter-spacing: 0.14em; }
+.phx-banner-title h1 {
+  margin: 2px 0 8px; font-family: var(--f-display); font-weight: 400; text-transform: uppercase;
+  font-size: clamp(44px, 4.5vw, 70px); line-height: 1; letter-spacing: 0.005em; white-space: nowrap;
+}
+.phx-banner-title p { font-size: 16px; color: #2b2b27; }
 
-  box-shadow:
-    0 10px 30px
-    rgba(0, 0, 0, 0.18),
+.phx-stats { display: flex; align-items: stretch; }
+.phx-stat {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  min-width: 118px; padding: 6px 22px; border-left: 1px solid rgba(0, 0, 0, 0.55);
+}
+.phx-stat .phx-icon { margin-bottom: 6px; }
+.phx-stat strong { font-family: var(--f-display); font-weight: 400; font-size: 34px; line-height: 1; letter-spacing: 0.01em; }
+.phx-stat span { margin-top: 4px; font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.1em; color: #3b3b36; white-space: nowrap; }
 
-    0 0 20px
-    rgba(79, 168, 216, 0.08);
+.phx-tagline {
+  position: relative; align-self: stretch; display: flex; flex-direction: column; justify-content: center; gap: 5px;
+  margin-left: 6px; padding: 8px 4px 8px 26px; border-left: 1px solid rgba(0, 0, 0, 0.55);
+  font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.2em; line-height: 1.1;
+}
+.phx-tagline i { display: block; width: 24px; height: 3px; margin-top: 8px; background: var(--acc); }
+.phx-tagline::after {
+  content: ''; position: absolute; right: -14px; top: -10px; width: 20px; height: 20px;
+  border-top: 2px solid var(--acc); border-right: 2px solid var(--acc);
 }
 
-.physics-chapter-card:hover::after {
-  color: var(--phy-bright);
+/* ---------- section headings ---------- */
+.phx-section { margin-top: 22px; scroll-margin-top: calc(var(--top-h) + 10px); }
+.phx-section-head { display: flex; align-items: center; gap: 16px; margin: 0 0 12px 2px; }
+.phx-section-head h2 { font-family: var(--f-display); font-weight: 400; font-size: 30px; line-height: 1; letter-spacing: 0.02em; text-transform: uppercase; }
+.phx-rule { flex: 1; height: 1px; background: var(--line); }
+.phx-section-count { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: 0.14em; color: var(--mute); white-space: nowrap; }
+.phx-dash { display: block; width: 20px; height: 4px; background: var(--acc); }
 
-  transform:
-    translate(2px, -2px);
+/* ---------- chapter cards ---------- */
+.phx-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(232px, 1fr)); gap: 12px; }
+.phx-card {
+  position: relative; display: flex; flex-direction: column; gap: 18px; overflow: hidden;
+  padding: 14px 14px 16px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel);
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+.phx-card:hover { border-color: var(--acc); background: var(--panel-2); transform: translateY(-2px); }
+.phx-card.is-empty { opacity: 0.6; }
+.phx-card.is-empty:hover { border-color: var(--line); transform: none; background: var(--panel); }
+
+.phx-card-top { display: flex; align-items: center; gap: 12px; min-height: 40px; }
+.phx-num {
+  flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 4px;
+  background: #ecece6; color: #0a0a0a; font: 700 12.5px var(--f-ui);
+}
+.phx-card-title { flex: 1; min-width: 0; font-size: 14px; font-weight: 600; line-height: 1.3; color: var(--ink); }
+a.phx-card-title:hover { color: var(--acc); }
+.phx-card-arrow { flex: none; display: grid; place-items: center; color: #e2e2dc; transition: color 0.2s, transform 0.2s; }
+.phx-card:hover .phx-card-arrow { color: var(--acc); transform: translateX(3px); }
+
+.phx-card-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px; margin-top: auto; }
+.phx-act { display: inline-flex; align-items: center; gap: 4px; font-size: 11.5px; white-space: nowrap; font-weight: 500; color: #d9d9d3; transition: color 0.2s; }
+a.phx-act:hover { color: var(--acc); }
+.phx-act-practice { color: var(--acc); font-weight: 600; }
+.phx-act.is-off { color: var(--dim); cursor: default; }
+.phx-act-practice.is-off { color: var(--dim); }
+
+.phx-card-bar { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: transparent; }
+.phx-card-bar i { display: block; height: 100%; background: var(--acc); transition: width 0.5s ease; }
+
+.phx-none { margin-top: 48px; text-align: center; color: var(--mute); font-family: var(--f-mono); font-size: 13px; letter-spacing: 0.06em; }
+
+/* =====================================================================
+   Responsive
+   ===================================================================== */
+@media (max-width: 1400px) {
+  .phx-tagline { display: none; }
+  .phx-banner { grid-template-columns: minmax(0, 1fr) auto; }
+}
+@media (max-width: 1400px) and (min-width: 1281px) { .phx-banner { grid-template-columns: minmax(0, 1fr) auto; } }
+
+@media (max-width: 1060px) {
+  .phx-banner { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .phx-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .phx-stat { min-width: 0; padding: 6px 10px; }
+  .phx-stat:first-child { border-left: 0; }
 }
 
-
-/* ---------------------------------------------------------
-   Chapter Name
-   --------------------------------------------------------- */
-
-.physics-chapter-card .name {
-  font-family: var(--font-display);
-
-  font-size: 1.05rem;
-
-  line-height: 1.3;
-
-  padding-right: 1.2rem;
-}
-
-
-/* ---------------------------------------------------------
-   Meta Row
-   --------------------------------------------------------- */
-
-.physics-chapter-card .meta-row {
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  gap: 1rem;
-
-  font-family: var(--font-mono);
-
-  font-size: 0.72rem;
-
-  color: var(--ink-dim);
-}
-
-
-/* ---------------------------------------------------------
-   Progress Bar
-   --------------------------------------------------------- */
-
-.physics-progress-track {
-  height: 4px;
-
-  background: var(--surface-2);
-
-  border-radius: 999px;
-
-  overflow: hidden;
-
-  position: relative;
-}
-
-.physics-progress-fill {
-  height: 100%;
-
-  background:
-    linear-gradient(
-      90deg,
-      var(--phy-mid),
-      var(--phy-bright)
-    );
-
-  border-radius: 999px;
-
-  transition:
-    width 0.4s ease;
-
-  box-shadow:
-    0 0 10px
-    rgba(79, 168, 216, 0.30);
-}
-
-
-/* ---------------------------------------------------------
-   Empty Chapter
-   --------------------------------------------------------- */
-
-.physics-chapter-card .empty-tag {
-  font-size: 0.72rem;
-
-  color: var(--ink-dim);
-
-  font-style: italic;
-
-  line-height: 1.5;
-}
-
-
-/* ---------------------------------------------------------
-   Mobile
-   --------------------------------------------------------- */
-
-@media (max-width: 700px) {
-
-  .physics-home {
-    padding:
-      3vh 4vw 7vh;
+@media (max-width: 860px) {
+  .phx { grid-template-columns: minmax(0, 1fr); grid-template-rows: var(--top-h) auto minmax(0, 1fr); }
+  .phx-side {
+    position: static; height: auto; flex-direction: row; align-items: center; gap: 6px;
+    padding: 8px 12px; border-right: 0; border-bottom: 1px solid var(--line-soft); overflow-x: auto;
   }
-
-  .physics-top {
-    margin-bottom: 2rem;
-  }
-
-  .physics-actions {
-    width: 100%;
-  }
-
-  .physics-actions .pill-btn {
-    flex: 1;
-
-    justify-content: center;
-  }
-
-  .physics-stats-strip {
-    gap: 1.5rem;
-  }
-
-  .physics-chapter-grid {
-    grid-template-columns:
-      1fr;
-  }
-
-  .physics-chapter-card {
-    padding: 1rem;
-  }
+  .phx-nav { flex-direction: row; gap: 4px; }
+  .phx-nav-item { min-height: 40px; padding: 0 12px; white-space: nowrap; }
+  .phx-side-rule, .phx-side-label, .phx-side-spacer, .phx-quote, .phx-side-foot { display: none; }
+  .phx-class-nav { flex-direction: row; gap: 4px; padding: 0 0 0 8px; margin-left: 4px; border-left: 1px solid var(--line); }
+  .phx-class-btn { white-space: nowrap; }
+  .phx-hide-sm { display: none; }
+  .phx-top { padding: 0 14px; gap: 12px; min-width: 0; }
+  .phx-brand { font-size: 15px; gap: 10px; }
+  .phx-search { width: auto; flex: 1; margin-left: 4px; }
+  .phx-main { padding: 12px 12px 40px; }
+  .phx-banner { padding: 22px 18px; }
 }
 
-
-/* ---------------------------------------------------------
-   Reduced Motion
-   --------------------------------------------------------- */
+@media (max-width: 560px) {
+  .phx-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 16px; }
+  .phx-stat:nth-child(3) { border-left: 0; }
+  .phx-banner-title h1 { font-size: clamp(38px, 12.5vw, 56px); }
+  .phx-grid { grid-template-columns: minmax(0, 1fr); }
+  .phx-section-head h2 { font-size: 26px; }
+}
 
 @media (prefers-reduced-motion: reduce) {
-
-  .physics-chapter-card,
-  .physics-chapter-card::after,
-  .physics-actions .pill-btn {
-    transition: none;
-  }
-
-}
-/* =========================================================
-   CHAPTER RESOURCES
-   ========================================================= */
-
-.chapter-resources {
-  display: flex;
-
-  flex-wrap: wrap;
-
-  gap: 0.45rem;
-
-  margin-top: 0.75rem;
-}
-
-
-.resource-button {
-  display: inline-flex;
-
-  align-items: center;
-
-  padding: 0.38rem 0.65rem;
-
-  border:
-    1px solid rgba(80, 150, 255, 0.35);
-
-  border-radius: 999px;
-
-  background:
-    rgba(80, 150, 255, 0.06);
-
-  color:
-    #91bdff;
-
-  font-family:
-    var(--font-mono);
-
-  font-size: 0.62rem;
-
-  text-decoration: none;
-
-  transition:
-    all 0.2s ease;
-}
-
-
-.resource-button:hover {
-  color: white;
-
-  border-color:
-    rgba(80, 150, 255, 0.75);
-
-  background:
-    rgba(80, 150, 255, 0.14);
-
-  transform:
-    translateY(-1px);
+  .phx *, .phx *::before, .phx *::after { transition-duration: 0.001ms !important; }
 }

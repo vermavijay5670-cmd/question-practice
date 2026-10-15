@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useProgress } from '../../context/ProgressContext';
 import '../../styles/Practice.css';
+import '../../styles/QuizSetup.css';
 
 const TYPE_LABEL = {
   mcq: 'MCQ',
@@ -187,37 +188,62 @@ export default function QuizEngine({ subject, chapterId, title, questions, backT
   }
 
   if (phase === 'setup') {
+    const customValid = customMinutes !== '' && Number(customMinutes) > 0;
     return (
-      <main className="practice">
+      <main className="practice qs" data-subject={subject}>
         <div className="practice-shell">
-          <Link to={backTo} className="back-link">← {backLabel}</Link>
-          <div className="summary-card" style={{ marginTop: '1.5rem' }}>
-            <div className="q-type-tag">{title} · {questions.length} questions</div>
-            <p>Set a timer for this session if you want one — it's off by default, so nothing auto-submits unless you choose a time here.</p>
-            <div className="summary-actions">
+          <Link to={backTo} className="qs-back">← {backLabel}</Link>
+
+          <div className="qs-card">
+            <div className="qs-medal" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="13" r="8" />
+                <path d="M12 9v4l2.5 2M9.5 2.5h5" />
+              </svg>
+            </div>
+
+            <div className="qs-eyebrow">{title} · {questions.length} questions</div>
+            <p className="qs-lead">
+              Set a timer for this session if you want one — it's off by default, so nothing auto-submits unless you choose a time here.
+            </p>
+
+            <div className="qs-label">PICK A TIME</div>
+            <div className="qs-presets">
               {TIMER_PRESETS.map((m) => (
-                <button key={m} className="pill-btn" onClick={() => startWithTimer(m)}>{m} min</button>
+                <button key={m} type="button" className="qs-tile" onClick={() => startWithTimer(m)}>
+                  <b>{m}</b>
+                  <span>min</span>
+                </button>
               ))}
             </div>
-            <div className="summary-actions" style={{ marginTop: '0.75rem' }}>
+
+            <div className="qs-label">OR SET YOUR OWN</div>
+            <div className="qs-custom">
               <input
+                className="qs-input"
                 type="number"
+                inputMode="numeric"
                 min="1"
                 placeholder="Custom minutes"
+                aria-label="Custom minutes"
                 value={customMinutes}
                 onChange={(e) => setCustomMinutes(e.target.value)}
-                style={{ width: '140px', padding: '0.55rem 0.8rem', borderRadius: '999px', border: '1px solid var(--line)', background: 'transparent', color: 'var(--ink)', fontFamily: 'var(--font-mono)', fontSize: '0.78rem' }}
+                onKeyDown={(e) => { if (e.key === 'Enter' && customValid) startWithTimer(Number(customMinutes)); }}
               />
               <button
-                className="pill-btn"
-                disabled={!customMinutes || Number(customMinutes) <= 0}
+                type="button"
+                className="qs-btn"
+                disabled={!customValid}
                 onClick={() => startWithTimer(Number(customMinutes))}
               >
                 Start with custom timer
               </button>
             </div>
-            <div className="summary-actions" style={{ marginTop: '0.75rem' }}>
-              <button className="pill-btn primary" onClick={() => startWithTimer(null)}>Start with no time limit</button>
+
+            <div className="qs-final">
+              <button type="button" className="qs-btn qs-go" onClick={() => startWithTimer(null)}>
+                Start with no time limit
+              </button>
             </div>
           </div>
         </div>
